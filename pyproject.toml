@@ -1,0 +1,23 @@
+[project]
+name = "logtrace"
+version = "0.1.0"
+description = "Track agent-introduced Python log statements through git history (REBUILD.md design)"
+requires-python = ">=3.11"
+dependencies = ["pyarrow>=15", "huggingface_hub>=0.20"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+logtrace = "src.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--basetemp=out/tests/pytest"   # test artifacts stay under out/
