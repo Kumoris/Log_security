@@ -1,0 +1,115 @@
+{
+  "all_passed": true,
+  "check_count": 26,
+  "checks": [
+    {
+      "check": "terminal_execution_success_and_frozen_sources_unchanged",
+      "passed": true
+    },
+    {
+      "check": "report_uses_recorded_v049_implementation",
+      "passed": true
+    },
+    {
+      "check": "frozen_module_hashes_still_match",
+      "passed": true
+    },
+    {
+      "check": "single_bounded_attempt",
+      "passed": true
+    },
+    {
+      "check": "exact_prior_alias_set",
+      "passed": true
+    },
+    {
+      "check": "exact_98_unique_alias_ids",
+      "passed": true
+    },
+    {
+      "check": "prior_source_relationship",
+      "passed": true
+    },
+    {
+      "check": "evidence_hash_and_count",
+      "passed": true
+    },
+    {
+      "check": "coverage_all_source_tables",
+      "passed": true
+    },
+    {
+      "check": "source_row_denominator",
+      "passed": true
+    },
+    {
+      "check": "string_column_and_cell_denominators",
+      "passed": true
+    },
+    {
+      "check": "visited_rows_partition_and_gap_boundary",
+      "passed": true
+    },
+    {
+      "check": "all_fields_cover_same_committed_row_prefix",
+      "passed": true
+    },
+    {
+      "check": "per_field_null_empty_nonempty_partition",
+      "passed": true
+    },
+    {
+      "check": "global_null_empty_nonempty_partition",
+      "passed": true
+    },
+    {
+      "check": "field_stats_equal_global_counts",
+      "passed": true
+    },
+    {
+      "check": "logical_rows_and_cells_match_coverage",
+      "passed": true
+    },
+    {
+      "check": "complete_counts_match_previous_frozen_full_corpus",
+      "passed": true
+    },
+    {
+      "check": "no_unexpected_evidence_fields",
+      "passed": true
+    },
+    {
+      "check": "evidence_coordinates_and_fixed_alias_types",
+      "passed": true
+    },
+    {
+      "check": "quality_and_alias_counts",
+      "passed": true
+    },
+    {
+      "check": "prior_json_overlap_counts",
+      "passed": true
+    },
+    {
+      "check": "bounded_purposive_baseline_counts",
+      "passed": true
+    },
+    {
+      "check": "baseline_expected_type_counts",
+      "passed": true
+    },
+    {
+      "check": "review_and_confirmation_boundaries",
+      "passed": true
+    },
+    {
+      "check": "no_exported_values_or_new_sensitive_type_claim",
+      "passed": true
+    }
+  ],
+  "report_sha256": "6e3bcbcc84b831f3b957ecc6774a595c2fe5e3bbf9a5662d5e79f4c3399a0c4a",
+  "execution_sha256": "592136c0959c32a3495d869f3bbd1ccdc15d4a31d16322e2e3150637df9fa88c",
+  "evidence_records": 28,
+  "raw_source_values_read_for_verification": false,
+  "frozen_source_modules": 37
+}

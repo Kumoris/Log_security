@@ -1,0 +1,33 @@
+{
+  "version": "swechat-screening-1",
+  "seed": 20260912,
+  "comparison_strategy": "first_parent",
+  "scope": "modified_files_complete_before_after",
+  "scope_classes": [
+    "application_or_unknown",
+    "test",
+    "example",
+    "generated_or_vendor",
+    "development_tool",
+    "unknown"
+  ],
+  "max_source_bytes": 524288,
+  "max_dependency_files": 64,
+  "max_dependency_bytes": 4194304,
+  "max_case_seconds": 30,
+  "batch_case_limit": 25,
+  "sample_size": 100,
+  "evaluation_size": 24,
+  "holdout_fraction": 0.2,
+  "discovery_file_seconds": 15,
+  "dfg": {
+    "max_nodes": 200,
+    "max_chars": 24000,
+    "max_hops": 2,
+    "max_caller_hops": 2
+  },
+  "network": false,
+  "ai_review": false,
+  "target_execution": false,
+  "policy_version": "screening-policy-v1"
+}

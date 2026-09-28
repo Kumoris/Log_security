@@ -1,0 +1,109 @@
+{
+  "repository": "Kathrynhiggs21/Kova-ai-SYSTEM",
+  "list_endpoint": "https://api.github.com/repos/Kathrynhiggs21/Kova-ai-SYSTEM/pulls?state=closed&per_page=30",
+  "list_snapshot_collected_at": "2026-09-05T17:41:06.860095+00:00",
+  "list_rows_returned": 30,
+  "screened_rows": [
+    {
+      "list_rank": 1,
+      "pr_number": 95,
+      "merged": true,
+      "head_ref": "codex/non-destructive-file-status",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": true,
+      "selected": true,
+      "selection_reason": "merged_with_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 2,
+      "pr_number": 94,
+      "merged": true,
+      "head_ref": "consolidate/remove-manus-core-2026-09-01",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": false,
+      "selected": false,
+      "selection_reason": "no_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 3,
+      "pr_number": 93,
+      "merged": true,
+      "head_ref": "kova-remediation-v1",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": false,
+      "selected": false,
+      "selection_reason": "no_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 4,
+      "pr_number": 91,
+      "merged": true,
+      "head_ref": "sync/kova-canonical-repos-2026-09-01",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": false,
+      "selected": false,
+      "selection_reason": "no_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 5,
+      "pr_number": 90,
+      "merged": true,
+      "head_ref": "codex/api-owner-auth",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": true,
+      "selected": true,
+      "selection_reason": "merged_with_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 6,
+      "pr_number": 89,
+      "merged": true,
+      "head_ref": "codex/canonical-repo-registry",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": true,
+      "selected": true,
+      "selection_reason": "merged_with_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 7,
+      "pr_number": 88,
+      "merged": true,
+      "head_ref": "codex/webhook-fail-closed",
+      "platform_actor_login": "Kathrynhiggs21",
+      "platform_actor_type": "User",
+      "agent_origin_clue": true,
+      "selected": true,
+      "selection_reason": "merged_with_explicit_agent_branch_or_platform_clue"
+    },
+    {
+      "list_rank": 8,
+      "pr_number": 87,
+      "merged": true,
+      "head_ref": "codex/create-the-skill",
+      "platform_actor_login": "Codex",
+      "platform_actor_type": "Bot",
+      "agent_origin_clue": true,
+      "selected": true,
+      "selection_reason": "merged_with_explicit_agent_branch_or_platform_clue"
+    }
+  ],
+  "selected_new_prs": [
+    95,
+    90,
+    89,
+    88,
+    87
+  ],
+  "retained_prs": [
+    81
+  ],
+  "cohort": "calibration_only",
+  "total_network_requests_including_initial_list": 11,
+  "failures": []
+}

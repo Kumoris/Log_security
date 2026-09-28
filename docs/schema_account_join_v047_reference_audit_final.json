@@ -1,0 +1,224 @@
+{
+  "started_utc": "2026-09-08T23:00:13.513941+00:00",
+  "ended_utc": "2026-09-08T23:00:13.603186+00:00",
+  "source_path": "agentlog_unified/src/agentlog_unified/schema_scan.py",
+  "source_sha256_before": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+  "source_sha256_after": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+  "scope": "synthetic Parquet reference-quality and frozen-input checks; no real dataset values read",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "whitespace_only_exact_coverage",
+      "passed": true
+    },
+    {
+      "name": "whitespace_only_unresolved_untyped",
+      "passed": true
+    },
+    {
+      "name": "whitespace_only_pending_low",
+      "passed": true
+    },
+    {
+      "name": "whitespace_no_candidate",
+      "passed": true
+    },
+    {
+      "name": "example_and_invalid_only_exact_coverage",
+      "passed": true
+    },
+    {
+      "name": "example_and_invalid_only_unresolved_untyped",
+      "passed": true
+    },
+    {
+      "name": "example_and_invalid_only_pending_low",
+      "passed": true
+    },
+    {
+      "name": "example_invalid_never_promoted_by_membership",
+      "passed": true
+    },
+    {
+      "name": "partial_valid_reference_exact_coverage",
+      "passed": true
+    },
+    {
+      "name": "partial_valid_reference_unresolved_untyped",
+      "passed": true
+    },
+    {
+      "name": "partial_valid_reference_pending_low",
+      "passed": true
+    },
+    {
+      "name": "partial_reference_keeps_positive_evidence",
+      "passed": true
+    },
+    {
+      "name": "no_reference_tables_exact_coverage",
+      "passed": true
+    },
+    {
+      "name": "no_reference_tables_unresolved_untyped",
+      "passed": true
+    },
+    {
+      "name": "no_reference_tables_pending_low",
+      "passed": true
+    },
+    {
+      "name": "missing_references_not_silent_negative",
+      "passed": true
+    },
+    {
+      "name": "literal_exactness_exact_coverage",
+      "passed": true
+    },
+    {
+      "name": "literal_exactness_unresolved_untyped",
+      "passed": true
+    },
+    {
+      "name": "literal_exactness_pending_low",
+      "passed": true
+    },
+    {
+      "name": "exact_no_normalization",
+      "passed": true
+    },
+    {
+      "name": "empty_reference_values_exact_coverage",
+      "passed": true
+    },
+    {
+      "name": "empty_reference_values_unresolved_untyped",
+      "passed": true
+    },
+    {
+      "name": "empty_reference_values_pending_low",
+      "passed": true
+    },
+    {
+      "name": "empty_references_explicit",
+      "passed": true
+    },
+    {
+      "name": "declared_missing_reference_file_fails_before_output",
+      "passed": true
+    },
+    {
+      "name": "changed_reference_resume_rejected_before_progress",
+      "passed": true
+    },
+    {
+      "name": "adding_previously_missing_reference_requires_new_run",
+      "passed": true
+    },
+    {
+      "name": "schema_source_unchanged",
+      "passed": true
+    }
+  ],
+  "probes": [
+    {
+      "name": "whitespace_only",
+      "target_cells": 4,
+      "reference_coverage_status": "complete",
+      "reference_cells_decoded": 4,
+      "distinct_nonempty_reference_strings": 2,
+      "target_quality_counts": {
+        "empty": 3,
+        "unresolved": 1
+      },
+      "reasons": [
+        "account_login_not_found_in_frozen_references",
+        "empty_or_whitespace_text"
+      ]
+    },
+    {
+      "name": "example_and_invalid_only",
+      "target_cells": 4,
+      "reference_coverage_status": "complete",
+      "reference_cells_decoded": 3,
+      "distinct_nonempty_reference_strings": 3,
+      "target_quality_counts": {
+        "placeholder_or_example": 1,
+        "invalid": 2,
+        "unresolved": 1
+      },
+      "reasons": [
+        "account_login_not_found_in_frozen_references",
+        "control_characters_in_metadata",
+        "example_shaped_metadata_not_validated",
+        "structured_metadata_requires_interpretation"
+      ]
+    },
+    {
+      "name": "partial_valid_reference",
+      "target_cells": 2,
+      "reference_coverage_status": "partial",
+      "reference_cells_decoded": 1,
+      "distinct_nonempty_reference_strings": 1,
+      "target_quality_counts": {
+        "schema_context_candidate": 1,
+        "unresolved": 1
+      },
+      "reasons": [
+        "account_reference_sources_unavailable_or_incomplete",
+        "exact_frozen_account_login_match"
+      ]
+    },
+    {
+      "name": "no_reference_tables",
+      "target_cells": 1,
+      "reference_coverage_status": "unavailable",
+      "reference_cells_decoded": 0,
+      "distinct_nonempty_reference_strings": 0,
+      "target_quality_counts": {
+        "unresolved": 1
+      },
+      "reasons": [
+        "account_reference_sources_unavailable_or_incomplete"
+      ]
+    },
+    {
+      "name": "literal_exactness",
+      "target_cells": 7,
+      "reference_coverage_status": "complete",
+      "reference_cells_decoded": 4,
+      "distinct_nonempty_reference_strings": 3,
+      "target_quality_counts": {
+        "schema_context_candidate": 2,
+        "unresolved": 5
+      },
+      "reasons": [
+        "account_login_not_found_in_frozen_references",
+        "exact_frozen_account_login_match"
+      ]
+    },
+    {
+      "name": "empty_reference_values",
+      "target_cells": 1,
+      "reference_coverage_status": "empty",
+      "reference_cells_decoded": 4,
+      "distinct_nonempty_reference_strings": 0,
+      "target_quality_counts": {
+        "unresolved": 1
+      },
+      "reasons": [
+        "account_reference_contains_no_values"
+      ]
+    }
+  ],
+  "interpretation": [
+    "reference_coverage.status complete means declared reference tables were fully read, not that all their cells are valid account values.",
+    "distinct_nonempty_reference_strings includes raw whitespace/example/invalid strings; it is not a valid-account count.",
+    "The target existing quality gate rejects whitespace, examples and invalid structure/control values before exact membership can emit a candidate.",
+    "A known exact match in an available reference remains positive evidence even when another reference table is missing; unmatched values remain unresolved.",
+    "Literal null strings are not Arrow null; existing 27-role quality semantics are preserved."
+  ],
+  "code_changed": false,
+  "real_dataset_scan_run": false,
+  "raw_values_or_value_hashes_exported": false
+}

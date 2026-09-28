@@ -1,0 +1,16 @@
+{
+  "all_passed": true,
+  "check_count": 9,
+  "checks": {
+    "terminal_exit_0": true,
+    "source_unchanged": true,
+    "14_records_11_cells": true,
+    "evidence_sha_match": true,
+    "role_counts_match": true,
+    "same_span_count_match": true,
+    "same_cell_count_match": true,
+    "pending_unconfirmed": true,
+    "scope_no_values": true
+  },
+  "source_values_read_for_verification": false
+}

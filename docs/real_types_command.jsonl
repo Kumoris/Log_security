@@ -1,0 +1,9 @@
+{"stage": "ingest", "status": "complete", "counts": {"records": 6}}
+{"stage": "collect", "status": "complete", "counts": {"repositories": 1, "gaps": 0}}
+{"stage": "mine", "status": "complete", "counts": {"commits": 54, "file_changes": 298}}
+{"stage": "detect", "status": "complete", "counts": {"log_events": 92, "snapshots": 56, "dependency_edges": 20520}}
+{"stage": "trace", "status": "complete", "counts": {"log_changes": 44, "followups": 1, "provenance": 44, "target_branch_integration_events": 44}}
+{"stage": "assess", "status": "complete", "counts": {"candidates": 44}}
+{"stage": "reverse", "status": "complete", "counts": {"reverse_candidates": 0, "commits_scanned": 13, "keyword_matches": 0, "pydriller_szz_calls": 0}}
+{"stage": "export", "status": "complete", "counts": {"machine_only": true}}
+{"run_id": "real-types-v030", "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/real-types-v030", "exit_code": 2, "coverage_gap_records": 97}

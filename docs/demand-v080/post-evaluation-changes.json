@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-09-09T15:03:23.295791+00:00",
+  "comparison_status": "exploratory",
+  "changes": {
+    "semantic_demand.py": {
+      "evaluation_sha256": "a96c0147cf6bdd1ce111090f4bc9337342a2890cc8468eb94fc854e6bc1a01b5",
+      "delivery_sha256": "1e11eb7eb8b58d261456088e906e5bc258f361822da505abde3fe76ea1ce5ecb"
+    },
+    "semantic_context.py": {
+      "evaluation_sha256": "870e00eca41abe9bc78641b2da86a02afd6ae2ddd33dd3ddb5f018fb5568a99e",
+      "delivery_sha256": "dd7ce2adb7b4d5adba7f7822cb16235af9b6b653d3b36399ee562cb921961483"
+    }
+  },
+  "reasons": [
+    "Wrapper call arguments are not concrete log output expressions.",
+    "A derived count does not establish non-sensitivity of its original nested input."
+  ],
+  "original_runs_overwritten": false,
+  "model_rerun_entire_cohort": false,
+  "post_fix_live_validation_case": "1e6358e4816e012b37c54289",
+  "fresh_model_calls_for_validation": 2,
+  "rules_replay_not_new_model_experiment": true
+}

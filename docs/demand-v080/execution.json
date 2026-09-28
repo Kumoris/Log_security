@@ -1,0 +1,124 @@
+{
+  "working_directory": "/Users/lzh/Downloads/Log 研究/agentlog_unified",
+  "commands": [
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m pytest tests/test_semantic_demand.py -q",
+      "exit_code": 1,
+      "result": "initial 9 passed, 2 failed; cross-file schema binding and required config path fixed",
+      "receipt": "tool output, initial development"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python examples/build_semantic_expansion.py semantic-inputs/synthetic-demand-v080",
+      "exit_code": 0,
+      "receipt": "synthetic-build.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --input semantic-inputs/synthetic-demand-v080/input.jsonl --output semantic-runs/synthetic-demand-v080 --config semantic-inputs/demand-synthetic-scan.yaml --offline",
+      "exit_code": 0,
+      "receipt": "synthetic-scan.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m pip install --no-deps --no-build-isolation -e .",
+      "exit_code": 0,
+      "receipt": "install.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m pip check",
+      "exit_code": 0,
+      "receipt": "pip-check.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m pytest tests/test_semantic_demand.py tests/test_semantic_expansion.py tests/test_semantic_evidence.py -q",
+      "exit_code": 0,
+      "receipt": "targeted-tests-final.txt",
+      "result": "38 passed"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m pytest -q",
+      "exit_code": 0,
+      "receipt": "all-tests-final.txt",
+      "result": "764 passed in 30.99s"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/synthetic-demand-v080 --output semantic-runs/demand-smoke-v080 --config semantic-inputs/demand-smoke-v080.yaml --dry-run",
+      "exit_code": 0,
+      "receipt": "dry-run.txt",
+      "expected_failure": false
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/synthetic-demand-v080 --output semantic-runs/demand-smoke-v080 --config semantic-inputs/demand-smoke-v080.yaml --online",
+      "exit_code": 0,
+      "receipt": "model-smoke.txt",
+      "expected_failure": false
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-development-v080 --config semantic-inputs/demand-development-v080.yaml --online",
+      "exit_code": 0,
+      "receipt": "development.txt",
+      "expected_failure": false
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-development-v080-final --config semantic-inputs/demand-development-v080.yaml --online",
+      "exit_code": 0,
+      "receipt": "development-final.txt",
+      "expected_failure": false
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-offline-v080-final --config semantic-inputs/demand-development-v080.yaml --offline",
+      "exit_code": 0,
+      "receipt": "offline-final.txt",
+      "expected_failure": false
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-offline-v080-final --config semantic-inputs/demand-development-v080.yaml --offline --resume",
+      "exit_code": 0,
+      "receipt": "offline-resume.txt",
+      "expected_failure": false
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-offline-v080-final --config semantic-inputs/demand-evaluation-v080.yaml --offline --resume",
+      "exit_code": 1,
+      "receipt": "incompatible-resume.txt",
+      "expected_failure": true
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-evaluation-v080 --config semantic-inputs/demand-evaluation-v080.yaml --online",
+      "exit_code": 0,
+      "receipt": "evaluation.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-evaluation-v080 --config semantic-inputs/demand-evaluation-v080.yaml --online --resume",
+      "exit_code": 0,
+      "receipt": "evaluation-resume.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m pytest -q",
+      "exit_code": 0,
+      "receipt": "all-tests-delivery.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-post-fix-v080 --config semantic-inputs/demand-post-fix-v080.yaml --online",
+      "exit_code": 0,
+      "receipt": "post-fix-model.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-post-fix-v080 --config semantic-inputs/demand-post-fix-v080.yaml --online --resume",
+      "exit_code": 0,
+      "receipt": "post-fix-resume.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-demand --input semantic-runs/real-v070-final --output semantic-runs/demand-post-fix-offline-v080 --config semantic-inputs/demand-post-fix-v080.yaml --offline",
+      "exit_code": 0,
+      "receipt": "offline-delivery.txt"
+    },
+    {
+      "command": "../agent_log_privacy/.venv/bin/python examples/report_semantic_demand.py",
+      "exit_code": 0,
+      "receipt": "aggregation-delivery.txt"
+    }
+  ],
+  "incidental_setup_error": "One metadata-only selection script initially assumed an after-side typed_model case and raised StopIteration; selected a real before-side use before any model execution.",
+  "target_repository_code_executed": false,
+  "delivery_tests": "765 passed in 32.18s",
+  "evaluation_resume_note": "The evaluation resume was checked before the subsequent gate fix. Current code deliberately cannot resume an old incompatible analysis fingerprint; the post-fix run resumes successfully."
+}

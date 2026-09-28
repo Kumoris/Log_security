@@ -1,0 +1,7 @@
+{
+  "status": "dry_run",
+  "files_written": false,
+  "model_calls": 0,
+  "selected_cases": 1,
+  "exit_code": 0
+}

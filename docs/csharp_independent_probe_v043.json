@@ -1,0 +1,746 @@
+{
+  "created_utc": "2026-09-08T20:26:55.168571+00:00",
+  "detector_sha256": "8cf27c32e839b2b7a68d294cdab1fb9c694af4b583eb029b21ceb2cb7b58f555",
+  "all_checks_passed": true,
+  "probe_count": 14,
+  "method": "Independent in-process synthetic source parsing and assertions; no C# target code executed",
+  "no_raw_source_values_exported": true,
+  "probes": [
+    {
+      "case": "exception_first_placeholder",
+      "entity_count": 1,
+      "type_labels": [
+        "PII.email"
+      ],
+      "passed": true
+    },
+    {
+      "case": "event_exception_first_placeholder",
+      "entity_count": 1,
+      "type_labels": [
+        "PII.email"
+      ],
+      "passed": true
+    },
+    {
+      "case": "masked_literal",
+      "entity_count": 1,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "fixed_sensitive_looking_prose",
+      "entity_count": 1,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "escaped_placeholder",
+      "entity_count": 1,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "simple_interpolation",
+      "entity_count": 1,
+      "type_labels": [
+        "PII.email"
+      ],
+      "passed": true
+    },
+    {
+      "case": "verbatim_interpolation",
+      "entity_count": 1,
+      "type_labels": [
+        "PII.email"
+      ],
+      "passed": true
+    },
+    {
+      "case": "same_line_one_hop",
+      "entity_count": 1,
+      "type_labels": [
+        "AUTH.password"
+      ],
+      "passed": true
+    },
+    {
+      "case": "nested_scope_exclusion",
+      "entity_count": 1,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "numeric_count",
+      "entity_count": 1,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "false_receivers",
+      "entity_count": 0,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "raw_string_fake_sink",
+      "entity_count": 0,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "method_reference_only",
+      "entity_count": 0,
+      "type_labels": [],
+      "passed": true
+    },
+    {
+      "case": "dynamic_const_template_retained_unknown",
+      "entity_count": 1,
+      "type_labels": [],
+      "passed": true
+    }
+  ],
+  "documented_limits": [
+    "Constant-bound dynamic message templates remain unknown rather than classified using unobserved formatting semantics.",
+    "Generic exception variable names such as ex remain source references; no exception carrier type is inferred without further evidence."
+  ],
+  "final_source_verification": {
+    "created_utc": "2026-09-08T20:40:48.212700+00:00",
+    "detector_sha256": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "source_sha256_before": {
+      "__init__.py": "f2db562d5bfd29f552ab858b3b653546f78c7985b1b2278066d8521022d1c279",
+      "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+      "aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+      "analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+      "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+      "cli.py": "b6ff11bd9d2db9a1dc29a6039d746433dd4626e4fa0b4950a5875ef47108792f",
+      "config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+      "corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+      "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+      "discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+      "export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+      "extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+      "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+      "github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+      "ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+      "lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+      "matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+      "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+      "object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+      "provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+      "repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+      "reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+      "review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+      "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+      "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+      "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+      "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+    },
+    "source_sha256_after": {
+      "__init__.py": "f2db562d5bfd29f552ab858b3b653546f78c7985b1b2278066d8521022d1c279",
+      "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+      "aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+      "analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+      "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+      "cli.py": "b6ff11bd9d2db9a1dc29a6039d746433dd4626e4fa0b4950a5875ef47108792f",
+      "config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+      "corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+      "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+      "discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+      "export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+      "extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+      "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+      "github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+      "ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+      "lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+      "matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+      "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+      "object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+      "provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+      "repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+      "reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+      "review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+      "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+      "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+      "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+      "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+    },
+    "source_unchanged": true,
+    "all_checks_passed": true,
+    "probe_count": 21,
+    "method": "Original 17 independent probes plus 4 valid syntax/encoding/runtime-indexing probes, no target execution",
+    "probes": [
+      {
+        "case": "exception_first_placeholder",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "event_exception_first_placeholder",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "masked_literal",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "fixed_sensitive_looking_prose",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "escaped_placeholder",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "simple_interpolation",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "verbatim_interpolation",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "same_line_one_hop",
+        "entity_count": 1,
+        "type_labels": [
+          "AUTH.password"
+        ],
+        "passed": true
+      },
+      {
+        "case": "nested_scope_exclusion",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "numeric_count",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "false_receivers",
+        "entity_count": 0,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "raw_string_fake_sink",
+        "entity_count": 0,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "method_reference_only",
+        "entity_count": 0,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "dynamic_const_template_retained_unknown",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "scoped_caught_exception_carrier",
+        "entity_count": 1,
+        "type_labels": [
+          "DIAG.exception_message"
+        ],
+        "passed": true
+      },
+      {
+        "case": "untyped_ex_stays_unknown",
+        "entity_count": 1,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "unterminated_string_fake_sink",
+        "entity_count": 0,
+        "type_labels": [],
+        "passed": true
+      },
+      {
+        "case": "bom_prefix",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "nullable_directive",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "attribute_brackets_inline",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      },
+      {
+        "case": "runtime_indexing_not_attribute",
+        "entity_count": 1,
+        "type_labels": [
+          "PII.email"
+        ],
+        "passed": true
+      }
+    ],
+    "historical_parser_fault_recheck": {
+      "source_count": 29,
+      "fatal_after_count": 0,
+      "all_prior_fatal_sources_recovered": true,
+      "sources": [
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+          "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+          "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 5
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "c6abcd5e2efa89e356e22b472dd218329db28fac",
+          "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 5
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "d605826ed7bbaa910267e8eebb92201371f6f101",
+          "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+          "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+          "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 5
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+          "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/20260308201453_AddCouponFieldsToOrder.Designer.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+          "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/20260308201453_AddCouponFieldsToOrder.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+          "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/OrderingDbContextModelSnapshot.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+          "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/20260308185447_InitialCoupons.Designer.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+          "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/20260308185447_InitialCoupons.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+          "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/CouponsDbContextModelSnapshot.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+          "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/OrderingDbContextModelSnapshot.cs",
+          "fatal_gaps_after": [],
+          "bounded_gap_reasons_after": [
+            "lexical_fallback_without_ast"
+          ],
+          "detected_log_entities_in_full_source": 0
+        }
+      ]
+    }
+  },
+  "verification_history": [
+    {
+      "created_utc": "2026-09-08T20:31:25.309295+00:00",
+      "detector_sha256": "859b10621893fba9231dfd334841195f3e4b9c735e3ccc993e71049d1e17fabf",
+      "all_checks_passed": true,
+      "probe_count": 17,
+      "method": "Rerun original 14 independent probes plus 3 final-change probes, no target execution",
+      "probes": [
+        {
+          "case": "exception_first_placeholder",
+          "entity_count": 1,
+          "type_labels": [
+            "PII.email"
+          ],
+          "passed": true
+        },
+        {
+          "case": "event_exception_first_placeholder",
+          "entity_count": 1,
+          "type_labels": [
+            "PII.email"
+          ],
+          "passed": true
+        },
+        {
+          "case": "masked_literal",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "fixed_sensitive_looking_prose",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "escaped_placeholder",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "simple_interpolation",
+          "entity_count": 1,
+          "type_labels": [
+            "PII.email"
+          ],
+          "passed": true
+        },
+        {
+          "case": "verbatim_interpolation",
+          "entity_count": 1,
+          "type_labels": [
+            "PII.email"
+          ],
+          "passed": true
+        },
+        {
+          "case": "same_line_one_hop",
+          "entity_count": 1,
+          "type_labels": [
+            "AUTH.password"
+          ],
+          "passed": true
+        },
+        {
+          "case": "nested_scope_exclusion",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "numeric_count",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "false_receivers",
+          "entity_count": 0,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "raw_string_fake_sink",
+          "entity_count": 0,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "method_reference_only",
+          "entity_count": 0,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "dynamic_const_template_retained_unknown",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "scoped_caught_exception_carrier",
+          "entity_count": 1,
+          "type_labels": [
+            "DIAG.exception_message"
+          ],
+          "passed": true
+        },
+        {
+          "case": "untyped_ex_stays_unknown",
+          "entity_count": 1,
+          "type_labels": [],
+          "passed": true
+        },
+        {
+          "case": "unterminated_string_fake_sink",
+          "entity_count": 0,
+          "type_labels": [],
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

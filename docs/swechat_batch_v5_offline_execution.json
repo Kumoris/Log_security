@@ -1,0 +1,196 @@
+{
+  "status": "terminal",
+  "attempts": [
+    {
+      "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76",
+      "argv": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "batch-mine",
+        "--output",
+        "agentlog_unified/batches/swechat-full-v5",
+        "--cache-dir",
+        "agentlog_unified/cache/batch-repos",
+        "--offline",
+        "--max-seconds",
+        "300",
+        "--resume"
+      ],
+      "start_utc": "2026-09-08T20:08:22.553759+00:00",
+      "status": "terminal",
+      "target_code_executed": false,
+      "external_paid_model_calls": 0,
+      "end_utc": "2026-09-08T20:13:53.183811+00:00",
+      "elapsed_seconds": 330.631,
+      "exit_code": 2,
+      "cli_result": {
+        "observation_scope": "dataset_commit_changes",
+        "full_history_tracing_completed": false,
+        "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+        "runtime_confirmed": false,
+        "human_review_status": "pending",
+        "taxonomy_version": "1.0.0",
+        "commit_status_counts": {
+          "blocked": 162,
+          "complete": 549,
+          "partial": 650,
+          "pending": 7336
+        },
+        "actual_extraction_metrics": {
+          "files_extracted": 8981,
+          "pydriller_commits": 1199,
+          "pydriller_diff_parsed_calls": 8981,
+          "pydriller_modified_files_calls": 1193,
+          "pydriller_repository_traversals": 1199,
+          "pydriller_source_reads": 14239,
+          "auxiliary_blob_reads": 519,
+          "log_observations": 3475,
+          "dependency_blob_read_attempts": 7041,
+          "dependency_blobs_read": 163,
+          "pydriller_git_diff_calls": 12
+        },
+        "file_analysis_status_counts": {
+          "non_code_or_unrecognized_extension": 4448,
+          "supported_language": 3980,
+          "unsupported_language": 553
+        },
+        "status": "incomplete_or_gaps",
+        "exit_code": 2,
+        "unique_dataset_commits": 8697,
+        "context_associations": 8697,
+        "input_gap_count": 0,
+        "record_counts": {
+          "comparisons": 1205,
+          "file_audit": 8981,
+          "gaps": 7224,
+          "log_observations": 3475
+        },
+        "queue_exhausted": false,
+        "all_dataset_commits_analyzed_without_gaps": false,
+        "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+        "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+        "this_run_commits_attempted": 1361,
+        "this_run_repositories_attempted": 41,
+        "offline": true,
+        "budget_stopped": true,
+        "type_audit": {
+          "observation_scope": "dataset_commit_changes",
+          "full_history_tracing_completed": false,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "runtime_confirmed": false,
+          "new_type_status": "not_established",
+          "source_log_observations": 3475,
+          "distinct_observed_log_versions": 3313,
+          "distinct_observation_references": 3475,
+          "unknown_type_review_count": 3247,
+          "observed_category_count": 6,
+          "observed_subtype_count": 24,
+          "taxonomy_version": "1.0.0",
+          "paths": {
+            "type_occurrences.jsonl": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.jsonl",
+            "type_occurrences.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.csv",
+            "type_summary.json": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_summary.json",
+            "type_summary.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_summary.csv",
+            "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/unknown_type_review_queue.jsonl",
+            "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/unknown_type_review_queue.csv"
+          }
+        }
+      }
+    },
+    {
+      "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76",
+      "argv": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "batch-mine",
+        "--output",
+        "agentlog_unified/batches/swechat-full-v5",
+        "--cache-dir",
+        "agentlog_unified/cache/batch-repos",
+        "--offline",
+        "--max-seconds",
+        "300",
+        "--resume"
+      ],
+      "start_utc": "2026-09-08T20:14:04.728979+00:00",
+      "status": "terminal",
+      "target_code_executed": false,
+      "external_paid_model_calls": 0,
+      "end_utc": "2026-09-08T20:15:24.210579+00:00",
+      "elapsed_seconds": 79.481,
+      "exit_code": 2,
+      "cli_result": {
+        "observation_scope": "dataset_commit_changes",
+        "full_history_tracing_completed": false,
+        "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+        "runtime_confirmed": false,
+        "human_review_status": "pending",
+        "taxonomy_version": "1.0.0",
+        "commit_status_counts": {
+          "blocked": 7401,
+          "complete": 574,
+          "partial": 722
+        },
+        "actual_extraction_metrics": {
+          "files_extracted": 9227,
+          "pydriller_commits": 1296,
+          "pydriller_diff_parsed_calls": 9227,
+          "pydriller_modified_files_calls": 1290,
+          "pydriller_repository_traversals": 1296,
+          "pydriller_source_reads": 14701,
+          "auxiliary_blob_reads": 519,
+          "log_observations": 3564,
+          "dependency_blob_read_attempts": 9673,
+          "dependency_blobs_read": 163,
+          "pydriller_git_diff_calls": 12
+        },
+        "file_analysis_status_counts": {
+          "non_code_or_unrecognized_extension": 4546,
+          "supported_language": 4128,
+          "unsupported_language": 553
+        },
+        "status": "incomplete_or_gaps",
+        "exit_code": 2,
+        "unique_dataset_commits": 8697,
+        "context_associations": 8697,
+        "input_gap_count": 0,
+        "record_counts": {
+          "comparisons": 1302,
+          "file_audit": 9227,
+          "gaps": 15072,
+          "log_observations": 3564
+        },
+        "queue_exhausted": true,
+        "all_dataset_commits_analyzed_without_gaps": false,
+        "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+        "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+        "this_run_commits_attempted": 7336,
+        "this_run_repositories_attempted": 157,
+        "offline": true,
+        "budget_stopped": false,
+        "type_audit": {
+          "observation_scope": "dataset_commit_changes",
+          "full_history_tracing_completed": false,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "runtime_confirmed": false,
+          "new_type_status": "not_established",
+          "source_log_observations": 3564,
+          "distinct_observed_log_versions": 3397,
+          "distinct_observation_references": 3564,
+          "unknown_type_review_count": 3326,
+          "observed_category_count": 6,
+          "observed_subtype_count": 24,
+          "taxonomy_version": "1.0.0",
+          "paths": {
+            "type_occurrences.jsonl": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.jsonl",
+            "type_occurrences.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.csv",
+            "type_summary.json": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_summary.json",
+            "type_summary.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/type_summary.csv",
+            "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/unknown_type_review_queue.jsonl",
+            "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/swechat-full-v5/exports/unknown_type_review_queue.csv"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-08T23:30:19.817077+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "jsonl_csv_equal": true,
+    "exact_gain_keys": true,
+    "exact_evidence_records": true,
+    "all_42_catalog_labels_present": true,
+    "gain_type_sum": true,
+    "no_values_dynamic_keys_or_hmac_fields": true,
+    "pending_only": true,
+    "all_baseline_proof_conditions_passed": true,
+    "inputs_unchanged": true,
+    "evidence_hashes_match": true
+  },
+  "report_sha256": "d626d6da6b77d137dcb1f476cc38ce8fa3ba381a7fd285b68e5019d250306656",
+  "evidence_files": {
+    "aidev_structured_gain_v048_evidence.jsonl.gz": {
+      "bytes": 1413,
+      "sha256": "f7f01c2406f05c9cfa05d958e8c2bd155342fed5de3f9c226786be23386ff037"
+    },
+    "aidev_structured_gain_v048_evidence.csv.gz": {
+      "bytes": 1258,
+      "sha256": "7632ff0655558d9b9af1a1b1a6354c3c0516c1887a70719087f7511bad0ede5f"
+    }
+  },
+  "gained_cell_type_pairs": 14,
+  "unique_gained_source_cells": 12,
+  "gain_evidence_records": 18,
+  "gained_controlled_labels": 7,
+  "newly_observed_controlled_labels_relative_to_baseline": 0,
+  "source_values_decoded": false,
+  "source_code_or_tests_modified": false,
+  "count_boundary": "Cells are retained separately by original source table/column/row, including repeated dataset exports; not distinct PRs, people, secrets or confirmed defects."
+}

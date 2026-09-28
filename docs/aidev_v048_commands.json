@@ -1,0 +1,184 @@
+{
+  "recorded_utc": "2026-09-08T23:30:52.803236+00:00",
+  "dataset_scope": "aidev_only",
+  "executions": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v048_inventory_build_execution.json",
+      "sha256": "26ab6b2483866e049ca9ef11801244e69eeeec9587ab9186b4c98ef31490779e",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/build_aidev_inventory_v048.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.037442500004544854,
+      "started_at": "2026-09-08T23:28:53.434321+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v048_structured_dry_run_execution.json",
+      "sha256": "7c37b3ac5802ba051679bc070a93dbef9bb20241960770639aac00f122812c6f",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.7145666249998612,
+      "started_at": "2026-09-08T23:18:38.351307+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v048_structured_full_execution.json",
+      "sha256": "d8b035182e4a6642cf4d90599d30399f6cca38e28d2d3f1533d3f5b9fba35510",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900",
+        "--resume"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 463.7200482920016,
+      "started_at": "2026-09-08T23:19:43.311206+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v048_structured_resume_execution.json",
+      "sha256": "dc438afdc27686c197b2e507a81cc778c71a718b46c99dda60b554d2b7a45341",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900",
+        "--resume"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 8.150049791991478,
+      "started_at": "2026-09-08T23:28:24.619913+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v048_structured_smoke_execution.json",
+      "sha256": "2ad7052f13b007c1ae9c6d21834b6bfb025a97be949eb4e0f6661ec520c66d83",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900",
+        "--max-rows",
+        "1000"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 0.7733421250013635,
+      "started_at": "2026-09-08T23:19:19.274604+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v048_tests_execution.json",
+      "sha256": "5bc8020df7f8717236e00bc72a402f24ba077756aa48e9093b8648cc1091ae91",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "-m",
+        "pytest",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 30.2076522080024,
+      "started_at": "2026-09-08T23:18:38.351317+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_gain_v048_execution.json",
+      "sha256": "965d7457e778780272de2eb4a06d98dbdcceea5ef76d07976b0e4474c69454c7",
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": null,
+      "started_at": "2026-09-08T23:29:13.947916+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_gain_v048_execution_attempt01.json",
+      "sha256": "147b142e943cf1e6302975e736db6f49e8ed269a04d95e0db30e12e1aac549d3",
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": null,
+      "started_at": "2026-09-08T23:28:52.314312+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_v048_verification_execution.json",
+      "sha256": "e370d80d9002aa66bc7fc81119a1c5665230dfdfbca349641bff0b40c8b35f46",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_structured_v048.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.223728790995665,
+      "started_at": "2026-09-08T23:28:59.631984+00:00"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/structured_scan_parser_v048_test_execution.json",
+      "sha256": "ec706d34529b5649ecccdfc4469b225faaad4deaa9edb3e65ff2d17e0fa32533",
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "-m",
+        "pytest",
+        "agentlog_unified/tests/test_structured_scan.py",
+        "agentlog_unified/tests/test_structured_types.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": null,
+      "started_at": "2026-09-08T23:18:19.658479+00:00"
+    }
+  ],
+  "failed_attempt_preserved": "aidev_structured_gain_v048_execution_attempt01.json",
+  "offline_editable_install": {
+    "command": [
+      "agent_log_privacy/.venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-deps",
+      "--no-build-isolation",
+      "-e",
+      "agentlog_unified"
+    ],
+    "environment": {
+      "PIP_DISABLE_PIP_VERSION_CHECK": "1"
+    },
+    "exit_code": 0,
+    "record_source": "Tool execution earlier in this turn; no separate stdout artifact was saved."
+  },
+  "scope": "Executed commands only; the optional synthetic-v048 mode was not run."
+}

@@ -1,0 +1,68 @@
+{
+  "synthetic-delivery": {
+    "fields": 12,
+    "artifact_hashes_verified": 61,
+    "source_hashes_verified": 39,
+    "review_status": {
+      "supported": 9,
+      "ambiguous": 3
+    },
+    "review_reasons": {
+      "raw_ast_and_flow_witnesses_checked": 9,
+      "unresolved_binding": 3
+    },
+    "ablation_cases": 12,
+    "ablation_supported_counts": {
+      "name_only": 0,
+      "local_only": 6,
+      "truncated": 9,
+      "context_one_hop_reviewed": 9
+    },
+    "nonempty_unreviewed_proposals": 9,
+    "followups": 9,
+    "initial_logs": 4,
+    "unknown_provenance": 0,
+    "no_followup": 0,
+    "manifest_complete": true,
+    "private_checkpoint_mode": "0o600"
+  },
+  "aidev-pilot-final": {
+    "fields": 100,
+    "artifact_hashes_verified": 149,
+    "source_hashes_verified": 39,
+    "review_status": {
+      "ambiguous": 100
+    },
+    "review_reasons": {
+      "unresolved_binding": 29,
+      "language_binding_analysis_unavailable": 32,
+      "unsupported_expression:Await": 1,
+      "serialization_or_sanitization_effect_unverified": 1,
+      "projected_field_unresolved": 12,
+      "conditional_assignment_unresolved": 8,
+      "annotation_without_semantic_contract": 2,
+      "one_hop_disabled_or_dynamic_call:len": 7,
+      "unsupported_expression:BinOp": 5,
+      "one_hop_disabled_or_dynamic_call:PipelineConfig": 3,
+      "literal_shape_is_not_business_meaning": 2,
+      "dynamic_projection": 2,
+      "one_hop_disabled_or_dynamic_call:checkpoint_manager.get_checkpoint_path": 2,
+      "mutation_or_escape_unresolved": 1
+    },
+    "ablation_cases": 68,
+    "ablation_supported_counts": {
+      "name_only": 0,
+      "local_only": 0,
+      "truncated": 0,
+      "context_one_hop_reviewed": 0
+    },
+    "nonempty_unreviewed_proposals": 2,
+    "followups": 128,
+    "initial_logs": 669,
+    "unknown_provenance": 669,
+    "no_followup": 621,
+    "manifest_complete": true,
+    "private_checkpoint_mode": "0o600"
+  },
+  "real_cohort_frozen": true
+}

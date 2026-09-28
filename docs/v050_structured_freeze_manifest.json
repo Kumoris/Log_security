@@ -1,0 +1,16 @@
+{
+  "owned_files": {
+    "src/agentlog_unified/structured_types.py": "ad77f3ab96901925c59faa2f47d07c32919dd06b7e2b4c8070feb051a1ee09ae",
+    "tests/test_structured_types.py": "eb967ee19eff06c624d48a03869d99aff174d68216c9259713bf5f6855a79da9",
+    "tests/test_structured_parent_context.py": "83abb35142eaebab511d39cf4a8aa2d643ed8e80ee283523f7fdb29221bf9183"
+  },
+  "required_shared_dependencies": {
+    "src/agentlog_unified/taxonomy.py": "8bb74d6b21fe1b776249750b8efb3abfe5b65c476e63c1c34795ca200527269a",
+    "src/agentlog_unified/detector.py": "594040ba3ba9965c1fa3c6b0f11e7ddf978551fde262c23cdff97b4c183708ec"
+  },
+  "test_execution": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/structured_parent_v050_stage_tests_execution.json",
+  "formal_source_modified": false,
+  "real_replay_report": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/aidev_structured_parent_context_v050_replay.json",
+  "real_replay_report_sha256": "c523826ecd6deb264335a96d9fd4c9d721bdcb625104faa890e9b2a340aca407",
+  "patch_sha256": "abec1dc142e691a431881f5064a7081cfb6995245c3e52f937c9732bb8fda577"
+}

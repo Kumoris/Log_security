@@ -1,0 +1,383 @@
+{
+  "recorded_utc": "2026-09-08T22:48:29.998538+00:00",
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "check": "progress_version_and_evidence_boundary",
+      "passed": true
+    },
+    {
+      "check": "all_final_package_sources_still_match_test_record",
+      "passed": true
+    },
+    {
+      "check": "final_tests_passed",
+      "passed": true
+    },
+    {
+      "check": "actual_command_records_unchanged",
+      "passed": true
+    },
+    {
+      "check": "all_recorded_runs_finished_with_expected_status",
+      "passed": true
+    },
+    {
+      "check": "synthetic_all_seven_stages_complete",
+      "passed": true
+    },
+    {
+      "check": "actual_pydriller_reads",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:schema_exports_v046_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:swechat_advance_v046_snapshot_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:swechat_advance_v046_resume_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:aidev_reconcile_v046_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:swechat_reconcile_v046_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:swechat_repair_v046_final_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:swechat_repair_v046_retention_verification.json",
+      "passed": true
+    },
+    {
+      "check": "independent_verification:type_inventory_v046_verification.json",
+      "passed": true
+    },
+    {
+      "check": "aidev_reconciliation_boundary",
+      "passed": true
+    },
+    {
+      "check": "aidev_complete_export_manifest",
+      "passed": true
+    },
+    {
+      "check": "swechat_reconciliation_boundary",
+      "passed": true
+    },
+    {
+      "check": "swechat_complete_export_manifest",
+      "passed": true
+    },
+    {
+      "check": "advance_export_state_complete",
+      "passed": true
+    },
+    {
+      "check": "schema_all_27_selected_roles_visited",
+      "passed": true
+    },
+    {
+      "check": "exact_two_approved_old_directories_absent",
+      "passed": true
+    },
+    {
+      "check": "protected_papers_exists",
+      "passed": true
+    },
+    {
+      "check": "frozen_current_imports_exist",
+      "passed": true
+    },
+    {
+      "check": "no_pending_placeholder:README.md",
+      "passed": true
+    },
+    {
+      "check": "no_pending_placeholder:agentlog_unified/README.md",
+      "passed": true
+    },
+    {
+      "check": "no_pending_placeholder:agentlog_unified/docs/datasets_v046_report.md",
+      "passed": true
+    },
+    {
+      "check": "current_report_links_exist",
+      "passed": true
+    },
+    {
+      "check": "inventory_outputs_exist",
+      "passed": true
+    }
+  ],
+  "link_checks": [
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/datasets_v046_report.md",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/datasets_v046_report.md",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/reconciled-runs/aidev-v046/merged_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/reconciled-runs/swechat-v046/merged_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/datasets_v046_report.md",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/schema_exports_v046_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/observed_types_v046.csv",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/observed_types_v046_outside_catalog.csv",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/README.md",
+      "target": "agentlog_unified/docs/observed_types_v046_provenance.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/README.md",
+      "target": "docs/datasets_v046_report.md",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/README.md",
+      "target": "docs/datasets_v046_report.md",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/README.md",
+      "target": "docs/tests_final_v046_stdout.txt",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/README.md",
+      "target": "docs/synthetic_v046_execution.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/README.md",
+      "target": "docs/synthetic_v046_resume_execution.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "content_advance_v046_independent_review.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_advance_v046_snapshot_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "aidev_reconcile_v046_execution.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../reconciled-runs/aidev-v046/merged_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "schema_exports_v046_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "tests_final_v046_stdout.txt",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "tests_final_v046_execution.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../runs/synthetic-v046/run_manifest.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../schema-runs/aidev-v046/schema_type_summary.csv",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../schema-runs/aidev-v046/schema_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../schema-runs/swechat-v046/schema_type_summary.csv",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../schema-runs/swechat-v046/schema_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_repair_v046_retention_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_repair_v046_final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "aidev_reconcile_v046_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_advance_v046_resume_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../content-runs/swechat-v046/content_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "../reconciled-runs/swechat-v046/merged_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_reconcile_v046_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_reconcile_v046_replacements_review.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "swechat_reconcile_v046_replacement_causes.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "observed_types_v046.csv",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "observed_types_v046.jsonl",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "observed_types_v046_outside_catalog.csv",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "observed_types_v046_provenance.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "type_inventory_v046_verification.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "storage_v046_final.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "aidev_author_account_join_v046.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "schema_gap_v046_review.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "structured_format_probe_v046.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "datasets_v046_commands.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "cleanup_review_v042/deletion_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "datasets_progress.json",
+      "exists": true
+    },
+    {
+      "document": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_v046_report.md",
+      "target": "datasets_v045_report.md",
+      "exists": true
+    }
+  ],
+  "source_record_sha256": "a103cebd058168ce8c1877cb1b5c59f92c4ae5fcec2ba9135ce7292e9f51de76",
+  "verifier_sha256": {
+    "schema_exports_v046_verification.json": "772f8b3f24edcac8db14b00242f5253d9d014232c74622569b445721d29df7d3",
+    "swechat_advance_v046_snapshot_verification.json": "c0da4a2458f76fce9de6fc48d3aa3501cf2b7eccf1eb6875d9c76a45792159ef",
+    "swechat_advance_v046_resume_verification.json": "99f9f9b4b4e4417b07284965f6853c8377afd5e3cbee6a568ee66873e1ab2b99",
+    "aidev_reconcile_v046_verification.json": "95a3c200cac7700d133f9b2ba78dc0b25e9727fe26b671f45915981252d818cd",
+    "swechat_reconcile_v046_verification.json": "0d0f7e233b51429276ff9be1fef69507da3d00b2e27f8bd0c2ca15d83dad558f",
+    "swechat_repair_v046_final_verification.json": "b0a2eca7283b90dc5873486db2ba7e93e74c68654d3a82a0b44628eae1b043cd",
+    "swechat_repair_v046_retention_verification.json": "84c6328bf0db3968c4dcd61298f35c19bb0a7203fb7c3002bd870ec3b44f5929",
+    "type_inventory_v046_verification.json": "c80c0a20dc8233094ee21a2c96c93925c80d6d2dec7ec7a507f4ad4e65932b28"
+  },
+  "progress_sha256_before_delivery_flag": "958ef14251cddcd1fe67ff4ace417681b1d5b052a9b7d2cb9c76746c05cd6cbc",
+  "free_disk_gib": 1.518,
+  "limits": [
+    "This is a delivery and consistency check, not new semantic validation or evidence of runtime privacy leaks.",
+    "Large export content and source-byte validation are in the referenced independent verifiers; this final check does not repeat them.",
+    "papers existence is checked here; unchanged paper hashes were checked during the approved cleanup recorded separately."
+  ],
+  "progress_sha256_final": "2060df2c5792b316d6f4b484ed9f23897e3e5e42055d2a32ddb5cc166f8deb5b"
+}

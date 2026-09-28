@@ -1,0 +1,43 @@
+{
+  "status": "complete_with_schema_gaps",
+  "all_selected_fields_visited": true,
+  "all_dataset_values_classified": false,
+  "dataset": "aidev",
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "all_fields": 160,
+  "scalar_fields": 160,
+  "selected_fields": 17,
+  "counts": {
+    "cells_decoded": 2577531,
+    "schema_context_candidate": 2561614,
+    "placeholder_or_example": 12,
+    "null": 15892,
+    "invalid": 13
+  },
+  "candidate_range_records": 13520,
+  "review_range_records": 27023,
+  "unresolved_field_records": 143,
+  "range_count_unit": "Consecutive source rows of one table/column/quality status; counts are source cells, not people.",
+  "limitations": [
+    "Only the 27 explicit field roles can produce schema hints; remaining fields are unresolved.",
+    "Hints describe field meaning, not real-person ownership, valid credentials, confirmed sensitivity or disclosure.",
+    "Null, empty, invalid and example-shaped metadata are retained with distinct statuses and exact source-row ranges.",
+    "Unselected fields have footer null counts where available; empty/invalid counts remain unknown because values were not decoded.",
+    "No general identifier/name rule, structure parsing, Git history evidence or new taxonomy subtype is introduced."
+  ],
+  "exit_code": 2,
+  "observation_scope": "dataset_schema_context",
+  "evidence_basis": "schema_context",
+  "human_review_status": "pending",
+  "confidence": "low",
+  "runtime_confirmed": false,
+  "personal_ownership_confirmed": false,
+  "sensitivity_confirmed": false,
+  "application_log_evidence": false,
+  "new_type_status": "not_established",
+  "stop_reason": null,
+  "resumed": false,
+  "elapsed_seconds": 7.939,
+  "network_accessed": false,
+  "target_code_executed": false
+}

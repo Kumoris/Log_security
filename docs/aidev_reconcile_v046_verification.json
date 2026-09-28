@@ -1,0 +1,583 @@
+{
+  "recorded_utc": "2026-09-08T22:24:44.518310+00:00",
+  "audit_kind": "independent_readonly_streaming_reconciliation_metadata_verification",
+  "all_checks_passed": true,
+  "checks_passed": 37,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "manifest_complete_scope_and_execution",
+      "passed": true
+    },
+    {
+      "check": "manifest_coverage_fingerprint_equality",
+      "passed": true
+    },
+    {
+      "check": "all_recorded_input_file_hashes_match",
+      "passed": true,
+      "files": 10
+    },
+    {
+      "check": "all_frozen_source_file_hashes_match",
+      "passed": true,
+      "files": 18
+    },
+    {
+      "check": "all_compressed_output_hashes_and_bytes_match",
+      "passed": true,
+      "files": 14
+    },
+    {
+      "check": "current_reconcile_and_execution_fingerprints",
+      "passed": true
+    },
+    {
+      "check": "recorded_execution_sources_unchanged",
+      "passed": true
+    },
+    {
+      "check": "parent_repair_source_and_selection_ancestry",
+      "passed": true
+    },
+    {
+      "check": "original_classifier_consistent",
+      "passed": true
+    },
+    {
+      "check": "one_completed_selected_cell_exact_source",
+      "passed": true
+    },
+    {
+      "check": "repair_unique_full_identity_and_bounds",
+      "passed": true
+    },
+    {
+      "check": "parent_metadata_identity_and_span_integrity",
+      "passed": true,
+      "rows": 1488356
+    },
+    {
+      "check": "parent_sqlite_and_old_coverage_counts",
+      "passed": true
+    },
+    {
+      "check": "replacement_full_details_preserves_all_1000_parent_rows",
+      "passed": true,
+      "retained": 1000,
+      "added": 3112,
+      "removed": 0
+    },
+    {
+      "check": "merged_type_occurrences_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 1479597
+    },
+    {
+      "check": "merged_excluded_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 11871
+    },
+    {
+      "check": "all_occurrence_ids_unique_ordered_and_recomputed",
+      "passed": true
+    },
+    {
+      "check": "all_occurrence_scope_low_pending_unconfirmed",
+      "passed": true
+    },
+    {
+      "check": "all_occurrence_source_refs_and_character_spans",
+      "passed": true
+    },
+    {
+      "check": "all_parent_full_metadata_preserved_by_streaming_sha256_multisets",
+      "passed": true,
+      "parent_candidate_rows": 1476485,
+      "parent_excluded_rows": 11871
+    },
+    {
+      "check": "all_repair_full_metadata_and_provenance_preserved",
+      "passed": true,
+      "repair_rows": 4112
+    },
+    {
+      "check": "exact_provenance_origin_counts",
+      "passed": true,
+      "counts": [
+        {
+          "origins": [
+            "parent"
+          ],
+          "rows": 1487356
+        },
+        {
+          "origins": [
+            "parent",
+            "repair"
+          ],
+          "rows": 1000
+        },
+        {
+          "origins": [
+            "repair"
+          ],
+          "rows": 3112
+        }
+      ]
+    },
+    {
+      "check": "merged_unknown_type_review_queue_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 1114843
+    },
+    {
+      "check": "merged_type_summary_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 38
+    },
+    {
+      "check": "repair_overlay_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 1
+    },
+    {
+      "check": "reconciliation_audit_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 1000
+    },
+    {
+      "check": "repair_data_gaps_gzip_jsonl_csv_exact_parity",
+      "passed": true,
+      "rows": 0
+    },
+    {
+      "check": "unknown_parent_cells_and_ranges_exact_metadata_preserved",
+      "passed": true,
+      "records": 1114843,
+      "expanded_cells": 17362345
+    },
+    {
+      "check": "type_status_and_distinct_cell_summary_exact",
+      "passed": true
+    },
+    {
+      "check": "typed_counts_equal_parent_plus_exact_new_repair_identities",
+      "passed": true
+    },
+    {
+      "check": "replacement_overlay_exact",
+      "passed": true
+    },
+    {
+      "check": "all_1000_duplicate_audits_reference_exact_producers_and_retained_variant",
+      "passed": true
+    },
+    {
+      "check": "coverage_all_units_reconcile",
+      "passed": true
+    },
+    {
+      "check": "unknown_types_and_evidence_statuses_retained",
+      "passed": true,
+      "unknown_candidate_rows": 3243,
+      "unknown_status_counts": {
+        "identifier_reference": 2854,
+        "unknown_named_value": 389
+      }
+    },
+    {
+      "check": "all_auxiliary_exports_preserve_pending_scope",
+      "passed": true
+    },
+    {
+      "check": "completion_does_not_claim_semantic_or_log_evidence",
+      "passed": true
+    },
+    {
+      "check": "all_audited_inputs_outputs_stat_unchanged",
+      "passed": true
+    }
+  ],
+  "actual_results": {
+    "candidate_variants": 1479597,
+    "excluded_variants": 11871,
+    "retained_parent_candidates": 1476485,
+    "retained_parent_excluded": 11871,
+    "retained_selected_parent_rows": 1000,
+    "new_repair_identities": 3112,
+    "removed_parent_rows": 0,
+    "unknown_review_records": 1114843,
+    "unknown_review_cells": 17362345,
+    "unknown_candidate_rows": 3243,
+    "output_compressed_bytes": 338282278,
+    "controlled_observed_subtypes": 37,
+    "type_counts": [
+      {
+        "category": null,
+        "subtype": null,
+        "candidate_rows": 3243,
+        "status_counts": {
+          "identifier_reference": 2854,
+          "unknown_named_value": 389
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "access_token",
+        "candidate_rows": 52614,
+        "status_counts": {
+          "named_value_candidate": 23530,
+          "identifier_reference": 25938,
+          "literal_candidate": 3146
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "api_key",
+        "candidate_rows": 24775,
+        "status_counts": {
+          "identifier_reference": 11766,
+          "named_value_candidate": 12900,
+          "literal_candidate": 109
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "auth_cookie",
+        "candidate_rows": 7186,
+        "status_counts": {
+          "named_value_candidate": 2716,
+          "identifier_reference": 4470
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "authorization_header",
+        "candidate_rows": 9472,
+        "status_counts": {
+          "identifier_reference": 5387,
+          "named_value_candidate": 3476,
+          "literal_candidate": 609
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "credential_bundle",
+        "candidate_rows": 28734,
+        "status_counts": {
+          "named_value_candidate": 10564,
+          "literal_candidate": 4448,
+          "identifier_reference": 13722
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "password",
+        "candidate_rows": 12027,
+        "status_counts": {
+          "identifier_reference": 5500,
+          "named_value_candidate": 6527
+        }
+      },
+      {
+        "category": "AUTH",
+        "subtype": "private_key",
+        "candidate_rows": 1694,
+        "status_counts": {
+          "identifier_reference": 756,
+          "named_value_candidate": 852,
+          "literal_candidate": 86
+        }
+      },
+      {
+        "category": "BIZ",
+        "subtype": "business_object",
+        "candidate_rows": 157706,
+        "status_counts": {
+          "identifier_reference": 79669,
+          "carrier_candidate": 78037
+        }
+      },
+      {
+        "category": "BIZ",
+        "subtype": "document_content",
+        "candidate_rows": 95499,
+        "status_counts": {
+          "identifier_reference": 35611,
+          "carrier_candidate": 59888
+        }
+      },
+      {
+        "category": "BIZ",
+        "subtype": "http_headers",
+        "candidate_rows": 41647,
+        "status_counts": {
+          "identifier_reference": 23790,
+          "carrier_candidate": 17857
+        }
+      },
+      {
+        "category": "BIZ",
+        "subtype": "message_content",
+        "candidate_rows": 1011,
+        "status_counts": {
+          "identifier_reference": 469,
+          "carrier_candidate": 542
+        }
+      },
+      {
+        "category": "BIZ",
+        "subtype": "request_body",
+        "candidate_rows": 67922,
+        "status_counts": {
+          "carrier_candidate": 34471,
+          "identifier_reference": 33451
+        }
+      },
+      {
+        "category": "BIZ",
+        "subtype": "response_body",
+        "candidate_rows": 76698,
+        "status_counts": {
+          "identifier_reference": 37362,
+          "carrier_candidate": 39336
+        }
+      },
+      {
+        "category": "CFG",
+        "subtype": "database_connection",
+        "candidate_rows": 5261,
+        "status_counts": {
+          "named_value_candidate": 2622,
+          "identifier_reference": 2639
+        }
+      },
+      {
+        "category": "CFG",
+        "subtype": "deployment_configuration",
+        "candidate_rows": 71090,
+        "status_counts": {
+          "carrier_candidate": 31414,
+          "identifier_reference": 39676
+        }
+      },
+      {
+        "category": "CFG",
+        "subtype": "environment",
+        "candidate_rows": 34830,
+        "status_counts": {
+          "carrier_candidate": 16155,
+          "identifier_reference": 18675
+        }
+      },
+      {
+        "category": "CFG",
+        "subtype": "filesystem_path",
+        "candidate_rows": 14613,
+        "status_counts": {
+          "named_value_candidate": 8369,
+          "identifier_reference": 6244
+        }
+      },
+      {
+        "category": "CFG",
+        "subtype": "internal_endpoint",
+        "candidate_rows": 161,
+        "status_counts": {
+          "named_value_candidate": 97,
+          "identifier_reference": 64
+        }
+      },
+      {
+        "category": "DIAG",
+        "subtype": "exception_message",
+        "candidate_rows": 252361,
+        "status_counts": {
+          "carrier_candidate": 148788,
+          "identifier_reference": 103573
+        }
+      },
+      {
+        "category": "DIAG",
+        "subtype": "failure_response",
+        "candidate_rows": 734,
+        "status_counts": {
+          "identifier_reference": 631,
+          "carrier_candidate": 103
+        }
+      },
+      {
+        "category": "DIAG",
+        "subtype": "stack_trace",
+        "candidate_rows": 6508,
+        "status_counts": {
+          "carrier_candidate": 3861,
+          "identifier_reference": 2647
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "biometric",
+        "candidate_rows": 36,
+        "status_counts": {
+          "named_value_candidate": 21,
+          "identifier_reference": 15
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "email",
+        "candidate_rows": 373897,
+        "status_counts": {
+          "literal_candidate": 350382,
+          "identifier_reference": 14088,
+          "named_value_candidate": 9427
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "financial",
+        "candidate_rows": 1590,
+        "status_counts": {
+          "named_value_candidate": 1012,
+          "identifier_reference": 578
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "government_identifier",
+        "candidate_rows": 609,
+        "status_counts": {
+          "named_value_candidate": 371,
+          "identifier_reference": 238
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "medical",
+        "candidate_rows": 442,
+        "status_counts": {
+          "named_value_candidate": 271,
+          "identifier_reference": 171
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "person_name",
+        "candidate_rows": 17456,
+        "status_counts": {
+          "identifier_reference": 8343,
+          "named_value_candidate": 9113
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "phone",
+        "candidate_rows": 4017,
+        "status_counts": {
+          "named_value_candidate": 2138,
+          "identifier_reference": 1879
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "postal_address",
+        "candidate_rows": 22176,
+        "status_counts": {
+          "identifier_reference": 9419,
+          "named_value_candidate": 12757
+        }
+      },
+      {
+        "category": "PII",
+        "subtype": "precise_location",
+        "candidate_rows": 841,
+        "status_counts": {
+          "named_value_candidate": 505,
+          "identifier_reference": 336
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "device_identifier",
+        "candidate_rows": 752,
+        "status_counts": {
+          "identifier_reference": 274,
+          "named_value_candidate": 478
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "network_identifier",
+        "candidate_rows": 33296,
+        "status_counts": {
+          "literal_candidate": 32115,
+          "named_value_candidate": 472,
+          "identifier_reference": 709
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "request_identifier",
+        "candidate_rows": 11283,
+        "status_counts": {
+          "identifier_reference": 5624,
+          "named_value_candidate": 5659
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "session_identifier",
+        "candidate_rows": 4900,
+        "status_counts": {
+          "named_value_candidate": 2417,
+          "identifier_reference": 2483
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "tenant_identifier",
+        "candidate_rows": 1645,
+        "status_counts": {
+          "named_value_candidate": 936,
+          "identifier_reference": 709
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "transaction_identifier",
+        "candidate_rows": 3613,
+        "status_counts": {
+          "identifier_reference": 1835,
+          "named_value_candidate": 1778
+        }
+      },
+      {
+        "category": "QID",
+        "subtype": "user_identifier",
+        "candidate_rows": 37258,
+        "status_counts": {
+          "identifier_reference": 19440,
+          "named_value_candidate": 17818
+        }
+      }
+    ]
+  },
+  "phase_elapsed_seconds": {
+    "fingerprints_complete": 4.097,
+    "parent_sqlite_complete": 40.578,
+    "merged_type_occurrences_complete": 139.693,
+    "merged_excluded_complete": 140.341,
+    "all_exports_complete": 172.357
+  },
+  "audit_script": "/private/tmp/verify_aidev_reconcile_v046.py",
+  "audit_command": "agent_log_privacy/.venv/bin/python /private/tmp/verify_aidev_reconcile_v046.py",
+  "source_text_decoded": false,
+  "source_values_printed": false,
+  "credential_values_verified": false,
+  "source_files_modified": false,
+  "original_runs_modified": false,
+  "bounded_memory_method": "Only the 4112-row repair, 1000 duplicate audit and finite counters are held. Parent/full exports are streamed. Per-cell identity sets and SHA256 multiset accumulators verify complete source metadata without copying databases.",
+  "evidence_boundary": "Pending static text observations, not unique sensitive values, people, confirmed disclosures, application-log evidence, or complete semantic detection. All source bytes were hashed; no Parquet text arrays were read."
+}

@@ -1,0 +1,78 @@
+{
+  "started_utc": "2026-09-08T23:03:48.818601+00:00",
+  "completed_utc": "2026-09-08T23:03:48.833552+00:00",
+  "elapsed_seconds": 0.014961458000470884,
+  "checks": {
+    "csv_jsonl_same_count": true,
+    "csv_jsonl_all_fields_equal": true,
+    "csv_jsonl_outside_catalog_same_count": true,
+    "csv_jsonl_outside_catalog_all_fields_equal": true,
+    "four_output_hashes_match": true,
+    "all_input_summary_hashes_match": true,
+    "builder_hash_matches": true,
+    "reused_helper_hash_matches": true,
+    "only_aidev": true,
+    "seven_independent_sources": true,
+    "294_unique_grid_rows": true,
+    "42_labels_per_source_including_zero": true,
+    "252_historical_rows_exactly_preserved": true,
+    "aidev_outside_catalog_preserved": true,
+    "old_schema_excluded": true,
+    "unit_and_status_scopes_separate": true,
+    "observed_flags_follow_counts": true,
+    "label_union_recomputed": true,
+    "new_schema_source_cell_count_matches": true,
+    "pending_not_runtime_confirmed": true
+  },
+  "passed": 20,
+  "total": 20,
+  "all_checks_passed": true,
+  "grid_rows": 294,
+  "sources": 7,
+  "controlled_labels": 42,
+  "observed_label_union": 38,
+  "observed_labels_by_scope": {
+    "dataset_commit_changes": 17,
+    "dataset_text_reconciled": 37,
+    "dataset_schema_context": 1
+  },
+  "zero_grid_rows": 221,
+  "labels_zero_across_aidev_sources": [
+    [
+      "BIZ",
+      "unclassified_content"
+    ],
+    [
+      "CFG",
+      "unclassified_internal_resource"
+    ],
+    [
+      "PII",
+      "unspecified_personal_information"
+    ],
+    [
+      "QID",
+      "unspecified_linkable_identifier"
+    ]
+  ],
+  "outside_catalog_rows": 1,
+  "outside_catalog_source_counts": [
+    {
+      "source_run": "aidev-v046",
+      "scope": "dataset_text_reconciled",
+      "unit": "reconciled_candidate_identity_per_type",
+      "count": 3243
+    }
+  ],
+  "new_schema_candidate_source_cells": 3688655,
+  "provenance_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047_provenance.json",
+  "provenance_sha256": "3352aeea65044a51b04b16270045b8bee60ffe38bbebfb60f8dc6e266b5c3161",
+  "output_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047.csv": "806fd86377b1d1b821bcee59d27b5a36e568cb82b459049bfcc089a8a3679091",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047.jsonl": "ba1468d6c9eb7d87333d3d2e5705dd513dc0bca9732ad791c937915dc26fdacf",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047_outside_catalog.csv": "be713762ad3e20f7246de73e02cd76fffc2ab575c2eb565f819fe06e73d7a2ed",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047_outside_catalog.jsonl": "fd54fa7f2021469512ec62c2ed40fde72cbc67c822402bffd48197bc675954d7"
+  },
+  "raw_values_or_database_read": false,
+  "count_totals_across_scopes_computed": false
+}

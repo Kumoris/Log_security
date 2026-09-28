@@ -1,0 +1,3095 @@
+{
+  "progress": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "expected_rows": 932791,
+      "next_row": 1000,
+      "status": "partial",
+      "stats": "{\"cells_invalid_json\":11,\"cells_not_applicable\":9650,\"cells_parsed_with_semantic_gaps\":10,\"characters_seen\":2464366,\"nonempty_cells\":9671,\"null_cells\":329,\"parser_array_nodes\":10,\"parser_candidate_nodes\":5,\"parser_documents_detected\":22,\"parser_documents_invalid\":11,\"parser_documents_parsed\":11,\"parser_documents_selected\":22,\"parser_gap_records\":11,\"parser_ignored_fences\":507,\"parser_keyed_nodes\":71,\"parser_matches_emitted\":5,\"parser_nodes_visited\":94,\"parser_number_nodes\":17,\"parser_object_nodes\":30,\"parser_source_characters\":2464366,\"parser_source_characters_considered\":2464366,\"parser_string_nodes\":37,\"parser_unknown_nodes\":89,\"parser_unmapped_keys\":66,\"rows_decoded\":1000,\"text_cells_visited\":10000}"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "expected_rows": 116211,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "all_user.parquet",
+      "expected_rows": 72189,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "expected_rows": 6618,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "expected_rows": 6618,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "issue.parquet",
+      "expected_rows": 4614,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "expected_rows": 39122,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "expected_rows": 711923,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "expected_rows": 88576,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "expected_rows": 19450,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "expected_rows": 26868,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "expected_rows": 28875,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "expected_rows": 33596,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "expected_rows": 325500,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "expected_rows": 33596,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "expected_rows": 4923,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "repository.parquet",
+      "expected_rows": 2807,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    },
+    {
+      "table_path": "user.parquet",
+      "expected_rows": 1796,
+      "next_row": 0,
+      "status": "pending",
+      "stats": "{}"
+    }
+  ],
+  "documents": [
+    {
+      "id": "ad5e676133f5f8a50fa17bba",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 9,
+      "column_name": "title",
+      "document_index": 0,
+      "source_start": 0,
+      "source_end": 50,
+      "format": "whole_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "ae32b51126fd0574d431c33d",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 43,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 1257,
+      "source_end": 1417,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "0367bbcfcad972ea8b051f29",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 154,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 4908,
+      "source_end": 5045,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "521f4c2a0f24a53e319165b7",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 250,
+      "column_name": "title",
+      "document_index": 0,
+      "source_start": 0,
+      "source_end": 46,
+      "format": "whole_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "d009d410e8b6bf9a66ffed04",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 265,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 731,
+      "source_end": 811,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "81211dc9c19ba0e738b87abd",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 265,
+      "column_name": "body",
+      "document_index": 1,
+      "source_start": 827,
+      "source_end": 945,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "a7a1e02e2752a5205b58a5c9",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 282,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 1912,
+      "source_end": 2133,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "e6ae786f23d3086ade5c174c",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 317,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 668,
+      "source_end": 944,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "5bd59ff108d1f3e30277d82a",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 319,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 1087,
+      "source_end": 1252,
+      "format": "fenced_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "078f3a536474dabb490af8dd",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 367,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 266,
+      "source_end": 448,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "f17fa4b098b84d28b86d625e",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 384,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 1136,
+      "source_end": 1416,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "b2479110c24015eaf124a7d0",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 437,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 982,
+      "source_end": 1065,
+      "format": "fenced_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "4a02157aacb141e868f6a0e4",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 443,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 2490,
+      "source_end": 2824,
+      "format": "fenced_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "b24eaf6948617af83dd07382",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 508,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 238,
+      "source_end": 307,
+      "format": "fenced_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "0c28a96472c20960bfd8ed7e",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 520,
+      "column_name": "title",
+      "document_index": 0,
+      "source_start": 0,
+      "source_end": 31,
+      "format": "whole_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "9bbd3954936411f85210a17c",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 671,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 2287,
+      "source_end": 2479,
+      "format": "fenced_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "23455251727879010124db21",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 727,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 728,
+      "source_end": 940,
+      "format": "fenced_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "aae0dbceda00d36afd7da492",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 811,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 3881,
+      "source_end": 4361,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "d0fe90e69af2be9aa21c9c9d",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 839,
+      "column_name": "title",
+      "document_index": 0,
+      "source_start": 0,
+      "source_end": 3,
+      "format": "whole_json",
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "53c029de8878de31d7f9d578",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 913,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 0,
+      "source_end": 1174,
+      "format": "whole_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "b1e0a2f846695017d3e0b83f",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 922,
+      "column_name": "title",
+      "document_index": 0,
+      "source_start": 0,
+      "source_end": 59,
+      "format": "whole_json",
+      "status": "invalid_json"
+    },
+    {
+      "id": "e19607cc2555c6ae6e2d004f",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 937,
+      "column_name": "body",
+      "document_index": 0,
+      "source_start": 639,
+      "source_end": 1070,
+      "format": "fenced_json",
+      "status": "parsed_with_semantic_gaps"
+    }
+  ],
+  "matches": [
+    {
+      "id": "494686d503128d8052e9e66e",
+      "document_id": "d009d410e8b6bf9a66ffed04",
+      "category": "QID",
+      "subtype": "user_identifier",
+      "excluded": 1,
+      "details": "{\"basis\":\"json_key_hint\",\"candidate_status\":\"placeholder_or_example\",\"category\":\"QID\",\"confidence\":\"low\",\"decoded_end\":3,\"decoded_start\":0,\"document_index\":0,\"node_kind\":\"string\",\"node_path\":[0],\"rule\":\"json_key_taxonomy\",\"subtype\":\"user_identifier\",\"value_status\":\"placeholder_or_example\"}"
+    },
+    {
+      "id": "b5c17b979d7eb3aebfe9bac6",
+      "document_id": "a7a1e02e2752a5205b58a5c9",
+      "category": "CFG",
+      "subtype": "environment",
+      "excluded": 0,
+      "details": "{\"basis\":\"json_carrier_hint\",\"candidate_status\":\"carrier_candidate\",\"category\":\"CFG\",\"confidence\":\"low\",\"decoded_end\":null,\"decoded_start\":null,\"document_index\":0,\"node_kind\":\"object\",\"node_path\":[0,0,2],\"rule\":\"json_key_taxonomy\",\"subtype\":\"environment\",\"value_status\":\"opaque\"}"
+    },
+    {
+      "id": "2aaf4782b6478ba8f1e3d576",
+      "document_id": "e6ae786f23d3086ade5c174c",
+      "category": "DIAG",
+      "subtype": "exception_message",
+      "excluded": 0,
+      "details": "{\"basis\":\"json_carrier_hint\",\"candidate_status\":\"carrier_candidate\",\"category\":\"DIAG\",\"confidence\":\"low\",\"decoded_end\":null,\"decoded_start\":null,\"document_index\":0,\"node_kind\":\"object\",\"node_path\":[1],\"rule\":\"json_key_taxonomy\",\"subtype\":\"exception_message\",\"value_status\":\"opaque\"}"
+    },
+    {
+      "id": "54ca59723bd391072b14c88f",
+      "document_id": "aae0dbceda00d36afd7da492",
+      "category": "BIZ",
+      "subtype": "business_object",
+      "excluded": 0,
+      "details": "{\"basis\":\"json_carrier_hint\",\"candidate_status\":\"carrier_candidate\",\"category\":\"BIZ\",\"confidence\":\"low\",\"decoded_end\":null,\"decoded_start\":null,\"document_index\":0,\"node_kind\":\"array\",\"node_path\":[0,0],\"rule\":\"json_key_taxonomy\",\"subtype\":\"business_object\",\"value_status\":\"opaque\"}"
+    },
+    {
+      "id": "fbd82aa4c774e758a0ca43cf",
+      "document_id": "e19607cc2555c6ae6e2d004f",
+      "category": "CFG",
+      "subtype": "deployment_configuration",
+      "excluded": 0,
+      "details": "{\"basis\":\"json_carrier_hint\",\"candidate_status\":\"carrier_candidate\",\"category\":\"CFG\",\"confidence\":\"low\",\"decoded_end\":null,\"decoded_start\":null,\"document_index\":0,\"node_kind\":\"array\",\"node_path\":[2,0,0],\"rule\":\"json_key_taxonomy\",\"subtype\":\"deployment_configuration\",\"value_status\":\"opaque\"}"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b6018d4df76a6be191884f86",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 9,
+      "column_name": "title",
+      "document_id": "ad5e676133f5f8a50fa17bba",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "2154761593f34604b637210b",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 250,
+      "column_name": "title",
+      "document_id": "521f4c2a0f24a53e319165b7",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "259e83e347e40537bb7a0c7e",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 319,
+      "column_name": "body",
+      "document_id": "5bd59ff108d1f3e30277d82a",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "2fd4dee0c7b48979afff5114",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 437,
+      "column_name": "body",
+      "document_id": "b2479110c24015eaf124a7d0",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "bde29761ba14d67bc470ecf3",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 443,
+      "column_name": "body",
+      "document_id": "4a02157aacb141e868f6a0e4",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "c381b7a3a6545ef3e6f88c41",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 508,
+      "column_name": "body",
+      "document_id": "b24eaf6948617af83dd07382",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "a9559995a2217a64d1a655b4",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 520,
+      "column_name": "title",
+      "document_id": "0c28a96472c20960bfd8ed7e",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "aabf4ff48c054b9deb18ccdd",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 671,
+      "column_name": "body",
+      "document_id": "9bbd3954936411f85210a17c",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "aa59e651398b671b97e83028",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 727,
+      "column_name": "body",
+      "document_id": "23455251727879010124db21",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "61571ec8220e3969ea30b11c",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 913,
+      "column_name": "body",
+      "document_id": "53c029de8878de31d7f9d578",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    },
+    {
+      "id": "21df4393be746b81ed8e7221",
+      "table_path": "all_pull_request.parquet",
+      "source_row": 922,
+      "column_name": "title",
+      "document_id": "b1e0a2f846695017d3e0b83f",
+      "document_index": 0,
+      "node_path": "[]",
+      "reason": "invalid_json"
+    }
+  ],
+  "review_ranges": [
+    {
+      "id": "6c3a98ba7edf72ad6b8f4a31",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 1,
+      "end_row": 1,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3c4580f865b21c2e5b04c5a3",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 1,
+      "end_row": 1,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d5f2e157c6b8d425b8ec975d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 5,
+      "end_row": 7,
+      "status": "not_applicable"
+    },
+    {
+      "id": "311af691fe16112865efd3c3",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 1,
+      "end_row": 8,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c264d9263ba1ef0b42b00ae5",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 9,
+      "end_row": 9,
+      "status": "invalid_json"
+    },
+    {
+      "id": "82e4889d6441b2c6f9a75d97",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 3,
+      "end_row": 15,
+      "status": "not_applicable"
+    },
+    {
+      "id": "afc002ba6345647472912978",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 9,
+      "end_row": 15,
+      "status": "not_applicable"
+    },
+    {
+      "id": "abb5858a75cb01b4e0c4fdd1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 17,
+      "end_row": 22,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8b205dcb35805ababfded216",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 17,
+      "end_row": 22,
+      "status": "not_applicable"
+    },
+    {
+      "id": "21c29fa2c66742bddf471f6c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 24,
+      "end_row": 24,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fa035fc9336c04fc5cc786fb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 26,
+      "end_row": 26,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1c85851a6d4320b7fd5233a6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 24,
+      "end_row": 28,
+      "status": "not_applicable"
+    },
+    {
+      "id": "656e88907632fdea75afa166",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 31,
+      "end_row": 38,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f5174c307af6ff4c9ce67fb6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 1,
+      "end_row": 42,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c0a0cc1b1699f501bd85b12c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 43,
+      "end_row": 43,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "aeae2700d12d9f7c4cdaf861",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 30,
+      "end_row": 45,
+      "status": "not_applicable"
+    },
+    {
+      "id": "eef2dc6c09d9c8d205efdb4f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 40,
+      "end_row": 45,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b0950affad47ff5e83393811",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 47,
+      "end_row": 47,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4caccf210d00137984eb5291",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 47,
+      "end_row": 49,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3e2c39136ee49255781fd8cc",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 49,
+      "end_row": 49,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e28b7b06ed6200b54d458783",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 52,
+      "end_row": 68,
+      "status": "not_applicable"
+    },
+    {
+      "id": "416c3a4d91b0595d75a93468",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 52,
+      "end_row": 75,
+      "status": "not_applicable"
+    },
+    {
+      "id": "efd9a59140c07ddeacbddfd1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 70,
+      "end_row": 75,
+      "status": "not_applicable"
+    },
+    {
+      "id": "75b36cf1848584ad374d0477",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 77,
+      "end_row": 78,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2269d52caf437c8f8b2b1824",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 77,
+      "end_row": 78,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2a8390d999d7144b05257e8b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 80,
+      "end_row": 89,
+      "status": "not_applicable"
+    },
+    {
+      "id": "68df01f72edff37e67a4eede",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 80,
+      "end_row": 89,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5e34d1efe6e521c010eca96b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 91,
+      "end_row": 91,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f210393ed6795c64c90c42bc",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 91,
+      "end_row": 101,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5230bb383e98ff14bf07ab32",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 93,
+      "end_row": 101,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4a356f728a92f5e3f3a15123",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 103,
+      "end_row": 103,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f4e2d4a43ace3c4784a1a1e1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 103,
+      "end_row": 103,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7e762f9cf9264cdb9413a39c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 106,
+      "end_row": 106,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2f1a67bf96ef2ae0570940ba",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 106,
+      "end_row": 106,
+      "status": "not_applicable"
+    },
+    {
+      "id": "940c1de51441884bccc55fa8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 108,
+      "end_row": 108,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1be0b61f90b455b4835bad1c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 108,
+      "end_row": 108,
+      "status": "not_applicable"
+    },
+    {
+      "id": "013ca45ffd76a7c73c2dbb96",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 111,
+      "end_row": 111,
+      "status": "not_applicable"
+    },
+    {
+      "id": "67c90714853de8f1eca5d625",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 113,
+      "end_row": 113,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7042a9b8124e697505184996",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 111,
+      "end_row": 120,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a6c1702dbbb870c0e1d90491",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 118,
+      "end_row": 120,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2fc73f566a34a296e125e3dd",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 122,
+      "end_row": 127,
+      "status": "not_applicable"
+    },
+    {
+      "id": "03204d4740ea433c58f41e40",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 122,
+      "end_row": 127,
+      "status": "not_applicable"
+    },
+    {
+      "id": "05a12d84b589a8dfdf9701fd",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 129,
+      "end_row": 129,
+      "status": "not_applicable"
+    },
+    {
+      "id": "efd46f6ebc1d5e2ed2f17880",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 129,
+      "end_row": 130,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d4a9ce09a3bef1a119bfc855",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 142,
+      "end_row": 147,
+      "status": "not_applicable"
+    },
+    {
+      "id": "269368eb32da5f3224c78737",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 142,
+      "end_row": 147,
+      "status": "not_applicable"
+    },
+    {
+      "id": "219f52d5e97f2e33c7624486",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 149,
+      "end_row": 150,
+      "status": "not_applicable"
+    },
+    {
+      "id": "03d5a25b3c3efbf475bcd9fa",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 149,
+      "end_row": 150,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3242a8bdefd6a71fd7c95ab8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 44,
+      "end_row": 153,
+      "status": "not_applicable"
+    },
+    {
+      "id": "6894093da900efd632113ed8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 154,
+      "end_row": 154,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "8a1e0f22081c8dbe2398806b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 152,
+      "end_row": 156,
+      "status": "not_applicable"
+    },
+    {
+      "id": "6c675b81e632b466c8639948",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 158,
+      "end_row": 159,
+      "status": "not_applicable"
+    },
+    {
+      "id": "0dd0c1ba4d104c0c43b1c375",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 152,
+      "end_row": 166,
+      "status": "not_applicable"
+    },
+    {
+      "id": "89c1ff42dbb1b99b8b8849ff",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 161,
+      "end_row": 166,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a9d6ee09d4ca1755e137da7a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 168,
+      "end_row": 171,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d6c4f3cb3b2742f5f363a0e7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 168,
+      "end_row": 173,
+      "status": "not_applicable"
+    },
+    {
+      "id": "81fdc13103ba9acf8263da3b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 173,
+      "end_row": 173,
+      "status": "not_applicable"
+    },
+    {
+      "id": "df0c5cb9c70041734337ce5f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 175,
+      "end_row": 181,
+      "status": "not_applicable"
+    },
+    {
+      "id": "197d7531c50c40fa12bf54f8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 187,
+      "end_row": 188,
+      "status": "not_applicable"
+    },
+    {
+      "id": "ad01c8b837dbba60821fd77b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 190,
+      "end_row": 190,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c0b52e97ebb8c9905a9cdca2",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 192,
+      "end_row": 192,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a081dfd3da2862e1676bbb59",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 195,
+      "end_row": 195,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b9a517ff3d2d4876087c63d8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 197,
+      "end_row": 201,
+      "status": "not_applicable"
+    },
+    {
+      "id": "513e2981fcfe70590e5860b1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 203,
+      "end_row": 203,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c6af4c717edb743bdb7fd5d7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 206,
+      "end_row": 206,
+      "status": "not_applicable"
+    },
+    {
+      "id": "ec1a2e501fbefd818cdb47c2",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 209,
+      "end_row": 209,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1b0c228a061653dbb206f60d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 211,
+      "end_row": 211,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e1c6bba3bc51b64de7fc5efa",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 175,
+      "end_row": 215,
+      "status": "not_applicable"
+    },
+    {
+      "id": "42dc068dca6a455027c22560",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 213,
+      "end_row": 215,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c05fedebb7664993b8a03100",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 217,
+      "end_row": 219,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d3b4768ca222e45704f11cdc",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 217,
+      "end_row": 223,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cbbcb520339ce7a12ae1d7d7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 221,
+      "end_row": 223,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c8c1c93669c94c379b9a72b4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 225,
+      "end_row": 230,
+      "status": "not_applicable"
+    },
+    {
+      "id": "778d7911a4f8485c81c7762b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 225,
+      "end_row": 230,
+      "status": "not_applicable"
+    },
+    {
+      "id": "bbb49c148d789193752d789a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 232,
+      "end_row": 234,
+      "status": "not_applicable"
+    },
+    {
+      "id": "157946557fdae5eb947c21b1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 232,
+      "end_row": 234,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b721d797594470dcaf22a9a9",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 155,
+      "end_row": 237,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b545642ac34b7762ac13a506",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 236,
+      "end_row": 245,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7460fb04fdc72fad633cf913",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 236,
+      "end_row": 248,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2c7697d1de8bdaabd84e76a8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 247,
+      "end_row": 248,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a2bab29140f602a118f5ee79",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 10,
+      "end_row": 249,
+      "status": "not_applicable"
+    },
+    {
+      "id": "268495ebbba56cd40be23cf3",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 250,
+      "end_row": 250,
+      "status": "invalid_json"
+    },
+    {
+      "id": "0d967f5506f2b58ef9d2a8c9",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 250,
+      "end_row": 256,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9f287539a4b7301ef67d5d90",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 250,
+      "end_row": 256,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2750d3170347e900119ae324",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 258,
+      "end_row": 260,
+      "status": "not_applicable"
+    },
+    {
+      "id": "959caa10ea58e32ab6b0c6b2",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 239,
+      "end_row": 264,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9ee8faf8aee9b3b8c2244a29",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 265,
+      "end_row": 265,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "e6f64c1bf8f8472dc80d9963",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 264,
+      "end_row": 269,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e4514e8db0e884b08bce2271",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 266,
+      "end_row": 277,
+      "status": "not_applicable"
+    },
+    {
+      "id": "66c13421d5d9ba9ecf7833e9",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 271,
+      "end_row": 277,
+      "status": "not_applicable"
+    },
+    {
+      "id": "184241832814237ff456f57d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 279,
+      "end_row": 281,
+      "status": "not_applicable"
+    },
+    {
+      "id": "448a67ab20a12c240ef60f7f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 258,
+      "end_row": 281,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b86815ba0d05ef5c5bf5e6b1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 279,
+      "end_row": 281,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e70c866faad94a27692d8204",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 282,
+      "end_row": 282,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "c57487c8baa8ac7b921d0252",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 283,
+      "end_row": 294,
+      "status": "not_applicable"
+    },
+    {
+      "id": "6e9d5a2ee1682a44ba808d6b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 296,
+      "end_row": 298,
+      "status": "not_applicable"
+    },
+    {
+      "id": "10d7f9c181ffa3ba17898d02",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 300,
+      "end_row": 301,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8805cfc5ec8c3265abc458de",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 283,
+      "end_row": 316,
+      "status": "not_applicable"
+    },
+    {
+      "id": "eeba71aee3f25b08f492ed21",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 317,
+      "end_row": 317,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "8fc047c6b8ffffeff897ec16",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 318,
+      "end_row": 318,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2c8619fe7d8d8d37b3f62e9e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 319,
+      "end_row": 319,
+      "status": "invalid_json"
+    },
+    {
+      "id": "d24d2d47c75e64977f589e8f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 303,
+      "end_row": 324,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e2533808120b0949f8ec8782",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 326,
+      "end_row": 328,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f75988e39e87d66fc34d8095",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 330,
+      "end_row": 333,
+      "status": "not_applicable"
+    },
+    {
+      "id": "caa5bc8ba3eec84c6095f3e6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 283,
+      "end_row": 357,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3fc4b7766a7df7f67215afa8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 335,
+      "end_row": 357,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2203f6fe36130a816d661417",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 360,
+      "end_row": 362,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c04f53ca0ba7ae919d26005b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 364,
+      "end_row": 364,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e0764b926d19d12f14b7cfcb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 320,
+      "end_row": 366,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d624bd890e56302556b2e016",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 367,
+      "end_row": 367,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "4d1ad423d44ac70b0b5160c8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 366,
+      "end_row": 367,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9b21d31f922dafc0fe67c026",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 369,
+      "end_row": 372,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e5a147cc17b907a6d8f4ff69",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 374,
+      "end_row": 377,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7e5dbc6f36e4d3198bdc41ab",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 368,
+      "end_row": 383,
+      "status": "not_applicable"
+    },
+    {
+      "id": "319d55b944818c01f878b632",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 384,
+      "end_row": 384,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "bd95cd40390f8a20a76546f8",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 359,
+      "end_row": 392,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c851a55e9aa55af3c1ce8e4f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 379,
+      "end_row": 392,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b0864822b9d425b1acfc7591",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 394,
+      "end_row": 395,
+      "status": "not_applicable"
+    },
+    {
+      "id": "28a902472d94bcbefc952441",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 394,
+      "end_row": 395,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d249b23a9bc3a4b19b627210",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 398,
+      "end_row": 400,
+      "status": "not_applicable"
+    },
+    {
+      "id": "6247ab3f0eef56bfd1327f1f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 402,
+      "end_row": 402,
+      "status": "not_applicable"
+    },
+    {
+      "id": "93f27fc342c25c5754953865",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 398,
+      "end_row": 404,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c98e6dbd44b7b269bcc6badb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 404,
+      "end_row": 404,
+      "status": "not_applicable"
+    },
+    {
+      "id": "40908da97636d40d1eb37e29",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 406,
+      "end_row": 406,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d8c98dcc5825f58d1798ee4e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 408,
+      "end_row": 410,
+      "status": "not_applicable"
+    },
+    {
+      "id": "bd6b97a2d40885b88731b288",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 408,
+      "end_row": 414,
+      "status": "not_applicable"
+    },
+    {
+      "id": "60f975664169be9d4b957f3f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 412,
+      "end_row": 414,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4e62561706184cefe446a3d6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 416,
+      "end_row": 417,
+      "status": "not_applicable"
+    },
+    {
+      "id": "285229fc618c86d422285aa6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 416,
+      "end_row": 417,
+      "status": "not_applicable"
+    },
+    {
+      "id": "58c69209c5db37a7949f0f13",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 419,
+      "end_row": 420,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7ddd69d3b8b4fc07f61f89c2",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 419,
+      "end_row": 420,
+      "status": "not_applicable"
+    },
+    {
+      "id": "79dac4b6ecfcdfc7b03e9215",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 422,
+      "end_row": 422,
+      "status": "not_applicable"
+    },
+    {
+      "id": "380783c72e130f6b9bd13c7d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 424,
+      "end_row": 424,
+      "status": "not_applicable"
+    },
+    {
+      "id": "ea8a357044a7be4e3d64458e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 424,
+      "end_row": 424,
+      "status": "not_applicable"
+    },
+    {
+      "id": "14400dc62d25c6c58e099b73",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 426,
+      "end_row": 427,
+      "status": "not_applicable"
+    },
+    {
+      "id": "ee2e2aa9b8c70d5e7d776a57",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 426,
+      "end_row": 427,
+      "status": "not_applicable"
+    },
+    {
+      "id": "96f017480e22f91ef26dca74",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 385,
+      "end_row": 436,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d3352df856eb887e4865af3a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 437,
+      "end_row": 437,
+      "status": "invalid_json"
+    },
+    {
+      "id": "171c4231d50ad1b7e99254b4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 429,
+      "end_row": 438,
+      "status": "not_applicable"
+    },
+    {
+      "id": "0720d906854bccb17103d2dc",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 438,
+      "end_row": 442,
+      "status": "not_applicable"
+    },
+    {
+      "id": "918e0b33b854a9ae2db52074",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 443,
+      "end_row": 443,
+      "status": "invalid_json"
+    },
+    {
+      "id": "5a201339902c311a3f7eeacb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 440,
+      "end_row": 447,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e8a44b396cca4b6c120dfa09",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 450,
+      "end_row": 466,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3937fdafbf163775d5b70859",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 468,
+      "end_row": 473,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cd257d69a82a44f03994243e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 429,
+      "end_row": 477,
+      "status": "not_applicable"
+    },
+    {
+      "id": "89e627c63ec42fc325bdf14d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 476,
+      "end_row": 477,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8903e6dd519134d93e006394",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 480,
+      "end_row": 486,
+      "status": "not_applicable"
+    },
+    {
+      "id": "aa8ae2544ce693c6f2e2a33d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 488,
+      "end_row": 490,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2dd90af0fac35f44e329a7d0",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 444,
+      "end_row": 507,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fb43f8c03af225d939171105",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 508,
+      "end_row": 508,
+      "status": "invalid_json"
+    },
+    {
+      "id": "1e07d3c3f6492a267eac2b02",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 251,
+      "end_row": 519,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cc241105641d664e9ebafcfb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 520,
+      "end_row": 520,
+      "status": "invalid_json"
+    },
+    {
+      "id": "f50f313238434fd7dc78e0ad",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 479,
+      "end_row": 530,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a2cdef1287c2fc686287f2f7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 492,
+      "end_row": 530,
+      "status": "not_applicable"
+    },
+    {
+      "id": "ea1363aaebce2f89842f4ef5",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 533,
+      "end_row": 534,
+      "status": "not_applicable"
+    },
+    {
+      "id": "40516f19a0e82dd9db7c6b08",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 536,
+      "end_row": 540,
+      "status": "not_applicable"
+    },
+    {
+      "id": "114790ab4ebb6fa3e564fbf6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 532,
+      "end_row": 544,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4ed7e12b5c4bb733a975bab0",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 542,
+      "end_row": 544,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8dcfb446a20401502b73743a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 546,
+      "end_row": 547,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d8d29e609ebd1685ff120f19",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 546,
+      "end_row": 547,
+      "status": "not_applicable"
+    },
+    {
+      "id": "0c42924e402845a5e15edd4e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 549,
+      "end_row": 551,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a2da60a75652b6e5bf6471b5",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 553,
+      "end_row": 555,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9885dda520922e569dd19891",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 557,
+      "end_row": 565,
+      "status": "not_applicable"
+    },
+    {
+      "id": "78c25ec1e0821c1a7b9cdad9",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 549,
+      "end_row": 567,
+      "status": "not_applicable"
+    },
+    {
+      "id": "0035750d2bd3b09498746fd4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 569,
+      "end_row": 571,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3561ea171b78b6467128c4ed",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 573,
+      "end_row": 573,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fc2294b1116316072623eb0a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 575,
+      "end_row": 581,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5a7b5dc08d719b047a4f98bd",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 569,
+      "end_row": 583,
+      "status": "not_applicable"
+    },
+    {
+      "id": "414a8ceb502adc021257d95e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 583,
+      "end_row": 583,
+      "status": "not_applicable"
+    },
+    {
+      "id": "05568db8dbef82c783d6bc53",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 585,
+      "end_row": 585,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d6134d35f406258ffc73169b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 585,
+      "end_row": 585,
+      "status": "not_applicable"
+    },
+    {
+      "id": "aa092264d27abfcdf919d8ce",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 587,
+      "end_row": 598,
+      "status": "not_applicable"
+    },
+    {
+      "id": "394273564bfeea6e998f4e54",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 587,
+      "end_row": 598,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b58bf2a5d18bd99e4497b126",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 601,
+      "end_row": 601,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3e85a7be54c6e750354475b5",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 603,
+      "end_row": 609,
+      "status": "not_applicable"
+    },
+    {
+      "id": "eb594ff75fb9817a314b61f5",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 601,
+      "end_row": 613,
+      "status": "not_applicable"
+    },
+    {
+      "id": "88fd74576e7f828365a4e604",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 611,
+      "end_row": 613,
+      "status": "not_applicable"
+    },
+    {
+      "id": "202620ce379322664938de21",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 616,
+      "end_row": 622,
+      "status": "not_applicable"
+    },
+    {
+      "id": "41f9d9fee57c35583d6731e9",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 616,
+      "end_row": 622,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cfe24dfb447474f563d659ff",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 624,
+      "end_row": 632,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3afb868c723665845970732b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 624,
+      "end_row": 639,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5753e61ab8c7a55f019264cb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 635,
+      "end_row": 639,
+      "status": "not_applicable"
+    },
+    {
+      "id": "afe2c39d6383b4f4e13f1d16",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 641,
+      "end_row": 644,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b58ef2ac9b77ee524e30b41e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 641,
+      "end_row": 644,
+      "status": "not_applicable"
+    },
+    {
+      "id": "6c832af6eabc2773a66b51c1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 646,
+      "end_row": 646,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7bae2051214bbb9f8527cfee",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 648,
+      "end_row": 654,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b06e6f4d2b594597e51f634a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 656,
+      "end_row": 656,
+      "status": "not_applicable"
+    },
+    {
+      "id": "acc9baf08e58b6faed7c00d5",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 509,
+      "end_row": 670,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8c3e7a0a46d0b99fc42bf88a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 646,
+      "end_row": 670,
+      "status": "not_applicable"
+    },
+    {
+      "id": "878e30175b6f463c564d909a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 658,
+      "end_row": 670,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5af07e3c28565d1e32ce65ff",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 671,
+      "end_row": 671,
+      "status": "invalid_json"
+    },
+    {
+      "id": "d71821e4bf7b5bb2b3f0862d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 672,
+      "end_row": 672,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e8e8d7d48c6fbb4141d92709",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 674,
+      "end_row": 693,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fe100558de1ced1ade7a9a56",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 698,
+      "end_row": 703,
+      "status": "not_applicable"
+    },
+    {
+      "id": "13b45d7ca8deb0f8f34dac3c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 705,
+      "end_row": 705,
+      "status": "not_applicable"
+    },
+    {
+      "id": "85953502748932ead73df03f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 707,
+      "end_row": 712,
+      "status": "not_applicable"
+    },
+    {
+      "id": "40a61cd953154567cf8eb0f4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 714,
+      "end_row": 721,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7e375320d5ab6d2eab80425d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 672,
+      "end_row": 726,
+      "status": "not_applicable"
+    },
+    {
+      "id": "590a95d087dc7d172271680e",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 727,
+      "end_row": 727,
+      "status": "invalid_json"
+    },
+    {
+      "id": "9e8f92076afe91f5a8790853",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 672,
+      "end_row": 732,
+      "status": "not_applicable"
+    },
+    {
+      "id": "797152afea810e44216ba5d6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 723,
+      "end_row": 732,
+      "status": "not_applicable"
+    },
+    {
+      "id": "78056b61cdc5c48fdd76ce07",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 737,
+      "end_row": 737,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fb6b714553dc6a862045ccb2",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 740,
+      "end_row": 740,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3f9f4fa7e14066f8749f54d1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 734,
+      "end_row": 748,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d22b730e55e0842460d23128",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 743,
+      "end_row": 748,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cd9f0ad6dbe35d1e41cbbc87",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 750,
+      "end_row": 751,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e0f44a4db9620c26e3ddf5fc",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 750,
+      "end_row": 756,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5db003249ba7b692bc1a7b72",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 753,
+      "end_row": 756,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9618cf3a8e8dda8bdb87eefd",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 758,
+      "end_row": 759,
+      "status": "not_applicable"
+    },
+    {
+      "id": "ed72b3d12235aadfe46b5a11",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 758,
+      "end_row": 759,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5dc20985cf260424dedef735",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 761,
+      "end_row": 766,
+      "status": "not_applicable"
+    },
+    {
+      "id": "3ce6a85fa060c23c33cca552",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 761,
+      "end_row": 766,
+      "status": "not_applicable"
+    },
+    {
+      "id": "df96c2471dad08c7ebb84ae6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 768,
+      "end_row": 780,
+      "status": "not_applicable"
+    },
+    {
+      "id": "74af460df295e3a0d7965aa4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 768,
+      "end_row": 780,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e0af62afe3ab30b036da63fb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 782,
+      "end_row": 782,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c54a6411b6e566b1f447c896",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 782,
+      "end_row": 782,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cfbc7830dadd7d84917c41db",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 785,
+      "end_row": 785,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a3528a3d90c8c1836fb70f9f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 785,
+      "end_row": 785,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5aa822b15b7077c757c76895",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 788,
+      "end_row": 788,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e6f8cdfcc1deaa4f8a19ca8f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 787,
+      "end_row": 793,
+      "status": "not_applicable"
+    },
+    {
+      "id": "19305d463ba29c26f8dd5ee3",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 790,
+      "end_row": 793,
+      "status": "not_applicable"
+    },
+    {
+      "id": "61f1ff44fcc1592da6eee706",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 795,
+      "end_row": 800,
+      "status": "not_applicable"
+    },
+    {
+      "id": "eaeaba948934b04c1abfe493",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 795,
+      "end_row": 800,
+      "status": "not_applicable"
+    },
+    {
+      "id": "44872c0fda53e6392916dc62",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 802,
+      "end_row": 803,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5b1543a537c0bd5199300e25",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 802,
+      "end_row": 803,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e6a6e0e5a1d84487c8e450a7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 806,
+      "end_row": 809,
+      "status": "not_applicable"
+    },
+    {
+      "id": "d43672db46d2b47335029997",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 728,
+      "end_row": 810,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9ae8ead0bfeec08e05815f53",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 811,
+      "end_row": 811,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "17d1992ce27308eabbcb601d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 811,
+      "end_row": 825,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b4e5da067f02555f51980641",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 806,
+      "end_row": 826,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f3ab6339b8c491224dcc4782",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 829,
+      "end_row": 833,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1401594ccfbc3bb7bcfadbca",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 829,
+      "end_row": 833,
+      "status": "not_applicable"
+    },
+    {
+      "id": "bffa28a0810d00a9ed8779be",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 521,
+      "end_row": 838,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c84f594b0fdbd3754641ba92",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 839,
+      "end_row": 839,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "9a6f31e36ae1a207b9e3426d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 835,
+      "end_row": 841,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b2e09b08e73fb943e4411685",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 835,
+      "end_row": 841,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b4ab5bae1a045420737ece6f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 843,
+      "end_row": 843,
+      "status": "not_applicable"
+    },
+    {
+      "id": "c2efa77f70db16477f402691",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 843,
+      "end_row": 843,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5a926da01c8de8810defda44",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 846,
+      "end_row": 846,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9ab20e5ef37840955aa2680f",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 848,
+      "end_row": 850,
+      "status": "not_applicable"
+    },
+    {
+      "id": "14a90188e313b5b45779fe99",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 852,
+      "end_row": 865,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4644f445ac9dede28aa9846c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 867,
+      "end_row": 868,
+      "status": "not_applicable"
+    },
+    {
+      "id": "56d9779ea46a8da23ca0c1fe",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 875,
+      "end_row": 885,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1315afe8dcc38882523b64c7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 887,
+      "end_row": 891,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f0ba2555023d4873ae090e5d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 894,
+      "end_row": 898,
+      "status": "not_applicable"
+    },
+    {
+      "id": "eb9abdca3af367283e303327",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 901,
+      "end_row": 907,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b3a17138e07e5f62feaa3eef",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 846,
+      "end_row": 909,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4b20924f170f168c14764dc4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 909,
+      "end_row": 909,
+      "status": "not_applicable"
+    },
+    {
+      "id": "387f8a10f9315298b443d3d7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 812,
+      "end_row": 912,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f6dc0375cd297666e6732b7d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 913,
+      "end_row": 913,
+      "status": "invalid_json"
+    },
+    {
+      "id": "4b97d3358fe2c770966c1d0d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 913,
+      "end_row": 915,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9beac898a5b1803b256c2624",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 911,
+      "end_row": 918,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1a64dc993da3ec1819dad4bb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 917,
+      "end_row": 918,
+      "status": "not_applicable"
+    },
+    {
+      "id": "1e9ff30641236463fbecddeb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 840,
+      "end_row": 921,
+      "status": "not_applicable"
+    },
+    {
+      "id": "f1c2d4c5330451ab131bd724",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 922,
+      "end_row": 922,
+      "status": "invalid_json"
+    },
+    {
+      "id": "30e8a7e49a8312cdf7f8aea7",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 920,
+      "end_row": 922,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fdfe2100d3c3bfd1c487a334",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 924,
+      "end_row": 925,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e845695ce6f453683407d886",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 920,
+      "end_row": 932,
+      "status": "not_applicable"
+    },
+    {
+      "id": "9bb8435b4f817a1066185ff0",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 927,
+      "end_row": 932,
+      "status": "not_applicable"
+    },
+    {
+      "id": "2f5ffe7943d09210d0553b67",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 914,
+      "end_row": 936,
+      "status": "not_applicable"
+    },
+    {
+      "id": "bbce24ffecf83a26cfdeca1b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 934,
+      "end_row": 936,
+      "status": "not_applicable"
+    },
+    {
+      "id": "b2249c91a03a6e4c6c0207f6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 934,
+      "end_row": 936,
+      "status": "not_applicable"
+    },
+    {
+      "id": "7ecbe1f86057b9b9415bf796",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 937,
+      "end_row": 937,
+      "status": "parsed_with_semantic_gaps"
+    },
+    {
+      "id": "e7944fb207fad725783b028a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 938,
+      "end_row": 939,
+      "status": "not_applicable"
+    },
+    {
+      "id": "54e6eeb2f6cb953c8dc09b68",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 938,
+      "end_row": 939,
+      "status": "not_applicable"
+    },
+    {
+      "id": "fb4155842aa5dfd6314b4de1",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 941,
+      "end_row": 947,
+      "status": "not_applicable"
+    },
+    {
+      "id": "96b786aecfea173574f665f6",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 949,
+      "end_row": 951,
+      "status": "not_applicable"
+    },
+    {
+      "id": "a34386b679236401f093a726",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 941,
+      "end_row": 953,
+      "status": "not_applicable"
+    },
+    {
+      "id": "53263897e7aed6c0f4e91835",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 953,
+      "end_row": 953,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5280fba626e9fb01446f8de4",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 955,
+      "end_row": 955,
+      "status": "not_applicable"
+    },
+    {
+      "id": "0b98171755e0e4352d276b4d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 955,
+      "end_row": 955,
+      "status": "not_applicable"
+    },
+    {
+      "id": "934cbec0074cfba889652ccc",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 957,
+      "end_row": 964,
+      "status": "not_applicable"
+    },
+    {
+      "id": "4d082fc6c921e4d0f23ed2d3",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 966,
+      "end_row": 967,
+      "status": "not_applicable"
+    },
+    {
+      "id": "492f2237a487b8e1cc8bff5b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 969,
+      "end_row": 973,
+      "status": "not_applicable"
+    },
+    {
+      "id": "187885c5532bd9c1ab0d7784",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 957,
+      "end_row": 980,
+      "status": "not_applicable"
+    },
+    {
+      "id": "35145a555d6ef365626add83",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 975,
+      "end_row": 980,
+      "status": "not_applicable"
+    },
+    {
+      "id": "e98828750cd901ed88d2006a",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 983,
+      "end_row": 993,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8726c4bb4dfb35b00ef09d04",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 983,
+      "end_row": 993,
+      "status": "not_applicable"
+    },
+    {
+      "id": "8b468f9b2c6091faf9bbc6cb",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 995,
+      "end_row": 995,
+      "status": "not_applicable"
+    },
+    {
+      "id": "757af91af2e7381fe78790a3",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "title",
+      "start_row": 923,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "bfae0fc6c05e187b2487b440",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "start_row": 939,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "90483b4ee219d26c56f0164d",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "agent",
+      "start_row": 1,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "aa49f6253339a59ac19d1b06",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "user",
+      "start_row": 1,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "6f67fd4d48799a9368158a2b",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "state",
+      "start_row": 1,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "0b737a50ea088cb83eef42ef",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "created_at",
+      "start_row": 1,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "76f6c40da4a31b00ac8a6a9c",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "closed_at",
+      "start_row": 995,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "cc639d223f6913dd983e2e68",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "merged_at",
+      "start_row": 997,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "efe0311eb16f2f4a27e8e427",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "repo_url",
+      "start_row": 1,
+      "end_row": 1000,
+      "status": "not_applicable"
+    },
+    {
+      "id": "5dc29afbe9e18b47ad60fe21",
+      "table_path": "all_pull_request.parquet",
+      "column_name": "html_url",
+      "start_row": 1,
+      "end_row": 1000,
+      "status": "not_applicable"
+    }
+  ],
+  "manifest_sha256": "81c33de87fc0dbca6db74606ca6a0e9fc71c7b5048f9df3eadc327a5f138aaca",
+  "coverage": {
+    "all_source_rows_visited": false,
+    "application_log_evidence": false,
+    "candidate_occurrences": 4,
+    "candidate_status_counts": {
+      "carrier_candidate": 4
+    },
+    "coordinates": "source_start/end delimit an original-cell document envelope; decoded_start/end are leaf-local, not original-text offsets.",
+    "count_unit": "Source cell + document + ordinal node path + decoded span + complete finite match details; overlaps earlier plain-text results, not additive.",
+    "counts": {
+      "cells_invalid_json": 11,
+      "cells_not_applicable": 9650,
+      "cells_parsed_with_semantic_gaps": 10,
+      "characters_seen": 2464366,
+      "nonempty_cells": 9671,
+      "null_cells": 329,
+      "parser_array_nodes": 10,
+      "parser_candidate_nodes": 5,
+      "parser_documents_detected": 22,
+      "parser_documents_invalid": 11,
+      "parser_documents_parsed": 11,
+      "parser_documents_selected": 22,
+      "parser_gap_records": 11,
+      "parser_ignored_fences": 507,
+      "parser_keyed_nodes": 71,
+      "parser_matches_emitted": 5,
+      "parser_nodes_visited": 94,
+      "parser_number_nodes": 17,
+      "parser_object_nodes": 30,
+      "parser_source_characters": 2464366,
+      "parser_source_characters_considered": 2464366,
+      "parser_string_nodes": 37,
+      "parser_unknown_nodes": 89,
+      "parser_unmapped_keys": 66,
+      "rows_decoded": 1000,
+      "text_cells_visited": 10000
+    },
+    "data_gap_records": 11,
+    "dataset": "aidev",
+    "document_status_counts": {
+      "invalid_json": 11,
+      "parsed_with_semantic_gaps": 11
+    },
+    "documents": 22,
+    "elapsed_seconds": 0.598,
+    "excluded_occurrences": 1,
+    "exit_code": 2,
+    "full_dataset_coverage_claim": false,
+    "human_review_status": "pending",
+    "limitations": [
+      "Only whole JSON and explicit JSON fences plus bounded JSON-string decoding are recognized.",
+      "All nonempty cells remain in the semantic review queue, including those without a supported structure.",
+      "Named field hints and literal shapes do not establish ownership, sensitivity, valid credentials, or disclosure.",
+      "Node, document, depth, text and match limits are explicit gaps; arbitrary encodings and general program semantics remain unresolved.",
+      "No source values, dynamic JSON keys or value hashes are exported; ordinal member paths retain duplicate-key evidence."
+    ],
+    "limits": {
+      "max_decode_layers": 2,
+      "max_depth": 32,
+      "max_documents": 128,
+      "max_matches": 1000,
+      "max_nodes": 10000,
+      "max_source_chars": 1048576
+    },
+    "network_accessed": false,
+    "new_type_status": "not_established",
+    "observation_scope": "dataset_structured_text",
+    "observed_controlled_labels": 4,
+    "processed_rows": 1000,
+    "resumed": false,
+    "row_count_semantics": "Committed source-row processing; Arrow batch materialization and skipped prefixes on resume can decode extra rows without reclassifying them.",
+    "rows_this_invocation": 1000,
+    "runtime_confirmed": false,
+    "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+    "source_rows": 2456073,
+    "status": "partial",
+    "stop_reason": "source_row_budget",
+    "tables": [
+      {
+        "expected_rows": 932791,
+        "next_row": 1000,
+        "stats": {
+          "cells_invalid_json": 11,
+          "cells_not_applicable": 9650,
+          "cells_parsed_with_semantic_gaps": 10,
+          "characters_seen": 2464366,
+          "nonempty_cells": 9671,
+          "null_cells": 329,
+          "parser_array_nodes": 10,
+          "parser_candidate_nodes": 5,
+          "parser_documents_detected": 22,
+          "parser_documents_invalid": 11,
+          "parser_documents_parsed": 11,
+          "parser_documents_selected": 22,
+          "parser_gap_records": 11,
+          "parser_ignored_fences": 507,
+          "parser_keyed_nodes": 71,
+          "parser_matches_emitted": 5,
+          "parser_nodes_visited": 94,
+          "parser_number_nodes": 17,
+          "parser_object_nodes": 30,
+          "parser_source_characters": 2464366,
+          "parser_source_characters_considered": 2464366,
+          "parser_string_nodes": 37,
+          "parser_unknown_nodes": 89,
+          "parser_unmapped_keys": 66,
+          "rows_decoded": 1000,
+          "text_cells_visited": 10000
+        },
+        "status": "partial",
+        "table_path": "all_pull_request.parquet"
+      },
+      {
+        "expected_rows": 116211,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "all_repository.parquet"
+      },
+      {
+        "expected_rows": 72189,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "all_user.parquet"
+      },
+      {
+        "expected_rows": 6618,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "human_pr_task_type.parquet"
+      },
+      {
+        "expected_rows": 6618,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "human_pull_request.parquet"
+      },
+      {
+        "expected_rows": 4614,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "issue.parquet"
+      },
+      {
+        "expected_rows": 39122,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_comments.parquet"
+      },
+      {
+        "expected_rows": 711923,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_commit_details.parquet"
+      },
+      {
+        "expected_rows": 88576,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_commits.parquet"
+      },
+      {
+        "expected_rows": 19450,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_review_comments.parquet"
+      },
+      {
+        "expected_rows": 26868,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_review_comments_v2.parquet"
+      },
+      {
+        "expected_rows": 28875,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_reviews.parquet"
+      },
+      {
+        "expected_rows": 33596,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_task_type.parquet"
+      },
+      {
+        "expected_rows": 325500,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pr_timeline.parquet"
+      },
+      {
+        "expected_rows": 33596,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "pull_request.parquet"
+      },
+      {
+        "expected_rows": 4923,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "related_issue.parquet"
+      },
+      {
+        "expected_rows": 2807,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "repository.parquet"
+      },
+      {
+        "expected_rows": 1796,
+        "next_row": 0,
+        "stats": {},
+        "status": "pending",
+        "table_path": "user.parquet"
+      }
+    ],
+    "target_code_executed": false,
+    "taxonomy_version": "1.0.0",
+    "unknown_review_range_records": 289,
+    "unknown_review_source_cells": 9671
+  },
+  "output_sha256": {
+    "structured_type_occurrences.jsonl.gz": "5d482fe47ff5efaebdb441f81ef2843ec7c73db476868c246d081ff8c6911ab6",
+    "structured_documents.csv.gz": "cb87522ffab594c1bd1298127c515bf16e267ddadb91eed0413c91916297adfd",
+    "structured_unknown_type_review_queue.csv.gz": "4e53fd839a6072c0adb38f35db9cced6deddb28c5a77ebb0d3fe8a83daabbe76",
+    "structured_excluded.jsonl.gz": "76055a13ba05304f0459b40df6cff3ce9134b0e28947031df85fd6c04b9c4464",
+    "structured_type_summary.jsonl.gz": "136544520eae1211b6fb9a405717e429cccb15e7a2732b2fe9691b64168a7907",
+    "structured_data_gaps.csv.gz": "9943935ee6b59a48a363597849c61285fe5916c9ce505da22f4706c21b5835b6",
+    "structured_type_summary.csv.gz": "8947eb9daf78e350270c29a43a35e31d63c968692e1887ee2bf03450883b94eb",
+    "structured_data_gaps.jsonl.gz": "f2b4f85d43d6d38cade57e81f805903b3c46f9b421c2cf7b0a837c6004b7a148",
+    "structured_unknown_type_review_queue.jsonl.gz": "a2e923076553fb17b4e6955cb22e46f2bb72e693ccb1edadfae8a33eb1db006f",
+    "structured_excluded.csv.gz": "b778e3c559145a30a3e6e55db5bf3d9d70fc2864e1a468b98d5a597569e34497",
+    "structured_documents.jsonl.gz": "7c7f81e00760d3abbb5a4b4fde974372cdb4974c94c04d84d2998ee429faacee",
+    "structured_type_occurrences.csv.gz": "298de5248c58c1d17acf3161f3ec62bcbf69ea6c0a317297126a5d2d0699c591"
+  },
+  "source_values_present": false
+}

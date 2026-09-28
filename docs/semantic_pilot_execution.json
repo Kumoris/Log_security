@@ -1,0 +1,82 @@
+{
+  "program_version": "0.6.0",
+  "date": "2026-09-09",
+  "commands": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 agent_log_privacy/.venv/bin/python -m pytest agentlog_unified/tests -q",
+      "exit_code_observed": 0,
+      "stdout": "docs/semantic_pytest-delivery.txt",
+      "stdout_sha256": "9aea6b9786967ce6851af53a419e20cc7a8746f839e0f6e84837441cafc50f2f"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --config agentlog_unified/semantic-inputs/fixed-pilot.yaml --input agentlog_unified/semantic-inputs/aidev-pilot.jsonl --output agentlog_unified/semantic-runs/aidev-pilot-final --offline --resume",
+      "exit_code_observed": 0,
+      "stdout": "docs/semantic_real-final_stdout.txt",
+      "stdout_sha256": "8af511f722b658e57bdacbf0d1449a186015075bdbe4efad75905f92a3bde57e"
+    },
+    {
+      "command": "Same final real CLI command, repeated after completion to verify frozen resume",
+      "exit_code_observed": 0,
+      "stdout": "docs/semantic_real-final-resume_stdout.txt",
+      "stdout_sha256": "9d67dc1f7b163afd3dcdafbde30a573a098003a85065468fcde45479bbcca531"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --input agentlog_unified/semantic-inputs/synthetic-v1/input.jsonl --output agentlog_unified/semantic-runs/synthetic-delivery --offline",
+      "exit_code_observed": 0,
+      "stdout": "docs/semantic_synthetic-delivery_stdout.txt",
+      "stdout_sha256": "0c7d85b633c45c7e9fbeaccd6c6252647e7818f5a8946e951ba50af3e3fa6ad9"
+    },
+    {
+      "command": "Same synthetic CLI command with --resume",
+      "exit_code_observed": 0,
+      "stdout": "docs/semantic_synthetic-delivery-resume_stdout.txt",
+      "stdout_sha256": "6690f60036b3760c56debc73c23618ba95585dfa7643234b2ddd935509aadcfc"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 agent_log_privacy/.venv/bin/python -m pip install --no-deps --no-build-isolation -e ./agentlog_unified",
+      "exit_code_observed": 0,
+      "stdout": "docs/semantic_install_stdout.txt",
+      "stdout_sha256": "1fb206f9b2b834fa34849178af13efe5eb9e1ac61af704cf55ed64f196116f24"
+    }
+  ],
+  "model_calls": 0,
+  "target_application_executed": false,
+  "human_annotations": 0,
+  "paid_api_calls": 0,
+  "remote_writes": 0,
+  "pause_resume_check": {
+    "first_run_max_seconds": 0,
+    "first_exit_code": 2,
+    "first_status": "paused",
+    "subsequent_resume_exit_code": 0,
+    "completed_resume_skipped_reprocessing": true
+  },
+  "csv_checks": {
+    "synthetic-delivery": {
+      "field_semantics": 12,
+      "independent_reviews": 12,
+      "human_annotation_template": 12,
+      "sampling_frame": 12,
+      "review_queue": 11,
+      "data_gaps": 0
+    },
+    "aidev-pilot-final": {
+      "field_semantics": 100,
+      "independent_reviews": 100,
+      "human_annotation_template": 100,
+      "sampling_frame": 781,
+      "review_queue": 100,
+      "data_gaps": 6262
+    }
+  },
+  "paper_reading": {
+    "path": "papers/2605.29442v2.pdf",
+    "sections": [
+      "3",
+      "A.2",
+      "D"
+    ],
+    "sha256": "2daedf6d2e32f37e109e221a1abb1e0493af6254663c31114fd860b067852c0b",
+    "prompts_treated_as_research_data": true
+  }
+}

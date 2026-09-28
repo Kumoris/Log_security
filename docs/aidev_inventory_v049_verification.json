@@ -1,0 +1,143 @@
+{
+  "started_utc": "2026-09-09T00:16:08.634498+00:00",
+  "completed_utc": "2026-09-09T00:16:08.651618+00:00",
+  "elapsed_seconds": 0.017058416007785127,
+  "checks": {
+    "output_sha_aidev_observed_types_v049.csv": true,
+    "output_sha_aidev_observed_types_v049.jsonl": true,
+    "output_sha_aidev_observed_types_v049_outside_catalog.csv": true,
+    "output_sha_aidev_observed_types_v049_outside_catalog.jsonl": true,
+    "all_frozen_input_hashes": true,
+    "all_old_v048_output_hashes": true,
+    "builder_and_reused_helper_hashes": true,
+    "csv_jsonl_fields": true,
+    "csv_jsonl_fields_outside_catalog": true,
+    "old336_original_fields_preserved": true,
+    "old_outside_fields_preserved": true,
+    "490_unique_rows_10_sources_49_labels": true,
+    "every_source_all49": true,
+    "aidev_only": true,
+    "row_source_provenance": true,
+    "56_not_evaluated_null_not_zero": true,
+    "evaluated_counts_and_flags": true,
+    "catalog_version_and_old_source_taxonomy": true,
+    "98_new_evaluated_rows_no_advanced_slot": true,
+    "reconciled_each_type_identity_variant_status_exact": true,
+    "reconciled_only_its_own_totals": true,
+    "structured_each_type_and_unknown_exact": true,
+    "structured_only_its_own_total": true,
+    "structured_per_type_status_unavailable_not_invented": true,
+    "outside_catalog_records_retained": true,
+    "label_union_recomputed": true,
+    "nonadditive_and_pending_boundaries": true
+  },
+  "passed": 27,
+  "total": 27,
+  "all_checks_passed": true,
+  "grid_rows": 490,
+  "independent_sources": 10,
+  "historical_rows_original_fields_preserved": 336,
+  "not_evaluated_rows": 56,
+  "evaluated_rows": 434,
+  "evaluated_zero_rows": 250,
+  "observed_catalog_type_union_count": 45,
+  "new_version_sources": [
+    {
+      "scope": "dataset_text_reconciled",
+      "source_run": "aidev-v049",
+      "unit": "reconciled_candidate_identity_per_type"
+    },
+    {
+      "scope": "dataset_structured_text",
+      "source_run": "aidev-v049",
+      "unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details"
+    }
+  ],
+  "new_controlled_types": [
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "age",
+      "count": 51
+    },
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "birth_date",
+      "count": 358
+    },
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "education",
+      "count": 8
+    },
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "employment",
+      "count": 55
+    },
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "ethnicity",
+      "count": 4
+    },
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "religious_belief",
+      "count": 50
+    },
+    {
+      "scope": "dataset_text_reconciled",
+      "subtype": "sex_gender",
+      "count": 1844
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "age",
+      "count": 0
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "birth_date",
+      "count": 9
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "education",
+      "count": 0
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "employment",
+      "count": 3
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "ethnicity",
+      "count": 0
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "religious_belief",
+      "count": 0
+    },
+    {
+      "scope": "dataset_structured_text",
+      "subtype": "sex_gender",
+      "count": 7
+    }
+  ],
+  "reconciled_candidate_identities": 1481967,
+  "reconciled_candidate_variants": 1481967,
+  "structured_candidate_occurrences": 1159,
+  "outside_rows": 4,
+  "provenance_sha256": "c86cc6a42b2fe5f61b8fa3db94bd836a098924f5e7e6c75f8d6d17f6f9948395",
+  "output_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049.csv": "7c2075dd277ed4fb4b50d46ea3ba2ebadc6b425519c6395f11d9c00129850290",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049.jsonl": "bd2875b86ccd30f4f3308280cec11846ee0442ba1bd426916e01411ad4f52c22",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049_outside_catalog.csv": "9f6b44f04e8e65963cc92a11d7bef2ee266893c4372f1d6c12f325138175919f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049_outside_catalog.jsonl": "86a534974adb006fb73c09cf549178161a56952041610d2cc6df3619a924e9d9"
+  },
+  "verifier_sha256": "79cae1531caa5a4553d5c332687cd7a3c86b1215652698ce6360f22b678d9875",
+  "source_values_or_databases_read": false,
+  "cross_scope_totals_computed": false,
+  "new_true_sensitive_type_claim": false
+}

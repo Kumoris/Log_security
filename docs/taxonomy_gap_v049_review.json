@@ -1,0 +1,894 @@
+{
+  "recorded_utc": "2026-09-08T23:40:01.707451+00:00",
+  "review_kind": "v049_taxonomy_gap_and_version_upgrade_review",
+  "taxonomy_reviewed": "1.0.0",
+  "catalog_subtypes": 42,
+  "direct_key_rules": 37,
+  "limited_literal_shape_subtypes": 7,
+  "fallback_only_subtypes": 5,
+  "actual_dataset_value_probe_by_this_agent": false,
+  "real_credentials_verified": false,
+  "new_type_confirmed": false,
+  "legal_conclusions": false,
+  "summary": "The 42-class catalog is a finite combination of sensitive types and opaque carriers, not a complete inventory of personal attributes. Birth/demographic/belief fields have genuine catalog and direct-key gaps; existing phone/financial/location types also lack general value-shape detection. Select additions only after the separate real-corpus probe, and keep named hints distinct from actual observed value shapes.",
+  "current_42_capability_matrix": [
+    {
+      "category": "AUTH",
+      "subtype": "password",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "AUTH",
+      "subtype": "access_token",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "AUTH",
+      "subtype": "api_key",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "AUTH",
+      "subtype": "private_key",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "AUTH",
+      "subtype": "auth_cookie",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "AUTH",
+      "subtype": "authorization_header",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "AUTH",
+      "subtype": "credential_bundle",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "email",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "phone",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "person_name",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "postal_address",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "government_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "medical",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "financial",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "precise_location",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "biometric",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "PII",
+      "subtype": "unspecified_personal_information",
+      "literal_shape_subset": false,
+      "named_hint_available": false,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "review_fallback_only",
+      "v044_feasibility_not_implementation": "review_fallback_only",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "user_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "session_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "device_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "network_identifier",
+      "literal_shape_subset": true,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "limited_literal_shape_and_key_hint",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "request_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "transaction_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "tenant_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "QID",
+      "subtype": "unspecified_linkable_identifier",
+      "literal_shape_subset": false,
+      "named_hint_available": false,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "review_fallback_only",
+      "v044_feasibility_not_implementation": "review_fallback_only",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "request_body",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "response_body",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "http_headers",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "carrier_shape_subset",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "document_content",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "message_content",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "business_object",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_object",
+      "literal_shape_subset": false,
+      "named_hint_available": false,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "review_fallback_only",
+      "v044_feasibility_not_implementation": "review_fallback_only",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_content",
+      "literal_shape_subset": false,
+      "named_hint_available": false,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "review_fallback_only",
+      "v044_feasibility_not_implementation": "review_fallback_only",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "CFG",
+      "subtype": "database_connection",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "CFG",
+      "subtype": "internal_endpoint",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "CFG",
+      "subtype": "filesystem_path",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "key_hint_only",
+      "v044_feasibility_not_implementation": "limited_literal_shape",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "CFG",
+      "subtype": "environment",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "CFG",
+      "subtype": "deployment_configuration",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "context_required",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "CFG",
+      "subtype": "unclassified_internal_resource",
+      "literal_shape_subset": false,
+      "named_hint_available": false,
+      "carrier_hint": false,
+      "context_or_review_required": true,
+      "current_detection_level": "review_fallback_only",
+      "v044_feasibility_not_implementation": "review_fallback_only",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "DIAG",
+      "subtype": "exception_message",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "carrier_shape_subset",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "DIAG",
+      "subtype": "stack_trace",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "carrier_shape_subset",
+      "all_real_formats_detectable": false
+    },
+    {
+      "category": "DIAG",
+      "subtype": "failure_response",
+      "literal_shape_subset": false,
+      "named_hint_available": true,
+      "carrier_hint": true,
+      "context_or_review_required": true,
+      "current_detection_level": "carrier_key_hint_only",
+      "v044_feasibility_not_implementation": "carrier_shape_subset",
+      "all_real_formats_detectable": false
+    }
+  ],
+  "possible_additions_not_approved_as_a_batch": [
+    {
+      "candidate_subtype": "birth_date",
+      "category": "PII",
+      "explicit_keys": [
+        "date_of_birth",
+        "birthdate",
+        "dob"
+      ],
+      "source_refs": [
+        "nist_800_122_2_2",
+        "openid_core_5_1"
+      ],
+      "minimal_value_evidence": "Explicit direct key plus bounded calendar-date/year/partial-date shape. A date alone is not evidence of birth or linkage to a person. Preserve invalid dates and references as unknown.",
+      "negative_cases": [
+        "created_at timestamps",
+        "release date",
+        "bare ISO date",
+        "date parser implementation",
+        "null/empty/placeholder"
+      ]
+    },
+    {
+      "candidate_subtype": "age",
+      "category": "PII",
+      "explicit_keys": [
+        "age",
+        "age_years"
+      ],
+      "source_refs": [
+        "nist_800_122_2_1_note18",
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Personal age field plus numeric/age-range syntax; no birth-date arithmetic or person profiling. Unqualified age can describe caches/objects, so require an explicit personal field definition or a qualified key.",
+      "negative_cases": [
+        "cache_age",
+        "max_age protocol setting",
+        "age_of_cache",
+        "aggregate age_count"
+      ]
+    },
+    {
+      "candidate_subtype": "sex_gender",
+      "category": "PII",
+      "explicit_keys": [
+        "gender",
+        "biological_sex"
+      ],
+      "source_refs": [
+        "nist_800_122_2_1_note18",
+        "openid_core_5_1",
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Direct personal-attribute key and a nonempty value. Keep named-hint evidence; a finite enum is not complete and must not infer gender from names, pronouns or imagery.",
+      "negative_cases": [
+        "prose mentions",
+        "enum/type declaration",
+        "gender_parser_enabled",
+        "sex in filenames"
+      ]
+    },
+    {
+      "candidate_subtype": "race_ethnicity",
+      "category": "PII",
+      "explicit_keys": [
+        "ethnicity",
+        "ethnic_origin",
+        "racial_origin"
+      ],
+      "source_refs": [
+        "nist_800_122_2_2",
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Direct qualified field/value only; no racial inference from names, language, location or appearance. No claim that a text value reflects a real person.",
+      "negative_cases": [
+        "race_condition",
+        "race detector",
+        "game race",
+        "ethnicity policy prose"
+      ]
+    },
+    {
+      "candidate_subtype": "religious_belief",
+      "category": "PII",
+      "explicit_keys": [
+        "religion",
+        "religious_belief",
+        "religious_affiliation"
+      ],
+      "source_refs": [
+        "nist_800_122_2_2",
+        "dpv_religious_belief"
+      ],
+      "minimal_value_evidence": "Explicit field/value named hint, not a global religion-word dictionary. Do not infer belief from names, nationality, location or documents mentioning religions.",
+      "negative_cases": [
+        "religion classifier instructions",
+        "belief example fixtures",
+        "faith package names",
+        "null/empty/template values"
+      ]
+    },
+    {
+      "candidate_subtype": "birth_place",
+      "category": "PII",
+      "explicit_keys": [
+        "place_of_birth",
+        "birth_place"
+      ],
+      "source_refs": [
+        "nist_800_122_2_2",
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Explicit personal field and nonempty value; locality words alone cannot distinguish birth place from deployment region or a public place."
+    },
+    {
+      "candidate_subtype": "nationality_citizenship",
+      "category": "PII",
+      "explicit_keys": [
+        "nationality",
+        "citizenship"
+      ],
+      "source_refs": [
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Direct qualified personal field only; country, locale and IP location do not establish nationality."
+    },
+    {
+      "candidate_subtype": "education_record",
+      "category": "PII",
+      "explicit_keys": [
+        "education_history",
+        "education_record"
+      ],
+      "source_refs": [
+        "nist_800_122_2_2"
+      ],
+      "minimal_value_evidence": "Explicit field/value or record carrier with personal linkage; institution names alone are not a personal education history."
+    },
+    {
+      "candidate_subtype": "employment_record",
+      "category": "PII",
+      "explicit_keys": [
+        "employment_history",
+        "employment_record"
+      ],
+      "source_refs": [
+        "nist_800_122_2_2"
+      ],
+      "minimal_value_evidence": "Direct personal-record key; generic job/task/process/worker identifiers remain unrelated software terms."
+    },
+    {
+      "candidate_subtype": "political_opinion",
+      "category": "PII",
+      "explicit_keys": [
+        "political_opinion",
+        "political_affiliation"
+      ],
+      "source_refs": [
+        "plain_language_legacy_inference",
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Potential future direct-value hint, contingent on actual corpus evidence. Never infer political views from activity, identity or associations."
+    },
+    {
+      "candidate_subtype": "genetic_data",
+      "category": "PII",
+      "explicit_keys": [
+        "genetic_data",
+        "dna_profile"
+      ],
+      "source_refs": [
+        "dpv_pd"
+      ],
+      "minimal_value_evidence": "Potential future direct record hint, separate from current biometric template hints. DNA-like strings are not enough to identify a human genetic record."
+    },
+    {
+      "candidate_subtype": "one_time_code",
+      "category": "AUTH",
+      "explicit_keys": [
+        "one_time_code",
+        "otp",
+        "verification_code"
+      ],
+      "source_refs": [
+        "plain_language_auth"
+      ],
+      "minimal_value_evidence": "The old local taxonomy explicitly lists SMS/email verification codes. Generic numeric strings/codes and references must not be treated as usable credentials; actual detection needs authentication context."
+    }
+  ],
+  "new_subtype_count_not_yet_decided": true,
+  "existing_type_detection_gaps": [
+    {
+      "subtypes": [
+        "PII.phone",
+        "PII.government_identifier",
+        "PII.financial"
+      ],
+      "gap": "Named hints exist; no current standalone phone/identity/card/account shape extractor. Any next finite syntax checker must keep context/example distinctions and never validate credential/account liveness."
+    },
+    {
+      "subtypes": [
+        "PII.precise_location"
+      ],
+      "gap": "latitude/longitude keys are recognized but generic number pairs are not location evidence; named hints currently perform no coordinate range or personal-linkage verification."
+    },
+    {
+      "subtypes": [
+        "QID.network_identifier",
+        "QID.device_identifier"
+      ],
+      "gap": "Only IPv4 currently has a literal checker; IPv6 and MAC-shaped forms remain unclassified without suitable names. They are possible finite stdlib/rule extensions, not universal person identifiers."
+    },
+    {
+      "subtypes": [
+        "CFG.database_connection",
+        "CFG.filesystem_path"
+      ],
+      "gap": "Keys supply hints; no general bare DB URI/DSN or path-privacy detector. URL userinfo is AUTH evidence and must not make every URL a database connection."
+    },
+    {
+      "subtypes": [
+        "PII.person_name"
+      ],
+      "gap": "Not a free-text name recognizer; even middle_name/maiden_name aliases are absent, and username currently shares the person-name hint despite being potentially an account handle. Correcting existing username meaning is a separate migration decision from additive fields."
+    }
+  ],
+  "legacy_scope_conflicts": [
+    {
+      "source": "outputs/agent_sensitive_data_taxonomy_plain_language.md",
+      "items": [
+        "CODE",
+        "AGENT_CTRL",
+        "AGENT_CTX",
+        "AGENT_DER",
+        "timestamp as QID"
+      ],
+      "disposition": "These belonged to a wider older scope. Current application-log v2 excludes Agent-native control/session objects. Generic source code may be public; generic timestamps are not personal. Do not silently reintroduce these as newly found sensitive data."
+    }
+  ],
+  "primary_sources": [
+    {
+      "id": "nist_800_122_2_2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf",
+      "publication": "NIST SP 800-122 (2010)",
+      "section": "2.2 Examples of PII Data; printed page 2-2, PDF page 14",
+      "short_quote": "date of birth, place of birth, race, religion",
+      "paraphrase": "The list includes these and employment/education attributes when linked or linkable to an individual. This supports technical taxonomy terms, not claims that every matching token is personal or legally protected.",
+      "retrieval": "Official NIST PDF opened and section inspected through web tool; no raw download hash asserted."
+    },
+    {
+      "id": "nist_800_122_2_1_note18",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf",
+      "publication": "NIST SP 800-122 (2010)",
+      "section": "2.1; footnote 18, printed page 2-1, PDF page 13",
+      "paraphrase": "Age and gender can contribute to identification in combination with other information. This is contextual linkage, not standalone sensitive-word detection."
+    },
+    {
+      "id": "openid_core_5_1",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims",
+      "publication": "OpenID Connect Core 1.0 incorporating errata set 2",
+      "section": "5.1 Standard Claims",
+      "paraphrase": "Defines gender and birthdate as End-User claims; birthdate permits YYYY-MM-DD, omitted-year 0000, and year-only forms. It allows gender values beyond its two examples. Use as a field-format reference, not as identity or disclosure verification."
+    },
+    {
+      "id": "dpv_pd",
+      "url": "https://w3c-cg.github.io/dpv/2.3/pd/",
+      "publication": "Personal Data Categories 2.3, Final Community Group Report, 25 February 2026",
+      "section": "Vocabulary index; Age, BirthDate, BirthPlace, Citizenship, Demographic, Ethnicity, Gender, Genetic, Education and EmploymentHistory terms",
+      "paraphrase": "A primary vocabulary for personal-data categories; supports possible finer-grained labels. It is explicitly not a W3C Standard and is not used here to infer legal duties."
+    },
+    {
+      "id": "dpv_religious_belief",
+      "url": "https://w3c-cg.github.io/dpv/2.3/pd/#ReligiousBelief",
+      "publication": "Personal Data Categories 2.3",
+      "section": "5.1.184 Religious Belief",
+      "paraphrase": "Defines a concept for information about a person’s religion or religious beliefs; field semantics still require context."
+    },
+    {
+      "id": "owasp_logging",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html#data-to-exclude",
+      "publication": "OWASP Logging Cheat Sheet",
+      "section": "Data to exclude",
+      "paraphrase": "Distinguishes credentials, personal data, application code and commercially sensitive data from diagnostic event metadata. Used only as engineering scope guidance."
+    },
+    {
+      "id": "plain_language_auth",
+      "path": "/Users/lzh/Downloads/Log 研究/outputs/agent_sensitive_data_taxonomy_plain_language.md",
+      "section": "一.1 AUTH",
+      "paraphrase": "Explicitly includes SMS/email verification codes; no dedicated current one-time-code type or rule."
+    },
+    {
+      "id": "plain_language_legacy_inference",
+      "path": "/Users/lzh/Downloads/Log 研究/outputs/agent_sensitive_data_taxonomy_plain_language.md",
+      "section": "二.10 AGENT_DER",
+      "paraphrase": "Mentions health and political inferences in an older Agent-native scope. Do not revive AGENT_DER or infer attributes automatically; current log-focused v2 takes precedence."
+    }
+  ],
+  "upgrade_dependency_matrix": [
+    {
+      "module": "taxonomy.py",
+      "effect": "RULES define 37 direct hints; FALLBACKS add five review-only subtypes. Append approved PII labels with stable IDs and a new explicit taxonomy version. Prefer compatible personal_identifier legacy mapping to avoid inventing another incomplete propagation class.",
+      "tests": "New aliases and qualification negatives; old IDs preserved; catalog size derived rather than mechanically changing 42 to another magic number."
+    },
+    {
+      "module": "detector.py",
+      "effect": "Imports identifier_types and SENSITIVE_TYPES; _types unions both legacy and new taxonomy hints. Named constant payload propagation at line427 has an explicit legacy-kind allowlist. Reusing personal_identifier works through it; adding a new legacy such as demographic_data would require auditing this set, FALLBACKS, and assessment consumers.",
+      "tests": "Actual synthetic Git/PyDriller changed log, structured field, one-hop assignment, deletion, masked value, aggregate and fixed prose; never use taxonomy additions as a prefilter for trace."
+    },
+    {
+      "module": "content_types.py",
+      "effect": "New key rules automatically affect _named_candidates; they are only named hints. New value-shape rules require actual bounded candidate code and a capability-catalog update. Existing seven literal-shape subtypes do not increase merely by adding named PII aliases.",
+      "tests": "Valid/invalid/date context, software negatives, Unicode positions, templates, examples and malformed values; full finite evidence fields unchanged unless an explicit interface version change is needed."
+    },
+    {
+      "module": "content_cursor.py",
+      "effect": "SPECS, rows_for, PEM state and left/right windows independently implement the plaintext rule family order. Adding a literal rule only to _literal_candidates silently leaves long-cell repair incomplete. Numeric cursor indices and pending states belong to a fixed rule list.",
+      "tests": "Reference classify_text versus paginated output parity, Unicode and cross-page boundaries, atomic sibling labels, cap recovery; old cursor must reject new fingerprint instead of resume."
+    },
+    {
+      "module": "structured_types.py / structured_scan.py",
+      "effect": "Key additions reuse _matches. Literal additions must also fit MATCH_LABELS finite rule/basis/status enums; _safe_result rejects unknown enums and category/subtype outside content_scan.TYPE_KEYS. Decoded-string offsets differ from cell spans. Source hashes and taxonomy version prevent old structured DB resume.",
+      "tests": "Real synthetic JSON/Parquet with old/new labels, duplicate keys, scalar/empty/null/bool, nested decode, node-atomic caps, safe label whitelist and new enum rejection."
+    },
+    {
+      "module": "content_scan.py / schema_scan.py",
+      "effect": "Both bind catalog/version at import and fingerprint source files. Use a fresh process and output directory after taxonomy upgrade. Schema changes require proven field meaning; new catalog entries alone do not classify 138 unmapped fields or 485812 unmatched mixed-source author cells.",
+      "tests": "Dry-run preflight, old-run resume rejection, actual source signatures retained; per-type summaries include current zero rows only for the actually scanned current catalog."
+    },
+    {
+      "module": "content_advance.py",
+      "effect": "Requires current four frozen-file hashes to equal original parent fingerprint. It must reject an old shared DB under a new taxonomy; do not weaken this guard or overwrite the old manifest.",
+      "tests": "Frozen source mismatch preserves parent DB/export bytes. Use a fresh parent classifier scan for the new taxonomy."
+    },
+    {
+      "module": "content_repair.py",
+      "effect": "Fingerprint binds current taxonomy/content_types/storage and cursor. New rules require a new parent scan and then a new truncated-cell selection; old truncated selections are not a full new-rule denominator.",
+      "tests": "Old fingerprint resume rejected; new selection/scan fixed source integrity; output safe enums and per-type status counts."
+    },
+    {
+      "module": "content_reconcile.py",
+      "effect": "Old code compared producer hashes to each other but exported current SCOPE.taxonomy_version. This review found and fixed that upgrade hazard with an early shared-entry guard requiring parent+repair finite-classifier hashes to match current source files. SAFE_LABELS must separately register any new finite rule/basis.",
+      "tests": "Six genuine synthetic producer combinations: legacy/advance × new/dry_run/resume, all reject changed current taxonomy with all source and historical output bytes unchanged; same-version regressions pass."
+    },
+    {
+      "module": "type_audit.py / batch_mine.py",
+      "effect": "Historical annotated entities are kept when taxonomy_labels exist; version mismatch adds taxonomy_version_mismatch_requires_reanalysis. Re-export is not reclassification. Any new run using cached extraction must explicitly reannotate/reanalyse with provenance; bounded parser gaps stay.",
+      "tests": "No historical row is simply rewritten to the new version; prior parser/type states and mismatch queues remain visible."
+    },
+    {
+      "module": "v046-v048 inventory builders / verifiers",
+      "effect": "Historical scripts hardcode 1.0.0 and 42/43/294/336 on purpose. Preserve them; create a new builder driven by per-source catalog/version metadata. Old sources never evaluated newly added labels, so mark those combinations unavailable/not_evaluated, not zero observations.",
+      "tests": "Old rows and versions byte-preserved, new catalog rows explicit, unsupported-by-source distinct from observed zero, no cross-scope count addition and no new label declared newly discovered in reality."
+    },
+    {
+      "module": "tests hardcoded historical constants",
+      "effect": "test_content_types.py asserts42 and37; test_type_audit.py and test_content_repair.py assert1.0.0. Update current-contract expectations alongside an explicit old-version regression. Leave versioned v048 evidence/checkers unchanged.",
+      "tests": "Full suite after root freezes the integrated classifier; record exact execution and fingerprints before real fresh-output replay."
+    }
+  ],
+  "minimal_upgrade_sequence": [
+    "Wait for the separately recorded real AIDev candidate-field probe; pick only a small justified subset and publish definitions/negative cases.",
+    "Keep six top-level categories and old subtype IDs; append approved PII subtype IDs with an explicit new taxonomy version (e.g. 1.1.0 for additive labels). Avoid adding new legacy coarse classes where personal_identifier is sufficient.",
+    "Expose key-only capability honestly; add contextual value-shape rules only when their parser and safe enum/cursor counterparts are actually implemented and synthetically verified.",
+    "After all sources freeze, run synthetic Git/PyDriller + plaintext/cursor + JSON/Parquet + mismatch-resume regressions and full suite.",
+    "Reclassify frozen source text into new independent run directories; do not mutate old outputs or label old annotations with the new version. Use current parent/repair pairs under the new guard.",
+    "Build a new version-aware inventory; preserve old 42-class evidence and mark newly introduced labels as not evaluated for old sources. Audit changed cell/type relationships, types, unknown queues and coverage separately."
+  ],
+  "implemented_upgrade_guard": {
+    "files": [
+      "src/agentlog_unified/content_reconcile.py",
+      "tests/test_content_reconcile.py"
+    ],
+    "behavior": "Early locked validation rejects any parent or repair finite classifier that differs from installed content_types.py/taxonomy.py/storage.py, before metadata DB merge or creating output. Legacy and advance ancestry share this entry point.",
+    "failure_reproduced_before_fix": {
+      "command": "agent_log_privacy/.venv/bin/python -m pytest agentlog_unified/tests/test_content_reconcile.py -k current_classifier_change -q --maxfail=1",
+      "exit_code": 1,
+      "result": "new-legacy genuine synthetic producers were incorrectly accepted; test failed DID NOT RAISE."
+    },
+    "focused_after_fix": {
+      "command": "agent_log_privacy/.venv/bin/python -m pytest agentlog_unified/tests/test_content_reconcile.py agentlog_unified/tests/test_content_v046_cli.py -q",
+      "exit_code": 0,
+      "passed": 34,
+      "pytest_seconds": 0.97
+    },
+    "new_combinations": 6,
+    "other_product_sources_modified": false,
+    "historical_outputs_modified": false
+  },
+  "synthetic_gap_probe": {
+    "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/taxonomy_gap_v049_synthetic_probes.json",
+    "sha256": "ab7dabc4e1e531a1ade535cd1d9584e422a3b3102afea152a3f5121b883d5f74",
+    "case_count": 26,
+    "assertions_passed": true,
+    "result": "18 explicit missing-key cases currently yield no specific labels in identifiers/plaintext/JSON; IPv6, MAC, reserved phone and DB-URI-only shapes also lack value matches; coordinate fields are named hints only."
+  },
+  "source_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_reconcile.py": "df9174371c1c03dd1b99cb5f4817847da2176fb89aac011e295370bdc466ffef",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests/test_content_reconcile.py": "1e4ec823f588dba2501127fee673e6dc701d5c911800bd7bacb15c921d056eeb",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/content_taxonomy_review_v044.json": "f53e16938a7a8721f89c42dfb1a13ca4ce3997c9f088f7d7e22052a34955a1cc"
+  },
+  "local_definition_sha256": {
+    "/Users/lzh/Downloads/Log 研究/outputs/agent_generated_code_sensitive_data_taxonomy_v2.md": "a21dc461ec2e38ca3a4559b5c27716172d9ca17c019c5b22707d2d34ba48a798",
+    "/Users/lzh/Downloads/Log 研究/outputs/agent_sensitive_data_taxonomy_plain_language.md": "2eb13a7c046f084d23b0e6a4d132144fe95cb8414189e14df12c435c8a456ffe"
+  },
+  "limits": [
+    "No new subtype implemented by this review; only the explicitly authorized reconcile compatibility guard changed product code.",
+    "Synthetic failures prove implementation gaps, not AIDev prevalence. The real probe is owned by another agent.",
+    "All proposed labels remain static low-confidence candidates requiring human/context review; no protected attribute inferred about an actual person.",
+    "The cited DPV community vocabulary is not a W3C Standard; NIST/OIDC provide technical examples, not case-specific legal determinations."
+  ]
+}

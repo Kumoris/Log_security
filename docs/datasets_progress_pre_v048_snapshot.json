@@ -1,0 +1,198 @@
+{
+  "recorded_utc": "2026-09-08T23:05:22.986295+00:00",
+  "tool_version": "0.4.7",
+  "active_goal": "收集并分类 AIdev数据库中的所有敏感数据类型",
+  "active_goal_scope": "aidev_only",
+  "goal_complete": false,
+  "all_real_sensitive_types_identified": false,
+  "taxonomy_version": "1.0.0",
+  "controlled_type_catalog_size": 42,
+  "observed_controlled_type_label_union": 38,
+  "unknown_queue_exhausted": false,
+  "historical_progress_snapshot": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/datasets_progress_pre_v047_snapshot.json",
+  "historical_swechat_scope": "Preserved in prior snapshots; excluded from the active goal and not scanned this version.",
+  "frozen_aidev_revision": "68ed5f4b80d27a9e057fc57567f38bd322ac73ec",
+  "imports": {
+    "AIDev": {
+      "status": "complete_with_gaps",
+      "counts": {
+        "ambiguous_pr_ids": 0,
+        "conflicting_metadata_prs": 56,
+        "duplicate_pr_rows": 33652,
+        "mining_prs": 33580,
+        "normalized_prs": 939353,
+        "prs_without_commit_evidence": 905773,
+        "readable_tables": 18,
+        "source_pr_rows": 973005,
+        "source_rows_read": 2456073,
+        "source_tables": 18,
+        "unresolved_pr_rows": 0
+      }
+    }
+  },
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "content_reconciled": {
+    "aidev": {
+      "status": "reconciled_with_semantic_gaps",
+      "parent_all_selected_text_rows_visited": true,
+      "candidate_identities": 1479597,
+      "candidate_occurrence_variants": 1479597,
+      "excluded_identities": 11871,
+      "unknown_type_review_cells": 17362345,
+      "unknown_type_review_export_records": 1114843,
+      "repair_data_gap_records": 0,
+      "full_dataset_coverage_claim": false
+    }
+  },
+  "content_reconciled_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_coverage.json",
+  "content_recomputed_this_version": false,
+  "schema_scans": {
+    "aidev": {
+      "status": "complete_with_schema_gaps",
+      "all_fields": 160,
+      "selected_fields": 22,
+      "unresolved_field_records": 138,
+      "all_selected_fields_visited": true,
+      "all_dataset_values_classified": false,
+      "counts": {
+        "cells_decoded": 4504029,
+        "invalid": 13,
+        "null": 329537,
+        "placeholder_or_example": 12,
+        "schema_context_candidate": 3688655,
+        "unresolved": 485812
+      },
+      "candidate_range_records": 40766,
+      "review_range_records": 87271,
+      "account_reference_coverage": {
+        "comparison": "exact_string_equality_no_trim_casefold_or_unicode_normalization",
+        "count_unit": "Reference table cells read for lookup setup; separate from classified source cells.",
+        "distinct_nonempty_reference_strings": 72189,
+        "reference_cells_decoded": 73985,
+        "reference_values_or_value_hashes_exported": false,
+        "sources": [
+          {
+            "column_name": "login",
+            "counts": {
+              "nonempty_string": 1796,
+              "reference_cells_decoded": 1796
+            },
+            "native_type": "string",
+            "source_rows": 1796,
+            "source_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+            "status": "complete",
+            "table": "user",
+            "table_path": "user.parquet",
+            "values_decoded": true
+          },
+          {
+            "column_name": "login",
+            "counts": {
+              "nonempty_string": 72189,
+              "reference_cells_decoded": 72189
+            },
+            "native_type": "string",
+            "source_rows": 72189,
+            "source_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+            "status": "complete",
+            "table": "all_user",
+            "table_path": "all_user.parquet",
+            "values_decoded": true
+          }
+        ],
+        "status": "complete"
+      }
+    }
+  },
+  "schema_coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v047/schema_coverage.json",
+  "new_join_fields": [
+    {
+      "table": "pr_commit_details",
+      "column": "author",
+      "counts": {
+        "cells_decoded": 711923,
+        "null": 3,
+        "schema_context_candidate": 521443,
+        "unresolved": 190477
+      }
+    },
+    {
+      "table": "pr_commit_details",
+      "column": "committer",
+      "counts": {
+        "cells_decoded": 711923,
+        "null": 3,
+        "schema_context_candidate": 453983,
+        "unresolved": 257937
+      }
+    },
+    {
+      "table": "pr_commits",
+      "column": "author",
+      "counts": {
+        "cells_decoded": 88576,
+        "null": 1,
+        "schema_context_candidate": 74786,
+        "unresolved": 13789
+      }
+    },
+    {
+      "table": "pr_commits",
+      "column": "committer",
+      "counts": {
+        "cells_decoded": 88576,
+        "null": 1,
+        "schema_context_candidate": 70069,
+        "unresolved": 18506
+      }
+    },
+    {
+      "table": "pr_timeline",
+      "column": "assignee",
+      "counts": {
+        "cells_decoded": 325500,
+        "null": 313637,
+        "schema_context_candidate": 6760,
+        "unresolved": 5103
+      }
+    }
+  ],
+  "current_unmapped_schema_fields": 138,
+  "current_type_inventory": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047.csv",
+  "current_type_inventory_provenance": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v047_provenance.json",
+  "type_inventory_scope": "Five historical AIDev Git batches, one AIDev text reconciliation, one AIDev schema run; distinct units are not additive.",
+  "current_report": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v047_report.md",
+  "tests_completed": 560,
+  "test_record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v047_tests_stdout.txt",
+  "test_execution_record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v047_tests_execution.json",
+  "schema_export_verification": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_schema_v047_verification.json",
+  "type_inventory_verification": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_inventory_v047_verification.json",
+  "latest_commands": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v047_commands.json",
+  "delivery_verification": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v047_delivery_verification.json",
+  "synthetic_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/synthetic-v047/run_manifest.json",
+  "aidev_current_unique_actual_commits": 594,
+  "aidev_new_actual_commits_this_version": 0,
+  "last_git_expansion_version": "0.4.4",
+  "application_log_results_include_dataset_text": false,
+  "current_remaining": [
+    "138 AIDev fields lack a supported schema-role mapping; ordinary metadata is not presumed personal or sensitive.",
+    "485812 source cells in the five joined fields remain unresolved; missing account reference membership is not a negative sensitivity finding.",
+    "17,362,345 nonempty text cells retain semantic review coverage; text/schema review ranges overlap and must not be added.",
+    "3243 outside-catalog text candidates remain pending: 2854 identifier references and 389 unknown named values.",
+    "Nested and encoded text parsing, indirect semantics and types beyond the finite taxonomy are unresolved; format sampling is not full semantic coverage.",
+    "Most Git source/history coverage remains incomplete; this version did not expand real repository mining.",
+    "Human review, value ownership, credential validity and runtime disclosure have not been established."
+  ],
+  "active_work": "No scan writer remains active at this snapshot; bounded schema work is complete, broader semantic work remains.",
+  "environment_blocked_this_version": false,
+  "free_disk_gib_at_recording": 7.706,
+  "paid_model_calls": 0,
+  "target_code_executed": false,
+  "remote_repositories_modified": false,
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_type_status": "not_established",
+  "cleanup_receipt": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/deletion_receipt.json",
+  "additional_deletion_this_version": false,
+  "old_interrupted_directories_currently_absent": true
+}

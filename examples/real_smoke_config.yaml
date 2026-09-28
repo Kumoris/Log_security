@@ -1,0 +1,7 @@
+input:
+  prs_path: examples/real_smoke.jsonl
+  offline: true
+run_mode: smoke
+mining:
+  max_history_commits_per_repository: 120
+  max_snapshot_files: 1500

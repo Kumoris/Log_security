@@ -1,0 +1,37 @@
+{
+  "dataset": "SALT-NLP/SWE-chat",
+  "revision": "f66cca95b14caaa4177f7ed5eaa424608dadcffa",
+  "status": "metadata_accessible",
+  "files": [
+    {
+      "path": "checkpoints.parquet",
+      "size": 5564169,
+      "sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3"
+    },
+    {
+      "path": "commits.parquet",
+      "size": 1082547262,
+      "sha256": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f"
+    },
+    {
+      "path": "conversations.parquet",
+      "size": 1311422253,
+      "sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36"
+    },
+    {
+      "path": "repositories.parquet",
+      "size": 244741,
+      "sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52"
+    },
+    {
+      "path": "session_logs.parquet",
+      "size": 6369801,
+      "sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521"
+    },
+    {
+      "path": "sessions.parquet",
+      "size": 1997377,
+      "sha256": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95"
+    }
+  ]
+}

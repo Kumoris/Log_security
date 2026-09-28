@@ -1,0 +1,224 @@
+{
+  "recorded_utc": "2026-09-08T23:36:31.748500+00:00",
+  "scope": "synthetic_readonly_classifier_gap_probe",
+  "assertions_passed": true,
+  "case_count": 26,
+  "cases": [
+    {
+      "case_id": "explicit_key_0",
+      "synthetic_key": "date_of_birth",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_1",
+      "synthetic_key": "birthdate",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_2",
+      "synthetic_key": "dob",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_3",
+      "synthetic_key": "age",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_4",
+      "synthetic_key": "gender",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_5",
+      "synthetic_key": "sex",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_6",
+      "synthetic_key": "race",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_7",
+      "synthetic_key": "ethnicity",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_8",
+      "synthetic_key": "religion",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_9",
+      "synthetic_key": "religious_belief",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_10",
+      "synthetic_key": "political_opinion",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_11",
+      "synthetic_key": "genetic_data",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_12",
+      "synthetic_key": "nationality",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_13",
+      "synthetic_key": "education_history",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_14",
+      "synthetic_key": "employment_history",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_15",
+      "synthetic_key": "one_time_code",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_16",
+      "synthetic_key": "otp",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "explicit_key_17",
+      "synthetic_key": "middle_name",
+      "identifier_labels": [],
+      "plain_labels": [],
+      "structured_labels": [],
+      "structured_unknown_nodes": 2,
+      "structured_document_status": "parsed_with_semantic_gaps"
+    },
+    {
+      "case_id": "ipv6_documentation",
+      "plain_matches": []
+    },
+    {
+      "case_id": "mac_local_synthetic",
+      "plain_matches": []
+    },
+    {
+      "case_id": "phone_reserved_example",
+      "plain_matches": []
+    },
+    {
+      "case_id": "generic_iso_date",
+      "plain_matches": []
+    },
+    {
+      "case_id": "db_uri_without_userinfo",
+      "plain_matches": []
+    },
+    {
+      "case_id": "explicit_location_fields",
+      "plain_matches": [
+        {
+          "category": "PII",
+          "subtype": "precise_location",
+          "basis": "named_value_hint",
+          "candidate_status": "named_value_candidate"
+        },
+        {
+          "category": "PII",
+          "subtype": "precise_location",
+          "basis": "named_value_hint",
+          "candidate_status": "named_value_candidate"
+        }
+      ]
+    },
+    {
+      "case_id": "statement_mentions",
+      "plain_matches": []
+    },
+    {
+      "case_id": "software_terms",
+      "plain_matches": []
+    }
+  ],
+  "source_sha256": {
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34"
+  },
+  "real_dataset_values_read": false,
+  "source_files_modified": false,
+  "network_accessed": false,
+  "credentials_validated": false
+}

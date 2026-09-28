@@ -1,0 +1,506 @@
+{
+  "recorded_utc": "2026-09-08T20:51:35.665500+00:00",
+  "review_kind": "readonly_content_taxonomy_reuse_review",
+  "taxonomy_version": "1.0.0",
+  "catalog_subtype_count": 42,
+  "raw_dataset_content_read_for_this_review": false,
+  "real_credentials_validated": false,
+  "product_changes_in_this_review": false,
+  "scope_status": "用户正文范围问题尚无答复；root在等待后按完整目标推进独立content入口，与application_log观察单位隔离。本文件仅评审，能力实现另行测试。",
+  "conclusion": "现有taxonomy可复用目录/字段名提示，但不是正文敏感值检测器；42是有限目录，不是42类均可凭形态完整检测。",
+  "source_code_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0"
+  },
+  "subtypes": [
+    {
+      "category": "AUTH",
+      "subtype": "password",
+      "label": "密码",
+      "text_feasibility": "context_required",
+      "boundary": "密码无唯一文本形态；仅字段绑定的值可作低置信命名值提示。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "AUTH",
+      "subtype": "access_token",
+      "label": "访问令牌",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "可识别部分JWT/已知前缀令牌形态；不解码、不验证有效性，任意令牌仍未知。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "AUTH",
+      "subtype": "api_key",
+      "label": "服务密钥",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "可识别有限已知密钥前缀；标识符与秘密可能混淆，不能由高熵字符串普遍推出API密钥。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "AUTH",
+      "subtype": "private_key",
+      "label": "私钥",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "完整有限PEM私钥封套可作形态候选；不导入、解密或验证密钥。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "AUTH",
+      "subtype": "auth_cookie",
+      "label": "认证 Cookie",
+      "text_feasibility": "context_required",
+      "boundary": "须有Cookie字段/HTTP上下文；Cookie存在不证明用于认证。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "AUTH",
+      "subtype": "authorization_header",
+      "label": "认证头",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "Authorization/Bearer等有界方案和值结构可识别；单独提到头名不算值。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "AUTH",
+      "subtype": "credential_bundle",
+      "label": "其他认证秘密或凭证对象",
+      "text_feasibility": "context_required",
+      "boundary": "通用凭证对象/不明凭证细类依赖字段上下文；仅作保守回退。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "email",
+      "label": "邮箱",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "有限ASCII邮箱形态可识别；不证明属于个人、可投递或非示例。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "phone",
+      "label": "电话",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "仅少量明确格式可在未来增加；当前优先命名值提示，裸数字不能普遍当电话。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "person_name",
+      "label": "个人姓名",
+      "text_feasibility": "context_required",
+      "boundary": "自然语言姓名、用户名及普通词难以仅凭形态区分，跨语言更不完备。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "postal_address",
+      "label": "通信地址",
+      "text_feasibility": "context_required",
+      "boundary": "地址依赖国家/地区和上下文，不把普通地址词或道路示例直接当PII。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "government_identifier",
+      "label": "政府证件标识",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "仅指定法域格式子集可在未来增加；无证件类型/法域时不能确定具体标识。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "medical",
+      "label": "医疗健康信息",
+      "text_feasibility": "context_required",
+      "boundary": "疾病词或医疗示例不等于个人健康记录；需要数据主体/记录上下文。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "financial",
+      "label": "个人金融信息",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "有限卡号/账户格式仅作未来候选；金额/工资无法靠裸数字确定，不验证账户或凭证。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "precise_location",
+      "label": "精确位置候选",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "标注过的经纬度形态可作未来候选；普通数对及公开地标不证明个人精确位置。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "biometric",
+      "label": "生物特征",
+      "text_feasibility": "context_required",
+      "boundary": "向量/图片/字节无通用生物特征形态，必须保留上下文未知。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "PII",
+      "subtype": "unspecified_personal_information",
+      "label": "细类待确定",
+      "text_feasibility": "review_fallback_only",
+      "boundary": "无确定细类的人工/规则待审槽位，不是可独立识别的值形态。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "user_identifier",
+      "label": "用户或账户标识",
+      "text_feasibility": "context_required",
+      "boundary": "UUID/整数/哈希本身不能确定用户用途。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "session_identifier",
+      "label": "会话标识",
+      "text_feasibility": "context_required",
+      "boundary": "随机串不能确定会话用途；需明确命名值或来源上下文。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "device_identifier",
+      "label": "设备标识",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "有限MAC/设备编码可作未来形态候选；需区分设备用途、样例及网络地址。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "network_identifier",
+      "label": "网络关联标识",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "IPv4及有限IPv6形态可做离线语法检查；不连接网络、不证明与个人关联。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "request_identifier",
+      "label": "请求关联标识",
+      "text_feasibility": "context_required",
+      "boundary": "请求/追踪ID依赖字段或协议上下文，不能普遍把UUID当请求ID。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "transaction_identifier",
+      "label": "业务关联标识",
+      "text_feasibility": "context_required",
+      "boundary": "订单/交易/付款标识依赖业务字段上下文。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "tenant_identifier",
+      "label": "租户标识",
+      "text_feasibility": "context_required",
+      "boundary": "租户用途须上下文，不能由字符串形态确定。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "QID",
+      "subtype": "unspecified_linkable_identifier",
+      "label": "细类待确定",
+      "text_feasibility": "review_fallback_only",
+      "boundary": "用途不确定的关联标识待审槽位。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "request_body",
+      "label": "请求体载体",
+      "text_feasibility": "context_required",
+      "boundary": "HTTP/字段上下文可标载体；任意JSON不等于请求体或敏感内容。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "response_body",
+      "label": "响应体载体",
+      "text_feasibility": "context_required",
+      "boundary": "HTTP/字段上下文可标载体；响应内容是否敏感另行判断。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "http_headers",
+      "label": "请求响应头载体",
+      "text_feasibility": "carrier_shape_subset",
+      "boundary": "完整头字段块可识别载体形态；头名提及、普通key:value行不算敏感值。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "document_content",
+      "label": "文档及内容载体",
+      "text_feasibility": "context_required",
+      "boundary": "来源可表明文档载体，正文敏感性未知，不能整段都记敏感。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "message_content",
+      "label": "业务聊天内容载体",
+      "text_feasibility": "context_required",
+      "boundary": "conversation.content可表明消息载体，不能把所有聊天都算敏感内容。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "business_object",
+      "label": "业务对象载体",
+      "text_feasibility": "context_required",
+      "boundary": "对象/JSON结构不证明业务角色或敏感字段，须逐字段证据。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_object",
+      "label": "细类待确定",
+      "text_feasibility": "review_fallback_only",
+      "boundary": "对象内容未知的待审槽位。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_content",
+      "label": "细类待确定",
+      "text_feasibility": "review_fallback_only",
+      "boundary": "内容语义未知的待审槽位。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "CFG",
+      "subtype": "database_connection",
+      "label": "数据库连接",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "有限数据库URI/DSN语法可识别候选；通用URL用户信息应优先凭证候选，不能全部叫数据库连接。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "CFG",
+      "subtype": "internal_endpoint",
+      "label": "内部端点",
+      "text_feasibility": "context_required",
+      "boundary": "URL/IP可有形态，但internal含义及可访问性需上下文，不做连接验证。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "CFG",
+      "subtype": "filesystem_path",
+      "label": "内部文件路径",
+      "text_feasibility": "limited_literal_shape",
+      "boundary": "路径语法可识别有限候选；是否内部/私人资源需要上下文，公开repo路径不能自动称泄露。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "CFG",
+      "subtype": "environment",
+      "label": "环境变量载体",
+      "text_feasibility": "context_required",
+      "boundary": "赋值行不足以证明环境变量载体，需env/命令/配置上下文。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "CFG",
+      "subtype": "deployment_configuration",
+      "label": "配置及部署载体",
+      "text_feasibility": "context_required",
+      "boundary": "结构化配置可标载体，但是否内部部署及包含秘密需要上下文。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "CFG",
+      "subtype": "unclassified_internal_resource",
+      "label": "细类待确定",
+      "text_feasibility": "review_fallback_only",
+      "boundary": "内部资源含义未确定的待审槽位。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "DIAG",
+      "subtype": "exception_message",
+      "label": "异常内容载体",
+      "text_feasibility": "carrier_shape_subset",
+      "boundary": "部分异常前缀/结构可识别诊断载体；异常正文是否敏感未知。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "DIAG",
+      "subtype": "stack_trace",
+      "label": "堆栈载体",
+      "text_feasibility": "carrier_shape_subset",
+      "boundary": "有限已知语言堆栈帧结构可标载体，不能由单词stack/trace推出实际堆栈。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    },
+    {
+      "category": "DIAG",
+      "subtype": "failure_response",
+      "label": "失败响应载体",
+      "text_feasibility": "carrier_shape_subset",
+      "boundary": "完整失败HTTP响应可标载体；描述404/错误词不等于实际失败响应。",
+      "all_formats_detectable": false,
+      "sensitivity_requires_context": true
+    }
+  ],
+  "feasibility_counts": {
+    "context_required": 20,
+    "limited_literal_shape": 13,
+    "review_fallback_only": 5,
+    "carrier_shape_subset": 4
+  },
+  "current_code_findings": [
+    {
+      "location": "taxonomy.py:identifier_types/_matches",
+      "finding": "为输出字段/标识符设计。直接传全文会把描述性密码词当credential，却不识别普通邮箱字面量。",
+      "reuse": "只对显式命名值的键应用现有字段映射；正文形态使用独立规则和独立observation_scope。"
+    },
+    {
+      "location": "taxonomy.py:annotate_entity",
+      "finding": "依赖日志source_to_sink/parser_status/privacy_assessment；新basis通常默认medium，且非python_ast自动产生语义待审。",
+      "reuse": "新正文记录直接引用catalog分类，不伪造日志实体或python_ast，不把格式置信度当隐私确认。"
+    },
+    {
+      "location": "storage.py:redact/export.py:write_jsonl/write_csv",
+      "finding": "现有正则遮蔽部分凭证、邮箱、IPv4、PEM等，不覆盖所有电话/姓名/健康/地址/生物特征文本。",
+      "reuse": "只允许无正文/值/键名的元数据白名单进导出，再以redact作附加保护；csv_cell仍可复用。"
+    },
+    {
+      "location": "type_audit.py:export_batch_types",
+      "finding": "固定查询log_observations，以log_version_id作分母。",
+      "reuse": "正文保留独立cell/span分母，复用catalog和Counter多标签计数约定，不能伪造log_version_id混进Git覆盖。"
+    }
+  ],
+  "minimal_interface": {
+    "signature": "classify_text(text: str, *, max_matches: int = 1000) -> {matches: list[dict], truncated: bool}",
+    "maximum_input": "root限制1MiB字符并记录截断/未扫描缺口",
+    "match_fields": [
+      "start",
+      "end",
+      "category",
+      "subtype",
+      "rule",
+      "basis",
+      "confidence",
+      "value_status",
+      "candidate_status"
+    ],
+    "offset_convention": "Python Unicode字符偏移，半开区间[start,end)，针对原始cell文本",
+    "forbidden_output_fields": [
+      "raw_text",
+      "matched_value",
+      "field_name",
+      "excerpt",
+      "unsalted_value_hash"
+    ],
+    "catalog_function": "detector_catalog() -> finite supported rule/subtype capabilities, uncovered classes and evidence limits"
+  },
+  "evidence_contract": {
+    "literal_shape": "文本中实际出现受支持格式，只能称未验证形态候选；不检查凭证活性、所有权、交付或运行日志输出。",
+    "named_value_hint": "显式字段-值语法的低置信类型提示；值为变量/对象时另标opaque/identifier_reference。",
+    "identifier_mention": "仅变量名/类型名/占位符名，无实际值证据；不进入已观察敏感值计数。",
+    "descriptive_text": "建议、教程、对字段的描述或普通敏感词不能成为值候选；root保留cell级unknown覆盖。",
+    "placeholder_or_example": "仅明确掩码/示例标记的文本提示，仍保留审核与来源，不能视为经人工确认的合成值或安全负例。",
+    "carrier": "请求/聊天/文档/异常/配置仅表明载体；其内容隐私类型需独立值证据。",
+    "unknown": "可与已识别类共存；未覆盖命名值、未解析格式、载体内容、被截断正文统一待审。"
+  },
+  "source_reference_contract": {
+    "aidev": "冻结snapshot + manifest Parquet相对路径/file SHA256 + table_name + 1-based row_number + 实际column名；PR关联取row_pr_links，未知/冲突仍保留。现有SQLite主要metadata，body/title等未分类。",
+    "swechat": "冻结snapshot + file SHA256 + table_name + 1-based row_number + 实际column名；content_columns当前仅footer来源引用，values_read=False，不证明正文已读。保留session/turn/checkpoint/role关系及未解析关系。",
+    "nested_content": "JSON字符串内字段若展开，保留原cell偏移或显式嵌套指针及偏移映射；不能把解码后的偏移冒充原cell偏移。",
+    "counts": "分别报告总文本cell、已读字符、成功扫描cell、截断/缺失cell、候选span、mention/example/carrier/unknown；不以metadata行数或Git提交数替代正文分母。"
+  },
+  "safe_export_contract": [
+    "默认仅位置、类型、规则、状态与来源引用；不输出任何正文值或邻近片段。",
+    "不要对短敏感值公开无盐SHA256；root采用每次运行私有HMAC或纯坐标稳定ID。",
+    "匹配后原文仅在当前受限读取内存使用，不复制到结果JSONL/CSV/evidence包。",
+    "未知正文、未命中规则和truncated不能写成无敏感数据。"
+  ],
+  "synthetic_readonly_probes": {
+    "catalog_subtypes": 42,
+    "email_literal_does_not_match_identifier_rules": true,
+    "descriptive_password_sentence_does_match_identifier_rules": true,
+    "redact_synthetic_phone_address_medical_biometric_payloads_left_unchanged": true,
+    "redact_synthetic_email_and_private_key_envelope_changed": true,
+    "sample_payloads_exported": false
+  },
+  "implementation_boundary": "本可行性表包含未来可支持的格式子集，并非当前新正文检测器实现清单；以detector_catalog及实际测试为准。",
+  "subsequent_implementation": {
+    "interface": "classify_text(text: str, *, max_matches: int = 1000) -> {matches: list[dict], truncated: bool}; detector_catalog() -> dict",
+    "module": "src/agentlog_unified/content_types.py",
+    "module_sha256": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "tests": "tests/test_content_types.py",
+    "isolated_test_command": "agent_log_privacy/.venv/bin/python -m pytest -q agentlog_unified/tests/test_content_types.py",
+    "isolated_tests_passed": 23,
+    "integration_test_command": "agent_log_privacy/.venv/bin/python -m pytest -q agentlog_unified/tests/test_content_types.py agentlog_unified/tests/test_content_scan.py",
+    "integration_tests_passed": 39,
+    "implemented_literal_shape_subtypes": 7,
+    "implemented_named_key_hint_subtypes": 37,
+    "all_42_semantically_detectable": false,
+    "candidate_confidence": "low",
+    "raw_fields_returned": false,
+    "existing_git_detector_taxonomy_storage_changed": false,
+    "real_dataset_content_read": false,
+    "existing_feasibility_rows_are_not_implementation_claims": true,
+    "remaining_limits": [
+      "Unmatched text and partially matched cells require caller unknown review queue.",
+      "Finite token lengths, ASCII named keys and six PEM wrapper families; IPv4 only.",
+      "No name, phone, address, medical, financial or other open-world semantic value identification.",
+      "Placeholders and example-shaped values are only heuristic states; never a confirmed harmlessness judgment.",
+      "No key parsing, secret validation, network lookup, or runtime disclosure proof."
+    ]
+  }
+}

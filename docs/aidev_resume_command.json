@@ -1,0 +1,1915 @@
+{
+  "aidev_source_snapshot": "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f",
+  "commit_sha_coverage": {
+    "valid_syntax_unverified": 800499
+  },
+  "complete": true,
+  "counts": {
+    "ambiguous_pr_ids": 0,
+    "conflicting_metadata_prs": 56,
+    "duplicate_pr_rows": 33652,
+    "mining_prs": 33580,
+    "normalized_prs": 939353,
+    "prs_without_commit_evidence": 905773,
+    "readable_tables": 18,
+    "source_pr_rows": 973005,
+    "source_rows_read": 2456073,
+    "source_tables": 18,
+    "unresolved_pr_rows": 0
+  },
+  "evidence_boundary": {
+    "agent_labels_verified": false,
+    "all_local_tables_scanned": true,
+    "bodies_and_patches_exported": false,
+    "full_dataset_completeness_verified": false,
+    "missing_patch_is_negative_finding": false,
+    "network_accessed": false,
+    "patches_are_complete_code": false,
+    "pydriller_traversal_performed": false,
+    "repository_code_mined": false
+  },
+  "exit_code": 2,
+  "patch_coverage": {
+    "null": 70202,
+    "present_unverified": 641721
+  },
+  "paths": {
+    "aidev.sqlite": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/aidev.sqlite",
+    "coverage.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/coverage.json",
+    "manifest.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json",
+    "mining_prs.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/mining_prs.jsonl",
+    "normalized_prs.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/normalized_prs.jsonl"
+  },
+  "relationships": [
+    {
+      "relation": "issue",
+      "rows": 932791,
+      "status": "missing_foreign_key",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "pr",
+      "rows": 932791,
+      "status": "linked",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "repository",
+      "rows": 930392,
+      "status": "linked",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "repository",
+      "rows": 2399,
+      "status": "orphan",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "review",
+      "rows": 932791,
+      "status": "missing_foreign_key",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "user",
+      "rows": 882379,
+      "status": "linked",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "user",
+      "rows": 50412,
+      "status": "orphan",
+      "table": "all_pull_request"
+    },
+    {
+      "relation": "issue",
+      "rows": 6618,
+      "status": "missing_foreign_key",
+      "table": "human_pr_task_type"
+    },
+    {
+      "relation": "pr",
+      "rows": 6618,
+      "status": "linked",
+      "table": "human_pr_task_type"
+    },
+    {
+      "relation": "repository",
+      "rows": 6618,
+      "status": "missing_foreign_key",
+      "table": "human_pr_task_type"
+    },
+    {
+      "relation": "review",
+      "rows": 6618,
+      "status": "missing_foreign_key",
+      "table": "human_pr_task_type"
+    },
+    {
+      "relation": "user",
+      "rows": 6618,
+      "status": "missing_foreign_key",
+      "table": "human_pr_task_type"
+    },
+    {
+      "relation": "issue",
+      "rows": 6618,
+      "status": "missing_foreign_key",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "pr",
+      "rows": 6618,
+      "status": "linked",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "repository",
+      "rows": 6598,
+      "status": "linked",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "repository",
+      "rows": 20,
+      "status": "orphan",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "review",
+      "rows": 6618,
+      "status": "missing_foreign_key",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "user",
+      "rows": 2164,
+      "status": "linked",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "user",
+      "rows": 4454,
+      "status": "orphan",
+      "table": "human_pull_request"
+    },
+    {
+      "relation": "issue",
+      "rows": 4614,
+      "status": "missing_foreign_key",
+      "table": "issue"
+    },
+    {
+      "relation": "repository",
+      "rows": 4614,
+      "status": "missing_foreign_key",
+      "table": "issue"
+    },
+    {
+      "relation": "review",
+      "rows": 4614,
+      "status": "missing_foreign_key",
+      "table": "issue"
+    },
+    {
+      "relation": "user",
+      "rows": 630,
+      "status": "linked",
+      "table": "issue"
+    },
+    {
+      "relation": "user",
+      "rows": 3984,
+      "status": "orphan",
+      "table": "issue"
+    },
+    {
+      "relation": "issue",
+      "rows": 39122,
+      "status": "missing_foreign_key",
+      "table": "pr_comments"
+    },
+    {
+      "relation": "pr",
+      "rows": 39122,
+      "status": "linked",
+      "table": "pr_comments"
+    },
+    {
+      "relation": "repository",
+      "rows": 39122,
+      "status": "missing_foreign_key",
+      "table": "pr_comments"
+    },
+    {
+      "relation": "review",
+      "rows": 39122,
+      "status": "missing_foreign_key",
+      "table": "pr_comments"
+    },
+    {
+      "relation": "user",
+      "rows": 12702,
+      "status": "linked",
+      "table": "pr_comments"
+    },
+    {
+      "relation": "user",
+      "rows": 26420,
+      "status": "orphan",
+      "table": "pr_comments"
+    },
+    {
+      "relation": "issue",
+      "rows": 711923,
+      "status": "missing_foreign_key",
+      "table": "pr_commit_details"
+    },
+    {
+      "relation": "pr",
+      "rows": 711923,
+      "status": "linked",
+      "table": "pr_commit_details"
+    },
+    {
+      "relation": "repository",
+      "rows": 711923,
+      "status": "missing_foreign_key",
+      "table": "pr_commit_details"
+    },
+    {
+      "relation": "review",
+      "rows": 711923,
+      "status": "missing_foreign_key",
+      "table": "pr_commit_details"
+    },
+    {
+      "relation": "user",
+      "rows": 711923,
+      "status": "missing_foreign_key",
+      "table": "pr_commit_details"
+    },
+    {
+      "relation": "issue",
+      "rows": 88576,
+      "status": "missing_foreign_key",
+      "table": "pr_commits"
+    },
+    {
+      "relation": "pr",
+      "rows": 88576,
+      "status": "linked",
+      "table": "pr_commits"
+    },
+    {
+      "relation": "repository",
+      "rows": 88576,
+      "status": "missing_foreign_key",
+      "table": "pr_commits"
+    },
+    {
+      "relation": "review",
+      "rows": 88576,
+      "status": "missing_foreign_key",
+      "table": "pr_commits"
+    },
+    {
+      "relation": "user",
+      "rows": 88576,
+      "status": "missing_foreign_key",
+      "table": "pr_commits"
+    },
+    {
+      "relation": "issue",
+      "rows": 19450,
+      "status": "missing_foreign_key",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "pr",
+      "rows": 19443,
+      "status": "linked",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "pr",
+      "rows": 7,
+      "status": "unresolved",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "repository",
+      "rows": 19450,
+      "status": "missing_foreign_key",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "review",
+      "rows": 19450,
+      "status": "linked",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "user",
+      "rows": 8829,
+      "status": "linked",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "user",
+      "rows": 10621,
+      "status": "orphan",
+      "table": "pr_review_comments"
+    },
+    {
+      "relation": "issue",
+      "rows": 26868,
+      "status": "missing_foreign_key",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "pr",
+      "rows": 26779,
+      "status": "linked",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "pr",
+      "rows": 89,
+      "status": "unresolved",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "repository",
+      "rows": 26868,
+      "status": "missing_foreign_key",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "review",
+      "rows": 26868,
+      "status": "linked",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "user",
+      "rows": 11360,
+      "status": "linked",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "user",
+      "rows": 15508,
+      "status": "orphan",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "relation": "issue",
+      "rows": 28875,
+      "status": "missing_foreign_key",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "pr",
+      "rows": 28875,
+      "status": "linked",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "repository",
+      "rows": 28875,
+      "status": "missing_foreign_key",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "review",
+      "rows": 28875,
+      "status": "missing_foreign_key",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "user",
+      "rows": 4880,
+      "status": "linked",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "user",
+      "rows": 1,
+      "status": "missing_foreign_key",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "user",
+      "rows": 23994,
+      "status": "orphan",
+      "table": "pr_reviews"
+    },
+    {
+      "relation": "issue",
+      "rows": 33596,
+      "status": "missing_foreign_key",
+      "table": "pr_task_type"
+    },
+    {
+      "relation": "pr",
+      "rows": 33596,
+      "status": "linked",
+      "table": "pr_task_type"
+    },
+    {
+      "relation": "repository",
+      "rows": 33596,
+      "status": "missing_foreign_key",
+      "table": "pr_task_type"
+    },
+    {
+      "relation": "review",
+      "rows": 33596,
+      "status": "missing_foreign_key",
+      "table": "pr_task_type"
+    },
+    {
+      "relation": "user",
+      "rows": 33596,
+      "status": "missing_foreign_key",
+      "table": "pr_task_type"
+    },
+    {
+      "relation": "issue",
+      "rows": 325500,
+      "status": "missing_foreign_key",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "pr",
+      "rows": 325500,
+      "status": "linked",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "repository",
+      "rows": 325500,
+      "status": "missing_foreign_key",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "review",
+      "rows": 325500,
+      "status": "missing_foreign_key",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "user",
+      "rows": 152514,
+      "status": "linked",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "user",
+      "rows": 15869,
+      "status": "missing_foreign_key",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "user",
+      "rows": 157117,
+      "status": "orphan",
+      "table": "pr_timeline"
+    },
+    {
+      "relation": "issue",
+      "rows": 33596,
+      "status": "missing_foreign_key",
+      "table": "pull_request"
+    },
+    {
+      "relation": "pr",
+      "rows": 33596,
+      "status": "linked",
+      "table": "pull_request"
+    },
+    {
+      "relation": "repository",
+      "rows": 33596,
+      "status": "linked",
+      "table": "pull_request"
+    },
+    {
+      "relation": "review",
+      "rows": 33596,
+      "status": "missing_foreign_key",
+      "table": "pull_request"
+    },
+    {
+      "relation": "user",
+      "rows": 28625,
+      "status": "linked",
+      "table": "pull_request"
+    },
+    {
+      "relation": "user",
+      "rows": 4971,
+      "status": "orphan",
+      "table": "pull_request"
+    },
+    {
+      "relation": "issue",
+      "rows": 4923,
+      "status": "linked",
+      "table": "related_issue"
+    },
+    {
+      "relation": "pr",
+      "rows": 4923,
+      "status": "linked",
+      "table": "related_issue"
+    },
+    {
+      "relation": "repository",
+      "rows": 4923,
+      "status": "missing_foreign_key",
+      "table": "related_issue"
+    },
+    {
+      "relation": "review",
+      "rows": 4923,
+      "status": "missing_foreign_key",
+      "table": "related_issue"
+    },
+    {
+      "relation": "user",
+      "rows": 4923,
+      "status": "missing_foreign_key",
+      "table": "related_issue"
+    }
+  ],
+  "resumed": true,
+  "schema_version": 1,
+  "status": "complete_with_gaps",
+  "tables": [
+    {
+      "bytes": 330776130,
+      "column_mapping": {
+        "agent": "agent",
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": "closed_at",
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": "merged_at",
+        "patch": null,
+        "pr_id": null,
+        "pr_number": "number",
+        "pr_url": "html_url",
+        "repo_id": "repo_id",
+        "repo_url": "repo_url",
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": "state",
+        "type": null,
+        "user": "user",
+        "user_id": "user_id"
+      },
+      "path": "all_pull_request.parquet",
+      "role": "pr",
+      "rows": 932791,
+      "rows_read": 932791,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "number",
+          "type": "int64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        },
+        {
+          "name": "agent",
+          "type": "string"
+        },
+        {
+          "name": "user_id",
+          "type": "int64"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "closed_at",
+          "type": "string"
+        },
+        {
+          "name": "merged_at",
+          "type": "string"
+        },
+        {
+          "name": "repo_id",
+          "type": "double"
+        },
+        {
+          "name": "repo_url",
+          "type": "string"
+        },
+        {
+          "name": "html_url",
+          "type": "string"
+        }
+      ],
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "status": "complete",
+      "table": "all_pull_request"
+    },
+    {
+      "bytes": 6136253,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": "url",
+        "repo_id": null,
+        "repo_url": null,
+        "repository": "full_name",
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": null,
+        "user": null,
+        "user_id": null
+      },
+      "path": "all_repository.parquet",
+      "role": "repository",
+      "rows": 116211,
+      "rows_read": 116211,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "license",
+          "type": "string"
+        },
+        {
+          "name": "full_name",
+          "type": "string"
+        },
+        {
+          "name": "language",
+          "type": "string"
+        },
+        {
+          "name": "forks",
+          "type": "double"
+        },
+        {
+          "name": "stars",
+          "type": "double"
+        }
+      ],
+      "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+      "status": "complete",
+      "table": "all_repository"
+    },
+    {
+      "bytes": 2511706,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": null,
+        "user": "login",
+        "user_id": null
+      },
+      "path": "all_user.parquet",
+      "role": "user",
+      "rows": 72189,
+      "rows_read": 72189,
+      "schema": [
+        {
+          "name": "id",
+          "type": "double"
+        },
+        {
+          "name": "login",
+          "type": "string"
+        },
+        {
+          "name": "followers",
+          "type": "double"
+        },
+        {
+          "name": "following",
+          "type": "double"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        }
+      ],
+      "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+      "status": "complete",
+      "table": "all_user"
+    },
+    {
+      "bytes": 715969,
+      "column_mapping": {
+        "agent": "agent",
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": "type",
+        "user": null,
+        "user_id": null
+      },
+      "path": "human_pr_task_type.parquet",
+      "role": "task",
+      "rows": 6618,
+      "rows_read": 6618,
+      "schema": [
+        {
+          "name": "agent",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "reason",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "confidence",
+          "type": "double"
+        }
+      ],
+      "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+      "status": "complete",
+      "table": "human_pr_task_type"
+    },
+    {
+      "bytes": 4387171,
+      "column_mapping": {
+        "agent": "agent",
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": "closed_at",
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": "merged_at",
+        "patch": null,
+        "pr_id": null,
+        "pr_number": "number",
+        "pr_url": "html_url",
+        "repo_id": null,
+        "repo_url": "repo_url",
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": "state",
+        "type": null,
+        "user": "user",
+        "user_id": "user_id"
+      },
+      "path": "human_pull_request.parquet",
+      "role": "pr",
+      "rows": 6618,
+      "rows_read": 6618,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "number",
+          "type": "int64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "user_id",
+          "type": "int64"
+        },
+        {
+          "name": "state",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "closed_at",
+          "type": "string"
+        },
+        {
+          "name": "merged_at",
+          "type": "string"
+        },
+        {
+          "name": "repo_url",
+          "type": "string"
+        },
+        {
+          "name": "html_url",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        },
+        {
+          "name": "agent",
+          "type": "string"
+        }
+      ],
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+      "status": "complete",
+      "table": "human_pull_request"
+    },
+    {
+      "bytes": 3222463,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": "closed_at",
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": "number",
+        "pr_url": "html_url",
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": "state",
+        "type": null,
+        "user": "user",
+        "user_id": null
+      },
+      "path": "issue.parquet",
+      "role": "issue",
+      "rows": 4614,
+      "rows_read": 4614,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "number",
+          "type": "int64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "closed_at",
+          "type": "string"
+        },
+        {
+          "name": "html_url",
+          "type": "string"
+        }
+      ],
+      "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+      "status": "complete",
+      "table": "issue"
+    },
+    {
+      "bytes": 25857243,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": "pr_id",
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": null,
+        "user": "user",
+        "user_id": "user_id"
+      },
+      "path": "pr_comments.parquet",
+      "role": "comment",
+      "rows": 39122,
+      "rows_read": 39122,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "pr_id",
+          "type": "int64"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "user_id",
+          "type": "int64"
+        },
+        {
+          "name": "user_type",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        }
+      ],
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+      "status": "complete",
+      "table": "pr_comments"
+    },
+    {
+      "bytes": 485214032,
+      "column_mapping": {
+        "agent": null,
+        "author": "author",
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": "committer",
+        "created_at": null,
+        "filename": "filename",
+        "head_sha": null,
+        "id": null,
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": "patch",
+        "pr_id": "pr_id",
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": "sha",
+        "state": "status",
+        "type": null,
+        "user": null,
+        "user_id": null
+      },
+      "path": "pr_commit_details.parquet",
+      "role": "file",
+      "rows": 711923,
+      "rows_read": 711923,
+      "schema": [
+        {
+          "name": "sha",
+          "type": "string"
+        },
+        {
+          "name": "pr_id",
+          "type": "int64"
+        },
+        {
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "name": "committer",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "name": "commit_stats_total",
+          "type": "int64"
+        },
+        {
+          "name": "commit_stats_additions",
+          "type": "int64"
+        },
+        {
+          "name": "commit_stats_deletions",
+          "type": "int64"
+        },
+        {
+          "name": "filename",
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "name": "additions",
+          "type": "double"
+        },
+        {
+          "name": "deletions",
+          "type": "double"
+        },
+        {
+          "name": "changes",
+          "type": "double"
+        },
+        {
+          "name": "patch",
+          "type": "string"
+        }
+      ],
+      "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "status": "complete",
+      "table": "pr_commit_details"
+    },
+    {
+      "bytes": 8314097,
+      "column_mapping": {
+        "agent": null,
+        "author": "author",
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": "committer",
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": null,
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": "pr_id",
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": "sha",
+        "state": null,
+        "type": null,
+        "user": null,
+        "user_id": null
+      },
+      "path": "pr_commits.parquet",
+      "role": "commit",
+      "rows": 88576,
+      "rows_read": 88576,
+      "schema": [
+        {
+          "name": "sha",
+          "type": "string"
+        },
+        {
+          "name": "pr_id",
+          "type": "int64"
+        },
+        {
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "name": "committer",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "status": "complete",
+      "table": "pr_commits"
+    },
+    {
+      "bytes": 14728130,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": "created_at",
+        "filename": "path",
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": "pull_request_url",
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": "pull_request_review_id",
+        "sha": "commit_id",
+        "state": null,
+        "type": null,
+        "user": "user",
+        "user_id": null
+      },
+      "path": "pr_review_comments.parquet",
+      "role": "review_comment",
+      "rows": 19450,
+      "rows_read": 19450,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "pull_request_review_id",
+          "type": "int64"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "user_type",
+          "type": "string"
+        },
+        {
+          "name": "diff_hunk",
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "type": "double"
+        },
+        {
+          "name": "original_position",
+          "type": "int64"
+        },
+        {
+          "name": "commit_id",
+          "type": "string"
+        },
+        {
+          "name": "original_commit_id",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        },
+        {
+          "name": "pull_request_url",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "updated_at",
+          "type": "string"
+        },
+        {
+          "name": "in_reply_to_id",
+          "type": "double"
+        }
+      ],
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+      "status": "complete",
+      "table": "pr_review_comments"
+    },
+    {
+      "bytes": 21125785,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": "created_at",
+        "filename": "path",
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": "pull_request_url",
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": "pull_request_review_id",
+        "sha": "commit_id",
+        "state": null,
+        "type": null,
+        "user": "user",
+        "user_id": null
+      },
+      "path": "pr_review_comments_v2.parquet",
+      "role": "review_comment",
+      "rows": 26868,
+      "rows_read": 26868,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "pull_request_review_id",
+          "type": "int64"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "user_type",
+          "type": "string"
+        },
+        {
+          "name": "diff_hunk",
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "type": "double"
+        },
+        {
+          "name": "original_position",
+          "type": "int64"
+        },
+        {
+          "name": "commit_id",
+          "type": "string"
+        },
+        {
+          "name": "original_commit_id",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        },
+        {
+          "name": "pull_request_url",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "updated_at",
+          "type": "string"
+        },
+        {
+          "name": "in_reply_to_id",
+          "type": "double"
+        }
+      ],
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+      "status": "complete",
+      "table": "pr_review_comments_v2"
+    },
+    {
+      "bytes": 7517041,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": "pr_id",
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": "state",
+        "type": null,
+        "user": "user",
+        "user_id": null
+      },
+      "path": "pr_reviews.parquet",
+      "role": "review",
+      "rows": 28875,
+      "rows_read": 28875,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "pr_id",
+          "type": "int64"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "user_type",
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "type": "string"
+        },
+        {
+          "name": "submitted_at",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        }
+      ],
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+      "status": "complete",
+      "table": "pr_reviews"
+    },
+    {
+      "bytes": 2993264,
+      "column_mapping": {
+        "agent": "agent",
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": "type",
+        "user": null,
+        "user_id": null
+      },
+      "path": "pr_task_type.parquet",
+      "role": "task",
+      "rows": 33596,
+      "rows_read": 33596,
+      "schema": [
+        {
+          "name": "agent",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "reason",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "confidence",
+          "type": "int64"
+        }
+      ],
+      "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+      "status": "complete",
+      "table": "pr_task_type"
+    },
+    {
+      "bytes": 34108415,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": null,
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": "pr_id",
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": "commit_id",
+        "state": null,
+        "type": null,
+        "user": "actor",
+        "user_id": null
+      },
+      "path": "pr_timeline.parquet",
+      "role": "timeline",
+      "rows": 325500,
+      "rows_read": 325500,
+      "schema": [
+        {
+          "name": "pr_id",
+          "type": "int64"
+        },
+        {
+          "name": "event",
+          "type": "string"
+        },
+        {
+          "name": "commit_id",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "actor",
+          "type": "string"
+        },
+        {
+          "name": "assignee",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+      "status": "complete",
+      "table": "pr_timeline"
+    },
+    {
+      "bytes": 16855612,
+      "column_mapping": {
+        "agent": "agent",
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": "closed_at",
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": "merged_at",
+        "patch": null,
+        "pr_id": null,
+        "pr_number": "number",
+        "pr_url": "html_url",
+        "repo_id": "repo_id",
+        "repo_url": "repo_url",
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": "state",
+        "type": null,
+        "user": "user",
+        "user_id": "user_id"
+      },
+      "path": "pull_request.parquet",
+      "role": "pr",
+      "rows": 33596,
+      "rows_read": 33596,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "number",
+          "type": "int64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        },
+        {
+          "name": "agent",
+          "type": "string"
+        },
+        {
+          "name": "user_id",
+          "type": "int64"
+        },
+        {
+          "name": "user",
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "type": "string"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        },
+        {
+          "name": "closed_at",
+          "type": "string"
+        },
+        {
+          "name": "merged_at",
+          "type": "string"
+        },
+        {
+          "name": "repo_id",
+          "type": "int64"
+        },
+        {
+          "name": "repo_url",
+          "type": "string"
+        },
+        {
+          "name": "html_url",
+          "type": "string"
+        }
+      ],
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+      "status": "complete",
+      "table": "pull_request"
+    },
+    {
+      "bytes": 75579,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": null,
+        "issue_id": "issue_id",
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": "pr_id",
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": null,
+        "user": null,
+        "user_id": null
+      },
+      "path": "related_issue.parquet",
+      "role": "issue_relation",
+      "rows": 4923,
+      "rows_read": 4923,
+      "schema": [
+        {
+          "name": "pr_id",
+          "type": "int64"
+        },
+        {
+          "name": "issue_id",
+          "type": "double"
+        },
+        {
+          "name": "source",
+          "type": "string"
+        }
+      ],
+      "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+      "status": "complete",
+      "table": "related_issue"
+    },
+    {
+      "bytes": 167251,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": null,
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": "url",
+        "repo_id": null,
+        "repo_url": null,
+        "repository": "full_name",
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": null,
+        "user": null,
+        "user_id": null
+      },
+      "path": "repository.parquet",
+      "role": "repository",
+      "rows": 2807,
+      "rows_read": 2807,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "license",
+          "type": "string"
+        },
+        {
+          "name": "full_name",
+          "type": "string"
+        },
+        {
+          "name": "language",
+          "type": "string"
+        },
+        {
+          "name": "forks",
+          "type": "int64"
+        },
+        {
+          "name": "stars",
+          "type": "int64"
+        }
+      ],
+      "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+      "status": "complete",
+      "table": "repository"
+    },
+    {
+      "bytes": 68935,
+      "column_mapping": {
+        "agent": null,
+        "author": null,
+        "base_ref": null,
+        "base_sha": null,
+        "closed_at": null,
+        "committer": null,
+        "created_at": "created_at",
+        "filename": null,
+        "head_sha": null,
+        "id": "id",
+        "issue_id": null,
+        "merge_commit_sha": null,
+        "merged_at": null,
+        "patch": null,
+        "pr_id": null,
+        "pr_number": null,
+        "pr_url": null,
+        "repo_id": null,
+        "repo_url": null,
+        "repository": null,
+        "review_id": null,
+        "sha": null,
+        "state": null,
+        "type": null,
+        "user": "login",
+        "user_id": null
+      },
+      "path": "user.parquet",
+      "role": "user",
+      "rows": 1796,
+      "rows_read": 1796,
+      "schema": [
+        {
+          "name": "id",
+          "type": "int64"
+        },
+        {
+          "name": "login",
+          "type": "string"
+        },
+        {
+          "name": "followers",
+          "type": "double"
+        },
+        {
+          "name": "following",
+          "type": "double"
+        },
+        {
+          "name": "created_at",
+          "type": "string"
+        }
+      ],
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+      "status": "complete",
+      "table": "user"
+    }
+  ],
+  "unavailable_or_unrecognized_tables": []
+}

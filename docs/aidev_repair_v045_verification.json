@@ -1,0 +1,262 @@
+{
+  "recorded_utc": "2026-09-08T21:37:51.507253+00:00",
+  "audit_kind": "readonly_completed_repair_export_and_safe_baseline_verification",
+  "all_checks_passed": false,
+  "checks_passed": 31,
+  "checks_failed": 1,
+  "checks": [
+    {
+      "check": "provided_baseline_sha256",
+      "passed": true,
+      "rows": 1000
+    },
+    {
+      "check": "fixed_selection_count_and_hash",
+      "passed": true
+    },
+    {
+      "check": "fixed_selection_manifest_hash",
+      "passed": true
+    },
+    {
+      "check": "unique_database_ids_and_source_span_type",
+      "passed": true
+    },
+    {
+      "check": "safe_details_schema_and_low_pending_boundary",
+      "passed": true
+    },
+    {
+      "check": "all_absolute_character_spans_within_selected_cell",
+      "passed": true,
+      "selected_characters": 74169
+    },
+    {
+      "check": "cell_source_and_hmac_exactly_link_fixed_selection",
+      "passed": true
+    },
+    {
+      "check": "terminal_cursor_and_committed_page_count",
+      "passed": true
+    },
+    {
+      "check": "all_parent_rows_preserved_by_full_details",
+      "passed": true,
+      "retained": 1000,
+      "missing": 0,
+      "new_rows": 3112
+    },
+    {
+      "check": "no_changed_details_or_exclusion_for_parent_identity",
+      "passed": true,
+      "changed_rows": 0
+    },
+    {
+      "check": "repair_type_occurrences_jsonl_csv_exact_cell_parity",
+      "passed": true,
+      "jsonl_rows": 4112,
+      "csv_rows": 4112
+    },
+    {
+      "check": "repair_type_occurrences_scope_and_evidence_boundary",
+      "passed": true
+    },
+    {
+      "check": "repair_excluded_jsonl_csv_exact_cell_parity",
+      "passed": true,
+      "jsonl_rows": 0,
+      "csv_rows": 0
+    },
+    {
+      "check": "repair_excluded_scope_and_evidence_boundary",
+      "passed": true
+    },
+    {
+      "check": "repair_unknown_type_review_queue_jsonl_csv_exact_cell_parity",
+      "passed": true,
+      "jsonl_rows": 1,
+      "csv_rows": 1
+    },
+    {
+      "check": "repair_unknown_type_review_queue_scope_and_evidence_boundary",
+      "passed": true
+    },
+    {
+      "check": "repair_data_gaps_jsonl_csv_exact_cell_parity",
+      "passed": true,
+      "jsonl_rows": 0,
+      "csv_rows": 0
+    },
+    {
+      "check": "repair_data_gaps_scope_and_evidence_boundary",
+      "passed": true
+    },
+    {
+      "check": "repair_type_summary_jsonl_csv_exact_cell_parity",
+      "passed": true,
+      "jsonl_rows": 4,
+      "csv_rows": 4
+    },
+    {
+      "check": "repair_type_summary_scope_and_evidence_boundary",
+      "passed": true
+    },
+    {
+      "check": "repair_type_occurrences_exact_sqlite_row_parity",
+      "passed": true
+    },
+    {
+      "check": "repair_excluded_exact_sqlite_row_parity",
+      "passed": true
+    },
+    {
+      "check": "type_summary_and_status_counts_match_database",
+      "passed": true,
+      "type_rows": 4,
+      "sum_occurrences": 4112
+    },
+    {
+      "check": "coverage_embedded_summary_matches_standalone",
+      "passed": true
+    },
+    {
+      "check": "coverage_candidate_total_matches_detail_rows",
+      "passed": false,
+      "coverage_reported": 4106,
+      "sqlite_and_jsonl_actual": 4112,
+      "difference": 6
+    },
+    {
+      "check": "other_coverage_counts_match",
+      "passed": true
+    },
+    {
+      "check": "completion_requires_source_verification",
+      "passed": true
+    },
+    {
+      "check": "current_source_sha256_matches_run_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "current_classifier_sha256_matches_run_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "fixed_parent_manifest_and_hmac_key_reference",
+      "passed": true
+    },
+    {
+      "check": "selected_source_static_hash_and_parquet_row_bounds",
+      "passed": true
+    },
+    {
+      "check": "audited_artifacts_unchanged",
+      "passed": true
+    }
+  ],
+  "actual_results": {
+    "parent_baseline_rows": 1000,
+    "repair_detail_rows": 4112,
+    "retained_parent_rows": 1000,
+    "lost_parent_rows": 0,
+    "changed_parent_details": 0,
+    "new_exact_rows": 3112,
+    "candidate_occurrences": 4112,
+    "excluded_occurrences": 0,
+    "type_counts": [
+      {
+        "category": "BIZ",
+        "subtype": "business_object",
+        "count": 2
+      },
+      {
+        "category": "BIZ",
+        "subtype": "request_body",
+        "count": 2
+      },
+      {
+        "category": "BIZ",
+        "subtype": "response_body",
+        "count": 2
+      },
+      {
+        "category": "QID",
+        "subtype": "network_identifier",
+        "count": 4106
+      }
+    ],
+    "new_type_status_counts": [
+      {
+        "category": "BIZ",
+        "subtype": "business_object",
+        "candidate_status": "carrier_candidate",
+        "count": 2
+      },
+      {
+        "category": "BIZ",
+        "subtype": "request_body",
+        "candidate_status": "identifier_reference",
+        "count": 2
+      },
+      {
+        "category": "BIZ",
+        "subtype": "response_body",
+        "candidate_status": "carrier_candidate",
+        "count": 2
+      },
+      {
+        "category": "QID",
+        "subtype": "network_identifier",
+        "candidate_status": "literal_candidate",
+        "count": 3106
+      }
+    ]
+  },
+  "identified_defect": {
+    "component": "content_repair._export",
+    "reported_total": 4106,
+    "actual_total": 4112,
+    "cause": "The evidence aggregation loop reuses count and overwrites the exported candidate total with the last type/status group count.",
+    "source_references": [
+      "src/agentlog_unified/content_repair.py:253",
+      "src/agentlog_unified/content_repair.py:271",
+      "src/agentlog_unified/content_repair.py:279"
+    ],
+    "effect": "Coverage headline total is wrong; SQLite, occurrence JSONL/CSV, and per-type/status summaries retain all 4112 rows.",
+    "existing_artifacts_not_modified": true
+  },
+  "evidence_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_truncated_parent_baseline_v045.jsonl": "7d7dac743e0f16d1f4c5143e6082b207f8ad731372bb35f7455ed1709bfb8c9f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/selection/selection.jsonl": "f9ffa407ced282854d850529e62b51b2f65de6cfd1c7b7f069cbcd2faa68f342",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/selection/selection_manifest.json": "d2538d47f4e156516a1e7cecd9e5c135cf7a6780bf7d2d2fa60ab3fecb81d2de",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/manifest.json": "0065b8d326f71313cc50f962e81bfd9ab55f61bd7320bc724c62ada2cfa4fdc5",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_coverage.json": "a595785716074ee394b8fdc9e71d768a7c10762b05ac330994105e6b86301fe6",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair.sqlite": "51c456493bb9063141c3ea0c183edc2acddb3324b69837cbd346d13e7d916f15",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_excluded.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_type_occurrences.jsonl": "2766bbd557f329be9fad9bb532d94c8ba92e9f2681c5bc1d65a890a4d464bddf",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_data_gaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_unknown_type_review_queue.jsonl": "dcf2ae0bd0d32b39b61061b5574e8e22cf51db8c7b2c6402b61fb91739d69f6f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_type_summary.jsonl": "e5bfc76e2a8df31cae5965686191157aef2f27ecef2e74e31743878d09429a69",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_data_gaps.csv": "dbadb4f901cdb61c066064c5b3716d6ae09af3b46b39511f5246c96afbda4a01",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_unknown_type_review_queue.csv": "ef43918c91c0fdc339176880c4c9eb90b5ec60726dcacc71cc22039484b9a9a2",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_excluded.csv": "8247d2f64adb8d1b6d21925d17643be79b3274158492577a4b3e435b4234f6b1",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_type_summary.csv": "0ebd24915e7306ed8332cde2dbe00fed83cb52fafcdedb5ef395748ffc257e33",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045/scan/repair_type_occurrences.csv": "b8e6190a0bdc481af7df218a438f3efafa2fe2eb425c8e93c419a914e62d4436"
+  },
+  "static_source_evidence": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "bytes": 330776130,
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "parquet_rows": 932791,
+      "source_values_decoded": false
+    }
+  ],
+  "parent_database_accessed": false,
+  "source_values_decoded": false,
+  "source_values_printed": false,
+  "credential_values_verified": false,
+  "new_type_status": "not_established",
+  "evidence_boundary": "Scope is dataset_text_cell_rescan; these are pending static candidates. The extra rows recover bounded-rule observations, not unique people/secrets or confirmed disclosures."
+}

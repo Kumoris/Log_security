@@ -1,0 +1,8 @@
+{
+  "status": "dry_run",
+  "files_written": false,
+  "target_repository_accessed": false,
+  "external_model_calls": 0,
+  "max_fields": 100,
+  "exit_code": 0
+}

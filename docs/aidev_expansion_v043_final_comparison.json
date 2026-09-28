@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-08T20:44:05.572388+00:00",
+  "initial_batch": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/aidev-expansion-v043",
+  "final_batch": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/aidev-expansion-v043-final",
+  "checks": {
+    "type_occurrences_all_rows_identical": true,
+    "unknown_type_review_queue_all_rows_identical": true,
+    "all_raw_observation_file_diff_gap_records_identical": true,
+    "actual_pydriller_metrics_identical": true
+  },
+  "counts": {
+    "type_occurrences": [
+      882,
+      882
+    ],
+    "unknown_type_review_queue": [
+      386,
+      386
+    ]
+  },
+  "all_checks_passed": true,
+  "note": "Final corrected C# tokenizer does not change any AIDev evidence in this no-C# cohort. Final batch uses new actual PyDriller extraction, not reassigned old fingerprints."
+}

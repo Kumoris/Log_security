@@ -1,0 +1,558 @@
+{
+  "started_utc": "2026-09-08T23:29:14.015714+00:00",
+  "completed_utc": "2026-09-08T23:29:18.942222+00:00",
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py"
+  ],
+  "helper_sha256": "173db1d8d6d36309a359946aaf21effa3aa7976d82900260f173507a74c3e03e",
+  "dataset": "aidev",
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "baseline_method": "verified_parent_repair_nonexcluded_cell_type_union",
+  "baseline_proof": {
+    "conditions": {
+      "reconcile_complete": true,
+      "coverage_same_fingerprint": true,
+      "no_parent_identity_or_row_removed": true,
+      "exact_run_ancestry": true,
+      "parent_manifest_frozen_in_repair": true,
+      "shared_source_manifest": true,
+      "selection_frozen": true,
+      "reconcile_implementation_matches_reviewed_code": true,
+      "legacy_classifier_shared": true,
+      "reconcile_input_files_identical": true
+    },
+    "input_files_checked": 10,
+    "database_union_proven": true,
+    "removed_parent_identities": 0,
+    "removed_parent_rows": 0,
+    "shared_exact_duplicate_occurrences": 1000,
+    "new_repair_identities": 3112,
+    "proof_rule": "With zero removed parent identities, reconciliation retains every parent/repair classification variant; duplicate removal does not alter source-cell/type set membership."
+  },
+  "baseline_controlled_cell_type_pairs": 639210,
+  "structured_controlled_cell_type_pairs": 866,
+  "shared_cell_type_pairs": 852,
+  "gained_cell_type_pairs": 14,
+  "controlled_labels_with_gain": 7,
+  "labels_observed_only_in_structured": 0,
+  "structured_controlled_occurrences": 1140,
+  "structured_candidates_outside_catalog": 0,
+  "novel_cell_type_occurrence_evidence_records": 18,
+  "type_summary": [
+    {
+      "category": "AUTH",
+      "subtype": "password",
+      "label": "密码",
+      "baseline_cell_type_pairs": 5300,
+      "structured_cell_type_pairs": 20,
+      "shared_cell_type_pairs": 18,
+      "gained_cell_type_pairs": 2
+    },
+    {
+      "category": "AUTH",
+      "subtype": "access_token",
+      "label": "访问令牌",
+      "baseline_cell_type_pairs": 17229,
+      "structured_cell_type_pairs": 41,
+      "shared_cell_type_pairs": 38,
+      "gained_cell_type_pairs": 3
+    },
+    {
+      "category": "AUTH",
+      "subtype": "api_key",
+      "label": "服务密钥",
+      "baseline_cell_type_pairs": 10249,
+      "structured_cell_type_pairs": 32,
+      "shared_cell_type_pairs": 32,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "AUTH",
+      "subtype": "private_key",
+      "label": "私钥",
+      "baseline_cell_type_pairs": 868,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "AUTH",
+      "subtype": "auth_cookie",
+      "label": "认证 Cookie",
+      "baseline_cell_type_pairs": 1907,
+      "structured_cell_type_pairs": 1,
+      "shared_cell_type_pairs": 1,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "AUTH",
+      "subtype": "authorization_header",
+      "label": "认证头",
+      "baseline_cell_type_pairs": 4157,
+      "structured_cell_type_pairs": 1,
+      "shared_cell_type_pairs": 1,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "AUTH",
+      "subtype": "credential_bundle",
+      "label": "其他认证秘密或凭证对象",
+      "baseline_cell_type_pairs": 10274,
+      "structured_cell_type_pairs": 12,
+      "shared_cell_type_pairs": 10,
+      "gained_cell_type_pairs": 2
+    },
+    {
+      "category": "PII",
+      "subtype": "email",
+      "label": "邮箱",
+      "baseline_cell_type_pairs": 277629,
+      "structured_cell_type_pairs": 27,
+      "shared_cell_type_pairs": 27,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "phone",
+      "label": "电话",
+      "baseline_cell_type_pairs": 1443,
+      "structured_cell_type_pairs": 19,
+      "shared_cell_type_pairs": 19,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "person_name",
+      "label": "个人姓名",
+      "baseline_cell_type_pairs": 6814,
+      "structured_cell_type_pairs": 53,
+      "shared_cell_type_pairs": 53,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "postal_address",
+      "label": "通信地址",
+      "baseline_cell_type_pairs": 6814,
+      "structured_cell_type_pairs": 19,
+      "shared_cell_type_pairs": 19,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "government_identifier",
+      "label": "政府证件标识",
+      "baseline_cell_type_pairs": 221,
+      "structured_cell_type_pairs": 4,
+      "shared_cell_type_pairs": 4,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "medical",
+      "label": "医疗健康信息",
+      "baseline_cell_type_pairs": 80,
+      "structured_cell_type_pairs": 1,
+      "shared_cell_type_pairs": 1,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "financial",
+      "label": "个人金融信息",
+      "baseline_cell_type_pairs": 696,
+      "structured_cell_type_pairs": 4,
+      "shared_cell_type_pairs": 4,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "precise_location",
+      "label": "精确位置候选",
+      "baseline_cell_type_pairs": 223,
+      "structured_cell_type_pairs": 7,
+      "shared_cell_type_pairs": 7,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "biometric",
+      "label": "生物特征",
+      "baseline_cell_type_pairs": 26,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "PII",
+      "subtype": "unspecified_personal_information",
+      "label": "细类待确定",
+      "baseline_cell_type_pairs": 0,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "user_identifier",
+      "label": "用户或账户标识",
+      "baseline_cell_type_pairs": 12351,
+      "structured_cell_type_pairs": 27,
+      "shared_cell_type_pairs": 27,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "session_identifier",
+      "label": "会话标识",
+      "baseline_cell_type_pairs": 2090,
+      "structured_cell_type_pairs": 18,
+      "shared_cell_type_pairs": 18,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "device_identifier",
+      "label": "设备标识",
+      "baseline_cell_type_pairs": 402,
+      "structured_cell_type_pairs": 7,
+      "shared_cell_type_pairs": 7,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "network_identifier",
+      "label": "网络关联标识",
+      "baseline_cell_type_pairs": 9581,
+      "structured_cell_type_pairs": 37,
+      "shared_cell_type_pairs": 37,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "request_identifier",
+      "label": "请求关联标识",
+      "baseline_cell_type_pairs": 3343,
+      "structured_cell_type_pairs": 15,
+      "shared_cell_type_pairs": 15,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "transaction_identifier",
+      "label": "业务关联标识",
+      "baseline_cell_type_pairs": 1767,
+      "structured_cell_type_pairs": 4,
+      "shared_cell_type_pairs": 4,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "tenant_identifier",
+      "label": "租户标识",
+      "baseline_cell_type_pairs": 829,
+      "structured_cell_type_pairs": 8,
+      "shared_cell_type_pairs": 8,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "QID",
+      "subtype": "unspecified_linkable_identifier",
+      "label": "细类待确定",
+      "baseline_cell_type_pairs": 0,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "BIZ",
+      "subtype": "request_body",
+      "label": "请求体载体",
+      "baseline_cell_type_pairs": 22129,
+      "structured_cell_type_pairs": 33,
+      "shared_cell_type_pairs": 33,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "BIZ",
+      "subtype": "response_body",
+      "label": "响应体载体",
+      "baseline_cell_type_pairs": 20996,
+      "structured_cell_type_pairs": 36,
+      "shared_cell_type_pairs": 36,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "BIZ",
+      "subtype": "http_headers",
+      "label": "请求响应头载体",
+      "baseline_cell_type_pairs": 16110,
+      "structured_cell_type_pairs": 25,
+      "shared_cell_type_pairs": 25,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "BIZ",
+      "subtype": "document_content",
+      "label": "文档及内容载体",
+      "baseline_cell_type_pairs": 30456,
+      "structured_cell_type_pairs": 70,
+      "shared_cell_type_pairs": 69,
+      "gained_cell_type_pairs": 1
+    },
+    {
+      "category": "BIZ",
+      "subtype": "message_content",
+      "label": "业务聊天内容载体",
+      "baseline_cell_type_pairs": 629,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "BIZ",
+      "subtype": "business_object",
+      "label": "业务对象载体",
+      "baseline_cell_type_pairs": 55523,
+      "structured_cell_type_pairs": 108,
+      "shared_cell_type_pairs": 104,
+      "gained_cell_type_pairs": 4
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_object",
+      "label": "细类待确定",
+      "baseline_cell_type_pairs": 0,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_content",
+      "label": "细类待确定",
+      "baseline_cell_type_pairs": 0,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "CFG",
+      "subtype": "database_connection",
+      "label": "数据库连接",
+      "baseline_cell_type_pairs": 2325,
+      "structured_cell_type_pairs": 14,
+      "shared_cell_type_pairs": 13,
+      "gained_cell_type_pairs": 1
+    },
+    {
+      "category": "CFG",
+      "subtype": "internal_endpoint",
+      "label": "内部端点",
+      "baseline_cell_type_pairs": 97,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "CFG",
+      "subtype": "filesystem_path",
+      "label": "内部文件路径",
+      "baseline_cell_type_pairs": 6398,
+      "structured_cell_type_pairs": 13,
+      "shared_cell_type_pairs": 13,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "CFG",
+      "subtype": "environment",
+      "label": "环境变量载体",
+      "baseline_cell_type_pairs": 15294,
+      "structured_cell_type_pairs": 65,
+      "shared_cell_type_pairs": 65,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "CFG",
+      "subtype": "deployment_configuration",
+      "label": "配置及部署载体",
+      "baseline_cell_type_pairs": 27368,
+      "structured_cell_type_pairs": 36,
+      "shared_cell_type_pairs": 36,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "CFG",
+      "subtype": "unclassified_internal_resource",
+      "label": "细类待确定",
+      "baseline_cell_type_pairs": 0,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "DIAG",
+      "subtype": "exception_message",
+      "label": "异常内容载体",
+      "baseline_cell_type_pairs": 64738,
+      "structured_cell_type_pairs": 101,
+      "shared_cell_type_pairs": 101,
+      "gained_cell_type_pairs": 0
+    },
+    {
+      "category": "DIAG",
+      "subtype": "stack_trace",
+      "label": "堆栈载体",
+      "baseline_cell_type_pairs": 2594,
+      "structured_cell_type_pairs": 8,
+      "shared_cell_type_pairs": 7,
+      "gained_cell_type_pairs": 1
+    },
+    {
+      "category": "DIAG",
+      "subtype": "failure_response",
+      "label": "失败响应载体",
+      "baseline_cell_type_pairs": 260,
+      "structured_cell_type_pairs": 0,
+      "shared_cell_type_pairs": 0,
+      "gained_cell_type_pairs": 0
+    }
+  ],
+  "evidence_outputs": {
+    "aidev_structured_gain_v048_evidence.jsonl.gz": {
+      "bytes": 1413,
+      "sha256": "f7f01c2406f05c9cfa05d958e8c2bd155342fed5de3f9c226786be23386ff037"
+    },
+    "aidev_structured_gain_v048_evidence.csv.gz": {
+      "bytes": 1258,
+      "sha256": "7632ff0655558d9b9af1a1b1a6354c3c0516c1887a70719087f7511bad0ede5f"
+    }
+  },
+  "input_snapshot": {
+    "content-runs/aidev-v044/manifest.json": {
+      "stat": [
+        16777231,
+        106672910,
+        23431,
+        1788901155902570376,
+        1788901155902641626
+      ],
+      "sha256": "a6942e6b5567bc1f03ea7cb32cc5e1c2de7e482a39bcec500309009b3adff082"
+    },
+    "content-runs/aidev-v044/content.sqlite": {
+      "stat": [
+        16777231,
+        106672911,
+        832344064,
+        1788903389995409971,
+        1788903389995409971
+      ],
+      "sha256": "127c50044dc212f125a6499bc72b129dd23d51d721a8b3455bddd8c725084d78"
+    },
+    "repair-runs/aidev-v045-final/scan/manifest.json": {
+      "stat": [
+        16777231,
+        106832590,
+        1269,
+        1788903666122091545,
+        1788903666122159795
+      ],
+      "sha256": "22fad4fb8605dfca028a7fe289b15ba4d0c3294409fae37c98895b8a2ac7eacd"
+    },
+    "repair-runs/aidev-v045-final/scan/repair.sqlite": {
+      "stat": [
+        16777231,
+        106832592,
+        1372160,
+        1788903666809724842,
+        1788903666809724842
+      ],
+      "sha256": "51c456493bb9063141c3ea0c183edc2acddb3324b69837cbd346d13e7d916f15"
+    },
+    "reconciled-runs/aidev-v046/manifest.json": {
+      "stat": [
+        16777231,
+        107343459,
+        8041,
+        1788905815128690771,
+        1788905815128807270
+      ],
+      "sha256": "99a986e6ec0d1f3151920f1edcc7aa19f00b23f213280bf04afae99a1746bc92"
+    },
+    "reconciled-runs/aidev-v046/merged_coverage.json": {
+      "stat": [
+        16777231,
+        107343458,
+        7083,
+        1788905815128358355,
+        1788905815128445229
+      ],
+      "sha256": "e7d8c36ef65d01afe66ebe5429a7d4ff759f8ddaff3f8298316b5ac6f260b296"
+    },
+    "structured-runs/aidev-v048/manifest.json": {
+      "stat": [
+        16777231,
+        107427165,
+        23804,
+        1788909559837033587,
+        1788909559837095587
+      ],
+      "sha256": "81c33de87fc0dbca6db74606ca6a0e9fc71c7b5048f9df3eadc327a5f138aaca"
+    },
+    "structured-runs/aidev-v048/structured.sqlite": {
+      "stat": [
+        16777231,
+        107427167,
+        128397312,
+        1788910036570318238,
+        1788910105269967727
+      ],
+      "sha256": "76ae52a2a22eafc9077faafd07a96453419265b4766c33242103aa76e2f5a43e"
+    },
+    "structured-runs/aidev-v048/structured_coverage.json": {
+      "stat": [
+        16777231,
+        107505571,
+        16955,
+        1788910112733266361,
+        1788910112733387236
+      ],
+      "sha256": "26363ccbd2839f7c08ae77d706654e6ff1b03fc43be0d8147d83630280538a7f"
+    },
+    "structured-runs/aidev-v048/export_state.json": {
+      "stat": [
+        16777231,
+        107505572,
+        5118,
+        1788910112748252099,
+        1788910112748373724
+      ],
+      "sha256": "1a2f74d033a803eb5c87d8a6b11ddd7045bd2022eaf73afbc3ea765234e3c518"
+    }
+  },
+  "inputs_unchanged": true,
+  "structured_source_fingerprint": {
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+    "structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+    "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+  },
+  "source_values_decoded": false,
+  "original_values_dynamic_keys_or_hmac_exported": false,
+  "network_accessed": false,
+  "target_code_executed": false,
+  "count_unit": "Distinct (source table, column, row, controlled category, subtype); occurrence coordinates are not comparable across parsers.",
+  "evidence_boundary": "A gain is a new cell/type relationship relative to the frozen non-excluded plaintext baseline, not a new real secret, person, leak or sensitive type. Prior and structured occurrence counts are not additive. Zero-gain labels remain visible.",
+  "observation_scope": "structured_vs_plaintext_cell_type_gain",
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_sensitive_type_established": false,
+  "full_dataset_coverage_claim": false,
+  "application_log_evidence": false
+}

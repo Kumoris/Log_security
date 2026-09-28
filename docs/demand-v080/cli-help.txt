@@ -1,0 +1,105 @@
+usage: __main__.py [-h] [--config CONFIG] [--input INPUT]
+                   [--format {csv,jsonl,json,txt,aidev}] [--run-id RUN_ID]
+                   [--offline] [--dry-run] [--resume] [--file FILE]
+                   [--reviewer REVIEWER] [--model MODEL] [--query QUERY]
+                   [--since SINCE] [--until UNTIL] [--output OUTPUT]
+                   [--max-partitions MAX_PARTITIONS] [--with-reverse]
+                   [--extend-from EXTEND_FROM] [--run-mode {smoke,pilot,full}]
+                   [--aidev-dir AIDEV_DIR] [--swechat-dir SWECHAT_DIR]
+                   [--cache-dir CACHE_DIR] [--online]
+                   [--max-repositories MAX_REPOSITORIES]
+                   [--max-seconds MAX_SECONDS] [--max-commits MAX_COMMITS]
+                   [--retry-failed] [--column-map COLUMN_MAP]
+                   [--batch-size BATCH_SIZE]
+                   [--max-source-chars MAX_SOURCE_CHARS]
+                   [--max-text-matches MAX_TEXT_MATCHES]
+                   [--max-json-documents MAX_JSON_DOCUMENTS]
+                   [--max-json-depth MAX_JSON_DEPTH]
+                   [--max-json-nodes MAX_JSON_NODES]
+                   [--max-json-decode-layers MAX_JSON_DECODE_LAYERS]
+                   [--repair-page-chars REPAIR_PAGE_CHARS]
+                   [--repair-page-matches REPAIR_PAGE_MATCHES]
+                   [--repair-run REPAIR_RUN] [--max-rows MAX_ROWS]
+                   [--min-free-gib MIN_FREE_GIB] [--max-pages MAX_PAGES]
+                   [--aidev-import AIDEV_IMPORT_DIR]
+                   [--analysis-run ANALYSIS_RUN]
+                   {doctor,run,match,discover,reverse,review-import,resolve-match,aidev-import,aidev-coverage,aidev-anchor-export,swechat-import,commit-import,collect-objects,batch-mine,batch-export,content-scan,schema-scan,structured-scan,content-repair,content-advance,content-reconcile,semantic-scan,semantic-codebook,semantic-history,semantic-model,semantic-demand,ingest,collect,mine,detect,trace,assess,export}
+
+PyDriller application-log history screener; static machine candidates only
+
+positional arguments:
+  {doctor,run,match,discover,reverse,review-import,resolve-match,aidev-import,aidev-coverage,aidev-anchor-export,swechat-import,commit-import,collect-objects,batch-mine,batch-export,content-scan,schema-scan,structured-scan,content-repair,content-advance,content-reconcile,semantic-scan,semantic-codebook,semantic-history,semantic-model,semantic-demand,ingest,collect,mine,detect,trace,assess,export}
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --input INPUT
+  --format {csv,jsonl,json,txt,aidev}
+  --run-id RUN_ID
+  --offline
+  --dry-run
+  --resume
+  --file FILE
+  --reviewer REVIEWER
+  --model MODEL         Explicit Codex model ID for opt-in semantic-model
+  --query QUERY
+  --since SINCE
+  --until UNTIL
+  --output OUTPUT
+  --max-partitions MAX_PARTITIONS
+  --with-reverse
+  --extend-from EXTEND_FROM
+                        Reuse complete Git extraction from an earlier frozen
+                        run into a new run
+  --run-mode {smoke,pilot,full}
+  --aidev-dir AIDEV_DIR
+                        Local directory containing AIDev Parquet tables
+  --swechat-dir SWECHAT_DIR
+                        Local directory containing SWE-chat Parquet tables
+  --cache-dir CACHE_DIR
+                        Dedicated Git cache for batch mining
+  --online              Allow batch mining to clone/fetch public Git
+                        repositories
+  --max-repositories MAX_REPOSITORIES
+                        Repositories to attempt this invocation; remaining
+                        commits stay queued
+  --max-seconds MAX_SECONDS
+                        Batch invocation time budget; remaining commits stay
+                        queued
+  --max-commits MAX_COMMITS
+                        Exact commits to attempt in object collection
+  --retry-failed        Retry previously failed batch commits
+  --column-map COLUMN_MAP
+                        YAML/JSON table-to-column mappings for AIDev import
+  --batch-size BATCH_SIZE
+  --max-source-chars MAX_SOURCE_CHARS
+                        Maximum characters per dataset text cell; unscanned
+                        tails are coverage gaps
+  --max-text-matches MAX_TEXT_MATCHES
+                        Maximum candidate spans per text cell; excess matches
+                        are coverage gaps
+  --max-json-documents MAX_JSON_DOCUMENTS
+  --max-json-depth MAX_JSON_DEPTH
+  --max-json-nodes MAX_JSON_NODES
+  --max-json-decode-layers MAX_JSON_DECODE_LAYERS
+  --repair-page-chars REPAIR_PAGE_CHARS
+                        Core Unicode characters per repair rule page
+                        (1..65536)
+  --repair-page-matches REPAIR_PAGE_MATCHES
+                        Repair page match threshold (1..1000); sibling labels
+                        commit together
+  --repair-run REPAIR_RUN
+                        Completed or partial fixed repair output for read-only
+                        reconciliation
+  --max-rows MAX_ROWS   New text source rows to process; zero exports the
+                        existing checkpoint
+  --min-free-gib MIN_FREE_GIB
+                        Free-space reserve for compressed text advance
+  --max-pages MAX_PAGES
+                        Repair pages to commit this invocation; remaining work
+                        stays checkpointed
+  --aidev-import AIDEV_IMPORT_DIR
+                        Completed AIDev import directory for corpus coverage
+  --analysis-run ANALYSIS_RUN
+                        Run directory with code/type coverage exports;
+                        repeatable

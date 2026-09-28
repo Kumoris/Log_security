@@ -1,0 +1,1277 @@
+{
+  "schema_version": "aidev_schema_exports_independent_verification_v047",
+  "started_utc": "2026-09-08T23:03:38.991925+00:00",
+  "completed_utc": "2026-09-08T23:03:43.134219+00:00",
+  "all_checks_passed": true,
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_schema_v047.py"
+  ],
+  "verifier_sha256": "406a20441735f082d57e10c0073a06e159dfce35ed17d01f72b7ad94bfcb80c1",
+  "source_values_read": false,
+  "source_bytes_rehashed_without_value_decode": true,
+  "source_min_max_values_read": false,
+  "raw_values_or_value_hashes_exported": false,
+  "remote_accessed": false,
+  "target_code_executed": false,
+  "formal_source_modified": false,
+  "swechat_output_accessed": false,
+  "result": {
+    "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v047",
+    "dataset": "aidev",
+    "status": "complete_with_schema_gaps",
+    "all_checks_passed": true,
+    "failed_check_counts": {},
+    "elapsed_seconds": 2.483,
+    "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+    "source_code_sha256": {
+      "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+      "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+      "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+      "schema_scan.py": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+      "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+      "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+      "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+    },
+    "frozen_source_inputs": [
+      {
+        "path": "all_pull_request.parquet",
+        "bytes": 330776130,
+        "hash_matches": true
+      },
+      {
+        "path": "all_repository.parquet",
+        "bytes": 6136253,
+        "hash_matches": true
+      },
+      {
+        "path": "all_user.parquet",
+        "bytes": 2511706,
+        "hash_matches": true
+      },
+      {
+        "path": "human_pr_task_type.parquet",
+        "bytes": 715969,
+        "hash_matches": true
+      },
+      {
+        "path": "human_pull_request.parquet",
+        "bytes": 4387171,
+        "hash_matches": true
+      },
+      {
+        "path": "issue.parquet",
+        "bytes": 3222463,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_comments.parquet",
+        "bytes": 25857243,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_commit_details.parquet",
+        "bytes": 485214032,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_commits.parquet",
+        "bytes": 8314097,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_review_comments.parquet",
+        "bytes": 14728130,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_review_comments_v2.parquet",
+        "bytes": 21125785,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_reviews.parquet",
+        "bytes": 7517041,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_task_type.parquet",
+        "bytes": 2993264,
+        "hash_matches": true
+      },
+      {
+        "path": "pr_timeline.parquet",
+        "bytes": 34108415,
+        "hash_matches": true
+      },
+      {
+        "path": "pull_request.parquet",
+        "bytes": 16855612,
+        "hash_matches": true
+      },
+      {
+        "path": "related_issue.parquet",
+        "bytes": 75579,
+        "hash_matches": true
+      },
+      {
+        "path": "repository.parquet",
+        "bytes": 167251,
+        "hash_matches": true
+      },
+      {
+        "path": "user.parquet",
+        "bytes": 68935,
+        "hash_matches": true
+      }
+    ],
+    "all_fields": 160,
+    "scalar_fields": 160,
+    "selected_fields": 22,
+    "counts": {
+      "cells_decoded": 4504029,
+      "schema_context_candidate": 3688655,
+      "placeholder_or_example": 12,
+      "null": 329537,
+      "unresolved": 485812,
+      "invalid": 13
+    },
+    "range_counts_by_quality": {
+      "schema_context_candidate": 40766,
+      "placeholder_or_example": 9,
+      "unresolved": 26221,
+      "null": 20270,
+      "invalid": 5
+    },
+    "quality_reason_source_cells": [
+      {
+        "status": "invalid",
+        "reason": "structured_metadata_requires_interpretation",
+        "source_cells": 13
+      },
+      {
+        "status": "null",
+        "reason": "arrow_null",
+        "source_cells": 329537
+      },
+      {
+        "status": "placeholder_or_example",
+        "reason": "example_shaped_metadata_not_validated",
+        "source_cells": 12
+      },
+      {
+        "status": "schema_context_candidate",
+        "reason": "exact_frozen_account_login_match",
+        "source_cells": 1127041
+      },
+      {
+        "status": "schema_context_candidate",
+        "reason": "explicit_account_login_field",
+        "source_cells": 73983
+      },
+      {
+        "status": "schema_context_candidate",
+        "reason": "explicit_account_reference_field",
+        "source_cells": 1401541
+      },
+      {
+        "status": "schema_context_candidate",
+        "reason": "explicit_numeric_account_field",
+        "source_cells": 1086090
+      },
+      {
+        "status": "unresolved",
+        "reason": "account_login_not_found_in_frozen_references",
+        "source_cells": 485812
+      }
+    ],
+    "type_summary": [
+      {
+        "category": "QID",
+        "subtype": "user_identifier",
+        "candidate_source_cells": 3688655,
+        "candidate_status": "schema_context_candidate",
+        "observation_scope": "dataset_schema_context",
+        "evidence_basis": "schema_context",
+        "human_review_status": "pending",
+        "confidence": "low",
+        "runtime_confirmed": false,
+        "personal_ownership_confirmed": false,
+        "sensitivity_confirmed": false,
+        "application_log_evidence": false,
+        "new_type_status": "not_established"
+      }
+    ],
+    "exports": {
+      "schema_context_candidates": {
+        "records": 40766,
+        "represented_source_cells": 3688655
+      },
+      "schema_context_review_queue": {
+        "records": 87271,
+        "represented_source_cells": 4504029
+      },
+      "schema_unresolved_fields": {
+        "records": 138,
+        "represented_source_cells": 24796604
+      },
+      "schema_type_summary": {
+        "records": 1,
+        "represented_source_cells": 3688655
+      }
+    },
+    "selected_field_coverage": [
+      {
+        "field_id": "22d788aae8675be546fc3de8",
+        "dataset": "aidev",
+        "table_path": "all_pull_request.parquet",
+        "column_name": "user_id",
+        "native_type": "int64",
+        "schema_role": "numeric_account_id",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 932791,
+        "next_row": 932791,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 932791,
+          "schema_context_candidate": 932791
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "8757fea48dad0cb751efd6d4",
+        "dataset": "aidev",
+        "table_path": "all_pull_request.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 932791,
+        "next_row": 932791,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 932791,
+          "placeholder_or_example": 4,
+          "schema_context_candidate": 932787
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "861206f4574e930802f83547",
+        "dataset": "aidev",
+        "table_path": "all_user.parquet",
+        "column_name": "id",
+        "native_type": "double",
+        "schema_role": "numeric_account_id",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 72189,
+        "next_row": 72189,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 72189,
+          "null": 22,
+          "schema_context_candidate": 72167
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "0cba28ab29c670fc46887c2b",
+        "dataset": "aidev",
+        "table_path": "all_user.parquet",
+        "column_name": "login",
+        "native_type": "string",
+        "schema_role": "account_login",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 72189,
+        "next_row": 72189,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 72189,
+          "placeholder_or_example": 2,
+          "schema_context_candidate": 72187
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "0e542404a15d2811dd390631",
+        "dataset": "aidev",
+        "table_path": "human_pull_request.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 6618,
+        "next_row": 6618,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 6618,
+          "schema_context_candidate": 6618
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "2c5d6a31869551831edab667",
+        "dataset": "aidev",
+        "table_path": "human_pull_request.parquet",
+        "column_name": "user_id",
+        "native_type": "int64",
+        "schema_role": "numeric_account_id",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 6618,
+        "next_row": 6618,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 6618,
+          "schema_context_candidate": 6618
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "c92bcb58741629be4a4a4d1b",
+        "dataset": "aidev",
+        "table_path": "issue.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 4614,
+        "next_row": 4614,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 4614,
+          "schema_context_candidate": 4614
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "dcf2ef35ef2dfff8efc394a0",
+        "dataset": "aidev",
+        "table_path": "pr_comments.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 39122,
+        "next_row": 39122,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 39122,
+          "schema_context_candidate": 39122
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "8dee82aa2fa858ee600da06b",
+        "dataset": "aidev",
+        "table_path": "pr_comments.parquet",
+        "column_name": "user_id",
+        "native_type": "int64",
+        "schema_role": "numeric_account_id",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 39122,
+        "next_row": 39122,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 39122,
+          "schema_context_candidate": 39122
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "9a15ced6eab2ddbd8d79a164",
+        "dataset": "aidev",
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "author",
+        "native_type": "string",
+        "schema_role": "account_login_join",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 711923,
+        "next_row": 711923,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 711923,
+          "null": 3,
+          "schema_context_candidate": 521443,
+          "unresolved": 190477
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "3d7ca478f251057b87f40a9e",
+        "dataset": "aidev",
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "committer",
+        "native_type": "string",
+        "schema_role": "account_login_join",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 711923,
+        "next_row": 711923,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 711923,
+          "null": 3,
+          "schema_context_candidate": 453983,
+          "unresolved": 257937
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "600da31828f633c6eee783af",
+        "dataset": "aidev",
+        "table_path": "pr_commits.parquet",
+        "column_name": "author",
+        "native_type": "string",
+        "schema_role": "account_login_join",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 88576,
+        "next_row": 88576,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 88576,
+          "null": 1,
+          "schema_context_candidate": 74786,
+          "unresolved": 13789
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "419334edd107b23aed5440fe",
+        "dataset": "aidev",
+        "table_path": "pr_commits.parquet",
+        "column_name": "committer",
+        "native_type": "string",
+        "schema_role": "account_login_join",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 88576,
+        "next_row": 88576,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 88576,
+          "null": 1,
+          "schema_context_candidate": 70069,
+          "unresolved": 18506
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "73e1813d45e2c8b4eb4e8580",
+        "dataset": "aidev",
+        "table_path": "pr_review_comments.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 19450,
+        "next_row": 19450,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 19450,
+          "schema_context_candidate": 19450
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "79c966cc03ac57a1f25b0a99",
+        "dataset": "aidev",
+        "table_path": "pr_review_comments_v2.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 26868,
+        "next_row": 26868,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 26868,
+          "schema_context_candidate": 26868
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "806987a4fee47a3a2c82f23f",
+        "dataset": "aidev",
+        "table_path": "pr_reviews.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 28875,
+        "next_row": 28875,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 28875,
+          "null": 1,
+          "schema_context_candidate": 28874
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "ffa5fc1272de4b0af9cbec35",
+        "dataset": "aidev",
+        "table_path": "pr_timeline.parquet",
+        "column_name": "actor",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 325500,
+        "next_row": 325500,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 325500,
+          "invalid": 13,
+          "null": 15869,
+          "placeholder_or_example": 6,
+          "schema_context_candidate": 309612
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "b7f8dd6fbf502be77ad794e7",
+        "dataset": "aidev",
+        "table_path": "pr_timeline.parquet",
+        "column_name": "assignee",
+        "native_type": "string",
+        "schema_role": "account_login_join",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 325500,
+        "next_row": 325500,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 325500,
+          "null": 313637,
+          "schema_context_candidate": 6760,
+          "unresolved": 5103
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "88e1492fbf38dac2f4be53e3",
+        "dataset": "aidev",
+        "table_path": "pull_request.parquet",
+        "column_name": "user_id",
+        "native_type": "int64",
+        "schema_role": "numeric_account_id",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 33596,
+        "next_row": 33596,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 33596,
+          "schema_context_candidate": 33596
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "81610bcc70f899efc1d03cc6",
+        "dataset": "aidev",
+        "table_path": "pull_request.parquet",
+        "column_name": "user",
+        "native_type": "string",
+        "schema_role": "account_reference",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 33596,
+        "next_row": 33596,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 33596,
+          "schema_context_candidate": 33596
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "4cb3656f549f26e1189b1c0d",
+        "dataset": "aidev",
+        "table_path": "user.parquet",
+        "column_name": "id",
+        "native_type": "int64",
+        "schema_role": "numeric_account_id",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 1796,
+        "next_row": 1796,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 1796,
+          "schema_context_candidate": 1796
+        },
+        "state": "complete"
+      },
+      {
+        "field_id": "e95127d5e7cc64f253a57820",
+        "dataset": "aidev",
+        "table_path": "user.parquet",
+        "column_name": "login",
+        "native_type": "string",
+        "schema_role": "account_login",
+        "category": "QID",
+        "subtype": "user_identifier",
+        "source_rows": 1796,
+        "next_row": 1796,
+        "next_row_group": 1,
+        "counts": {
+          "cells_decoded": 1796,
+          "schema_context_candidate": 1796
+        },
+        "state": "complete"
+      }
+    ],
+    "verified": [
+      "Every manifest field equals frozen native schema, finite role registry and existing taxonomy; all scalar columns included.",
+      "Selected field ranges exactly partition one-based rows 1..next_row with no overlap/gap; status/quality counts and row-group checkpoints recomputed.",
+      "JSONL matches DB/manifest evidence, CSV matches JSONL, coverage/summary source-cell counts match independently recomputed ranges.",
+      "Null counts equal source footer for fully scanned fields; unselected fields stay unresolved with no decoded/empty/invalid claims.",
+      "Current source hashes and implementation fingerprints match frozen manifests; shared lock and file-stat stability protect terminal snapshot.",
+      "Only finite quality/type labels and source references are exported; pending status and non-confirmation flags remain explicit."
+    ],
+    "limitations": [
+      "The unit cells_decoded is a source table/column/row observation, not unique rows, people, identities, or confirmed sensitive records.",
+      "This verification does not decode or reclassify source values; quality-label counts are checked, not the truth of a real identity or sensitivity.",
+      "Schema-context and text/log observations remain separate evidence scopes and must not be blindly summed."
+    ]
+  },
+  "v046_legacy_comparison": {
+    "all_passed": true,
+    "old_selected_fields": 17,
+    "legacy_fields": [
+      {
+        "field_id": "22d788aae8675be546fc3de8",
+        "table_path": "all_pull_request.parquet",
+        "column_name": "user_id",
+        "source_cells": 932791,
+        "counts": {
+          "cells_decoded": 932791,
+          "schema_context_candidate": 932791
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "d25867c335ba3383aec682e5362e0f60c45129d3b1d37f84c98166679394e78e"
+      },
+      {
+        "field_id": "8757fea48dad0cb751efd6d4",
+        "table_path": "all_pull_request.parquet",
+        "column_name": "user",
+        "source_cells": 932791,
+        "counts": {
+          "cells_decoded": 932791,
+          "placeholder_or_example": 4,
+          "schema_context_candidate": 932787
+        },
+        "ranges": 9,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "ae66e10f34f6362acf466116d4c69ecd69e7bb77e15962a558069da47ccea994"
+      },
+      {
+        "field_id": "861206f4574e930802f83547",
+        "table_path": "all_user.parquet",
+        "column_name": "id",
+        "source_cells": 72189,
+        "counts": {
+          "cells_decoded": 72189,
+          "null": 22,
+          "schema_context_candidate": 72167
+        },
+        "ranges": 43,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "f2e7f583330c6778620beb2cd4c211274e3d03d6a995517d6261ce15715001e5"
+      },
+      {
+        "field_id": "0cba28ab29c670fc46887c2b",
+        "table_path": "all_user.parquet",
+        "column_name": "login",
+        "source_cells": 72189,
+        "counts": {
+          "cells_decoded": 72189,
+          "placeholder_or_example": 2,
+          "schema_context_candidate": 72187
+        },
+        "ranges": 5,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "2ded31e75eaaed21c90a724ff9f3df1f0ec0b2c456a21cdcfb9cb84af6cc1775"
+      },
+      {
+        "field_id": "0e542404a15d2811dd390631",
+        "table_path": "human_pull_request.parquet",
+        "column_name": "user",
+        "source_cells": 6618,
+        "counts": {
+          "cells_decoded": 6618,
+          "schema_context_candidate": 6618
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "e5dd63ada866b01f5c982e01e4a2a36bd3bb844d4be5b703fc5908f552596f89"
+      },
+      {
+        "field_id": "2c5d6a31869551831edab667",
+        "table_path": "human_pull_request.parquet",
+        "column_name": "user_id",
+        "source_cells": 6618,
+        "counts": {
+          "cells_decoded": 6618,
+          "schema_context_candidate": 6618
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "172df181b828bec5ba68f5c30114b7ba884961b376b63f1191a19408ac1aab9f"
+      },
+      {
+        "field_id": "c92bcb58741629be4a4a4d1b",
+        "table_path": "issue.parquet",
+        "column_name": "user",
+        "source_cells": 4614,
+        "counts": {
+          "cells_decoded": 4614,
+          "schema_context_candidate": 4614
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "9d1842dfea65a33d329066a0380eb511121243521a97805900c1701c70497a8f"
+      },
+      {
+        "field_id": "dcf2ef35ef2dfff8efc394a0",
+        "table_path": "pr_comments.parquet",
+        "column_name": "user",
+        "source_cells": 39122,
+        "counts": {
+          "cells_decoded": 39122,
+          "schema_context_candidate": 39122
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "e87dc5c82ad0f71f12dc01c2ddf0fcd95b9190c9d7b6897a2a96664d85da2635"
+      },
+      {
+        "field_id": "8dee82aa2fa858ee600da06b",
+        "table_path": "pr_comments.parquet",
+        "column_name": "user_id",
+        "source_cells": 39122,
+        "counts": {
+          "cells_decoded": 39122,
+          "schema_context_candidate": 39122
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "5e6e38b420c6598773c476ad278f36c193fb7e034d36ff0bd14898f244ab707d"
+      },
+      {
+        "field_id": "73e1813d45e2c8b4eb4e8580",
+        "table_path": "pr_review_comments.parquet",
+        "column_name": "user",
+        "source_cells": 19450,
+        "counts": {
+          "cells_decoded": 19450,
+          "schema_context_candidate": 19450
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "9d0d4db5879d7e14a4f473adc14fee009826ac7bda27160654e690d287aa0798"
+      },
+      {
+        "field_id": "79c966cc03ac57a1f25b0a99",
+        "table_path": "pr_review_comments_v2.parquet",
+        "column_name": "user",
+        "source_cells": 26868,
+        "counts": {
+          "cells_decoded": 26868,
+          "schema_context_candidate": 26868
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "f51843d4bc2d1fcb33da49eb4b9388467e3f0cdc03c825bb3a73158f8195a304"
+      },
+      {
+        "field_id": "806987a4fee47a3a2c82f23f",
+        "table_path": "pr_reviews.parquet",
+        "column_name": "user",
+        "source_cells": 28875,
+        "counts": {
+          "cells_decoded": 28875,
+          "null": 1,
+          "schema_context_candidate": 28874
+        },
+        "ranges": 3,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "486eaca3b847081d80897ca8f94d12f9b9d9e2f1fa9775b7943afb00e050648d"
+      },
+      {
+        "field_id": "ffa5fc1272de4b0af9cbec35",
+        "table_path": "pr_timeline.parquet",
+        "column_name": "actor",
+        "source_cells": 325500,
+        "counts": {
+          "cells_decoded": 325500,
+          "invalid": 13,
+          "null": 15869,
+          "placeholder_or_example": 6,
+          "schema_context_candidate": 309612
+        },
+        "ranges": 26951,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "a4d8fec03ba47aea25d6b979dc0753bb4fe3efbe4fa08f529874290eb9afa0aa"
+      },
+      {
+        "field_id": "88e1492fbf38dac2f4be53e3",
+        "table_path": "pull_request.parquet",
+        "column_name": "user_id",
+        "source_cells": 33596,
+        "counts": {
+          "cells_decoded": 33596,
+          "schema_context_candidate": 33596
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "9cfed33d1be2536e3bb3a23672476bdede86bd14f9766a20018ab78e6bcc7e0c"
+      },
+      {
+        "field_id": "81610bcc70f899efc1d03cc6",
+        "table_path": "pull_request.parquet",
+        "column_name": "user",
+        "source_cells": 33596,
+        "counts": {
+          "cells_decoded": 33596,
+          "schema_context_candidate": 33596
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "6444d4ee516e92eeb122de22f1d076622dcbf9f9421937b8802d2b3c19032561"
+      },
+      {
+        "field_id": "4cb3656f549f26e1189b1c0d",
+        "table_path": "user.parquet",
+        "column_name": "id",
+        "source_cells": 1796,
+        "counts": {
+          "cells_decoded": 1796,
+          "schema_context_candidate": 1796
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "5886e8f6dfb1c5006c5ebac381906fd5d682cbaad6de4359c01e1bd1a706bfe8"
+      },
+      {
+        "field_id": "e95127d5e7cc64f253a57820",
+        "table_path": "user.parquet",
+        "column_name": "login",
+        "source_cells": 1796,
+        "counts": {
+          "cells_decoded": 1796,
+          "schema_context_candidate": 1796
+        },
+        "ranges": 1,
+        "coverage_and_db_equal": true,
+        "range_metadata_sha256": "6cf86b2fe05de4623ec0557b1a8ebb2c8c6c3baaa26e89c8a6deddfbba30d48f"
+      }
+    ],
+    "projected_exports": [
+      {
+        "export": "schema_context_candidates.jsonl",
+        "legacy_records": 13520,
+        "all_evidence_fields_equal": true
+      },
+      {
+        "export": "schema_context_candidates.csv",
+        "legacy_records": 13520,
+        "all_evidence_fields_equal": true
+      },
+      {
+        "export": "schema_context_review_queue.jsonl",
+        "legacy_records": 27023,
+        "all_evidence_fields_equal": true
+      },
+      {
+        "export": "schema_context_review_queue.csv",
+        "legacy_records": 27023,
+        "all_evidence_fields_equal": true
+      }
+    ],
+    "retained_unmapped_evidence_equal": true,
+    "unmapped_before": 143,
+    "unmapped_after": 138,
+    "new_fields": [
+      {
+        "field_id": "9a15ced6eab2ddbd8d79a164",
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "author",
+        "source_rows": 711923,
+        "counts": {
+          "cells_decoded": 711923,
+          "null": 3,
+          "schema_context_candidate": 521443,
+          "unresolved": 190477
+        }
+      },
+      {
+        "field_id": "3d7ca478f251057b87f40a9e",
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "committer",
+        "source_rows": 711923,
+        "counts": {
+          "cells_decoded": 711923,
+          "null": 3,
+          "schema_context_candidate": 453983,
+          "unresolved": 257937
+        }
+      },
+      {
+        "field_id": "600da31828f633c6eee783af",
+        "table_path": "pr_commits.parquet",
+        "column_name": "author",
+        "source_rows": 88576,
+        "counts": {
+          "cells_decoded": 88576,
+          "null": 1,
+          "schema_context_candidate": 74786,
+          "unresolved": 13789
+        }
+      },
+      {
+        "field_id": "419334edd107b23aed5440fe",
+        "table_path": "pr_commits.parquet",
+        "column_name": "committer",
+        "source_rows": 88576,
+        "counts": {
+          "cells_decoded": 88576,
+          "null": 1,
+          "schema_context_candidate": 70069,
+          "unresolved": 18506
+        }
+      },
+      {
+        "field_id": "b7f8dd6fbf502be77ad794e7",
+        "table_path": "pr_timeline.parquet",
+        "column_name": "assignee",
+        "source_rows": 325500,
+        "counts": {
+          "cells_decoded": 325500,
+          "null": 313637,
+          "schema_context_candidate": 6760,
+          "unresolved": 5103
+        }
+      }
+    ],
+    "quality_count_delta": {
+      "cells_decoded": 1926498,
+      "null": 313645,
+      "schema_context_candidate": 1127041,
+      "unresolved": 485812
+    }
+  },
+  "new_field_probe_comparison": {
+    "all_passed": true,
+    "source_probe_sha256": {
+      "aidev_author_account_join_v046.json": "9bda1efeb69a922d730c70e227a8ce25d97c200d720ce7f7637384461ced33e1",
+      "aidev_schema_gap_v047_review.json": "8552843940e0271b129e0d916e50ad72030764ef8b98a7699a5d33647bf6aa76"
+    },
+    "reference_coverage": {
+      "comparison": "exact_string_equality_no_trim_casefold_or_unicode_normalization",
+      "count_unit": "Reference table cells read for lookup setup; separate from classified source cells.",
+      "distinct_nonempty_reference_strings": 72189,
+      "reference_cells_decoded": 73985,
+      "reference_values_or_value_hashes_exported": false,
+      "sources": [
+        {
+          "column_name": "login",
+          "counts": {
+            "nonempty_string": 1796,
+            "reference_cells_decoded": 1796
+          },
+          "native_type": "string",
+          "source_rows": 1796,
+          "source_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+          "status": "complete",
+          "table": "user",
+          "table_path": "user.parquet",
+          "values_decoded": true
+        },
+        {
+          "column_name": "login",
+          "counts": {
+            "nonempty_string": 72189,
+            "reference_cells_decoded": 72189
+          },
+          "native_type": "string",
+          "source_rows": 72189,
+          "source_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+          "status": "complete",
+          "table": "all_user",
+          "table_path": "all_user.parquet",
+          "values_decoded": true
+        }
+      ],
+      "status": "complete"
+    },
+    "fields": [
+      {
+        "table_path": "pr_commits.parquet",
+        "column_name": "author",
+        "comparison_level": "every_source_row_via_range_intersection",
+        "source_cells": 88576,
+        "raw_probe_counts": {
+          "match": 74786,
+          "nonmatch": 13789,
+          "null": 1
+        },
+        "schema_quality_counts": {
+          "cells_decoded": 88576,
+          "null": 1,
+          "schema_context_candidate": 74786,
+          "unresolved": 13789
+        },
+        "raw_matches_minus_candidates": 0,
+        "quality_transition_cells": [
+          {
+            "probe_status": "match",
+            "schema_status": "schema_context_candidate",
+            "source_cells": 74786
+          },
+          {
+            "probe_status": "nonmatch",
+            "schema_status": "unresolved",
+            "source_cells": 13789
+          },
+          {
+            "probe_status": "null",
+            "schema_status": "null",
+            "source_cells": 1
+          }
+        ],
+        "all_passed": true
+      },
+      {
+        "table_path": "pr_commits.parquet",
+        "column_name": "committer",
+        "comparison_level": "every_source_row_via_range_intersection",
+        "source_cells": 88576,
+        "raw_probe_counts": {
+          "match": 70069,
+          "nonmatch": 18506,
+          "null": 1
+        },
+        "schema_quality_counts": {
+          "cells_decoded": 88576,
+          "null": 1,
+          "schema_context_candidate": 70069,
+          "unresolved": 18506
+        },
+        "raw_matches_minus_candidates": 0,
+        "quality_transition_cells": [
+          {
+            "probe_status": "match",
+            "schema_status": "schema_context_candidate",
+            "source_cells": 70069
+          },
+          {
+            "probe_status": "nonmatch",
+            "schema_status": "unresolved",
+            "source_cells": 18506
+          },
+          {
+            "probe_status": "null",
+            "schema_status": "null",
+            "source_cells": 1
+          }
+        ],
+        "all_passed": true
+      },
+      {
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "author",
+        "comparison_level": "every_source_row_via_range_intersection",
+        "source_cells": 711923,
+        "raw_probe_counts": {
+          "match": 521443,
+          "nonmatch": 190477,
+          "null": 3
+        },
+        "schema_quality_counts": {
+          "cells_decoded": 711923,
+          "null": 3,
+          "schema_context_candidate": 521443,
+          "unresolved": 190477
+        },
+        "raw_matches_minus_candidates": 0,
+        "quality_transition_cells": [
+          {
+            "probe_status": "match",
+            "schema_status": "schema_context_candidate",
+            "source_cells": 521443
+          },
+          {
+            "probe_status": "nonmatch",
+            "schema_status": "unresolved",
+            "source_cells": 190477
+          },
+          {
+            "probe_status": "null",
+            "schema_status": "null",
+            "source_cells": 3
+          }
+        ],
+        "all_passed": true
+      },
+      {
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "committer",
+        "comparison_level": "every_source_row_via_range_intersection",
+        "source_cells": 711923,
+        "raw_probe_counts": {
+          "match": 453983,
+          "nonmatch": 257937,
+          "null": 3
+        },
+        "schema_quality_counts": {
+          "cells_decoded": 711923,
+          "null": 3,
+          "schema_context_candidate": 453983,
+          "unresolved": 257937
+        },
+        "raw_matches_minus_candidates": 0,
+        "quality_transition_cells": [
+          {
+            "probe_status": "match",
+            "schema_status": "schema_context_candidate",
+            "source_cells": 453983
+          },
+          {
+            "probe_status": "nonmatch",
+            "schema_status": "unresolved",
+            "source_cells": 257937
+          },
+          {
+            "probe_status": "null",
+            "schema_status": "null",
+            "source_cells": 3
+          }
+        ],
+        "all_passed": true
+      },
+      {
+        "table_path": "pr_timeline.parquet",
+        "column_name": "assignee",
+        "comparison_level": "aggregate_probe_only_no_published_probe_row_ranges",
+        "source_cells": 325500,
+        "raw_probe_counts": {
+          "cells_decoded": 325500,
+          "null": 313637,
+          "exact_account_reference_match": 6760,
+          "unmatched_reference_unresolved": 5103
+        },
+        "schema_quality_counts": {
+          "cells_decoded": 325500,
+          "null": 313637,
+          "schema_context_candidate": 6760,
+          "unresolved": 5103
+        },
+        "raw_matches_minus_candidates": 0,
+        "raw_nonmatches_minus_unresolved": 0,
+        "quality_exclusion_cells": 0,
+        "all_passed": true,
+        "limitation": "The assignee probe exposes counts, not row ranges; source-row quality origins are not independently re-decoded."
+      }
+    ],
+    "candidate_count_is_not_raw_match_count": true,
+    "reference_count_note": "Reference distinct nonempty strings is not a count of quality-qualified, valid, or personally owned accounts."
+  },
+  "input_output_fingerprints_before": {
+    "schema-runs/aidev-v046/schema_context_candidates.jsonl": "f4ad55433f96bf6cb49ca115bb6b290c57b774af297e5a0331587a51944b68b5",
+    "schema-runs/aidev-v046/schema_context_review_queue.jsonl": "45228692cc11a8e70422303dec16267da4c328e0ed473dd441ba12cbfec14d08",
+    "schema-runs/aidev-v046/schema_context_review_queue.csv": "063589de679cdc6dbe3be545a3487ae6def6846b86bc0fe757851164a4429e7b",
+    "schema-runs/aidev-v046/schema_type_summary.jsonl": "edbeb267f5f6748ed026f441ab054e18e8d6c4ee5f22071a2f5c7d9002dc74b2",
+    "schema-runs/aidev-v046/schema_type_summary.json": "77ec0bcff1a5b64c97ba31a83378baa4a8f824583beb2414b48491ee292f5182",
+    "schema-runs/aidev-v046/schema.sqlite": "57b3549d58bef159de10762e27824c75e2cf063b1c1e7f56b996409abc409c96",
+    "schema-runs/aidev-v046/schema_unresolved_fields.csv": "9a4560e5558566ba29df2541ddee833f68dd74e07115fdd0624d2be4461de936",
+    "schema-runs/aidev-v046/manifest.json": "5723cd66f1d62b13d92961f752ae3c6fafb646194c66a7158cbf215f41ee3361",
+    "schema-runs/aidev-v046/schema_coverage.json": "1f59f5ca9e5e2c990da22b38c948de10bd2adf7b4ae344f2b2022aafe1c7a8b2",
+    "schema-runs/aidev-v046/schema_unresolved_fields.jsonl": "623684b555c536c4eca81a5e35f2a92a6ef7b582f189e7433a17366783b7e110",
+    "schema-runs/aidev-v046/schema_type_summary.csv": "83ed1ae8692d7840d9ede14cd7d7a430b262a4884e96cc299a5e89fec7ec1cf4",
+    "schema-runs/aidev-v046/schema_context_candidates.csv": "3db1108196c8af23a623f62838c8687af818a7f725e4e14324e609d13d53884f",
+    "schema-runs/aidev-v047/schema_context_candidates.jsonl": "6f13ffc01f5dc78d284997ebdea85d101e5af953074b5f5965cf9d6ca199b25f",
+    "schema-runs/aidev-v047/schema_context_review_queue.jsonl": "bffb8d68174dc6bf566f1b16c451949702b42ccc8876de0da1f63b2e82b96b2e",
+    "schema-runs/aidev-v047/schema_context_review_queue.csv": "85c8e6d3e4dfb3d967d2830c92dff38583ff13a6eb175681f33db2dfb27ed840",
+    "schema-runs/aidev-v047/schema_type_summary.jsonl": "8c90818a8681a01097299d0796026d40b509fea2e39af7a56e6705921ca7a4a2",
+    "schema-runs/aidev-v047/schema_type_summary.json": "e0a9f9ff57142073caaaa26f7b5c248c7d7dbfd1300de8e39b75b182aa3edb37",
+    "schema-runs/aidev-v047/schema.sqlite": "5a2414c06a59173ebaf781e34b81deaa928e8cf1054f6923781193105baea5bf",
+    "schema-runs/aidev-v047/schema_unresolved_fields.csv": "d705cf5d19ba5a3a0a93c239f536a58085e155f247a0081640f54dd70813dc19",
+    "schema-runs/aidev-v047/manifest.json": "9c9f9bc70ea2e3df903d41ab711c921756ea43a8079adbd531d7703e668cdc0a",
+    "schema-runs/aidev-v047/schema_coverage.json": "6997b011395a77e93a4cd0735cb8e3837ab38b1541bcb6b3a29de046c1a3107b",
+    "schema-runs/aidev-v047/schema_unresolved_fields.jsonl": "52d369a4809dddadfed102aa945509f9347df0079eba0be4ba472b650a2dee0a",
+    "schema-runs/aidev-v047/schema_type_summary.csv": "71de91c37b5f68cb0ec201df7e3fe688ed8f28fe25fd751741b0ed5da54ac0f3",
+    "schema-runs/aidev-v047/schema_context_candidates.csv": "91f3d83bd8781b8ed63abb57df1bd4641b28d52e54322b5d62f90df93ca28c4c",
+    "docs/schema_exports_v046_verification.json": "772f8b3f24edcac8db14b00242f5253d9d014232c74622569b445721d29df7d3",
+    "docs/aidev_author_account_join_v046.json": "9bda1efeb69a922d730c70e227a8ce25d97c200d720ce7f7637384461ced33e1",
+    "docs/aidev_schema_gap_v047_review.json": "8552843940e0271b129e0d916e50ad72030764ef8b98a7699a5d33647bf6aa76"
+  },
+  "input_output_fingerprints_after": {
+    "schema-runs/aidev-v046/schema_context_candidates.jsonl": "f4ad55433f96bf6cb49ca115bb6b290c57b774af297e5a0331587a51944b68b5",
+    "schema-runs/aidev-v046/schema_context_review_queue.jsonl": "45228692cc11a8e70422303dec16267da4c328e0ed473dd441ba12cbfec14d08",
+    "schema-runs/aidev-v046/schema_context_review_queue.csv": "063589de679cdc6dbe3be545a3487ae6def6846b86bc0fe757851164a4429e7b",
+    "schema-runs/aidev-v046/schema_type_summary.jsonl": "edbeb267f5f6748ed026f441ab054e18e8d6c4ee5f22071a2f5c7d9002dc74b2",
+    "schema-runs/aidev-v046/schema_type_summary.json": "77ec0bcff1a5b64c97ba31a83378baa4a8f824583beb2414b48491ee292f5182",
+    "schema-runs/aidev-v046/schema.sqlite": "57b3549d58bef159de10762e27824c75e2cf063b1c1e7f56b996409abc409c96",
+    "schema-runs/aidev-v046/schema_unresolved_fields.csv": "9a4560e5558566ba29df2541ddee833f68dd74e07115fdd0624d2be4461de936",
+    "schema-runs/aidev-v046/manifest.json": "5723cd66f1d62b13d92961f752ae3c6fafb646194c66a7158cbf215f41ee3361",
+    "schema-runs/aidev-v046/schema_coverage.json": "1f59f5ca9e5e2c990da22b38c948de10bd2adf7b4ae344f2b2022aafe1c7a8b2",
+    "schema-runs/aidev-v046/schema_unresolved_fields.jsonl": "623684b555c536c4eca81a5e35f2a92a6ef7b582f189e7433a17366783b7e110",
+    "schema-runs/aidev-v046/schema_type_summary.csv": "83ed1ae8692d7840d9ede14cd7d7a430b262a4884e96cc299a5e89fec7ec1cf4",
+    "schema-runs/aidev-v046/schema_context_candidates.csv": "3db1108196c8af23a623f62838c8687af818a7f725e4e14324e609d13d53884f",
+    "schema-runs/aidev-v047/schema_context_candidates.jsonl": "6f13ffc01f5dc78d284997ebdea85d101e5af953074b5f5965cf9d6ca199b25f",
+    "schema-runs/aidev-v047/schema_context_review_queue.jsonl": "bffb8d68174dc6bf566f1b16c451949702b42ccc8876de0da1f63b2e82b96b2e",
+    "schema-runs/aidev-v047/schema_context_review_queue.csv": "85c8e6d3e4dfb3d967d2830c92dff38583ff13a6eb175681f33db2dfb27ed840",
+    "schema-runs/aidev-v047/schema_type_summary.jsonl": "8c90818a8681a01097299d0796026d40b509fea2e39af7a56e6705921ca7a4a2",
+    "schema-runs/aidev-v047/schema_type_summary.json": "e0a9f9ff57142073caaaa26f7b5c248c7d7dbfd1300de8e39b75b182aa3edb37",
+    "schema-runs/aidev-v047/schema.sqlite": "5a2414c06a59173ebaf781e34b81deaa928e8cf1054f6923781193105baea5bf",
+    "schema-runs/aidev-v047/schema_unresolved_fields.csv": "d705cf5d19ba5a3a0a93c239f536a58085e155f247a0081640f54dd70813dc19",
+    "schema-runs/aidev-v047/manifest.json": "9c9f9bc70ea2e3df903d41ab711c921756ea43a8079adbd531d7703e668cdc0a",
+    "schema-runs/aidev-v047/schema_coverage.json": "6997b011395a77e93a4cd0735cb8e3837ab38b1541bcb6b3a29de046c1a3107b",
+    "schema-runs/aidev-v047/schema_unresolved_fields.jsonl": "52d369a4809dddadfed102aa945509f9347df0079eba0be4ba472b650a2dee0a",
+    "schema-runs/aidev-v047/schema_type_summary.csv": "71de91c37b5f68cb0ec201df7e3fe688ed8f28fe25fd751741b0ed5da54ac0f3",
+    "schema-runs/aidev-v047/schema_context_candidates.csv": "91f3d83bd8781b8ed63abb57df1bd4641b28d52e54322b5d62f90df93ca28c4c",
+    "docs/schema_exports_v046_verification.json": "772f8b3f24edcac8db14b00242f5253d9d014232c74622569b445721d29df7d3",
+    "docs/aidev_author_account_join_v046.json": "9bda1efeb69a922d730c70e227a8ce25d97c200d720ce7f7637384461ced33e1",
+    "docs/aidev_schema_gap_v047_review.json": "8552843940e0271b129e0d916e50ad72030764ef8b98a7699a5d33647bf6aa76"
+  },
+  "input_output_files_unchanged": true,
+  "real_cli_executions": [
+    {
+      "path": "aidev_v047_schema_execution.json",
+      "sha256": "c1f5a938f54d99f2954e9f102dcdea7a706a190123e23a11169edc485f776f03",
+      "stdout_sha256": "d4328df96751063729c6100d9e7427154d441f3ab25cbf7ba10a75dbe25d91f9",
+      "stderr_sha256": "a75ed675cc9c5ed6bb8431bfed04365d72e9c22281e713fd1a9d4196a13f7aed",
+      "exit_code": 2,
+      "source_unchanged": true
+    },
+    {
+      "path": "aidev_v047_schema_resume_execution.json",
+      "sha256": "f1d7875b4e078c8468dcaf9e77a42448eaa6e45e3d3296ecbecad85f51fe3c76",
+      "stdout_sha256": "e56e426d903f4de41835b9335e6610b1a0e8ba0e138565ab5fdc5b1ca4dd9ada",
+      "stderr_sha256": "a75ed675cc9c5ed6bb8431bfed04365d72e9c22281e713fd1a9d4196a13f7aed",
+      "exit_code": 2,
+      "source_unchanged": true
+    }
+  ],
+  "full_and_resume_cli_counts_and_range_record_counts_identical": true,
+  "resume_evidence_limit": "CLI omits field details and no pre-resume database snapshot was supplied; final field/range partitions are fully verified, while full-versus-resume equality is checked at exported CLI aggregate level.",
+  "old_v046_artifacts_match_prior_verification_sha256": true,
+  "count_unit": "Source table/column/row cells; not distinct rows, people, accounts, secrets or leaks.",
+  "evidence_boundary": "All 22 selected AIDev fields visited; 138 AIDev fields remain semantically unresolved. Exact join candidates remain low-confidence and pending. This metadata-only verification does not establish actual identity, sensitivity, or runtime disclosure."
+}

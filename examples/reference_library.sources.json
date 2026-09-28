@@ -1,0 +1,11 @@
+{
+  "issue_knowledge": "../semantic-runs/issue-knowledge-human67-20260910",
+  "issue_answers": "../research/issue-reference-20260910/reference/reference_answers.jsonl",
+  "defects_dataset": "../../dataset.json",
+  "code_pairs": [
+    "../research/seven-stage-v090/code-pairs/code_references.jsonl",
+    "../research/seven-stage-v090/references-release/code_references.jsonl"
+  ],
+  "semantic_runs": ["../research/seven-stage-v090/development-release"],
+  "field_adjudications": "../research/reference-library-20260911/field_adjudications.jsonl"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "complete_with_semantic_gaps",
+  "selected_cells": 1,
+  "selected_characters": 74169,
+  "all_selected_cells_all_rules_finished": true,
+  "recorded_completed_cells": 1,
+  "source_verification_complete": true,
+  "candidate_occurrences": 4112,
+  "excluded_occurrences": 0,
+  "data_gap_records": 0,
+  "unknown_type_review_cells": 1,
+  "cell_status_counts": {
+    "complete_with_semantic_gaps": 1
+  },
+  "committed_pages": 29,
+  "stop_reason": null,
+  "limitations": [
+    "Full rule traversal is not complete semantic sensitive-type detection.",
+    "Quoted named values beyond the finite 4096-token rule remain unresolved; no additional semantic rules are added.",
+    "Regex windows and result pages are bounded; Arrow still materializes a complete selected string scalar.",
+    "Parent and repair occurrences must not be directly summed; use source-cell/span/type reconciliation.",
+    "All selected cells remain in the unknown review queue, including completed lexical scans."
+  ],
+  "parent_and_repair_counts_additive": false,
+  "exit_code": 2,
+  "observation_scope": "dataset_text_cell_rescan",
+  "application_log_evidence": false,
+  "runtime_confirmed": false,
+  "human_review_status": "pending",
+  "full_dataset_coverage_claim": false,
+  "taxonomy_version": "1.1.0",
+  "new_type_status": "not_established",
+  "pages_this_invocation": 0,
+  "elapsed_seconds": 0.24,
+  "network_accessed": false,
+  "target_code_executed": false
+}

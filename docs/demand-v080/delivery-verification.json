@@ -1,0 +1,9 @@
+{
+  "package_version": "0.8.0",
+  "delivery_tests": "765 passed in 32.18s",
+  "broken_document_links": [],
+  "current_live_and_offline_run_fingerprints_verified": true,
+  "model_attempts_after_resume_and_offline": 44,
+  "post_fix_resume_without_calls": true,
+  "all_model_results_pending_human": true
+}

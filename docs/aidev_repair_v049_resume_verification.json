@@ -1,0 +1,255 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/run_agentlog_v049.py",
+    "repair_resume"
+  ],
+  "started_at": "2026-09-09T00:11:47.590017+00:00",
+  "finished_at": "2026-09-09T00:11:48.044476+00:00",
+  "elapsed_seconds": 0.4540470829961123,
+  "exit_code": 2,
+  "before": {
+    "exports": {
+      "repair_data_gaps.csv": "dbadb4f901cdb61c066064c5b3716d6ae09af3b46b39511f5246c96afbda4a01",
+      "repair_data_gaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repair_excluded.csv": "8247d2f64adb8d1b6d21925d17643be79b3274158492577a4b3e435b4234f6b1",
+      "repair_excluded.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repair_type_occurrences.csv": "2544616f265ffa6ff6e992438308e61c32b29331d7fe3a1fb7eb4e074f3caf49",
+      "repair_type_occurrences.jsonl": "11b169924ecd6eb1dc15daa670fd926bd509c30d641bebee5ebeade695f26da6",
+      "repair_type_summary.csv": "306cb72a3d05c57fe2a9c28c63e86fb216f91bfeb12914c328431e940174a936",
+      "repair_type_summary.jsonl": "13cc6d28d3beb5638ef8d2bb8ad6f45b3fda7ede429527c6aeee98f21dfadb7c",
+      "repair_unknown_type_review_queue.csv": "ae0486a0a597701ca89e674e00968f23082e1d09909ac00bf3a3fcbfae03f943",
+      "repair_unknown_type_review_queue.jsonl": "f463f1a1e2c17779229e33017333dcde4bcda4418ccee14ccf8271abed7ec67a"
+    },
+    "manifest": "ef42b3bf7f17accd0d274a9188e5bc031ad984d3974d928e5c110733d9b22b8a",
+    "coverage": {
+      "all_selected_cells_all_rules_finished": true,
+      "application_log_evidence": false,
+      "candidate_occurrences": 4112,
+      "cell_status_counts": {
+        "complete_with_semantic_gaps": 1
+      },
+      "committed_pages": 29,
+      "data_gap_records": 0,
+      "elapsed_seconds": 0.854,
+      "excluded_occurrences": 0,
+      "exit_code": 2,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "limitations": [
+        "Full rule traversal is not complete semantic sensitive-type detection.",
+        "Quoted named values beyond the finite 4096-token rule remain unresolved; no additional semantic rules are added.",
+        "Regex windows and result pages are bounded; Arrow still materializes a complete selected string scalar.",
+        "Parent and repair occurrences must not be directly summed; use source-cell/span/type reconciliation.",
+        "All selected cells remain in the unknown review queue, including completed lexical scans."
+      ],
+      "network_accessed": false,
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_text_cell_rescan",
+      "pages_this_invocation": 29,
+      "parent_and_repair_counts_additive": false,
+      "recorded_completed_cells": 1,
+      "runtime_confirmed": false,
+      "selected_cells": 1,
+      "selected_characters": 74169,
+      "source_verification_complete": true,
+      "status": "complete_with_semantic_gaps",
+      "stop_reason": null,
+      "target_code_executed": false,
+      "taxonomy_version": "1.1.0",
+      "type_summary": [
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "carrier_candidate": 2
+          },
+          "category": "BIZ",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 2,
+          "runtime_confirmed": false,
+          "subtype": "business_object",
+          "taxonomy_version": "1.1.0"
+        },
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "identifier_reference": 2
+          },
+          "category": "BIZ",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 2,
+          "runtime_confirmed": false,
+          "subtype": "request_body",
+          "taxonomy_version": "1.1.0"
+        },
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "carrier_candidate": 2
+          },
+          "category": "BIZ",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 2,
+          "runtime_confirmed": false,
+          "subtype": "response_body",
+          "taxonomy_version": "1.1.0"
+        },
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "literal_candidate": 4106
+          },
+          "category": "QID",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 4106,
+          "runtime_confirmed": false,
+          "subtype": "network_identifier",
+          "taxonomy_version": "1.1.0"
+        }
+      ],
+      "unknown_type_review_cells": 1
+    }
+  },
+  "after": {
+    "exports": {
+      "repair_data_gaps.csv": "dbadb4f901cdb61c066064c5b3716d6ae09af3b46b39511f5246c96afbda4a01",
+      "repair_data_gaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repair_excluded.csv": "8247d2f64adb8d1b6d21925d17643be79b3274158492577a4b3e435b4234f6b1",
+      "repair_excluded.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repair_type_occurrences.csv": "2544616f265ffa6ff6e992438308e61c32b29331d7fe3a1fb7eb4e074f3caf49",
+      "repair_type_occurrences.jsonl": "11b169924ecd6eb1dc15daa670fd926bd509c30d641bebee5ebeade695f26da6",
+      "repair_type_summary.csv": "306cb72a3d05c57fe2a9c28c63e86fb216f91bfeb12914c328431e940174a936",
+      "repair_type_summary.jsonl": "13cc6d28d3beb5638ef8d2bb8ad6f45b3fda7ede429527c6aeee98f21dfadb7c",
+      "repair_unknown_type_review_queue.csv": "ae0486a0a597701ca89e674e00968f23082e1d09909ac00bf3a3fcbfae03f943",
+      "repair_unknown_type_review_queue.jsonl": "f463f1a1e2c17779229e33017333dcde4bcda4418ccee14ccf8271abed7ec67a"
+    },
+    "manifest": "ef42b3bf7f17accd0d274a9188e5bc031ad984d3974d928e5c110733d9b22b8a",
+    "coverage": {
+      "all_selected_cells_all_rules_finished": true,
+      "application_log_evidence": false,
+      "candidate_occurrences": 4112,
+      "cell_status_counts": {
+        "complete_with_semantic_gaps": 1
+      },
+      "committed_pages": 29,
+      "data_gap_records": 0,
+      "elapsed_seconds": 0.24,
+      "excluded_occurrences": 0,
+      "exit_code": 2,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "limitations": [
+        "Full rule traversal is not complete semantic sensitive-type detection.",
+        "Quoted named values beyond the finite 4096-token rule remain unresolved; no additional semantic rules are added.",
+        "Regex windows and result pages are bounded; Arrow still materializes a complete selected string scalar.",
+        "Parent and repair occurrences must not be directly summed; use source-cell/span/type reconciliation.",
+        "All selected cells remain in the unknown review queue, including completed lexical scans."
+      ],
+      "network_accessed": false,
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_text_cell_rescan",
+      "pages_this_invocation": 0,
+      "parent_and_repair_counts_additive": false,
+      "recorded_completed_cells": 1,
+      "runtime_confirmed": false,
+      "selected_cells": 1,
+      "selected_characters": 74169,
+      "source_verification_complete": true,
+      "status": "complete_with_semantic_gaps",
+      "stop_reason": null,
+      "target_code_executed": false,
+      "taxonomy_version": "1.1.0",
+      "type_summary": [
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "carrier_candidate": 2
+          },
+          "category": "BIZ",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 2,
+          "runtime_confirmed": false,
+          "subtype": "business_object",
+          "taxonomy_version": "1.1.0"
+        },
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "identifier_reference": 2
+          },
+          "category": "BIZ",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 2,
+          "runtime_confirmed": false,
+          "subtype": "request_body",
+          "taxonomy_version": "1.1.0"
+        },
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "carrier_candidate": 2
+          },
+          "category": "BIZ",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 2,
+          "runtime_confirmed": false,
+          "subtype": "response_body",
+          "taxonomy_version": "1.1.0"
+        },
+        {
+          "application_log_evidence": false,
+          "candidate_status_counts": {
+            "literal_candidate": 4106
+          },
+          "category": "QID",
+          "distinct_cell_count": 1,
+          "full_dataset_coverage_claim": false,
+          "human_review_status": "pending",
+          "new_type_status": "not_established",
+          "observation_scope": "dataset_text_cell_rescan",
+          "occurrence_count": 4106,
+          "runtime_confirmed": false,
+          "subtype": "network_identifier",
+          "taxonomy_version": "1.1.0"
+        }
+      ],
+      "unknown_type_review_cells": 1
+    }
+  },
+  "checks": {
+    "exit_2": true,
+    "no_new_pages": true,
+    "export_bytes_identical": true,
+    "manifest_identical": true,
+    "candidate_counts_identical": true
+  },
+  "all_passed": true
+}

@@ -1,0 +1,143 @@
+{
+  "recorded_utc": "2026-09-08T20:44:08.153177+00:00",
+  "source_batches": {
+    "aidev-full-v5": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 336,
+      "type_summary_sha256": "61fd3e170545f746b189ecc509a659f9bf75768588644acd7ff153f81abfb56b"
+    },
+    "swechat-full-v5": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 1296,
+      "type_summary_sha256": "6ea6f00e9663cdcf35c64634bf2827e77d496428017af120d1b95c65127777b4"
+    },
+    "aidev-anchors-v3": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 21,
+      "type_summary_sha256": "6ec8e3862bb19ae248e7140ea1a2cbc801f51ff8c0513d2b932e6008cdb975a1"
+    },
+    "aidev-prior-cache-v042": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 8,
+      "type_summary_sha256": "569179b0e1db9717866b059da58eb22cc4eb94f06454d738d855582b87f1a394"
+    },
+    "aidev-expansion-v043-final": {
+      "tool_version_at_analysis": "0.4.3",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 144,
+      "type_summary_sha256": "3907a9524ca2d552c023e9cce1e936108b5622276678c82c4fbfa97e01d3744f"
+    },
+    "csharp-swechat-v043-final": {
+      "tool_version_at_analysis": "0.4.3",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 20,
+      "type_summary_sha256": "93f5fc32c25974ae33106ac47f68df68040f96760ae308bc635af1f0c09a57db"
+    }
+  },
+  "catalog_subtypes": 42,
+  "observed_subtypes_in_versioned_evidence_union": 27,
+  "new_observed_catalog_subtypes_vs_v042": [
+    "BIZ.message_content",
+    "PII.postal_address"
+  ],
+  "aidev_main_prior_and_delta_unique_actual_commits": 488,
+  "delta_repo_sha_overlap_with_prior_actual": 0,
+  "delta_new_actual_commits": 144,
+  "notes": [
+    "Historical 0.4.2 evidence is retained; only v043 batches were analyzed by 0.4.3.",
+    "Counts in CSV are per batch; overlapping versions and multiple labels must not be added into population counts.",
+    "Subtype union is a set of observed taxonomy IDs only, not proof of all sensitive types.",
+    "Supplementary anchors are excluded from main PR commit membership."
+  ],
+  "full_dataset_coverage_claim": false,
+  "runtime_confirmed": false,
+  "human_review_status": "pending"
+}

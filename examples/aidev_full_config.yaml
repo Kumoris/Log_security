@@ -1,0 +1,9 @@
+# Full selects all supplied PRs/repositories, while Git/object budgets remain explicit.
+run_mode: full
+input:
+  prs_path: data/inputs/aidev-full-v2/mining_prs.jsonl
+  offline: true
+mining:
+  max_history_commits_per_repository: 50000
+  max_snapshot_files: 3000
+  max_download_gb: 10

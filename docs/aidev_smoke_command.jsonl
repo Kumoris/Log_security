@@ -1,0 +1,8 @@
+{"stage": "ingest", "status": "complete", "counts": {"records": 3}}
+{"stage": "collect", "status": "partial", "counts": {"repositories": 1, "gaps": 3}}
+{"stage": "mine", "status": "complete", "counts": {"commits": 53, "file_changes": 142}}
+{"stage": "detect", "status": "complete", "counts": {"log_events": 18, "snapshots": 54, "dependency_edges": 496}}
+{"stage": "trace", "status": "complete", "counts": {"log_changes": 0, "followups": 0, "provenance": 0, "target_branch_integration_events": 0}}
+{"stage": "assess", "status": "complete", "counts": {"candidates": 0}}
+{"stage": "export", "status": "complete", "counts": {"machine_only": true}}
+{"run_id": "aidev-types-smoke", "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/aidev-types-smoke", "exit_code": 2, "coverage_gap_records": 20}

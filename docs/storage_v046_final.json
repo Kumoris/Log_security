@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-09-08T22:46:23.652803+00:00",
+  "free_bytes": 1474560000,
+  "minimum_free_bytes": 1073741824,
+  "estimated_replacement_export_bytes": 1161019392,
+  "required_free_before_next_scan_bytes": 2234761216,
+  "checkpoint_bytes": 1786183680,
+  "retained_gzip_bytes": 461429088,
+  "export_reserve_ratio": 0.65,
+  "default_scan_space_guard_would_stop": true,
+  "limits": "Read-only evaluation of the actual space guard; no CLI resume attempted, no files removed. Export reserve is a heuristic, not a bound. Free space can change independently. Current completed scan stopped for time_budget, not disk_budget."
+}

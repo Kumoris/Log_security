@@ -1,0 +1,196 @@
+{
+  "checked_at": "2026-09-08T20:37:52.784515+00:00",
+  "read_only_check": true,
+  "network_used": false,
+  "acquisition_performed": false,
+  "cleanup": {
+    "receipt_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/deletion_receipt.json",
+    "receipt_sha256": "09b6c6bbeef9fb9c53d62a8407f06a3864b4c0979c3bd374eeefec7907f4d99b",
+    "receipt_status": "completed",
+    "receipt_directories_exactly_expected": true,
+    "exact_directories_absent_now": {
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full": true,
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full": true
+    },
+    "receipt_file_set_equals_proposal": true,
+    "receipt_papers_unchanged_flag": true,
+    "receipt_papers_counts_equal": true,
+    "papers_before_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/papers_before_deletion.json",
+    "papers_current_file_set_matches_before": true,
+    "papers_current_hashes_all_match_before": true,
+    "papers_files_checked": 10,
+    "no_raw_dataset_rehash": true
+  },
+  "selection": {
+    "selection_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_expansion_v043_selection.json",
+    "selection_sha256": "8bf803acd62e61f21feadbf521cb86e86aa4a76e35dc9ad688abe85de7fdbec7",
+    "input_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-expansion-v043.jsonl",
+    "input_sha256": "ef4946498781a09ed59300f3ee914e19bd23e32904a4939b3498ca37c180542e",
+    "input_hash_matches_selection": true,
+    "context_rows": 147,
+    "unique_commit_count": 144,
+    "selected_set_matches_selection_manifest": true,
+    "all_context_fields_match_authoritative_v5": true,
+    "dataset_values": [
+      "aidev"
+    ],
+    "dataset_source_snapshots": [
+      "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f"
+    ],
+    "prior_actual_read_counts": {
+      "aidev-full-v5": 336,
+      "aidev-prior-cache-v042": 8
+    },
+    "prior_union_actual_read_count": 344,
+    "actual_read_overlap_count": 0,
+    "overlap_commits": [],
+    "v5_total_commit_denominator": 86315,
+    "no_sensitive_filter_selection_evidence": true,
+    "membership_predicate": "jobs.data.metrics.pydriller_commits > 0; statuses alone are not evidence"
+  },
+  "catalog_label_provenance": {
+    "target_types": [
+      "BIZ.message_content",
+      "PII.postal_address"
+    ],
+    "baseline_catalogs": [
+      "aidev-full-v5",
+      "swechat-full-v5",
+      "aidev-anchors-v3",
+      "aidev-prior-cache-v042"
+    ],
+    "new_batch": "aidev-expansion-v043",
+    "artifacts_are_initial_043_run_not_final_replay": true,
+    "catalogs": {
+      "aidev-full-v5": {
+        "summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_summary.json",
+        "summary_sha256": "61fd3e170545f746b189ecc509a659f9bf75768588644acd7ff153f81abfb56b",
+        "occurrences_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_occurrences.jsonl",
+        "occurrences_sha256": "4a6b3427e289ebea0da81dc67c5a0fb83cfbb9872e3fadde121b17c5584dfee6",
+        "summary_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "independent_occurrence_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "summary_counts_match_occurrences": true,
+        "label_repositories": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        },
+        "label_extensions": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        }
+      },
+      "swechat-full-v5": {
+        "summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_summary.json",
+        "summary_sha256": "6ea6f00e9663cdcf35c64634bf2827e77d496428017af120d1b95c65127777b4",
+        "occurrences_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.jsonl",
+        "occurrences_sha256": "0bac8548a601cbe7e464231903e8e0e265df11c7f68c9ee1b05aba50336aaf7c",
+        "summary_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "independent_occurrence_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "summary_counts_match_occurrences": true,
+        "label_repositories": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        },
+        "label_extensions": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        }
+      },
+      "aidev-anchors-v3": {
+        "summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_summary.json",
+        "summary_sha256": "6ec8e3862bb19ae248e7140ea1a2cbc801f51ff8c0513d2b932e6008cdb975a1",
+        "occurrences_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_occurrences.jsonl",
+        "occurrences_sha256": "1e8194a60beaedb67e5ef1934f414c664b1ef871e2ef57350fb3df75077de3bb",
+        "summary_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "independent_occurrence_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "summary_counts_match_occurrences": true,
+        "label_repositories": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        },
+        "label_extensions": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        }
+      },
+      "aidev-prior-cache-v042": {
+        "summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_summary.json",
+        "summary_sha256": "569179b0e1db9717866b059da58eb22cc4eb94f06454d738d855582b87f1a394",
+        "occurrences_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_occurrences.jsonl",
+        "occurrences_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "summary_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "independent_occurrence_counts": {
+          "BIZ.message_content": 0,
+          "PII.postal_address": 0
+        },
+        "summary_counts_match_occurrences": true,
+        "label_repositories": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        },
+        "label_extensions": {
+          "BIZ.message_content": [],
+          "PII.postal_address": []
+        }
+      },
+      "aidev-expansion-v043": {
+        "summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v043/exports/type_summary.json",
+        "summary_sha256": "3907a9524ca2d552c023e9cce1e936108b5622276678c82c4fbfa97e01d3744f",
+        "occurrences_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v043/exports/type_occurrences.jsonl",
+        "occurrences_sha256": "48a8a9feb0f8f88e3fed40a6074a0cf3e73548b496bc80a9c953c04bb90b5c72",
+        "summary_counts": {
+          "BIZ.message_content": 22,
+          "PII.postal_address": 4
+        },
+        "independent_occurrence_counts": {
+          "BIZ.message_content": 22,
+          "PII.postal_address": 4
+        },
+        "summary_counts_match_occurrences": true,
+        "label_repositories": {
+          "BIZ.message_content": [
+            "567-labs/instructor"
+          ],
+          "PII.postal_address": [
+            "567-labs/instructor"
+          ]
+        },
+        "label_extensions": {
+          "BIZ.message_content": [
+            ".py"
+          ],
+          "PII.postal_address": [
+            ".py"
+          ]
+        }
+      }
+    },
+    "both_absent_all_four_baselines": true,
+    "both_present_new_aidev_batch": true,
+    "new_label_event_commits_all_within_verified_new_aidev_selection": true,
+    "evidence_boundary": "Observed controlled taxonomy labels in static log versions; not new privacy types, verified real leaks, or full dataset coverage. Final corrected-parser replay should replace initial run counts."
+  },
+  "all_checks_passed": true,
+  "sensitive_literal_values_included": false
+}

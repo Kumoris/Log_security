@@ -1,0 +1,216 @@
+{
+  "events": [
+    {
+      "reason": "completed_repair_removed_parent_identity",
+      "cell_id": "4c7f7db8ddab70069495cd48",
+      "identity_id": "cfc016dc465ac1be3d03f6f5",
+      "table_path": "commits.parquet",
+      "source_row": 2989,
+      "column_name": "file_attribution",
+      "characters": 1052614,
+      "parent_scanned_characters": 1048576,
+      "parent_status": "truncated",
+      "parent_observations": [
+        {
+          "id": "a55fc52a54a3c416d95727dc",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "BIZ",
+            "confidence": "low",
+            "end": 1046788,
+            "rule": "named_field_taxonomy",
+            "start": 1046759,
+            "subtype": "business_object",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        }
+      ],
+      "repair_same_identity_observations": [],
+      "overlapping_repair_observations_up_to_8_per_old_observation": [],
+      "retained_variant_ids": [],
+      "human_review_status": "pending",
+      "source_text_read": false
+    },
+    {
+      "reason": "completed_repair_removed_parent_identity",
+      "cell_id": "4c7f7db8ddab70069495cd48",
+      "identity_id": "081cc51479452a6e8cec2b4a",
+      "table_path": "commits.parquet",
+      "source_row": 2989,
+      "column_name": "file_attribution",
+      "characters": 1052614,
+      "parent_scanned_characters": 1048576,
+      "parent_status": "truncated",
+      "parent_observations": [
+        {
+          "id": "5b7e8f868f782d24da763417",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "DIAG",
+            "confidence": "low",
+            "end": 1046956,
+            "rule": "named_field_taxonomy",
+            "start": 1046950,
+            "subtype": "exception_message",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        }
+      ],
+      "repair_same_identity_observations": [],
+      "overlapping_repair_observations_up_to_8_per_old_observation": [],
+      "retained_variant_ids": [],
+      "human_review_status": "pending",
+      "source_text_read": false
+    },
+    {
+      "reason": "completed_repair_removed_parent_identity",
+      "cell_id": "4c7f7db8ddab70069495cd48",
+      "identity_id": "855701791f95bb8f8394b7c7",
+      "table_path": "commits.parquet",
+      "source_row": 2989,
+      "column_name": "file_attribution",
+      "characters": 1052614,
+      "parent_scanned_characters": 1048576,
+      "parent_status": "truncated",
+      "parent_observations": [
+        {
+          "id": "901381da8c2c1a8f0694e691",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "CFG",
+            "confidence": "low",
+            "end": 1048436,
+            "rule": "named_field_taxonomy",
+            "start": 1048434,
+            "subtype": "environment",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        }
+      ],
+      "repair_same_identity_observations": [],
+      "overlapping_repair_observations_up_to_8_per_old_observation": [],
+      "retained_variant_ids": [],
+      "human_review_status": "pending",
+      "source_text_read": false
+    },
+    {
+      "reason": "type_set_changed_pending",
+      "cell_id": "cf049f85345ba7f149a9612d",
+      "identity_id": "ec02d923761aec436b4d9fc2",
+      "table_path": "commits.parquet",
+      "source_row": 4562,
+      "column_name": "file_attribution",
+      "characters": 550146,
+      "parent_scanned_characters": 550146,
+      "parent_status": "truncated",
+      "parent_observations": [
+        {
+          "id": "6c8cb15039cfe86717d8dfa5",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "BIZ",
+            "confidence": "low",
+            "end": 391765,
+            "rule": "named_field_taxonomy",
+            "start": 391763,
+            "subtype": "request_body",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        }
+      ],
+      "repair_same_identity_observations": [
+        {
+          "id": "0d24d57105484bfa8c2f5723",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "BIZ",
+            "confidence": "low",
+            "end": 391765,
+            "rule": "named_field_taxonomy",
+            "start": 391763,
+            "subtype": "business_object",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        },
+        {
+          "id": "ad391df6641b63764581fe89",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "BIZ",
+            "confidence": "low",
+            "end": 391765,
+            "rule": "named_field_taxonomy",
+            "start": 391763,
+            "subtype": "request_body",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        }
+      ],
+      "overlapping_repair_observations_up_to_8_per_old_observation": [
+        {
+          "id": "ad391df6641b63764581fe89",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "BIZ",
+            "confidence": "low",
+            "end": 391765,
+            "rule": "named_field_taxonomy",
+            "start": 391763,
+            "subtype": "request_body",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        },
+        {
+          "id": "0d24d57105484bfa8c2f5723",
+          "details": {
+            "basis": "named_carrier_hint",
+            "candidate_status": "carrier_candidate",
+            "category": "BIZ",
+            "confidence": "low",
+            "end": 391765,
+            "rule": "named_field_taxonomy",
+            "start": 391763,
+            "subtype": "business_object",
+            "value_status": "opaque"
+          },
+          "excluded": 0
+        }
+      ],
+      "retained_variant_ids": [],
+      "human_review_status": "pending",
+      "source_text_read": false
+    }
+  ],
+  "removed_identity_events": 3,
+  "type_set_change_events": 1,
+  "raw_source_read": false,
+  "raw_source_printed": false,
+  "credential_values_verified": false,
+  "interpretation": "These are explicit metadata changes under complete-rule replacement, not proven privacy fixes. Full source semantics remain pending.",
+  "coverage_count_units": {
+    "parent_candidate_occurrences": 3610965,
+    "parent_excluded_occurrences": 42941,
+    "candidate_occurrence_variants": 4181859,
+    "excluded_occurrence_variants": 44653,
+    "new_repair_identities": 572609,
+    "removed_parent_rows": 3,
+    "exact_duplicate": 335508,
+    "net_candidate_row_increase": 570894,
+    "net_excluded_row_increase": 1712
+  },
+  "count_interpretation": "New repair identities include candidate and example evidence. They are not the net candidate increase; replacement removals and example counts must be accounted for separately."
+}

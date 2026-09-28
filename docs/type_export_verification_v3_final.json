@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-08T19:37:58.018019+00:00",
+  "verification_kind": "independent_streaming_export_integrity_audit",
+  "automated_integrity_status": "passed",
+  "human_review_status": "not_performed",
+  "runtime_confirmed": false,
+  "full_dataset_coverage_claim": false,
+  "checks": [
+    "JSON and CSV row/field agreement including spreadsheet formula escaping",
+    "Recomputed unique log version, subtype, category, repository and review counts",
+    "Unique occurrence ids and stable snapshot identity",
+    "Raw observations equal retained event references",
+    "Unknown queue membership exactly matches needs_review and payloads agree with occurrence rows",
+    "No human/runtime/new-type/full-coverage confirmation promoted",
+    "All checked export hashes unchanged before and after audit"
+  ],
+  "counting_notes": [
+    "One log version can have multiple labels; category and subtype totals are not additive.",
+    "A review queue member can already have type labels while its value or context remains unresolved.",
+    "Zero observed labels do not prove absence in unprocessed data.",
+    "This audit verifies current exported static candidates, not detector recall, runtime leakage, full histories or full-dataset completion."
+  ],
+  "datasets": [
+    {
+      "dataset": "aidev",
+      "batch": "full-v3",
+      "export_directory": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v3/exports",
+      "automated_integrity_status": "passed",
+      "human_review_status": "not_performed_by_this_audit",
+      "runtime_confirmed": false,
+      "full_dataset_coverage_claim": false,
+      "taxonomy_version": "1.0.0",
+      "denominators_verified": {
+        "source_log_observations": 225,
+        "distinct_observed_log_versions": 210,
+        "distinct_observation_references": 225,
+        "unknown_type_review_count": 171
+      },
+      "raw_observations_collapsed": 15,
+      "versions_with_repeated_observations": 15,
+      "summary_rows": 48,
+      "csv_rows_verified": {
+        "type_occurrences": 210,
+        "unknown_type_review_queue": 171,
+        "type_summary": 48
+      },
+      "observed_subtypes": 4,
+      "stats": {
+        "typed_log_versions": 45,
+        "untyped_log_versions": 165,
+        "typed_and_queued_log_versions": 44,
+        "untyped_and_queued_log_versions": 127
+      },
+      "unknown_reason_counts": {
+        "bounded_semantics_incomplete": 117,
+        "broad_carrier_requires_value_context": 18,
+        "carrier_contents_unresolved": 18,
+        "identifier_only_type_hint": 39,
+        "semantic_parser_unavailable": 13,
+        "unclassified_output_field": 64,
+        "unclassified_output_value": 151
+      },
+      "nonzero_types": [
+        {
+          "category": "AUTH",
+          "subtype": null,
+          "log_version_count": 10,
+          "repository_count": 1,
+          "unknown_review_version_count": 10
+        },
+        {
+          "category": "AUTH",
+          "subtype": "password",
+          "log_version_count": 10,
+          "repository_count": 1,
+          "unknown_review_version_count": 10
+        },
+        {
+          "category": "BIZ",
+          "subtype": null,
+          "log_version_count": 2,
+          "repository_count": 1,
+          "unknown_review_version_count": 2
+        },
+        {
+          "category": "BIZ",
+          "subtype": "unclassified_object",
+          "log_version_count": 2,
+          "repository_count": 1,
+          "unknown_review_version_count": 2
+        },
+        {
+          "category": "CFG",
+          "subtype": null,
+          "log_version_count": 17,
+          "repository_count": 1,
+          "unknown_review_version_count": 16
+        },
+        {
+          "category": "CFG",
+          "subtype": "filesystem_path",
+          "log_version_count": 17,
+          "repository_count": 1,
+          "unknown_review_version_count": 16
+        },
+        {
+          "category": "DIAG",
+          "subtype": null,
+          "log_version_count": 16,
+          "repository_count": 3,
+          "unknown_review_version_count": 16
+        },
+        {
+          "category": "DIAG",
+          "subtype": "exception_message",
+          "log_version_count": 16,
+          "repository_count": 3,
+          "unknown_review_version_count": 16
+        }
+      ],
+      "commit_status_counts_from_current_summary": {
+        "blocked": 86088,
+        "complete": 84,
+        "partial": 143
+      },
+      "unique_dataset_commits_from_current_summary": 86315,
+      "all_export_hashes_stable": true,
+      "checked_files": {
+        "type_summary.json": {
+          "sha256": "f124341691e7921844fe259c8ab8f0b52b0bb85d8ba29b2e95ed72298d3ad465",
+          "bytes": 24387
+        },
+        "type_summary.csv": {
+          "sha256": "cb2c40583203f6c8664162dbfd40d5731b1195cbb7ffcf042e227d1a30d6b266",
+          "bytes": 7110
+        },
+        "type_occurrences.jsonl": {
+          "sha256": "cf86117ff0b81a004d16011d8706811ed5e22617887912592c19b2b61196eb49",
+          "bytes": 1486410
+        },
+        "type_occurrences.csv": {
+          "sha256": "7d1bd91a95ae4ea74530ee200b8ac9b4e1e4667ee4348ef213a289f73cce7a80",
+          "bytes": 1327308
+        },
+        "unknown_type_review_queue.jsonl": {
+          "sha256": "297deadee8d9e7bc039c02b5fb8588fd4f8986e4453c72747445a1dce0c0b141",
+          "bytes": 1280725
+        },
+        "unknown_type_review_queue.csv": {
+          "sha256": "5709f67972b159ed238145f4a2de8394c116fad99597cf3a2a744f8826dfcdbb",
+          "bytes": 1149396
+        },
+        "log_observations.jsonl": {
+          "sha256": "4f5b9850e820da5819baf14a5eabd08cb054333a14f3af5f64382b4750859e0c",
+          "bytes": 1718604
+        },
+        "summary.json": {
+          "sha256": "352269188e78e004b7441b56a21ea22654e3a2859c89a4ce9b513d202ba63e30",
+          "bytes": 2728
+        }
+      },
+      "integrity_issue_count": 0,
+      "integrity_issues": []
+    },
+    {
+      "dataset": "swechat",
+      "batch": "full-v3",
+      "export_directory": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v3/exports",
+      "automated_integrity_status": "passed",
+      "human_review_status": "not_performed_by_this_audit",
+      "runtime_confirmed": false,
+      "full_dataset_coverage_claim": false,
+      "taxonomy_version": "1.0.0",
+      "denominators_verified": {
+        "source_log_observations": 2885,
+        "distinct_observed_log_versions": 2736,
+        "distinct_observation_references": 2885,
+        "unknown_type_review_count": 2665
+      },
+      "raw_observations_collapsed": 149,
+      "versions_with_repeated_observations": 149,
+      "summary_rows": 48,
+      "csv_rows_verified": {
+        "type_occurrences": 2736,
+        "unknown_type_review_queue": 2665,
+        "type_summary": 48
+      },
+      "observed_subtypes": 11,
+      "stats": {
+        "typed_log_versions": 437,
+        "untyped_log_versions": 2299,
+        "typed_and_queued_log_versions": 437,
+        "untyped_and_queued_log_versions": 2228
+      },
+      "unknown_reason_counts": {
+        "bounded_semantics_incomplete": 2493,
+        "broad_carrier_requires_value_context": 363,
+        "carrier_contents_unresolved": 363,
+        "identifier_only_type_hint": 402,
+        "semantic_parser_unavailable": 2254,
+        "unclassified_output_field": 184,
+        "unclassified_output_value": 2307
+      },
+      "nonzero_types": [
+        {
+          "category": "AUTH",
+          "subtype": null,
+          "log_version_count": 5,
+          "repository_count": 2,
+          "unknown_review_version_count": 5
+        },
+        {
+          "category": "AUTH",
+          "subtype": "api_key",
+          "log_version_count": 5,
+          "repository_count": 2,
+          "unknown_review_version_count": 5
+        },
+        {
+          "category": "BIZ",
+          "subtype": null,
+          "log_version_count": 22,
+          "repository_count": 6,
+          "unknown_review_version_count": 22
+        },
+        {
+          "category": "BIZ",
+          "subtype": "business_object",
+          "log_version_count": 5,
+          "repository_count": 4,
+          "unknown_review_version_count": 5
+        },
+        {
+          "category": "BIZ",
+          "subtype": "request_body",
+          "log_version_count": 4,
+          "repository_count": 1,
+          "unknown_review_version_count": 4
+        },
+        {
+          "category": "BIZ",
+          "subtype": "response_body",
+          "log_version_count": 14,
+          "repository_count": 4,
+          "unknown_review_version_count": 14
+        },
+        {
+          "category": "CFG",
+          "subtype": null,
+          "log_version_count": 24,
+          "repository_count": 5,
+          "unknown_review_version_count": 24
+        },
+        {
+          "category": "CFG",
+          "subtype": "deployment_configuration",
+          "log_version_count": 10,
+          "repository_count": 3,
+          "unknown_review_version_count": 10
+        },
+        {
+          "category": "CFG",
+          "subtype": "environment",
+          "log_version_count": 7,
+          "repository_count": 2,
+          "unknown_review_version_count": 7
+        },
+        {
+          "category": "CFG",
+          "subtype": "filesystem_path",
+          "log_version_count": 9,
+          "repository_count": 1,
+          "unknown_review_version_count": 9
+        },
+        {
+          "category": "DIAG",
+          "subtype": null,
+          "log_version_count": 334,
+          "repository_count": 14,
+          "unknown_review_version_count": 334
+        },
+        {
+          "category": "DIAG",
+          "subtype": "exception_message",
+          "log_version_count": 327,
+          "repository_count": 14,
+          "unknown_review_version_count": 327
+        },
+        {
+          "category": "DIAG",
+          "subtype": "stack_trace",
+          "log_version_count": 14,
+          "repository_count": 3,
+          "unknown_review_version_count": 14
+        },
+        {
+          "category": "QID",
+          "subtype": null,
+          "log_version_count": 69,
+          "repository_count": 2,
+          "unknown_review_version_count": 69
+        },
+        {
+          "category": "QID",
+          "subtype": "request_identifier",
+          "log_version_count": 1,
+          "repository_count": 1,
+          "unknown_review_version_count": 1
+        },
+        {
+          "category": "QID",
+          "subtype": "session_identifier",
+          "log_version_count": 68,
+          "repository_count": 1,
+          "unknown_review_version_count": 68
+        }
+      ],
+      "commit_status_counts_from_current_summary": {
+        "blocked": 7401,
+        "complete": 574,
+        "partial": 722
+      },
+      "unique_dataset_commits_from_current_summary": 8697,
+      "all_export_hashes_stable": true,
+      "checked_files": {
+        "type_summary.json": {
+          "sha256": "3a4c78d23c10f173feba14b1ee154c4129000949045671db228b70496a042138",
+          "bytes": 24451
+        },
+        "type_summary.csv": {
+          "sha256": "54e09c96dbfabb83dc2876d3cff846704052a58c766136b6345f4de3545f564a",
+          "bytes": 7170
+        },
+        "type_occurrences.jsonl": {
+          "sha256": "73cc0578390256ee97b3bcf11b48fd036152c781a8b720ca20812993e10a751c",
+          "bytes": 8757387
+        },
+        "type_occurrences.csv": {
+          "sha256": "23a1288f0d76d09188914b70531d6f87d1e06a163e7f8d02764089ce902c69a6",
+          "bytes": 5958080
+        },
+        "unknown_type_review_queue.jsonl": {
+          "sha256": "63ed709c1c03ef2ec8693e55b4f7516df1d69b2ab35a116c48633bd2d77a9f0d",
+          "bytes": 8736741
+        },
+        "unknown_type_review_queue.csv": {
+          "sha256": "2e27dddc6842b2f37e836e11b63aae2c9c708ebef887065e07bd2454f15204f1",
+          "bytes": 5906775
+        },
+        "log_observations.jsonl": {
+          "sha256": "8dc6d07318a209d5c484651268eb01babd8858e38bcf6d673542ea65f9c89f25",
+          "bytes": 9274681
+        },
+        "summary.json": {
+          "sha256": "f630a6be471291690691c0beb73f1bf42bcd1e2304754cf06892c51728510001",
+          "bytes": 2738
+        }
+      },
+      "integrity_issue_count": 0,
+      "integrity_issues": []
+    }
+  ]
+}

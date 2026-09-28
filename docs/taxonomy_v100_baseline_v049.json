@@ -1,0 +1,664 @@
+{
+  "taxonomy_version": "1.0.0",
+  "catalog": {
+    "taxonomy_version": "1.0.0",
+    "categories": [
+      {
+        "category": "AUTH",
+        "label": "认证秘密",
+        "subtypes": [
+          {
+            "subtype": "password",
+            "label": "密码",
+            "legacy_data_types": [
+              "credential"
+            ]
+          },
+          {
+            "subtype": "access_token",
+            "label": "访问令牌",
+            "legacy_data_types": [
+              "credential"
+            ]
+          },
+          {
+            "subtype": "api_key",
+            "label": "服务密钥",
+            "legacy_data_types": [
+              "credential"
+            ]
+          },
+          {
+            "subtype": "private_key",
+            "label": "私钥",
+            "legacy_data_types": [
+              "credential"
+            ]
+          },
+          {
+            "subtype": "auth_cookie",
+            "label": "认证 Cookie",
+            "legacy_data_types": [
+              "credential"
+            ]
+          },
+          {
+            "subtype": "authorization_header",
+            "label": "认证头",
+            "legacy_data_types": [
+              "credential"
+            ]
+          },
+          {
+            "subtype": "credential_bundle",
+            "label": "其他认证秘密或凭证对象",
+            "legacy_data_types": [
+              "credential"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "PII",
+        "label": "个人及敏感个人信息",
+        "subtypes": [
+          {
+            "subtype": "email",
+            "label": "邮箱",
+            "legacy_data_types": [
+              "personal_identifier"
+            ]
+          },
+          {
+            "subtype": "phone",
+            "label": "电话",
+            "legacy_data_types": [
+              "personal_identifier"
+            ]
+          },
+          {
+            "subtype": "person_name",
+            "label": "个人姓名",
+            "legacy_data_types": [
+              "personal_identifier"
+            ]
+          },
+          {
+            "subtype": "postal_address",
+            "label": "通信地址",
+            "legacy_data_types": [
+              "personal_identifier"
+            ]
+          },
+          {
+            "subtype": "government_identifier",
+            "label": "政府证件标识",
+            "legacy_data_types": [
+              "personal_identifier"
+            ]
+          },
+          {
+            "subtype": "medical",
+            "label": "医疗健康信息",
+            "legacy_data_types": [
+              "medical_data"
+            ]
+          },
+          {
+            "subtype": "financial",
+            "label": "个人金融信息",
+            "legacy_data_types": [
+              "financial_data"
+            ]
+          },
+          {
+            "subtype": "precise_location",
+            "label": "精确位置候选",
+            "legacy_data_types": [
+              "precise_location"
+            ]
+          },
+          {
+            "subtype": "biometric",
+            "label": "生物特征",
+            "legacy_data_types": [
+              "biometric_data"
+            ]
+          },
+          {
+            "subtype": "unspecified_personal_information",
+            "label": "细类待确定",
+            "legacy_data_types": [
+              "personal_identifier"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "QID",
+        "label": "可关联标识",
+        "subtypes": [
+          {
+            "subtype": "user_identifier",
+            "label": "用户或账户标识",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          },
+          {
+            "subtype": "session_identifier",
+            "label": "会话标识",
+            "legacy_data_types": [
+              "session_identifier"
+            ]
+          },
+          {
+            "subtype": "device_identifier",
+            "label": "设备标识",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          },
+          {
+            "subtype": "network_identifier",
+            "label": "网络关联标识",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          },
+          {
+            "subtype": "request_identifier",
+            "label": "请求关联标识",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          },
+          {
+            "subtype": "transaction_identifier",
+            "label": "业务关联标识",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          },
+          {
+            "subtype": "tenant_identifier",
+            "label": "租户标识",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          },
+          {
+            "subtype": "unspecified_linkable_identifier",
+            "label": "细类待确定",
+            "legacy_data_types": [
+              "linkable_identifier"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "BIZ",
+        "label": "业务内容",
+        "subtypes": [
+          {
+            "subtype": "request_body",
+            "label": "请求体载体",
+            "legacy_data_types": [
+              "opaque_object"
+            ]
+          },
+          {
+            "subtype": "response_body",
+            "label": "响应体载体",
+            "legacy_data_types": [
+              "opaque_object"
+            ]
+          },
+          {
+            "subtype": "http_headers",
+            "label": "请求响应头载体",
+            "legacy_data_types": [
+              "opaque_object"
+            ]
+          },
+          {
+            "subtype": "document_content",
+            "label": "文档及内容载体",
+            "legacy_data_types": [
+              "content_visibility_unknown"
+            ]
+          },
+          {
+            "subtype": "message_content",
+            "label": "业务聊天内容载体",
+            "legacy_data_types": [
+              "content_visibility_unknown"
+            ]
+          },
+          {
+            "subtype": "business_object",
+            "label": "业务对象载体",
+            "legacy_data_types": [
+              "opaque_object"
+            ]
+          },
+          {
+            "subtype": "unclassified_object",
+            "label": "细类待确定",
+            "legacy_data_types": [
+              "opaque_object"
+            ]
+          },
+          {
+            "subtype": "unclassified_content",
+            "label": "细类待确定",
+            "legacy_data_types": [
+              "content_visibility_unknown"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "CFG",
+        "label": "内部配置及资源",
+        "subtypes": [
+          {
+            "subtype": "database_connection",
+            "label": "数据库连接",
+            "legacy_data_types": [
+              "connection_string"
+            ]
+          },
+          {
+            "subtype": "internal_endpoint",
+            "label": "内部端点",
+            "legacy_data_types": [
+              "internal_resource"
+            ]
+          },
+          {
+            "subtype": "filesystem_path",
+            "label": "内部文件路径",
+            "legacy_data_types": [
+              "internal_resource"
+            ]
+          },
+          {
+            "subtype": "environment",
+            "label": "环境变量载体",
+            "legacy_data_types": [
+              "internal_configuration"
+            ]
+          },
+          {
+            "subtype": "deployment_configuration",
+            "label": "配置及部署载体",
+            "legacy_data_types": [
+              "internal_configuration"
+            ]
+          },
+          {
+            "subtype": "unclassified_internal_resource",
+            "label": "细类待确定",
+            "legacy_data_types": [
+              "internal_resource"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "DIAG",
+        "label": "诊断载体",
+        "subtypes": [
+          {
+            "subtype": "exception_message",
+            "label": "异常内容载体",
+            "legacy_data_types": [
+              "exception_data"
+            ]
+          },
+          {
+            "subtype": "stack_trace",
+            "label": "堆栈载体",
+            "legacy_data_types": [
+              "exception_data"
+            ]
+          },
+          {
+            "subtype": "failure_response",
+            "label": "失败响应载体",
+            "legacy_data_types": [
+              "exception_data"
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence_boundary": "Static output-value hints; finite rules, no completeness or runtime disclosure claim."
+  },
+  "rules": [
+    [
+      "AUTH",
+      "password",
+      "密码",
+      "password|passwd|pwd",
+      "credential"
+    ],
+    [
+      "AUTH",
+      "access_token",
+      "访问令牌",
+      "(?:(?:access|refresh|auth|bearer|session)_?)?token|jwt",
+      "credential"
+    ],
+    [
+      "AUTH",
+      "api_key",
+      "服务密钥",
+      "(?:api|access|secret)_?key|client_?secret",
+      "credential"
+    ],
+    [
+      "AUTH",
+      "private_key",
+      "私钥",
+      "private_?key|signing_?key",
+      "credential"
+    ],
+    [
+      "AUTH",
+      "auth_cookie",
+      "认证 Cookie",
+      "cookies?",
+      "credential"
+    ],
+    [
+      "AUTH",
+      "authorization_header",
+      "认证头",
+      "authorization|auth_?header",
+      "credential"
+    ],
+    [
+      "AUTH",
+      "credential_bundle",
+      "其他认证秘密或凭证对象",
+      "credentials?|secret",
+      "credential"
+    ],
+    [
+      "PII",
+      "email",
+      "邮箱",
+      "email|e_?mail",
+      "personal_identifier"
+    ],
+    [
+      "PII",
+      "phone",
+      "电话",
+      "phone|phone_?number|mobile_?number|telephone",
+      "personal_identifier"
+    ],
+    [
+      "PII",
+      "person_name",
+      "个人姓名",
+      "(?:first|last|full|given|family|customer|person|patient|user)_?name|username",
+      "personal_identifier"
+    ],
+    [
+      "PII",
+      "postal_address",
+      "通信地址",
+      "(?:postal|street|home|shipping|billing)_?address|address",
+      "personal_identifier"
+    ],
+    [
+      "PII",
+      "government_identifier",
+      "政府证件标识",
+      "ssn|social_?security_?(?:number|id)|(?:government|national|passport|tax)_?id|passport_?number|id_?card",
+      "personal_identifier"
+    ],
+    [
+      "PII",
+      "medical",
+      "医疗健康信息",
+      "medical(?:_?(?:record|history|data))?|health_?(?:record|data)|diagnosis|prescription|patient_?record|lab_?results?",
+      "medical_data"
+    ],
+    [
+      "PII",
+      "financial",
+      "个人金融信息",
+      "(?:credit|debit)_?card|card_?number|bank_?account|iban|salary|income|account_?balance|financial_?(?:record|data)",
+      "financial_data"
+    ],
+    [
+      "PII",
+      "precise_location",
+      "精确位置候选",
+      "latitude|longitude|gps(?:_?(?:location|coordinates?))?|geo_?coordinates?|precise_?location",
+      "precise_location"
+    ],
+    [
+      "PII",
+      "biometric",
+      "生物特征",
+      "biometric(?:_?(?:data|template))?|fingerprint_?(?:data|template)|face_?(?:embedding|template)|voice_?print|iris_?template",
+      "biometric_data"
+    ],
+    [
+      "QID",
+      "user_identifier",
+      "用户或账户标识",
+      "(?:user|account|customer)_?id|customer_?number",
+      "linkable_identifier"
+    ],
+    [
+      "QID",
+      "session_identifier",
+      "会话标识",
+      "session_?id",
+      "session_identifier"
+    ],
+    [
+      "QID",
+      "device_identifier",
+      "设备标识",
+      "device_?id|advertising_?id|imei|mac_?address",
+      "linkable_identifier"
+    ],
+    [
+      "QID",
+      "network_identifier",
+      "网络关联标识",
+      "ip_?address|client_?ip|remote_?addr",
+      "linkable_identifier"
+    ],
+    [
+      "QID",
+      "request_identifier",
+      "请求关联标识",
+      "(?:request|correlation|trace|span)_?id",
+      "linkable_identifier"
+    ],
+    [
+      "QID",
+      "transaction_identifier",
+      "业务关联标识",
+      "(?:order|transaction|payment|invoice)_?id",
+      "linkable_identifier"
+    ],
+    [
+      "QID",
+      "tenant_identifier",
+      "租户标识",
+      "tenant_?id",
+      "linkable_identifier"
+    ],
+    [
+      "BIZ",
+      "request_body",
+      "请求体载体",
+      "request(?:_?(?:body|data))?|req_?body|payload|form_?data",
+      "opaque_object"
+    ],
+    [
+      "BIZ",
+      "response_body",
+      "响应体载体",
+      "response(?:_?(?:body|data))?|res_?body",
+      "opaque_object"
+    ],
+    [
+      "BIZ",
+      "http_headers",
+      "请求响应头载体",
+      "headers?",
+      "opaque_object"
+    ],
+    [
+      "BIZ",
+      "document_content",
+      "文档及内容载体",
+      "document(?:_?(?:text|content))?|file_?content|content",
+      "content_visibility_unknown"
+    ],
+    [
+      "BIZ",
+      "message_content",
+      "业务聊天内容载体",
+      "chat_?(?:message|history|content)|message_?(?:body|content)",
+      "content_visibility_unknown"
+    ],
+    [
+      "BIZ",
+      "business_object",
+      "业务对象载体",
+      "business_?(?:object|data)|customer|user|order|context|body",
+      "opaque_object"
+    ],
+    [
+      "CFG",
+      "database_connection",
+      "数据库连接",
+      "database_?url|connection_?string|dsn|db_?host",
+      "connection_string"
+    ],
+    [
+      "CFG",
+      "internal_endpoint",
+      "内部端点",
+      "internal_?(?:url|host|endpoint)|service_?endpoint|private_?ip",
+      "internal_resource"
+    ],
+    [
+      "CFG",
+      "filesystem_path",
+      "内部文件路径",
+      "(?:file|absolute|internal|home|config)_?path|working_?directory",
+      "internal_resource"
+    ],
+    [
+      "CFG",
+      "environment",
+      "环境变量载体",
+      "environment|env|environ",
+      "internal_configuration"
+    ],
+    [
+      "CFG",
+      "deployment_configuration",
+      "配置及部署载体",
+      "config(?:uration)?|deployment_?(?:config|data)|cloud_?resource",
+      "internal_configuration"
+    ],
+    [
+      "DIAG",
+      "exception_message",
+      "异常内容载体",
+      "exception|error|exc|err|current_exception_or_stack",
+      "exception_data"
+    ],
+    [
+      "DIAG",
+      "stack_trace",
+      "堆栈载体",
+      "stack_?trace|traceback|stack",
+      "exception_data"
+    ],
+    [
+      "DIAG",
+      "failure_response",
+      "失败响应载体",
+      "failure_?response|error_?response",
+      "exception_data"
+    ]
+  ],
+  "fallbacks": {
+    "credential": [
+      "AUTH",
+      "credential_bundle"
+    ],
+    "session_identifier": [
+      "QID",
+      "session_identifier"
+    ],
+    "personal_identifier": [
+      "PII",
+      "unspecified_personal_information"
+    ],
+    "linkable_identifier": [
+      "QID",
+      "unspecified_linkable_identifier"
+    ],
+    "connection_string": [
+      "CFG",
+      "database_connection"
+    ],
+    "opaque_object": [
+      "BIZ",
+      "unclassified_object"
+    ],
+    "content_visibility_unknown": [
+      "BIZ",
+      "unclassified_content"
+    ],
+    "internal_configuration": [
+      "CFG",
+      "deployment_configuration"
+    ],
+    "internal_resource": [
+      "CFG",
+      "unclassified_internal_resource"
+    ],
+    "exception_data": [
+      "DIAG",
+      "exception_message"
+    ],
+    "medical_data": [
+      "PII",
+      "medical"
+    ],
+    "financial_data": [
+      "PII",
+      "financial"
+    ],
+    "precise_location": [
+      "PII",
+      "precise_location"
+    ],
+    "biometric_data": [
+      "PII",
+      "biometric"
+    ]
+  },
+  "classifier_sha256": {
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786"
+  },
+  "count_unit": "Frozen classifier definition; not dataset observations.",
+  "source_values_read": false
+}

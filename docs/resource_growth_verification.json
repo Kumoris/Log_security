@@ -1,0 +1,26 @@
+{
+  "repository": "1517005260/graph-rag-agent",
+  "sha": "a2a86949883b82e7ff8bbe02a3c3ad66cfd77489",
+  "observation": "Static analysis probe; target code was not executed",
+  "changed_objects": {
+    "paths": 32,
+    "before_and_after_bytes": 559459,
+    "largest_changed_blob_bytes": 115331
+  },
+  "root_cause": "Conditional mutation merged previous evidence into a result that already contained it, creating repeated evidence and gap lists.",
+  "fix": "Stable deduplication of equal evidence, sanitizer notes and gaps in the shared Value join; distinct evidence retained.",
+  "profile_probe": {
+    "external_deadline_seconds": 7,
+    "before_status": "deadline_exceeded",
+    "after_status": "completed",
+    "after_seconds": 2.407,
+    "after_peak_rss_bytes": 57376768,
+    "pydriller_commits": 1,
+    "pydriller_diff_parsed_calls": 32,
+    "pydriller_source_reads": 45,
+    "log_observations": 98
+  },
+  "regression": "Synthetic Git history with 35 conditional mutations; actual PyDriller extraction",
+  "evidence_source": "batch_resource_guard agent tool execution and measured profile",
+  "not_a_privacy_confirmation": true
+}

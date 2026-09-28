@@ -1,0 +1,1692 @@
+{
+  "started_utc": "2026-09-09T07:42:28.717386+00:00",
+  "completed_utc": "2026-09-09T07:42:38.397788+00:00",
+  "elapsed_seconds": 9.680384582999977,
+  "run_dir": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050",
+  "checks": {
+    "export_state_complete": true,
+    "snapshot_fingerprint_consistent": true,
+    "source_manifest_consistent": true,
+    "source_file_signature_consistent": true,
+    "taxonomy_version_matches_current": true,
+    "finite_parent_context_basis_supported": true,
+    "source_implementation_hashes_match": true,
+    "aidev_scope_and_pending_boundaries": true,
+    "complete_export_name_set": true,
+    "snapshot_hash_structured_coverage.json": true,
+    "snapshot_hash_structured_data_gaps.csv.gz": true,
+    "snapshot_hash_structured_data_gaps.jsonl.gz": true,
+    "snapshot_hash_structured_documents.csv.gz": true,
+    "snapshot_hash_structured_documents.jsonl.gz": true,
+    "snapshot_hash_structured_excluded.csv.gz": true,
+    "snapshot_hash_structured_excluded.jsonl.gz": true,
+    "snapshot_hash_structured_type_occurrences.csv.gz": true,
+    "snapshot_hash_structured_type_occurrences.jsonl.gz": true,
+    "snapshot_hash_structured_type_summary.csv.gz": true,
+    "snapshot_hash_structured_type_summary.jsonl.gz": true,
+    "snapshot_hash_structured_unknown_type_review_queue.csv.gz": true,
+    "snapshot_hash_structured_unknown_type_review_queue.jsonl.gz": true,
+    "18_frozen_tables_and_2456073_rows": true,
+    "progress_matches_coverage": true,
+    "progress_row_and_cell_arithmetic": true,
+    "coverage_status_honest": true,
+    "coverage_cumulative_counts_match": true,
+    "complete_or_partial_denominators": true,
+    "historical_nonempty_denominator_verified": true,
+    "coverage_database_record_counts_match": true,
+    "parser_emission_counts_match_database": true,
+    "summary50_including_unknown_and_zero_labels": true,
+    "controlled_label_count_matches": true,
+    "document_and_candidate_status_counts": true,
+    "all_match_references_exist": true,
+    "all_gap_references_consistent": true,
+    "structured_documents_csv_header": true,
+    "structured_documents_csv_jsonl_exact_fields": true,
+    "structured_documents_database_exact_records": true,
+    "structured_documents_finite_fields_and_coordinates": true,
+    "structured_type_occurrences_csv_header": true,
+    "structured_type_occurrences_csv_jsonl_exact_fields": true,
+    "structured_type_occurrences_database_exact_records": true,
+    "structured_type_occurrences_finite_fields_and_coordinates": true,
+    "structured_excluded_csv_header": true,
+    "structured_excluded_csv_jsonl_exact_fields": true,
+    "structured_excluded_database_exact_records": true,
+    "structured_excluded_finite_fields_and_coordinates": true,
+    "structured_data_gaps_csv_header": true,
+    "structured_data_gaps_csv_jsonl_exact_fields": true,
+    "structured_data_gaps_database_exact_records": true,
+    "structured_data_gaps_finite_fields_and_coordinates": true,
+    "structured_unknown_type_review_queue_csv_header": true,
+    "structured_unknown_type_review_queue_csv_jsonl_exact_fields": true,
+    "structured_unknown_type_review_queue_database_exact_records": true,
+    "structured_unknown_type_review_queue_finite_fields_and_coordinates": true,
+    "structured_type_summary_csv_header": true,
+    "structured_type_summary_csv_jsonl_exact_fields": true,
+    "structured_type_summary_database_exact_records": true,
+    "structured_type_summary_finite_fields_and_coordinates": true,
+    "review_ranges_nonoverlapping": true,
+    "review_ranges_exact_processed_nonempty_total": true,
+    "review_range_status_totals_match_parser": true,
+    "comparison_same_frozen_source": true,
+    "comparison_old_snapshot_complete": true,
+    "comparison_hash_aidev-v049_structured_type_occurrences": true,
+    "comparison_hash_aidev-v049_structured_excluded": true,
+    "comparison_hash_aidev-v050_structured_type_occurrences": true,
+    "comparison_hash_aidev-v050_structured_excluded": true,
+    "fixed_context_probe_report_hash": true,
+    "fixed_context_same_frozen_source": false,
+    "fixed_context_hash_aidev_structured_parent_context_v050_evidence.jsonl": true,
+    "fixed_context_hash_aidev_structured_parent_context_v050_replay_evidence.jsonl": true,
+    "fixed_context_prior_evidence_chain": true,
+    "fixed_context_cohort_16_supported_5_pending_25_rejected": true,
+    "fixed_supported_context_positions_preserved": true,
+    "fixed_context_evidence_files_unchanged": true,
+    "comparison_summary_hash_aidev-v049": true,
+    "comparison_summary_hash_aidev-v050": true,
+    "database_stat_unchanged": true,
+    "all_checked_snapshot_files_unchanged": true
+  },
+  "passed": 80,
+  "total": 81,
+  "all_checks_passed": false,
+  "all_source_rows_visited": true,
+  "source_rows": 2456073,
+  "processed_rows": 2456073,
+  "expected_full_nonempty_cells": 17362345,
+  "processed_nonempty_cells": 17362345,
+  "database_counts": {
+    "documents": 49669,
+    "candidate_occurrences": 1180,
+    "excluded_occurrences": 57,
+    "data_gap_records": 44289,
+    "unknown_review_range_records": 570513,
+    "unknown_review_source_cells": 17362345
+  },
+  "export_pairs": [
+    {
+      "stem": "structured_documents",
+      "rows": 49669,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_type_occurrences",
+      "rows": 1180,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_excluded",
+      "rows": 57,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_data_gaps",
+      "rows": 44289,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_unknown_type_review_queue",
+      "rows": 570513,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_type_summary",
+      "rows": 50,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    }
+  ],
+  "type_summary_rows": 50,
+  "observed_controlled_labels": 36,
+  "unknown_type_summary_count": 0,
+  "document_status_counts": {
+    "invalid_json": 44166,
+    "parsed_with_semantic_gaps": 5387,
+    "partial": 116
+  },
+  "candidate_status_counts": {
+    "carrier_candidate": 631,
+    "identifier_reference": 10,
+    "literal_candidate": 74,
+    "named_value_candidate": 465
+  },
+  "previous_v049_comparison": {
+    "v049_taxonomy_version": "1.1.0",
+    "v050_taxonomy_version": "1.2.0",
+    "both_all_rows_visited": true,
+    "common_coordinate_type_rule_records": 1216,
+    "added_coordinate_type_rule_records": 21,
+    "removed_coordinate_type_rule_records": 0,
+    "unchanged_full_export_rows": 1216,
+    "unchanged_quality_details": 1216,
+    "status_transitions": [],
+    "per_type_counts": [
+      {
+        "category": null,
+        "subtype": null,
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "access_token",
+        "v049_count": 53,
+        "v050_count": 53,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "api_key",
+        "v049_count": 42,
+        "v050_count": 42,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "auth_cookie",
+        "v049_count": 1,
+        "v050_count": 1,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "authorization_header",
+        "v049_count": 1,
+        "v050_count": 1,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "credential_bundle",
+        "v049_count": 16,
+        "v050_count": 16,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "password",
+        "v049_count": 26,
+        "v050_count": 26,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "private_key",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "business_object",
+        "v049_count": 135,
+        "v050_count": 135,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "document_content",
+        "v049_count": 91,
+        "v050_count": 91,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "http_headers",
+        "v049_count": 35,
+        "v050_count": 35,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "message_content",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "request_body",
+        "v049_count": 38,
+        "v050_count": 40,
+        "count_delta": 2,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "response_body",
+        "v049_count": 43,
+        "v050_count": 45,
+        "count_delta": 2,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "unclassified_content",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "unclassified_object",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "database_connection",
+        "v049_count": 16,
+        "v050_count": 16,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "deployment_configuration",
+        "v049_count": 51,
+        "v050_count": 51,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "environment",
+        "v049_count": 76,
+        "v050_count": 76,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "filesystem_path",
+        "v049_count": 13,
+        "v050_count": 13,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "internal_endpoint",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "unclassified_internal_resource",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "DIAG",
+        "subtype": "exception_message",
+        "v049_count": 145,
+        "v050_count": 145,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "DIAG",
+        "subtype": "failure_response",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "DIAG",
+        "subtype": "stack_trace",
+        "v049_count": 14,
+        "v050_count": 14,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "age",
+        "v049_count": 0,
+        "v050_count": 1,
+        "count_delta": 1,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "biometric",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "birth_date",
+        "v049_count": 9,
+        "v050_count": 9,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "education",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "email",
+        "v049_count": 36,
+        "v050_count": 36,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "employment",
+        "v049_count": 3,
+        "v050_count": 3,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "ethnicity",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "financial",
+        "v049_count": 5,
+        "v050_count": 5,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "government_identifier",
+        "v049_count": 6,
+        "v050_count": 6,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "medical",
+        "v049_count": 2,
+        "v050_count": 2,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "person_name",
+        "v049_count": 76,
+        "v050_count": 82,
+        "count_delta": 6,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "phone",
+        "v049_count": 29,
+        "v050_count": 29,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "postal_address",
+        "v049_count": 31,
+        "v050_count": 31,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "precise_location",
+        "v049_count": 14,
+        "v050_count": 14,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "religious_belief",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "sex_gender",
+        "v049_count": 7,
+        "v050_count": 7,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "unspecified_personal_information",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "device_identifier",
+        "v049_count": 14,
+        "v050_count": 14,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "network_identifier",
+        "v049_count": 48,
+        "v050_count": 48,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "request_identifier",
+        "v049_count": 16,
+        "v050_count": 17,
+        "count_delta": 1,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "session_identifier",
+        "v049_count": 23,
+        "v050_count": 23,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "tenant_identifier",
+        "v049_count": 8,
+        "v050_count": 8,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "transaction_identifier",
+        "v049_count": 5,
+        "v050_count": 6,
+        "count_delta": 1,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "unspecified_linkable_identifier",
+        "v049_count": 0,
+        "v050_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "user_identifier",
+        "v049_count": 31,
+        "v050_count": 39,
+        "count_delta": 8,
+        "newly_evaluated_type": false
+      }
+    ],
+    "versioned_record_ids": {
+      "common": 1216,
+      "added": 21,
+      "removed": 0
+    },
+    "context_basis_review": {
+      "all_context_basis_quality_counts": [
+        {
+          "category": "BIZ",
+          "subtype": "request_body",
+          "candidate_status": "carrier_candidate",
+          "value_status": "opaque",
+          "confidence": "low",
+          "node_kind": "string",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 2
+        },
+        {
+          "category": "BIZ",
+          "subtype": "response_body",
+          "candidate_status": "carrier_candidate",
+          "value_status": "opaque",
+          "confidence": "low",
+          "node_kind": "object",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 2
+        },
+        {
+          "category": "PII",
+          "subtype": "age",
+          "candidate_status": "named_value_candidate",
+          "value_status": "unverified",
+          "confidence": "low",
+          "node_kind": "number",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 1
+        },
+        {
+          "category": "PII",
+          "subtype": "person_name",
+          "candidate_status": "named_value_candidate",
+          "value_status": "unverified",
+          "confidence": "low",
+          "node_kind": "string",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 6
+        },
+        {
+          "category": "QID",
+          "subtype": "request_identifier",
+          "candidate_status": "named_value_candidate",
+          "value_status": "unverified",
+          "confidence": "low",
+          "node_kind": "string",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 1
+        },
+        {
+          "category": "QID",
+          "subtype": "transaction_identifier",
+          "candidate_status": "named_value_candidate",
+          "value_status": "unverified",
+          "confidence": "low",
+          "node_kind": "string",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 1
+        },
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "candidate_status": "named_value_candidate",
+          "value_status": "unverified",
+          "confidence": "low",
+          "node_kind": "number",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 6
+        },
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "candidate_status": "named_value_candidate",
+          "value_status": "unverified",
+          "confidence": "low",
+          "node_kind": "string",
+          "basis": "json_parent_key_hint",
+          "excluded": false,
+          "count": 2
+        }
+      ],
+      "fixed_position_groups": {
+        "replay_accepted_unresolved_pending": {
+          "positions": 5,
+          "positions_currently_present": 5,
+          "positions_equal_fixed_replay": 5,
+          "rows": [
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 26648,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                0
+              ],
+              "category": "QID",
+              "subtype": "request_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_comments.parquet",
+              "source_row": 5342,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                2
+              ],
+              "category": "BIZ",
+              "subtype": "request_body",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "carrier_candidate",
+                  "value_status": "opaque",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_comments.parquet",
+              "source_row": 5342,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "response_body",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "carrier_candidate",
+                  "value_status": "opaque",
+                  "confidence": "low",
+                  "node_kind": "object"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_timeline.parquet",
+              "source_row": 38155,
+              "column_name": "message",
+              "document_index": 0,
+              "node_path": [
+                1,
+                2
+              ],
+              "category": "BIZ",
+              "subtype": "request_body",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "carrier_candidate",
+                  "value_status": "opaque",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_timeline.parquet",
+              "source_row": 38155,
+              "column_name": "message",
+              "document_index": 0,
+              "node_path": [
+                2,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "response_body",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "carrier_candidate",
+                  "value_status": "opaque",
+                  "confidence": "low",
+                  "node_kind": "object"
+                }
+              ],
+              "human_review_status": "pending"
+            }
+          ]
+        },
+        "replay_rejected_unresolved_pending": {
+          "positions": 25,
+          "positions_currently_present": 0,
+          "positions_equal_fixed_replay": 25,
+          "rows": [
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 6504,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0,
+                1,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 15274,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                0,
+                0
+              ],
+              "category": "AUTH",
+              "subtype": "authorization_header",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 16324,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              "category": "CFG",
+              "subtype": "deployment_configuration",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 19656,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                1
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 19656,
+              "column_name": "body",
+              "document_index": 1,
+              "node_path": [
+                0,
+                1
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 26648,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                0
+              ],
+              "category": "BIZ",
+              "subtype": "request_body",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 28784,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                0
+              ],
+              "category": "BIZ",
+              "subtype": "business_object",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 32202,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                3,
+                0
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 35188,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                2
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 51392,
+              "column_name": "body",
+              "document_index": 1,
+              "node_path": [
+                3,
+                0
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 881662,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0,
+                4,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 881662,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                1,
+                4,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 881662,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                2,
+                4,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 919429,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                1,
+                0
+              ],
+              "category": "AUTH",
+              "subtype": "access_token",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "issue.parquet",
+              "source_row": 1117,
+              "column_name": "body",
+              "document_index": 1,
+              "node_path": [
+                2,
+                2
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_comments.parquet",
+              "source_row": 14298,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                0
+              ],
+              "category": "DIAG",
+              "subtype": "stack_trace",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_comments.parquet",
+              "source_row": 14298,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0
+              ],
+              "category": "DIAG",
+              "subtype": "stack_trace",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_timeline.parquet",
+              "source_row": 97616,
+              "column_name": "message",
+              "document_index": 0,
+              "node_path": [
+                0,
+                0
+              ],
+              "category": "DIAG",
+              "subtype": "stack_trace",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_timeline.parquet",
+              "source_row": 97616,
+              "column_name": "message",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0
+              ],
+              "category": "DIAG",
+              "subtype": "stack_trace",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pull_request.parquet",
+              "source_row": 2073,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                1
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pull_request.parquet",
+              "source_row": 2073,
+              "column_name": "body",
+              "document_index": 1,
+              "node_path": [
+                0,
+                1
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pull_request.parquet",
+              "source_row": 3535,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                2
+              ],
+              "category": "DIAG",
+              "subtype": "exception_message",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pull_request.parquet",
+              "source_row": 27838,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0,
+                4,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pull_request.parquet",
+              "source_row": 27838,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                1,
+                4,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pull_request.parquet",
+              "source_row": 27838,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                2,
+                4,
+                1
+              ],
+              "category": "BIZ",
+              "subtype": "document_content",
+              "current_matches": 0,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [],
+              "human_review_status": "pending"
+            }
+          ]
+        },
+        "supported_pair_pending": {
+          "positions": 16,
+          "positions_currently_present": 16,
+          "positions_equal_fixed_replay": 16,
+          "rows": [
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 6639,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                4,
+                0
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 10563,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                2,
+                0
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 14649,
+              "column_name": "body",
+              "document_index": 1,
+              "node_path": [
+                1,
+                0,
+                0
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 15977,
+              "column_name": "body",
+              "document_index": 1,
+              "node_path": [
+                1,
+                0
+              ],
+              "category": "QID",
+              "subtype": "transaction_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 28596,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                3,
+                0
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 28596,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                3,
+                1
+              ],
+              "category": "PII",
+              "subtype": "person_name",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 28596,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                4,
+                0,
+                3,
+                0
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 28596,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                4,
+                0,
+                3,
+                1
+              ],
+              "category": "PII",
+              "subtype": "person_name",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 39376,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                0,
+                3,
+                0
+              ],
+              "category": "PII",
+              "subtype": "person_name",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 39376,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                1,
+                3,
+                0
+              ],
+              "category": "PII",
+              "subtype": "person_name",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 46999,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                0
+              ],
+              "category": "PII",
+              "subtype": "person_name",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 46999,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                0,
+                1
+              ],
+              "category": "PII",
+              "subtype": "age",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 913187,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                0
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "all_pull_request.parquet",
+              "source_row": 913187,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                1,
+                2
+              ],
+              "category": "PII",
+              "subtype": "person_name",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "string"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_review_comments.parquet",
+              "source_row": 14400,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                10,
+                1
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            },
+            {
+              "table_path": "pr_review_comments_v2.parquet",
+              "source_row": 18636,
+              "column_name": "body",
+              "document_index": 0,
+              "node_path": [
+                10,
+                1
+              ],
+              "category": "QID",
+              "subtype": "user_identifier",
+              "current_matches": 1,
+              "matches_equal_fixed_replay": true,
+              "current_quality": [
+                {
+                  "basis": "json_parent_key_hint",
+                  "candidate_status": "named_value_candidate",
+                  "value_status": "unverified",
+                  "confidence": "low",
+                  "node_kind": "number"
+                }
+              ],
+              "human_review_status": "pending"
+            }
+          ]
+        }
+      },
+      "unknown_observations_all_bases": 0,
+      "unresolved_positions_promoted_to_supported": false,
+      "human_review_status": "pending",
+      "runtime_confirmed": false,
+      "limitation": "Fixed positions are a bounded regression cohort. Accepted unresolved compositions remain a separate pending group; all context hints and unclassified nodes still need review.",
+      "evidence_sha256": {
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_parent_context_v050_evidence.jsonl": "0c1675d6b4df4e9da54294deead723f2ace9217bba7c5a75d1ff61585e93c250",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_parent_context_v050_replay_evidence.jsonl": "9b48c7fa6505cfd25cecd291dcf91ac6e28d1e193b281ac6b7907787c6e0e297"
+      }
+    },
+    "comparison_metadata_record_limit_per_version": 200000,
+    "comparison_identity_excludes": [
+      "versioned_record_id",
+      "candidate_status",
+      "value_status",
+      "basis",
+      "confidence"
+    ],
+    "full_metadata_row_comparison_includes_id_and_scope": true,
+    "incremental_true_sensitive_values_claim": false,
+    "note": "Differences are classifier observations on matched metadata coordinates; newly evaluated labels have no prior count, and neither differences nor statuses establish real values."
+  },
+  "historical_smoke_preservation_claim": false,
+  "evidence_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044/content_coverage.json": "371b867304082fb89d900fcdd555c8014c17f968ccba98c185c32072cb53e1af",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/manifest.json": "4d99c9dec44bea07b7c7cb8c1d78a2019a3dd61c19e4a550465d83429bc80819",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_coverage.json": "876f1473cd0a374ed2e8751fd5d35db7ebb5aa59d75d3d999e477f3fdd10a50a",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/export_state.json": "e607bad0a167dafce2c292af7a45305a8524f63a6e10b048f29a0d58cec66ece",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_data_gaps.csv.gz": "e2dffd32da157e762d9c5561a26e8fae4aca2cd8cc695044e0eb8a1ca3032d5f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_data_gaps.jsonl.gz": "3236017b665e6887a432d0a42c4b8c9797613dc94648775301cb5d6d96a59af5",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_documents.csv.gz": "402eb39724661de3975a6d39749c74ba0add0f50175d0a1d28d9bda132473142",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_documents.jsonl.gz": "5f63624942db23b623ce91410b7321c74682004e05d249e716662060cf65b59d",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_excluded.csv.gz": "e3f2803e6756412c5c815fd5bafa18d6958a65e662eb5280746c27b7123649d0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_excluded.jsonl.gz": "1ef6f31666497a538b736c688c316a21402160b80d1a2f0c1d662be6699a474b",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_occurrences.csv.gz": "213ddb4665fc6924120e4d51ea1745ea5e54e2f9dc613008cd4013fcea18f091",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_occurrences.jsonl.gz": "2a71f04a25179f7c0c33bd98b5ec1b815c2a15365518fbcc94ffadf924f87248",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_summary.csv.gz": "9b27c26bd84b56bb96906f1b37f83a8d0963d841393ef21877f0f4b664bc266e",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_summary.jsonl.gz": "85d2521ad5af2b781de65862a1b6caea016dd5b278beb09ac0f1993135e70488",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_unknown_type_review_queue.csv.gz": "d61157a581ce7ce9d0349289bfc360784a11cb3e05098e20954a737c24d76d43",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_unknown_type_review_queue.jsonl.gz": "c5a3bc03b19b9442144d48a57c6096d782a20fadc87654c01c8bbf5bc17da078",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/manifest.json": "ccd4993ac3ae54a65fce57052c651ba0bcb8afcbbd5901656beef4e42a576618",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_coverage.json": "923d19fc5307b99b3bc41c65b76de783491c440472d19f7626c0c882fbb5e6aa",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/export_state.json": "638d6e8cf080888351c25a1a4ad0cb36c724bb32c83a9454bd1b5d4ae504e414",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_parent_context_v050_probe.json": "3c93d096b10b44781e1ab6fd1a57007b94efdaf0371c451aae725fa97550387f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_parent_context_v050_replay.json": "c523826ecd6deb264335a96d9fd4c9d721bdcb625104faa890e9b2a340aca407"
+  },
+  "helper_sha256": "828a9bc3aa6777fd0e7e544e5303a0b0c787f0a1ce819b620e265df23ac92c8d",
+  "source_bodies_read": false,
+  "raw_source_bytes_rehashed": false,
+  "swe_sources_read": false,
+  "database_modified": false,
+  "count_totals_added_to_plaintext": false,
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_sensitive_type_confirmed": false,
+  "limitations": [
+    "Checks prove snapshot, export/DB arithmetic, references and finite-coordinate consistency; original source text was not reread to validate exact document/leaf text positions.",
+    "All-source-row completion means selected text cells were visited, not that every value/type/encoding was classified.",
+    "Raw source-file hashes are linked through producer/import manifests; this verifier only rehashes metadata, gzip exports and implementation files.",
+    "Structured occurrences overlap old plaintext observations and cannot be reported as their incremental total."
+  ]
+}

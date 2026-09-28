@@ -1,0 +1,102 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "collect-objects",
+    "--output",
+    "agentlog_unified/batches/aidev-full-v4",
+    "--cache-dir",
+    "agentlog_unified/cache/object-repos",
+    "--online",
+    "--max-commits",
+    "250",
+    "--max-seconds",
+    "300",
+    "--resume"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76",
+  "started_at": "2026-09-08T20:01:56.056014+00:00",
+  "source_sha256_before": {
+    "agentlog_unified/src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "agentlog_unified/src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "agentlog_unified/src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c"
+  },
+  "before": {
+    "job_statuses": {
+      "blocked": 2,
+      "complete": 28,
+      "partial": 127,
+      "pending": 86158
+    },
+    "object_acquisition_attempts": 300,
+    "free_disk_bytes": 3568603136
+  },
+  "exit_code": 2,
+  "finished_at": "2026-09-08T20:06:57.325337+00:00",
+  "elapsed_seconds": 301.2662,
+  "source_sha256_after": {
+    "agentlog_unified/src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "agentlog_unified/src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "agentlog_unified/src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c"
+  },
+  "after": {
+    "job_statuses": {
+      "complete": 28,
+      "partial": 127,
+      "pending": 86160
+    },
+    "object_acquisition_attempts": 478,
+    "free_disk_bytes": 3411218432
+  },
+  "source_unchanged": true,
+  "verification": {
+    "summary": {
+      "this_run_attempted": 178,
+      "this_run_repositories": 5,
+      "this_run_status_counts": {
+        "objects_ready_for_offline_mining": 178
+      },
+      "offline": false,
+      "latest_collection_status_counts": {
+        "objects_ready_for_offline_mining": 328
+      },
+      "total_recorded_attempts": 478,
+      "elapsed_seconds": 301.1213,
+      "classification_performed": false,
+      "full_history_collected": false,
+      "remaining_without_collection_attempt": 85982,
+      "output": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/aidev-full-v4/collection",
+      "exit_code": 2
+    },
+    "new_status_counts": {
+      "objects_ready_for_offline_mining": 178
+    },
+    "new_gap_reasons": {},
+    "new_per_repository": {
+      "1c-syntax/bsl-language-server": 2,
+      "2006-scape/2006scape": 30,
+      "3rditeration/btcrecover": 72,
+      "4ian/gdevelop": 2,
+      "514-labs/moose": 72
+    },
+    "new_metrics": {
+      "changed_blobs_objects_missing_before": 652,
+      "changed_blobs_requested_objects": 652,
+      "commit_graph_requested_objects": 101,
+      "explicit_fetch_attempts": 300,
+      "explicit_fetch_calls": 300,
+      "raw_changed_entries": 642,
+      "parent_graph_requested_objects": 31,
+      "auxiliary_dependency_validation_reads": 440,
+      "auxiliary_source_reads_for_import_planning": 110,
+      "direct_import_blobs_objects_missing_before": 26,
+      "direct_import_blobs_requested_objects": 26,
+      "direct_import_candidate_attempts": 2136,
+      "direct_import_candidate_budget_truncations": 42
+    },
+    "classification_performed": false,
+    "output_sha256": "f3ed7dc82242845c6ca3a6661af5d1dcfa8520a94fc99d1549d012a498c1b843",
+    "stderr_bytes": 0,
+    "cache_allocated_kib_du": 37500,
+    "cache_path": "agentlog_unified/cache/object-repos"
+  }
+}

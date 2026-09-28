@@ -1,0 +1,19 @@
+{
+  "kind": "real_synthetic_import_seed_advance_repair_merge_helper_selfcheck",
+  "real_dataset_values_read": false,
+  "source_values_exported": false,
+  "repair_verifier_exit": 0,
+  "merge_verifier_exit": 0,
+  "checks": {
+    "repair": {
+      "passed": 65,
+      "total": 65,
+      "failed": []
+    },
+    "merge": {
+      "passed": 87,
+      "total": 87,
+      "failed": []
+    }
+  }
+}

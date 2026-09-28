@@ -1,0 +1,18 @@
+{
+  "this_run_attempted": 20,
+  "this_run_repositories": 5,
+  "this_run_status_counts": {
+    "objects_ready_for_offline_mining": 20
+  },
+  "offline": false,
+  "latest_collection_status_counts": {
+    "objects_ready_for_offline_mining": 20
+  },
+  "total_recorded_attempts": 20,
+  "elapsed_seconds": 35.3319,
+  "classification_performed": false,
+  "full_history_collected": false,
+  "remaining_without_collection_attempt": 24448,
+  "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v2/collection",
+  "exit_code": 2
+}

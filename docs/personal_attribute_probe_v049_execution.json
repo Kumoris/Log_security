@@ -1,0 +1,18 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/probe_personal_attribute_fields_v049.py"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:38:24.682362+00:00",
+  "ended_utc": "2026-09-08T23:39:41.827766+00:00",
+  "exit_code": 0,
+  "stdout_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/personal_attribute_probe_v049_stdout.txt",
+  "stderr_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/personal_attribute_probe_v049_stderr.txt",
+  "stdout_sha256": "831a7d1e898d65f782f24d6854eebedb6dbb3df6b38f636d87d974b2a4fe5d60",
+  "stderr_sha256": "a75ed675cc9c5ed6bb8431bfed04365d72e9c22281e713fd1a9d4196a13f7aed",
+  "helper_sha256_before": "e1955fa27a8af54481e3ac29c3f1722a0f19def089813b2f433f253980ed44d5",
+  "helper_sha256_after": "e1955fa27a8af54481e3ac29c3f1722a0f19def089813b2f433f253980ed44d5",
+  "source_code_or_tests_modified": false,
+  "full_body_scan_attempt": 1
+}

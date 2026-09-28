@@ -1,0 +1,445 @@
+{
+  "started_utc": "2026-09-08T23:38:24.745999+00:00",
+  "completed_utc": "2026-09-08T23:39:41.816094+00:00",
+  "elapsed_seconds": 77.07,
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/probe_personal_attribute_fields_v049.py"
+  ],
+  "helper_sha256": "e1955fa27a8af54481e3ac29c3f1722a0f19def089813b2f433f253980ed44d5",
+  "time_budget_seconds": 300,
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "source_code_sha256": {
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_repair.py": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+  },
+  "frozen_source_inputs": [
+    {
+      "path": "all_pull_request.parquet",
+      "bytes": 330776130,
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+    },
+    {
+      "path": "all_repository.parquet",
+      "bytes": 6136253,
+      "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+    },
+    {
+      "path": "all_user.parquet",
+      "bytes": 2511706,
+      "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+    },
+    {
+      "path": "human_pr_task_type.parquet",
+      "bytes": 715969,
+      "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+    },
+    {
+      "path": "human_pull_request.parquet",
+      "bytes": 4387171,
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+    },
+    {
+      "path": "issue.parquet",
+      "bytes": 3222463,
+      "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+    },
+    {
+      "path": "pr_comments.parquet",
+      "bytes": 25857243,
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+    },
+    {
+      "path": "pr_commit_details.parquet",
+      "bytes": 485214032,
+      "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+    },
+    {
+      "path": "pr_commits.parquet",
+      "bytes": 8314097,
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+    },
+    {
+      "path": "pr_review_comments.parquet",
+      "bytes": 14728130,
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+    },
+    {
+      "path": "pr_review_comments_v2.parquet",
+      "bytes": 21125785,
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+    },
+    {
+      "path": "pr_reviews.parquet",
+      "bytes": 7517041,
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+    },
+    {
+      "path": "pr_task_type.parquet",
+      "bytes": 2993264,
+      "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+    },
+    {
+      "path": "pr_timeline.parquet",
+      "bytes": 34108415,
+      "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+    },
+    {
+      "path": "pull_request.parquet",
+      "bytes": 16855612,
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+    },
+    {
+      "path": "related_issue.parquet",
+      "bytes": 75579,
+      "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+    },
+    {
+      "path": "repository.parquet",
+      "bytes": 167251,
+      "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+    },
+    {
+      "path": "user.parquet",
+      "bytes": 68935,
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+    }
+  ],
+  "source_inputs_unchanged": true,
+  "unknown_named_available_cells": 222,
+  "unknown_named_sample_requested": 32,
+  "unknown_named_sample_stats": {
+    "source_cells_examined": 32,
+    "characters_seen": 123642,
+    "characters_examined": 123642,
+    "truncated_source_cells": 0
+  },
+  "unknown_named_sample_stop_reason": null,
+  "unknown_named_sample_label_counts": [],
+  "full_scan_attempts": 1,
+  "selected_body_field_count": 22,
+  "source_cell_denominator": 4034221,
+  "scan_stats": {
+    "source_cells_visited": 4034221,
+    "source_cells_examined": 3718349,
+    "characters_seen": 2395474725,
+    "characters_examined": 2395474725,
+    "truncated_source_cells": 0,
+    "null_cells": 315871,
+    "field_assignments": 858,
+    "empty_cells": 1
+  },
+  "coverage": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "columns": [
+        "title",
+        "body"
+      ],
+      "source_rows": 932791,
+      "visited_rows": 932791,
+      "source_cells_visited": 1865582,
+      "complete": true
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "columns": [
+        "title",
+        "reason"
+      ],
+      "source_rows": 6618,
+      "visited_rows": 6618,
+      "source_cells_visited": 13236,
+      "complete": true
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "columns": [
+        "title",
+        "body"
+      ],
+      "source_rows": 6618,
+      "visited_rows": 6618,
+      "source_cells_visited": 13236,
+      "complete": true
+    },
+    {
+      "table_path": "issue.parquet",
+      "columns": [
+        "title",
+        "body"
+      ],
+      "source_rows": 4614,
+      "visited_rows": 4614,
+      "source_cells_visited": 9228,
+      "complete": true
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "columns": [
+        "body"
+      ],
+      "source_rows": 39122,
+      "visited_rows": 39122,
+      "source_cells_visited": 39122,
+      "complete": true
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "columns": [
+        "message",
+        "patch"
+      ],
+      "source_rows": 711923,
+      "visited_rows": 711923,
+      "source_cells_visited": 1423846,
+      "complete": true
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "columns": [
+        "message"
+      ],
+      "source_rows": 88576,
+      "visited_rows": 88576,
+      "source_cells_visited": 88576,
+      "complete": true
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "columns": [
+        "diff_hunk",
+        "body"
+      ],
+      "source_rows": 19450,
+      "visited_rows": 19450,
+      "source_cells_visited": 38900,
+      "complete": true
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "columns": [
+        "diff_hunk",
+        "body"
+      ],
+      "source_rows": 26868,
+      "visited_rows": 26868,
+      "source_cells_visited": 53736,
+      "complete": true
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "columns": [
+        "body"
+      ],
+      "source_rows": 28875,
+      "visited_rows": 28875,
+      "source_cells_visited": 28875,
+      "complete": true
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "columns": [
+        "title",
+        "reason"
+      ],
+      "source_rows": 33596,
+      "visited_rows": 33596,
+      "source_cells_visited": 67192,
+      "complete": true
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "columns": [
+        "message"
+      ],
+      "source_rows": 325500,
+      "visited_rows": 325500,
+      "source_cells_visited": 325500,
+      "complete": true
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "columns": [
+        "title",
+        "body"
+      ],
+      "source_rows": 33596,
+      "visited_rows": 33596,
+      "source_cells_visited": 67192,
+      "complete": true
+    }
+  ],
+  "all_selected_body_rows_visited": true,
+  "stop_reason": null,
+  "type_probe_summary": [
+    {
+      "semantic_label": "birth_date",
+      "field_assignment_count": 304,
+      "source_cells": 192,
+      "quality_counts": {
+        "container_not_scalar": 13,
+        "empty_value": 6,
+        "explicit_literal_value": 54,
+        "null_value": 23,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 157,
+        "type_declaration": 16,
+        "unquoted_identifier_ambiguous": 34,
+        "unquoted_literal_value": 1
+      }
+    },
+    {
+      "semantic_label": "age",
+      "field_assignment_count": 8,
+      "source_cells": 8,
+      "quality_counts": {
+        "container_not_scalar": 0,
+        "empty_value": 0,
+        "explicit_literal_value": 0,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 2,
+        "type_declaration": 0,
+        "unquoted_identifier_ambiguous": 2,
+        "unquoted_literal_value": 4
+      }
+    },
+    {
+      "semantic_label": "sex_gender",
+      "field_assignment_count": 441,
+      "source_cells": 214,
+      "quality_counts": {
+        "container_not_scalar": 5,
+        "empty_value": 6,
+        "explicit_literal_value": 285,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 114,
+        "type_declaration": 19,
+        "unquoted_identifier_ambiguous": 9,
+        "unquoted_literal_value": 3
+      }
+    },
+    {
+      "semantic_label": "ethnicity_race",
+      "field_assignment_count": 4,
+      "source_cells": 4,
+      "quality_counts": {
+        "container_not_scalar": 1,
+        "empty_value": 0,
+        "explicit_literal_value": 3,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 0,
+        "type_declaration": 0,
+        "unquoted_identifier_ambiguous": 0,
+        "unquoted_literal_value": 0
+      }
+    },
+    {
+      "semantic_label": "religion_belief",
+      "field_assignment_count": 50,
+      "source_cells": 14,
+      "quality_counts": {
+        "container_not_scalar": 0,
+        "empty_value": 0,
+        "explicit_literal_value": 41,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 9,
+        "type_declaration": 0,
+        "unquoted_identifier_ambiguous": 0,
+        "unquoted_literal_value": 0
+      }
+    },
+    {
+      "semantic_label": "political_opinion",
+      "field_assignment_count": 0,
+      "source_cells": 0,
+      "quality_counts": {
+        "container_not_scalar": 0,
+        "empty_value": 0,
+        "explicit_literal_value": 0,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 0,
+        "type_declaration": 0,
+        "unquoted_identifier_ambiguous": 0,
+        "unquoted_literal_value": 0
+      }
+    },
+    {
+      "semantic_label": "sexual_orientation",
+      "field_assignment_count": 0,
+      "source_cells": 0,
+      "quality_counts": {
+        "container_not_scalar": 0,
+        "empty_value": 0,
+        "explicit_literal_value": 0,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 0,
+        "type_declaration": 0,
+        "unquoted_identifier_ambiguous": 0,
+        "unquoted_literal_value": 0
+      }
+    },
+    {
+      "semantic_label": "education_history",
+      "field_assignment_count": 8,
+      "source_cells": 5,
+      "quality_counts": {
+        "container_not_scalar": 0,
+        "empty_value": 0,
+        "explicit_literal_value": 7,
+        "null_value": 0,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 1,
+        "type_declaration": 0,
+        "unquoted_identifier_ambiguous": 0,
+        "unquoted_literal_value": 0
+      }
+    },
+    {
+      "semantic_label": "employment_profile",
+      "field_assignment_count": 43,
+      "source_cells": 28,
+      "quality_counts": {
+        "container_not_scalar": 5,
+        "empty_value": 1,
+        "explicit_literal_value": 9,
+        "null_value": 3,
+        "placeholder_or_example": 0,
+        "reference_or_expression": 15,
+        "type_declaration": 7,
+        "unquoted_identifier_ambiguous": 3,
+        "unquoted_literal_value": 0
+      }
+    }
+  ],
+  "evidence_records": 858,
+  "evidence_path": "personal_attribute_probe_v049_evidence.jsonl",
+  "evidence_sha256": "85ffe7ce1b9298a52eb95cb4aaeb9511291b09f91979c6884f5b21d276074c7f",
+  "ordinary_prose_mentions_counted": false,
+  "source_values_exported": false,
+  "dynamic_keys_exported": false,
+  "value_hashes_exported": false,
+  "source_or_package_modified": false,
+  "network_accessed": false,
+  "human_review_status": "pending",
+  "new_sensitive_type_established": false,
+  "runtime_confirmed": false,
+  "personal_ownership_confirmed": false,
+  "limitations": [
+    "Only this fixed spelling set and scalar key:value/key=value forms were probed; no completeness claim about unknown types.",
+    "The old unknown_named_value queue only includes generic personal/sensitive keys and cannot represent never-recognized personal attributes.",
+    "Quoted/numeric literal assignments are static field-value evidence in code or prose, not confirmed records about real people; fixtures and placeholders remain distinct.",
+    "Generic job/race/class/age keys and ordinary mentions do not count as personal-attribute evidence. Chinese and explicit compound/personal-scoped spellings are finite.",
+    "Values beyond a 1MiB cell prefix and quoted values beyond the 4096-character recognizer bound remain unexamined; no raw values or dynamic keys are exported.",
+    "Unknown sample and body scan phases can revisit the same source cell; phase counts must not be added. Source rows may repeat the same PR across dataset tables."
+  ]
+}

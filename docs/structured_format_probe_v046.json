@@ -1,0 +1,280 @@
+{
+  "recorded_utc": "2026-09-08T21:59:03.750573+00:00",
+  "elapsed_seconds": 1.514,
+  "sampling": "First 128 rows from first/middle/last distinct Parquet row groups; deterministic nonrandom format probe, not prevalence estimation",
+  "max_source_characters_per_cell": 131072,
+  "source_cells_decoded": 1920,
+  "results": [
+    {
+      "dataset": "aidev",
+      "table": "pr_commits",
+      "table_path": "pr_commits.parquet",
+      "column_name": "author",
+      "native_type": "string",
+      "field_id": "600da31828f633c6eee783af",
+      "source_rows": 88576,
+      "footer_null_count": 1,
+      "source_table_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_strict_json": 128
+      }
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commits",
+      "table_path": "pr_commits.parquet",
+      "column_name": "committer",
+      "native_type": "string",
+      "field_id": "419334edd107b23aed5440fe",
+      "source_rows": 88576,
+      "footer_null_count": 1,
+      "source_table_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_strict_json": 128
+      }
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commit_details",
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "author",
+      "native_type": "string",
+      "field_id": "9a15ced6eab2ddbd8d79a164",
+      "source_rows": 711923,
+      "footer_null_count": 3,
+      "source_table_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_strict_json": 128
+      }
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commit_details",
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "committer",
+      "native_type": "string",
+      "field_id": "3d7ca478f251057b87f40a9e",
+      "source_rows": 711923,
+      "footer_null_count": 3,
+      "source_table_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_strict_json": 128
+      }
+    },
+    {
+      "dataset": "swe-chat",
+      "table": "conversations",
+      "table_path": "conversations.parquet",
+      "column_name": "tool_input_json",
+      "native_type": "large_string",
+      "field_id": "0ab8efd3b426f3608f877ad9",
+      "source_rows": 2692480,
+      "footer_null_count": 2336538,
+      "source_table_sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        },
+        {
+          "row_group": 673,
+          "start_row": 1346001,
+          "end_row": 1346128
+        },
+        {
+          "row_group": 1346,
+          "start_row": 2692001,
+          "end_row": 2692128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 384,
+        "null": 338,
+        "json_object": 46,
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "dataset": "swe-chat",
+      "table": "checkpoints",
+      "table_path": "checkpoints.parquet",
+      "column_name": "checkpoint_metadata_raw",
+      "native_type": "large_string",
+      "field_id": "abbb9cb0c651c26578cf2cad",
+      "source_rows": 13406,
+      "footer_null_count": 0,
+      "source_table_sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        },
+        {
+          "row_group": 3,
+          "start_row": 6001,
+          "end_row": 6128
+        },
+        {
+          "row_group": 6,
+          "start_row": 12001,
+          "end_row": 12128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 384,
+        "json_object": 384,
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "dataset": "swe-chat",
+      "table": "session_logs",
+      "table_path": "session_logs.parquet",
+      "column_name": "session_metadata_raw",
+      "native_type": "large_string",
+      "field_id": "7e8e8aa1fb64cd749558f9ef",
+      "source_rows": 5851,
+      "footer_null_count": 0,
+      "source_table_sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        },
+        {
+          "row_group": 1,
+          "start_row": 2001,
+          "end_row": 2128
+        },
+        {
+          "row_group": 2,
+          "start_row": 4001,
+          "end_row": 4128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 384,
+        "json_object": 384,
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "dataset": "swe-chat",
+      "table": "repositories",
+      "table_path": "repositories.parquet",
+      "column_name": "settings",
+      "native_type": "large_string",
+      "field_id": "88362f15df37158512ccf82f",
+      "source_rows": 205,
+      "footer_null_count": 3,
+      "source_table_sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "json_object": 127,
+        "duplicate_keys": 0,
+        "null": 1
+      }
+    },
+    {
+      "dataset": "swe-chat",
+      "table": "repositories",
+      "table_path": "repositories.parquet",
+      "column_name": "repo_github_metadata",
+      "native_type": "large_string",
+      "field_id": "0aa29aa0ae5a3450ad78c835",
+      "source_rows": 205,
+      "footer_null_count": 0,
+      "source_table_sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "json_object": 128,
+        "duplicate_keys": 0,
+        "allowlisted_root_name_present": 128,
+        "allowlisted_root_name_nonempty_string": 128,
+        "allowlisted_root_id_present": 128
+      }
+    }
+  ],
+  "synthetic_assertions_passed": 5,
+  "raw_values_or_dynamic_keys_exported": false,
+  "target_code_executed": false,
+  "paid_model_calls": 0,
+  "network_accessed": false,
+  "privacy_types_confirmed": false,
+  "full_dataset_coverage_claim": false,
+  "human_review_status": "pending",
+  "application_log_evidence": false,
+  "review_source_sha256": "6badb0e92aa32c8da8ce5a332dc686d05b8937304282e0e157d7443a08fcea8c",
+  "script_sha256": "579b9a4c1cf6feef42b9a877e659cbf2f6dbf5193dce7c2550b30a3bcfbeb06d",
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "/private/tmp/probe_structured_fields_v046.py"
+  ]
+}

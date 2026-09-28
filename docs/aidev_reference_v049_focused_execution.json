@@ -1,0 +1,39 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "agentlog_unified/tests/test_content_types.py",
+    "agentlog_unified/tests/test_reference_values.py",
+    "agentlog_unified/tests/test_structured_types.py"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "agentlog_unified/src"
+  },
+  "started_utc": "2026-09-08T23:41:42.639928+00:00",
+  "completed_utc": "2026-09-08T23:41:43.206036+00:00",
+  "elapsed_seconds": 0.5658731250005076,
+  "exit_code": 0,
+  "stdout": "......................................................................   [100%]\n70 passed in 0.48s\n",
+  "stderr": "",
+  "files_sha256_before": {
+    "agentlog_unified/src/agentlog_unified/content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+    "agentlog_unified/tests/test_content_types.py": "04bc79dc8ac108d002848711c7b56ff9943d107809b96cc14f0b16fab2e5b093",
+    "agentlog_unified/tests/test_reference_values.py": "68b9accd751c48f2b71178ced81a0c4d753f25d6f210733cb3d104c02ca8d6fa"
+  },
+  "files_sha256_after": {
+    "agentlog_unified/src/agentlog_unified/content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+    "agentlog_unified/tests/test_content_types.py": "04bc79dc8ac108d002848711c7b56ff9943d107809b96cc14f0b16fab2e5b093",
+    "agentlog_unified/tests/test_reference_values.py": "68b9accd751c48f2b71178ced81a0c4d753f25d6f210733cb3d104c02ca8d6fa"
+  },
+  "owned_files_unchanged_during_tests": true,
+  "preceding_edit_order_test": {
+    "exit_code": 1,
+    "passed": 69,
+    "failed": 1,
+    "pytest_seconds": 0.53,
+    "failure": "test_catalog_matches_actual_rule_boundary expected49, taxonomy still42 before parent7-rule edit; no reference tests failed."
+  }
+}

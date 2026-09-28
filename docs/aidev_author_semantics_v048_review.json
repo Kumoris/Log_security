@@ -1,0 +1,168 @@
+{
+  "review_version": "v048",
+  "completed_at_utc": "2026-09-08T23:24:24.018861+00:00",
+  "scope": "AIDev frozen pr_commits/pr_commit_details author and committer field semantics; read-only bounded documentation/source inspection",
+  "status": "documented_mixed_fallback_execution_unverified",
+  "conclusion": {
+    "uniform_person_name_mapping_supported": false,
+    "uniform_login_mapping_supported": false,
+    "row_level_branch_determined": false,
+    "reason": "The local dataset field documentation specifies login with name fallback for both tables. No executable producer or per-row fallback marker was verified. Failure to match a finite user table is not evidence that the name branch was used."
+  },
+  "local_sources": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/data/repos/AIDev/data_table.md",
+      "sha256": "aa2eab8cb797bba52eda2e9604221e6cd433312fef4ea9d1e574aa6abcff6f39",
+      "relevant_lines": [
+        94,
+        95,
+        96,
+        101,
+        102,
+        105,
+        106,
+        107,
+        112,
+        113
+      ],
+      "provenance": "Local documentation copy; README links the official dataset data_table.md path, but this directory has no Git history and current remote data_table.md returned 404. A revision-bound byte comparison was unavailable."
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/data/repos/AIDev/README.md",
+      "sha256": "b7175347f0f7d86fa6b8420d50cb2e72ca9ccddd141df5b6f8a86b0ee6f47d96",
+      "relevant_lines": [
+        121,
+        127,
+        231,
+        257
+      ],
+      "provenance": "Local dataset card linking SAILResearch repository and official Hugging Face schema documentation."
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json",
+      "sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "frozen_table_signatures": [
+        {
+          "bytes": 485214032,
+          "path": "pr_commit_details.parquet",
+          "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+        },
+        {
+          "bytes": 8314097,
+          "path": "pr_commits.parquet",
+          "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+        }
+      ],
+      "table_hashes_recomputed_in_this_review": false
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/aidev.py",
+      "sha256": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+      "relevant_lines": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "limitation": "Local consumer aliases author/author_name and committer/committer_name do not establish the upstream GitHub extraction branch."
+    }
+  ],
+  "extraction_mapping": [
+    {
+      "table": "pr_commits",
+      "field": "author",
+      "endpoint": "GET /repos/{owner}/{repo}/pulls/{pull_number}/commits",
+      "documented_primary_github_path": "author.login",
+      "documented_fallback_github_path": "commit.author.name",
+      "documented_fallback_condition": "login absent",
+      "precise_null_empty_semantics_verified": false,
+      "evidence_kind": "local_dataset_schema_documentation",
+      "line": 101,
+      "producer_code_verified": false
+    },
+    {
+      "table": "pr_commits",
+      "field": "committer",
+      "endpoint": "GET /repos/{owner}/{repo}/pulls/{pull_number}/commits",
+      "documented_primary_github_path": "committer.login",
+      "documented_fallback_github_path": "commit.committer.name",
+      "documented_fallback_condition": "login absent",
+      "precise_null_empty_semantics_verified": false,
+      "evidence_kind": "local_dataset_schema_documentation",
+      "line": 102,
+      "producer_code_verified": false
+    },
+    {
+      "table": "pr_commit_details",
+      "field": "author",
+      "endpoint": "GET /repos/{owner}/{repo}/commits/{sha}",
+      "documented_primary_github_path": "author.login",
+      "documented_fallback_github_path": "commit.author.name",
+      "documented_fallback_condition": "login absent",
+      "precise_null_empty_semantics_verified": false,
+      "evidence_kind": "local_dataset_schema_documentation",
+      "line": 112,
+      "producer_code_verified": false
+    },
+    {
+      "table": "pr_commit_details",
+      "field": "committer",
+      "endpoint": "GET /repos/{owner}/{repo}/commits/{sha}",
+      "documented_primary_github_path": "committer.login",
+      "documented_fallback_github_path": "commit.committer.name",
+      "documented_fallback_condition": "login absent",
+      "precise_null_empty_semantics_verified": false,
+      "evidence_kind": "local_dataset_schema_documentation",
+      "line": 113,
+      "producer_code_verified": false
+    }
+  ],
+  "remote_checks": [
+    {
+      "url": "https://github.com/SAILResearch/AI_Teammates_in_SE3",
+      "result": "Read primary README and repository listing; exposes analysis package and points to Hugging Face dataset, not an inspected exporter."
+    },
+    {
+      "url": "https://github.com/SAILResearch/AI_Teammates_in_SE3/tree/main/analysis",
+      "result": "Read listing: classify_pr.py, helper.py and analysis notebooks. No commit-table extraction implementation identified in the bounded listing."
+    },
+    {
+      "url": "https://github.com/SAILResearch/AI_Teammates_in_SE3/blob/main/analysis/helper.py",
+      "result": "Read helper source; commit directories and generic I/O/analysis helpers present, no author/committer table-production mapping."
+    },
+    {
+      "url": "https://huggingface.co/datasets/hao-li/AIDev/blob/main/data_table.md",
+      "result": "404 from web tool; no live schema byte verification."
+    },
+    {
+      "url": "https://huggingface.co/datasets/hao-li/AIDev/tree/main",
+      "result": "Current primary tree differs from frozen local edition; current commit label c63c8a5, no data_table.md listed. Not used to relabel frozen data."
+    },
+    {
+      "url": "https://huggingface.co/datasets/hao-li/AIDev/tree/main/scripts",
+      "result": "Current scripts listing contains overview/loading/analysis scripts and references promotion of v4 to main; not an executable extractor for the frozen edition."
+    }
+  ],
+  "acquisition_limits": {
+    "raw_document_and_recursive_tree_fetch": "Both bounded urllib requests failed with URLError; no bytes downloaded. Web raw/tree/history requests also unavailable. No auth used or requested.",
+    "upstream_extractor_sha256": null,
+    "frozen_dataset_revision": null,
+    "actual_source_values_read": false,
+    "parquet_values_decoded": false,
+    "target_code_executed": false,
+    "package_modified": false,
+    "large_downloads": false,
+    "tests_run": false
+  },
+  "next_evidence_needed": [
+    "A revision-pinned producer for the frozen AIDev edition that specifies author and committer selection and its missing/null rules.",
+    "Per-row source-branch evidence, or original frozen GitHub commit metadata linking SHA to explicit author.login/commit.author.name and committer equivalents.",
+    "Even an explicit commit name is a self-declared identity field and may be a bot/pseudonym; retain low-confidence schema candidate and human_review_status=pending."
+  ],
+  "recommended_current_policy": {
+    "exact_account_join": "Retain existing account-reference candidates only where the verified local join supports them.",
+    "unmatched_author_or_committer": "Retain unknown/mixed-source review; do not auto-label person_name or login from surface shape or failed join.",
+    "count_boundary": "Unmatched author/assignee totals are source-cell counts, not unique people and not a new sensitive subtype count. Assignee semantics were not investigated by this task."
+  },
+  "safe_outputs_only": true
+}

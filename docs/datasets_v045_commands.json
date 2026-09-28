@@ -1,0 +1,488 @@
+{
+  "recorded_utc": "2026-09-08T21:49:06.788356+00:00",
+  "commands": [
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_content_v044_resume02_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-scan",
+        "--input",
+        "agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--resume",
+        "--max-seconds",
+        "600"
+      ],
+      "started_at": "2026-09-08T21:18:13.966924+00:00",
+      "finished_at": "2026-09-08T21:30:00.336176+00:00",
+      "elapsed_seconds": 706.3692654999904,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_content_v044_resume03_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-scan",
+        "--input",
+        "agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--resume",
+        "--max-seconds",
+        "300"
+      ],
+      "started_at": "2026-09-08T21:34:54.722739+00:00",
+      "finished_at": "2026-09-08T21:37:45.727436+00:00",
+      "elapsed_seconds": 171.00470345900976,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_content_v044_resume_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-scan",
+        "--input",
+        "agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--max-seconds",
+        "300",
+        "--resume"
+      ],
+      "started_at": "2026-09-08T21:10:10.458902+00:00",
+      "finished_at": "2026-09-08T21:15:58.030609+00:00",
+      "elapsed_seconds": 347.5718429589906,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_repair_v045_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--output",
+        "agentlog_unified/repair-runs/aidev-v045",
+        "--offline",
+        "--max-seconds",
+        "120",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:33:17.428969+00:00",
+      "finished_at": "2026-09-08T21:33:25.259825+00:00",
+      "elapsed_seconds": 7.830821750001633,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_repair_v045_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--output",
+        "agentlog_unified/repair-runs/aidev-v045",
+        "--offline",
+        "--max-seconds",
+        "120"
+      ],
+      "started_at": "2026-09-08T21:33:53.456824+00:00",
+      "finished_at": "2026-09-08T21:34:02.860982+00:00",
+      "elapsed_seconds": 9.40414412500104,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": true
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_repair_v045_final_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--output",
+        "agentlog_unified/repair-runs/aidev-v045-final",
+        "--offline",
+        "--max-seconds",
+        "120",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:40:30.278415+00:00",
+      "finished_at": "2026-09-08T21:40:33.652537+00:00",
+      "elapsed_seconds": 3.3740787919959985,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_repair_v045_final_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/aidev-v044",
+        "--output",
+        "agentlog_unified/repair-runs/aidev-v045-final",
+        "--offline",
+        "--max-seconds",
+        "120"
+      ],
+      "started_at": "2026-09-08T21:41:02.749507+00:00",
+      "finished_at": "2026-09-08T21:41:06.934270+00:00",
+      "elapsed_seconds": 4.184702667000238,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_schema_v045_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "schema-scan",
+        "--input",
+        "agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "agentlog_unified/schema-runs/aidev-v045",
+        "--offline",
+        "--batch-size",
+        "4096",
+        "--max-seconds",
+        "300",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:33:17.424322+00:00",
+      "finished_at": "2026-09-08T21:33:19.817518+00:00",
+      "elapsed_seconds": 2.393173750009737,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_schema_v045_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "schema-scan",
+        "--input",
+        "agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "agentlog_unified/schema-runs/aidev-v045",
+        "--offline",
+        "--batch-size",
+        "4096",
+        "--max-seconds",
+        "300"
+      ],
+      "started_at": "2026-09-08T21:33:53.450533+00:00",
+      "finished_at": "2026-09-08T21:33:59.812729+00:00",
+      "elapsed_seconds": 6.362190166997607,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_content_v044_resume02_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-scan",
+        "--input",
+        "agentlog_unified/inputs/swechat-full-v3",
+        "--output",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--resume",
+        "--max-seconds",
+        "600"
+      ],
+      "started_at": "2026-09-08T21:18:13.966919+00:00",
+      "finished_at": "2026-09-08T21:30:23.809767+00:00",
+      "elapsed_seconds": 729.8428769589955,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_content_v044_resume_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-scan",
+        "--input",
+        "agentlog_unified/inputs/swechat-full-v3",
+        "--output",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--max-seconds",
+        "300",
+        "--resume"
+      ],
+      "started_at": "2026-09-08T21:10:10.461373+00:00",
+      "finished_at": "2026-09-08T21:16:12.164011+00:00",
+      "elapsed_seconds": 361.7027979169943,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_repair_v045_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--output",
+        "agentlog_unified/repair-runs/swechat-v045",
+        "--offline",
+        "--max-seconds",
+        "120",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:33:17.447367+00:00",
+      "finished_at": "2026-09-08T21:33:22.131974+00:00",
+      "elapsed_seconds": 4.684589958007564,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_repair_v045_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--output",
+        "agentlog_unified/repair-runs/swechat-v045",
+        "--offline",
+        "--max-seconds",
+        "120"
+      ],
+      "started_at": "2026-09-08T21:33:53.464318+00:00",
+      "finished_at": "2026-09-08T21:35:58.870046+00:00",
+      "elapsed_seconds": 125.40590266599611,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": true
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_repair_v045_final_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--output",
+        "agentlog_unified/repair-runs/swechat-v045-final",
+        "--offline",
+        "--max-seconds",
+        "120",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:40:30.278414+00:00",
+      "finished_at": "2026-09-08T21:40:32.016070+00:00",
+      "elapsed_seconds": 1.737597958999686,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_repair_v045_final_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--output",
+        "agentlog_unified/repair-runs/swechat-v045-final",
+        "--offline",
+        "--max-seconds",
+        "120"
+      ],
+      "started_at": "2026-09-08T21:41:02.749505+00:00",
+      "finished_at": "2026-09-08T21:43:09.659114+00:00",
+      "elapsed_seconds": 126.90976187499473,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_repair_v045_final_resume_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "agentlog_unified/content-runs/swechat-v044",
+        "--output",
+        "agentlog_unified/repair-runs/swechat-v045-final",
+        "--offline",
+        "--max-seconds",
+        "120",
+        "--resume"
+      ],
+      "started_at": "2026-09-08T21:45:13.392506+00:00",
+      "finished_at": "2026-09-08T21:47:22.886362+00:00",
+      "elapsed_seconds": 129.4934511249885,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_schema_v045_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "schema-scan",
+        "--input",
+        "agentlog_unified/inputs/swechat-full-v3",
+        "--output",
+        "agentlog_unified/schema-runs/swechat-v045",
+        "--offline",
+        "--batch-size",
+        "4096",
+        "--max-seconds",
+        "300",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:33:17.437604+00:00",
+      "finished_at": "2026-09-08T21:33:23.406281+00:00",
+      "elapsed_seconds": 5.968651415998465,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_schema_v045_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "schema-scan",
+        "--input",
+        "agentlog_unified/inputs/swechat-full-v3",
+        "--output",
+        "agentlog_unified/schema-runs/swechat-v045",
+        "--offline",
+        "--batch-size",
+        "4096",
+        "--max-seconds",
+        "300"
+      ],
+      "started_at": "2026-09-08T21:33:53.449880+00:00",
+      "finished_at": "2026-09-08T21:34:54.000766+00:00",
+      "elapsed_seconds": 60.550771875001374,
+      "exit_code": 2,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/synthetic_v045_final_dry_run_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "run",
+        "--config",
+        "agentlog_unified/examples/local_fixture_config.yaml",
+        "--run-id",
+        "synthetic-v045-final",
+        "--offline",
+        "--dry-run"
+      ],
+      "started_at": "2026-09-08T21:40:12.163061+00:00",
+      "finished_at": "2026-09-08T21:40:12.298442+00:00",
+      "elapsed_seconds": 0.13532041700091213,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/synthetic_v045_final_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "run",
+        "--config",
+        "agentlog_unified/examples/local_fixture_config.yaml",
+        "--run-id",
+        "synthetic-v045-final",
+        "--offline"
+      ],
+      "started_at": "2026-09-08T21:40:22.344942+00:00",
+      "finished_at": "2026-09-08T21:40:22.889806+00:00",
+      "elapsed_seconds": 0.5448142919922248,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/synthetic_v045_final_resume_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/agentlog-unified",
+        "run",
+        "--config",
+        "agentlog_unified/examples/local_fixture_config.yaml",
+        "--run-id",
+        "synthetic-v045-final",
+        "--offline",
+        "--resume"
+      ],
+      "started_at": "2026-09-08T21:40:30.282748+00:00",
+      "finished_at": "2026-09-08T21:40:30.428219+00:00",
+      "elapsed_seconds": 0.14542141699348576,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/tests_v045_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "-m",
+        "pytest",
+        "agentlog_unified/tests",
+        "-q"
+      ],
+      "started_at": "2026-09-08T21:32:20.165987+00:00",
+      "finished_at": "2026-09-08T21:32:50.913249+00:00",
+      "elapsed_seconds": 30.74733387499873,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": true
+    },
+    {
+      "record": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/tests_v045_final_execution.json",
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "-m",
+        "pytest",
+        "agentlog_unified/tests",
+        "-q"
+      ],
+      "started_at": "2026-09-08T21:39:52.296275+00:00",
+      "finished_at": "2026-09-08T21:40:22.283588+00:00",
+      "elapsed_seconds": 29.9873789580015,
+      "exit_code": 0,
+      "source_unchanged": true,
+      "diagnostic_superseded": false
+    }
+  ],
+  "package_install": {
+    "command": "PIP_DISABLE_PIP_VERSION_CHECK=1 agent_log_privacy/.venv/bin/python -m pip install --no-index --no-deps --no-build-isolation -e agentlog_unified",
+    "result": "succeeded; no dependency or network download",
+    "separate_execution_record": false
+  }
+}

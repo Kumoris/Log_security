@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-09-08T20:46:14.542450+00:00",
+  "ps_exit_code": 0,
+  "ps_decoding": "utf-8 with replacement for non-UTF8 process labels",
+  "matching_live_collectors": [],
+  "batch_writer_lock_available": true,
+  "latest_collection_status_counts": {
+    "objects_ready_for_offline_mining": 475
+  },
+  "total_attempts": 625,
+  "proceed_allowed": true
+}

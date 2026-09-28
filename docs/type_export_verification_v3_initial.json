@@ -1,0 +1,36 @@
+{
+  "scope": "Stable exported v3 snapshot before the offline resume; not the later resumed denominator",
+  "verification_actor": "automated_independent_agent",
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "checks": [
+    "before/after file hashes stable",
+    "JSON/CSV field equivalence including escaping",
+    "type/category/repository counts independently recomputed",
+    "raw observation references preserved",
+    "unknown queue membership equals review-required versions"
+  ],
+  "integrity_mismatch_count": 0,
+  "AIDev": {
+    "source_log_observations": 225,
+    "distinct_observed_log_versions": 210,
+    "unknown_review_count": 171,
+    "unknown_with_labels": 44,
+    "unknown_without_labels": 127,
+    "observed_subtype_count": 4
+  },
+  "SWE-chat": {
+    "source_log_observations": 2636,
+    "distinct_observed_log_versions": 2504,
+    "unknown_review_count": 2467,
+    "unknown_with_labels": 379,
+    "unknown_without_labels": 2088,
+    "observed_subtype_count": 11,
+    "unknown_versions_with_semantic_parser_unavailable": 2230
+  },
+  "command_snapshots": [
+    "docs/aidev_batch_v3_command.json",
+    "docs/swechat_batch_v3_command.json"
+  ],
+  "source": "Read-only verification reported by /root/batch_resource_guard in this turn; not a human audit."
+}

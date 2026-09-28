@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_delivery_v049.py",
+    "--run"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_at": "2026-09-09T00:18:09.701479+00:00",
+  "finished_at": "2026-09-09T00:18:09.764985+00:00",
+  "elapsed_seconds": 0.06327237500227056,
+  "exit_code": 0,
+  "stdout": "{\"report\": \"/Users/lzh/Downloads/Log \\u7814\\u7a76/agentlog_unified/docs/aidev_delivery_v049_verification.json\", \"passed\": 99, \"total\": 99, \"all_checks_passed\": true, \"failed\": []}\n",
+  "stderr": "",
+  "helper_sha256_before": "2e6ac1b19e05c2afad0f115d8540e3845cee04719b33e10ab188738b6f31c788",
+  "helper_sha256_after": "2e6ac1b19e05c2afad0f115d8540e3845cee04719b33e10ab188738b6f31c788",
+  "helper_unchanged": true,
+  "raw_source_values_read": false,
+  "src_or_tests_modified": false
+}

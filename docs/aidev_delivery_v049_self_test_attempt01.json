@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/lzh/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/bin/python3.11",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_delivery_v049.py",
+    "--self-test"
+  ],
+  "started_utc": "2026-09-09T00:06:35.771888+00:00",
+  "completed_utc": "2026-09-09T00:06:35.843171+00:00",
+  "elapsed_seconds": 0.07096933299908414,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_delivery_v049.py\", line 153, in <module>\n    if args.self_test:self_test()\n                      ^^^^^^^^^^^\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_delivery_v049.py\", line 147, in self_test\n    assert list(markdown_targets(Path('/tmp/report.md'),'[source](<a%20b.md>) [web](https://example.invalid)'))==[Path('/tmp/a b.md')]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "helper_sha256": "cb5de4ea52b310a0cfd7a42f10db4fee8c5cc4dab9a6b997ac1b22dc7efccdf9",
+  "real_delivery_audit_run": false,
+  "active_outputs_read": false,
+  "src_or_tests_modified": false
+}

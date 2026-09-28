@@ -1,0 +1,392 @@
+{
+  "created_utc": "2026-09-08T22:42:54.149646+00:00",
+  "all_checks_passed": true,
+  "checks_passed": 66,
+  "checks": [
+    {
+      "check": "output_sha256:observed_types_v046.csv",
+      "passed": true
+    },
+    {
+      "check": "output_sha256:observed_types_v046.jsonl",
+      "passed": true
+    },
+    {
+      "check": "output_sha256:observed_types_v046_outside_catalog.csv",
+      "passed": true
+    },
+    {
+      "check": "output_sha256:observed_types_v046_outside_catalog.jsonl",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:docs/observed_types_v045.csv",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:docs/observed_types_v045.jsonl",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:docs/observed_types_v045_provenance.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:docs/observed_type_inventory_v044.csv",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:reconciled-runs/aidev-v046/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:reconciled-runs/aidev-v046/merged_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/aidev-v046/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/aidev-v046/schema_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/aidev-v046/schema_type_summary.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:reconciled-runs/swechat-v046/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:reconciled-runs/swechat-v046/merged_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:reconciled-runs/swechat-v046/merged_type_summary.jsonl.gz",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/swechat-v046/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/swechat-v046/schema_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/swechat-v046/schema_type_summary.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:content-runs/aidev-v044/content_type_summary.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/aidev-v045/schema_type_summary.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:repair-runs/aidev-v045-final/scan/repair_type_summary.jsonl",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:content-runs/swechat-v044/content_type_summary.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:schema-runs/swechat-v045/schema_type_summary.json",
+      "passed": true
+    },
+    {
+      "check": "input_sha256:repair-runs/swechat-v045-final/scan/repair_type_summary.jsonl",
+      "passed": true
+    },
+    {
+      "check": "builder_sha256",
+      "passed": true
+    },
+    {
+      "check": "observed_types_v046_csv_jsonl_exact",
+      "passed": true
+    },
+    {
+      "check": "observed_types_v046_outside_catalog_csv_jsonl_exact",
+      "passed": true
+    },
+    {
+      "check": "eleven_independent_42_label_sources",
+      "passed": true
+    },
+    {
+      "check": "zero_rows_retained_and_observed_consistent",
+      "passed": true
+    },
+    {
+      "check": "all_pending_no_confirmation_claim",
+      "passed": true
+    },
+    {
+      "check": "all_294_historical_log_counts_preserved",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:aidev:aidev-full-v5",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:swe-chat:swechat-full-v5",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:aidev:aidev-anchors-v3",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:aidev:aidev-prior-cache-v042",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:aidev:aidev-expansion-v043-final",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:swe-chat:csharp-swechat-v043-final",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_commit_changes:aidev:aidev-expansion-v044",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_text_reconciled:aidev:aidev-v046",
+      "passed": true
+    },
+    {
+      "check": "identity_total:aidev",
+      "passed": true
+    },
+    {
+      "check": "variant_total:aidev",
+      "passed": true
+    },
+    {
+      "check": "status_counts_are_variants:aidev",
+      "passed": true
+    },
+    {
+      "check": "excluded_counts:aidev",
+      "passed": true
+    },
+    {
+      "check": "reconcile_implementation_current:aidev",
+      "passed": true
+    },
+    {
+      "check": "execution_dependency_sha256_current:aidev",
+      "passed": true
+    },
+    {
+      "check": "original_classifier_sha256_current:aidev",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_schema_context:aidev:aidev-v046",
+      "passed": true
+    },
+    {
+      "check": "schema_source_cells:aidev",
+      "passed": true
+    },
+    {
+      "check": "schema_status_units:aidev",
+      "passed": true
+    },
+    {
+      "check": "schema_implementation_current:aidev",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_text_reconciled:swe-chat:swechat-v046",
+      "passed": true
+    },
+    {
+      "check": "identity_total:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "variant_total:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "status_counts_are_variants:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "excluded_counts:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "reconcile_implementation_current:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "execution_dependency_sha256_current:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "original_classifier_sha256_current:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "primary_unit:dataset_schema_context:swe-chat:swechat-v046",
+      "passed": true
+    },
+    {
+      "check": "schema_source_cells:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "schema_status_units:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "schema_implementation_current:swe-chat",
+      "passed": true
+    },
+    {
+      "check": "catalog_label_union_only",
+      "passed": true
+    },
+    {
+      "check": "parent_repair_not_double_counted",
+      "passed": true
+    }
+  ],
+  "row_count": 462,
+  "zero_observation_rows": 311,
+  "source_count": 11,
+  "controlled_catalog_subtypes": 42,
+  "controlled_observed_label_union": 39,
+  "controlled_observed_labels_by_scope": {
+    "dataset_schema_context": 4,
+    "dataset_commit_changes": 27,
+    "dataset_text_reconciled": 37
+  },
+  "sources": [
+    {
+      "dataset": "aidev",
+      "scope": "dataset_text_reconciled",
+      "candidate_identities": 1479597,
+      "candidate_variants": 1479597,
+      "excluded_identities": 11871,
+      "outside_catalog_identities": 3243
+    },
+    {
+      "dataset": "aidev",
+      "scope": "dataset_schema_context",
+      "candidate_source_cells": 2561614,
+      "selected_fields": 17,
+      "all_fields": 160,
+      "unresolved_fields": 143
+    },
+    {
+      "dataset": "swe-chat",
+      "scope": "dataset_text_reconciled",
+      "candidate_identities": 4181859,
+      "candidate_variants": 4181859,
+      "excluded_identities": 44653,
+      "outside_catalog_identities": 1402
+    },
+    {
+      "dataset": "swe-chat",
+      "scope": "dataset_schema_context",
+      "candidate_source_cells": 4252940,
+      "selected_fields": 10,
+      "all_fields": 148,
+      "unresolved_fields": 138
+    }
+  ],
+  "outside_catalog_rows": [
+    {
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "candidate_status_counts": {
+        "identifier_reference": 2854,
+        "unknown_named_value": 389
+      },
+      "candidate_variant_count": 3243,
+      "catalog_membership": "outside_catalog",
+      "category": null,
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "count_within_processed_scope": 3243,
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "dataset": "aidev",
+      "distinct_candidate_cells": 2312,
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_text_reconciled",
+      "observed_within_processed_scope": true,
+      "runtime_confirmed": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz",
+      "source_run": "aidev-v046",
+      "source_sha256": "0947265dc4656e9703c7b1d712e6d779a547d56aedb403c7047904559c57a72c",
+      "subtype": null,
+      "subtype_label": "目录外／细类待定"
+    },
+    {
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "candidate_status_counts": {
+        "identifier_reference": 849,
+        "unknown_named_value": 553
+      },
+      "candidate_variant_count": 1402,
+      "catalog_membership": "outside_catalog",
+      "category": null,
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "count_within_processed_scope": 1402,
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "dataset": "swe-chat",
+      "distinct_candidate_cells": 695,
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_text_reconciled",
+      "observed_within_processed_scope": true,
+      "runtime_confirmed": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/merged_type_summary.jsonl.gz",
+      "source_run": "swechat-v046",
+      "source_sha256": "f19e946d43769c9664798eebf2e5d9ddd93472aaa12276f42c7e044f7df86505",
+      "subtype": null,
+      "subtype_label": "目录外／细类待定"
+    }
+  ],
+  "historical_v045_named_summary_changes": [
+    {
+      "source_run": "swechat-v045-final",
+      "original_dataset_label": "swechat",
+      "observation_scope": "dataset_text_cell_rescan",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/swechat-v045-final/scan/repair_type_summary.jsonl",
+      "v045_source_sha256": "b5c463b93a7fc1bb530d721e53fe0c9ad37a46f0816d44048e7f1344d3315565",
+      "current_source_sha256": "47790a6229fa196405f48efe13fee3af779423bd5d620160d3e25cfcffe68b00",
+      "state": "mutable_source_differs_from_v045_snapshot",
+      "historical_observations_recomputed": false
+    }
+  ],
+  "as_of_scope": "The historical as-of audit compares named summary files only; unchanged summary SHA does not assert an unchanged shared upstream checkpoint.",
+  "source_body_or_shared_sqlite_read": false,
+  "real_values_exported": false,
+  "formal_source_modified": false,
+  "historical_outputs_modified": false,
+  "raw_parquet_hashes_recomputed": false,
+  "evidence_boundary": "Only candidate label sets are unioned. Reconciled identities and evidence variants, schema source cells, and per-batch log versions remain distinct units. Observed does not establish complete sensitive-type coverage."
+}

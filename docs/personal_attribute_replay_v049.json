@@ -1,0 +1,386 @@
+{
+  "completed_utc": "2026-09-08T23:44:32.507067+00:00",
+  "elapsed_seconds": 12.329,
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/replay_personal_attribute_probe_v049.py"
+  ],
+  "helper_sha256": "9f7aca7537cea0a56bf47125a822c3d0f969735ae7564f894ab00dbfd7a6f546",
+  "selection_sha256": "46474a6804ddc078b4e13aa0428346a3dd6104e594d094a4a8fd221600bbae73",
+  "probe_evidence_sha256": "85ffe7ce1b9298a52eb95cb4aaeb9511291b09f91979c6884f5b21d276074c7f",
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "frozen_source_inputs": [
+    {
+      "path": "all_pull_request.parquet",
+      "bytes": 330776130,
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+    },
+    {
+      "path": "all_repository.parquet",
+      "bytes": 6136253,
+      "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+    },
+    {
+      "path": "all_user.parquet",
+      "bytes": 2511706,
+      "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+    },
+    {
+      "path": "human_pr_task_type.parquet",
+      "bytes": 715969,
+      "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+    },
+    {
+      "path": "human_pull_request.parquet",
+      "bytes": 4387171,
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+    },
+    {
+      "path": "issue.parquet",
+      "bytes": 3222463,
+      "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+    },
+    {
+      "path": "pr_comments.parquet",
+      "bytes": 25857243,
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+    },
+    {
+      "path": "pr_commit_details.parquet",
+      "bytes": 485214032,
+      "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+    },
+    {
+      "path": "pr_commits.parquet",
+      "bytes": 8314097,
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+    },
+    {
+      "path": "pr_review_comments.parquet",
+      "bytes": 14728130,
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+    },
+    {
+      "path": "pr_review_comments_v2.parquet",
+      "bytes": 21125785,
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+    },
+    {
+      "path": "pr_reviews.parquet",
+      "bytes": 7517041,
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+    },
+    {
+      "path": "pr_task_type.parquet",
+      "bytes": 2993264,
+      "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+    },
+    {
+      "path": "pr_timeline.parquet",
+      "bytes": 34108415,
+      "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+    },
+    {
+      "path": "pull_request.parquet",
+      "bytes": 16855612,
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+    },
+    {
+      "path": "related_issue.parquet",
+      "bytes": 75579,
+      "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+    },
+    {
+      "path": "repository.parquet",
+      "bytes": 167251,
+      "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+    },
+    {
+      "path": "user.parquet",
+      "bytes": 68935,
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+    }
+  ],
+  "implementation_sha256": {
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_repair.py": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+    "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+    "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+  },
+  "taxonomy_version": "1.1.0",
+  "content_detector_version": "1.1.0",
+  "inputs_and_code_unchanged": true,
+  "selected_records": 27,
+  "distinct_source_cells": 23,
+  "exact_value_span_type_hits": 26,
+  "cell_audit": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 5979,
+      "classifier_truncated": false,
+      "returned_matches": 4
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 9728,
+      "classifier_truncated": false,
+      "returned_matches": 4
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 10816,
+      "classifier_truncated": false,
+      "returned_matches": 2
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 11337,
+      "classifier_truncated": false,
+      "returned_matches": 2
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 12010,
+      "classifier_truncated": false,
+      "returned_matches": 6
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 12511,
+      "classifier_truncated": false,
+      "returned_matches": 3
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 13097,
+      "classifier_truncated": false,
+      "returned_matches": 1
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 27799,
+      "classifier_truncated": false,
+      "returned_matches": 4
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 44456,
+      "classifier_truncated": false,
+      "returned_matches": 2
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 44688,
+      "classifier_truncated": false,
+      "returned_matches": 6
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 44793,
+      "classifier_truncated": false,
+      "returned_matches": 3
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 908183,
+      "classifier_truncated": false,
+      "returned_matches": 5
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 913309,
+      "classifier_truncated": false,
+      "returned_matches": 4
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "source_row": 928326,
+      "classifier_truncated": false,
+      "returned_matches": 4
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 103851,
+      "classifier_truncated": false,
+      "returned_matches": 8
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 103854,
+      "classifier_truncated": false,
+      "returned_matches": 26
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 391488,
+      "classifier_truncated": false,
+      "returned_matches": 2
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 415755,
+      "classifier_truncated": false,
+      "returned_matches": 21
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 416167,
+      "classifier_truncated": false,
+      "returned_matches": 128
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 416169,
+      "classifier_truncated": false,
+      "returned_matches": 69
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 539605,
+      "classifier_truncated": false,
+      "returned_matches": 6
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 539610,
+      "classifier_truncated": false,
+      "returned_matches": 6
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "patch",
+      "source_row": 539614,
+      "classifier_truncated": false,
+      "returned_matches": 6
+    }
+  ],
+  "by_label": [
+    {
+      "probe_label": "birth_date",
+      "expected_subtype": "birth_date",
+      "selected_records": 4,
+      "exact_value_span_type_hits": 4,
+      "value_role_hints": {
+        "date_like_literal": 3,
+        "reference_or_declaration": 1
+      },
+      "miss_reasons": {}
+    },
+    {
+      "probe_label": "age",
+      "expected_subtype": "age",
+      "selected_records": 4,
+      "exact_value_span_type_hits": 4,
+      "value_role_hints": {
+        "numeric_age_field_literal": 3,
+        "reference_or_declaration": 1
+      },
+      "miss_reasons": {}
+    },
+    {
+      "probe_label": "sex_gender",
+      "expected_subtype": "sex_gender",
+      "selected_records": 4,
+      "exact_value_span_type_hits": 4,
+      "value_role_hints": {
+        "fixed_attribute_enum_shape": 3,
+        "reference_or_declaration": 1
+      },
+      "miss_reasons": {}
+    },
+    {
+      "probe_label": "ethnicity_race",
+      "expected_subtype": "ethnicity",
+      "selected_records": 3,
+      "exact_value_span_type_hits": 3,
+      "value_role_hints": {
+        "other_literal_unresolved": 3
+      },
+      "miss_reasons": {}
+    },
+    {
+      "probe_label": "religion_belief",
+      "expected_subtype": "religious_belief",
+      "selected_records": 4,
+      "exact_value_span_type_hits": 4,
+      "value_role_hints": {
+        "other_literal_unresolved": 3,
+        "reference_or_declaration": 1
+      },
+      "miss_reasons": {}
+    },
+    {
+      "probe_label": "education_history",
+      "expected_subtype": "education",
+      "selected_records": 4,
+      "exact_value_span_type_hits": 4,
+      "value_role_hints": {
+        "fixed_attribute_enum_shape": 3,
+        "reference_or_declaration": 1
+      },
+      "miss_reasons": {}
+    },
+    {
+      "probe_label": "employment_profile",
+      "expected_subtype": "employment",
+      "selected_records": 4,
+      "exact_value_span_type_hits": 3,
+      "value_role_hints": {
+        "fixed_attribute_enum_shape": 1,
+        "empty_value": 1,
+        "other_literal_unresolved": 2
+      },
+      "miss_reasons": {
+        "empty_value_not_emitted": 1
+      }
+    }
+  ],
+  "role_hint_counts": {
+    "numeric_age_field_literal": 3,
+    "fixed_attribute_enum_shape": 7,
+    "date_like_literal": 3,
+    "reference_or_declaration": 5,
+    "empty_value": 1,
+    "other_literal_unresolved": 8
+  },
+  "literal_selected_records": 21,
+  "literal_key_name_or_type_restatement_records": 0,
+  "nearby_ui_localization_marker_records": 0,
+  "evidence_path": "personal_attribute_replay_v049_evidence.jsonl",
+  "evidence_sha256": "b1a4c1489fa86d83f7a384b9ee2f8431f212aa5c1ca07d2e6af6bab55d062ede",
+  "source_values_exported": false,
+  "dynamic_keys_exported": false,
+  "value_hashes_exported": false,
+  "human_review_status": "pending",
+  "personal_ownership_confirmed": false,
+  "sensitivity_confirmed": false,
+  "limitations": [
+    "Fixed purposive selection is not representative; ratios apply only to these records.",
+    "Value-role hints use finite syntax/dictionary tests; enum shapes and nearby markers do not establish real personal attributes or localization roles.",
+    "Source cell selections are 1-based table/column/row references. Arrow decoding may read intervening rows; only the 23 selected scalar values are materialized and classified.",
+    "The old probe fingerprint remains in the old report; this report records the new classifier implementation.",
+    "No additional complete body scan, network request, target execution, or human confirmation occurred."
+  ]
+}

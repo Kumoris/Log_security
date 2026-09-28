@@ -1,0 +1,45 @@
+{
+  "import": {
+    "complete": true,
+    "exit_code": 2,
+    "manifest_genuinely_generated": true
+  },
+  "empty_seed": {
+    "processed_rows": 0,
+    "exit_code": 2
+  },
+  "advance": {
+    "processed_rows": 3,
+    "candidate_occurrences": 1,
+    "exit_code": 2
+  },
+  "selection": {
+    "selected_cells": 1,
+    "gzip_parent": true,
+    "ancestor_verified": true
+  },
+  "repair_partial": {
+    "pages_this_invocation": 1,
+    "stop_reason": "page_budget",
+    "exit_code": 2
+  },
+  "repair_complete": {
+    "candidate_occurrences": 3,
+    "all_selected_cells_all_rules_finished": true,
+    "exit_code": 2
+  },
+  "repair_repeat_new_pages": 0,
+  "reconcile": {
+    "candidate_identities": 3,
+    "candidate_occurrence_variants": 3,
+    "new_repair_identities": 2,
+    "exact_duplicate": 1,
+    "exit_code": 2
+  },
+  "legacy_seed_exports_unchanged": true,
+  "source_unchanged": true,
+  "gzip_csv_jsonl_row_counts_match": true,
+  "reconcile_resume_gzip_bytes_identical": true,
+  "real_data_used": false,
+  "source_values_exported": false
+}

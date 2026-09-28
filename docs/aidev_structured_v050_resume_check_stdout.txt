@@ -1,0 +1,2 @@
+{"exit_code": 2, "elapsed_seconds": 10.388939374999609, "source_unchanged": true}
+{"resume_exit_2": true, "no_new_rows": true, "logical_tables_identical": true, "all_12_gzip_files_identical": true, "manifest_identical": true}

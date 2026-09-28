@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:agentlog-unified:2.0:candidate",
+  "title":"Machine screening candidate, schema 2.0",
+  "type":"object",
+  "required":["case_id","log_change_id","cohort","is_synthetic","intro_sha","before_sha","diff_backend","parser_status","analysis_depth","privacy_assessment","screening_bucket","human_review_status","new_type_status","runtime_leak_claim","missing_evidence"],
+  "properties":{
+    "case_id":{"type":"string","pattern":"^[0-9a-f]{24}$"},
+    "log_change_id":{"type":"string"},
+    "cohort":{"enum":["primary_cohort","repair_enriched","calibration_only"]},
+    "is_synthetic":{"type":"boolean"},
+    "intro_sha":{"type":"string","pattern":"^[0-9a-f]{40,64}$"},
+    "before_sha":{"type":["string","null"]},
+    "privacy_assessment":{"enum":["not_supported","possible","supported","unknown"]},
+    "screening_bucket":{"enum":["REVIEW_READY","NEEDS_CONTEXT","NO_OBSERVED_PRIVACY_FIX","OUT_OF_SCOPE_OR_FALSE_POSITIVE","BLOCKED_BY_DATA"]},
+    "analysis_depth":{"const":1},
+    "human_review_status":{"const":"pending"},
+    "new_type_status":{"const":"not_established"},
+    "runtime_leak_claim":{"const":false},
+    "missing_evidence":{"type":"array"}
+  }
+}

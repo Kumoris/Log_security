@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-09-08T20:16:03.163349+00:00",
+  "baseline_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v4",
+  "updated_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5",
+  "comparison_scope": "Exact same supplied jobs and Git extraction evidence; occurrence_id keyed full exported dictionaries compared, no field ignored for non-Go",
+  "all_checks_passed": true,
+  "checks": {
+    "identical_job_keys": true,
+    "identical_job_statuses": true,
+    "all_jobs_attempted": true,
+    "identical_contexts": true,
+    "identical_comparisons": true,
+    "identical_file_git_evidence_except_go_support_marker": true,
+    "non_go_occurrence_ids_unchanged": true,
+    "all_non_go_occurrence_fields_unchanged": true,
+    "all_non_go_log_observation_fields_unchanged": true,
+    "unique_occurrence_ids": true,
+    "go_low_confidence_pending_boundaries_hold": true,
+    "new_occurrences_are_go_only": true
+  },
+  "jobs": {
+    "before": 8697,
+    "after": 8697,
+    "statuses_before": {
+      "complete": 574,
+      "partial": 722,
+      "blocked": 7401
+    },
+    "statuses_after": {
+      "complete": 574,
+      "partial": 722,
+      "blocked": 7401
+    }
+  },
+  "counts": {
+    "occurrences_before": 2953,
+    "occurrences_after": 3397,
+    "non_go_occurrences_before": 2953,
+    "non_go_occurrences_after": 2953,
+    "go_occurrences_after": 444,
+    "go_unique_versions_new": 444,
+    "log_observations_before": 3118,
+    "log_observations_after": 3564,
+    "new_go_log_observations": 446,
+    "go_versions_with_type_labels": 324,
+    "go_unknown_review_versions": 444,
+    "go_repository_count": 3
+  },
+  "go_category_version_counts": {
+    "AUTH": 35,
+    "BIZ": 97,
+    "CFG": 8,
+    "DIAG": 281,
+    "PII": 62,
+    "QID": 82
+  },
+  "go_subtype_version_counts": {
+    "AUTH.access_token": 15,
+    "AUTH.api_key": 12,
+    "AUTH.credential_bundle": 3,
+    "AUTH.password": 8,
+    "BIZ.business_object": 34,
+    "BIZ.request_body": 10,
+    "BIZ.unclassified_object": 54,
+    "CFG.database_connection": 2,
+    "CFG.deployment_configuration": 1,
+    "CFG.environment": 6,
+    "DIAG.exception_message": 281,
+    "PII.email": 57,
+    "PII.person_name": 5,
+    "QID.network_identifier": 3,
+    "QID.user_identifier": 82
+  },
+  "go_parser_status_counts": {
+    "lexical_only": 444
+  },
+  "go_label_confidence_counts": {
+    "low": 573
+  },
+  "actual_metric_changes": {
+    "log_observations": {
+      "before": 3118,
+      "after": 3564
+    }
+  },
+  "non_go_full_export_sha256_before": "53d032a4fa4117c931651419bb1412088f3251e920ba2501e602dae43847de3a",
+  "non_go_full_export_sha256_after": "53d032a4fa4117c931651419bb1412088f3251e920ba2501e602dae43847de3a",
+  "mismatches": {
+    "missing_non_go_occurrence_ids": [],
+    "added_non_go_occurrence_ids": [],
+    "changed_non_go_occurrence_fields": {},
+    "missing_file_ids": [],
+    "added_file_ids": [],
+    "changed_file_evidence_fields": {},
+    "go_boundary_violations": {}
+  },
+  "evidence_boundary": [
+    "Static lexical candidates only; no Go source execution, no confirmed leak or human verification",
+    "Classifier expansion does not obtain missing repositories or complete historical tracing",
+    "Counts are per unique log version; category and subtype totals are multi-label and are not additive"
+  ],
+  "execution_record": "docs/swechat_batch_v5_offline_execution.json",
+  "file_comparison_method": {
+    "key": [
+      "repository",
+      "sha",
+      "parent_sha",
+      "change_id"
+    ],
+    "compared_fields": "All file audit fields; only for Go permit analysis_status, language, and derived record id to change",
+    "go_support_marker_and_derived_id_changes": 630,
+    "explanation": "The file audit id hashes the full record, including language support markers. The stable change_id and every actual Git diff/source-evidence field remain identical."
+  },
+  "go_label_evidence_status_counts": {
+    "carrier_candidate": 386,
+    "static_candidate": 187
+  },
+  "go_low_confidence_violation_count": 0,
+  "go_pending_review_violation_count": 0,
+  "comparison_validation_note": "Initial audit incorrectly required carrier_candidate labels to be static_candidate and keyed Go file records by derived id. Corrected to preserve the taxonomy evidence-status distinction and compare stable file change identity; no classifier changes or evidence fields were suppressed.",
+  "newly_observed_subtypes": [
+    "AUTH.password",
+    "CFG.database_connection",
+    "QID.network_identifier",
+    "QID.user_identifier"
+  ],
+  "observed_subtype_count_before": 20,
+  "observed_subtype_count_after": 24
+}

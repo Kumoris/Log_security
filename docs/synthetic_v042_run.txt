@@ -1,0 +1,8 @@
+{"stage": "ingest", "status": "complete", "counts": {"records": 1}}
+{"stage": "collect", "status": "complete", "counts": {"repositories": 1, "gaps": 0}}
+{"stage": "mine", "status": "complete", "counts": {"commits": 5, "file_changes": 5}}
+{"stage": "detect", "status": "complete", "counts": {"log_events": 6, "snapshots": 6, "dependency_edges": 22}}
+{"stage": "trace", "status": "complete", "counts": {"log_changes": 2, "followups": 3, "provenance": 2, "target_branch_integration_events": 2}}
+{"stage": "assess", "status": "complete", "counts": {"candidates": 2}}
+{"stage": "export", "status": "complete", "counts": {"machine_only": true}}
+{"run_id": "synthetic-v042", "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/synthetic-v042", "exit_code": 0, "coverage_gap_records": 0}

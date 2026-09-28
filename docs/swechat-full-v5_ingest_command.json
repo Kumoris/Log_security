@@ -1,0 +1,21 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "commit-import",
+    "--input",
+    "agentlog_unified/inputs/swechat-full-v3/commit_contexts.jsonl",
+    "--output",
+    "agentlog_unified/batches/swechat-full-v5",
+    "--offline"
+  ],
+  "started_at": "2026-09-08T20:06:10.095432+00:00",
+  "finished_at": "2026-09-08T20:06:10.447683+00:00",
+  "elapsed_seconds": 0.3522597919945838,
+  "exit_code": 0,
+  "result": {
+    "input_rows_seen": 8697,
+    "unique_commits": 8697,
+    "unique_contexts": 8697,
+    "unique_input_gaps": 0
+  }
+}

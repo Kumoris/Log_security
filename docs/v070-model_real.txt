@@ -1,0 +1,20 @@
+{
+  "status": "complete_with_declared_gaps",
+  "exit_code": 0,
+  "selected_cases": 2,
+  "model_attempts": 4,
+  "valid_responses": 4,
+  "independent_model_reviews": 2,
+  "model_supported": 2,
+  "human_confirmations": 0,
+  "rule_outputs_modified": false,
+  "accuracy": null,
+  "recall": null,
+  "model_not_human_validation": true,
+  "prompt_version": "semantic-model-evidence-2",
+  "sample_ids": [
+    "026ff034aac639ec6194f265",
+    "0a301bc91f005f1c3ebb9ecb"
+  ],
+  "ledger_sha256": "29c82057c402b5bb7c074b3c524519a9568fe9d5b5099c0e04f3e04a252ce995"
+}

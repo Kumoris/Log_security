@@ -1,0 +1,91 @@
+{
+  "recorded_utc": "2026-09-08T20:18:31.798131+00:00",
+  "automated_verification": true,
+  "human_review_performed": false,
+  "datasets": {
+    "aidev-full-v5": {
+      "log_versions": 696,
+      "unknown_queue": 654,
+      "go_log_versions": 352,
+      "go_versions_with_types": 182,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 696,
+        "unknown_type_review_queue": 654,
+        "type_summary": 48
+      },
+      "analysis_fingerprint_matches_current_source": true,
+      "sha256": {
+        "type_occurrences.jsonl": "4a6b3427e289ebea0da81dc67c5a0fb83cfbb9872e3fadde121b17c5584dfee6",
+        "type_summary.csv": "3143ca8e1bb449d9a033e16242c8e6a9fa266363182fc40029d667d69f5e07d0",
+        "unknown_type_review_queue.csv": "e8fd61113d7ac842e320b9a33bb6507c15186ed87b11c3f0e304a1731830ceab",
+        "type_summary.json": "61fd3e170545f746b189ecc509a659f9bf75768588644acd7ff153f81abfb56b",
+        "unknown_type_review_queue.jsonl": "875a9d78b1645954fda156c45f92b69ea4985c708d97956006a225fbb5971708",
+        "type_occurrences.csv": "177ac03e48336f8896680531daf9db10ff1c3a063476bc677854b1824bb0dac3"
+      }
+    },
+    "swechat-full-v5": {
+      "log_versions": 3397,
+      "unknown_queue": 3326,
+      "go_log_versions": 444,
+      "go_versions_with_types": 324,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 3397,
+        "unknown_type_review_queue": 3326,
+        "type_summary": 48
+      },
+      "analysis_fingerprint_matches_current_source": true,
+      "sha256": {
+        "type_occurrences.jsonl": "0bac8548a601cbe7e464231903e8e0e265df11c7f68c9ee1b05aba50336aaf7c",
+        "type_summary.csv": "7e0562278bdbdf511e5bf603f77259eeda661fcfc6a139d4671878b3dae9cced",
+        "unknown_type_review_queue.csv": "08a6bec7a73f0b51c2dac330c46bbec008f33bd64a3a373e3d0f9026e2e90dde",
+        "type_summary.json": "6ea6f00e9663cdcf35c64634bf2827e77d496428017af120d1b95c65127777b4",
+        "unknown_type_review_queue.jsonl": "975ccf78955ccd6ff550ca59a67f5653e6f65b2f0c5e7802a4ee027998ecce8e",
+        "type_occurrences.csv": "6ea8f005894b08124ca480f06a9e55dcc48c5a9368b3ac05fa2e47f4a69c10b7"
+      }
+    },
+    "aidev-anchors-v3": {
+      "log_versions": 84,
+      "unknown_queue": 84,
+      "go_log_versions": 81,
+      "go_versions_with_types": 51,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 84,
+        "unknown_type_review_queue": 84,
+        "type_summary": 48
+      },
+      "analysis_fingerprint_matches_current_source": true,
+      "sha256": {
+        "type_occurrences.jsonl": "1e8194a60beaedb67e5ef1934f414c664b1ef871e2ef57350fb3df75077de3bb",
+        "type_summary.csv": "719a5815bd1d7ecea2c2649612d6fa6bbf5457db5beaf556f573adadafb020f1",
+        "unknown_type_review_queue.csv": "8f27119cb1b446023c43f5f808256e5d4aac03e5752db343bfb9024a06fee733",
+        "type_summary.json": "6ec8e3862bb19ae248e7140ea1a2cbc801f51ff8c0513d2b932e6008cdb975a1",
+        "unknown_type_review_queue.jsonl": "614abe16be4014556d9aeb06d6d9201ee90e838fd0cfb6b00d54e26350bcbf16",
+        "type_occurrences.csv": "8b7c1c2c9cf308fb2c90a9374874b65a741a3f4ad54b74a89e69094f7a37ebfd"
+      }
+    },
+    "aidev-prior-cache-v042": {
+      "log_versions": 0,
+      "unknown_queue": 0,
+      "go_log_versions": 0,
+      "go_versions_with_types": 0,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 0,
+        "unknown_type_review_queue": 0,
+        "type_summary": 48
+      },
+      "analysis_fingerprint_matches_current_source": true,
+      "sha256": {
+        "type_occurrences.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "type_summary.csv": "1833564a2ca4422a589589b769e4eefb858f06b3b642744a613617bc64cc2ec5",
+        "unknown_type_review_queue.csv": "fd10faf0e3527d9a1e7e9c0e776a95093b2d6fb7064b88d512217323bd8c5ecc",
+        "type_summary.json": "569179b0e1db9717866b059da58eb22cc4eb94f06454d738d855582b87f1a394",
+        "unknown_type_review_queue.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "type_occurrences.csv": "7ed6650c868b93163af5aa2d45a60cf4b215309c67434db24932a95d9688e83b"
+      }
+    }
+  }
+}

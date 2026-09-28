@@ -1,0 +1,1486 @@
+{
+  "schema_version": "schema_exports_independent_verification_v046",
+  "started_utc": "2026-09-08T22:14:27.184890+00:00",
+  "completed_utc": "2026-09-08T22:14:34.305094+00:00",
+  "all_checks_passed": true,
+  "source_values_read": false,
+  "source_bytes_rehashed_without_value_decode": true,
+  "source_min_max_values_read": false,
+  "remote_accessed": false,
+  "target_code_executed": false,
+  "formal_source_modified": false,
+  "active_text_run_accessed": false,
+  "old_v045_verification_sha256": "bba64244ea365b4ab225da3644c4d430b109f2157da2911a507d413326b0e531",
+  "old_v045_verification_preserved": true,
+  "results": [
+    {
+      "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046",
+      "dataset": "aidev",
+      "status": "complete_with_schema_gaps",
+      "all_checks_passed": true,
+      "failed_check_counts": {},
+      "elapsed_seconds": 2.962,
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_code_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+        "schema_scan.py": "9915a94da971aaf66c6edd01300d9e98db4bb548fdf6b7ace771190073b76502",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+      },
+      "frozen_source_inputs": [
+        {
+          "path": "all_pull_request.parquet",
+          "bytes": 330776130,
+          "hash_matches": true
+        },
+        {
+          "path": "all_repository.parquet",
+          "bytes": 6136253,
+          "hash_matches": true
+        },
+        {
+          "path": "all_user.parquet",
+          "bytes": 2511706,
+          "hash_matches": true
+        },
+        {
+          "path": "human_pr_task_type.parquet",
+          "bytes": 715969,
+          "hash_matches": true
+        },
+        {
+          "path": "human_pull_request.parquet",
+          "bytes": 4387171,
+          "hash_matches": true
+        },
+        {
+          "path": "issue.parquet",
+          "bytes": 3222463,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_comments.parquet",
+          "bytes": 25857243,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_commit_details.parquet",
+          "bytes": 485214032,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_commits.parquet",
+          "bytes": 8314097,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_review_comments.parquet",
+          "bytes": 14728130,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_review_comments_v2.parquet",
+          "bytes": 21125785,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_reviews.parquet",
+          "bytes": 7517041,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_task_type.parquet",
+          "bytes": 2993264,
+          "hash_matches": true
+        },
+        {
+          "path": "pr_timeline.parquet",
+          "bytes": 34108415,
+          "hash_matches": true
+        },
+        {
+          "path": "pull_request.parquet",
+          "bytes": 16855612,
+          "hash_matches": true
+        },
+        {
+          "path": "related_issue.parquet",
+          "bytes": 75579,
+          "hash_matches": true
+        },
+        {
+          "path": "repository.parquet",
+          "bytes": 167251,
+          "hash_matches": true
+        },
+        {
+          "path": "user.parquet",
+          "bytes": 68935,
+          "hash_matches": true
+        }
+      ],
+      "all_fields": 160,
+      "scalar_fields": 160,
+      "selected_fields": 17,
+      "counts": {
+        "cells_decoded": 2577531,
+        "schema_context_candidate": 2561614,
+        "placeholder_or_example": 12,
+        "null": 15892,
+        "invalid": 13
+      },
+      "range_counts_by_quality": {
+        "schema_context_candidate": 13520,
+        "placeholder_or_example": 9,
+        "null": 13489,
+        "invalid": 5
+      },
+      "quality_reason_source_cells": [
+        {
+          "status": "invalid",
+          "reason": "structured_metadata_requires_interpretation",
+          "source_cells": 13
+        },
+        {
+          "status": "null",
+          "reason": "arrow_null",
+          "source_cells": 15892
+        },
+        {
+          "status": "placeholder_or_example",
+          "reason": "example_shaped_metadata_not_validated",
+          "source_cells": 12
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_account_login_field",
+          "source_cells": 73983
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_account_reference_field",
+          "source_cells": 1401541
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_numeric_account_field",
+          "source_cells": 1086090
+        }
+      ],
+      "type_summary": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "candidate_source_cells": 2561614,
+          "candidate_status": "schema_context_candidate",
+          "observation_scope": "dataset_schema_context",
+          "evidence_basis": "schema_context",
+          "human_review_status": "pending",
+          "confidence": "low",
+          "runtime_confirmed": false,
+          "personal_ownership_confirmed": false,
+          "sensitivity_confirmed": false,
+          "application_log_evidence": false,
+          "new_type_status": "not_established"
+        }
+      ],
+      "exports": {
+        "schema_context_candidates": {
+          "records": 13520,
+          "represented_source_cells": 2561614
+        },
+        "schema_context_review_queue": {
+          "records": 27023,
+          "represented_source_cells": 2577531
+        },
+        "schema_unresolved_fields": {
+          "records": 143,
+          "represented_source_cells": 26723102
+        },
+        "schema_type_summary": {
+          "records": 1,
+          "represented_source_cells": 2561614
+        }
+      },
+      "selected_field_coverage": [
+        {
+          "field_id": "22d788aae8675be546fc3de8",
+          "dataset": "aidev",
+          "table_path": "all_pull_request.parquet",
+          "column_name": "user_id",
+          "native_type": "int64",
+          "schema_role": "numeric_account_id",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 932791,
+          "next_row": 932791,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 932791,
+            "schema_context_candidate": 932791
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "8757fea48dad0cb751efd6d4",
+          "dataset": "aidev",
+          "table_path": "all_pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 932791,
+          "next_row": 932791,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 932791,
+            "placeholder_or_example": 4,
+            "schema_context_candidate": 932787
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "861206f4574e930802f83547",
+          "dataset": "aidev",
+          "table_path": "all_user.parquet",
+          "column_name": "id",
+          "native_type": "double",
+          "schema_role": "numeric_account_id",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 72189,
+          "next_row": 72189,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 72189,
+            "null": 22,
+            "schema_context_candidate": 72167
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "0cba28ab29c670fc46887c2b",
+          "dataset": "aidev",
+          "table_path": "all_user.parquet",
+          "column_name": "login",
+          "native_type": "string",
+          "schema_role": "account_login",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 72189,
+          "next_row": 72189,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 72189,
+            "placeholder_or_example": 2,
+            "schema_context_candidate": 72187
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "0e542404a15d2811dd390631",
+          "dataset": "aidev",
+          "table_path": "human_pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 6618,
+          "next_row": 6618,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 6618,
+            "schema_context_candidate": 6618
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "2c5d6a31869551831edab667",
+          "dataset": "aidev",
+          "table_path": "human_pull_request.parquet",
+          "column_name": "user_id",
+          "native_type": "int64",
+          "schema_role": "numeric_account_id",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 6618,
+          "next_row": 6618,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 6618,
+            "schema_context_candidate": 6618
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "c92bcb58741629be4a4a4d1b",
+          "dataset": "aidev",
+          "table_path": "issue.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 4614,
+          "next_row": 4614,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 4614,
+            "schema_context_candidate": 4614
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "dcf2ef35ef2dfff8efc394a0",
+          "dataset": "aidev",
+          "table_path": "pr_comments.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 39122,
+          "next_row": 39122,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 39122,
+            "schema_context_candidate": 39122
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "8dee82aa2fa858ee600da06b",
+          "dataset": "aidev",
+          "table_path": "pr_comments.parquet",
+          "column_name": "user_id",
+          "native_type": "int64",
+          "schema_role": "numeric_account_id",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 39122,
+          "next_row": 39122,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 39122,
+            "schema_context_candidate": 39122
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "73e1813d45e2c8b4eb4e8580",
+          "dataset": "aidev",
+          "table_path": "pr_review_comments.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 19450,
+          "next_row": 19450,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 19450,
+            "schema_context_candidate": 19450
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "79c966cc03ac57a1f25b0a99",
+          "dataset": "aidev",
+          "table_path": "pr_review_comments_v2.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 26868,
+          "next_row": 26868,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 26868,
+            "schema_context_candidate": 26868
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "806987a4fee47a3a2c82f23f",
+          "dataset": "aidev",
+          "table_path": "pr_reviews.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 28875,
+          "next_row": 28875,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 28875,
+            "null": 1,
+            "schema_context_candidate": 28874
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "ffa5fc1272de4b0af9cbec35",
+          "dataset": "aidev",
+          "table_path": "pr_timeline.parquet",
+          "column_name": "actor",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 325500,
+          "next_row": 325500,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 325500,
+            "invalid": 13,
+            "null": 15869,
+            "placeholder_or_example": 6,
+            "schema_context_candidate": 309612
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "88e1492fbf38dac2f4be53e3",
+          "dataset": "aidev",
+          "table_path": "pull_request.parquet",
+          "column_name": "user_id",
+          "native_type": "int64",
+          "schema_role": "numeric_account_id",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 33596,
+          "next_row": 33596,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 33596,
+            "schema_context_candidate": 33596
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "81610bcc70f899efc1d03cc6",
+          "dataset": "aidev",
+          "table_path": "pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 33596,
+          "next_row": 33596,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 33596,
+            "schema_context_candidate": 33596
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "4cb3656f549f26e1189b1c0d",
+          "dataset": "aidev",
+          "table_path": "user.parquet",
+          "column_name": "id",
+          "native_type": "int64",
+          "schema_role": "numeric_account_id",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 1796,
+          "next_row": 1796,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 1796,
+            "schema_context_candidate": 1796
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "e95127d5e7cc64f253a57820",
+          "dataset": "aidev",
+          "table_path": "user.parquet",
+          "column_name": "login",
+          "native_type": "string",
+          "schema_role": "account_login",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 1796,
+          "next_row": 1796,
+          "next_row_group": 1,
+          "counts": {
+            "cells_decoded": 1796,
+            "schema_context_candidate": 1796
+          },
+          "state": "complete"
+        }
+      ],
+      "verified": [
+        "Every manifest field equals frozen native schema, finite role registry and existing taxonomy; all scalar columns included.",
+        "Selected field ranges exactly partition one-based rows 1..next_row with no overlap/gap; status/quality counts and row-group checkpoints recomputed.",
+        "JSONL matches DB/manifest evidence, CSV matches JSONL, coverage/summary source-cell counts match independently recomputed ranges.",
+        "Null counts equal source footer for fully scanned fields; unselected fields stay unresolved with no decoded/empty/invalid claims.",
+        "Current source hashes and implementation fingerprints match frozen manifests; shared lock and file-stat stability protect terminal snapshot.",
+        "Only finite quality/type labels and source references are exported; pending status and non-confirmation flags remain explicit."
+      ],
+      "limitations": [
+        "The unit cells_decoded is a source table/column/row observation, not unique rows, people, identities, or confirmed sensitive records.",
+        "This verification does not decode or reclassify source values; quality-label counts are checked, not the truth of a real identity or sensitivity.",
+        "Schema-context and text/log observations remain separate evidence scopes and must not be blindly summed."
+      ]
+    },
+    {
+      "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046",
+      "dataset": "swe-chat",
+      "status": "complete_with_schema_gaps",
+      "all_checks_passed": true,
+      "failed_check_counts": {},
+      "elapsed_seconds": 3.641,
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_code_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+        "schema_scan.py": "9915a94da971aaf66c6edd01300d9e98db4bb548fdf6b7ace771190073b76502",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+      },
+      "frozen_source_inputs": [
+        {
+          "path": "checkpoints.parquet",
+          "bytes": 5564169,
+          "hash_matches": true
+        },
+        {
+          "path": "commits.parquet",
+          "bytes": 1082547262,
+          "hash_matches": true
+        },
+        {
+          "path": "conversations.parquet",
+          "bytes": 1311422253,
+          "hash_matches": true
+        },
+        {
+          "path": "repositories.parquet",
+          "bytes": 244741,
+          "hash_matches": true
+        },
+        {
+          "path": "session_logs.parquet",
+          "bytes": 6369801,
+          "hash_matches": true
+        },
+        {
+          "path": "sessions.parquet",
+          "bytes": 1997377,
+          "hash_matches": true
+        }
+      ],
+      "all_fields": 148,
+      "scalar_fields": 148,
+      "selected_fields": 10,
+      "counts": {
+        "cells_decoded": 5473755,
+        "null": 1220715,
+        "schema_context_candidate": 4252940,
+        "invalid": 100
+      },
+      "range_counts_by_quality": {
+        "schema_context_candidate": 3891,
+        "null": 3879,
+        "invalid": 7
+      },
+      "quality_reason_source_cells": [
+        {
+          "status": "invalid",
+          "reason": "email_field_shape_unresolved",
+          "source_cells": 100
+        },
+        {
+          "status": "null",
+          "reason": "arrow_null",
+          "source_cells": 1220715
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_account_login_field",
+          "source_cells": 8976
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_account_reference_field",
+          "source_cells": 1521374
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_author_email_field",
+          "source_cells": 9154
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_author_name_field",
+          "source_cells": 9254
+        },
+        {
+          "status": "schema_context_candidate",
+          "reason": "explicit_session_reference_field",
+          "source_cells": 2704182
+        }
+      ],
+      "type_summary": [
+        {
+          "category": "PII",
+          "subtype": "email",
+          "candidate_source_cells": 9154,
+          "candidate_status": "schema_context_candidate",
+          "observation_scope": "dataset_schema_context",
+          "evidence_basis": "schema_context",
+          "human_review_status": "pending",
+          "confidence": "low",
+          "runtime_confirmed": false,
+          "personal_ownership_confirmed": false,
+          "sensitivity_confirmed": false,
+          "application_log_evidence": false,
+          "new_type_status": "not_established"
+        },
+        {
+          "category": "PII",
+          "subtype": "person_name",
+          "candidate_source_cells": 9254,
+          "candidate_status": "schema_context_candidate",
+          "observation_scope": "dataset_schema_context",
+          "evidence_basis": "schema_context",
+          "human_review_status": "pending",
+          "confidence": "low",
+          "runtime_confirmed": false,
+          "personal_ownership_confirmed": false,
+          "sensitivity_confirmed": false,
+          "application_log_evidence": false,
+          "new_type_status": "not_established"
+        },
+        {
+          "category": "QID",
+          "subtype": "session_identifier",
+          "candidate_source_cells": 2704182,
+          "candidate_status": "schema_context_candidate",
+          "observation_scope": "dataset_schema_context",
+          "evidence_basis": "schema_context",
+          "human_review_status": "pending",
+          "confidence": "low",
+          "runtime_confirmed": false,
+          "personal_ownership_confirmed": false,
+          "sensitivity_confirmed": false,
+          "application_log_evidence": false,
+          "new_type_status": "not_established"
+        },
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "candidate_source_cells": 1530350,
+          "candidate_status": "schema_context_candidate",
+          "observation_scope": "dataset_schema_context",
+          "evidence_basis": "schema_context",
+          "human_review_status": "pending",
+          "confidence": "low",
+          "runtime_confirmed": false,
+          "personal_ownership_confirmed": false,
+          "sensitivity_confirmed": false,
+          "application_log_evidence": false,
+          "new_type_status": "not_established"
+        }
+      ],
+      "exports": {
+        "schema_context_candidates": {
+          "records": 3891,
+          "represented_source_cells": 4252940
+        },
+        "schema_context_review_queue": {
+          "records": 7777,
+          "represented_source_cells": 5473755
+        },
+        "schema_unresolved_fields": {
+          "records": 138,
+          "represented_source_cells": 89673654
+        },
+        "schema_type_summary": {
+          "records": 4,
+          "represented_source_cells": 4252940
+        }
+      },
+      "selected_field_coverage": [
+        {
+          "field_id": "1cabfbaa24bf18932be66dfd",
+          "dataset": "swe-chat",
+          "table_path": "checkpoints.parquet",
+          "column_name": "user_id",
+          "native_type": "large_string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 13406,
+          "next_row": 13406,
+          "next_row_group": 7,
+          "counts": {
+            "cells_decoded": 13406,
+            "null": 5241,
+            "schema_context_candidate": 8165
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "119479124d650be0de842809",
+          "dataset": "swe-chat",
+          "table_path": "commits.parquet",
+          "column_name": "user_id",
+          "native_type": "large_string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 14459,
+          "next_row": 14459,
+          "next_row_group": 8,
+          "counts": {
+            "cells_decoded": 14459,
+            "null": 5205,
+            "schema_context_candidate": 9254
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "18cfcc58a7f02600a5075c6d",
+          "dataset": "swe-chat",
+          "table_path": "commits.parquet",
+          "column_name": "github_username",
+          "native_type": "large_string",
+          "schema_role": "account_login",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 14459,
+          "next_row": 14459,
+          "next_row_group": 8,
+          "counts": {
+            "cells_decoded": 14459,
+            "null": 5483,
+            "schema_context_candidate": 8976
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "02ac2630129f49634f3df21a",
+          "dataset": "swe-chat",
+          "table_path": "commits.parquet",
+          "column_name": "author_name",
+          "native_type": "large_string",
+          "schema_role": "author_name",
+          "category": "PII",
+          "subtype": "person_name",
+          "source_rows": 14459,
+          "next_row": 14459,
+          "next_row_group": 8,
+          "counts": {
+            "cells_decoded": 14459,
+            "null": 5205,
+            "schema_context_candidate": 9254
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "e9a3f468ed0776756fbd3621",
+          "dataset": "swe-chat",
+          "table_path": "commits.parquet",
+          "column_name": "author_email",
+          "native_type": "large_string",
+          "schema_role": "author_email",
+          "category": "PII",
+          "subtype": "email",
+          "source_rows": 14459,
+          "next_row": 14459,
+          "next_row_group": 8,
+          "counts": {
+            "cells_decoded": 14459,
+            "invalid": 100,
+            "null": 5205,
+            "schema_context_candidate": 9154
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "21d965a0069ac6016c9e0624",
+          "dataset": "swe-chat",
+          "table_path": "conversations.parquet",
+          "column_name": "session_id",
+          "native_type": "large_string",
+          "schema_role": "session_reference",
+          "category": "QID",
+          "subtype": "session_identifier",
+          "source_rows": 2692480,
+          "next_row": 2692480,
+          "next_row_group": 1347,
+          "counts": {
+            "cells_decoded": 2692480,
+            "schema_context_candidate": 2692480
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "91b1a57d62961adda34f8059",
+          "dataset": "swe-chat",
+          "table_path": "conversations.parquet",
+          "column_name": "user_id",
+          "native_type": "large_string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 2692480,
+          "next_row": 2692480,
+          "next_row_group": 1347,
+          "counts": {
+            "cells_decoded": 2692480,
+            "null": 1192433,
+            "schema_context_candidate": 1500047
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "bed913b6da8f351c05c63c97",
+          "dataset": "swe-chat",
+          "table_path": "session_logs.parquet",
+          "column_name": "session_id",
+          "native_type": "large_string",
+          "schema_role": "session_reference",
+          "category": "QID",
+          "subtype": "session_identifier",
+          "source_rows": 5851,
+          "next_row": 5851,
+          "next_row_group": 3,
+          "counts": {
+            "cells_decoded": 5851,
+            "schema_context_candidate": 5851
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "a5967131adc7726a1e06240e",
+          "dataset": "swe-chat",
+          "table_path": "sessions.parquet",
+          "column_name": "session_id",
+          "native_type": "large_string",
+          "schema_role": "session_reference",
+          "category": "QID",
+          "subtype": "session_identifier",
+          "source_rows": 5851,
+          "next_row": 5851,
+          "next_row_group": 3,
+          "counts": {
+            "cells_decoded": 5851,
+            "schema_context_candidate": 5851
+          },
+          "state": "complete"
+        },
+        {
+          "field_id": "85df387e2f36c82da32efc73",
+          "dataset": "swe-chat",
+          "table_path": "sessions.parquet",
+          "column_name": "user_id",
+          "native_type": "large_string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 5851,
+          "next_row": 5851,
+          "next_row_group": 3,
+          "counts": {
+            "cells_decoded": 5851,
+            "null": 1943,
+            "schema_context_candidate": 3908
+          },
+          "state": "complete"
+        }
+      ],
+      "verified": [
+        "Every manifest field equals frozen native schema, finite role registry and existing taxonomy; all scalar columns included.",
+        "Selected field ranges exactly partition one-based rows 1..next_row with no overlap/gap; status/quality counts and row-group checkpoints recomputed.",
+        "JSONL matches DB/manifest evidence, CSV matches JSONL, coverage/summary source-cell counts match independently recomputed ranges.",
+        "Null counts equal source footer for fully scanned fields; unselected fields stay unresolved with no decoded/empty/invalid claims.",
+        "Current source hashes and implementation fingerprints match frozen manifests; shared lock and file-stat stability protect terminal snapshot.",
+        "Only finite quality/type labels and source references are exported; pending status and non-confirmation flags remain explicit."
+      ],
+      "limitations": [
+        "The unit cells_decoded is a source table/column/row observation, not unique rows, people, identities, or confirmed sensitive records.",
+        "This verification does not decode or reclassify source values; quality-label counts are checked, not the truth of a real identity or sensitivity.",
+        "Schema-context and text/log observations remain separate evidence scopes and must not be blindly summed."
+      ]
+    }
+  ],
+  "real_v045_to_v046_comparison": [
+    {
+      "dataset": "aidev",
+      "all_checks_passed": true,
+      "legacy_field_count": 8,
+      "legacy_fields": [
+        {
+          "field_id": "22d788aae8675be546fc3de8",
+          "table_path": "all_pull_request.parquet",
+          "column_name": "user_id",
+          "source_rows": 932791,
+          "counts": {
+            "cells_decoded": 932791,
+            "schema_context_candidate": 932791
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "d25867c335ba3383aec682e5362e0f60c45129d3b1d37f84c98166679394e78e"
+        },
+        {
+          "field_id": "861206f4574e930802f83547",
+          "table_path": "all_user.parquet",
+          "column_name": "id",
+          "source_rows": 72189,
+          "counts": {
+            "cells_decoded": 72189,
+            "null": 22,
+            "schema_context_candidate": 72167
+          },
+          "ranges": 43,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "f2e7f583330c6778620beb2cd4c211274e3d03d6a995517d6261ce15715001e5"
+        },
+        {
+          "field_id": "0cba28ab29c670fc46887c2b",
+          "table_path": "all_user.parquet",
+          "column_name": "login",
+          "source_rows": 72189,
+          "counts": {
+            "cells_decoded": 72189,
+            "placeholder_or_example": 2,
+            "schema_context_candidate": 72187
+          },
+          "ranges": 5,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "2ded31e75eaaed21c90a724ff9f3df1f0ec0b2c456a21cdcfb9cb84af6cc1775"
+        },
+        {
+          "field_id": "2c5d6a31869551831edab667",
+          "table_path": "human_pull_request.parquet",
+          "column_name": "user_id",
+          "source_rows": 6618,
+          "counts": {
+            "cells_decoded": 6618,
+            "schema_context_candidate": 6618
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "172df181b828bec5ba68f5c30114b7ba884961b376b63f1191a19408ac1aab9f"
+        },
+        {
+          "field_id": "8dee82aa2fa858ee600da06b",
+          "table_path": "pr_comments.parquet",
+          "column_name": "user_id",
+          "source_rows": 39122,
+          "counts": {
+            "cells_decoded": 39122,
+            "schema_context_candidate": 39122
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "5e6e38b420c6598773c476ad278f36c193fb7e034d36ff0bd14898f244ab707d"
+        },
+        {
+          "field_id": "88e1492fbf38dac2f4be53e3",
+          "table_path": "pull_request.parquet",
+          "column_name": "user_id",
+          "source_rows": 33596,
+          "counts": {
+            "cells_decoded": 33596,
+            "schema_context_candidate": 33596
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "9cfed33d1be2536e3bb3a23672476bdede86bd14f9766a20018ab78e6bcc7e0c"
+        },
+        {
+          "field_id": "4cb3656f549f26e1189b1c0d",
+          "table_path": "user.parquet",
+          "column_name": "id",
+          "source_rows": 1796,
+          "counts": {
+            "cells_decoded": 1796,
+            "schema_context_candidate": 1796
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "5886e8f6dfb1c5006c5ebac381906fd5d682cbaad6de4359c01e1bd1a706bfe8"
+        },
+        {
+          "field_id": "e95127d5e7cc64f253a57820",
+          "table_path": "user.parquet",
+          "column_name": "login",
+          "source_rows": 1796,
+          "counts": {
+            "cells_decoded": 1796,
+            "schema_context_candidate": 1796
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "6cf86b2fe05de4623ec0557b1a8ebb2c8c6c3baaa26e89c8a6deddfbba30d48f"
+        }
+      ],
+      "projected_legacy_exports": [
+        {
+          "export": "schema_context_candidates",
+          "old_records": 31,
+          "new_legacy_subset_records": 31,
+          "all_evidence_fields_equal": true
+        },
+        {
+          "export": "schema_context_review_queue",
+          "old_records": 54,
+          "new_legacy_subset_records": 54,
+          "all_evidence_fields_equal": true
+        }
+      ],
+      "newly_mapped_field_count": 9,
+      "newly_mapped_fields": [
+        {
+          "field_id": "8757fea48dad0cb751efd6d4",
+          "table_path": "all_pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 932791,
+          "footer_null_count": 0,
+          "next_row": 932791,
+          "counts": {
+            "cells_decoded": 932791,
+            "placeholder_or_example": 4,
+            "schema_context_candidate": 932787
+          }
+        },
+        {
+          "field_id": "0e542404a15d2811dd390631",
+          "table_path": "human_pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 6618,
+          "footer_null_count": 0,
+          "next_row": 6618,
+          "counts": {
+            "cells_decoded": 6618,
+            "schema_context_candidate": 6618
+          }
+        },
+        {
+          "field_id": "c92bcb58741629be4a4a4d1b",
+          "table_path": "issue.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 4614,
+          "footer_null_count": 0,
+          "next_row": 4614,
+          "counts": {
+            "cells_decoded": 4614,
+            "schema_context_candidate": 4614
+          }
+        },
+        {
+          "field_id": "dcf2ef35ef2dfff8efc394a0",
+          "table_path": "pr_comments.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 39122,
+          "footer_null_count": 0,
+          "next_row": 39122,
+          "counts": {
+            "cells_decoded": 39122,
+            "schema_context_candidate": 39122
+          }
+        },
+        {
+          "field_id": "73e1813d45e2c8b4eb4e8580",
+          "table_path": "pr_review_comments.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 19450,
+          "footer_null_count": 0,
+          "next_row": 19450,
+          "counts": {
+            "cells_decoded": 19450,
+            "schema_context_candidate": 19450
+          }
+        },
+        {
+          "field_id": "79c966cc03ac57a1f25b0a99",
+          "table_path": "pr_review_comments_v2.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 26868,
+          "footer_null_count": 0,
+          "next_row": 26868,
+          "counts": {
+            "cells_decoded": 26868,
+            "schema_context_candidate": 26868
+          }
+        },
+        {
+          "field_id": "806987a4fee47a3a2c82f23f",
+          "table_path": "pr_reviews.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 28875,
+          "footer_null_count": 1,
+          "next_row": 28875,
+          "counts": {
+            "cells_decoded": 28875,
+            "null": 1,
+            "schema_context_candidate": 28874
+          }
+        },
+        {
+          "field_id": "ffa5fc1272de4b0af9cbec35",
+          "table_path": "pr_timeline.parquet",
+          "column_name": "actor",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 325500,
+          "footer_null_count": 15869,
+          "next_row": 325500,
+          "counts": {
+            "cells_decoded": 325500,
+            "invalid": 13,
+            "null": 15869,
+            "placeholder_or_example": 6,
+            "schema_context_candidate": 309612
+          }
+        },
+        {
+          "field_id": "81610bcc70f899efc1d03cc6",
+          "table_path": "pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "schema_role": "account_reference",
+          "category": "QID",
+          "subtype": "user_identifier",
+          "source_rows": 33596,
+          "footer_null_count": 0,
+          "next_row": 33596,
+          "counts": {
+            "cells_decoded": 33596,
+            "schema_context_candidate": 33596
+          }
+        }
+      ],
+      "quality_count_delta": {
+        "cells_decoded": 1417434,
+        "invalid": 13,
+        "null": 15870,
+        "placeholder_or_example": 10,
+        "schema_context_candidate": 1401541
+      },
+      "unmapped_before": 152,
+      "unmapped_after": 143,
+      "retained_unmapped_rows_equal": true,
+      "old_and_new_run_file_sha256": {
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_context_candidates.jsonl": "d87a8463169b99758563876273059f6113f7090311480dbae56f8396f9bd18db",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_context_review_queue.jsonl": "e862f407d1f58a537e5f4151bc7673797916da520502969cccb712e1afa5055f",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_context_review_queue.csv": "4881e6b17dd8fc67c987c64b33773e8479ca8a0e72d1446b70444590bf4b57e6",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_type_summary.jsonl": "7a7039f8d94b6f513ab10f68debf932e37f174f45fdaadaba452910aaaa3747e",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_type_summary.json": "626ed4a11cf240e252148d8c4fa8b304d84572316eb634972d176848731a64c3",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema.sqlite": "52248915fb6e4b92868e7da080b28463b70cff32b105b93e681ec5c6d95cf127",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_unresolved_fields.csv": "60175ef671efb432c99d33bdbeead065e2cf644f1d78ca67d10fd8f05c870ec5",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/manifest.json": "e48109cb8a01ad5c79f8de2d28ef5fda150b2bdf6aa193b021bd4c52a9cd8665",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_coverage.json": "0100e8ce3f34a2d6c193a912e0b6205c15eb15507966265b283a5019f3fc4789",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_unresolved_fields.jsonl": "433034183ebe4603db81d7e7683204dc2d803a8de4e387add24eb7ec74bc7b9e",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_type_summary.csv": "b3ac1dea6dc41a170dfcf38ea155775aea3bb5c237242d089a7d1843c7050088",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_context_candidates.csv": "4b40673acc38e2f453989a8035e0fb737d6e039ef1a75d4407aade5c0854330a",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_context_candidates.jsonl": "f4ad55433f96bf6cb49ca115bb6b290c57b774af297e5a0331587a51944b68b5",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_context_review_queue.jsonl": "45228692cc11a8e70422303dec16267da4c328e0ed473dd441ba12cbfec14d08",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_context_review_queue.csv": "063589de679cdc6dbe3be545a3487ae6def6846b86bc0fe757851164a4429e7b",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_type_summary.jsonl": "edbeb267f5f6748ed026f441ab054e18e8d6c4ee5f22071a2f5c7d9002dc74b2",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_type_summary.json": "77ec0bcff1a5b64c97ba31a83378baa4a8f824583beb2414b48491ee292f5182",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema.sqlite": "57b3549d58bef159de10762e27824c75e2cf063b1c1e7f56b996409abc409c96",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_unresolved_fields.csv": "9a4560e5558566ba29df2541ddee833f68dd74e07115fdd0624d2be4461de936",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/manifest.json": "5723cd66f1d62b13d92961f752ae3c6fafb646194c66a7158cbf215f41ee3361",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_coverage.json": "1f59f5ca9e5e2c990da22b38c948de10bd2adf7b4ae344f2b2022aafe1c7a8b2",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_unresolved_fields.jsonl": "623684b555c536c4eca81a5e35f2a92a6ef7b582f189e7433a17366783b7e110",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_type_summary.csv": "83ed1ae8692d7840d9ede14cd7d7a430b262a4884e96cc299a5e89fec7ec1cf4",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_context_candidates.csv": "3db1108196c8af23a623f62838c8687af818a7f725e4e14324e609d13d53884f"
+      },
+      "run_artifacts_unchanged": true,
+      "real_cli_execution": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_schema_v046_execution.json",
+      "real_cli_result": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_schema_v046_command.json",
+      "real_cli_matches_coverage": true
+    },
+    {
+      "dataset": "swe-chat",
+      "all_checks_passed": true,
+      "legacy_field_count": 10,
+      "legacy_fields": [
+        {
+          "field_id": "1cabfbaa24bf18932be66dfd",
+          "table_path": "checkpoints.parquet",
+          "column_name": "user_id",
+          "source_rows": 13406,
+          "counts": {
+            "cells_decoded": 13406,
+            "null": 5241,
+            "schema_context_candidate": 8165
+          },
+          "ranges": 3157,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "4f5cef56fe191240275d3da9f76904dbdb097a635bc08320fa33428e55e66e89"
+        },
+        {
+          "field_id": "119479124d650be0de842809",
+          "table_path": "commits.parquet",
+          "column_name": "user_id",
+          "source_rows": 14459,
+          "counts": {
+            "cells_decoded": 14459,
+            "null": 5205,
+            "schema_context_candidate": 9254
+          },
+          "ranges": 451,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "0063baf6f8acc2f80c9b5d62955bd254a17da268024f2ca631acc96eb15c6e64"
+        },
+        {
+          "field_id": "18cfcc58a7f02600a5075c6d",
+          "table_path": "commits.parquet",
+          "column_name": "github_username",
+          "source_rows": 14459,
+          "counts": {
+            "cells_decoded": 14459,
+            "null": 5483,
+            "schema_context_candidate": 8976
+          },
+          "ranges": 521,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "522963983e4603f5568d2661813b7d45debbcf4075f7c7ef4ffa5101d1af8fdf"
+        },
+        {
+          "field_id": "02ac2630129f49634f3df21a",
+          "table_path": "commits.parquet",
+          "column_name": "author_name",
+          "source_rows": 14459,
+          "counts": {
+            "cells_decoded": 14459,
+            "null": 5205,
+            "schema_context_candidate": 9254
+          },
+          "ranges": 451,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "0080e0ce149fa53aa0a334a0cc99244442ef5d3d228abfca75c8998b4a7d727e"
+        },
+        {
+          "field_id": "e9a3f468ed0776756fbd3621",
+          "table_path": "commits.parquet",
+          "column_name": "author_email",
+          "source_rows": 14459,
+          "counts": {
+            "cells_decoded": 14459,
+            "invalid": 100,
+            "null": 5205,
+            "schema_context_candidate": 9154
+          },
+          "ranges": 461,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "dd5ddace89abb8a4e982b527eb0b99926e4fec8e813158fb95d1ee93349fc03f"
+        },
+        {
+          "field_id": "21d965a0069ac6016c9e0624",
+          "table_path": "conversations.parquet",
+          "column_name": "session_id",
+          "source_rows": 2692480,
+          "counts": {
+            "cells_decoded": 2692480,
+            "schema_context_candidate": 2692480
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "a3ea933d1f1c85a38511361ed3b783f35b6ad57dd6220610498ea422018b2f86"
+        },
+        {
+          "field_id": "91b1a57d62961adda34f8059",
+          "table_path": "conversations.parquet",
+          "column_name": "user_id",
+          "source_rows": 2692480,
+          "counts": {
+            "cells_decoded": 2692480,
+            "null": 1192433,
+            "schema_context_candidate": 1500047
+          },
+          "ranges": 1406,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "35ef9bcc9cd03ccb6d8bf4734ade5bbebc4415a57a54de1f4d78e8026688e8d4"
+        },
+        {
+          "field_id": "bed913b6da8f351c05c63c97",
+          "table_path": "session_logs.parquet",
+          "column_name": "session_id",
+          "source_rows": 5851,
+          "counts": {
+            "cells_decoded": 5851,
+            "schema_context_candidate": 5851
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "b561e7c740c551687301fb17706e65894d36abdca228b16b7c394a27aa6b8868"
+        },
+        {
+          "field_id": "a5967131adc7726a1e06240e",
+          "table_path": "sessions.parquet",
+          "column_name": "session_id",
+          "source_rows": 5851,
+          "counts": {
+            "cells_decoded": 5851,
+            "schema_context_candidate": 5851
+          },
+          "ranges": 1,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "b4b0a9c439d40b0f170457df73e47c73a9996cfea9110c748c0fcfeacdcaf548"
+        },
+        {
+          "field_id": "85df387e2f36c82da32efc73",
+          "table_path": "sessions.parquet",
+          "column_name": "user_id",
+          "source_rows": 5851,
+          "counts": {
+            "cells_decoded": 5851,
+            "null": 1943,
+            "schema_context_candidate": 3908
+          },
+          "ranges": 1327,
+          "coverage_equal": true,
+          "db_checkpoint_equal": true,
+          "db_ranges_equal": true,
+          "range_metadata_sha256": "e66334e19e17452f6d042be4966f19210f5bd82b95c7aa27f157ac3cb48a49cc"
+        }
+      ],
+      "projected_legacy_exports": [
+        {
+          "export": "schema_context_candidates",
+          "old_records": 3891,
+          "new_legacy_subset_records": 3891,
+          "all_evidence_fields_equal": true
+        },
+        {
+          "export": "schema_context_review_queue",
+          "old_records": 7777,
+          "new_legacy_subset_records": 7777,
+          "all_evidence_fields_equal": true
+        }
+      ],
+      "newly_mapped_field_count": 0,
+      "newly_mapped_fields": [],
+      "quality_count_delta": {},
+      "unmapped_before": 138,
+      "unmapped_after": 138,
+      "retained_unmapped_rows_equal": true,
+      "old_and_new_run_file_sha256": {
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_context_candidates.jsonl": "2e03535ef84fb468ba94514ee67eaa6f4cc753aaa88cdabc01895173b82df0f6",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_context_review_queue.jsonl": "85eac65a8c2d40d64b080f7826b462f8abf49d04362a31bb2bc57c00cd0d92ce",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_context_review_queue.csv": "bad78a4e9821aa08ac3a49a71c3234df66bdf90604325ac4645d6139dfaa43ec",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_type_summary.jsonl": "475b5a75351145b2af693167752f4ad3d52a5ada746a1aae3f96243dfe07ea52",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_type_summary.json": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema.sqlite": "40cc9b564e67d7c905efa95a9fd356cbe1a268d9deb9959c550542abc9676044",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_unresolved_fields.csv": "ea35ef8c5ff67a78997c7d573639e5017794b868a6101d4a55fd43f8cca2211e",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/manifest.json": "c9659f21acc879a439c9b3cd3dc33e2f4be262972d3aeb24731ba3457cd45eaf",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_coverage.json": "aa0e6beb142c637e964984e07a061af01532b2136242c7daa3f8ebc74b0e2396",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_unresolved_fields.jsonl": "fa087a338745141520b353d355c76a8d5b65f3be432dad4eaa5d9f821d15df0c",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_type_summary.csv": "710ea820dc1c1ec35466a20ec449774c605da36039ca2e04943f941ddd23eada",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_context_candidates.csv": "a7c089f3259397fea7486c9bc4ca418dbd5a28affb40842eebcaa4b0c8040080",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_context_candidates.jsonl": "2e03535ef84fb468ba94514ee67eaa6f4cc753aaa88cdabc01895173b82df0f6",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_context_review_queue.jsonl": "85eac65a8c2d40d64b080f7826b462f8abf49d04362a31bb2bc57c00cd0d92ce",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_context_review_queue.csv": "bad78a4e9821aa08ac3a49a71c3234df66bdf90604325ac4645d6139dfaa43ec",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_type_summary.jsonl": "475b5a75351145b2af693167752f4ad3d52a5ada746a1aae3f96243dfe07ea52",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_type_summary.json": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema.sqlite": "40cc9b564e67d7c905efa95a9fd356cbe1a268d9deb9959c550542abc9676044",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_unresolved_fields.csv": "ea35ef8c5ff67a78997c7d573639e5017794b868a6101d4a55fd43f8cca2211e",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/manifest.json": "6937cbd00fdd6310cf5f153b2156985086ff6ac3c62d4e09fbb3a0fa3bcf6684",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_coverage.json": "f8d3208ff2efe698d16893440ebde8188c399a69341973ca042b0ee39b426074",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_unresolved_fields.jsonl": "fa087a338745141520b353d355c76a8d5b65f3be432dad4eaa5d9f821d15df0c",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_type_summary.csv": "710ea820dc1c1ec35466a20ec449774c605da36039ca2e04943f941ddd23eada",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_context_candidates.csv": "a7c089f3259397fea7486c9bc4ca418dbd5a28affb40842eebcaa4b0c8040080"
+      },
+      "run_artifacts_unchanged": true,
+      "real_cli_execution": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_schema_v046_execution.json",
+      "real_cli_result": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_schema_v046_command.json",
+      "real_cli_matches_coverage": true
+    }
+  ],
+  "totals": {
+    "cells_decoded": 8051286,
+    "schema_context_candidate": 6814554,
+    "placeholder_or_example": 12,
+    "null": 1236607,
+    "invalid": 113
+  },
+  "mapped_fields": 27,
+  "all_scalar_fields": 308,
+  "remaining_unmapped_fields": 281,
+  "count_unit": "Source table/column/row cells; neither distinct source rows nor people, identities, secrets or leaks.",
+  "evidence_boundary": "All 27 selected field roles completed; 281 fields remain semantically unresolved. Old 18 fields and their original observation evidence were preserved exactly. New labels remain low-confidence schema-context candidates with human review pending."
+}

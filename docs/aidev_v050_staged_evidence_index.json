@@ -1,0 +1,22 @@
+{
+  "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/v050_taxonomy_freeze_manifest.json": {
+    "source_path": "/private/tmp/taxonomy_v050_stage/freeze_manifest.json",
+    "sha256": "b6268123373f3eff467b2e58707ee2ec082a79af9fddd8582477d04e8b32b8bd"
+  },
+  "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/v050_taxonomy_taxonomy_detector_v050.patch": {
+    "source_path": "/private/tmp/taxonomy_v050_stage/taxonomy_detector_v050.patch",
+    "sha256": "5c0673fa5a5728100eb705f10a0020214523df8e0f98f0449aff9ea65ca33129"
+  },
+  "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/v050_structured_freeze_manifest.json": {
+    "source_path": "/private/tmp/structured_parent_v050_stage/freeze_manifest.json",
+    "sha256": "69f837d05035d01e47ba73f8afdbc62fd4d4a364d7dc3f319e7af2f920848ef4"
+  },
+  "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/v050_structured_structured_parent_context.patch": {
+    "source_path": "/private/tmp/structured_parent_v050_stage/structured_parent_context.patch",
+    "sha256": "abec1dc142e691a431881f5064a7081cfb6995245c3e52f937c9732bb8fda577"
+  },
+  "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/v050_storage_pytest_execution.json": {
+    "source_path": "/private/tmp/agentlog_v050_storage_stage/pytest_execution.json",
+    "sha256": "8a27954c70870fa45d5357139aa3792908de63cbca5fc57dbbc5346488048f43"
+  }
+}

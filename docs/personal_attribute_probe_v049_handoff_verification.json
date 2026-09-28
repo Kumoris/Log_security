@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-08T23:40:36.637889+00:00",
+  "terminal_session_id": 54881,
+  "actual_exit_code": 0,
+  "all_body_rows_visited": true,
+  "source_module_hash_matches_at_handoff": {
+    "aidev.py": true,
+    "content_scan.py": true,
+    "content_repair.py": true,
+    "content_types.py": true,
+    "taxonomy.py": true
+  },
+  "source_inputs_unchanged_during_probe": true,
+  "evidence_records": 858,
+  "selected_replay_records": 27,
+  "selected_replay_source_cells": 23,
+  "probe_final_fingerprint_before_taxonomy_change": {
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_repair.py": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+  },
+  "execution_record_sha256": "1a8de756e1f6ecc81576ee49025e2ab5fd4f3c81a2eb83dca26e8a14368b4c3d",
+  "report_sha256": "f1fde11a5ab8c960c78e9e3ea4aad74295c64879b3a6b3086386d0fe40eca7e3",
+  "selection_sha256": "46474a6804ddc078b4e13aa0428346a3dd6104e594d094a4a8fd221600bbae73",
+  "all_checks_passed": true
+}

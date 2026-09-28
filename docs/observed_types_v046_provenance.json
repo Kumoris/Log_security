@@ -1,0 +1,1047 @@
+{
+  "recorded_utc": "2026-09-08T22:41:39.677533+00:00",
+  "taxonomy_version": "1.0.0",
+  "catalog_subtypes": 42,
+  "catalog_source": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+  "row_count": 462,
+  "sources": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-full-v5",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "swe-chat",
+      "source_run": "swechat-full-v5",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-anchors-v3",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-prior-cache-v042",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-expansion-v043-final",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "swe-chat",
+      "source_run": "csharp-swechat-v043-final",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-expansion-v044",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz",
+      "sha256": "0947265dc4656e9703c7b1d712e6d779a547d56aedb403c7047904559c57a72c",
+      "dataset": "aidev",
+      "source_run": "aidev-v046",
+      "observation_scope": "dataset_text_reconciled",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "manifest_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/manifest.json",
+      "manifest_sha256": "99a986e6ec0d1f3151920f1edcc7aa19f00b23f213280bf04afae99a1746bc92",
+      "coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_coverage.json",
+      "coverage_sha256": "e7d8c36ef65d01afe66ebe5429a7d4ff759f8ddaff3f8298316b5ac6f260b296",
+      "parent_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044",
+      "repair_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045-final",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_file_hashes_verified_by_reconciler": {
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_repository.parquet": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_user.parquet": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pr_task_type.parquet": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pull_request.parquet": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/issue.parquet": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_comments.parquet": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commit_details.parquet": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commits.parquet": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments.parquet": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments_v2.parquet": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_reviews.parquet": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_task_type.parquet": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_timeline.parquet": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pull_request.parquet": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/related_issue.parquet": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/repository.parquet": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/user.parquet": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+      },
+      "implementation_sha256": "130d8c6a4769ed5f84d051b20756f41414e8a4c5a5b181d42a63693419ae10b1",
+      "source_snapshot_counts": {
+        "candidate_identities": 1479597,
+        "candidate_occurrence_variants": 1479597,
+        "excluded_identities": 11871,
+        "excluded_occurrence_variants": 11871,
+        "unknown_type_review_cells": 17362345,
+        "unknown_type_review_export_records": 1114843,
+        "parent_all_selected_text_rows_visited": true,
+        "repair_cell_status_counts": {
+          "complete_with_semantic_gaps": 1
+        },
+        "repair_data_gap_records": 0
+      },
+      "identity_unit": "frozen source cell + Unicode span + rule + category + subtype",
+      "variant_unit": "logical identity + complete classifier details and exclusion state"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_type_summary.json",
+      "sha256": "77ec0bcff1a5b64c97ba31a83378baa4a8f824583beb2414b48491ee292f5182",
+      "dataset": "aidev",
+      "source_run": "aidev-v046",
+      "observation_scope": "dataset_schema_context",
+      "count_unit": "candidate_source_cell",
+      "coverage_status": "complete_with_schema_gaps",
+      "candidate_status_count_unit": "candidate_source_cell",
+      "manifest_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/manifest.json",
+      "manifest_sha256": "5723cd66f1d62b13d92961f752ae3c6fafb646194c66a7158cbf215f41ee3361",
+      "coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_coverage.json",
+      "coverage_sha256": "1f59f5ca9e5e2c990da22b38c948de10bd2adf7b4ae344f2b2022aafe1c7a8b2",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "implementation_source_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+        "schema_scan.py": "9915a94da971aaf66c6edd01300d9e98db4bb548fdf6b7ace771190073b76502",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+      },
+      "frozen_source_inputs": [
+        {
+          "bytes": 330776130,
+          "path": "all_pull_request.parquet",
+          "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+        },
+        {
+          "bytes": 6136253,
+          "path": "all_repository.parquet",
+          "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+        },
+        {
+          "bytes": 2511706,
+          "path": "all_user.parquet",
+          "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+        },
+        {
+          "bytes": 715969,
+          "path": "human_pr_task_type.parquet",
+          "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+        },
+        {
+          "bytes": 4387171,
+          "path": "human_pull_request.parquet",
+          "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+        },
+        {
+          "bytes": 3222463,
+          "path": "issue.parquet",
+          "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+        },
+        {
+          "bytes": 25857243,
+          "path": "pr_comments.parquet",
+          "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+        },
+        {
+          "bytes": 485214032,
+          "path": "pr_commit_details.parquet",
+          "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+        },
+        {
+          "bytes": 8314097,
+          "path": "pr_commits.parquet",
+          "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+        },
+        {
+          "bytes": 14728130,
+          "path": "pr_review_comments.parquet",
+          "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+        },
+        {
+          "bytes": 21125785,
+          "path": "pr_review_comments_v2.parquet",
+          "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+        },
+        {
+          "bytes": 7517041,
+          "path": "pr_reviews.parquet",
+          "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+        },
+        {
+          "bytes": 2993264,
+          "path": "pr_task_type.parquet",
+          "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+        },
+        {
+          "bytes": 34108415,
+          "path": "pr_timeline.parquet",
+          "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+        },
+        {
+          "bytes": 16855612,
+          "path": "pull_request.parquet",
+          "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+        },
+        {
+          "bytes": 75579,
+          "path": "related_issue.parquet",
+          "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+        },
+        {
+          "bytes": 167251,
+          "path": "repository.parquet",
+          "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+        },
+        {
+          "bytes": 68935,
+          "path": "user.parquet",
+          "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+        }
+      ],
+      "source_snapshot_counts": {
+        "all_fields": 160,
+        "selected_fields": 17,
+        "unresolved_field_records": 143,
+        "counts": {
+          "cells_decoded": 2577531,
+          "invalid": 13,
+          "null": 15892,
+          "placeholder_or_example": 12,
+          "schema_context_candidate": 2561614
+        }
+      }
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/merged_type_summary.jsonl.gz",
+      "sha256": "f19e946d43769c9664798eebf2e5d9ddd93472aaa12276f42c7e044f7df86505",
+      "dataset": "swe-chat",
+      "source_run": "swechat-v046",
+      "observation_scope": "dataset_text_reconciled",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "manifest_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/manifest.json",
+      "manifest_sha256": "aca9eee5768013c38aed20a38968f21a06787c71012e287cde6c1d509cb5b89b",
+      "coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/merged_coverage.json",
+      "coverage_sha256": "ea061ba5adb7b2517816594678b7346e8e4b18ee7864b1142ccc6733d7bea85b",
+      "parent_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v046",
+      "repair_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/swechat-v045-final",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "source_file_hashes_verified_by_reconciler": {
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/checkpoints.parquet": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/commits.parquet": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/conversations.parquet": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/repositories.parquet": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/session_logs.parquet": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/sessions.parquet": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95"
+      },
+      "implementation_sha256": "130d8c6a4769ed5f84d051b20756f41414e8a4c5a5b181d42a63693419ae10b1",
+      "source_snapshot_counts": {
+        "candidate_identities": 4181859,
+        "candidate_occurrence_variants": 4181859,
+        "excluded_identities": 44653,
+        "excluded_occurrence_variants": 44653,
+        "unknown_type_review_cells": 8303039,
+        "unknown_type_review_export_records": 1213296,
+        "parent_all_selected_text_rows_visited": false,
+        "repair_cell_status_counts": {
+          "complete_with_semantic_gaps": 567
+        },
+        "repair_data_gap_records": 1
+      },
+      "identity_unit": "frozen source cell + Unicode span + rule + category + subtype",
+      "variant_unit": "logical identity + complete classifier details and exclusion state"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_type_summary.json",
+      "sha256": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+      "dataset": "swe-chat",
+      "source_run": "swechat-v046",
+      "observation_scope": "dataset_schema_context",
+      "count_unit": "candidate_source_cell",
+      "coverage_status": "complete_with_schema_gaps",
+      "candidate_status_count_unit": "candidate_source_cell",
+      "manifest_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/manifest.json",
+      "manifest_sha256": "6937cbd00fdd6310cf5f153b2156985086ff6ac3c62d4e09fbb3a0fa3bcf6684",
+      "coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_coverage.json",
+      "coverage_sha256": "f8d3208ff2efe698d16893440ebde8188c399a69341973ca042b0ee39b426074",
+      "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+      "implementation_source_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+        "schema_scan.py": "9915a94da971aaf66c6edd01300d9e98db4bb548fdf6b7ace771190073b76502",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+      },
+      "frozen_source_inputs": [
+        {
+          "bytes": 5564169,
+          "path": "checkpoints.parquet",
+          "sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3"
+        },
+        {
+          "bytes": 1082547262,
+          "path": "commits.parquet",
+          "sha256": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f"
+        },
+        {
+          "bytes": 1311422253,
+          "path": "conversations.parquet",
+          "sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36"
+        },
+        {
+          "bytes": 244741,
+          "path": "repositories.parquet",
+          "sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52"
+        },
+        {
+          "bytes": 6369801,
+          "path": "session_logs.parquet",
+          "sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521"
+        },
+        {
+          "bytes": 1997377,
+          "path": "sessions.parquet",
+          "sha256": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95"
+        }
+      ],
+      "source_snapshot_counts": {
+        "all_fields": 148,
+        "selected_fields": 10,
+        "unresolved_field_records": 138,
+        "counts": {
+          "cells_decoded": 5473755,
+          "invalid": 100,
+          "null": 1220715,
+          "schema_context_candidate": 4252940
+        }
+      }
+    }
+  ],
+  "input_summary_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v045.csv": "d417bbe619fde3dbabc7c66b581b90d44077a23ab23a835d8d9c5e92c5c57b0b",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v045.jsonl": "4cb1bd2909148dbdd9c9314b1e3e5a013353f0717b33d78b0ff5ad5ae7054e17",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v045_provenance.json": "2a4a1d4188f9ebdd31cf5baed38810eb8445f6aaf1fa54c714cafa8a4c63a5e9",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/manifest.json": "99a986e6ec0d1f3151920f1edcc7aa19f00b23f213280bf04afae99a1746bc92",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_coverage.json": "e7d8c36ef65d01afe66ebe5429a7d4ff759f8ddaff3f8298316b5ac6f260b296",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz": "0947265dc4656e9703c7b1d712e6d779a547d56aedb403c7047904559c57a72c",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/manifest.json": "5723cd66f1d62b13d92961f752ae3c6fafb646194c66a7158cbf215f41ee3361",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_coverage.json": "1f59f5ca9e5e2c990da22b38c948de10bd2adf7b4ae344f2b2022aafe1c7a8b2",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v046/schema_type_summary.json": "77ec0bcff1a5b64c97ba31a83378baa4a8f824583beb2414b48491ee292f5182",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/manifest.json": "aca9eee5768013c38aed20a38968f21a06787c71012e287cde6c1d509cb5b89b",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/merged_coverage.json": "ea061ba5adb7b2517816594678b7346e8e4b18ee7864b1142ccc6733d7bea85b",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/merged_type_summary.jsonl.gz": "f19e946d43769c9664798eebf2e5d9ddd93472aaa12276f42c7e044f7df86505",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/manifest.json": "6937cbd00fdd6310cf5f153b2156985086ff6ac3c62d4e09fbb3a0fa3bcf6684",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_coverage.json": "f8d3208ff2efe698d16893440ebde8188c399a69341973ca042b0ee39b426074",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v046/schema_type_summary.json": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044/content_type_summary.json": "14ec1ec16ac1eb256208319947f9319cfe793869a3328f5c92fe99a0311b11ba",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_type_summary.json": "626ed4a11cf240e252148d8c4fa8b304d84572316eb634972d176848731a64c3",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045-final/scan/repair_type_summary.jsonl": "e5bfc76e2a8df31cae5965686191157aef2f27ecef2e74e31743878d09429a69",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_type_summary.json": "341eac967299a2c8273c60b3f1b21b9429ef217f3c1e80c2aa3c7815b968084f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_type_summary.json": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/swechat-v045-final/scan/repair_type_summary.jsonl": "47790a6229fa196405f48efe13fee3af779423bd5d620160d3e25cfcffe68b00"
+  },
+  "observed_type_sets_by_scope": {
+    "dataset_commit_changes": [
+      [
+        "AUTH",
+        "access_token"
+      ],
+      [
+        "AUTH",
+        "api_key"
+      ],
+      [
+        "AUTH",
+        "credential_bundle"
+      ],
+      [
+        "AUTH",
+        "password"
+      ],
+      [
+        "BIZ",
+        "business_object"
+      ],
+      [
+        "BIZ",
+        "document_content"
+      ],
+      [
+        "BIZ",
+        "http_headers"
+      ],
+      [
+        "BIZ",
+        "message_content"
+      ],
+      [
+        "BIZ",
+        "request_body"
+      ],
+      [
+        "BIZ",
+        "response_body"
+      ],
+      [
+        "BIZ",
+        "unclassified_content"
+      ],
+      [
+        "BIZ",
+        "unclassified_object"
+      ],
+      [
+        "CFG",
+        "database_connection"
+      ],
+      [
+        "CFG",
+        "deployment_configuration"
+      ],
+      [
+        "CFG",
+        "environment"
+      ],
+      [
+        "CFG",
+        "filesystem_path"
+      ],
+      [
+        "DIAG",
+        "exception_message"
+      ],
+      [
+        "DIAG",
+        "stack_trace"
+      ],
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "PII",
+        "postal_address"
+      ],
+      [
+        "QID",
+        "device_identifier"
+      ],
+      [
+        "QID",
+        "network_identifier"
+      ],
+      [
+        "QID",
+        "request_identifier"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "transaction_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ],
+    "dataset_schema_context": [
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ],
+    "dataset_text_reconciled": [
+      [
+        "AUTH",
+        "access_token"
+      ],
+      [
+        "AUTH",
+        "api_key"
+      ],
+      [
+        "AUTH",
+        "auth_cookie"
+      ],
+      [
+        "AUTH",
+        "authorization_header"
+      ],
+      [
+        "AUTH",
+        "credential_bundle"
+      ],
+      [
+        "AUTH",
+        "password"
+      ],
+      [
+        "AUTH",
+        "private_key"
+      ],
+      [
+        "BIZ",
+        "business_object"
+      ],
+      [
+        "BIZ",
+        "document_content"
+      ],
+      [
+        "BIZ",
+        "http_headers"
+      ],
+      [
+        "BIZ",
+        "message_content"
+      ],
+      [
+        "BIZ",
+        "request_body"
+      ],
+      [
+        "BIZ",
+        "response_body"
+      ],
+      [
+        "CFG",
+        "database_connection"
+      ],
+      [
+        "CFG",
+        "deployment_configuration"
+      ],
+      [
+        "CFG",
+        "environment"
+      ],
+      [
+        "CFG",
+        "filesystem_path"
+      ],
+      [
+        "CFG",
+        "internal_endpoint"
+      ],
+      [
+        "DIAG",
+        "exception_message"
+      ],
+      [
+        "DIAG",
+        "failure_response"
+      ],
+      [
+        "DIAG",
+        "stack_trace"
+      ],
+      [
+        "PII",
+        "biometric"
+      ],
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "financial"
+      ],
+      [
+        "PII",
+        "government_identifier"
+      ],
+      [
+        "PII",
+        "medical"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "PII",
+        "phone"
+      ],
+      [
+        "PII",
+        "postal_address"
+      ],
+      [
+        "PII",
+        "precise_location"
+      ],
+      [
+        "QID",
+        "device_identifier"
+      ],
+      [
+        "QID",
+        "network_identifier"
+      ],
+      [
+        "QID",
+        "request_identifier"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "tenant_identifier"
+      ],
+      [
+        "QID",
+        "transaction_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ]
+  },
+  "observed_catalog_type_union": [
+    [
+      "AUTH",
+      "access_token"
+    ],
+    [
+      "AUTH",
+      "api_key"
+    ],
+    [
+      "AUTH",
+      "auth_cookie"
+    ],
+    [
+      "AUTH",
+      "authorization_header"
+    ],
+    [
+      "AUTH",
+      "credential_bundle"
+    ],
+    [
+      "AUTH",
+      "password"
+    ],
+    [
+      "AUTH",
+      "private_key"
+    ],
+    [
+      "BIZ",
+      "business_object"
+    ],
+    [
+      "BIZ",
+      "document_content"
+    ],
+    [
+      "BIZ",
+      "http_headers"
+    ],
+    [
+      "BIZ",
+      "message_content"
+    ],
+    [
+      "BIZ",
+      "request_body"
+    ],
+    [
+      "BIZ",
+      "response_body"
+    ],
+    [
+      "BIZ",
+      "unclassified_content"
+    ],
+    [
+      "BIZ",
+      "unclassified_object"
+    ],
+    [
+      "CFG",
+      "database_connection"
+    ],
+    [
+      "CFG",
+      "deployment_configuration"
+    ],
+    [
+      "CFG",
+      "environment"
+    ],
+    [
+      "CFG",
+      "filesystem_path"
+    ],
+    [
+      "CFG",
+      "internal_endpoint"
+    ],
+    [
+      "DIAG",
+      "exception_message"
+    ],
+    [
+      "DIAG",
+      "failure_response"
+    ],
+    [
+      "DIAG",
+      "stack_trace"
+    ],
+    [
+      "PII",
+      "biometric"
+    ],
+    [
+      "PII",
+      "email"
+    ],
+    [
+      "PII",
+      "financial"
+    ],
+    [
+      "PII",
+      "government_identifier"
+    ],
+    [
+      "PII",
+      "medical"
+    ],
+    [
+      "PII",
+      "person_name"
+    ],
+    [
+      "PII",
+      "phone"
+    ],
+    [
+      "PII",
+      "postal_address"
+    ],
+    [
+      "PII",
+      "precise_location"
+    ],
+    [
+      "QID",
+      "device_identifier"
+    ],
+    [
+      "QID",
+      "network_identifier"
+    ],
+    [
+      "QID",
+      "request_identifier"
+    ],
+    [
+      "QID",
+      "session_identifier"
+    ],
+    [
+      "QID",
+      "tenant_identifier"
+    ],
+    [
+      "QID",
+      "transaction_identifier"
+    ],
+    [
+      "QID",
+      "user_identifier"
+    ]
+  ],
+  "observed_catalog_type_union_count": 39,
+  "candidate_records_outside_catalog_rows": [
+    {
+      "observation_scope": "dataset_text_reconciled",
+      "dataset": "aidev",
+      "source_run": "aidev-v046",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "category": null,
+      "subtype": null,
+      "subtype_label": "目录外／细类待定",
+      "catalog_membership": "outside_catalog",
+      "count_within_processed_scope": 3243,
+      "observed_within_processed_scope": true,
+      "candidate_variant_count": 3243,
+      "candidate_status_counts": {
+        "identifier_reference": 2854,
+        "unknown_named_value": 389
+      },
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "distinct_candidate_cells": 2312,
+      "human_review_status": "pending",
+      "runtime_confirmed": false,
+      "new_type_status": "not_established",
+      "full_dataset_coverage_claim": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz",
+      "source_sha256": "0947265dc4656e9703c7b1d712e6d779a547d56aedb403c7047904559c57a72c"
+    },
+    {
+      "observation_scope": "dataset_text_reconciled",
+      "dataset": "swe-chat",
+      "source_run": "swechat-v046",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "category": null,
+      "subtype": null,
+      "subtype_label": "目录外／细类待定",
+      "catalog_membership": "outside_catalog",
+      "count_within_processed_scope": 1402,
+      "observed_within_processed_scope": true,
+      "candidate_variant_count": 1402,
+      "candidate_status_counts": {
+        "identifier_reference": 849,
+        "unknown_named_value": 553
+      },
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "distinct_candidate_cells": 695,
+      "human_review_status": "pending",
+      "runtime_confirmed": false,
+      "new_type_status": "not_established",
+      "full_dataset_coverage_claim": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/swechat-v046/merged_type_summary.jsonl.gz",
+      "source_sha256": "f19e946d43769c9664798eebf2e5d9ddd93472aaa12276f42c7e044f7df86505"
+    }
+  ],
+  "outside_catalog_count_unit_note": "Same per-source count units as the main grid; never sum these counts across scopes.",
+  "counts_additive_across_scopes_or_runs": false,
+  "parent_and_repair_counts_added": false,
+  "parent_repair_reconciliation_performed": true,
+  "parent_repair_individual_scopes_counted_in_label_union": false,
+  "candidate_status_counts_unit_note": "Reconciled rows use evidence variants; count_within_processed_scope uses logical identities. These differ when conflicting details are preserved. Schema rows count source cells. Historical log statuses are unavailable.",
+  "observed_definition": "At least one non-example candidate in that source processed scope; static label evidence only.",
+  "zero_means": "No recorded non-example candidate in that processed source scope; not absence in the complete dataset.",
+  "historical_v045_recorded_utc": "2026-09-08T21:49:06.788356+00:00",
+  "historical_v045_files_preserved": true,
+  "historical_sources_as_of_build": [
+    {
+      "source_run": "aidev-full-v5",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "swechat-full-v5",
+      "original_dataset_label": "swe-chat",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-anchors-v3",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-prior-cache-v042",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-expansion-v043-final",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "csharp-swechat-v043-final",
+      "original_dataset_label": "swe-chat",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-expansion-v044",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_commit_changes",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "v045_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "current_source_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-v044",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_text_cells",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044/content_type_summary.json",
+      "v045_source_sha256": "14ec1ec16ac1eb256208319947f9319cfe793869a3328f5c92fe99a0311b11ba",
+      "current_source_sha256": "14ec1ec16ac1eb256208319947f9319cfe793869a3328f5c92fe99a0311b11ba",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-v045",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_schema_context",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_type_summary.json",
+      "v045_source_sha256": "626ed4a11cf240e252148d8c4fa8b304d84572316eb634972d176848731a64c3",
+      "current_source_sha256": "626ed4a11cf240e252148d8c4fa8b304d84572316eb634972d176848731a64c3",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "aidev-v045-final",
+      "original_dataset_label": "aidev",
+      "observation_scope": "dataset_text_cell_rescan",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045-final/scan/repair_type_summary.jsonl",
+      "v045_source_sha256": "e5bfc76e2a8df31cae5965686191157aef2f27ecef2e74e31743878d09429a69",
+      "current_source_sha256": "e5bfc76e2a8df31cae5965686191157aef2f27ecef2e74e31743878d09429a69",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "swechat-v044",
+      "original_dataset_label": "swechat",
+      "observation_scope": "dataset_text_cells",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_type_summary.json",
+      "v045_source_sha256": "341eac967299a2c8273c60b3f1b21b9429ef217f3c1e80c2aa3c7815b968084f",
+      "current_source_sha256": "341eac967299a2c8273c60b3f1b21b9429ef217f3c1e80c2aa3c7815b968084f",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "swechat-v045",
+      "original_dataset_label": "swechat",
+      "observation_scope": "dataset_schema_context",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_type_summary.json",
+      "v045_source_sha256": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+      "current_source_sha256": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+      "state": "still_matches_v045_snapshot",
+      "historical_observations_recomputed": false
+    },
+    {
+      "source_run": "swechat-v045-final",
+      "original_dataset_label": "swechat",
+      "observation_scope": "dataset_text_cell_rescan",
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/swechat-v045-final/scan/repair_type_summary.jsonl",
+      "v045_source_sha256": "b5c463b93a7fc1bb530d721e53fe0c9ad37a46f0816d44048e7f1344d3315565",
+      "current_source_sha256": "47790a6229fa196405f48efe13fee3af779423bd5d620160d3e25cfcffe68b00",
+      "state": "mutable_source_differs_from_v045_snapshot",
+      "historical_observations_recomputed": false
+    }
+  ],
+  "unknown_queue_exhausted": false,
+  "full_dataset_coverage_claim": false,
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "application_log_provenance": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v044_provenance.json",
+  "source_bodies_or_shared_databases_read": false,
+  "original_values_or_value_hashes_exported": false,
+  "raw_source_hashes_recomputed": false,
+  "frozen_source_hash_evidence_origin": "Copied from terminal reconciliation/schema manifests; this inventory only rehashes small metadata summaries.",
+  "builder_sha256": "fbed31799e12277ec881150ad16cf1b581c45f18116100e530dda68ae0f5c0c1",
+  "output_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v046.csv": "155e9c6df122253a1070fa459cc51ff8334b4990b9a6937e49651bdedc740c45",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v046.jsonl": "59c4c70dd3d3fa2f83e52603996684ec79cda73eb3fa32cdf9946abc45456882",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v046_outside_catalog.csv": "a573db7fc5ea311617bdc6aee05c93658892d00bb6fd3c65529af0a6fe1513cb",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_types_v046_outside_catalog.jsonl": "f9aadbfa7394005000cf8e1156e9aadf478f0cd6cae5aade2f69e0d82699e5b3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "batch-mine",
+    "--output",
+    "agentlog_unified/batches/aidev-full-v5",
+    "--cache-dir",
+    "agentlog_unified/cache/object-repos",
+    "--offline",
+    "--max-seconds",
+    "300",
+    "--resume"
+  ],
+  "started_at": "2026-09-08T20:08:14.164065+00:00",
+  "finished_at": "2026-09-08T20:13:40.859301+00:00",
+  "elapsed_seconds": 326.6960283340013,
+  "exit_code": 2,
+  "stderr_bytes": 0
+}

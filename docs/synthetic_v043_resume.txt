@@ -1,0 +1,1 @@
+{"run_id": "synthetic-v043", "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/synthetic-v043", "exit_code": 0, "coverage_gap_records": 0}

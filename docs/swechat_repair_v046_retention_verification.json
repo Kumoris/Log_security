@@ -1,0 +1,16 @@
+{
+  "before_candidates": 443609,
+  "after_candidates": 904361,
+  "exact_prior_metadata_rows_retained": 443609,
+  "missing_prior_rows": 0,
+  "changed_prior_rows": 0,
+  "new_candidate_ids": 460752,
+  "all_checks_passed": true,
+  "elapsed_seconds": 3.834,
+  "baseline_sha256": "610f1f3d58f20c0260cb3012aa8625ecee76b3db1eed3621a34237b2f4c20778",
+  "final_jsonl_sha256": "6e62f5366c8e10a09c915183b99f1a2727cf2fe3806bff98656f4c0f2c0b2f67",
+  "scope": "dataset_text_cell_rescan",
+  "source_values_read": false,
+  "credential_values_verified": false,
+  "new_type_status": "not_established"
+}

@@ -1,0 +1,32 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "agentlog_unified/tests/test_structured_scan.py",
+    "agentlog_unified/tests/test_structured_types.py",
+    "-q"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:18:19.658479+00:00",
+  "ended_utc": "2026-09-08T23:18:20.839290+00:00",
+  "exit_code": 0,
+  "stdout": "...................................................................      [100%]\n67 passed in 1.07s\n",
+  "stderr": "",
+  "source_before": {
+    "agentlog_unified/src/agentlog_unified/structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+    "agentlog_unified/src/agentlog_unified/structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+    "agentlog_unified/src/agentlog_unified/cli.py": "589a37347212ecfe7ebe3f2118535e7ba9f27f363a70c814c087a8da40b5a15d",
+    "agentlog_unified/tests/test_structured_scan.py": "8c38dd31730f66a4fc6778cb5aa9ffe0b7b2e1a9a495c52776adab4ea9490a02",
+    "agentlog_unified/tests/test_structured_types.py": "c8bb0d7cda2ad4d1c9672923c9f3a49729a701600b5f2ccbcf5f8b0a9601f1f4"
+  },
+  "source_after": {
+    "agentlog_unified/src/agentlog_unified/structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+    "agentlog_unified/src/agentlog_unified/structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+    "agentlog_unified/src/agentlog_unified/cli.py": "589a37347212ecfe7ebe3f2118535e7ba9f27f363a70c814c087a8da40b5a15d",
+    "agentlog_unified/tests/test_structured_scan.py": "8c38dd31730f66a4fc6778cb5aa9ffe0b7b2e1a9a495c52776adab4ea9490a02",
+    "agentlog_unified/tests/test_structured_types.py": "c8bb0d7cda2ad4d1c9672923c9f3a49729a701600b5f2ccbcf5f8b0a9601f1f4"
+  },
+  "source_unchanged": true,
+  "real_dataset_scan_run": false
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_structured_v048.py",
+    "--self-test"
+  ],
+  "started_utc": "2026-09-08T23:24:35.713445+00:00",
+  "completed_utc": "2026-09-08T23:24:35.761246+00:00",
+  "elapsed_seconds": 0.047820208987104706,
+  "exit_code": 0,
+  "stdout": "{\"self_test\": \"passed\", \"checks\": 6, \"real_snapshot_read\": false}\n",
+  "stderr": "",
+  "helper_sha256": "5840701c6a637b0aea7a465605b8c2c325b7c89bf03da2a564be1f7b1454fc34",
+  "active_snapshot_accessed": false
+}

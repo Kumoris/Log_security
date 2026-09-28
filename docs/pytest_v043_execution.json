@@ -1,0 +1,13 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "agentlog_unified/tests",
+    "-q"
+  ],
+  "started_at": "2026-09-08T20:28:13.045005+00:00",
+  "finished_at": "2026-09-08T20:28:41.343496+00:00",
+  "elapsed_seconds": 28.29850770899793,
+  "exit_code": 1
+}

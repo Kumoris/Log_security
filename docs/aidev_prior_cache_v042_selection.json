@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-09-08T20:17:55.058826+00:00",
+  "selection_reason": "Recover every previously PyDriller-read AIDev v3/v4 commit unavailable in main-v5 using an existing local historical cache; no log or sensitive keyword selection.",
+  "source_sqlite": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v3/batch.sqlite",
+  "source_sqlite_sha256": "de28374212ac017fdece1645c650029adc00ce0a5082233697deb983b6c3eb98",
+  "comparison_source": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v042_expansion_comparison.json",
+  "comparison_sha256": "93894b574737f12034d8ebb86e5726e9b417773be1991daf915d0749d72ef581",
+  "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-prior-cache-v042.jsonl",
+  "output_sha256": "7d4aa1db4619f974f38d6e92ad0dd36d16d9f6bf94f501cd248826e6613ae57c",
+  "context_rows": 8,
+  "unique_repository_sha_pairs": 8,
+  "local_repo_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/repos/osori__korean-romanizer",
+  "local_cache_commit_object_checks": {
+    "method": "git cat-file -e exact_sha^{commit}; GIT_NO_LAZY_FETCH=1",
+    "all_eight_present": true
+  },
+  "only_added_input_field": "local_repo_path",
+  "original_context_fields_preserved": true,
+  "source_context_ids": [
+    "d40d856426dcbf9e0290e7f1",
+    "9e23e29fca75ee058df23fe5",
+    "0150e730d211f7153ba00aa5",
+    "03cf468d9d678e62176b980b",
+    "e498a553e15a4dcd60e68de6",
+    "24a78b409a72f385e815b88d",
+    "b59da5d531aeaa108b8e08c7",
+    "4c890b1fb8de875670a5937f"
+  ],
+  "selected_commits": [
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "371aa07936d3808ad4646768763987ce9a51404f"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "862af079d75c6762617a2cbf93eb36277c17fb95"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "ab8de7bbbbb6d9eb5b74dabde965e2c51f2d9223"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "d4d1fa487f55f916ae9e94eae4e5bb4fc56c0079"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "d552c5320c8adac961ab65c320b7ae8626157a02"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "d5661c26948c2ba9ea88e6e8cea306e2651ef8a9"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "ecbca86f98171f75169cfd9cb7153143c06fd0c0"
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "f7da7702f6c2007d3e043cb8c46369883ddc012f"
+    }
+  ],
+  "source_snapshot_values": [
+    "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f"
+  ]
+}

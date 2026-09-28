@@ -1,0 +1,7 @@
+{"verified_export_group": "structured_documents", "rows": 49669}
+{"verified_export_group": "structured_type_occurrences", "rows": 1180}
+{"verified_export_group": "structured_excluded", "rows": 57}
+{"verified_export_group": "structured_data_gaps", "rows": 44289}
+{"verified_export_group": "structured_unknown_type_review_queue", "rows": 570513}
+{"verified_export_group": "structured_type_summary", "rows": 50}
+{"report": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/aidev_structured_v050_verification_attempt02.json", "passed": 83, "total": 83, "all_source_rows_visited": true, "processed_rows": 2456073, "processed_nonempty_cells": 17362345}

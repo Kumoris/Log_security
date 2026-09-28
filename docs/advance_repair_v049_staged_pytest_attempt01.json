@@ -1,0 +1,18 @@
+{
+  "session_id": 84747,
+  "exit_code": 1,
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests/test_advance_repair_integration.py",
+    "tests/test_content_repair.py",
+    "tests/test_content_reconcile.py",
+    "tests/test_content_advance.py",
+    "-q"
+  ],
+  "passed": 74,
+  "failed": 1,
+  "pytest_seconds": 5.15,
+  "failure": "Existing advance ancestry test used a manually fabricated manifest lacking checkpoint_identity; staged test now invokes genuine advance_content instead."
+}

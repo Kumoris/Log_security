@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-09-08T21:50:46.137714+00:00",
+  "checks": {
+    "final_package_matches_tested_source": true,
+    "old_interrupted_imports_absent": true,
+    "papers_directory_present": true,
+    "aidev_repair_export_verification_passed": true,
+    "swechat_repair_export_verification_passed": true,
+    "local_markdown_links_resolve": true,
+    "type_summary_source_hashes_match": true,
+    "cross_scope_inventory_546_records": true,
+    "inventory_csv_jsonl_match": true,
+    "type_union39_scope_counts_match": true
+  },
+  "all_checks_passed": true,
+  "missing_links": [],
+  "source_values_decoded": false,
+  "source_files_modified": false,
+  "readme_and_report_edits_only_since_final_tests": true,
+  "candidate_occurrences_outside_catalog_rows": {
+    "aidev:dataset_text_cells": 3243,
+    "aidev:dataset_text_cell_rescan": 0,
+    "swechat:dataset_text_cells": 499,
+    "swechat:dataset_text_cell_rescan": 15
+  }
+}

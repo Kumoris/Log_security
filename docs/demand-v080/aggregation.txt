@@ -1,0 +1,243 @@
+{
+  "cohort_groups": {
+    "all_real": {
+      "denominator": 12,
+      "A_supported": 0,
+      "B_supported": 2,
+      "C_supported": 3,
+      "C_sensitive_supported_mapped": 2,
+      "C_semantics_ambiguous_or_failed": 9,
+      "new_supported_C_vs_B": 1,
+      "lost_supported_C_vs_B": 0,
+      "C_reviewer_changed_cases": 3,
+      "C_semantic_granularity": {
+        "structural": 5,
+        "nominal_type": 5,
+        "business_meaning": 1,
+        "unknown": 1
+      },
+      "C_log_relation": {
+        "possible": 2,
+        "selected_field": 3,
+        "direct_original": 4,
+        "derived_count": 3
+      },
+      "C_sensitive_type_states": {
+        "unknown": 5,
+        "unmapped": 1,
+        "mapped": 4,
+        "non_sensitive": 2
+      },
+      "C_privacy_risk": {
+        "no_current_risk_evidence": 4,
+        "undetermined": 8
+      }
+    },
+    "development": {
+      "denominator": 4,
+      "A_supported": 0,
+      "B_supported": 2,
+      "C_supported": 2,
+      "C_sensitive_supported_mapped": 2,
+      "C_semantics_ambiguous_or_failed": 2,
+      "new_supported_C_vs_B": 0,
+      "lost_supported_C_vs_B": 0,
+      "C_reviewer_changed_cases": 1,
+      "C_semantic_granularity": {
+        "nominal_type": 1,
+        "unknown": 1,
+        "structural": 2
+      },
+      "C_log_relation": {
+        "selected_field": 1,
+        "direct_original": 1,
+        "possible": 1,
+        "derived_count": 1
+      },
+      "C_sensitive_type_states": {
+        "mapped": 3,
+        "non_sensitive": 1
+      },
+      "C_privacy_risk": {
+        "undetermined": 3,
+        "no_current_risk_evidence": 1
+      }
+    },
+    "frozen_evaluation_pending_human": {
+      "denominator": 7,
+      "A_supported": 0,
+      "B_supported": 0,
+      "C_supported": 1,
+      "C_sensitive_supported_mapped": 0,
+      "C_semantics_ambiguous_or_failed": 6,
+      "new_supported_C_vs_B": 1,
+      "lost_supported_C_vs_B": 0,
+      "C_reviewer_changed_cases": 1,
+      "C_semantic_granularity": {
+        "nominal_type": 4,
+        "business_meaning": 1,
+        "structural": 2
+      },
+      "C_log_relation": {
+        "selected_field": 2,
+        "direct_original": 3,
+        "derived_count": 2
+      },
+      "C_sensitive_type_states": {
+        "unmapped": 1,
+        "unknown": 4,
+        "mapped": 1,
+        "non_sensitive": 1
+      },
+      "C_privacy_risk": {
+        "undetermined": 5,
+        "no_current_risk_evidence": 2
+      }
+    },
+    "exploratory_source_debug_exposed": {
+      "denominator": 1,
+      "A_supported": 0,
+      "B_supported": 0,
+      "C_supported": 0,
+      "C_sensitive_supported_mapped": 0,
+      "C_semantics_ambiguous_or_failed": 1,
+      "new_supported_C_vs_B": 0,
+      "lost_supported_C_vs_B": 0,
+      "C_reviewer_changed_cases": 1,
+      "C_semantic_granularity": {
+        "structural": 1
+      },
+      "C_log_relation": {
+        "possible": 1
+      },
+      "C_sensitive_type_states": {
+        "unknown": 1
+      },
+      "C_privacy_risk": {
+        "no_current_risk_evidence": 1
+      }
+    }
+  },
+  "model_invocations_total": 42,
+  "attempts_per_case": {
+    "6e80d29e4239de650a5c4bc9": 4,
+    "1e6358e4816e012b37c54289": 2,
+    "83b87099b380e49e3dfb5885": 4,
+    "9083b0209276385ad23d90ba": 2,
+    "5cbd1e553c2456a2a722927e": 3,
+    "05fcc2ac917bfc39d1aeb16a": 4,
+    "d7d282adcbfd7fe6b3bb0f81": 4,
+    "ef227df12c83b80ffb316754": 5,
+    "7f6e6dbb18581f8792d172e9": 4,
+    "1e4dcb333a870ea68cf64102": 2,
+    "c725de41aaa6933b1d38cfd5": 2,
+    "2a7c4934c63e40fc4972dc4f": 2,
+    "25732489f1bcd347aa275a40": 4
+  },
+  "usage_total": {
+    "input_tokens": 619278,
+    "cached_input_tokens": 191488,
+    "output_tokens": 40616,
+    "reasoning_output_tokens": 8567
+  },
+  "model_requested": {
+    "gpt-5.5": 42
+  },
+  "model_runtime_reported": {
+    "None": 42
+  },
+  "transport_status": {
+    "response_received": 42
+  },
+  "host_automatic_retries": 0,
+  "cli_internal_transport_retries": "not_exposed_by_runtime_receipts",
+  "validation_failures_final_cohort": [],
+  "cases_with_current_model_failure": 0,
+  "validation_failures_all_attempts": [
+    {
+      "attempt_id": "dc5b1ad88f48206bb2fd1c8c",
+      "case_id": "5cbd1e553c2456a2a722927e",
+      "reason": "supported_without_evidence",
+      "run": "demand-development-v080"
+    }
+  ],
+  "retrievals_final_cohort": 28,
+  "retrieval_status": {
+    "success": 7,
+    "not_found": 17,
+    "duplicate": 4
+  },
+  "requests_new_blocks": 7,
+  "retrieval_failure_reasons": {
+    "symbol_not_bound_at_origin": 4,
+    "duplicate_request": 3,
+    "binding_unresolved": 3,
+    "cross_module_ast_dispatch_unresolved": 10,
+    "no_new_evidence": 1
+  },
+  "queue_reasons_nonexclusive": {
+    "dynamic_flow_unresolved": 8,
+    "semantic_unknown": 9,
+    "parser_unsupported": 6,
+    "binding_unresolved": 5,
+    "known_semantics_unmapped": 1,
+    "budget_exhausted": 1,
+    "supported_non_sensitive": 1
+  },
+  "code_view_chars_max": 11108,
+  "max_supplementary_files": 1,
+  "program_rejections_per_condition_record": 173,
+  "funnel": {
+    "original_detected_uses": 821,
+    "previous_frozen_cases": 100,
+    "selected_this_round": 12,
+    "not_selected_this_round": 88,
+    "development": 4,
+    "previously_unexposed_evaluation": 7,
+    "source_debug_exposed_exploratory": 1,
+    "actual_human_truth": 0,
+    "runtime_verified_leaks": 0
+  },
+  "source_integrity": [
+    {
+      "run": "real-v070-final",
+      "artifact_count": 149,
+      "hashes_valid": true
+    },
+    {
+      "run": "synthetic-demand-v080",
+      "artifact_count": 89,
+      "hashes_valid": true
+    },
+    {
+      "run": "demand-smoke-v080",
+      "artifact_count": 23,
+      "hashes_valid": true
+    },
+    {
+      "run": "demand-development-v080",
+      "artifact_count": 26,
+      "hashes_valid": true
+    },
+    {
+      "run": "demand-development-v080-final",
+      "artifact_count": 26,
+      "hashes_valid": true
+    },
+    {
+      "run": "demand-evaluation-v080",
+      "artifact_count": 30,
+      "hashes_valid": true
+    },
+    {
+      "run": "demand-offline-v080-final",
+      "artifact_count": 26,
+      "hashes_valid": true
+    }
+  ],
+  "evaluation_source_freeze_valid": true,
+  "accuracy": null,
+  "recall": null,
+  "human_agreement": null,
+  "interpretation_counts_are_not_correctness_metrics": true
+}

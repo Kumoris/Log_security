@@ -1,0 +1,317 @@
+{
+  "recorded_utc": "2026-09-08T22:06:35.818108+00:00",
+  "mode": "read_only_metadata_review_plus_separate_synthetic_stage",
+  "actions": {
+    "package_source_modified": false,
+    "real_checkpoint_modified": false,
+    "directories_deleted_or_moved": false,
+    "papers_accessed": false,
+    "target_source_values_read_or_printed": false,
+    "compression_samples": "18 bounded 128 KiB chunks of sanitized metadata-only exports; no raw source text"
+  },
+  "disk": {
+    "initial_free_bytes": 4915200000,
+    "current_free_bytes": 4341760000,
+    "current_free_gib": 4.0435791015625,
+    "concurrent_repair_may_change_free_space": true
+  },
+  "scoped_directory_inventory": [
+    {
+      "path": "content-runs/aidev-v044",
+      "files": 13,
+      "bytes": 3028044497,
+      "allocated_bytes": 3028070400
+    },
+    {
+      "path": "content-runs/swechat-v044",
+      "files": 13,
+      "bytes": 3388553732,
+      "allocated_bytes": 3388575744
+    },
+    {
+      "path": "repair-runs/aidev-v045",
+      "files": 16,
+      "bytes": 4986811,
+      "allocated_bytes": 5021696
+    },
+    {
+      "path": "repair-runs/aidev-v045-final",
+      "files": 16,
+      "bytes": 4986818,
+      "allocated_bytes": 5021696
+    },
+    {
+      "path": "repair-runs/swechat-v045",
+      "files": 16,
+      "bytes": 140735206,
+      "allocated_bytes": 140771328
+    },
+    {
+      "path": "repair-runs/swechat-v045-final",
+      "files": 16,
+      "bytes": 1146112632,
+      "allocated_bytes": 1146138624
+    },
+    {
+      "path": "schema-runs/aidev-v045",
+      "files": 13,
+      "bytes": 603000,
+      "allocated_bytes": 634880
+    },
+    {
+      "path": "schema-runs/swechat-v045",
+      "files": 13,
+      "bytes": 17411580,
+      "allocated_bytes": 17436672
+    },
+    {
+      "path": "inputs/swechat-full-v2",
+      "files": 4,
+      "bytes": 1596949612,
+      "allocated_bytes": 1596956672
+    },
+    {
+      "path": "inputs/swechat-full-v3",
+      "files": 4,
+      "bytes": 1597789192,
+      "allocated_bytes": 1597796352
+    },
+    {
+      "path": "inputs/aidev-full-v2",
+      "files": 5,
+      "bytes": 3445083674,
+      "allocated_bytes": 3445817344
+    }
+  ],
+  "swechat_content_files": [
+    {
+      "path": "content-runs/swechat-v044/.content.lock",
+      "bytes": 0,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "content-runs/swechat-v044/.fingerprint-key",
+      "bytes": 32,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "content-runs/swechat-v044/content.sqlite",
+      "bytes": 1072967680,
+      "allocated_bytes": 1072967680
+    },
+    {
+      "path": "content-runs/swechat-v044/content_coverage.json",
+      "bytes": 19606,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "content-runs/swechat-v044/content_excluded.csv",
+      "bytes": 6041155,
+      "allocated_bytes": 6041600
+    },
+    {
+      "path": "content-runs/swechat-v044/content_excluded.jsonl",
+      "bytes": 15797712,
+      "allocated_bytes": 15798272
+    },
+    {
+      "path": "content-runs/swechat-v044/content_type_occurrences.csv",
+      "bytes": 550879848,
+      "allocated_bytes": 550883328
+    },
+    {
+      "path": "content-runs/swechat-v044/content_type_occurrences.jsonl",
+      "bytes": 1432940526,
+      "allocated_bytes": 1432940544
+    },
+    {
+      "path": "content-runs/swechat-v044/content_type_summary.csv",
+      "bytes": 9095,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "content-runs/swechat-v044/content_type_summary.json",
+      "bytes": 22460,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "content-runs/swechat-v044/content_unknown_type_review_queue.csv",
+      "bytes": 88457968,
+      "allocated_bytes": 88461312
+    },
+    {
+      "path": "content-runs/swechat-v044/content_unknown_type_review_queue.jsonl",
+      "bytes": 221399635,
+      "allocated_bytes": 221401088
+    },
+    {
+      "path": "content-runs/swechat-v044/manifest.json",
+      "bytes": 18015,
+      "allocated_bytes": 20480
+    }
+  ],
+  "current_snapshot": {
+    "source_rows": 2732252,
+    "processed_rows": 204057,
+    "candidate_occurrences": 2352157,
+    "excluded_occurrences": 26018,
+    "unknown_type_review_cells": 2242473,
+    "unknown_type_review_export_records": 355056,
+    "status": "partial"
+  },
+  "database_metadata": {
+    "aidev": {
+      "page_size": 4096,
+      "page_count": 203209,
+      "freelist_count": 0
+    },
+    "swechat": {
+      "page_size": 4096,
+      "page_count": 261955,
+      "freelist_count": 0,
+      "journal_mode": "delete",
+      "temp_store": 0,
+      "record_counts": {
+        "matches": 2378175,
+        "cells": 211552,
+        "ranges": 143504
+      },
+      "table_index_allocated_bytes": {
+        "match_tables_indexes_bytes": 999546880,
+        "cell_table_index_bytes": 45744128,
+        "range_table_indexes_bytes": 27664384
+      }
+    },
+    "vacuum_recommendation": "No free pages to reclaim; VACUUM was not run and may itself need substantial scratch space."
+  },
+  "legacy_export_mechanism": {
+    "source": "src/agentlog_unified/content_scan.py:66",
+    "simultaneous_temp_files_per_stem": 2,
+    "legacy_candidate_temp_pair_bytes_today": 1983820374,
+    "scan_disk_guard_bytes": 2147483648,
+    "export_disk_guard_present": false,
+    "same_snapshot_reexport_extra_peak_bytes": 1983820374,
+    "failure_risk": "A 2 GiB scan threshold does not reserve enough for a growing full candidate export. Original exports survive until pair replacement; SQLite is the resumable authority."
+  },
+  "projection": {
+    "kind": "density scenario, not a bound or full-dataset forecast",
+    "basis": "Observed conversations prefix density and current allocated bytes per match/cell/range; excludes 11,907 untouched non-conversation rows; future densities, SQLite index/slack, rollback journals and external writers may differ.",
+    "conversation_prefix": {
+      "rows": 176192,
+      "expected_rows": 2692480,
+      "candidate_occurrences": 362496,
+      "excluded_occurrences": 2772,
+      "individual_cells": 153583,
+      "review_range_records": 137661
+    },
+    "remaining_conversation_rows": 2516288,
+    "additional_db_bytes_estimate": 3045811274,
+    "plain_pairs_at_completion_estimate": {
+      "content_type_occurrences": 6350118843,
+      "content_excluded": 55068350,
+      "content_unknown_type_review_queue": 3939772549
+    },
+    "legacy_additional_peak_bytes_estimate": 11385111775,
+    "gzip_pairs_at_completion_sample_estimate": {
+      "content_type_occurrences": 760118324,
+      "content_excluded": 6235519,
+      "content_unknown_type_review_queue": 613953773
+    },
+    "first_new_gzip_export_additional_peak_bytes_estimate": 4426118890,
+    "subsequent_full_gzip_reexport_extra_scratch_bytes_estimate": 760118324,
+    "fit_conclusion": "Compression materially reduces export cost, but remaining DB growth plus first compressed export approaches current free space before the 1 GiB safety reserve. Full completion is not guaranteed; bounded advance and disk stop remain necessary."
+  },
+  "compression_sample": {
+    "algorithm": "zlib level 6 (proxy for gzip deflate; small header difference)",
+    "bytes_per_chunk": 131072,
+    "chunks_per_file": 3,
+    "file_stat_stable": true,
+    "compressed_bytes_per_chunk": {
+      "content_type_occurrences.jsonl": [
+        11996,
+        11983,
+        11977
+      ],
+      "content_type_occurrences.csv": [
+        25297,
+        25146,
+        24942
+      ],
+      "content_excluded.jsonl": [
+        11288,
+        11547,
+        11301
+      ],
+      "content_excluded.csv": [
+        23457,
+        23384,
+        22923
+      ],
+      "content_unknown_type_review_queue.jsonl": [
+        15577,
+        14123,
+        7509
+      ],
+      "content_unknown_type_review_queue.csv": [
+        32561,
+        31135,
+        15030
+      ]
+    },
+    "not_full_file_compression_measurement": true
+  },
+  "minimum_path": {
+    "new_engine": "content_advance_v1",
+    "stage_module": "/private/tmp/content_advance_stage/content_advance.py",
+    "stage_tests": "/private/tmp/content_advance_stage/test_content_advance.py",
+    "tests": "16 passed in 0.22s; final zero-row export check uses no source decoding",
+    "legacy_four_file_hashes": {
+      "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+      "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+      "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+      "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+    },
+    "method": "Use an explicitly fingerprinted new runner and gzip export backend; hold original DB lock plus independent output lock, advance original SQLite without copying, preserve original manifest/plain exports as old snapshot, record parent_shared_checkpoint provenance and before/after cursors.",
+    "peak_policy": "Current free space already subtracts retained old exports; additionally reserve a complete new gzip generation using max(512 MiB, DB_size * max(0.65, prior_gzip_bytes/prior_DB_bytes*1.5)); stream export also checks min_free_bytes. This reserve is explicitly heuristic, not a bound.",
+    "four_hashes_still_equal": true,
+    "implementation_sha256": "2eea8189ed8922b22f4cc1e70fb676520286829148e66c916d0d490201b98cc2",
+    "test_sha256": "02c23684b42a4cc69e529aa8c966aa3552e09a6885f89d60851a56d61e9da377"
+  },
+  "review_only_cleanup_candidates": [
+    {
+      "path": "inputs/swechat-full-v2",
+      "bytes": 1596949612,
+      "same_source_signature_as_v3": false,
+      "status": "not proven unreferenced; old pipeline artifacts may still cite it; no deletion or approval request",
+      "files": [
+        {
+          "name": "commit_contexts.jsonl",
+          "bytes": 12253289
+        },
+        {
+          "name": "coverage.json",
+          "bytes": 18026
+        },
+        {
+          "name": "manifest.json",
+          "bytes": 1433
+        },
+        {
+          "name": "swechat.sqlite",
+          "bytes": 1584676864
+        }
+      ]
+    },
+    {
+      "path": "repair-runs/swechat-v045",
+      "bytes": 140735206,
+      "status": "superseded by final corrected run for reporting, but original bug evidence remains; no deletion approved"
+    }
+  ],
+  "evidence_hashes": {
+    "content-runs/swechat-v044/manifest.json": "560d527284915c7e5645b9b16896ee11765445b7c950113b10ec6bda229130c3",
+    "content-runs/swechat-v044/content_coverage.json": "bf583afe73878a36f70ee9a56155855d7a00c5c30ec7e152e5491ac8c9c1eb07",
+    "inputs/swechat-full-v2/manifest.json": "1cb17ba58eca75202fb4aba2ff78d4b0a5c358434b97ab67a29d495988e97499",
+    "inputs/swechat-full-v3/manifest.json": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+  }
+}

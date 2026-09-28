@@ -1,0 +1,305 @@
+{
+  "created_utc": "2026-09-08T22:04:41.126441+00:00",
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "/private/tmp/schema_v046_stage/tests",
+    "-q"
+  ],
+  "started_utc": "2026-09-08T22:04:40.840419+00:00",
+  "finished_utc": "2026-09-08T22:04:41.126441+00:00",
+  "elapsed_seconds": 0.28603149999980815,
+  "exit_code": 0,
+  "pytest_result": "............................                                             [100%]\n28 passed in 0.16s",
+  "staged_file_sha256": {
+    "/private/tmp/schema_v046_stage/schema_scan.py": "9915a94da971aaf66c6edd01300d9e98db4bb548fdf6b7ace771190073b76502",
+    "/private/tmp/schema_v046_stage/tests/test_schema_scan.py": "e2d60a53b018d7cecbb1ad6884d687f152ba6d096d6862fa70ede569689e5fdd",
+    "/private/tmp/schema_v046_stage/tests/test_schema_scan_v046.py": "08c1631cb0c3bb04bafc4fe98130fdcd814bf06718e49d272fa71a86ea2ede34",
+    "/private/tmp/schema_v046_stage/tests/conftest.py": "f9d9ba1e97df488a1bd41177dda8a63e7783fc4005c8fe20aa7245a50055fa58",
+    "/private/tmp/schema_v046_stage/verify_stage.py": "16fa304ec18b6649b4f558ec1757c6897be066ef9c71bea6f4d337669fe4bea2"
+  },
+  "formal_source_sha256_before": {
+    "__init__.py": "d1363ddece2ee2d6c34905acd3615176120b13cbfa5847b4763c824e4aed967f",
+    "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+    "analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+    "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "cli.py": "a479d4212c7c93be720452460ff5f6fa87fdfb685c6c7a48f2583ea37f7cd044",
+    "config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+    "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+    "content_repair.py": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+    "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+    "export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+    "extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+    "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+    "github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+    "ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+    "lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+    "matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+    "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+    "object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+    "repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+    "reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+    "review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+    "schema_scan.py": "c960eb541b9770a7cd4e2ce729dd7aa2f91d1ee12d661988489fc29440a31fbb",
+    "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+  },
+  "formal_source_sha256_after": {
+    "__init__.py": "d1363ddece2ee2d6c34905acd3615176120b13cbfa5847b4763c824e4aed967f",
+    "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+    "analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+    "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "cli.py": "a479d4212c7c93be720452460ff5f6fa87fdfb685c6c7a48f2583ea37f7cd044",
+    "config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+    "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+    "content_repair.py": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+    "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+    "export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+    "extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+    "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+    "github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+    "ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+    "lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+    "matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+    "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+    "object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+    "repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+    "reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+    "review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+    "schema_scan.py": "c960eb541b9770a7cd4e2ce729dd7aa2f91d1ee12d661988489fc29440a31fbb",
+    "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+  },
+  "formal_source_unchanged": true,
+  "legacy_quality_function_byte_identical": true,
+  "legacy_18_role_tuples_unchanged": true,
+  "legacy_export_comparisons": [
+    {
+      "dataset": "aidev",
+      "legacy_field_count": 8,
+      "source_cells_decoded": 56,
+      "export_checks": [
+        {
+          "file": "schema_context_candidates.csv",
+          "old_sha256": "4ea1bb8da604e4efa65b3f7938c73fc3e59e5761aa81cde3daf2a136b53efb05",
+          "new_sha256": "4ea1bb8da604e4efa65b3f7938c73fc3e59e5761aa81cde3daf2a136b53efb05",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_context_candidates.jsonl",
+          "old_sha256": "24e7d4f383cefe1cd3ec3f51b4cf202ca3c2c53bcd1d4312b67e3c67b7336cf6",
+          "new_sha256": "24e7d4f383cefe1cd3ec3f51b4cf202ca3c2c53bcd1d4312b67e3c67b7336cf6",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_context_review_queue.csv",
+          "old_sha256": "bf6dc666b6c9fe3fb47fdaa97f027c1ac742324a97f6b7a779100be7f6ac9f24",
+          "new_sha256": "bf6dc666b6c9fe3fb47fdaa97f027c1ac742324a97f6b7a779100be7f6ac9f24",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_context_review_queue.jsonl",
+          "old_sha256": "ab3c10a255a2fb4122b1259966a536da4d8a1f0a12033652d119c2dd7695d08b",
+          "new_sha256": "ab3c10a255a2fb4122b1259966a536da4d8a1f0a12033652d119c2dd7695d08b",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_type_summary.csv",
+          "old_sha256": "e8a5d72f3338456376e8edc3dbc339d612bf159544b3a90964e5dfdbbde75fda",
+          "new_sha256": "e8a5d72f3338456376e8edc3dbc339d612bf159544b3a90964e5dfdbbde75fda",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_type_summary.json",
+          "old_sha256": "a0481257cf3969cd0b5a73ce7b318f75e4303ebd9a6e9f9419b39904d60d7688",
+          "new_sha256": "a0481257cf3969cd0b5a73ce7b318f75e4303ebd9a6e9f9419b39904d60d7688",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_type_summary.jsonl",
+          "old_sha256": "80d46d82dcdef34bb4e8213e1f5a1176d593100e8dfc6684ce35d377006d1af8",
+          "new_sha256": "80d46d82dcdef34bb4e8213e1f5a1176d593100e8dfc6684ce35d377006d1af8",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_unresolved_fields.csv",
+          "old_sha256": "98e7045807698f3a6c4d96229c85b4d85d4c787a9f7a647990f54ff284f8e5a9",
+          "new_sha256": "98e7045807698f3a6c4d96229c85b4d85d4c787a9f7a647990f54ff284f8e5a9",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_unresolved_fields.jsonl",
+          "old_sha256": "4bc34b39eb5fe07888dcdc297ee4d3f78e1e09c875bf89c70100f40e8e191599",
+          "new_sha256": "4bc34b39eb5fe07888dcdc297ee4d3f78e1e09c875bf89c70100f40e8e191599",
+          "byte_identical": true
+        }
+      ],
+      "coverage_fields_and_counts_equal": true,
+      "old_checkpoint_rejected_without_mutating_outputs": true
+    },
+    {
+      "dataset": "swe-chat",
+      "legacy_field_count": 10,
+      "source_cells_decoded": 70,
+      "export_checks": [
+        {
+          "file": "schema_context_candidates.csv",
+          "old_sha256": "f3db2bf3721cc898e5e8fa57be3213511950f75eaef5a41d28f61e76c96987f4",
+          "new_sha256": "f3db2bf3721cc898e5e8fa57be3213511950f75eaef5a41d28f61e76c96987f4",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_context_candidates.jsonl",
+          "old_sha256": "28b1d165a9cdc92204cbe06dfe197499dd7634a5b3c77261232b86478fce8bf5",
+          "new_sha256": "28b1d165a9cdc92204cbe06dfe197499dd7634a5b3c77261232b86478fce8bf5",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_context_review_queue.csv",
+          "old_sha256": "084144a1feff7ab98d18c610227f810fda464f071db32401d489ff4c9ba1fc6c",
+          "new_sha256": "084144a1feff7ab98d18c610227f810fda464f071db32401d489ff4c9ba1fc6c",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_context_review_queue.jsonl",
+          "old_sha256": "bd850dd99ed7abbdc9d9060c674dd5a27b714b100fa27953671648b97a1ca3ed",
+          "new_sha256": "bd850dd99ed7abbdc9d9060c674dd5a27b714b100fa27953671648b97a1ca3ed",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_type_summary.csv",
+          "old_sha256": "97a5b12cc35e766b31cefa585d279c108588c3f4c7814216f44ae27cd7b0a5fb",
+          "new_sha256": "97a5b12cc35e766b31cefa585d279c108588c3f4c7814216f44ae27cd7b0a5fb",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_type_summary.json",
+          "old_sha256": "cf2fb97a6827fd155a5eeed1ac0e20c3f1a7c79a580732824f6ec790df3889a7",
+          "new_sha256": "cf2fb97a6827fd155a5eeed1ac0e20c3f1a7c79a580732824f6ec790df3889a7",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_type_summary.jsonl",
+          "old_sha256": "0be8e795745a5d23b6366904436cb1ce383015fd3df5ab571d70b27b007245cf",
+          "new_sha256": "0be8e795745a5d23b6366904436cb1ce383015fd3df5ab571d70b27b007245cf",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_unresolved_fields.csv",
+          "old_sha256": "ad66d0f15a48c73e9dd92b7521d73286b9d8f651ae66c284cab779adb90ec950",
+          "new_sha256": "ad66d0f15a48c73e9dd92b7521d73286b9d8f651ae66c284cab779adb90ec950",
+          "byte_identical": true
+        },
+        {
+          "file": "schema_unresolved_fields.jsonl",
+          "old_sha256": "85261b7f3893bd932a2c5cf7e00094f4ecfd8fd777f040191acab49dc2a514bf",
+          "new_sha256": "85261b7f3893bd932a2c5cf7e00094f4ecfd8fd777f040191acab49dc2a514bf",
+          "byte_identical": true
+        }
+      ],
+      "coverage_fields_and_counts_equal": true,
+      "old_checkpoint_rejected_without_mutating_outputs": true
+    }
+  ],
+  "frozen_schema_mapping_delta_from_metadata_only": {
+    "aidev": {
+      "unmapped_before": 152,
+      "newly_mapped": 9,
+      "unmapped_after": 143
+    },
+    "swechat": {
+      "unmapped_before": 138,
+      "newly_mapped": 0,
+      "unmapped_after": 138
+    }
+  },
+  "newly_mapped_exact_fields": [
+    {
+      "dataset": "aidev",
+      "table": "all_pull_request",
+      "column": "user",
+      "source_rows": 932791,
+      "footer_null_count": 0
+    },
+    {
+      "dataset": "aidev",
+      "table": "human_pull_request",
+      "column": "user",
+      "source_rows": 6618,
+      "footer_null_count": 0
+    },
+    {
+      "dataset": "aidev",
+      "table": "issue",
+      "column": "user",
+      "source_rows": 4614,
+      "footer_null_count": 0
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_comments",
+      "column": "user",
+      "source_rows": 39122,
+      "footer_null_count": 0
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_review_comments",
+      "column": "user",
+      "source_rows": 19450,
+      "footer_null_count": 0
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_review_comments_v2",
+      "column": "user",
+      "source_rows": 26868,
+      "footer_null_count": 0
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_reviews",
+      "column": "user",
+      "source_rows": 28875,
+      "footer_null_count": 1
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_timeline",
+      "column": "actor",
+      "source_rows": 325500,
+      "footer_null_count": 15869
+    },
+    {
+      "dataset": "aidev",
+      "table": "pull_request",
+      "column": "user",
+      "source_rows": 33596,
+      "footer_null_count": 0
+    }
+  ],
+  "real_value_cells_decoded": 0,
+  "real_scan_launched": false,
+  "version_note": "Output schema VERSION remains schema-context-1 because record format and pre-existing field IDs are unchanged. The implementation SHA changes and rejects resume of any old implementation checkpoint. Run v046 into fresh output directories.",
+  "g2_arrays_implemented": false,
+  "g3_g4_structured_parsing_implemented": false
+}

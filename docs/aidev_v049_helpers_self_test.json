@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_structured_v049.py",
+        "--self-test"
+      ],
+      "started_utc": "2026-09-08T23:46:42.601153+00:00",
+      "completed_utc": "2026-09-08T23:46:42.677749+00:00",
+      "elapsed_seconds": 0.07295249999151565,
+      "exit_code": 0,
+      "stdout": "{\"self_test\": \"passed\", \"checks\": 5, \"real_snapshot_read\": false, \"v048_smoke_inherited\": false}\n",
+      "stderr": "",
+      "sha256": "40376ac47a2d443e209d055f490a9faea1c4205bc3bc5724202087d14db14180"
+    },
+    {
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/build_aidev_inventory_v049.py",
+        "--self-test"
+      ],
+      "started_utc": "2026-09-08T23:46:42.681756+00:00",
+      "completed_utc": "2026-09-08T23:46:42.752104+00:00",
+      "elapsed_seconds": 0.0703563330025645,
+      "exit_code": 0,
+      "stdout": "{\"self_test\": \"passed\", \"checks\": 8, \"real_outputs_read\": false}\n",
+      "stderr": "",
+      "sha256": "124e8fa08ca745ef8638bd7bc0673c3501a503d7ffd6050f15917a7c42507d8e"
+    }
+  ],
+  "active_outputs_read": false,
+  "src_or_tests_modified": false
+}

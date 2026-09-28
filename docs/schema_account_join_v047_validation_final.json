@@ -1,0 +1,38 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "agentlog_unified/tests/test_schema_scan.py",
+    "agentlog_unified/tests/test_schema_scan_v046.py",
+    "agentlog_unified/tests/test_schema_account_join.py",
+    "-q"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:00:13.737335+00:00",
+  "ended_utc": "2026-09-08T23:00:14.306145+00:00",
+  "exit_code": 0,
+  "stdout": "............................................                             [100%]\n44 passed in 0.43s\n",
+  "stderr": "",
+  "source_before": {
+    "agentlog_unified/src/agentlog_unified/schema_scan.py": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+    "agentlog_unified/tests/test_schema_scan.py": "92ff7f704d5d6a337befc5e485f5c33c1419f8f8afc5482388cc55c9c746d9bf",
+    "agentlog_unified/tests/test_schema_scan_v046.py": "c8e05d029784c9fee58e2f164c015fba65f366343912b6059d44dcbf91eb3f6c",
+    "agentlog_unified/tests/test_schema_account_join.py": "58d519ce2ea7a8c7300c85adcbdd750574302a1426834c6283f73c3c4a1760fd"
+  },
+  "source_after": {
+    "agentlog_unified/src/agentlog_unified/schema_scan.py": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+    "agentlog_unified/tests/test_schema_scan.py": "92ff7f704d5d6a337befc5e485f5c33c1419f8f8afc5482388cc55c9c746d9bf",
+    "agentlog_unified/tests/test_schema_scan_v046.py": "c8e05d029784c9fee58e2f164c015fba65f366343912b6059d44dcbf91eb3f6c",
+    "agentlog_unified/tests/test_schema_account_join.py": "58d519ce2ea7a8c7300c85adcbdd750574302a1426834c6283f73c3c4a1760fd"
+  },
+  "source_unchanged": true,
+  "account_join_roles": 5,
+  "current_all_roles": 32,
+  "current_aidev_roles": 22,
+  "real_dataset_scan_run": false,
+  "supersedes": "schema_account_join_v047_validation.json (four-join-role initial source)",
+  "legacy_comparison": "schema_account_join_v047_legacy_comparison_final.json",
+  "reference_audit": "schema_account_join_v047_reference_audit_final.json",
+  "old_quality_function_ast_equal": true
+}

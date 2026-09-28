@@ -1,0 +1,9 @@
+{
+  "reason": "user relation audit used an unindexed OR correlated query; stopped to apply indexed equivalent",
+  "source_rows_loaded": 2456073,
+  "original_manifest_and_database_preserved": true,
+  "planned_retry": "aidev-full-v2",
+  "stopped_pids": [
+    18426
+  ]
+}

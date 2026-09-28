@@ -1,0 +1,299 @@
+{
+  "source_count": 29,
+  "sources_with_remaining_fatal": 0,
+  "source_results": [
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+      "path": "apps/api/Controllers/WeatherForecastController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+      "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+      "path": "apps/api/src/Features/Search/SearchController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+      "path": "apps/api/src/Features/Tags/TagsController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+      "path": "apps/api/Controllers/WeatherForecastController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+      "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+      "path": "apps/api/src/Features/Search/SearchController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+      "path": "apps/api/src/Features/Tags/TagsController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+      "path": "apps/api/Controllers/WeatherForecastController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+      "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+      "path": "apps/api/src/Features/Search/SearchController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+      "path": "apps/api/src/Features/Tags/TagsController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+      "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+      "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 5
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "c6abcd5e2efa89e356e22b472dd218329db28fac",
+      "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 5
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "d605826ed7bbaa910267e8eebb92201371f6f101",
+      "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+      "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+      "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 5
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+      "path": "apps/api/Controllers/WeatherForecastController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+      "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+      "path": "apps/api/src/Features/Search/SearchController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "alexinslc/hickory",
+      "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+      "path": "apps/api/src/Features/Tags/TagsController.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+      "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/20260308201453_AddCouponFieldsToOrder.Designer.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+      "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/20260308201453_AddCouponFieldsToOrder.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+      "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/OrderingDbContextModelSnapshot.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+      "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/20260308185447_InitialCoupons.Designer.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+      "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/20260308185447_InitialCoupons.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+      "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/CouponsDbContextModelSnapshot.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    },
+    {
+      "repository": "baotoq/micro-commerce",
+      "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+      "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/OrderingDbContextModelSnapshot.cs",
+      "fatal_gaps_after": [],
+      "bounded_gap_reasons_after": [
+        "lexical_fallback_without_ast"
+      ],
+      "detected_log_entities_in_full_source": 0
+    }
+  ],
+  "synthetic_same_line_attribute_issue_still_open": true,
+  "detector_file_sha256_after_scan": "a4ab13a716afd6e4e406a15126e5d63e7b987eaaa49b0bbb98ebce27946ad60f",
+  "verification_boundary": "Read-only intermediate scan while author was editing; file hash sampled after scan does not prove the loaded module revision. Final frozen-source scan and CLI replay supersede this intermediate evidence."
+}

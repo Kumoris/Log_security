@@ -1,0 +1,485 @@
+{
+  "started_utc": "2026-09-09T00:11:03.429342+00:00",
+  "completed_utc": "2026-09-09T00:12:05.794694+00:00",
+  "elapsed_seconds": 62.365,
+  "all_checks_passed": true,
+  "passed": 69,
+  "total": 69,
+  "checks": {
+    "installed_v049_taxonomy_v110_and_49_catalog_types": true,
+    "terminal_export_state_and_coverage_sha": true,
+    "aidev_finite_pending_scope": true,
+    "coverage_detector_matches_current_catalog": true,
+    "shared_seed_checkpoint_path_and_identity": true,
+    "ancestor_lineage_consistent": true,
+    "source_import_complete_and_sha_consistent": true,
+    "source_import_and_tables_equal_seed": true,
+    "fingerprint_keys_match_without_exposing_key": true,
+    "seed_and_advance_finite_classifier_hashes_match": true,
+    "hash_stat_stable_content_scan.py": true,
+    "hash_stat_stable_content_types.py": true,
+    "hash_stat_stable_storage.py": true,
+    "hash_stat_stable_taxonomy.py": true,
+    "frozen_source_sha256_matches_current_source": true,
+    "hash_stat_stable_content_advance.py": true,
+    "implementation_sha256_matches_current_source": true,
+    "hash_stat_stable_aidev.py": true,
+    "hash_stat_stable_swechat.py": true,
+    "inventory_dependency_sha256_matches_current_source": true,
+    "frozen_limits_same_as_seed": true,
+    "exact_expected_compressed_export_names": true,
+    "no_temporary_exports": true,
+    "hash_stat_stable_content_type_occurrences.jsonl.gz": true,
+    "hash_stat_stable_content_type_occurrences.csv.gz": true,
+    "hash_stat_stable_content_excluded.jsonl.gz": true,
+    "hash_stat_stable_content_excluded.csv.gz": true,
+    "hash_stat_stable_content_unknown_type_review_queue.jsonl.gz": true,
+    "hash_stat_stable_content_unknown_type_review_queue.csv.gz": true,
+    "frozen_source_inputs_equal_manifest": true,
+    "all_frozen_parquet_byte_hashes_and_stats_match": true,
+    "18_tables_2456073_rows_and_17362345_nonempty_cells": true,
+    "progress_tables_and_cumulative_stats_equal_coverage": true,
+    "all_rows_visited_with_honest_truncation_boundary": true,
+    "cursor_state_and_checkpoint_export_size_consistent": true,
+    "database_occurrence_counts_equal_coverage": true,
+    "review_export_record_and_expanded_cell_denominators": true,
+    "truncated_cell_count_exact_and_present_in_unknown_queue": true,
+    "all_match_cell_references_exist": true,
+    "content_type_occurrences_csv_schema": true,
+    "content_type_occurrences_csv_jsonl_projection_exact": true,
+    "content_type_occurrences_database_all_fields_equal": true,
+    "content_type_occurrences_safe_metadata_and_span_bounds": true,
+    "content_type_occurrences_stable_identity_and_unique_matches": true,
+    "content_type_occurrences_records_match_coverage": true,
+    "content_excluded_csv_schema": true,
+    "content_excluded_csv_jsonl_projection_exact": true,
+    "content_excluded_database_all_fields_equal": true,
+    "content_excluded_safe_metadata_and_span_bounds": true,
+    "content_excluded_stable_identity_and_unique_matches": true,
+    "content_excluded_records_match_coverage": true,
+    "content_unknown_type_review_queue_csv_schema": true,
+    "content_unknown_type_review_queue_csv_jsonl_projection_exact": true,
+    "content_unknown_type_review_queue_database_all_fields_equal": true,
+    "content_unknown_type_review_queue_safe_metadata_and_span_bounds": true,
+    "content_unknown_type_review_queue_stable_identity_and_unique_matches": true,
+    "content_unknown_type_review_queue_records_match_coverage": true,
+    "review_character_and_per_table_cell_totals": true,
+    "review_truncation_status_exact": true,
+    "unknown_cell_ranges_disjoint_including_single_cells": true,
+    "hash_stat_stable_content_type_summary.csv": true,
+    "type_summary_taxonomy_and_scope": true,
+    "type_summary_all_49_including_zero_and_six_categories": true,
+    "type_summary_counts_distinct_cells_and_evidence_status_exact": true,
+    "type_summary_csv_json_exact": true,
+    "type_summary_plus_unknown_equals_all_candidates": true,
+    "sqlite_snapshot_unchanged": true,
+    "all_verified_files_unchanged": true,
+    "exit2_and_no_runtime_network_claims": true
+  },
+  "run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+  "seed": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed",
+  "checkpoint": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed/content.sqlite",
+  "tables": 18,
+  "source_rows": 2456073,
+  "processed_rows": 2456073,
+  "nonempty_cells": 17362345,
+  "candidate_occurrences": 1478855,
+  "excluded_occurrences": 11871,
+  "unknown_type_review_cells": 17362345,
+  "unknown_type_review_export_records": 1115211,
+  "truncated_cells": 1,
+  "candidate_status_counts": {
+    "identifier_reference": 521499,
+    "literal_candidate": 387789,
+    "carrier_candidate": 430448,
+    "named_value_candidate": 138730,
+    "unknown_named_value": 389
+  },
+  "catalog_subtypes": 49,
+  "observed_controlled_subtypes": 44,
+  "zero_count_catalog_subtypes": [
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_content"
+    },
+    {
+      "category": "BIZ",
+      "subtype": "unclassified_object"
+    },
+    {
+      "category": "CFG",
+      "subtype": "unclassified_internal_resource"
+    },
+    {
+      "category": "PII",
+      "subtype": "unspecified_personal_information"
+    },
+    {
+      "category": "QID",
+      "subtype": "unspecified_linkable_identifier"
+    }
+  ],
+  "outside_catalog_candidates": 3243,
+  "pairs": [
+    {
+      "stem": "content_type_occurrences",
+      "records": 1478855,
+      "csv_jsonl_projection_exact": true,
+      "database_all_fields_equal": true
+    },
+    {
+      "stem": "content_excluded",
+      "records": 11871,
+      "csv_jsonl_projection_exact": true,
+      "database_all_fields_equal": true
+    },
+    {
+      "stem": "content_unknown_type_review_queue",
+      "records": 1115211,
+      "csv_jsonl_projection_exact": true,
+      "database_all_fields_equal": true
+    }
+  ],
+  "files": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed/manifest.json": {
+      "sha256": "0a93974b1b7399afc646ee5dd6e3d58bc52ac3cc2fc950fc21b9b4aa08132c9a",
+      "stat": [
+        16777231,
+        107533464,
+        23431,
+        1788911028034474415,
+        1788911028034581414
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/manifest.json": {
+      "sha256": "0cdb8904b5b64eae573e42b56328351afcc6b8d1a1a10c6030e5448d9f513c15",
+      "stat": [
+        16777231,
+        107533565,
+        23938,
+        1788911048786608773,
+        1788911048786673856
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_coverage.json": {
+      "sha256": "b9543eede299d15603929a60b01754b8bb8dd5a438af1e313c6d09bedcad30ad",
+      "stat": [
+        16777231,
+        107685724,
+        24949,
+        1788912593357224055,
+        1788912593357363302
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/advance_state.json": {
+      "sha256": "f3a0aa425ef092c7612dc03605167e90f55ea6f738ac9d7d278dd31a35811066",
+      "stat": [
+        16777231,
+        107685725,
+        1207,
+        1788912593357727713,
+        1788912593357831502
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": {
+      "sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "stat": [
+        16777231,
+        106004545,
+        3024,
+        1788886355435478462,
+        1788886355435535962
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_scan.py": {
+      "sha256": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+      "stat": [
+        16777231,
+        106654634,
+        23002,
+        1788901058381178031,
+        1788901058381178031
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": {
+      "sha256": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+      "stat": [
+        16777231,
+        106655213,
+        12107,
+        1788910866137740184,
+        1788910866137740184
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/storage.py": {
+      "sha256": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+      "stat": [
+        16777231,
+        105913257,
+        4425,
+        1788883299142185108,
+        1788883299142185108
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/taxonomy.py": {
+      "sha256": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed",
+      "stat": [
+        16777231,
+        105977791,
+        14586,
+        1788910871479855760,
+        1788910871479855760
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_advance.py": {
+      "sha256": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+      "stat": [
+        16777231,
+        107291841,
+        28120,
+        1788905338273095262,
+        1788905338273095262
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/aidev.py": {
+      "sha256": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+      "stat": [
+        16777231,
+        105977891,
+        27241,
+        1788885379495251892,
+        1788885379495251892
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/swechat.py": {
+      "sha256": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+      "stat": [
+        16777231,
+        106027092,
+        25742,
+        1788893749162564978,
+        1788893749162564978
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_type_occurrences.jsonl.gz": {
+      "sha256": "38310af808eb68775f935f35ebf3e7201efd59ae5c23cdb8a0e1dfed0bdda596",
+      "stat": [
+        16777231,
+        107685607,
+        77449941,
+        1788912556454481668,
+        1788912556459816831
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_type_occurrences.csv.gz": {
+      "sha256": "1bbec69087475c21122a65f4d13d023047d9616420cd14c21c4daea4a6131905",
+      "stat": [
+        16777231,
+        107685608,
+        64831776,
+        1788912556453217169,
+        1788912556520112793
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_excluded.jsonl.gz": {
+      "sha256": "a36e6fa138038e8b75e9d897ae170debef2c96067bd7acb381881b7265476752",
+      "stat": [
+        16777231,
+        107685663,
+        591192,
+        1788912559526481813,
+        1788912559526851021
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_excluded.csv.gz": {
+      "sha256": "642d0730c3eb2589892e46bb909d7bc32134e3d76965e7023a2b76d59d00496d",
+      "stat": [
+        16777231,
+        107685664,
+        503503,
+        1788912559525993521,
+        1788912559529400519
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_unknown_type_review_queue.jsonl.gz": {
+      "sha256": "04e173688314e4566cbf5698c1accf0d228df190ba2b44b0c87040c984c52e51",
+      "stat": [
+        16777231,
+        107685669,
+        49955881,
+        1788912585343204649,
+        1788912585350776853
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_unknown_type_review_queue.csv.gz": {
+      "sha256": "63f83518e1e7e2ed807ed6fef4925ee26c364ce5de335caa3097a8393fbd7cba",
+      "stat": [
+        16777231,
+        107685670,
+        43765864,
+        1788912585342911941,
+        1788912585394999200
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_type_summary.json": {
+      "sha256": "4a3228698caacdb5eb31d912eb7732633ac58e4e39751c109cfcc03ec5a4d2e9",
+      "stat": [
+        16777231,
+        107685722,
+        25841,
+        1788912593348667251,
+        1788912593348825332
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_type_summary.csv": {
+      "sha256": "a8c7ed6ab70ecda68a157a4e001772cd4ff13d96b0e537a10c727154bf4fc69e",
+      "stat": [
+        16777231,
+        107647834,
+        10554,
+        1788912593354405398,
+        1788912593354405398
+      ]
+    }
+  },
+  "frozen_source_files": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "bytes": 330776130,
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "expected_sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "bytes": 6136253,
+      "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+      "expected_sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "all_user.parquet",
+      "bytes": 2511706,
+      "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+      "expected_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "bytes": 715969,
+      "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+      "expected_sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "bytes": 4387171,
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+      "expected_sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "issue.parquet",
+      "bytes": 3222463,
+      "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+      "expected_sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "bytes": 25857243,
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+      "expected_sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "bytes": 485214032,
+      "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "expected_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "bytes": 8314097,
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "expected_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "bytes": 14728130,
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+      "expected_sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "bytes": 21125785,
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+      "expected_sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "bytes": 7517041,
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+      "expected_sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "bytes": 2993264,
+      "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+      "expected_sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "bytes": 34108415,
+      "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+      "expected_sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "bytes": 16855612,
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+      "expected_sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "bytes": 75579,
+      "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+      "expected_sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "repository.parquet",
+      "bytes": 167251,
+      "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+      "expected_sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+      "stat_stable_and_matches": true
+    },
+    {
+      "table_path": "user.parquet",
+      "bytes": 68935,
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+      "expected_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+      "stat_stable_and_matches": true
+    }
+  ],
+  "source_values_decoded": false,
+  "source_values_exported": false,
+  "target_code_executed": false,
+  "network_accessed": false,
+  "finite_rules_all_cells_complete": false,
+  "semantic_complete": false,
+  "limits": [
+    "All Parquet bytes were hashed; source values were not decoded. HMAC metadata links were checked, not recomputed from text.",
+    "JSONL is checked against its complete metadata projection; CSV intentionally exports the established subset of fields.",
+    "Every nonempty cell remains in unknown review. Visited rows do not establish semantic completeness, credential validity, or confirmed disclosure.",
+    "Truncated cells require same-version repair; all text rows visited does not mean all finite rules finished for every cell."
+  ]
+}

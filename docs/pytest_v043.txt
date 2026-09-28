@@ -1,0 +1,27 @@
+........................................................................ [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 57%]
+........................................................................ [ 77%]
+............................................................F........... [ 96%]
+.............                                                            [100%]
+=================================== FAILURES ===================================
+___________ test_csharp_broken_string_is_history_gap_not_deleted_log ___________
+
+tmp_path = PosixPath('/private/var/folders/3h/x6l8x7b15s13m7gcvzsnf21w0000gn/T/pytest-of-lzh/pytest-76/test_csharp_broken_string_is_h0')
+
+    def test_csharp_broken_string_is_history_gap_not_deleted_log(tmp_path):
+        init(tmp_path)
+        source = 'class App { void Run() { logger.LogInformation("value={Password}", user.Password); } }\n'
+        intro = commit(tmp_path, {'App.cs': source}, 'initial C# log', day=2)
+        broken = commit(tmp_path, {'App.cs': 'class App { string text = "unterminated\n' + source},
+                        'break string boundary', actor='human', day=3)
+        end = commit(tmp_path, {'App.cs': 'class App { void Run() {} }\n'}, 'restore source', actor='human', day=4)
+        result = pipeline(tmp_path, end, [intro])
+        assert not any(e['sha'] == broken and e['change_kind'] == 'deleted' for e in result['detected']['events'])
+>       opened = next(f for f in result['followups'] if f['sha'] == broken)
+E       StopIteration
+
+agentlog_unified/tests/test_unified_history.py:94: StopIteration
+=========================== short test summary info ============================
+FAILED agentlog_unified/tests/test_unified_history.py::test_csharp_broken_string_is_history_gap_not_deleted_log
+1 failed, 372 passed in 28.17s

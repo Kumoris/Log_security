@@ -1,0 +1,119 @@
+{
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "commands": [
+    {
+      "name": "install",
+      "command": "agent_log_privacy/.venv/bin/python -m pip install --no-deps --no-build-isolation -e agentlog_unified",
+      "exit_code": 0,
+      "stdout_file": "v070-install.txt"
+    },
+    {
+      "name": "pytest",
+      "command": "agent_log_privacy/.venv/bin/python -m pytest agentlog_unified/tests -q",
+      "exit_code": 0,
+      "stdout_file": "v070-pytest.txt"
+    },
+    {
+      "name": "synthetic_fixture",
+      "command": "agent_log_privacy/.venv/bin/python agentlog_unified/examples/build_semantic_expansion.py agentlog_unified/semantic-inputs/synthetic-v070",
+      "exit_code": 0,
+      "stdout_file": "v070-synthetic_fixture.txt"
+    },
+    {
+      "name": "synthetic_run",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --input agentlog_unified/semantic-inputs/synthetic-v070/input.jsonl --output agentlog_unified/semantic-runs/synthetic-v070-final --offline",
+      "exit_code": 0,
+      "stdout_file": "v070-synthetic_run.txt"
+    },
+    {
+      "name": "collect",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-history --input agentlog_unified/semantic-inputs/full-history-v070.jsonl --output agentlog_unified/semantic-runs/history-v070 --cache-dir agentlog_unified/cache/semantic-full-v070 --online --max-repositories 3",
+      "exit_code": 0,
+      "stdout_file": "v070-collect.txt"
+    },
+    {
+      "name": "full_git",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-history --input agentlog_unified/semantic-inputs/full-history-v070.jsonl --output agentlog_unified/semantic-runs/history-v070 --cache-dir agentlog_unified/cache/semantic-full-v070 --offline --resume --max-commits 1000",
+      "exit_code": 0,
+      "stdout_file": "v070-full_git.txt"
+    },
+    {
+      "name": "dry_run",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --config agentlog_unified/semantic-inputs/fixed-expansion-v070.yaml --input agentlog_unified/semantic-runs/history-v070/input.jsonl --output /private/tmp/agentlog-v070-dry-output --offline --dry-run",
+      "exit_code": 0,
+      "stdout_file": "v070-dry_run.txt"
+    },
+    {
+      "name": "pause",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --config agentlog_unified/semantic-inputs/fixed-expansion-v070.yaml --input agentlog_unified/semantic-runs/history-v070/input.jsonl --output agentlog_unified/semantic-runs/real-v070-final --offline --max-seconds 0",
+      "exit_code": 2,
+      "stdout_file": "v070-pause.txt"
+    },
+    {
+      "name": "real_run",
+      "command": "PYTHONFAULTHANDLER=1 agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --config agentlog_unified/semantic-inputs/fixed-expansion-v070.yaml --input agentlog_unified/semantic-runs/history-v070/input.jsonl --output agentlog_unified/semantic-runs/real-v070-final --offline --resume",
+      "exit_code": 0,
+      "stdout_file": "v070-real_run.txt"
+    },
+    {
+      "name": "resume",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-scan --config agentlog_unified/semantic-inputs/fixed-expansion-v070.yaml --input agentlog_unified/semantic-runs/history-v070/input.jsonl --output agentlog_unified/semantic-runs/real-v070-final --offline --resume",
+      "exit_code": 0,
+      "stdout_file": "v070-resume.txt"
+    },
+    {
+      "name": "model_real",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-model --input agentlog_unified/semantic-runs/real-v070-final --output agentlog_unified/semantic-runs/model-real-v070 --online --max-rows 2 --model gpt-5.5",
+      "exit_code": 0,
+      "stdout_file": "v070-model_real.txt"
+    },
+    {
+      "name": "model_resume",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-model --input agentlog_unified/semantic-runs/real-v070-final --output agentlog_unified/semantic-runs/model-real-v070 --online --max-rows 2 --model gpt-5.5 --resume",
+      "exit_code": 0,
+      "stdout_file": "v070-model_resume.txt"
+    },
+    {
+      "name": "model_offline",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-model --input agentlog_unified/semantic-runs/real-v070-final --output /private/tmp/agentlog-v070-model-offline --offline",
+      "exit_code": 0,
+      "stdout_file": "v070-model_offline.txt"
+    },
+    {
+      "name": "human_template",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-codebook --input agentlog_unified/semantic-runs/real-v070-final --output agentlog_unified/semantic-runs/human-coding-v070 --offline",
+      "exit_code": 0,
+      "stdout_file": "v070-human_template.txt"
+    },
+    {
+      "name": "human_pending_noop",
+      "command": "agent_log_privacy/.venv/bin/python -m agentlog_unified semantic-codebook --input agentlog_unified/semantic-runs/real-v070-final --output agentlog_unified/semantic-runs/human-coding-v070 --file agentlog_unified/semantic-runs/human-coding-v070/annotation_template.csv --reviewer pending-template-noop --offline --resume",
+      "exit_code": 0,
+      "stdout_file": "v070-human_pending_noop.txt"
+    }
+  ],
+  "preserved_failed_attempts": [
+    {
+      "output": "semantic-runs/real-v070-first",
+      "exit_code": 139,
+      "reason": "Tree-sitter 0.26.0 native crash; repeated on 54 real log versions; 0.25.2 completed the same replay"
+    },
+    {
+      "output": "semantic-runs/model-smoke-v070",
+      "valid_responses": 0,
+      "reason": "CLI call failed; no model result"
+    },
+    {
+      "output": "semantic-runs/model-smoke-v070b",
+      "valid_responses": 0,
+      "reason": "invalid_json_schema: boolean const lacked type; actual response retained"
+    },
+    {
+      "output": "semantic-runs/model-smoke-v070c",
+      "valid_responses": 2,
+      "independent_reviews": 1,
+      "cohort": "synthetic",
+      "model": "gpt-5.5"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "started_at": "2026-09-08T21:16:29.745098+00:00",
+  "finished_at": "2026-09-08T21:17:05.960970+00:00",
+  "verifier_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/check_content_resume_v044.py",
+  "verifier_sha256": "9099de08f79d2dc7f40ad673c734f53d7ebe38a3b0ea97d23d84360f5aa65466",
+  "first_verification_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/v044_first_pass_content_exports_v044_verification.json",
+  "first_verification_sha256": "83026acf425b7cfba11eede83203d668efded8bbea9485cc625f864011a62236",
+  "baseline_hash_evidence_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/content_resume_v044_baseline_hashes.json",
+  "baseline_hash_evidence_sha256": "efb49796789b0189edfa10c658b5498e9f683fc413792a00bee6fd5d7bcdb70e",
+  "confirmed_terminal_by_parent": true,
+  "both_content_writer_locks_idle": true,
+  "results": [
+    {
+      "dataset": "aidev",
+      "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044",
+      "checks": {
+        "baseline_verified_before_resume_export": true,
+        "first_coverage_hash_unchanged": true,
+        "source_manifest_unchanged": true,
+        "classifier_files_unchanged": true,
+        "dataset_scope_preserved": true,
+        "content_type_occurrences_old_bytes_preserved": true,
+        "content_excluded_old_bytes_preserved": true,
+        "individual_cell_fields_preserved": true,
+        "non_tail_range_fields_preserved": true,
+        "old_tail_ranges_present_and_only_legally_extended": true,
+        "prefix_range_record_count_preserved": true,
+        "progress_all_pull_request.parquet": true,
+        "export_checkpoint_all_pull_request.parquet": true,
+        "old_nonempty_cells_all_pull_request.parquet": true,
+        "progress_all_repository.parquet": true,
+        "export_checkpoint_all_repository.parquet": true,
+        "old_nonempty_cells_all_repository.parquet": true,
+        "progress_all_user.parquet": true,
+        "export_checkpoint_all_user.parquet": true,
+        "old_nonempty_cells_all_user.parquet": true,
+        "progress_human_pr_task_type.parquet": true,
+        "export_checkpoint_human_pr_task_type.parquet": true,
+        "old_nonempty_cells_human_pr_task_type.parquet": true,
+        "progress_human_pull_request.parquet": true,
+        "export_checkpoint_human_pull_request.parquet": true,
+        "old_nonempty_cells_human_pull_request.parquet": true,
+        "progress_issue.parquet": true,
+        "export_checkpoint_issue.parquet": true,
+        "old_nonempty_cells_issue.parquet": true,
+        "progress_pr_comments.parquet": true,
+        "export_checkpoint_pr_comments.parquet": true,
+        "old_nonempty_cells_pr_comments.parquet": true,
+        "progress_pr_commit_details.parquet": true,
+        "export_checkpoint_pr_commit_details.parquet": true,
+        "old_nonempty_cells_pr_commit_details.parquet": true,
+        "progress_pr_commits.parquet": true,
+        "export_checkpoint_pr_commits.parquet": true,
+        "old_nonempty_cells_pr_commits.parquet": true,
+        "progress_pr_review_comments.parquet": true,
+        "export_checkpoint_pr_review_comments.parquet": true,
+        "old_nonempty_cells_pr_review_comments.parquet": true,
+        "progress_pr_review_comments_v2.parquet": true,
+        "export_checkpoint_pr_review_comments_v2.parquet": true,
+        "old_nonempty_cells_pr_review_comments_v2.parquet": true,
+        "progress_pr_reviews.parquet": true,
+        "export_checkpoint_pr_reviews.parquet": true,
+        "old_nonempty_cells_pr_reviews.parquet": true,
+        "progress_pr_task_type.parquet": true,
+        "export_checkpoint_pr_task_type.parquet": true,
+        "old_nonempty_cells_pr_task_type.parquet": true,
+        "progress_pr_timeline.parquet": true,
+        "export_checkpoint_pr_timeline.parquet": true,
+        "old_nonempty_cells_pr_timeline.parquet": true,
+        "progress_pull_request.parquet": true,
+        "export_checkpoint_pull_request.parquet": true,
+        "old_nonempty_cells_pull_request.parquet": true,
+        "progress_related_issue.parquet": true,
+        "export_checkpoint_related_issue.parquet": true,
+        "old_nonempty_cells_related_issue.parquet": true,
+        "progress_repository.parquet": true,
+        "export_checkpoint_repository.parquet": true,
+        "old_nonempty_cells_repository.parquet": true,
+        "progress_user.parquet": true,
+        "export_checkpoint_user.parquet": true,
+        "old_nonempty_cells_user.parquet": true
+      },
+      "all_checks_passed": true,
+      "prefix_hash_comparisons": {
+        "content_type_occurrences": {
+          "records": 162760,
+          "sha256": "e829f1f333d418ec9bb31d8d9d116b15302e3deea22d3a572cfd8052f065436e",
+          "expected_records": 162760,
+          "expected_sha256": "e829f1f333d418ec9bb31d8d9d116b15302e3deea22d3a572cfd8052f065436e"
+        },
+        "content_excluded": {
+          "records": 2323,
+          "sha256": "7b6eede1fa73f738e380cf3394a4b3e9db0d381c47f7fb499a23e9748c989a5b",
+          "expected_records": 2323,
+          "expected_sha256": "7b6eede1fa73f738e380cf3394a4b3e9db0d381c47f7fb499a23e9748c989a5b"
+        },
+        "individual_cells": {
+          "records": 67644,
+          "sha256": "a814d4beedb514908098b9827afe673fa234e943a0213547746b5f01056f26a0",
+          "expected_records": 67644,
+          "expected_sha256": "a814d4beedb514908098b9827afe673fa234e943a0213547746b5f01056f26a0"
+        },
+        "non_tail_ranges": {
+          "records": 240948,
+          "sha256": "3619b29dd47a887131a7d91446b458d72a0ec08df78ce2d317de991e8f085e7f",
+          "expected_records": 240948,
+          "expected_sha256": "3619b29dd47a887131a7d91446b458d72a0ec08df78ce2d317de991e8f085e7f"
+        },
+        "extendable_tails": {
+          "count": 5,
+          "checks_by_id": {
+            "5e40adaee3e583ed6fc4a244": true,
+            "33bfd6df4caab7ebb9fc58f4": true,
+            "0dff509aa3f1cad70569d6da": true,
+            "28e37fde519845707339c2e8": true,
+            "88d7d9efb51f5cc0d7e2076b": true
+          }
+        }
+      },
+      "source_row_progress": {
+        "all_pull_request.parquet": {
+          "before_next_row": 932791,
+          "after_next_row": 932791,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "all_repository.parquet": {
+          "before_next_row": 116211,
+          "after_next_row": 116211,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "all_user.parquet": {
+          "before_next_row": 72189,
+          "after_next_row": 72189,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "human_pr_task_type.parquet": {
+          "before_next_row": 6618,
+          "after_next_row": 6618,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "human_pull_request.parquet": {
+          "before_next_row": 6618,
+          "after_next_row": 6618,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "issue.parquet": {
+          "before_next_row": 4614,
+          "after_next_row": 4614,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_comments.parquet": {
+          "before_next_row": 39122,
+          "after_next_row": 39122,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_commit_details.parquet": {
+          "before_next_row": 40448,
+          "after_next_row": 297088,
+          "added_source_rows": 256640,
+          "stats_monotonic": true
+        },
+        "pr_commits.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_review_comments.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_review_comments_v2.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_reviews.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_task_type.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pr_timeline.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "pull_request.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "related_issue.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "repository.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "user.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        }
+      },
+      "old_processed_rows": 1218611,
+      "new_processed_rows": 1475251,
+      "old_candidate_and_example_bytes_preserved": true,
+      "individual_cell_fields_preserved": true
+    },
+    {
+      "dataset": "swe-chat",
+      "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044",
+      "checks": {
+        "baseline_verified_before_resume_export": true,
+        "first_coverage_hash_unchanged": true,
+        "source_manifest_unchanged": true,
+        "classifier_files_unchanged": true,
+        "dataset_scope_preserved": true,
+        "content_type_occurrences_old_bytes_preserved": true,
+        "content_excluded_old_bytes_preserved": true,
+        "individual_cell_fields_preserved": true,
+        "non_tail_range_fields_preserved": true,
+        "old_tail_ranges_present_and_only_legally_extended": true,
+        "prefix_range_record_count_preserved": true,
+        "progress_checkpoints.parquet": true,
+        "export_checkpoint_checkpoints.parquet": true,
+        "old_nonempty_cells_checkpoints.parquet": true,
+        "progress_commits.parquet": true,
+        "export_checkpoint_commits.parquet": true,
+        "old_nonempty_cells_commits.parquet": true,
+        "progress_conversations.parquet": true,
+        "export_checkpoint_conversations.parquet": true,
+        "old_nonempty_cells_conversations.parquet": true,
+        "progress_repositories.parquet": true,
+        "export_checkpoint_repositories.parquet": true,
+        "old_nonempty_cells_repositories.parquet": true,
+        "progress_session_logs.parquet": true,
+        "export_checkpoint_session_logs.parquet": true,
+        "old_nonempty_cells_session_logs.parquet": true,
+        "progress_sessions.parquet": true,
+        "export_checkpoint_sessions.parquet": true,
+        "old_nonempty_cells_sessions.parquet": true
+      },
+      "all_checks_passed": true,
+      "prefix_hash_comparisons": {
+        "content_type_occurrences": {
+          "records": 863343,
+          "sha256": "336fadde4d6d24f34fb28991270326383be5617020ae5eb0c98bc59ccaaec546",
+          "expected_records": 863343,
+          "expected_sha256": "336fadde4d6d24f34fb28991270326383be5617020ae5eb0c98bc59ccaaec546"
+        },
+        "content_excluded": {
+          "records": 6708,
+          "sha256": "b64e373cd8e066d09b064aa5a2702db12292c6e59284c20b2e84ef387c2b5199",
+          "expected_records": 6708,
+          "expected_sha256": "b64e373cd8e066d09b064aa5a2702db12292c6e59284c20b2e84ef387c2b5199"
+        },
+        "individual_cells": {
+          "records": 29228,
+          "sha256": "47791c60e1c0b26f628c833ef7abdcbb64b9ea413bc678792378c7fdef358604",
+          "expected_records": 29228,
+          "expected_sha256": "47791c60e1c0b26f628c833ef7abdcbb64b9ea413bc678792378c7fdef358604"
+        },
+        "non_tail_ranges": {
+          "records": 3724,
+          "sha256": "a4b71ff6141ef6ca0cdaebec88ca8c69d027b9828840e9a3c97b32d4576e5f70",
+          "expected_records": 3724,
+          "expected_sha256": "a4b71ff6141ef6ca0cdaebec88ca8c69d027b9828840e9a3c97b32d4576e5f70"
+        },
+        "extendable_tails": {
+          "count": 4,
+          "checks_by_id": {
+            "d0c501ad82b7cbcdf75332a1": true,
+            "d6915b671ccffc9551aae75d": true,
+            "fd0f4fbcc18e5c7997ad6caa": true,
+            "9c62c12c578b0cb2164a688c": true
+          }
+        }
+      },
+      "source_row_progress": {
+        "checkpoints.parquet": {
+          "before_next_row": 13406,
+          "after_next_row": 13406,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "commits.parquet": {
+          "before_next_row": 5423,
+          "after_next_row": 9627,
+          "added_source_rows": 4204,
+          "stats_monotonic": true
+        },
+        "conversations.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "repositories.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "session_logs.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        },
+        "sessions.parquet": {
+          "before_next_row": 0,
+          "after_next_row": 0,
+          "added_source_rows": 0,
+          "stats_monotonic": true
+        }
+      },
+      "old_processed_rows": 18829,
+      "new_processed_rows": 23033,
+      "old_candidate_and_example_bytes_preserved": true,
+      "individual_cell_fields_preserved": true
+    }
+  ],
+  "all_checks_passed": true,
+  "observation_scope": "dataset_text_cells",
+  "source_values_read": false,
+  "source_databases_modified": false,
+  "target_code_executed": false,
+  "network_accessed": false,
+  "limitations": [
+    "Preservation evidence concerns already observed outputs, not classifier completeness or semantic correctness."
+  ]
+}

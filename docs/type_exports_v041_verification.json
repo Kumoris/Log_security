@@ -1,0 +1,64 @@
+{
+  "recorded_utc": "2026-09-08T19:58:43.987052+00:00",
+  "automated_verification": true,
+  "human_review_performed": false,
+  "datasets": {
+    "aidev-full-v4": {
+      "log_versions": 134,
+      "unknown_queue": 111,
+      "integrity_issues": 0,
+      "csv_row_counts": {
+        "type_occurrences.csv": 134,
+        "unknown_type_review_queue.csv": 111,
+        "type_summary.csv": 48
+      },
+      "sha256": {
+        "type_occurrences.jsonl": "cc98017400dbb613faa3d36051687248b039117333bd63e6953ac0a8d3815055",
+        "type_summary.csv": "695afa868cd1b760ee2f7990b32dd953438ff977ce3f3a93007634446c032e92",
+        "unknown_type_review_queue.csv": "3a597161b0c926765c7911cf8cd0c736d675136a3c9a40cbbdcc2c6503c9bc21",
+        "type_summary.json": "65dff291b7656a752df8f8ca54cc59e1d8ac432d36c5fc378e687969e931d4f1",
+        "unknown_type_review_queue.jsonl": "1213cf1d4c2f06176d4b11b023efcc0c5ddfdc81a18686de32aa20e509497f5b",
+        "type_occurrences.csv": "3ac1d538c9e35916e997472c612f0857362854695b752a43e7c8ef4412bae33f"
+      },
+      "analysis_fingerprint_matches_current_source": true
+    },
+    "swechat-full-v4": {
+      "log_versions": 2953,
+      "unknown_queue": 2882,
+      "integrity_issues": 0,
+      "csv_row_counts": {
+        "type_occurrences.csv": 2953,
+        "unknown_type_review_queue.csv": 2882,
+        "type_summary.csv": 48
+      },
+      "sha256": {
+        "type_occurrences.jsonl": "d059c392d131eb38af69c91b23fdb2321779c571836e49e6b6bc0daf74116583",
+        "type_summary.csv": "6813a9aff693c5dda27ace255032f6bce0e19b938e06dffa5a7b776346e75c79",
+        "unknown_type_review_queue.csv": "c253f207f8469b28cedd82c153d45a794062d9ad7d2977875c4019d5e66d0811",
+        "type_summary.json": "4c065f5c2931d627b49a534f7742e214f0d58f0c4b41fe664e8d4885b3fd1900",
+        "unknown_type_review_queue.jsonl": "c845f7a392cffa7dc6c435518f37ccf2d7460ddd493afd4865f508b2f4cc6e4e",
+        "type_occurrences.csv": "c3f18f7ec75e439405ccfd837f4f775c34ba6ca8af90c07a8f62286dd3203304"
+      },
+      "analysis_fingerprint_matches_current_source": true
+    },
+    "aidev-anchors-v2": {
+      "log_versions": 3,
+      "unknown_queue": 3,
+      "integrity_issues": 0,
+      "csv_row_counts": {
+        "type_occurrences.csv": 3,
+        "unknown_type_review_queue.csv": 3,
+        "type_summary.csv": 48
+      },
+      "sha256": {
+        "type_occurrences.jsonl": "32ede119342c7b3b38ce769d3c6c381d2153b84e66f088a0e391e2b669ea85ea",
+        "type_summary.csv": "bd3d2a720b0508678abfdefdc9bdcf958d98c266e37d188ef90701c9dddbe45a",
+        "unknown_type_review_queue.csv": "0a453996bf17a2d59ef9df33f6557156e89fe4a3701d2a1ce0a12b40310eb5f2",
+        "type_summary.json": "eb4fd5b54646879e923ff4a8fd587c82298c4969c42ffb47808fabd04042711c",
+        "unknown_type_review_queue.jsonl": "f2623094805f76e1cd06d0b44c6e94ff3516d2c38aa4c38e0571ff06a46dbbe2",
+        "type_occurrences.csv": "7e5f439470bba08d07932bd91585d9b3aa929fe073df36710c0783a2d86bc2c2"
+      },
+      "analysis_fingerprint_matches_current_source": true
+    }
+  }
+}

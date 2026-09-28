@@ -1,0 +1,383 @@
+{
+  "audit_kind": "readonly_same_version_repair_verification",
+  "started_utc": "2026-09-09T07:57:56.951901+00:00",
+  "completed_utc": "2026-09-09T07:57:57.897512+00:00",
+  "elapsed_seconds": 0.946,
+  "all_checks_passed": true,
+  "checks": {
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/selection/selection_manifest.json": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/manifest.json": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_coverage.json": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/manifest.json": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/manifest.json": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/content_coverage.json": true,
+    "parent_unchanged_while_locking": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/advance_state.json": true,
+    "advance_terminal_state_matches_coverage": true,
+    "advance_exact_ancestor_and_checkpoint": true,
+    "advance_source_chain": true,
+    "parent_aidev": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/taxonomy.py": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/storage.py": true,
+    "current_classifier_equals_parent": true,
+    "parent_and_ancestor_keys_consistent": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/content.sqlite": true,
+    "parent_snapshot_current_db_tables": true,
+    "parent_db_counts_equal_coverage": true,
+    "parent_review_counts_equal_coverage": true,
+    "repair_exact_current_or_ancestor_parent": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/selection/selection.jsonl": true,
+    "selection_fingerprint_consistent": true,
+    "selection_source_and_key_chain": true,
+    "selection_unique_count_and_characters": true,
+    "selection_safe_metadata_and_ids": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_cursor.py": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_reconcile.py": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_repair.py": true,
+    "repair_source_sha256_current": true,
+    "repair_classifier_sha256_current": true,
+    "repair_taxonomy_current_pending": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair.sqlite": true,
+    "repair_cell_sources_hmac_cursors_and_selection_exact": true,
+    "repair_cell_status_and_page_totals": true,
+    "completion_requires_all_rules_and_verified_sources": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": true,
+    "frozen_import_manifest": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet": true,
+    "selected_source_byte_sha_and_size": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_occurrences.jsonl": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_occurrences.csv": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_excluded.jsonl": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_excluded.csv": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_unknown_type_review_queue.jsonl": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_unknown_type_review_queue.csv": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_data_gaps.jsonl": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_data_gaps.csv": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_summary.jsonl": true,
+    "stable_hash_/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_summary.csv": true,
+    "repair_occurrences_safe_labels_spans_and_identities": true,
+    "repair_type_occurrences_exact_metadata_against_producers": true,
+    "repair_type_occurrences_jsonl_csv_all_field_parity": true,
+    "repair_excluded_exact_metadata_against_producers": true,
+    "repair_excluded_jsonl_csv_all_field_parity": true,
+    "repair_unknown_type_review_queue_exact_metadata_against_producers": true,
+    "repair_unknown_type_review_queue_jsonl_csv_all_field_parity": true,
+    "repair_data_gaps_exact_metadata_against_producers": true,
+    "repair_data_gaps_jsonl_csv_all_field_parity": true,
+    "repair_type_summary_exact_metadata_against_producers": true,
+    "repair_type_summary_jsonl_csv_all_field_parity": true,
+    "repair_coverage_counts_and_embedded_summary": true,
+    "same_version_selected_parent_metadata_delta_accounted": true,
+    "all_observed_files_unchanged": true
+  },
+  "passed": 65,
+  "total": 65,
+  "results": {
+    "run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050",
+    "parent": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050",
+    "selected_cells": 1,
+    "selected_characters": 74169,
+    "candidate_occurrences": 4112,
+    "excluded_occurrences": 0,
+    "committed_pages": 29,
+    "all_selected_cells_all_rules_finished": true,
+    "source_verification_complete": true,
+    "data_gap_records": 0,
+    "same_version_parent_comparison": {
+      "exact_retained_details": 1000,
+      "missing_identities": 0,
+      "changed_details_or_exclusion": 0,
+      "new_repair_identities": 3112
+    },
+    "semantic_complete": false
+  },
+  "evidence_files": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/selection/selection_manifest.json": {
+      "sha256": "c9c58badf9f0a60f89b82fb92f2535e070eced9a9609b0b1d325bcba853866ba",
+      "stat": [
+        16777231,
+        107932814,
+        1766,
+        1788940612448537835,
+        1788940612448613168
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/manifest.json": {
+      "sha256": "0c83263383341a32e59c38b664a5750bb95f03b9a8161c796b80e8e38ffb1817",
+      "stat": [
+        16777231,
+        107932817,
+        1353,
+        1788940612475211482,
+        1788940612475298190
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_coverage.json": {
+      "sha256": "e455ace00a460f2fe6e24256a058a621ca3f14ed7df4613a7efe478e26e6aaec",
+      "stat": [
+        16777231,
+        107933039,
+        2840,
+        1788940651421073035,
+        1788940651421115285
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/manifest.json": {
+      "sha256": "96a93d7fbf786f11ebb1cd85584df79e820f31eef0bc360fcbd3efe3d17a8663",
+      "stat": [
+        16777231,
+        107779614,
+        23938,
+        1788939052850769778,
+        1788939052850839861
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/manifest.json": {
+      "sha256": "1402e3056d51f6113d25c3959ec87982110053c0b4b6d22d009885ca926a5acb",
+      "stat": [
+        16777231,
+        107779400,
+        23431,
+        1788939023619941856,
+        1788939023620114939
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/content_coverage.json": {
+      "sha256": "ab42933b4e82c283319a2e73dc8bee10d9f72c51dfdab0de3e47ca33f5e7f04c",
+      "stat": [
+        16777231,
+        107905434,
+        24949,
+        1788940507319809417,
+        1788940507319904042
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/advance_state.json": {
+      "sha256": "f9dae673919597e60d80df57cf71f5ab083fab25a7d854f06ee4408ebbfbc2bc",
+      "stat": [
+        16777231,
+        107905435,
+        1207,
+        1788940507322188408,
+        1788940507322276658
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": {
+      "sha256": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+      "stat": [
+        16777231,
+        106655213,
+        12107,
+        1788938954554951789,
+        1788938954554951789
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/taxonomy.py": {
+      "sha256": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973",
+      "stat": [
+        16777231,
+        105977791,
+        16353,
+        1788938954554872331,
+        1788938954554872331
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/storage.py": {
+      "sha256": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+      "stat": [
+        16777231,
+        105913257,
+        4438,
+        1788938954554485416,
+        1788938954554485416
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/content.sqlite": {
+      "sha256": "3948b172451751f6927d86ceeefad85be618dd14c4892985a72817c67fc4f80b",
+      "stat": [
+        16777231,
+        107779401,
+        834441216,
+        1788940418546763548,
+        1788940418546763548
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/selection/selection.jsonl": {
+      "sha256": "773a6a744425a7b1ede67d117ca40f9299b37da3965f9495aeabb69775777bc5",
+      "stat": [
+        16777231,
+        107932813,
+        270,
+        1788940612448221586,
+        1788940612448319336
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_cursor.py": {
+      "sha256": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+      "stat": [
+        16777231,
+        106747318,
+        5502,
+        1788903080227042890,
+        1788903080227050099
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_reconcile.py": {
+      "sha256": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+      "stat": [
+        16777231,
+        107647903,
+        34672,
+        1788912032491782813,
+        1788912032491782813
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_repair.py": {
+      "sha256": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+      "stat": [
+        16777231,
+        107647902,
+        30178,
+        1788912032491370980,
+        1788912032491370980
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair.sqlite": {
+      "sha256": "4588026d3cc574fdedcfa87ece0edcdeb42fb8903521cca2d59d8431e93a42f8",
+      "stat": [
+        16777231,
+        107932818,
+        1372160,
+        1788940613434746075,
+        1788940651095403998
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": {
+      "sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "stat": [
+        16777231,
+        106004545,
+        3024,
+        1788886355435478462,
+        1788886355435535962
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet": {
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "stat": [
+        16777231,
+        105989120,
+        330776130,
+        1788885015467215888,
+        1788885015472026660
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_occurrences.jsonl": {
+      "sha256": "268fc8ae784fc06175564ae6dca30214f4d3bd4753ce61976588ee5529559034",
+      "stat": [
+        16777231,
+        107933028,
+        2532313,
+        1788940651413633605,
+        1788940651414448310
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_occurrences.csv": {
+      "sha256": "46cff2810c25607a62d78dd8d4c56fb03aa5e47d1239b6adf0c5222f8c2039c7",
+      "stat": [
+        16777231,
+        107933029,
+        1072832,
+        1788940651413097024,
+        1788940651415325265
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_excluded.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stat": [
+        16777231,
+        107933030,
+        0,
+        1788940651415765472,
+        1788940651416579094
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_excluded.csv": {
+      "sha256": "8247d2f64adb8d1b6d21925d17643be79b3274158492577a4b3e435b4234f6b1",
+      "stat": [
+        16777231,
+        107933031,
+        279,
+        1788940651416525802,
+        1788940651416638094
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_unknown_type_review_queue.jsonl": {
+      "sha256": "03ec832d684bfe84d7bd2b3c904ed59d7c684289a16bcebbbfe7083023b3dd4d",
+      "stat": [
+        16777231,
+        107933032,
+        652,
+        1788940651416878634,
+        1788940651416924842
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_unknown_type_review_queue.csv": {
+      "sha256": "a352146c827e70b0fd484d3fdf7cf5a0dd12a094b93bdeb40352950fb0d468a4",
+      "stat": [
+        16777231,
+        107933033,
+        600,
+        1788940651416860843,
+        1788940651416998425
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_data_gaps.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stat": [
+        16777231,
+        107933034,
+        0,
+        1788940651417047050,
+        1788940651417193550
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_data_gaps.csv": {
+      "sha256": "dbadb4f901cdb61c066064c5b3716d6ae09af3b46b39511f5246c96afbda4a01",
+      "stat": [
+        16777231,
+        107933035,
+        168,
+        1788940651417150633,
+        1788940651417250966
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_summary.jsonl": {
+      "sha256": "eae044e876ff605de4c87651bfdd3aac66496d7ef0843f61cdbb7d6673e020c0",
+      "stat": [
+        16777231,
+        107933036,
+        1523,
+        1788940651420461620,
+        1788940651420518495
+      ]
+    },
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_type_summary.csv": {
+      "sha256": "95ebf4cc968c801fa87c320eb368bc73703671fb1d63e4ded5673433636d8636",
+      "stat": [
+        16777231,
+        107933037,
+        732,
+        1788940651420425204,
+        1788940651420599995
+      ]
+    }
+  },
+  "source_values_decoded": false,
+  "source_values_printed": false,
+  "source_files_modified": false,
+  "network_accessed": false,
+  "credentials_validated": false,
+  "evidence_boundary": "Metadata consistency and finite-rule completion do not prove all sensitive semantics, unique people or secrets, validity, disclosure, or application-log execution."
+}

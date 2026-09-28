@@ -1,0 +1,113 @@
+{
+  "recorded_utc": "2026-09-09T07:11:19.936711+00:00",
+  "review_scope": "read-only shared taxonomy call-path and synthetic boundary review",
+  "baseline_taxonomy_sha256": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed",
+  "baseline_taxonomy_unchanged_during_probe": true,
+  "call_paths": {
+    "python_log": "detector._types / SnapshotEvaluator attribute and constant get projection -> identifier_types -> taxonomy._matches; all output entities -> annotate_entity",
+    "lexical_log": "detector Go/C#/JS lexical name flows -> _types -> identifier_types -> _matches -> annotate_entity",
+    "plaintext": "content_types._named_candidates -> _matches; content_cursor paged named rule reuses content_types._named_candidates",
+    "structured": "structured_types.classify_structured direct member name -> _matches; own traversal retains unknown nodes",
+    "type_audit": "build_type_audit calls annotate_entity; batch exporter preserves existing annotations and observed taxonomy version, otherwise backfills",
+    "redaction": "storage.redact has independent regex and SECRET_PATTERNS; does not call taxonomy or identifier_types",
+    "schema": "schema_scan uses explicit ROLES, not _matches; taxonomy still included in source fingerprint and catalog"
+  },
+  "synthetic_findings": [
+    {
+      "case": "APIKey and IPAddress",
+      "actual": "already map to AUTH.api_key and QID.network_identifier",
+      "action": "Preserve these; use acronym-to-word split, not one underscore per uppercase letter."
+    },
+    {
+      "case": "HTTPAuthorization and HTTPHeaders",
+      "actual": "no taxonomy/coarse labels",
+      "action": "Single shared normalization should enable bounded key hints."
+    },
+    {
+      "case": "APIKEYCount",
+      "actual": "taxonomy empty, detector coarse credential, final log AUTH.credential_bundle/possible",
+      "action": "detector legacy aggregate guard must use the same normalized key as taxonomy."
+    },
+    {
+      "case": "APIKey.id and password.name",
+      "actual": "final synthetic Python logs AUTH/supported with unknown_review=false",
+      "action": "Do not feed whole receiver into key rules; finite immediate-parent and leaf role only."
+    },
+    {
+      "case": "password.user.id",
+      "actual": "AUTH.password and QID.user_identifier both present",
+      "action": "Only direct user.id may provide QID, remote password ancestor must not label selected id."
+    },
+    {
+      "case": "user.ID and user.Name",
+      "actual": "no labels, unknown queue true",
+      "action": "Normalize leaf before the contextual-role whitelist."
+    },
+    {
+      "case": "user.unknown_field",
+      "actual": "no labels, unknown queue true",
+      "action": "Must remain pending after normalization/context changes."
+    },
+    {
+      "case": "redact dict key APIKey or HTTPAuthorization with shape-free synthetic value",
+      "actual": "value retained; api_key masked",
+      "action": "Separate pre-existing redactor coverage gap. Taxonomy changes do not automatically fix it or prove an actual exported leak."
+    }
+  ],
+  "minimal_change": "One shared key normalization in taxonomy, consumed by detector._types aggregate guard. Projection resolves final member, applies only finite immediate-parent contextual pair rules, and never classifies all receiver tokens. Structured carries only direct parent role without crossing arrays/decode boundaries or generic inherited PII. No expression evaluator or taxonomy-category expansion required.",
+  "regression_assertions": [
+    "APIKey/IPAddress keep original specific labels; HTTPAuthorization/HTTPHeaders gain expected finite labels.",
+    "APIKeyCount/APIKEYCount/IPAddressCount/HTTPHeadersCount produce no sensitive/coarse labels; test detect_snapshot as well as _matches.",
+    "user.ID/user.Name/user.get(\"ID\") receive only the bounded intended type; cache.ID/repo.Name remain unknown.",
+    "APIKey.id/password.name give no credential; password.user.id gives only QID.user_identifier; user.unknown_field remains queued.",
+    "JSON user:{id:7} may gain QID on the exact leaf; repo:{id:7} and user:{unmapped:7} stay unresolved; null/boolean/empty/masked values must not gain candidates.",
+    "JSON user:{account:{id:7}} must follow only the explicit current parent rule; arrays and encoded strings must not silently inherit unrelated parent hints.",
+    "Known candidate plus an unknown sibling retains unknown_nodes and a full nonempty-cell review queue.",
+    "If redactor normalization is in scope, synthetic shape-free values under APIKey are masked; key names/metadata and semantic fingerprints keep their established representation."
+  ],
+  "fingerprint_impacts": {
+    "regular_run_and_extend": "config.init_run hashes every src/**/*.py; extension requires identical code_sha256",
+    "batch_mine": "analysis_fingerprint includes detector.py/taxonomy.py; new batch needed",
+    "content_scan_and_advance": "frozen source set includes content_types.py/taxonomy.py/storage.py/content_scan.py; old seed/checkpoint cannot resume with changed classifier",
+    "structured_scan": "source_sha256 includes taxonomy.py/structured_types.py and producer dependencies; new output required",
+    "repair_and_reconcile": "classifier_sha256 includes content_types/taxonomy/storage; selection, resume and reconciliation reject cross-version classifiers",
+    "schema_scan": "source_sha256 also includes taxonomy.py though ROLES unchanged; retain old snapshot rather than implying new schema scan"
+  },
+  "evidence_paths": [
+    "src/agentlog_unified/taxonomy.py:87",
+    "src/agentlog_unified/detector.py:42",
+    "src/agentlog_unified/detector.py:489",
+    "src/agentlog_unified/detector.py:535",
+    "src/agentlog_unified/content_types.py:107",
+    "src/agentlog_unified/structured_types.py:240",
+    "src/agentlog_unified/storage.py:48",
+    "src/agentlog_unified/type_audit.py:77",
+    "src/agentlog_unified/type_audit.py:322",
+    "src/agentlog_unified/config.py:79",
+    "src/agentlog_unified/batch_mine.py:429",
+    "src/agentlog_unified/content_scan.py:168",
+    "src/agentlog_unified/structured_scan.py:26",
+    "tests/test_taxonomy.py:70",
+    "tests/test_taxonomy.py:104",
+    "tests/test_taxonomy.py:112",
+    "tests/test_taxonomy.py:120",
+    "tests/test_structured_types.py:62",
+    "tests/test_structured_types.py:76",
+    "tests/test_structured_scan.py:74",
+    "tests/test_cli_offline.py:96"
+  ],
+  "recommended_focused_tests": [
+    "tests/test_taxonomy.py",
+    "tests/test_content_types.py",
+    "tests/test_reference_values.py",
+    "tests/test_structured_types.py",
+    "tests/test_type_audit.py",
+    "tests/test_go_log_detection.py",
+    "tests/test_csharp_log_detection.py",
+    "tests/test_cli_offline.py"
+  ],
+  "tests_run_this_review": "Only bounded direct pure classification/redaction probes; no pytest suite rerun and no target code executed.",
+  "real_source_values_read": false,
+  "src_or_tests_modified": false,
+  "new_runtime_leak_claim": false
+}

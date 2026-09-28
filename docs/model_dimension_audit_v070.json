@@ -1,0 +1,55 @@
+{
+  "records": [
+    {
+      "case_id": "026ff034aac639ec6194f265",
+      "method": "rule_audit_of_model_suggestion_not_human_review",
+      "model_record_id": "ee6ff9a4100dad7e5cd75681",
+      "model_semantic_verdict": "supported",
+      "verified_program_use_role": "nested_expression_input",
+      "whole_input_value_logged_proven": false,
+      "log_association_requires_review": true,
+      "unmapped_model_labels": [
+        {
+          "category": "program_semantics",
+          "subtype": "async_call_result"
+        },
+        {
+          "category": "program_semantics",
+          "subtype": "collection_like_result"
+        }
+      ],
+      "sensitive_types_confirmed": [],
+      "human_status": "pending"
+    },
+    {
+      "case_id": "0a301bc91f005f1c3ebb9ecb",
+      "method": "rule_audit_of_model_suggestion_not_human_review",
+      "model_record_id": "a68ed813d20d9ce641a50875",
+      "model_semantic_verdict": "supported",
+      "verified_program_use_role": "nested_expression_input",
+      "whole_input_value_logged_proven": false,
+      "log_association_requires_review": true,
+      "unmapped_model_labels": [
+        {
+          "category": "program_semantics",
+          "subtype": "checkpoint_cache_value"
+        },
+        {
+          "category": "program_semantics",
+          "subtype": "control_flow_return_value"
+        },
+        {
+          "category": "type_contract",
+          "subtype": "partially_observed"
+        },
+        {
+          "category": "static_log_association",
+          "subtype": "logged_derived_count"
+        }
+      ],
+      "sensitive_types_confirmed": [],
+      "human_status": "pending"
+    }
+  ],
+  "note": "Model category strings may describe analytical dimensions; they are not automatically sensitive taxonomy entries. Nested inputs are not whole-value log output proof."
+}

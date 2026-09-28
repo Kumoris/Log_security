@@ -1,0 +1,75 @@
+project: agentlog_unified
+dfg:
+  max_nodes: 200
+  max_chars: 24000
+  max_hops: 2
+  max_caller_hops: 2
+schema_version: '2.0'
+random_seed: 20260906
+run_mode: smoke
+collection_cutoff_utc: null
+source_revision: null
+languages: [python, javascript, typescript, go, csharp, java]
+input:
+  prs_path: examples/prs.example.jsonl
+  repositories_path: null
+  provenance_path: null
+  source: local
+  offline: true
+  column_mapping: {}
+sampling:
+  smoke_max_repositories: 2
+  smoke_max_initial_agent_prs: 30
+  pilot_max_repositories: 20
+  pilot_max_initial_agent_prs: 1000
+  human_control_ratio: 1
+  human_match_days: 90
+observation:
+  days: 90
+  sensitivity_windows_days: [30, 180]
+  target_branch_policy: pr_base_branch_at_collection
+  history_order: topology
+  unknown_integration_time: retain_without_exact_latency
+mining:
+  engine: pydriller
+  repository_cache: data/cache/repos
+  num_workers_per_repository: 1
+  repository_workers: 1
+  max_history_commits_per_repository: 50000
+  max_source_file_bytes: 2097152
+  max_snapshot_files: 3000
+  max_download_gb: 10
+  merge_diff_policy: explicit_parent_to_commit
+  skip_whitespaces: false
+  followup_author_filter: null
+  skip_file_globs: []
+analysis:
+  dependency_depth: 1
+  retain_lexical_only: true
+  privacy_filter_before_trace: false
+  llm_enabled: false
+  external_paid_llm_calls: 0
+  execute_target_code: false
+semantics:
+  max_hops: 3
+  generic_first: false
+  max_fields: 100
+  max_context_chars: 16000
+  max_snapshot_files: 500
+  max_history_commits: 20
+  max_source_bytes: 262144
+  ablations: true
+  vocabulary: []
+reverse:
+  enabled: false
+  max_commits: 20000
+network:
+  http_concurrency: 1
+  timeout_seconds: 30
+  max_retries: 3
+  collect_reviews: false
+storage:
+  index_database: data/index.sqlite
+  evidence_max_context_lines: 30
+  keep_raw_evidence_private: true
+  export_redacted: true

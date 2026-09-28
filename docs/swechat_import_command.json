@@ -1,0 +1,10 @@
+{
+  "command": "agentlog-unified swechat-import --swechat-dir agentlog_unified/cache/swechat-frozen --output agentlog_unified/inputs/swechat-full --offline",
+  "exit_code": 1,
+  "status": "interrupted_incomplete",
+  "error_type": "ValueError",
+  "reason": "Arrow nanosecond timestamp cannot be converted losslessly to Python datetime without pandas. Metadata projection conversion requires precision-preserving normalization.",
+  "target_code_executed": false,
+  "retained_for_audit": true,
+  "followup": "Fix ingestion conversion and use new output directory; do not count incomplete rows as completed import."
+}

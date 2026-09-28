@@ -1,0 +1,573 @@
+{
+  "generated_at": "2026-09-08T20:16:39.213043+00:00",
+  "observation_scope": "dataset_commit_changes",
+  "actual_commit_rule": "Distinct (repository,sha) with commit_audit.metrics.pydriller_commits > 0; metadata/pending/blocked do not count.",
+  "source_hashes": {
+    "agentlog_unified/batches/aidev-full-v3/exports/commit_audit.jsonl": {
+      "sha256": "f6c3abcb11bbfd49316dc174bd1978d2a7cee54dc40ddfcb20d0a97621f3b3b5",
+      "bytes": 43817743
+    },
+    "agentlog_unified/batches/aidev-full-v4/exports/commit_audit.jsonl": {
+      "sha256": "dc13c49afc37f59b87a9b69de5110c5068afca26c62cefdb1f8ba64ff7c4fc32",
+      "bytes": 28619252
+    },
+    "agentlog_unified/batches/aidev-full-v5/exports/commit_audit.jsonl": {
+      "sha256": "319e0f31a15b2c4ffaadc5bee3b23ebb2690a2b9b649a77238cb7ae108d336f0",
+      "bytes": 43872784
+    },
+    "agentlog_unified/batches/aidev-anchors-v2/exports/commit_audit.jsonl": {
+      "sha256": "f0ca123f75b26766d68e5b385909d6c0f5a8498cc5cea09927f0bb6b946f21e2",
+      "bytes": 8106184
+    },
+    "agentlog_unified/batches/aidev-anchors-v3/exports/commit_audit.jsonl": {
+      "sha256": "dfe2484960bc99e115078a8074d917caad814b3b77eb2042d6f13cb990dd5933",
+      "bytes": 8106300
+    },
+    "agentlog_unified/batches/aidev-full-v4/exports/type_occurrences.jsonl": {
+      "sha256": "cc98017400dbb613faa3d36051687248b039117333bd63e6953ac0a8d3815055",
+      "bytes": 680618
+    },
+    "agentlog_unified/batches/aidev-full-v5/exports/type_occurrences.jsonl": {
+      "sha256": "4a6b3427e289ebea0da81dc67c5a0fb83cfbb9872e3fadde121b17c5584dfee6",
+      "bytes": 2747615
+    },
+    "agentlog_unified/batches/aidev-anchors-v2/exports/type_occurrences.jsonl": {
+      "sha256": "32ede119342c7b3b38ce769d3c6c381d2153b84e66f088a0e391e2b669ea85ea",
+      "bytes": 7027
+    },
+    "agentlog_unified/batches/aidev-anchors-v3/exports/type_occurrences.jsonl": {
+      "sha256": "1e8194a60beaedb67e5ef1934f414c664b1ef871e2ef57350fb3df75077de3bb",
+      "bytes": 197901
+    }
+  },
+  "actual_git_commit_counts": {
+    "aidev-full-v3": 227,
+    "aidev-full-v4": 155,
+    "aidev-full-v5": 336,
+    "aidev-anchors-v2": 21,
+    "aidev-anchors-v3": 21
+  },
+  "main_previous_v3_v4_union": 265,
+  "main_current_v5": 336,
+  "main_current_retained_from_old_union": 257,
+  "main_newly_read_vs_old_union_count": 79,
+  "main_newly_read_vs_old_union": [
+    {
+      "repository": "1c-syntax/bsl-language-server",
+      "sha": "d21e17dce77fd8ffa71e189a38ae25c80f217b18"
+    },
+    {
+      "repository": "1c-syntax/bsl-language-server",
+      "sha": "df49d65c3e59b4be18bd222f3476829c4757f672"
+    },
+    {
+      "repository": "4ian/gdevelop",
+      "sha": "08f00bb8939b202956a45cc6f254663df11ad725"
+    },
+    {
+      "repository": "4ian/gdevelop",
+      "sha": "471a607d16f8f4253ec2ba34789711a98ea92854"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "016f3b274a42a78939910c7ee679d259f6ca5762"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "01b2d15efbbf41f340a87697f922782209cc94f7"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "0735d5a5563231f695a0cee3af45c4b9b473bcd9"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "0a31bee47f8fefce75c10663689017c48b7eb458"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "0ab75a1114916b2797f8a2e01e6e52b54a7118a2"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "0d60df2184a2548d8df434f8b13678317d4a2694"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "0dc14e6e65f9f05876c06d5762e92475681de9a3"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "114ede7984d452e9aab66737a79f584a209b7eff"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "11af43d356400914c7bc5eb904fef11eff054886"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "14a05129111c615d18f3b693b17a922085c019d9"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "190a3a581cb6d67a16d898d1b6ac91ff5e947b47"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "1d2e390fb35a8fcdd28514b31aa4f6b59f8a1e66"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "1d35e79ee4ecdaf76d0d0164b8a7e074773a7958"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "1f9b8d3ef150e28ef77920de7469b2b8b5677114"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "24a5f4cc254499aac7ee16d32e01435b04a26212"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "26b6858c06541e74cb9c6e1482f039af0ed27533"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "2dadeaa032bd3fc3e18a8795bca438acb1d0dd83"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "3280f1dcf285aab6c397f11c74fc506d71d01153"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "3c69883f6ac41dbb096d736ee23f6f24187288d1"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "3caf6644e9a78d080a9ce9460dda18e18120f27c"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "3e6c565874c9433532b83910b3d1f8ff75d91728"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "3f3d2bf3a223fa68a53e48963a0aa5f82b44ca5b"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "41ba492aebc745dc87f977c0bdd85ed95117600b"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "467c1c13f1ad29a3ea52b80b39517459368e79a7"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "4bbde2286469ed893308abadf9058f09ef6b8e80"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "53ff766eea5d88ac9a34ec9f54b09a214f6b7dc7"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "5414539218f99ecbf5183d795707b8787085f76e"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "5bc43f25173487f8902ab3c185fd08cb8059807c"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "626165f94a57ab1872d8080d622975623e5cf4da"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "675a171ae343d8ba9c327f79ea92c812789429a0"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "67c2a25f2a755a04818c38f3977b340eea870960"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "67c33714682a8fb5b204fe1f7f37bad9f1d6210e"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "6942e85d3fff509c863e4f609e21ec631fd54fc0"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "6f072b362e274846694417770e44b15aa7e85731"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "6f1a12d8d9e5a34d740edb13b22de39372247d76"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "6fcaa6ef4ceb5d28430acfd4f024fbcc29a50a47"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "756297cd19b2250bdc253deabb29cfbe7081b0f4"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "7cc5d6f2e9a06b80b7bbe5be704cbaf7ffd46029"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "7f8d93c19b90efe62907054e2f659c684f9ca0f0"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "7fed1b99b92b66c25395002a83b08fb00bbd8335"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "850b4dec0017c2c3ecde6a8ccffc5030d97d3ea3"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "868cce99f5ec4e38212bcf838f88652dc1752f99"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "88e65fcb8c11e7c0748876660aa579cb0c1904e6"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "8912f3eb233270cd0a94946519bb1fac6b527ee8"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "8c0ac9e73d90cdcae07b94707dad15678c563c03"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "8d8cfb9de9197675b87d10e04035e3b6c04259d0"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "90ea8565ba0810c29ac1f6dd138ec91ac690df88"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "91ce612b0fbbce0ae0f94a06680595b3b54cc44e"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "94a02d2f4b74267a65a9571b5294b9c90eec9935"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "9a2c020107cc782b5f28bb740407a9275f69b5ca"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "a705facd758216a4e2e1f99893066d00172404ac"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "af386590aa8fcf7e8fd43caeca2486fa98c6456c"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "b17af2a188d4ccdaee4f2d934dd7e38853c2ce59"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "b770292a3a7a4ccbbf8586edd20115f5cb2d601b"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "be9ee718d4b46076975a904e0ae5f73666e2fbc6"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "bebedac7d4bdca3d6ec604be041ea7b79a1f7dc5"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "c18415b56be752d9af76f29d67d02b00129ffda6"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "cb13bc4dbe3e693348e0471a236b2ac426ef5f14"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "cb77c907a19c5b8d000dc7614414a6c17d8ea534"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "cc36e80c9623c6ad37cc8269adfa3e6aa50380c4"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "d0155bb4e636a2be8d9a6a2621ef820e6212554f"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "d21959221bf53fe24135d969cd80d5d1dafaa7a9"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "d83dc2b11cbc38678fd15ab24bd39b741aeffaa8"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "d9dca3700a2340315980dc04cfd6e88beeca0b49"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "da89e0c2c8690915f4562ca8713c220467cff559"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "db03b9fb9059fc082a3fefe3989369452ccafb8f"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "de595284e0392e5ac7fda7d1a1cc5e8a32eb39b0"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "df811253afda53a0daff30566aefcd127bfec2c5"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "e0e6f4ecec55ea4a1d627381e63c2b59f9ace901"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "e39ec3c8a77114a468ce6accdd1937b4b863e2fe"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "e92ae30f4a13ec42357f2cd15c968745242fc534"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "ece49a894000c5064dceced81bc80056445b8b25"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "f5016d2b57de08675a1f0b3910160dab1c9bdea3"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "fe3186836117ff1600684d1f75ef9182e0e9e7f1"
+    },
+    {
+      "repository": "514-labs/moose",
+      "sha": "ffd29e44930069ac2231ec5c1a17092c52483ed3"
+    }
+  ],
+  "main_old_read_not_covered_in_current_count": 8,
+  "main_old_read_not_covered_in_current": [
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "371aa07936d3808ad4646768763987ce9a51404f",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "862af079d75c6762617a2cbf93eb36277c17fb95",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "ab8de7bbbbb6d9eb5b74dabde965e2c51f2d9223",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "d4d1fa487f55f916ae9e94eae4e5bb4fc56c0079",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "d552c5320c8adac961ab65c320b7ae8626157a02",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "d5661c26948c2ba9ea88e6e8cea306e2651ef8a9",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "ecbca86f98171f75169cfd9cb7153143c06fd0c0",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    },
+    {
+      "repository": "osori/korean-romanizer",
+      "sha": "f7da7702f6c2007d3e043cb8c46369883ddc012f",
+      "previous_batches": [
+        "aidev-full-v3"
+      ],
+      "current_status": "blocked",
+      "current_reason": "repository_unavailable",
+      "exception_type": "FileNotFoundError",
+      "offline": true
+    }
+  ],
+  "main_historical_union_including_v5": 344,
+  "comparisons": [
+    {
+      "previous_batch": "aidev-full-v4",
+      "current_batch": "aidev-full-v5",
+      "previous_actual_commit_count": 155,
+      "current_actual_commit_count": 336,
+      "commit_sets_equal": false,
+      "previous_log_versions": 134,
+      "current_log_versions": 696,
+      "common_log_versions": 134,
+      "common_rows_exactly_equal": 134,
+      "common_row_changes": [],
+      "common_non_go_row_changes": [],
+      "common_non_go_change_reasons": [],
+      "removed_log_versions": 0,
+      "added_log_versions": 562,
+      "added_go_log_versions": 352,
+      "added_non_go_log_versions": 210,
+      "current_go_log_versions": 352,
+      "current_go_all_lexical_only": true,
+      "current_go_all_pending": true,
+      "current_go_subtype_observation_counts": {
+        "BIZ.business_object": 10,
+        "BIZ.request_body": 2,
+        "BIZ.response_body": 4,
+        "CFG.deployment_configuration": 17,
+        "DIAG.exception_message": 137,
+        "PII.email": 32,
+        "QID.network_identifier": 40
+      },
+      "added_non_go_subtype_observation_counts": {
+        "AUTH.password": 10,
+        "BIZ.response_body": 7,
+        "DIAG.exception_message": 19,
+        "PII.person_name": 1,
+        "QID.device_identifier": 4
+      },
+      "added_versions_with_any_newly_read_commit_in_this_comparison": 210,
+      "explanation": "Classifier and coverage expanded. Common rows were compared in full, including evidence and event references. New non-Go rows must not be attributed to Go support."
+    },
+    {
+      "previous_batch": "aidev-anchors-v2",
+      "current_batch": "aidev-anchors-v3",
+      "previous_actual_commit_count": 21,
+      "current_actual_commit_count": 21,
+      "commit_sets_equal": true,
+      "previous_log_versions": 3,
+      "current_log_versions": 84,
+      "common_log_versions": 3,
+      "common_rows_exactly_equal": 3,
+      "common_row_changes": [],
+      "common_non_go_row_changes": [],
+      "common_non_go_change_reasons": [],
+      "removed_log_versions": 0,
+      "added_log_versions": 81,
+      "added_go_log_versions": 81,
+      "added_non_go_log_versions": 0,
+      "current_go_log_versions": 81,
+      "current_go_all_lexical_only": true,
+      "current_go_all_pending": true,
+      "current_go_subtype_observation_counts": {
+        "BIZ.response_body": 2,
+        "DIAG.exception_message": 45,
+        "QID.network_identifier": 4
+      },
+      "added_non_go_subtype_observation_counts": {},
+      "added_versions_with_any_newly_read_commit_in_this_comparison": 0,
+      "explanation": "Identical actual commit set; common rows compared in full. Added Go rows arise from newly enabled Go detection on the same commit sample."
+    }
+  ],
+  "limits": [
+    "Acquisition coverage changed alongside Go support; total new types are not causal Go-only gains.",
+    "Old results are preserved. Unavailable current repositories are coverage gaps, not no-log or no-sensitive-type findings.",
+    "Finite taxonomy and lexical candidates remain unconfirmed; no claim of complete datasets, complete type universe, complete follow-up history, or runtime leakage."
+  ],
+  "separate_prior_cache_recovery": {
+    "batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042",
+    "selection_manifest": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_prior_cache_v042_selection.json",
+    "commands_and_results": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_prior_cache_v042_commands.json",
+    "actual_recovered_commits": 8,
+    "commit_status_counts": {
+      "complete": 5,
+      "partial": 3
+    },
+    "actual_extraction_metrics": {
+      "dependency_blob_read_attempts": 34,
+      "dependency_blobs_read": 10,
+      "files_extracted": 14,
+      "pydriller_commits": 8,
+      "pydriller_diff_parsed_calls": 14,
+      "pydriller_modified_files_calls": 8,
+      "pydriller_repository_traversals": 8,
+      "pydriller_source_reads": 24
+    },
+    "log_versions": 0,
+    "contexts": 8,
+    "all_original_source_context_fields_preserved_except_regenerated_id": true,
+    "regenerated_id_reason": "CLI canonical context identity includes added local_repo_path; original context IDs preserved in selection manifest and input rows.",
+    "remaining_prior_read_missing_after_main_plus_recovery": 0,
+    "main_plus_recovery_actual_unique_commits": 344,
+    "main_v5_results_unchanged": true,
+    "recovery_source_hashes": {
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/summary.json": "a0a4bc44a533234b5c676285b88ca5aa7941fc633dca658cf123fadae444120f",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/commit_audit.jsonl": "10546d2948e6968a74ecacf5d2688210ee565270b2e1ebbb2f38fd7c1ab0e935",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/contexts.jsonl": "8a89c443cd26a853d55cf34ac287dc18c46391f2107b62bc76ed1ff80a55cb7b",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_occurrences.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "coverage_boundary": "Separate explicit prior-cache recovery; not a rerun or mutation of main-v5, no sensitive-keyword selection, no inference from zero observed logs to absence of sensitive types."
+  }
+}

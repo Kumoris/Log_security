@@ -1,0 +1,105 @@
+[
+  {
+    "argv": [
+      "agent_log_privacy/.venv/bin/agentlog-unified",
+      "commit-import",
+      "--input",
+      "agentlog_unified/inputs/aidev-prior-cache-v042.jsonl",
+      "--output",
+      "agentlog_unified/batches/aidev-prior-cache-v042",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.105,
+    "result": {
+      "input_rows_seen": 8,
+      "unique_commits": 8,
+      "unique_contexts": 8,
+      "unique_input_gaps": 0
+    },
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "agent_log_privacy/.venv/bin/agentlog-unified",
+      "batch-mine",
+      "--output",
+      "agentlog_unified/batches/aidev-prior-cache-v042",
+      "--cache-dir",
+      "agentlog_unified/cache/object-repos-v042",
+      "--offline",
+      "--max-seconds",
+      "60"
+    ],
+    "exit_code": 2,
+    "elapsed_seconds": 0.878,
+    "result": {
+      "observation_scope": "dataset_commit_changes",
+      "full_history_tracing_completed": false,
+      "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+      "runtime_confirmed": false,
+      "human_review_status": "pending",
+      "taxonomy_version": "1.0.0",
+      "commit_status_counts": {
+        "complete": 5,
+        "partial": 3
+      },
+      "actual_extraction_metrics": {
+        "dependency_blob_read_attempts": 34,
+        "dependency_blobs_read": 10,
+        "files_extracted": 14,
+        "pydriller_commits": 8,
+        "pydriller_diff_parsed_calls": 14,
+        "pydriller_modified_files_calls": 8,
+        "pydriller_repository_traversals": 8,
+        "pydriller_source_reads": 24
+      },
+      "file_analysis_status_counts": {
+        "non_code_or_unrecognized_extension": 8,
+        "supported_language": 6
+      },
+      "status": "incomplete_or_gaps",
+      "exit_code": 2,
+      "unique_dataset_commits": 8,
+      "context_associations": 8,
+      "input_gap_count": 0,
+      "record_counts": {
+        "comparisons": 8,
+        "file_audit": 14,
+        "gaps": 5
+      },
+      "queue_exhausted": true,
+      "all_dataset_commits_analyzed_without_gaps": false,
+      "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+      "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+      "this_run_commits_attempted": 8,
+      "this_run_repositories_attempted": 1,
+      "offline": true,
+      "budget_stopped": false,
+      "type_audit": {
+        "observation_scope": "dataset_commit_changes",
+        "full_history_tracing_completed": false,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "runtime_confirmed": false,
+        "new_type_status": "not_established",
+        "source_log_observations": 0,
+        "distinct_observed_log_versions": 0,
+        "distinct_observation_references": 0,
+        "unknown_type_review_count": 0,
+        "observed_category_count": 0,
+        "observed_subtype_count": 0,
+        "taxonomy_version": "1.0.0",
+        "paths": {
+          "type_occurrences.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_occurrences.jsonl",
+          "type_occurrences.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_occurrences.csv",
+          "type_summary.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_summary.json",
+          "type_summary.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_summary.csv",
+          "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/unknown_type_review_queue.jsonl",
+          "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/unknown_type_review_queue.csv"
+        }
+      }
+    },
+    "stderr": ""
+  }
+]

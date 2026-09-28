@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "exit_code": 0,
+  "case_denominator": 100,
+  "new_records": 0,
+  "human_annotations": 0,
+  "cases_with_annotations": 0,
+  "category_decisions": 0,
+  "unresolved_disagreements": 0,
+  "taxonomy_applied_automatically": false,
+  "category_saturation_established": false,
+  "accuracy": null,
+  "recall": null,
+  "run_manifest_sha256": "214d083840fe198c27ebffabd7378467837a2def747b82ae677bb3ea0ced7e16",
+  "human_evaluation": "pending"
+}

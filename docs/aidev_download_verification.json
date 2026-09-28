@@ -1,0 +1,278 @@
+[
+  {
+    "table": "all_pull_request",
+    "present": true,
+    "expected_sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+    "expected_bytes": 330776130,
+    "actual_sha256": "cdd91c7ef21ee12e8eadfda4936f902571e209dfb6209cd876c54a73d424e467",
+    "actual_bytes": 1510432205,
+    "matches_original_pointer": false,
+    "rows": 2743854,
+    "columns": [
+      "id",
+      "number",
+      "title",
+      "body",
+      "agent",
+      "user_id",
+      "user",
+      "state",
+      "created_at",
+      "closed_at",
+      "merged_at",
+      "repo_id",
+      "repo_url",
+      "html_url"
+    ]
+  },
+  {
+    "table": "all_repository",
+    "present": true,
+    "expected_sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+    "expected_bytes": 6136253,
+    "actual_sha256": "bc7071bfbba1e1d4d07b4d8fdb38c2b34b135ed1330e457e6598d587a9ab54e6",
+    "actual_bytes": 19425618,
+    "matches_original_pointer": false,
+    "rows": 326798,
+    "columns": [
+      "id",
+      "url",
+      "license",
+      "full_name",
+      "is_forked",
+      "language",
+      "forks",
+      "stars"
+    ]
+  },
+  {
+    "table": "all_user",
+    "present": true,
+    "expected_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+    "expected_bytes": 2511706,
+    "actual_sha256": "c79dc03cf335eaa068ee36394ba7330c9c3426457ffda8c270845561a367478b",
+    "actual_bytes": 5564871,
+    "matches_original_pointer": false,
+    "rows": 161255,
+    "columns": [
+      "id",
+      "login",
+      "followers",
+      "following",
+      "created_at"
+    ]
+  },
+  {
+    "table": "human_pr_task_type",
+    "present": false,
+    "expected_sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+    "expected_bytes": 715969
+  },
+  {
+    "table": "human_pull_request",
+    "present": false,
+    "expected_sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+    "expected_bytes": 4387171
+  },
+  {
+    "table": "issue",
+    "present": false,
+    "expected_sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+    "expected_bytes": 3222463
+  },
+  {
+    "table": "pr_comments",
+    "present": true,
+    "expected_sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+    "expected_bytes": 25857243,
+    "actual_sha256": "3829d73402b3acf42567c35789a4f61861388ae02630f17aebc326c27f92fb4d",
+    "actual_bytes": 70343522,
+    "matches_original_pointer": false,
+    "rows": 108628,
+    "columns": [
+      "id",
+      "pr_id",
+      "user",
+      "user_id",
+      "user_type",
+      "created_at",
+      "body"
+    ]
+  },
+  {
+    "table": "pr_commit_details",
+    "present": true,
+    "expected_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+    "expected_bytes": 485214032,
+    "actual_sha256": "203facbd403304312e9b8542b593b5aae0a83a96007f1693393d9185bd8c77b3",
+    "actual_bytes": 1325541903,
+    "matches_original_pointer": false,
+    "rows": 1775765,
+    "columns": [
+      "sha",
+      "pr_id",
+      "author",
+      "committer",
+      "message",
+      "commit_stats_total",
+      "commit_stats_additions",
+      "commit_stats_deletions",
+      "filename",
+      "status",
+      "additions",
+      "deletions",
+      "changes",
+      "patch"
+    ]
+  },
+  {
+    "table": "pr_commits",
+    "present": true,
+    "expected_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+    "expected_bytes": 8314097,
+    "actual_sha256": "a968fb13cb91d194892be568c0f9daddf53861f39bbbe1f44485eff35c7a9b5d",
+    "actual_bytes": 23146077,
+    "matches_original_pointer": false,
+    "rows": 220883,
+    "columns": [
+      "sha",
+      "pr_id",
+      "author",
+      "committer",
+      "message"
+    ]
+  },
+  {
+    "table": "pr_review_comments",
+    "present": true,
+    "expected_sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+    "expected_bytes": 14728130,
+    "actual_sha256": "cd4ee56fc1ad5e74ab06e140dd054ef5060614433f8e448018adfb297fa179ac",
+    "actual_bytes": 74143913,
+    "matches_original_pointer": false,
+    "rows": 81716,
+    "columns": [
+      "id",
+      "pull_request_review_id",
+      "user",
+      "user_type",
+      "diff_hunk",
+      "path",
+      "position",
+      "original_position",
+      "commit_id",
+      "original_commit_id",
+      "body",
+      "pull_request_url",
+      "created_at",
+      "updated_at",
+      "in_reply_to_id"
+    ]
+  },
+  {
+    "table": "pr_review_comments_v2",
+    "present": false,
+    "expected_sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+    "expected_bytes": 21125785
+  },
+  {
+    "table": "pr_reviews",
+    "present": true,
+    "expected_sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+    "expected_bytes": 7517041,
+    "actual_sha256": "80101d9e90dd22415e38b081d39c197db0c6765cc86d4c45738f9a424bccf7a9",
+    "actual_bytes": 21439541,
+    "matches_original_pointer": false,
+    "rows": 83816,
+    "columns": [
+      "id",
+      "pr_id",
+      "user",
+      "user_type",
+      "state",
+      "submitted_at",
+      "body"
+    ]
+  },
+  {
+    "table": "pr_task_type",
+    "present": false,
+    "expected_sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+    "expected_bytes": 2993264
+  },
+  {
+    "table": "pr_timeline",
+    "present": false,
+    "expected_sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+    "expected_bytes": 34108415
+  },
+  {
+    "table": "pull_request",
+    "present": true,
+    "expected_sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+    "expected_bytes": 16855612,
+    "actual_sha256": "c0b8e81e1d099905ef9ea420bf907d45179771ff5972afce6c219d8cafcef3e8",
+    "actual_bytes": 57572515,
+    "matches_original_pointer": false,
+    "rows": 71677,
+    "columns": [
+      "id",
+      "number",
+      "title",
+      "body",
+      "agent",
+      "user_id",
+      "user",
+      "state",
+      "created_at",
+      "closed_at",
+      "merged_at",
+      "repo_id",
+      "repo_url",
+      "html_url"
+    ]
+  },
+  {
+    "table": "related_issue",
+    "present": false,
+    "expected_sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+    "expected_bytes": 75579
+  },
+  {
+    "table": "repository",
+    "present": true,
+    "expected_sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+    "expected_bytes": 167251,
+    "actual_sha256": "a08e34be4921c708be88a4ebd9e275b32f37fd442bb2770c0b69c94834dc6aa7",
+    "actual_bytes": 393896,
+    "matches_original_pointer": false,
+    "rows": 6673,
+    "columns": [
+      "id",
+      "url",
+      "license",
+      "full_name",
+      "is_forked",
+      "language",
+      "forks",
+      "stars"
+    ]
+  },
+  {
+    "table": "user",
+    "present": true,
+    "expected_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+    "expected_bytes": 68935,
+    "actual_sha256": "935ac6643710b0e86912e0f8a7e45a18a73ff69faffe77c43f8ad191198dbc28",
+    "actual_bytes": 123718,
+    "matches_original_pointer": false,
+    "rows": 3308,
+    "columns": [
+      "id",
+      "login",
+      "followers",
+      "following",
+      "created_at"
+    ]
+  }
+]

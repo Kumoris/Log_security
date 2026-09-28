@@ -1,0 +1,16 @@
+{
+  "status": "dry_run",
+  "dataset": "aidev",
+  "source_rows": 2456073,
+  "source_values_decoded": false,
+  "files_written": false,
+  "network_accessed": false,
+  "target_code_executed": false,
+  "exit_code": 0,
+  "observation_scope": "dataset_structured_text",
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_type_status": "not_established",
+  "application_log_evidence": false,
+  "full_dataset_coverage_claim": false
+}

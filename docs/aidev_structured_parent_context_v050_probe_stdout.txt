@@ -1,0 +1,14 @@
+{"table": "all_pull_request.parquet", "documents": 2353, "total_nodes": 17940, "supported_added_node_types": 14}
+{"table": "all_user.parquet", "documents": 54, "total_nodes": 17994, "supported_added_node_types": 14}
+{"table": "human_pull_request.parquet", "documents": 84, "total_nodes": 18448, "supported_added_node_types": 14}
+{"table": "issue.parquet", "documents": 49, "total_nodes": 18902, "supported_added_node_types": 14}
+{"table": "pr_comments.parquet", "documents": 32, "total_nodes": 19110, "supported_added_node_types": 14}
+{"table": "pr_commit_details.parquet", "documents": 1335, "total_nodes": 20469, "supported_added_node_types": 14}
+{"table": "pr_commits.parquet", "documents": 327, "total_nodes": 20799, "supported_added_node_types": 14}
+{"table": "pr_review_comments.parquet", "documents": 9, "total_nodes": 20889, "supported_added_node_types": 15}
+{"table": "pr_review_comments_v2.parquet", "documents": 11, "total_nodes": 21018, "supported_added_node_types": 16}
+{"table": "pr_reviews.parquet", "documents": 9, "total_nodes": 21027, "supported_added_node_types": 16}
+{"table": "pr_timeline.parquet", "documents": 783, "total_nodes": 21977, "supported_added_node_types": 16}
+{"table": "pull_request.parquet", "documents": 340, "total_nodes": 23837, "supported_added_node_types": 16}
+{"table": "user.parquet", "documents": 1, "total_nodes": 23838, "supported_added_node_types": 16}
+{"report": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/aidev_structured_parent_context_v050_probe.json", "documents_visited": 5387, "nodes_visited": 23838, "added_rows": 46, "supported_cells": 10, "baseline_replay_equal": true, "stop_reason": null}

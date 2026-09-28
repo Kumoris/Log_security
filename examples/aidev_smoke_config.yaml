@@ -1,0 +1,7 @@
+run_mode: full
+input:
+  prs_path: examples/aidev_smoke.jsonl
+  offline: true
+mining:
+  max_history_commits_per_repository: 500
+  max_snapshot_files: 1500

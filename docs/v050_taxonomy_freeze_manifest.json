@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-09T07:22:03.262016+00:00",
+  "status": "staged_frozen_awaiting_root_application",
+  "stage_directory": "/private/tmp/taxonomy_v050_stage",
+  "formal_source_unchanged": true,
+  "formal_source_sha256": {
+    "src/agentlog_unified/taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed",
+    "src/agentlog_unified/detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238"
+  },
+  "files": {
+    "src/agentlog_unified/taxonomy.py": "8bb74d6b21fe1b776249750b8efb3abfe5b65c476e63c1c34795ca200527269a",
+    "src/agentlog_unified/detector.py": "594040ba3ba9965c1fa3c6b0f11e7ddf978551fde262c23cdff97b4c183708ec",
+    "tests/test_identifier_subject_v050.py": "ff9bf91f7d748353988dba497841414ef638276ed402273af0d19655b887b842"
+  },
+  "patch": {
+    "path": "/private/tmp/taxonomy_v050_stage/taxonomy_detector_v050.patch",
+    "sha256": "5c0673fa5a5728100eb705f10a0020214523df8e0f98f0449aff9ea65ca33129"
+  },
+  "final_test_execution": {
+    "command": [
+      "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_identifier_subject_v050.py",
+      "tests/test_taxonomy.py",
+      "tests/test_content_types.py",
+      "tests/test_reference_values.py",
+      "tests/test_structured_types.py",
+      "tests/test_type_audit.py",
+      "tests/test_go_log_detection.py",
+      "tests/test_csharp_log_detection.py",
+      "tests/test_cli_offline.py"
+    ],
+    "cwd": "/private/tmp/taxonomy_v050_stage",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONPATH": "/private/tmp/taxonomy_v050_stage/src"
+    },
+    "started_utc": "2026-09-09T07:21:18.326056+00:00",
+    "finished_utc": "2026-09-09T07:21:21.179778+00:00",
+    "elapsed_seconds": 2.853096041,
+    "exit_code": 0,
+    "output_path": "/private/tmp/taxonomy_v050_stage/attempt04_output.txt",
+    "source_sha256": {
+      "taxonomy.py": "8bb74d6b21fe1b776249750b8efb3abfe5b65c476e63c1c34795ca200527269a",
+      "detector.py": "594040ba3ba9965c1fa3c6b0f11e7ddf978551fde262c23cdff97b4c183708ec"
+    }
+  },
+  "prior_attempts": [
+    "attempt01.json",
+    "attempt02_execution.json",
+    "attempt03_execution.json"
+  ],
+  "scope": "Only isolated taxonomy/detector implementation and synthetic tests. No formal src/tests, storage, category list, real dataset or outputs modified.",
+  "interface": [
+    "_matches(source, *, parent=None)",
+    "normalize_identifier(source)",
+    "identifier_subject(source) -> (normalized_subject, final_leaf_start)",
+    "field_subject(leaf, parent=None) -> subject",
+    "matches_subject(regex, subject) -> bool"
+  ],
+  "limitations": [
+    "Identifier and direct projection hints only, no generic expression parser or call return resolution.",
+    "No taxonomy version change in stage; root owns integrated version and fingerprints.",
+    "Initial six test errors/failure were absent copied config/schema fixtures; preserved separately, fixed only stage fixture inputs."
+  ]
+}

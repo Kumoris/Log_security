@@ -1,0 +1,27 @@
+{
+  "dry_run": true,
+  "stages": [
+    "ingest",
+    "collect",
+    "mine",
+    "detect",
+    "trace",
+    "assess",
+    "export"
+  ],
+  "run_mode": "smoke",
+  "extend_from": null,
+  "input": {
+    "prs_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/examples/prs.example.jsonl",
+    "repositories_path": null,
+    "provenance_path": null,
+    "source": "local",
+    "offline": true,
+    "column_mapping": {}
+  },
+  "repository_limit": 2,
+  "pr_limit": 30,
+  "history_commit_budget": 100,
+  "would_use_network": false,
+  "target_repository_accessed": false
+}

@@ -1,0 +1,21 @@
+{
+  "unique_source_versions": 264,
+  "methods": {
+    "LogInformation": 85,
+    "LogWarning": 70,
+    "LogError": 28,
+    "Debug": 14
+  },
+  "receiver_forms": {
+    "underscore_logger": 141,
+    "Log_static": 14,
+    "logger": 42
+  },
+  "call_forms": {
+    "named_or_format_placeholders": 118,
+    "multiline_calls": 31,
+    "exception_first_overload": 63,
+    "interpolated_string_calls": 5
+  },
+  "scope": "All unique before/after historical C# source versions from SWE v5 changed files, not diff-intersected; no raw source or message values exported"
+}

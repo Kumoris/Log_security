@@ -1,0 +1,96 @@
+{
+  "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76",
+  "argv": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "batch-mine",
+    "--output",
+    "agentlog_unified/batches/csharp-swechat-v043",
+    "--cache-dir",
+    "agentlog_unified/cache/batch-repos",
+    "--offline",
+    "--max-seconds",
+    "180",
+    "--resume"
+  ],
+  "start_utc": "2026-09-08T20:30:51.451999+00:00",
+  "status": "terminal",
+  "jobs_before": {
+    "pending": 20
+  },
+  "detector_sha256": "859b10621893fba9231dfd334841195f3e4b9c735e3ccc993e71049d1e17fabf",
+  "target_code_executed": false,
+  "external_paid_model_calls": 0,
+  "end_utc": "2026-09-08T20:30:59.304372+00:00",
+  "elapsed_seconds": 7.852,
+  "exit_code": 2,
+  "cli_result": {
+    "observation_scope": "dataset_commit_changes",
+    "full_history_tracing_completed": false,
+    "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+    "runtime_confirmed": false,
+    "human_review_status": "pending",
+    "taxonomy_version": "1.0.0",
+    "commit_status_counts": {
+      "partial": 20
+    },
+    "actual_extraction_metrics": {
+      "auxiliary_blob_reads": 1,
+      "dependency_blob_read_attempts": 36,
+      "files_extracted": 548,
+      "log_observations": 881,
+      "pydriller_commits": 20,
+      "pydriller_diff_parsed_calls": 548,
+      "pydriller_modified_files_calls": 15,
+      "pydriller_repository_traversals": 20,
+      "pydriller_source_reads": 915,
+      "pydriller_git_diff_calls": 10
+    },
+    "file_analysis_status_counts": {
+      "non_code_or_unrecognized_extension": 97,
+      "supported_language": 431,
+      "unsupported_language": 20
+    },
+    "status": "incomplete_or_gaps",
+    "exit_code": 2,
+    "unique_dataset_commits": 20,
+    "context_associations": 20,
+    "input_gap_count": 0,
+    "record_counts": {
+      "comparisons": 25,
+      "file_audit": 548,
+      "gaps": 769,
+      "log_observations": 881
+    },
+    "queue_exhausted": true,
+    "all_dataset_commits_analyzed_without_gaps": false,
+    "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+    "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+    "this_run_commits_attempted": 20,
+    "this_run_repositories_attempted": 3,
+    "offline": true,
+    "budget_stopped": false,
+    "type_audit": {
+      "observation_scope": "dataset_commit_changes",
+      "full_history_tracing_completed": false,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "runtime_confirmed": false,
+      "new_type_status": "not_established",
+      "source_log_observations": 881,
+      "distinct_observed_log_versions": 750,
+      "distinct_observation_references": 881,
+      "unknown_type_review_count": 750,
+      "observed_category_count": 6,
+      "observed_subtype_count": 14,
+      "taxonomy_version": "1.0.0",
+      "paths": {
+        "type_occurrences.jsonl": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/csharp-swechat-v043/exports/type_occurrences.jsonl",
+        "type_occurrences.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/csharp-swechat-v043/exports/type_occurrences.csv",
+        "type_summary.json": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/csharp-swechat-v043/exports/type_summary.json",
+        "type_summary.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/csharp-swechat-v043/exports/type_summary.csv",
+        "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/csharp-swechat-v043/exports/unknown_type_review_queue.jsonl",
+        "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/csharp-swechat-v043/exports/unknown_type_review_queue.csv"
+      }
+    }
+  }
+}

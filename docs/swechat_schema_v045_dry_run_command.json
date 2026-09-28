@@ -1,0 +1,19 @@
+{
+  "status": "dry_run",
+  "dataset": "swe-chat",
+  "all_fields": 148,
+  "scalar_fields": 148,
+  "selected_fields": 10,
+  "files_written": false,
+  "values_decoded": false,
+  "exit_code": 0,
+  "observation_scope": "dataset_schema_context",
+  "evidence_basis": "schema_context",
+  "human_review_status": "pending",
+  "confidence": "low",
+  "runtime_confirmed": false,
+  "personal_ownership_confirmed": false,
+  "sensitivity_confirmed": false,
+  "application_log_evidence": false,
+  "new_type_status": "not_established"
+}

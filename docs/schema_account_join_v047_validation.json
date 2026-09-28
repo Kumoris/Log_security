@@ -1,0 +1,40 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "agentlog_unified/tests/test_schema_scan.py",
+    "agentlog_unified/tests/test_schema_scan_v046.py",
+    "agentlog_unified/tests/test_schema_account_join.py",
+    "-q"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T22:57:19.437709+00:00",
+  "ended_utc": "2026-09-08T22:57:20.672620+00:00",
+  "exit_code": 0,
+  "stdout": "...........................................                              [100%]\n43 passed in 0.35s\n",
+  "stderr": "",
+  "source_before": {
+    "agentlog_unified/src/agentlog_unified/schema_scan.py": "17990e9721773afa234cbe66dd95dbc1d97222411f7be4ee69e40aaf08e7181d",
+    "agentlog_unified/tests/test_schema_scan.py": "1c72ed6926d3a503a0ddaaa88ccc0b5a188683ffc3a5d601a49decd6ad803c3d",
+    "agentlog_unified/tests/test_schema_scan_v046.py": "e8e3a555ab1994daf182f8bb2a69732a45cf7fa7bb4dd12a848ab99cf4e360ef",
+    "agentlog_unified/tests/test_schema_account_join.py": "63a60df9dae79719c226d3a81deacbfe892195bdfee7312fdc40476fcf5b7ef3"
+  },
+  "source_after": {
+    "agentlog_unified/src/agentlog_unified/schema_scan.py": "17990e9721773afa234cbe66dd95dbc1d97222411f7be4ee69e40aaf08e7181d",
+    "agentlog_unified/tests/test_schema_scan.py": "1c72ed6926d3a503a0ddaaa88ccc0b5a188683ffc3a5d601a49decd6ad803c3d",
+    "agentlog_unified/tests/test_schema_scan_v046.py": "e8e3a555ab1994daf182f8bb2a69732a45cf7fa7bb4dd12a848ab99cf4e360ef",
+    "agentlog_unified/tests/test_schema_account_join.py": "63a60df9dae79719c226d3a81deacbfe892195bdfee7312fdc40476fcf5b7ef3"
+  },
+  "source_unchanged": true,
+  "old_quality_function_ast_equal": true,
+  "real_dataset_scan_run": false,
+  "legacy_output_comparison": {
+    "aidev_old_fields": 17,
+    "aidev_synthetic_cells": 85,
+    "swechat_old_fields": 10,
+    "swechat_synthetic_cells": 50,
+    "db_and_8_exports_identical_each_dataset": true,
+    "note": "Separate actual miniature Parquet runs using pre-task baseline and current scanner; checkpoint, field inventory, counts, and four CSV/JSONL pairs compared equal."
+  }
+}

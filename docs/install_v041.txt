@@ -1,0 +1,17 @@
+Obtaining file:///Users/lzh/Downloads/Log%20%E7%A0%94%E7%A9%B6/agentlog_unified
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: agentlog-unified
+  Building editable for agentlog-unified (pyproject.toml): started
+  Building editable for agentlog-unified (pyproject.toml): finished with status 'done'
+  Created wheel for agentlog-unified: filename=agentlog_unified-0.4.1-0.editable-py3-none-any.whl size=2585 sha256=32b0c4bf090b2cb3d9111590d2e973bcd5e1730bc83354800e346dcb71d8dce1
+  Stored in directory: /private/var/folders/3h/x6l8x7b15s13m7gcvzsnf21w0000gn/T/pip-ephem-wheel-cache-rtgp3lms/wheels/a4/8a/46/aa0bc693cb7249713145636f17ae569b51a3bba024562d2b7f
+Successfully built agentlog-unified
+Installing collected packages: agentlog-unified
+  Attempting uninstall: agentlog-unified
+    Found existing installation: agentlog-unified 0.4.0
+    Uninstalling agentlog-unified-0.4.0:
+      Successfully uninstalled agentlog-unified-0.4.0
+Successfully installed agentlog-unified-0.4.1

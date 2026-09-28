@@ -1,0 +1,156 @@
+{
+  "recorded_utc": "2026-09-08T21:08:01.693656+00:00",
+  "review_kind": "readonly_local_stderr_execution_coverage_crosscheck",
+  "source_data_read": false,
+  "target_code_executed": false,
+  "commands_rerun": false,
+  "product_source_modified": false,
+  "both_stderr_files_identical": true,
+  "total_stderr_lines": 8,
+  "all_diagnostics_recognized": true,
+  "conclusion": "Both 691-byte stderr files contain only four Arrow sysctl hardware-probe permission diagnostics. Both actual runs stopped on the 300-second time budget, retained explicit coverage/semantic gaps, and exited 2 by the scanner contract; neither stderr file contains dataset body text or credential values.",
+  "exit_contract_source_references": [
+    {
+      "path": "agentlog_unified/src/agentlog_unified/content_scan.py",
+      "line": 147,
+      "meaning": "Exports record exit_code 2 for semantic/coverage gaps."
+    },
+    {
+      "path": "agentlog_unified/src/agentlog_unified/content_scan.py",
+      "line": 248,
+      "meaning": "Time/disk budget determines explicit stop_reason."
+    },
+    {
+      "path": "agentlog_unified/src/agentlog_unified/cli.py",
+      "line": 238,
+      "meaning": "Fatal scan exceptions emit a bounded error record and return 1 or 130."
+    },
+    {
+      "path": "agentlog_unified/src/agentlog_unified/cli.py",
+      "line": 242,
+      "meaning": "Successful scan path returns the recorded coverage exit_code."
+    }
+  ],
+  "runs": [
+    {
+      "dataset": "aidev",
+      "evidence_artifacts": [
+        {
+          "path": "agentlog_unified/docs/aidev_content_v044_stderr.txt",
+          "sha256": "a75ed675cc9c5ed6bb8431bfed04365d72e9c22281e713fd1a9d4196a13f7aed",
+          "bytes": 691
+        },
+        {
+          "path": "agentlog_unified/docs/aidev_content_v044_execution.json",
+          "sha256": "d7e0737a90ba4876b73e01cc00330db6311a626dd010c5aee455883741512ee4",
+          "bytes": 3174
+        },
+        {
+          "path": "agentlog_unified/docs/aidev_content_v044_command.json",
+          "sha256": "42edc029bb10f2e58993cbf3ffc2cb359bcab7f7321e1c540c1a99e76bb717cd",
+          "bytes": 2066
+        },
+        {
+          "path": "agentlog_unified/content-runs/aidev-v044/content_coverage.json",
+          "sha256": "388318adf7866ded7e2fb1ba5feb978fc2d97b72980c7109fe65a9898c63be99",
+          "bytes": 19541
+        }
+      ],
+      "stderr_line_count": 4,
+      "stderr_nonempty_line_count": 4,
+      "stderr_bytes": 691,
+      "error_category": "arrow_cpu_capability_probe_permission_denied_nonfatal",
+      "diagnostic_component": "arrow/util/cpu_info.cc",
+      "diagnostic_label": "IOError",
+      "system_call": "sysctlbyname",
+      "errno": 1,
+      "hardware_queries": [
+        "hw.l1dcachesize",
+        "hw.l2cachesize",
+        "hw.l3cachesize",
+        "hw.optional.neon"
+      ],
+      "whole_line_allowlist_grammar_matched": true,
+      "unexpected_or_unclassified_stderr_lines": 0,
+      "contains_dataset_source_text": false,
+      "contains_credential_values": false,
+      "raw_stderr_lines_reproduced_in_review": false,
+      "observed_impact": "Hardware cache/NEON capability probes were denied. The same run continued decoding rows and produced completed partial exports; no fatal data-read exception was emitted. Performance or hardware-fallback impact was not benchmarked.",
+      "execution_exit_code": 2,
+      "coverage_exit_code": 2,
+      "recorded_stop_reason": "time_budget",
+      "configured_time_budget_seconds": 300,
+      "execution_elapsed_seconds": 311.7860724170023,
+      "coverage_status": "partial",
+      "source_unchanged_during_execution": true,
+      "processed_rows": 1218611,
+      "source_rows": 2456073,
+      "truncated_cells": 1,
+      "unknown_type_review_cells": 10180988,
+      "candidate_occurrences": 162760,
+      "excluded_occurrences": 2323,
+      "command_coverage_aggregate_parity": true,
+      "exit_2_explanation": "The scanner deliberately returns 2 for coverage/semantic gaps. This run stopped at its recorded time budget and retained unvisited rows plus unknown/truncated cells. The Arrow permission diagnostics did not select the exit status."
+    },
+    {
+      "dataset": "swechat",
+      "evidence_artifacts": [
+        {
+          "path": "agentlog_unified/docs/swechat_content_v044_stderr.txt",
+          "sha256": "a75ed675cc9c5ed6bb8431bfed04365d72e9c22281e713fd1a9d4196a13f7aed",
+          "bytes": 691
+        },
+        {
+          "path": "agentlog_unified/docs/swechat_content_v044_execution.json",
+          "sha256": "217cdb76271d58bf9e0ff777c92fc501cd9d5753f39d49d7a962aeb7a829578e",
+          "bytes": 3178
+        },
+        {
+          "path": "agentlog_unified/docs/swechat_content_v044_command.json",
+          "sha256": "de373f402bbd615f94deca412ea1e6783e19b177477533b6bc6c2ef4e1626bb2",
+          "bytes": 2085
+        },
+        {
+          "path": "agentlog_unified/content-runs/swechat-v044/content_coverage.json",
+          "sha256": "8faa679cd7d3f7eaa526aa2d20b7b3aaa440194214607b7c6cb3d0ca659ab5ee",
+          "bytes": 19391
+        }
+      ],
+      "stderr_line_count": 4,
+      "stderr_nonempty_line_count": 4,
+      "stderr_bytes": 691,
+      "error_category": "arrow_cpu_capability_probe_permission_denied_nonfatal",
+      "diagnostic_component": "arrow/util/cpu_info.cc",
+      "diagnostic_label": "IOError",
+      "system_call": "sysctlbyname",
+      "errno": 1,
+      "hardware_queries": [
+        "hw.l1dcachesize",
+        "hw.l2cachesize",
+        "hw.l3cachesize",
+        "hw.optional.neon"
+      ],
+      "whole_line_allowlist_grammar_matched": true,
+      "unexpected_or_unclassified_stderr_lines": 0,
+      "contains_dataset_source_text": false,
+      "contains_credential_values": false,
+      "raw_stderr_lines_reproduced_in_review": false,
+      "observed_impact": "Hardware cache/NEON capability probes were denied. The same run continued decoding rows and produced completed partial exports; no fatal data-read exception was emitted. Performance or hardware-fallback impact was not benchmarked.",
+      "execution_exit_code": 2,
+      "coverage_exit_code": 2,
+      "recorded_stop_reason": "time_budget",
+      "configured_time_budget_seconds": 300,
+      "execution_elapsed_seconds": 324.2891202500032,
+      "coverage_status": "partial",
+      "source_unchanged_during_execution": true,
+      "processed_rows": 18829,
+      "source_rows": 2732252,
+      "truncated_cells": 304,
+      "unknown_type_review_cells": 212141,
+      "candidate_occurrences": 863343,
+      "excluded_occurrences": 6708,
+      "command_coverage_aggregate_parity": true,
+      "exit_2_explanation": "The scanner deliberately returns 2 for coverage/semantic gaps. This run stopped at its recorded time budget and retained unvisited rows plus unknown/truncated cells. The Arrow permission diagnostics did not select the exit status."
+    }
+  ]
+}

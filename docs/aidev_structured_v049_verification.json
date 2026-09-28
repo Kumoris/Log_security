@@ -1,0 +1,613 @@
+{
+  "started_utc": "2026-09-08T23:59:17.315243+00:00",
+  "completed_utc": "2026-09-08T23:59:32.542177+00:00",
+  "elapsed_seconds": 15.226848292004433,
+  "run_dir": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049",
+  "checks": {
+    "export_state_complete": true,
+    "snapshot_fingerprint_consistent": true,
+    "source_manifest_consistent": true,
+    "source_file_signature_consistent": true,
+    "taxonomy_version_1_1": true,
+    "source_implementation_hashes_match": true,
+    "aidev_scope_and_pending_boundaries": true,
+    "complete_export_name_set": true,
+    "snapshot_hash_structured_coverage.json": true,
+    "snapshot_hash_structured_data_gaps.csv.gz": true,
+    "snapshot_hash_structured_data_gaps.jsonl.gz": true,
+    "snapshot_hash_structured_documents.csv.gz": true,
+    "snapshot_hash_structured_documents.jsonl.gz": true,
+    "snapshot_hash_structured_excluded.csv.gz": true,
+    "snapshot_hash_structured_excluded.jsonl.gz": true,
+    "snapshot_hash_structured_type_occurrences.csv.gz": true,
+    "snapshot_hash_structured_type_occurrences.jsonl.gz": true,
+    "snapshot_hash_structured_type_summary.csv.gz": true,
+    "snapshot_hash_structured_type_summary.jsonl.gz": true,
+    "snapshot_hash_structured_unknown_type_review_queue.csv.gz": true,
+    "snapshot_hash_structured_unknown_type_review_queue.jsonl.gz": true,
+    "18_frozen_tables_and_2456073_rows": true,
+    "progress_matches_coverage": true,
+    "progress_row_and_cell_arithmetic": true,
+    "coverage_status_honest": true,
+    "coverage_cumulative_counts_match": true,
+    "complete_or_partial_denominators": true,
+    "historical_nonempty_denominator_verified": true,
+    "coverage_database_record_counts_match": true,
+    "parser_emission_counts_match_database": true,
+    "summary50_including_unknown_and_zero_labels": true,
+    "controlled_label_count_matches": true,
+    "document_and_candidate_status_counts": true,
+    "all_match_references_exist": true,
+    "all_gap_references_consistent": true,
+    "structured_documents_csv_header": true,
+    "structured_documents_csv_jsonl_exact_fields": true,
+    "structured_documents_database_exact_records": true,
+    "structured_documents_finite_fields_and_coordinates": true,
+    "structured_type_occurrences_csv_header": true,
+    "structured_type_occurrences_csv_jsonl_exact_fields": true,
+    "structured_type_occurrences_database_exact_records": true,
+    "structured_type_occurrences_finite_fields_and_coordinates": true,
+    "structured_excluded_csv_header": true,
+    "structured_excluded_csv_jsonl_exact_fields": true,
+    "structured_excluded_database_exact_records": true,
+    "structured_excluded_finite_fields_and_coordinates": true,
+    "structured_data_gaps_csv_header": true,
+    "structured_data_gaps_csv_jsonl_exact_fields": true,
+    "structured_data_gaps_database_exact_records": true,
+    "structured_data_gaps_finite_fields_and_coordinates": true,
+    "structured_unknown_type_review_queue_csv_header": true,
+    "structured_unknown_type_review_queue_csv_jsonl_exact_fields": true,
+    "structured_unknown_type_review_queue_database_exact_records": true,
+    "structured_unknown_type_review_queue_finite_fields_and_coordinates": true,
+    "structured_type_summary_csv_header": true,
+    "structured_type_summary_csv_jsonl_exact_fields": true,
+    "structured_type_summary_database_exact_records": true,
+    "structured_type_summary_finite_fields_and_coordinates": true,
+    "review_ranges_nonoverlapping": true,
+    "review_ranges_exact_processed_nonempty_total": true,
+    "review_range_status_totals_match_parser": true,
+    "comparison_same_frozen_source": true,
+    "comparison_old_snapshot_complete": true,
+    "comparison_hash_aidev-v048_structured_type_occurrences": true,
+    "comparison_hash_aidev-v048_structured_excluded": true,
+    "comparison_hash_aidev-v049_structured_type_occurrences": true,
+    "comparison_hash_aidev-v049_structured_excluded": true,
+    "comparison_summary_hash_aidev-v048": true,
+    "comparison_summary_hash_aidev-v049": true,
+    "database_stat_unchanged": true,
+    "all_checked_snapshot_files_unchanged": true
+  },
+  "passed": 72,
+  "total": 72,
+  "all_checks_passed": true,
+  "all_source_rows_visited": true,
+  "source_rows": 2456073,
+  "processed_rows": 2456073,
+  "expected_full_nonempty_cells": 17362345,
+  "processed_nonempty_cells": 17362345,
+  "database_counts": {
+    "documents": 49669,
+    "candidate_occurrences": 1159,
+    "excluded_occurrences": 57,
+    "data_gap_records": 44289,
+    "unknown_review_range_records": 570513,
+    "unknown_review_source_cells": 17362345
+  },
+  "export_pairs": [
+    {
+      "stem": "structured_documents",
+      "rows": 49669,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_type_occurrences",
+      "rows": 1159,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_excluded",
+      "rows": 57,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_data_gaps",
+      "rows": 44289,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_unknown_type_review_queue",
+      "rows": 570513,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    },
+    {
+      "stem": "structured_type_summary",
+      "rows": 50,
+      "csv_jsonl_equal": true,
+      "database_equal": true,
+      "allowed_fields_and_coordinates": true
+    }
+  ],
+  "type_summary_rows": 50,
+  "observed_controlled_labels": 35,
+  "unknown_type_summary_count": 0,
+  "document_status_counts": {
+    "invalid_json": 44166,
+    "parsed_with_semantic_gaps": 5387,
+    "partial": 116
+  },
+  "candidate_status_counts": {
+    "carrier_candidate": 627,
+    "identifier_reference": 10,
+    "literal_candidate": 74,
+    "named_value_candidate": 448
+  },
+  "previous_v048_comparison": {
+    "v048_taxonomy_version": "1.0.0",
+    "v049_taxonomy_version": "1.1.0",
+    "both_all_rows_visited": true,
+    "common_coordinate_type_rule_records": 1197,
+    "added_coordinate_type_rule_records": 19,
+    "removed_coordinate_type_rule_records": 0,
+    "unchanged_details": 1197,
+    "status_transitions": [],
+    "per_type_counts": [
+      {
+        "category": null,
+        "subtype": null,
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "access_token",
+        "v048_count": 53,
+        "v049_count": 53,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "api_key",
+        "v048_count": 42,
+        "v049_count": 42,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "auth_cookie",
+        "v048_count": 1,
+        "v049_count": 1,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "authorization_header",
+        "v048_count": 1,
+        "v049_count": 1,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "credential_bundle",
+        "v048_count": 16,
+        "v049_count": 16,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "password",
+        "v048_count": 26,
+        "v049_count": 26,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "AUTH",
+        "subtype": "private_key",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "business_object",
+        "v048_count": 135,
+        "v049_count": 135,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "document_content",
+        "v048_count": 91,
+        "v049_count": 91,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "http_headers",
+        "v048_count": 35,
+        "v049_count": 35,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "message_content",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "request_body",
+        "v048_count": 38,
+        "v049_count": 38,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "response_body",
+        "v048_count": 43,
+        "v049_count": 43,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "unclassified_content",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "BIZ",
+        "subtype": "unclassified_object",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "database_connection",
+        "v048_count": 16,
+        "v049_count": 16,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "deployment_configuration",
+        "v048_count": 51,
+        "v049_count": 51,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "environment",
+        "v048_count": 76,
+        "v049_count": 76,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "filesystem_path",
+        "v048_count": 13,
+        "v049_count": 13,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "internal_endpoint",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "CFG",
+        "subtype": "unclassified_internal_resource",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "DIAG",
+        "subtype": "exception_message",
+        "v048_count": 145,
+        "v049_count": 145,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "DIAG",
+        "subtype": "failure_response",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "DIAG",
+        "subtype": "stack_trace",
+        "v048_count": 14,
+        "v049_count": 14,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "age",
+        "v048_count": null,
+        "v049_count": 0,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "biometric",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "birth_date",
+        "v048_count": null,
+        "v049_count": 9,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "education",
+        "v048_count": null,
+        "v049_count": 0,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "email",
+        "v048_count": 36,
+        "v049_count": 36,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "employment",
+        "v048_count": null,
+        "v049_count": 3,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "ethnicity",
+        "v048_count": null,
+        "v049_count": 0,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "financial",
+        "v048_count": 5,
+        "v049_count": 5,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "government_identifier",
+        "v048_count": 6,
+        "v049_count": 6,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "medical",
+        "v048_count": 2,
+        "v049_count": 2,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "person_name",
+        "v048_count": 76,
+        "v049_count": 76,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "phone",
+        "v048_count": 29,
+        "v049_count": 29,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "postal_address",
+        "v048_count": 31,
+        "v049_count": 31,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "precise_location",
+        "v048_count": 14,
+        "v049_count": 14,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "PII",
+        "subtype": "religious_belief",
+        "v048_count": null,
+        "v049_count": 0,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "sex_gender",
+        "v048_count": null,
+        "v049_count": 7,
+        "count_delta": null,
+        "newly_evaluated_type": true
+      },
+      {
+        "category": "PII",
+        "subtype": "unspecified_personal_information",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "device_identifier",
+        "v048_count": 14,
+        "v049_count": 14,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "network_identifier",
+        "v048_count": 48,
+        "v049_count": 48,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "request_identifier",
+        "v048_count": 16,
+        "v049_count": 16,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "session_identifier",
+        "v048_count": 23,
+        "v049_count": 23,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "tenant_identifier",
+        "v048_count": 8,
+        "v049_count": 8,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "transaction_identifier",
+        "v048_count": 5,
+        "v049_count": 5,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "unspecified_linkable_identifier",
+        "v048_count": 0,
+        "v049_count": 0,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      },
+      {
+        "category": "QID",
+        "subtype": "user_identifier",
+        "v048_count": 31,
+        "v049_count": 31,
+        "count_delta": 0,
+        "newly_evaluated_type": false
+      }
+    ],
+    "comparison_identity_excludes": [
+      "versioned_record_id",
+      "candidate_status",
+      "value_status",
+      "basis"
+    ],
+    "full_record_identity_claim": false,
+    "incremental_true_sensitive_values_claim": false,
+    "note": "Differences are classifier observations on matched metadata coordinates; newly evaluated labels have no prior count, and neither differences nor statuses establish real values."
+  },
+  "v048_smoke_preservation_claim": false,
+  "evidence_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044/content_coverage.json": "371b867304082fb89d900fcdd555c8014c17f968ccba98c185c32072cb53e1af",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/manifest.json": "ccd4993ac3ae54a65fce57052c651ba0bcb8afcbbd5901656beef4e42a576618",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_coverage.json": "923d19fc5307b99b3bc41c65b76de783491c440472d19f7626c0c882fbb5e6aa",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/export_state.json": "638d6e8cf080888351c25a1a4ad0cb36c724bb32c83a9454bd1b5d4ae504e414",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_data_gaps.csv.gz": "e2dffd32da157e762d9c5561a26e8fae4aca2cd8cc695044e0eb8a1ca3032d5f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_data_gaps.jsonl.gz": "3236017b665e6887a432d0a42c4b8c9797613dc94648775301cb5d6d96a59af5",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_documents.csv.gz": "402eb39724661de3975a6d39749c74ba0add0f50175d0a1d28d9bda132473142",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_documents.jsonl.gz": "5f63624942db23b623ce91410b7321c74682004e05d249e716662060cf65b59d",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_excluded.csv.gz": "e3f2803e6756412c5c815fd5bafa18d6958a65e662eb5280746c27b7123649d0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_excluded.jsonl.gz": "1ef6f31666497a538b736c688c316a21402160b80d1a2f0c1d662be6699a474b",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_type_occurrences.csv.gz": "52e48648ca6bd8b19f0a076fafda44ebfd71f97a32d6353cb17e4978d3799f7f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_type_occurrences.jsonl.gz": "6eb2169b7c4426bdbb2d29a55f58942527d21cc649a97791528d897ec30d0f38",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_type_summary.csv.gz": "e20fcbf3ceb8521ce5a8c9d97b56b036528b3fd808d99ebc06f9d8972fc368f8",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_type_summary.jsonl.gz": "ae5542313bd2e2cee9a46f454754e8c0b3f30abdf88851b5aa723226defee8a0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_unknown_type_review_queue.csv.gz": "d61157a581ce7ce9d0349289bfc360784a11cb3e05098e20954a737c24d76d43",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_unknown_type_review_queue.jsonl.gz": "c5a3bc03b19b9442144d48a57c6096d782a20fadc87654c01c8bbf5bc17da078",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048/manifest.json": "81c33de87fc0dbca6db74606ca6a0e9fc71c7b5048f9df3eadc327a5f138aaca",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048/structured_coverage.json": "26363ccbd2839f7c08ae77d706654e6ff1b03fc43be0d8147d83630280538a7f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048/export_state.json": "1a2f74d033a803eb5c87d8a6b11ddd7045bd2022eaf73afbc3ea765234e3c518"
+  },
+  "helper_sha256": "40376ac47a2d443e209d055f490a9faea1c4205bc3bc5724202087d14db14180",
+  "source_bodies_read": false,
+  "raw_source_bytes_rehashed": false,
+  "swe_sources_read": false,
+  "database_modified": false,
+  "count_totals_added_to_plaintext": false,
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_sensitive_type_confirmed": false,
+  "limitations": [
+    "Checks prove snapshot, export/DB arithmetic, references and finite-coordinate consistency; original source text was not reread to validate exact document/leaf text positions.",
+    "All-source-row completion means selected text cells were visited, not that every value/type/encoding was classified.",
+    "Raw source-file hashes are linked through producer/import manifests; this verifier only rehashes metadata, gzip exports and implementation files.",
+    "Structured occurrences overlap old plaintext observations and cannot be reported as their incremental total."
+  ]
+}

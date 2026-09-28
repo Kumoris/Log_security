@@ -1,0 +1,19 @@
+{
+  "status": "dry_run",
+  "parent_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050",
+  "repair_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050",
+  "output_dir": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v050",
+  "source_verification_complete": true,
+  "selected_repair_cells": 1,
+  "resume_policy": "rebuild_from_identical_frozen_inputs",
+  "source_text_decoded": false,
+  "observation_scope": "dataset_text_reconciled",
+  "application_log_evidence": false,
+  "runtime_confirmed": false,
+  "human_review_status": "pending",
+  "full_dataset_coverage_claim": false,
+  "taxonomy_version": "1.2.0",
+  "new_type_status": "not_established",
+  "files_written": false,
+  "exit_code": 0
+}

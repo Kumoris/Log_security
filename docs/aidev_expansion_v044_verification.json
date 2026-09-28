@@ -1,0 +1,110 @@
+{
+  "checked_at": "2026-09-08T20:56:16.110454+00:00",
+  "batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v044",
+  "command_evidence": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_expansion_v044_command.json",
+  "execution_evidence": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_expansion_v044_execution.json",
+  "observation_scope": "dataset_commit_changes",
+  "content_scan_results_included": false,
+  "checks": {
+    "unique_occurrence_ids": true,
+    "occurrence_ids_match_database_log_versions": true,
+    "unknown_queue_ids_match_review_flag": true,
+    "actual_metrics_match_jobs": true,
+    "occurrence_count_matches_cli": true,
+    "unknown_count_matches_cli": true,
+    "source_observations_match_cli_and_db": true,
+    "core_source_unchanged": true,
+    "core_source_matches_prior_final": true,
+    "all_contexts_application_log_scope": true,
+    "no_content_scan_results_included": true,
+    "all_input_commits_actually_read": true,
+    "all_summary_denominators_match": true,
+    "type_occurrences.csv_count_matches_json": true,
+    "unknown_type_review_queue.csv_count_matches_json": true,
+    "type_summary.csv_count_matches_json": true
+  },
+  "integrity_issues": {},
+  "all_checks_passed": true,
+  "commit_status_counts": {
+    "complete": 21,
+    "partial": 85
+  },
+  "queue_exhausted": true,
+  "actual_extraction_metrics": {
+    "files_extracted": 711,
+    "pydriller_commits": 106,
+    "pydriller_diff_parsed_calls": 711,
+    "pydriller_modified_files_calls": 91,
+    "pydriller_repository_traversals": 106,
+    "pydriller_source_reads": 1223,
+    "dependency_blob_read_attempts": 5326,
+    "dependency_blobs_read": 778,
+    "log_observations": 1909,
+    "pydriller_git_diff_calls": 30,
+    "merge_fallbacks": 5,
+    "auxiliary_blob_reads": 10
+  },
+  "log_versions": 1842,
+  "unknown_type_review_count": 651,
+  "versions_with_type_evidence": 103,
+  "observed_subtype_counts": {
+    "AUTH.api_key": 3,
+    "BIZ.business_object": 10,
+    "BIZ.document_content": 6,
+    "BIZ.message_content": 14,
+    "BIZ.request_body": 6,
+    "BIZ.response_body": 37,
+    "CFG.deployment_configuration": 14,
+    "CFG.filesystem_path": 13,
+    "DIAG.exception_message": 4,
+    "DIAG.stack_trace": 16,
+    "PII.email": 4,
+    "PII.person_name": 4
+  },
+  "observed_category_counts": {
+    "AUTH": 3,
+    "BIZ": 49,
+    "CFG": 27,
+    "DIAG": 20,
+    "PII": 4
+  },
+  "path_extension_counts": {
+    ".py": 1842
+  },
+  "gap_reasons": {
+    "Historical source unavailable": 4,
+    "commit_diff_error": 5,
+    "direct_import_budget_exceeded": 86,
+    "direct_import_unresolved_or_external": 766,
+    "lexical_fallback_without_ast": 56,
+    "python_ast_parse_failed": 2,
+    "unsupported_language": 14
+  },
+  "csv_row_counts": {
+    "type_occurrences.csv": 1842,
+    "unknown_type_review_queue.csv": 651,
+    "type_summary.csv": 48
+  },
+  "export_sha256": {
+    "commit_audit.jsonl": "24270d4ba7ec6881456981fc2bc8ded903e79d467dbd21cda7a325322ecf52b5",
+    "comparisons.jsonl": "151e35dfe322e5b4ce4a2e7c2d1bcff31165333c80b40fa1b35c1f3bfc139242",
+    "contexts.jsonl": "c1f5b84c350dc4e2aedb01b42fea28f769a22b1d420ac582e45ff198f5bf74f3",
+    "file_audit.jsonl": "fa4b993fd945901d840df53417a2ec7aa4827663da3fae21ea1a5fdc68b3b824",
+    "gaps.jsonl": "5ac7ddcb9162aee89ea89d99b02af1d9e68f944cacc71c7dc4f6dfaf2ef0bbf4",
+    "input_gaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "log_observations.jsonl": "5066ebfc36ebb7627f701583206a4f09c810153bb66e82021cc0d4a5dbe2fd1b",
+    "pending_commits.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary.json": "2d325de5e77b811b5c93e464f933211bcc34f5f9f065f690c793366d0c86417f",
+    "taxonomy_catalog.json": "7c2b2a512367a3ec396fdb829063aad72ae513a762801515698dcd85bd9d08ae",
+    "type_occurrences.csv": "553241a569699c95a0fd40540cea9fba7974485e64f8de3ade6f7bdf60cdcd82",
+    "type_occurrences.jsonl": "27650b3263c1f74c182fbea8f443b0f66c931a8b741e0c6376c7dac6f53cb8a9",
+    "type_summary.csv": "bcfd0b1e64cf8e3440040cb009394f76a11dec0030a045ba316b32cf07ba2dff",
+    "type_summary.json": "4a29819e175bdb61fbe93ce7de7e54099cdf7cf5d69a4d0ab3e7d175b659c4df",
+    "unknown_type_review_queue.csv": "91702b9551f853fd9d315dbd1291afcba9cf02e588dfd1b044dbbf90468fd963",
+    "unknown_type_review_queue.jsonl": "efafd8aa1863666c14f367ab7f6edbb9a37e0be03d009bc29e1a47e5145245d1"
+  },
+  "runtime_confirmed": false,
+  "human_review_status": "pending",
+  "full_dataset_coverage_claim": false,
+  "full_history_tracing_completed": false
+}

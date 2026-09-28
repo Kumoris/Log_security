@@ -1,0 +1,21 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "commit-import",
+    "--input",
+    "agentlog_unified/inputs/aidev-full-v2/mining_prs.jsonl",
+    "--output",
+    "agentlog_unified/batches/aidev-full-v5",
+    "--offline"
+  ],
+  "started_at": "2026-09-08T20:06:07.718596+00:00",
+  "finished_at": "2026-09-08T20:06:10.095106+00:00",
+  "elapsed_seconds": 2.3764596250111936,
+  "exit_code": 0,
+  "result": {
+    "input_rows_seen": 33580,
+    "unique_commits": 86315,
+    "unique_contexts": 88564,
+    "unique_input_gaps": 0
+  }
+}

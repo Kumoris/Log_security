@@ -1,0 +1,79 @@
+{
+  "recorded_utc": "2026-09-08T20:34:20.639362+00:00",
+  "automated_verification": true,
+  "human_review_performed": false,
+  "verifier_source": "/private/tmp/verify_agentlog_v043.py",
+  "verifier_sha256": "6a1745f8437e5c575c0277ffc5fc3b4b34b0b91cdb4900023a8bf4bd72779b48",
+  "reused_from": "/private/tmp/verify_agentlog_v042.py",
+  "scope": "Only new 0.4.3 batches. Historical 0.4.2 fingerprints are intentionally excluded. Export consistency is not proof of parser completeness or actual privacy leakage.",
+  "datasets": {
+    "aidev-expansion-v043": {
+      "log_versions": 882,
+      "unknown_queue": 386,
+      "source_log_observations": 1127,
+      "distinct_observation_references": 1127,
+      "csharp_log_versions": 0,
+      "csharp_versions_with_types": 0,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 882,
+        "unknown_type_review_queue": 386,
+        "type_summary": 48
+      },
+      "analysis_fingerprint": "1f0bbd9d472868276f3a8a35",
+      "analysis_fingerprint_matches_current_source": true,
+      "current_source_mismatch_files": [],
+      "source_sha256": {
+        "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+        "detector.py": "859b10621893fba9231dfd334841195f3e4b9c735e3ccc993e71049d1e17fabf",
+        "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+        "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+        "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+      },
+      "export_sha256": {
+        "type_occurrences.jsonl": "48a8a9feb0f8f88e3fed40a6074a0cf3e73548b496bc80a9c953c04bb90b5c72",
+        "type_summary.csv": "82f6e09899abf259403cdcdbe23bedd257c4dd59d71f5cf4aa811d50ecf526f9",
+        "unknown_type_review_queue.csv": "a70b34876c30c15146ed41c12c3106a5011be03a2393ce1cadc3cce7a33b4a1e",
+        "type_summary.json": "3907a9524ca2d552c023e9cce1e936108b5622276678c82c4fbfa97e01d3744f",
+        "unknown_type_review_queue.jsonl": "380cfeff6f42b61d643b047a09287f34e07f37d96f655cbea5ae00f80b43c722",
+        "type_occurrences.csv": "367842ab7abe70d673e82f45a491bbff4a7a9fcca8d46a9bd882e10ba8da653f"
+      }
+    },
+    "csharp-swechat-v043": {
+      "log_versions": 750,
+      "unknown_queue": 750,
+      "source_log_observations": 881,
+      "distinct_observation_references": 881,
+      "csharp_log_versions": 19,
+      "csharp_versions_with_types": 17,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 750,
+        "unknown_type_review_queue": 750,
+        "type_summary": 48
+      },
+      "analysis_fingerprint": "1f0bbd9d472868276f3a8a35",
+      "analysis_fingerprint_matches_current_source": true,
+      "current_source_mismatch_files": [],
+      "source_sha256": {
+        "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+        "detector.py": "859b10621893fba9231dfd334841195f3e4b9c735e3ccc993e71049d1e17fabf",
+        "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+        "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+        "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+      },
+      "export_sha256": {
+        "type_occurrences.jsonl": "5acd44bd4a60db7f5b45e8e92f137d29ea93e8bffd1fe55118110585cc212442",
+        "type_summary.csv": "13aa0142b21914360664bb5f934640e079350fdb4aa7c2cee309d66b65784bab",
+        "unknown_type_review_queue.csv": "0c6275512e0bb18fe70261c7beea7f2455e9da0a8343bc1521b705af7cdc8742",
+        "type_summary.json": "e9f863143c87fa9a3aab5dc69630ddbaf86d12ffc6f0b88bf279764b9ab8a64d",
+        "unknown_type_review_queue.jsonl": "b1528920eae444546b32d78e4199538ddc5b709f6b7303c93728a4e116182e04",
+        "type_occurrences.csv": "8f116ccfff6b95ec730f6e11f6eae9bfdc08cf9efe4c37cb7881d6a192bca046"
+      }
+    }
+  }
+}

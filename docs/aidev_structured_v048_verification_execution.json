@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_structured_v048.py"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:28:59.631984+00:00",
+  "completed_utc": "2026-09-08T23:29:05.855760+00:00",
+  "elapsed_seconds": 6.223728790995665,
+  "exit_code": 0,
+  "helper_sha256_before": "5840701c6a637b0aea7a465605b8c2c325b7c89bf03da2a564be1f7b1454fc34",
+  "helper_sha256_after": "5840701c6a637b0aea7a465605b8c2c325b7c89bf03da2a564be1f7b1454fc34",
+  "helper_unchanged": true,
+  "stdout": "{\"verified_export_group\": \"structured_documents\", \"rows\": 49669}\n{\"verified_export_group\": \"structured_type_occurrences\", \"rows\": 1140}\n{\"verified_export_group\": \"structured_excluded\", \"rows\": 57}\n{\"verified_export_group\": \"structured_data_gaps\", \"rows\": 44289}\n{\"verified_export_group\": \"structured_unknown_type_review_queue\", \"rows\": 570513}\n{\"verified_export_group\": \"structured_type_summary\", \"rows\": 43}\n{\"report\": \"/Users/lzh/Downloads/Log \\u7814\\u7a76/agentlog_unified/docs/aidev_structured_v048_verification.json\", \"passed\": 71, \"total\": 71, \"all_source_rows_visited\": true, \"processed_rows\": 2456073, \"processed_nonempty_cells\": 17362345}\n",
+  "stderr": "",
+  "source_bodies_read": false,
+  "package_or_tests_modified": false
+}

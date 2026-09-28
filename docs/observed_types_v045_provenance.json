@@ -1,0 +1,708 @@
+{
+  "recorded_utc": "2026-09-08T21:49:06.788356+00:00",
+  "taxonomy_version": "1.0.0",
+  "catalog_subtypes": 42,
+  "catalog_source": "docs/observed_type_inventory_v044.csv",
+  "row_count": 546,
+  "sources": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-full-v5",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "swe-chat",
+      "source_run": "swechat-full-v5",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-anchors-v3",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-prior-cache-v042",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-expansion-v043-final",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "swe-chat",
+      "source_run": "csharp-swechat-v043-final",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-expansion-v044",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044/content_type_summary.json",
+      "sha256": "14ec1ec16ac1eb256208319947f9319cfe793869a3328f5c92fe99a0311b11ba",
+      "observation_scope": "dataset_text_cells",
+      "dataset": "aidev",
+      "source_run": "aidev-v044",
+      "count_unit": "source_cell_span_rule_type_occurrence",
+      "coverage_status": "complete_with_semantic_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v045/schema_type_summary.json",
+      "sha256": "626ed4a11cf240e252148d8c4fa8b304d84572316eb634972d176848731a64c3",
+      "observation_scope": "dataset_schema_context",
+      "dataset": "aidev",
+      "source_run": "aidev-v045",
+      "count_unit": "candidate_source_cell",
+      "coverage_status": "complete_with_schema_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045-final/scan/repair_type_summary.jsonl",
+      "sha256": "e5bfc76e2a8df31cae5965686191157aef2f27ecef2e74e31743878d09429a69",
+      "observation_scope": "dataset_text_cell_rescan",
+      "dataset": "aidev",
+      "source_run": "aidev-v045-final",
+      "count_unit": "rescanned_source_cell_span_rule_type_occurrence",
+      "coverage_status": "complete_with_semantic_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_type_summary.json",
+      "sha256": "341eac967299a2c8273c60b3f1b21b9429ef217f3c1e80c2aa3c7815b968084f",
+      "observation_scope": "dataset_text_cells",
+      "dataset": "swechat",
+      "source_run": "swechat-v044",
+      "count_unit": "source_cell_span_rule_type_occurrence",
+      "coverage_status": "partial"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/swechat-v045/schema_type_summary.json",
+      "sha256": "ac434c68f0712a93552ea13abd2e219efa4a959c6b9cbcff0ffbc1141b8fb7b0",
+      "observation_scope": "dataset_schema_context",
+      "dataset": "swechat",
+      "source_run": "swechat-v045",
+      "count_unit": "candidate_source_cell",
+      "coverage_status": "complete_with_schema_gaps"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/swechat-v045-final/scan/repair_type_summary.jsonl",
+      "sha256": "b5c463b93a7fc1bb530d721e53fe0c9ad37a46f0816d44048e7f1344d3315565",
+      "observation_scope": "dataset_text_cell_rescan",
+      "dataset": "swechat",
+      "source_run": "swechat-v045-final",
+      "count_unit": "rescanned_source_cell_span_rule_type_occurrence",
+      "coverage_status": "partial"
+    }
+  ],
+  "observed_type_sets_by_scope": {
+    "dataset_commit_changes": [
+      [
+        "AUTH",
+        "access_token"
+      ],
+      [
+        "AUTH",
+        "api_key"
+      ],
+      [
+        "AUTH",
+        "credential_bundle"
+      ],
+      [
+        "AUTH",
+        "password"
+      ],
+      [
+        "BIZ",
+        "business_object"
+      ],
+      [
+        "BIZ",
+        "document_content"
+      ],
+      [
+        "BIZ",
+        "http_headers"
+      ],
+      [
+        "BIZ",
+        "message_content"
+      ],
+      [
+        "BIZ",
+        "request_body"
+      ],
+      [
+        "BIZ",
+        "response_body"
+      ],
+      [
+        "BIZ",
+        "unclassified_content"
+      ],
+      [
+        "BIZ",
+        "unclassified_object"
+      ],
+      [
+        "CFG",
+        "database_connection"
+      ],
+      [
+        "CFG",
+        "deployment_configuration"
+      ],
+      [
+        "CFG",
+        "environment"
+      ],
+      [
+        "CFG",
+        "filesystem_path"
+      ],
+      [
+        "DIAG",
+        "exception_message"
+      ],
+      [
+        "DIAG",
+        "stack_trace"
+      ],
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "PII",
+        "postal_address"
+      ],
+      [
+        "QID",
+        "device_identifier"
+      ],
+      [
+        "QID",
+        "network_identifier"
+      ],
+      [
+        "QID",
+        "request_identifier"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "transaction_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ],
+    "dataset_schema_context": [
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ],
+    "dataset_text_cell_rescan": [
+      [
+        "AUTH",
+        "access_token"
+      ],
+      [
+        "AUTH",
+        "api_key"
+      ],
+      [
+        "AUTH",
+        "auth_cookie"
+      ],
+      [
+        "AUTH",
+        "authorization_header"
+      ],
+      [
+        "AUTH",
+        "credential_bundle"
+      ],
+      [
+        "AUTH",
+        "password"
+      ],
+      [
+        "AUTH",
+        "private_key"
+      ],
+      [
+        "BIZ",
+        "business_object"
+      ],
+      [
+        "BIZ",
+        "document_content"
+      ],
+      [
+        "BIZ",
+        "http_headers"
+      ],
+      [
+        "BIZ",
+        "message_content"
+      ],
+      [
+        "BIZ",
+        "request_body"
+      ],
+      [
+        "BIZ",
+        "response_body"
+      ],
+      [
+        "CFG",
+        "database_connection"
+      ],
+      [
+        "CFG",
+        "deployment_configuration"
+      ],
+      [
+        "CFG",
+        "environment"
+      ],
+      [
+        "CFG",
+        "filesystem_path"
+      ],
+      [
+        "DIAG",
+        "exception_message"
+      ],
+      [
+        "DIAG",
+        "failure_response"
+      ],
+      [
+        "DIAG",
+        "stack_trace"
+      ],
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "medical"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "PII",
+        "phone"
+      ],
+      [
+        "PII",
+        "postal_address"
+      ],
+      [
+        "PII",
+        "precise_location"
+      ],
+      [
+        "QID",
+        "device_identifier"
+      ],
+      [
+        "QID",
+        "network_identifier"
+      ],
+      [
+        "QID",
+        "request_identifier"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "transaction_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ],
+    "dataset_text_cells": [
+      [
+        "AUTH",
+        "access_token"
+      ],
+      [
+        "AUTH",
+        "api_key"
+      ],
+      [
+        "AUTH",
+        "auth_cookie"
+      ],
+      [
+        "AUTH",
+        "authorization_header"
+      ],
+      [
+        "AUTH",
+        "credential_bundle"
+      ],
+      [
+        "AUTH",
+        "password"
+      ],
+      [
+        "AUTH",
+        "private_key"
+      ],
+      [
+        "BIZ",
+        "business_object"
+      ],
+      [
+        "BIZ",
+        "document_content"
+      ],
+      [
+        "BIZ",
+        "http_headers"
+      ],
+      [
+        "BIZ",
+        "message_content"
+      ],
+      [
+        "BIZ",
+        "request_body"
+      ],
+      [
+        "BIZ",
+        "response_body"
+      ],
+      [
+        "CFG",
+        "database_connection"
+      ],
+      [
+        "CFG",
+        "deployment_configuration"
+      ],
+      [
+        "CFG",
+        "environment"
+      ],
+      [
+        "CFG",
+        "filesystem_path"
+      ],
+      [
+        "CFG",
+        "internal_endpoint"
+      ],
+      [
+        "DIAG",
+        "exception_message"
+      ],
+      [
+        "DIAG",
+        "failure_response"
+      ],
+      [
+        "DIAG",
+        "stack_trace"
+      ],
+      [
+        "PII",
+        "biometric"
+      ],
+      [
+        "PII",
+        "email"
+      ],
+      [
+        "PII",
+        "financial"
+      ],
+      [
+        "PII",
+        "government_identifier"
+      ],
+      [
+        "PII",
+        "medical"
+      ],
+      [
+        "PII",
+        "person_name"
+      ],
+      [
+        "PII",
+        "phone"
+      ],
+      [
+        "PII",
+        "postal_address"
+      ],
+      [
+        "PII",
+        "precise_location"
+      ],
+      [
+        "QID",
+        "device_identifier"
+      ],
+      [
+        "QID",
+        "network_identifier"
+      ],
+      [
+        "QID",
+        "request_identifier"
+      ],
+      [
+        "QID",
+        "session_identifier"
+      ],
+      [
+        "QID",
+        "tenant_identifier"
+      ],
+      [
+        "QID",
+        "transaction_identifier"
+      ],
+      [
+        "QID",
+        "user_identifier"
+      ]
+    ]
+  },
+  "observed_catalog_type_union": [
+    [
+      "AUTH",
+      "access_token"
+    ],
+    [
+      "AUTH",
+      "api_key"
+    ],
+    [
+      "AUTH",
+      "auth_cookie"
+    ],
+    [
+      "AUTH",
+      "authorization_header"
+    ],
+    [
+      "AUTH",
+      "credential_bundle"
+    ],
+    [
+      "AUTH",
+      "password"
+    ],
+    [
+      "AUTH",
+      "private_key"
+    ],
+    [
+      "BIZ",
+      "business_object"
+    ],
+    [
+      "BIZ",
+      "document_content"
+    ],
+    [
+      "BIZ",
+      "http_headers"
+    ],
+    [
+      "BIZ",
+      "message_content"
+    ],
+    [
+      "BIZ",
+      "request_body"
+    ],
+    [
+      "BIZ",
+      "response_body"
+    ],
+    [
+      "BIZ",
+      "unclassified_content"
+    ],
+    [
+      "BIZ",
+      "unclassified_object"
+    ],
+    [
+      "CFG",
+      "database_connection"
+    ],
+    [
+      "CFG",
+      "deployment_configuration"
+    ],
+    [
+      "CFG",
+      "environment"
+    ],
+    [
+      "CFG",
+      "filesystem_path"
+    ],
+    [
+      "CFG",
+      "internal_endpoint"
+    ],
+    [
+      "DIAG",
+      "exception_message"
+    ],
+    [
+      "DIAG",
+      "failure_response"
+    ],
+    [
+      "DIAG",
+      "stack_trace"
+    ],
+    [
+      "PII",
+      "biometric"
+    ],
+    [
+      "PII",
+      "email"
+    ],
+    [
+      "PII",
+      "financial"
+    ],
+    [
+      "PII",
+      "government_identifier"
+    ],
+    [
+      "PII",
+      "medical"
+    ],
+    [
+      "PII",
+      "person_name"
+    ],
+    [
+      "PII",
+      "phone"
+    ],
+    [
+      "PII",
+      "postal_address"
+    ],
+    [
+      "PII",
+      "precise_location"
+    ],
+    [
+      "QID",
+      "device_identifier"
+    ],
+    [
+      "QID",
+      "network_identifier"
+    ],
+    [
+      "QID",
+      "request_identifier"
+    ],
+    [
+      "QID",
+      "session_identifier"
+    ],
+    [
+      "QID",
+      "tenant_identifier"
+    ],
+    [
+      "QID",
+      "transaction_identifier"
+    ],
+    [
+      "QID",
+      "user_identifier"
+    ]
+  ],
+  "observed_catalog_type_union_count": 39,
+  "counts_additive_across_scopes_or_runs": false,
+  "zero_means": "No recorded observation within that source processed scope; not absence in the complete dataset",
+  "parent_repair_reconciliation_performed": false,
+  "unknown_queue_exhausted": false,
+  "full_dataset_coverage_claim": false,
+  "application_log_provenance": "docs/type_inventory_v044_provenance.json",
+  "candidate_occurrences_outside_catalog_rows": {
+    "aidev:dataset_text_cells": 3243,
+    "aidev:dataset_text_cell_rescan": 0,
+    "swechat:dataset_text_cells": 499,
+    "swechat:dataset_text_cell_rescan": 15
+  },
+  "unclassified_count_note": "42-row catalog summaries omit occurrences without an assigned controlled subtype; these remain in source occurrences and unknown review queues."
+}

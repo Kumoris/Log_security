@@ -1,0 +1,518 @@
+{
+  "created_utc": "2026-09-08T20:33:35.049010+00:00",
+  "baseline_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5",
+  "replay_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/csharp-swechat-v043",
+  "selection_manifest": "docs/csharp_replay_v043_selection.json",
+  "execution_record": "docs/csharp_batch_v043_execution.json",
+  "baseline_scope": "Only the selected 20 repository+SHA jobs; baseline occurrence event_references restricted to these same jobs",
+  "non_cs_baseline_event_references_outside_scope_removed": 0,
+  "all_checks_passed": false,
+  "checks": {
+    "exact_selected_20_job_keys": true,
+    "all_selected_jobs_attempted": true,
+    "same_contexts": true,
+    "same_comparisons": true,
+    "same_git_file_evidence_except_cs_marker": true,
+    "non_cs_observation_rows_identical": true,
+    "non_cs_occurrence_ids_identical": true,
+    "non_cs_occurrence_fields_identical_in_selected_scope": true,
+    "new_occurrences_are_cs_only": true,
+    "csharp_low_pending_unknown_boundaries": true,
+    "fatal_gaps_map_to_source_evidence": true,
+    "fatal_gap_jobs_remain_partial": true,
+    "only_observation_metric_changed": true,
+    "ordinary_csharp_syntax_not_marked_fatal": false
+  },
+  "counts": {
+    "selected_commits": 20,
+    "file_changes_before": 548,
+    "file_changes_after": 548,
+    "cs_support_marker_and_derived_id_changes": 162,
+    "observations_before": 862,
+    "observations_after": 881,
+    "new_cs_observations": 19,
+    "occurrences_before": 731,
+    "occurrences_after": 750,
+    "non_cs_occurrences_before": 731,
+    "non_cs_occurrences_after": 731,
+    "new_cs_unique_versions": 19,
+    "new_cs_versions_with_type_labels": 17,
+    "new_cs_pending_review_versions": 19,
+    "new_cs_unknown_review_versions": 19,
+    "new_cs_repository_count": 1
+  },
+  "new_cs_category_version_counts": {
+    "AUTH": 17,
+    "BIZ": 4,
+    "DIAG": 16,
+    "QID": 4
+  },
+  "new_cs_subtype_version_counts": {
+    "AUTH.access_token": 17,
+    "BIZ.document_content": 4,
+    "DIAG.exception_message": 16,
+    "QID.user_identifier": 4
+  },
+  "cs_label_confidence_counts": {
+    "low": 41
+  },
+  "cs_label_evidence_status_counts": {
+    "static_candidate": 21,
+    "carrier_candidate": 20
+  },
+  "actual_metric_changes": {
+    "log_observations": {
+      "before": 862,
+      "after": 881
+    }
+  },
+  "actual_py_driller_metrics": {
+    "auxiliary_blob_reads": 1,
+    "dependency_blob_read_attempts": 36,
+    "files_extracted": 548,
+    "log_observations": 881,
+    "pydriller_commits": 20,
+    "pydriller_diff_parsed_calls": 548,
+    "pydriller_modified_files_calls": 15,
+    "pydriller_repository_traversals": 20,
+    "pydriller_source_reads": 915,
+    "pydriller_git_diff_calls": 10
+  },
+  "non_cs_occurrence_sha256_before": "e491a4fa1cb50c544520f5f2cfc30734057966f0e8846ecb05553357bb6518c9",
+  "non_cs_occurrence_sha256_after": "e491a4fa1cb50c544520f5f2cfc30734057966f0e8846ecb05553357bb6518c9",
+  "unknown_source_coverage": {
+    "fatal_gap_record_count": 29,
+    "fatal_gap_reason_counts": {
+      "csharp_unterminated_string": 22,
+      "csharp_lexer_error": 7
+    },
+    "affected_job_count": 7,
+    "conservatively_affected_unique_snapshot_path_count": 29,
+    "existing_observation_references_from_affected_sources": 0,
+    "source_records": [
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+        "path": "apps/api/Controllers/WeatherForecastController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+        "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+        "path": "apps/api/src/Features/Search/SearchController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+        "path": "apps/api/src/Features/Tags/TagsController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+        "path": "apps/api/Controllers/WeatherForecastController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+        "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+        "path": "apps/api/src/Features/Search/SearchController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+        "path": "apps/api/src/Features/Tags/TagsController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+        "path": "apps/api/Controllers/WeatherForecastController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+        "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+        "path": "apps/api/src/Features/Search/SearchController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+        "path": "apps/api/src/Features/Tags/TagsController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+        "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+        "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "c6abcd5e2efa89e356e22b472dd218329db28fac",
+        "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "d605826ed7bbaa910267e8eebb92201371f6f101",
+        "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+        "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+        "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+        "path": "apps/api/Controllers/WeatherForecastController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+        "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+        "path": "apps/api/src/Features/Search/SearchController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "alexinslc/hickory",
+        "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+        "path": "apps/api/src/Features/Tags/TagsController.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+        "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/20260308201453_AddCouponFieldsToOrder.Designer.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+        "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/20260308201453_AddCouponFieldsToOrder.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+        "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/OrderingDbContextModelSnapshot.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+        "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/20260308185447_InitialCoupons.Designer.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+        "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/20260308185447_InitialCoupons.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+        "path": "src/MicroCommerce.ApiService/Features/Coupons/Infrastructure/Migrations/CouponsDbContextModelSnapshot.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      },
+      {
+        "repository": "baotoq/micro-commerce",
+        "snapshot_sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+        "path": "src/MicroCommerce.ApiService/Features/Ordering/Infrastructure/Migrations/OrderingDbContextModelSnapshot.cs",
+        "status": "analysis_unavailable_or_partial_not_negative"
+      }
+    ],
+    "note": "When parent_sha is absent from a gap, conservatively apply to all matching parent comparisons. Existing static observations from other parseable spans remain pending; the entire source is not counted as fully analyzed."
+  },
+  "mismatches": {
+    "missing_non_cs_occurrence_ids": [],
+    "added_non_cs_occurrence_ids": [],
+    "changed_non_cs_occurrence_fields": {},
+    "changed_file_evidence_fields": {},
+    "csharp_boundary_violations": {},
+    "unmapped_fatal_gap_ids": [],
+    "fatal_gap_jobs_not_partial": []
+  },
+  "evidence_boundary": [
+    "Read-only classification of actual Git changed sources; no target execution or sensitive values exported here.",
+    "All new C# observations are lexical candidates, not confirmed leaks or human approvals.",
+    "Replay does not examine missing commits outside its language cohort; original selection unknown ledger remains authoritative."
+  ],
+  "fatal_gap_diagnosis": {
+    "checked_utc": "2026-09-08T20:34:52.792969+00:00",
+    "status": "requires_classifier_correction",
+    "csharp_lexer_error": {
+      "record_count": 7,
+      "unique_historical_sources_checked": 7,
+      "repository": "baotoq/micro-commerce",
+      "error_tokens_observed": [
+        "U+FEFF byte-order-mark at start",
+        "U+0023 hash in #nullable directive"
+      ],
+      "classification": "valid encoding/directive syntax currently rejected by lexical backend; not demonstrated malformed source",
+      "synthetic_reproductions": [
+        "BOM prefix before otherwise valid class and logger call",
+        "nullable disable directive before otherwise valid class and logger call"
+      ],
+      "synthetic_control": "No BOM/directive and region/pragma directives do not raise lexer-error fatal flag",
+      "source_values_exported": false
+    },
+    "csharp_unterminated_string": {
+      "record_count": 22,
+      "unique_historical_sources_checked": 22,
+      "sources_with_attribute_boundary_fault": 22,
+      "classification": "Systematic valid C# attribute-string boundary misclassification: Pygments Name.Attribute stops at closing square bracket inside quoted attribute argument, exposing the normal closing quote as an unterminated string. Not evidence that these source files are malformed.",
+      "source_cases": [
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            12
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            6
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            11
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            8
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            11
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            9
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            13
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            10
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            12
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            11
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/src/Features/Tags/TagsController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            9
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            6
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/src/Features/Search/SearchController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            10
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "926fbba51db7d3d3d4d138b79aca1b61f9d218e0",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            11
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/Controllers/WeatherForecastController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            8
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "path": "apps/api/src/Features/Categories/CategoriesController.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            13
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+          "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+          "attribute_token_stops_inside_string_count": 3,
+          "attribute_start_lines": [
+            301,
+            302,
+            304
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+          "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            21
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+          "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+          "attribute_token_stops_inside_string_count": 3,
+          "attribute_start_lines": [
+            301,
+            302,
+            304
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "d605826ed7bbaa910267e8eebb92201371f6f101",
+          "path": "apps/api/Hickory.Api.Tests/Features/EmailIntegration/ProcessInboundEmailHandlerTests.cs",
+          "attribute_token_stops_inside_string_count": 3,
+          "attribute_start_lines": [
+            301,
+            302,
+            304
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+          "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            21
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "snapshot_sha": "c6abcd5e2efa89e356e22b472dd218329db28fac",
+          "path": "apps/api/src/Features/EmailIntegration/InboundWebhook/ProcessInboundEmailHandler.cs",
+          "attribute_token_stops_inside_string_count": 1,
+          "attribute_start_lines": [
+            21
+          ]
+        }
+      ]
+    }
+  },
+  "superseded_by": "docs/csharp_replay_v043_comparison_final.json",
+  "retention_reason": "Initial systematic lexer fault evidence preserved; final corrected replay is authoritative."
+}

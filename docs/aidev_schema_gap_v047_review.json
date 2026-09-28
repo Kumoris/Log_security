@@ -1,0 +1,3832 @@
+{
+  "started_utc": "2026-09-08T22:57:51.747600+00:00",
+  "completed_utc": "2026-09-08T22:57:52.614530+00:00",
+  "elapsed_seconds": 0.866928,
+  "time_budget_seconds": 180,
+  "time_budget_stopped": false,
+  "dataset": "aidev",
+  "all_tables": 18,
+  "all_fields": 160,
+  "excluded_existing_mapped_fields": 17,
+  "excluded_author_committer_fields": 4,
+  "remaining_fields": 139,
+  "format_probed_fields": 139,
+  "format_probed_table_rows": 9216,
+  "format_probed_source_cells": 71168,
+  "format_probe_sampling": "First 512 rows of first/middle/last distinct row groups; deterministic nonrandom format sample, not prevalence or negative classification. Every remaining fixed-schema column is selected regardless of sensitive keywords.",
+  "format_limits": {
+    "max_source_chars": 131072,
+    "decoded_json_layers": 2,
+    "max_nodes": 4096,
+    "max_depth": 12,
+    "literal_leaf_max_chars": 4096
+  },
+  "assignee_full_probe": {
+    "table_path": "pr_timeline.parquet",
+    "column_name": "assignee",
+    "source_rows": 325500,
+    "complete": true,
+    "counts": {
+      "cells_decoded": 325500,
+      "null": 313637,
+      "exact_account_reference_match": 6760,
+      "unmatched_reference_unresolved": 5103
+    },
+    "suggested_role": "account_reference_exact_join",
+    "suggested_category": "QID",
+    "suggested_subtype": "user_identifier",
+    "evidence_status": "schema_context_candidate_only_for_exact_frozen_login_matches",
+    "unmatched_status": "unresolved",
+    "comparison": "exact string equality; no trim, case folding, Unicode normalization, or account validity verification",
+    "reference_support": [
+      {
+        "table_path": "user.parquet",
+        "column_name": "login",
+        "counts": {
+          "reference_cells_decoded": 1796,
+          "nonempty_string": 1796
+        }
+      },
+      {
+        "table_path": "all_user.parquet",
+        "column_name": "login",
+        "counts": {
+          "reference_cells_decoded": 72189,
+          "nonempty_string": 72189
+        }
+      }
+    ],
+    "reference_distinct_strings": 72189,
+    "source_unchanged": true
+  },
+  "fields": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "number",
+      "native_type": "int64",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "title",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 1,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 510,
+        "invalid_json_container_prefix_unresolved": 2
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 8773,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 510,
+        "bounded_nonempty_string": 510,
+        "non_json_container_prefix_unresolved": 510,
+        "null": 2
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "agent",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "state",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "closed_at",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 72864,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 459,
+        "bounded_nonempty_string": 459,
+        "non_json_container_prefix_unresolved": 459,
+        "null": 53
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "merged_at",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 142652,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 389,
+        "bounded_nonempty_string": 389,
+        "non_json_container_prefix_unresolved": 389,
+        "null": 123
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "repo_id",
+      "native_type": "double",
+      "source_rows": 932791,
+      "footer_null_count": 2499,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 509,
+        "null": 3
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "repo_url",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "table": "all_pull_request",
+      "column_name": "html_url",
+      "native_type": "string",
+      "source_rows": 932791,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 116211,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "url",
+      "native_type": "string",
+      "source_rows": 116211,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "license",
+      "native_type": "string",
+      "source_rows": 116211,
+      "footer_null_count": 76106,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 224,
+        "string": 288,
+        "bounded_nonempty_string": 288,
+        "non_json_container_prefix_unresolved": 288
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "full_name",
+      "native_type": "string",
+      "source_rows": 116211,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "language",
+      "native_type": "string",
+      "source_rows": 116211,
+      "footer_null_count": 11986,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 504,
+        "bounded_nonempty_string": 504,
+        "non_json_container_prefix_unresolved": 504,
+        "null": 8
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "forks",
+      "native_type": "double",
+      "source_rows": 116211,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "table": "all_repository",
+      "column_name": "stars",
+      "native_type": "double",
+      "source_rows": 116211,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_user.parquet",
+      "table": "all_user",
+      "column_name": "followers",
+      "native_type": "double",
+      "source_rows": 72189,
+      "footer_null_count": 22,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_user.parquet",
+      "table": "all_user",
+      "column_name": "following",
+      "native_type": "double",
+      "source_rows": 72189,
+      "footer_null_count": 22,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "all_user.parquet",
+      "table": "all_user",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 72189,
+      "footer_null_count": 22,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "table": "human_pr_task_type",
+      "column_name": "agent",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "table": "human_pr_task_type",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "table": "human_pr_task_type",
+      "column_name": "title",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 504,
+        "invalid_json_container_prefix_unresolved": 8
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "table": "human_pr_task_type",
+      "column_name": "reason",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "table": "human_pr_task_type",
+      "column_name": "type",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "table": "human_pr_task_type",
+      "column_name": "confidence",
+      "native_type": "double",
+      "source_rows": 6618,
+      "footer_null_count": 6618,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "number",
+      "native_type": "int64",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "title",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 504,
+        "invalid_json_container_prefix_unresolved": 8
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "state",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "closed_at",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 469,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 467,
+        "bounded_nonempty_string": 467,
+        "non_json_container_prefix_unresolved": 467,
+        "null": 45
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "merged_at",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 1537,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 383,
+        "bounded_nonempty_string": 383,
+        "non_json_container_prefix_unresolved": 383,
+        "null": 129
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "repo_url",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "html_url",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 995,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 471,
+        "bounded_nonempty_string": 471,
+        "non_json_container_prefix_unresolved": 471,
+        "null": 41
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "table": "human_pull_request",
+      "column_name": "agent",
+      "native_type": "string",
+      "source_rows": 6618,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 4614,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "number",
+      "native_type": "int64",
+      "source_rows": 4614,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "title",
+      "native_type": "string",
+      "source_rows": 4614,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 404,
+        "invalid_json_container_prefix_unresolved": 108
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 4614,
+      "footer_null_count": 124,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 505,
+        "bounded_nonempty_string": 505,
+        "non_json_container_prefix_unresolved": 504,
+        "null": 7,
+        "invalid_json_container_prefix_unresolved": 1
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "state",
+      "native_type": "string",
+      "source_rows": 4614,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 4614,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "closed_at",
+      "native_type": "string",
+      "source_rows": 4614,
+      "footer_null_count": 1447,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 337,
+        "bounded_nonempty_string": 337,
+        "non_json_container_prefix_unresolved": 337,
+        "null": 175
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "issue.parquet",
+      "table": "issue",
+      "column_name": "html_url",
+      "native_type": "string",
+      "source_rows": 4614,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "table": "pr_comments",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 39122,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "table": "pr_comments",
+      "column_name": "pr_id",
+      "native_type": "int64",
+      "source_rows": 39122,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "table": "pr_comments",
+      "column_name": "user_type",
+      "native_type": "string",
+      "source_rows": 39122,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "table": "pr_comments",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 39122,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "table": "pr_comments",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 39122,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 511,
+        "non_json_container_prefix_unresolved": 485,
+        "invalid_json_container_prefix_unresolved": 26,
+        "over_character_budget_unresolved": 1
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "sha",
+      "native_type": "string",
+      "source_rows": 711923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "pr_id",
+      "native_type": "int64",
+      "source_rows": 711923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "message",
+      "native_type": "string",
+      "source_rows": 711923,
+      "footer_null_count": 20,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 506,
+        "invalid_json_container_prefix_unresolved": 6
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "commit_stats_total",
+      "native_type": "int64",
+      "source_rows": 711923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "commit_stats_additions",
+      "native_type": "int64",
+      "source_rows": 711923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "commit_stats_deletions",
+      "native_type": "int64",
+      "source_rows": 711923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "filename",
+      "native_type": "string",
+      "source_rows": 711923,
+      "footer_null_count": 5132,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 511,
+        "bounded_nonempty_string": 511,
+        "non_json_container_prefix_unresolved": 511,
+        "null": 1
+      },
+      "fully_classified": false,
+      "assessment": "repository_file_reference_not_private_filesystem_path_by_default"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "status",
+      "native_type": "string",
+      "source_rows": 711923,
+      "footer_null_count": 5132,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 511,
+        "bounded_nonempty_string": 511,
+        "non_json_container_prefix_unresolved": 511,
+        "null": 1
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "additions",
+      "native_type": "double",
+      "source_rows": 711923,
+      "footer_null_count": 5132,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 511,
+        "null": 1
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "deletions",
+      "native_type": "double",
+      "source_rows": 711923,
+      "footer_null_count": 5132,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 511,
+        "null": 1
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "changes",
+      "native_type": "double",
+      "source_rows": 711923,
+      "footer_null_count": 5132,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 511,
+        "null": 1
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "table": "pr_commit_details",
+      "column_name": "patch",
+      "native_type": "string",
+      "source_rows": 711923,
+      "footer_null_count": 70202,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 500,
+        "bounded_nonempty_string": 500,
+        "non_json_container_prefix_unresolved": 500,
+        "null": 12
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "table": "pr_commits",
+      "column_name": "sha",
+      "native_type": "string",
+      "source_rows": 88576,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "table": "pr_commits",
+      "column_name": "pr_id",
+      "native_type": "int64",
+      "source_rows": 88576,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "table": "pr_commits",
+      "column_name": "message",
+      "native_type": "string",
+      "source_rows": 88576,
+      "footer_null_count": 1,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 511,
+        "invalid_json_container_prefix_unresolved": 1
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "pull_request_review_id",
+      "native_type": "int64",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "user_type",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "diff_hunk",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 786,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 490,
+        "bounded_nonempty_string": 490,
+        "non_json_container_prefix_unresolved": 490,
+        "null": 22
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "path",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "repository_file_reference_not_private_filesystem_path_by_default"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "position",
+      "native_type": "double",
+      "source_rows": 19450,
+      "footer_null_count": 13815,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 244,
+        "native_number": 268
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "original_position",
+      "native_type": "int64",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "commit_id",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "original_commit_id",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 1,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 510,
+        "invalid_json_container_prefix_unresolved": 2
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "pull_request_url",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "updated_at",
+      "native_type": "string",
+      "source_rows": 19450,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "table": "pr_review_comments",
+      "column_name": "in_reply_to_id",
+      "native_type": "double",
+      "source_rows": 19450,
+      "footer_null_count": 10640,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 279,
+        "native_number": 233
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "pull_request_review_id",
+      "native_type": "int64",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "user_type",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "diff_hunk",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 864,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 501,
+        "bounded_nonempty_string": 501,
+        "non_json_container_prefix_unresolved": 501,
+        "null": 11
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "path",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "repository_file_reference_not_private_filesystem_path_by_default"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "position",
+      "native_type": "double",
+      "source_rows": 26868,
+      "footer_null_count": 13815,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 441,
+        "null": 71
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "original_position",
+      "native_type": "int64",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "commit_id",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "original_commit_id",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 1,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "invalid_json_container_prefix_unresolved": 9,
+        "non_json_container_prefix_unresolved": 503
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "pull_request_url",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "updated_at",
+      "native_type": "string",
+      "source_rows": 26868,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "table": "pr_review_comments_v2",
+      "column_name": "in_reply_to_id",
+      "native_type": "double",
+      "source_rows": 26868,
+      "footer_null_count": 17964,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 448,
+        "native_number": 64
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "table": "pr_reviews",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 28875,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "table": "pr_reviews",
+      "column_name": "pr_id",
+      "native_type": "int64",
+      "source_rows": 28875,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "table": "pr_reviews",
+      "column_name": "user_type",
+      "native_type": "string",
+      "source_rows": 28875,
+      "footer_null_count": 1,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "table": "pr_reviews",
+      "column_name": "state",
+      "native_type": "string",
+      "source_rows": 28875,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "table": "pr_reviews",
+      "column_name": "submitted_at",
+      "native_type": "string",
+      "source_rows": 28875,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "table": "pr_reviews",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 28875,
+      "footer_null_count": 20934,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 240,
+        "bounded_nonempty_string": 238,
+        "non_json_container_prefix_unresolved": 238,
+        "null": 272,
+        "over_character_budget_unresolved": 2
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "table": "pr_task_type",
+      "column_name": "agent",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "table": "pr_task_type",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "table": "pr_task_type",
+      "column_name": "title",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 500,
+        "invalid_json_container_prefix_unresolved": 12
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "table": "pr_task_type",
+      "column_name": "reason",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "table": "pr_task_type",
+      "column_name": "type",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "table": "pr_task_type",
+      "column_name": "confidence",
+      "native_type": "int64",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "pr_id",
+      "native_type": "int64",
+      "source_rows": 325500,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "event",
+      "native_type": "string",
+      "source_rows": 325500,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "commit_id",
+      "native_type": "string",
+      "source_rows": 325500,
+      "footer_null_count": 203460,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 315,
+        "bounded_nonempty_string": 315,
+        "non_json_container_prefix_unresolved": 315,
+        "null": 197
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 325500,
+      "footer_null_count": 95600,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 244,
+        "bounded_nonempty_string": 244,
+        "non_json_container_prefix_unresolved": 244,
+        "null": 268
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "assignee",
+      "native_type": "string",
+      "source_rows": 325500,
+      "footer_null_count": 313637,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 508,
+        "string": 4,
+        "bounded_nonempty_string": 4,
+        "non_json_container_prefix_unresolved": 4
+      },
+      "fully_classified": false,
+      "assessment": "exact_account_join_candidate_or_unresolved"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "label",
+      "native_type": "string",
+      "source_rows": 325500,
+      "footer_null_count": 296215,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 500,
+        "string": 12,
+        "bounded_nonempty_string": 12,
+        "non_json_container_prefix_unresolved": 12
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "table": "pr_timeline",
+      "column_name": "message",
+      "native_type": "string",
+      "source_rows": 325500,
+      "footer_null_count": 212809,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 253,
+        "string": 259,
+        "bounded_nonempty_string": 259,
+        "non_json_container_prefix_unresolved": 255,
+        "invalid_json_container_prefix_unresolved": 4
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "number",
+      "native_type": "int64",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "title",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 496,
+        "invalid_json_container_prefix_unresolved": 16
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "body",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 360,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "freeform_or_code_carrier_requires_content_review"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "agent",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "state",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "closed_at",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 2312,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 422,
+        "bounded_nonempty_string": 422,
+        "non_json_container_prefix_unresolved": 422,
+        "null": 90
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "merged_at",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 9582,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "null": 215,
+        "string": 297,
+        "bounded_nonempty_string": 297,
+        "non_json_container_prefix_unresolved": 297
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "repo_id",
+      "native_type": "int64",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "repo_url",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "table": "pull_request",
+      "column_name": "html_url",
+      "native_type": "string",
+      "source_rows": 33596,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "table": "related_issue",
+      "column_name": "pr_id",
+      "native_type": "int64",
+      "source_rows": 4923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "table": "related_issue",
+      "column_name": "issue_id",
+      "native_type": "double",
+      "source_rows": 4923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "table": "related_issue",
+      "column_name": "source",
+      "native_type": "string",
+      "source_rows": 4923,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "id",
+      "native_type": "int64",
+      "source_rows": 2807,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "url",
+      "native_type": "string",
+      "source_rows": 2807,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "resource_url_reference_not_person_or_internal_endpoint_by_default"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "license",
+      "native_type": "string",
+      "source_rows": 2807,
+      "footer_null_count": 191,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 485,
+        "bounded_nonempty_string": 485,
+        "non_json_container_prefix_unresolved": 485,
+        "null": 27
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "full_name",
+      "native_type": "string",
+      "source_rows": 2807,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "language",
+      "native_type": "string",
+      "source_rows": 2807,
+      "footer_null_count": 37,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 507,
+        "bounded_nonempty_string": 507,
+        "non_json_container_prefix_unresolved": 507,
+        "null": 5
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "forks",
+      "native_type": "int64",
+      "source_rows": 2807,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "repository.parquet",
+      "table": "repository",
+      "column_name": "stars",
+      "native_type": "int64",
+      "source_rows": 2807,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "user.parquet",
+      "table": "user",
+      "column_name": "followers",
+      "native_type": "double",
+      "source_rows": 1796,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "user.parquet",
+      "table": "user",
+      "column_name": "following",
+      "native_type": "double",
+      "source_rows": 1796,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "native_number": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    },
+    {
+      "table_path": "user.parquet",
+      "table": "user",
+      "column_name": "created_at",
+      "native_type": "string",
+      "source_rows": 1796,
+      "footer_null_count": 0,
+      "sample_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 512
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 512,
+        "string": 512,
+        "bounded_nonempty_string": 512,
+        "non_json_container_prefix_unresolved": 512
+      },
+      "fully_classified": false,
+      "assessment": "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping"
+    }
+  ],
+  "source_checks": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "rows": 932791,
+      "all_native_fields": 14,
+      "source_sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989120,
+        "bytes": 330776130,
+        "mtime_ns": 1788885015467215888,
+        "ctime_ns": 1788885015472026660
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989120,
+        "bytes": 330776130,
+        "mtime_ns": 1788885015467215888,
+        "ctime_ns": 1788885015472026660
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "rows": 116211,
+      "all_native_fields": 7,
+      "source_sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989129,
+        "bytes": 6136253,
+        "mtime_ns": 1788884992620673562,
+        "ctime_ns": 1788884992623571592
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989129,
+        "bytes": 6136253,
+        "mtime_ns": 1788884992620673562,
+        "ctime_ns": 1788884992623571592
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "all_user.parquet",
+      "rows": 72189,
+      "all_native_fields": 5,
+      "source_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989125,
+        "bytes": 2511706,
+        "mtime_ns": 1788884991679786988,
+        "ctime_ns": 1788884991681185816
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989125,
+        "bytes": 2511706,
+        "mtime_ns": 1788884991679786988,
+        "ctime_ns": 1788884991681185816
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "rows": 6618,
+      "all_native_fields": 6,
+      "source_sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989131,
+        "bytes": 715969,
+        "mtime_ns": 1788884991284184473,
+        "ctime_ns": 1788884991285731425
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989131,
+        "bytes": 715969,
+        "mtime_ns": 1788884991284184473,
+        "ctime_ns": 1788884991285731425
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "rows": 6618,
+      "all_native_fields": 13,
+      "source_sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989342,
+        "bytes": 4387171,
+        "mtime_ns": 1788885014587452851,
+        "ctime_ns": 1788885014590400756
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989342,
+        "bytes": 4387171,
+        "mtime_ns": 1788885014587452851,
+        "ctime_ns": 1788885014590400756
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "issue.parquet",
+      "rows": 4614,
+      "all_native_fields": 9,
+      "source_sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989349,
+        "bytes": 3222463,
+        "mtime_ns": 1788885014585279902,
+        "ctime_ns": 1788885014589441385
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989349,
+        "bytes": 3222463,
+        "mtime_ns": 1788885014585279902,
+        "ctime_ns": 1788885014589441385
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "rows": 39122,
+      "all_native_fields": 7,
+      "source_sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989353,
+        "bytes": 25857243,
+        "mtime_ns": 1788885015185000274,
+        "ctime_ns": 1788885015186473935
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989353,
+        "bytes": 25857243,
+        "mtime_ns": 1788885015185000274,
+        "ctime_ns": 1788885015186473935
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "rows": 711923,
+      "all_native_fields": 14,
+      "source_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989495,
+        "bytes": 485214032,
+        "mtime_ns": 1788885031915168416,
+        "ctime_ns": 1788885031920225104
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989495,
+        "bytes": 485214032,
+        "mtime_ns": 1788885031915168416,
+        "ctime_ns": 1788885031920225104
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "rows": 88576,
+      "all_native_fields": 5,
+      "source_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989496,
+        "bytes": 8314097,
+        "mtime_ns": 1788885016803827811,
+        "ctime_ns": 1788885016809331913
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989496,
+        "bytes": 8314097,
+        "mtime_ns": 1788885016803827811,
+        "ctime_ns": 1788885016809331913
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "rows": 19450,
+      "all_native_fields": 15,
+      "source_sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989500,
+        "bytes": 14728130,
+        "mtime_ns": 1788885021909147381,
+        "ctime_ns": 1788885021913863361
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989500,
+        "bytes": 14728130,
+        "mtime_ns": 1788885021909147381,
+        "ctime_ns": 1788885021913863361
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "rows": 26868,
+      "all_native_fields": 15,
+      "source_sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989504,
+        "bytes": 21125785,
+        "mtime_ns": 1788885028442596116,
+        "ctime_ns": 1788885028446568141
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989504,
+        "bytes": 21125785,
+        "mtime_ns": 1788885028442596116,
+        "ctime_ns": 1788885028446568141
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "rows": 28875,
+      "all_native_fields": 7,
+      "source_sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989509,
+        "bytes": 7517041,
+        "mtime_ns": 1788885021520277670,
+        "ctime_ns": 1788885021524519986
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989509,
+        "bytes": 7517041,
+        "mtime_ns": 1788885021520277670,
+        "ctime_ns": 1788885021524519986
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "rows": 33596,
+      "all_native_fields": 6,
+      "source_sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989567,
+        "bytes": 2993264,
+        "mtime_ns": 1788885025417537615,
+        "ctime_ns": 1788885025421927097
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989567,
+        "bytes": 2993264,
+        "mtime_ns": 1788885025417537615,
+        "ctime_ns": 1788885025421927097
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "rows": 325500,
+      "all_native_fields": 8,
+      "source_sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989571,
+        "bytes": 34108415,
+        "mtime_ns": 1788885026897137899,
+        "ctime_ns": 1788885026898416560
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989571,
+        "bytes": 34108415,
+        "mtime_ns": 1788885026897137899,
+        "ctime_ns": 1788885026898416560
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "rows": 33596,
+      "all_native_fields": 14,
+      "source_sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989578,
+        "bytes": 16855612,
+        "mtime_ns": 1788885028564744648,
+        "ctime_ns": 1788885028565760060
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989578,
+        "bytes": 16855612,
+        "mtime_ns": 1788885028564744648,
+        "ctime_ns": 1788885028565760060
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "rows": 4923,
+      "all_native_fields": 3,
+      "source_sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989582,
+        "bytes": 75579,
+        "mtime_ns": 1788885029254238771,
+        "ctime_ns": 1788885029255074309
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989582,
+        "bytes": 75579,
+        "mtime_ns": 1788885029254238771,
+        "ctime_ns": 1788885029255074309
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "repository.parquet",
+      "rows": 2807,
+      "all_native_fields": 7,
+      "source_sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989589,
+        "bytes": 167251,
+        "mtime_ns": 1788885030470894360,
+        "ctime_ns": 1788885030473465724
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989589,
+        "bytes": 167251,
+        "mtime_ns": 1788885030470894360,
+        "ctime_ns": 1788885030473465724
+      },
+      "source_unchanged": true
+    },
+    {
+      "table_path": "user.parquet",
+      "rows": 1796,
+      "all_native_fields": 5,
+      "source_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+      "sha256_verified_this_run": true,
+      "source_stat_before": {
+        "device": 16777231,
+        "inode": 105989598,
+        "bytes": 68935,
+        "mtime_ns": 1788885030637129125,
+        "ctime_ns": 1788885030639402199
+      },
+      "source_stat_after": {
+        "device": 16777231,
+        "inode": 105989598,
+        "bytes": 68935,
+        "mtime_ns": 1788885030637129125,
+        "ctime_ns": 1788885030639402199
+      },
+      "source_unchanged": true
+    }
+  ],
+  "evidence_input_sha256": {
+    "schema-runs/aidev-v046/schema_coverage.json": "1f59f5ca9e5e2c990da22b38c948de10bd2adf7b4ae344f2b2022aafe1c7a8b2",
+    "inputs/aidev-full-v2/manifest.json": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+    "docs/structured_format_probe_v046.json": "2ea65437e7e6d5e969dc2c2e5a32c4b002e1bd059b309d14fcc0dedda6099ee5"
+  },
+  "content_types_sha256": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+  "helper_sha256": "af0403929ed64312312dc4345c2cb548ba0b93f775dd49439a5f6181273155a1",
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "/private/tmp/aidev_schema_gap_v047_review.py"
+  ],
+  "synthetic_assertions_passed": 6,
+  "raw_values_or_dynamic_keys_exported": false,
+  "value_hashes_exported": false,
+  "package_source_modified": false,
+  "source_data_modified": false,
+  "network_accessed": false,
+  "shared_databases_accessed": false,
+  "human_review_status": "pending",
+  "new_sensitive_type_established": false,
+  "runtime_confirmed": false,
+  "personal_ownership_confirmed": false,
+  "application_log_evidence": false,
+  "count_unit": "Format observations are source cells; account lookup cells are a separate support denominator. Nested key/leaf counts are occurrences within sampled JSON, not people, credentials, or log changes.",
+  "fenced_json_followup": {
+    "started_utc": "2026-09-08T22:58:41.493522+00:00",
+    "elapsed_seconds": 0.402364,
+    "fields_revisited": 90,
+    "source_cells_revisited": 46080,
+    "coverage_note": "Revisits the same first 512 rows of every remaining string field; these are not additional unique sampled cells. Only explicit json/JSON triple-backtick Markdown blocks; no patch line stripping or arbitrary payload extraction.",
+    "max_fences_per_cell": 4,
+    "max_source_chars": 131072,
+    "fields_with_fences_or_budget_gaps": [
+      {
+        "table_path": "all_pull_request.parquet",
+        "column_name": "body",
+        "source_range": [
+          1,
+          512
+        ],
+        "counts": {
+          "source_cells_revisited": 512,
+          "explicit_json_fences": 11,
+          "block_cells_decoded": 11,
+          "block_string": 11,
+          "block_bounded_nonempty_string": 11,
+          "block_strict_json_cells": 7,
+          "block_json_root_object": 7,
+          "block_other_json_keys_not_exported": 38,
+          "cells_with_explicit_json_fences": 10,
+          "block_invalid_json_container_prefix_unresolved": 4
+        }
+      },
+      {
+        "table_path": "issue.parquet",
+        "column_name": "body",
+        "source_range": [
+          1,
+          512
+        ],
+        "counts": {
+          "source_cells_revisited": 512,
+          "explicit_json_fences": 16,
+          "block_cells_decoded": 16,
+          "block_string": 16,
+          "block_bounded_nonempty_string": 16,
+          "block_strict_json_cells": 9,
+          "block_json_root_object": 9,
+          "block_other_json_keys_not_exported": 51,
+          "cells_with_explicit_json_fences": 14,
+          "block_invalid_json_container_prefix_unresolved": 7,
+          "block_static_key_location_occurrences": 1,
+          "block_static_key_location_nonempty_string": 1
+        }
+      },
+      {
+        "table_path": "pr_comments.parquet",
+        "column_name": "body",
+        "source_range": [
+          1,
+          512
+        ],
+        "counts": {
+          "source_cells_revisited": 512,
+          "over_character_budget_unresolved": 1
+        }
+      },
+      {
+        "table_path": "pr_reviews.parquet",
+        "column_name": "body",
+        "source_range": [
+          1,
+          512
+        ],
+        "counts": {
+          "source_cells_revisited": 512,
+          "over_character_budget_unresolved": 2
+        }
+      },
+      {
+        "table_path": "pull_request.parquet",
+        "column_name": "body",
+        "source_range": [
+          1,
+          512
+        ],
+        "counts": {
+          "source_cells_revisited": 512,
+          "explicit_json_fences": 8,
+          "block_cells_decoded": 8,
+          "block_string": 8,
+          "block_bounded_nonempty_string": 8,
+          "block_invalid_json_container_prefix_unresolved": 2,
+          "cells_with_explicit_json_fences": 8,
+          "block_strict_json_cells": 6,
+          "block_json_root_object": 6,
+          "block_other_json_keys_not_exported": 45
+        }
+      }
+    ],
+    "all_source_stats_unchanged": true,
+    "helper_sha256": "09a49b8c4ddf333d7a7affb92545a4b3c5a9d184b68ffbcb047ab2db54235d0f",
+    "raw_values_or_dynamic_keys_exported": false,
+    "new_type_confirmed": false
+  },
+  "format_probe_totals": {
+    "cells_decoded": 71168,
+    "native_number": 23528,
+    "string": 42891,
+    "bounded_nonempty_string": 42888,
+    "non_json_container_prefix_unresolved": 42685,
+    "invalid_json_container_prefix_unresolved": 203,
+    "null": 4749,
+    "over_character_budget_unresolved": 3
+  },
+  "unresolved_field_group_counts": {
+    "metadata_or_aggregate_unresolved_no_generic_sensitive_mapping": 102,
+    "freeform_or_code_carrier_requires_content_review": 22,
+    "resource_url_reference_not_person_or_internal_endpoint_by_default": 11,
+    "repository_file_reference_not_private_filesystem_path_by_default": 3,
+    "exact_account_join_candidate_or_unresolved": 1
+  },
+  "findings": [
+    {
+      "priority": 1,
+      "title_zh": "可直接新增 assignee 精确账户引用映射",
+      "fields": [
+        {
+          "table": "pr_timeline",
+          "column": "assignee"
+        }
+      ],
+      "observed_exact_reference_cells": 6760,
+      "unmatched_cells": 5103,
+      "null_cells": 313637,
+      "category": "QID",
+      "subtype": "user_identifier",
+      "new_taxonomy_subtype": false,
+      "minimum_implementation": "Add only (aidev, pr_timeline, assignee) as the existing exact frozen account-login join role. Persist matched / null / empty / invalid / unmatched ranges separately; unmatched values keep category/subtype null. Reuse lookup coverage and fingerprint checks; no new general id/name rule.",
+      "confidence": "low",
+      "human_review_status": "pending",
+      "semantic_limits": "A GitHub account may be a person, bot, organization, or unresolved identity. Exact reference membership proves only dataset linkage, not privacy sensitivity, ownership or leakage."
+    },
+    {
+      "priority": 2,
+      "title_zh": "明确 JSON 围栏适合有界结构解码，但尚无新增敏感类型证据",
+      "fields": [
+        {
+          "table": "all_pull_request",
+          "column": "body",
+          "valid_json_blocks_in_sample": 7
+        },
+        {
+          "table": "issue",
+          "column": "body",
+          "valid_json_blocks_in_sample": 9
+        },
+        {
+          "table": "pull_request",
+          "column": "body",
+          "valid_json_blocks_in_sample": 6
+        }
+      ],
+      "explicit_fences": 35,
+      "strict_json_blocks": 22,
+      "invalid_blocks_unresolved": 13,
+      "observed_controlled_key_counts": {
+        "location": 1
+      },
+      "observed_email_or_credential_leaf_shape_matches": 0,
+      "minimum_implementation": "If decoded-content support is added, begin with explicit JSON fences, strict JSON (reject duplicate keys and nonstandard constants), at most two encoded layers, bounded input/nodes/depth. Record representation origin and outer source cell; Unicode-decoded offsets are not interchangeable with raw-source offsets. Keep parsing failures, over-budget cells and unrecognized keys unresolved. Do not run this as a prerequisite filter for Git history tracing.",
+      "semantic_limits": "location is ambiguous and may denote a code/config/resource location. Nonempty string shape does not establish geography, a person link, coordinates, or precise location. These blocks remain content carriers and unclassified structure."
+    },
+    {
+      "priority": 3,
+      "title_zh": "其余固定 schema 未提供新的明确联系、位置或认证字段",
+      "remaining_fields_after_assignee": 138,
+      "top_level_schema_contact_location_auth_fields_found": 0,
+      "minimum_implementation": "Keep these columns in field-level coverage and existing content review, grouped by carrier / resource reference / metadata or aggregate. Do not map repository full_name or id, followers/following counts, dates, code paths, or public repository URLs to person names, credentials, private paths or new sensitive types based on field words alone.",
+      "semantic_limits": "The 512-row-per-table probe is deterministic and not representative; zero JSON/shape hits are not absence evidence. Markdown, code, nested strings, arbitrary encodings and long cells still need bounded follow-up or manual review."
+    }
+  ],
+  "coverage_accounting": {
+    "format_source_cells": 71168,
+    "full_assignee_source_cells": 325500,
+    "overlap_assignee_cells_in_format_sample": 512,
+    "unique_observed_target_source_cells": 396156,
+    "reference_lookup_cells_separate": 73985,
+    "fenced_json_revisited_cells_not_new_coverage": 46080,
+    "all_139_source_fields_semantically_classified": false,
+    "new_sensitive_type_or_leak_proven": false
+  },
+  "actual_checks": {
+    "first_probe_exit_code": 0,
+    "fenced_followup_exit_code": 0,
+    "source_parquet_sha256_verified_count": 18,
+    "source_tables_unchanged": true,
+    "six_synthetic_assertions_passed": true,
+    "author_committer_fields_not_classified_here": true,
+    "no_package_or_source_data_writes": true,
+    "no_raw_values_dynamic_keys_or_value_hashes_exported": true
+  },
+  "completed_review_utc": "2026-09-08T22:59:15.309682+00:00"
+}

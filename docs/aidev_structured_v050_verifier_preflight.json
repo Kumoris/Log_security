@@ -1,0 +1,43 @@
+{
+  "helper_sha256": "828a9bc3aa6777fd0e7e544e5303a0b0c787f0a1ce819b620e265df23ac92c8d",
+  "helper_unchanged": true,
+  "synthetic_self_test_passed": true,
+  "help_passed": true,
+  "real_run_requires_terminal_confirmation": true,
+  "real_v050_snapshot_read": false,
+  "source_tests_modified": false,
+  "executions": [
+    {
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "agentlog_unified/docs/verify_aidev_structured_v050.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08829512499505654,
+      "stdout": "{\"self_test\": \"passed\", \"checks\": 11, \"real_snapshot_read\": false, \"historical_smoke_inherited\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "agentlog_unified/docs/verify_aidev_structured_v050.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.09244716599641833,
+      "stdout": "usage: verify_aidev_structured_v050.py [-h] [--run-dir RUN_DIR]\n                                       [--report REPORT] [--self-test]\n                                       [--runs-confirmed-terminal]\n\nRead-only structured snapshot verification; run only after its writer stops.\nNever read source text. Shared locking rejects an active writer. Six gzip\npairs are streamed against CSV and SQLite. Old v049 results are compared, not\ninherited smoke evidence.\n\noptions:\n  -h, --help            show this help message and exit\n  --run-dir RUN_DIR\n  --report REPORT\n  --self-test\n  --runs-confirmed-terminal\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "agent_log_privacy/.venv/bin/python",
+        "agentlog_unified/docs/verify_aidev_structured_v050.py"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 0.09300266600621399,
+      "stdout": "",
+      "stderr": "usage: verify_aidev_structured_v050.py [-h] [--run-dir RUN_DIR]\n                                       [--report REPORT] [--self-test]\n                                       [--runs-confirmed-terminal]\nverify_aidev_structured_v050.py: error: --runs-confirmed-terminal is required before reading real snapshots\n"
+    }
+  ]
+}

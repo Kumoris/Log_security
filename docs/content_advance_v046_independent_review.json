@@ -1,0 +1,23 @@
+{
+  "module_sha256": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+  "checks": {
+    "mid_export_interruption_rejected_by_state": true,
+    "all_source_rows_committed_before_export_failure": true,
+    "coverage_stays_prior_snapshot_until_rebuild": true,
+    "zero_row_resume_reexports_without_reclassification": true,
+    "recovered_coverage_state_hash_valid": true,
+    "old_manifest_and_plain_outputs_byte_identical": true,
+    "all_six_gzip_streams_match_same_checkpoint": true,
+    "safe_metadata_only": true,
+    "source_unchanged": true
+  },
+  "passed": 9,
+  "total": 9,
+  "substantive_findings": [],
+  "limits": [
+    "Bounded static review and synthetic recovery probe, not exhaustive fault injection or live dataset verification."
+  ],
+  "real_data_read": false,
+  "source_modified": false,
+  "test_files_modified": false
+}

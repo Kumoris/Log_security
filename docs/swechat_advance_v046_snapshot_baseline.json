@@ -1,0 +1,240 @@
+{
+  "captured_utc": "2026-09-08T22:16:32.129531+00:00",
+  "basis": "Old parent exports read while zero-row advance was running; new output not read. Prior resume02 verifier recorded counts only, not full export hashes.",
+  "old_parent": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044",
+  "files": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/manifest.json",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106672941,
+        "bytes": 18015,
+        "mtime_ns": 1788901156538209580,
+        "ctime_ns": 1788901156538269913
+      },
+      "sha256": "560d527284915c7e5645b9b16896ee11765445b7c950113b10ec6bda229130c3",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106672941,
+        "bytes": 18015,
+        "mtime_ns": 1788901156538209580,
+        "ctime_ns": 1788901156538269913
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_coverage.json",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106747260,
+        "bytes": 19606,
+        "mtime_ns": 1788903023737792512,
+        "ctime_ns": 1788903023737873512
+      },
+      "sha256": "bf583afe73878a36f70ee9a56155855d7a00c5c30ec7e152e5491ac8c9c1eb07",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106747260,
+        "bytes": 19606,
+        "mtime_ns": 1788903023737792512,
+        "ctime_ns": 1788903023737873512
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_type_occurrences.jsonl",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106743053,
+        "bytes": 1432940526,
+        "mtime_ns": 1788903003463842723,
+        "ctime_ns": 1788903003464111931
+      },
+      "sha256": "4f0a8db1f62fdb42d92ffeb34ab33b9e0f54b7c2080b0eaff22301dd2a72aec9",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106743053,
+        "bytes": 1432940526,
+        "mtime_ns": 1788903003463842723,
+        "ctime_ns": 1788903003464111931
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_type_occurrences.csv",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106743054,
+        "bytes": 550879848,
+        "mtime_ns": 1788903003461828141,
+        "ctime_ns": 1788903004220437668
+      },
+      "sha256": "ef35abab12b50728c5474d9690d671ee0500975ea0f3987ff33c546386645c56",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106743054,
+        "bytes": 550879848,
+        "mtime_ns": 1788903003461828141,
+        "ctime_ns": 1788903004220437668
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_excluded.jsonl",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106747216,
+        "bytes": 15797712,
+        "mtime_ns": 1788903009359844694,
+        "ctime_ns": 1788903009362050150
+      },
+      "sha256": "a55d2862f70549895b6db7553881d4363b886e55e2dee9ef315e3199ff9ad95d",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106747216,
+        "bytes": 15797712,
+        "mtime_ns": 1788903009359844694,
+        "ctime_ns": 1788903009362050150
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_excluded.csv",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106747217,
+        "bytes": 6041155,
+        "mtime_ns": 1788903009355754574,
+        "ctime_ns": 1788903009371331349
+      },
+      "sha256": "10c227f8227feb858398a39d3077e7e923ae450371234967d7677e6a81ac6c50",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106747217,
+        "bytes": 6041155,
+        "mtime_ns": 1788903009355754574,
+        "ctime_ns": 1788903009371331349
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_unknown_type_review_queue.jsonl",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106747229,
+        "bytes": 221399635,
+        "mtime_ns": 1788903015235210465,
+        "ctime_ns": 1788903015236053630
+      },
+      "sha256": "401dcacb06f747734dad1014d4b2fa56c80adc00f8bc4654dedffa3e5fabaa3a",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106747229,
+        "bytes": 221399635,
+        "mtime_ns": 1788903015235210465,
+        "ctime_ns": 1788903015236053630
+      },
+      "stable": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/swechat-v044/content_unknown_type_review_queue.csv",
+      "stat_before": {
+        "device": 16777231,
+        "inode": 106747230,
+        "bytes": 88457968,
+        "mtime_ns": 1788903015233392717,
+        "ctime_ns": 1788903015343326576
+      },
+      "sha256": "8bc828b4f46be93e3a9f4308fc6f67baacc324e6b54ff29f7537b60c00a8e740",
+      "stat_after": {
+        "device": 16777231,
+        "inode": 106747230,
+        "bytes": 88457968,
+        "mtime_ns": 1788903015233392717,
+        "ctime_ns": 1788903015343326576
+      },
+      "stable": true
+    }
+  ],
+  "all_stat_hash_stat_stable": true,
+  "pre_execution_dry_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_advance_snapshot_v046_dry_run_command.json",
+  "pre_execution_dry_run_sha256": "f310652d1c3a1c4b2d6c1cfcb48d59cdb7c2952b3f2a0ec4cf61fb81c845e157",
+  "expected_cursors": {
+    "checkpoints.parquet": 13406,
+    "commits.parquet": 14459,
+    "conversations.parquet": 176192,
+    "repositories.parquet": 0,
+    "session_logs.parquet": 0,
+    "sessions.parquet": 0
+  },
+  "expected_checkpoint_identity": {
+    "device": 16777231,
+    "inode": 106672942
+  },
+  "parent_manifest_matches_pre_execution": true,
+  "source_parquet_stats": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/checkpoints.parquet",
+      "stat": {
+        "device": 16777231,
+        "inode": 106027210,
+        "bytes": 5564169,
+        "mtime_ns": 1788893247079512982,
+        "ctime_ns": 1788893247082561932
+      }
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/commits.parquet",
+      "stat": {
+        "device": 16777231,
+        "inode": 106027208,
+        "bytes": 1082547262,
+        "mtime_ns": 1788893333546618477,
+        "ctime_ns": 1788893333565670129
+      }
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/conversations.parquet",
+      "stat": {
+        "device": 16777231,
+        "inode": 106027214,
+        "bytes": 1311422253,
+        "mtime_ns": 1788893333489284022,
+        "ctime_ns": 1788893333509720711
+      }
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/repositories.parquet",
+      "stat": {
+        "device": 16777231,
+        "inode": 106027209,
+        "bytes": 244741,
+        "mtime_ns": 1788893246527894535,
+        "ctime_ns": 1788893246530628527
+      }
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/session_logs.parquet",
+      "stat": {
+        "device": 16777231,
+        "inode": 106027220,
+        "bytes": 6369801,
+        "mtime_ns": 1788893278608558174,
+        "ctime_ns": 1788893278612036539
+      }
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/sessions.parquet",
+      "stat": {
+        "device": 16777231,
+        "inode": 106027227,
+        "bytes": 1997377,
+        "mtime_ns": 1788893277392868905,
+        "ctime_ns": 1788893277394945733
+      }
+    }
+  ],
+  "new_outputs_read": false,
+  "source_values_read": false,
+  "target_code_executed": false
+}

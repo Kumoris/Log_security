@@ -1,0 +1,311 @@
+{
+  "recorded_utc": "2026-09-08T21:00:32.390439+00:00",
+  "observation_scope": "dataset_commit_changes",
+  "content_scan_results_included": false,
+  "source_prior_inventory": {
+    "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+    "sha256": "10f214b625d0268ba8099b8f7ed103cadb601c4a6f58fa869ec517e91033f0a6",
+    "csv_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v043.csv",
+    "csv_sha256": "aae3eb2b1153f16a4b5981ad854f1a8a11afbd5b211f3e1a78d712226cde0bb3"
+  },
+  "source_batches": {
+    "aidev-full-v5": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 336,
+      "type_summary_sha256": "61fd3e170545f746b189ecc509a659f9bf75768588644acd7ff153f81abfb56b",
+      "tool_version_evidence": {
+        "source": "prior v043 inventory record",
+        "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+        "independently_verified_from_run_metadata": false
+      },
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/batch.sqlite",
+      "commit_status_counts": {
+        "blocked": 85979,
+        "complete": 115,
+        "partial": 221
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    },
+    "swechat-full-v5": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 1296,
+      "type_summary_sha256": "6ea6f00e9663cdcf35c64634bf2827e77d496428017af120d1b95c65127777b4",
+      "tool_version_evidence": {
+        "source": "prior v043 inventory record",
+        "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+        "independently_verified_from_run_metadata": false
+      },
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/batch.sqlite",
+      "commit_status_counts": {
+        "blocked": 7401,
+        "complete": 574,
+        "partial": 722
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    },
+    "aidev-anchors-v3": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 21,
+      "type_summary_sha256": "6ec8e3862bb19ae248e7140ea1a2cbc801f51ff8c0513d2b932e6008cdb975a1",
+      "tool_version_evidence": {
+        "source": "prior v043 inventory record",
+        "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+        "independently_verified_from_run_metadata": false
+      },
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/batch.sqlite",
+      "commit_status_counts": {
+        "blocked": 5,
+        "complete": 2,
+        "partial": 19,
+        "pending": 24442
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    },
+    "aidev-prior-cache-v042": {
+      "tool_version_at_analysis": "0.4.2",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "036f579bc37737cf44bb19eba60a317cb83e8ad4e5051652324a1895be4335cc",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "49e5b45412fd69c628e835adde7bc7cc688252d24ccf300b9fcdcc351d7e1c74",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "8c1f0cb57b98b8f246f44310a8f9cd7c55ebd831d3c70f79e9b1302525094d56"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 8,
+      "type_summary_sha256": "569179b0e1db9717866b059da58eb22cc4eb94f06454d738d855582b87f1a394",
+      "tool_version_evidence": {
+        "source": "prior v043 inventory record",
+        "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+        "independently_verified_from_run_metadata": false
+      },
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/batch.sqlite",
+      "commit_status_counts": {
+        "complete": 5,
+        "partial": 3
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    },
+    "aidev-expansion-v043-final": {
+      "tool_version_at_analysis": "0.4.3",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 144,
+      "type_summary_sha256": "3907a9524ca2d552c023e9cce1e936108b5622276678c82c4fbfa97e01d3744f",
+      "tool_version_evidence": {
+        "source": "prior v043 inventory record",
+        "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+        "independently_verified_from_run_metadata": false
+      },
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v043-final/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v043-final/batch.sqlite",
+      "commit_status_counts": {
+        "complete": 40,
+        "partial": 104
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    },
+    "csharp-swechat-v043-final": {
+      "tool_version_at_analysis": "0.4.3",
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 20,
+      "type_summary_sha256": "93f5fc32c25974ae33106ac47f68df68040f96760ae308bc635af1f0c09a57db",
+      "tool_version_evidence": {
+        "source": "prior v043 inventory record",
+        "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/type_inventory_v043_provenance.json",
+        "independently_verified_from_run_metadata": false
+      },
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/csharp-swechat-v043-final/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/csharp-swechat-v043-final/batch.sqlite",
+      "commit_status_counts": {
+        "partial": 20
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    },
+    "aidev-expansion-v044": {
+      "tool_version_at_analysis": null,
+      "tool_version_evidence": {
+        "source": "not recorded in current execution metadata; version not inferred from directory name or current package",
+        "independently_verified_from_run_metadata": false
+      },
+      "analysis_fingerprint": {
+        "max_changed_files": 2000,
+        "max_dependency_files": 40,
+        "max_source_bytes": 2097152,
+        "pydriller_version": "2.11",
+        "source_sha256": {
+          "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+          "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+          "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+          "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+          "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+        }
+      },
+      "unique_actual_pydriller_repo_sha": 106,
+      "type_summary_sha256": "4a29819e175bdb61fbe93ce7de7e54099cdf7cf5d69a4d0ab3e7d175b659c4df",
+      "type_summary_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v044/exports/type_summary.json",
+      "batch_database_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v044/batch.sqlite",
+      "commit_status_counts": {
+        "complete": 21,
+        "partial": 85
+      },
+      "observation_scope": "dataset_commit_changes",
+      "counts_are_independent_per_batch": true
+    }
+  },
+  "catalog_subtypes": 42,
+  "observed_subtypes_in_versioned_evidence_union": 27,
+  "observed_taxonomy_id_union": [
+    "AUTH.access_token",
+    "AUTH.api_key",
+    "AUTH.credential_bundle",
+    "AUTH.password",
+    "BIZ.business_object",
+    "BIZ.document_content",
+    "BIZ.http_headers",
+    "BIZ.message_content",
+    "BIZ.request_body",
+    "BIZ.response_body",
+    "BIZ.unclassified_content",
+    "BIZ.unclassified_object",
+    "CFG.database_connection",
+    "CFG.deployment_configuration",
+    "CFG.environment",
+    "CFG.filesystem_path",
+    "DIAG.exception_message",
+    "DIAG.stack_trace",
+    "PII.email",
+    "PII.person_name",
+    "PII.postal_address",
+    "QID.device_identifier",
+    "QID.network_identifier",
+    "QID.request_identifier",
+    "QID.session_identifier",
+    "QID.transaction_identifier",
+    "QID.user_identifier"
+  ],
+  "new_observed_catalog_subtypes_vs_v043": [],
+  "aidev_main_batches": [
+    "aidev-full-v5",
+    "aidev-prior-cache-v042",
+    "aidev-expansion-v043-final",
+    "aidev-expansion-v044"
+  ],
+  "aidev_main_prior_unique_actual_commits": 488,
+  "aidev_main_prior_and_delta_unique_actual_commits": 594,
+  "delta_repo_sha_overlap_with_prior_actual": 0,
+  "delta_new_actual_commits": 106,
+  "actual_commit_selection_predicate": "COALESCE(jobs.data.metrics.pydriller_commits, 0) > 0; distinct repository + SHA",
+  "input_fingerprint_and_statistics_checks": {
+    "six_prior_fingerprints_match_databases": true,
+    "six_prior_summary_hashes_match_files": true,
+    "six_prior_commit_counts_match_databases": true,
+    "six_prior_csv_columns_match_summary_files": true,
+    "v043_initial_batches_excluded": true,
+    "new_delta_no_overlap": true
+  },
+  "output_csv_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+  "output_csv_sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+  "notes": [
+    "Counts in CSV are separate per-batch log-version counts; no summed log-version population statistic is produced.",
+    "Taxonomy identifiers are combined by set union only; labels do not establish all sensitive types or confirmed defects.",
+    "Historical tool-version strings are retained with their original inventory provenance; the new run version was not recorded and remains null. Core source fingerprints identify every analysis.",
+    "AIDev supplementary anchor commits are excluded from the main PR commit union.",
+    "SWE-chat C# replay is retained as its own per-batch column and is not added to the SWE-chat population denominator.",
+    "Only application-log dataset_commit_changes evidence is included; new source-text content scans are excluded."
+  ],
+  "full_dataset_coverage_claim": false,
+  "full_history_tracing_completed": false,
+  "runtime_confirmed": false,
+  "human_review_status": "pending"
+}

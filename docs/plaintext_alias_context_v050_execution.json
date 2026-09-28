@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log \u7814\u7a76/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/replay_plaintext_alias_context_v050.py"
+  ],
+  "environment_overrides": {
+    "PYTHONPATH": "/private/tmp/aidev_alias_plaintext_v050_frozen/src",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "started_utc": "2026-09-09T07:37:20.885283+00:00",
+  "completed_utc": "2026-09-09T07:37:35.774128+00:00",
+  "elapsed_seconds": 14.888311041009729,
+  "exit_code": 0,
+  "helper_sha256": "a83ae41719b6f60ab482f374f66c9037eeefa8743117cfa4205f364f7e2c13ed"
+}

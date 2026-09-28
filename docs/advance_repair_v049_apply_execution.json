@@ -1,0 +1,52 @@
+{
+  "started_utc": "2026-09-09T00:00:32.469883+00:00",
+  "completed_utc": "2026-09-09T00:00:32.494933+00:00",
+  "elapsed_seconds": 0.025,
+  "command": [
+    "git",
+    "apply",
+    "/private/tmp/content_advance_repair_v049_stage/advance_repair_compatibility.patch"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究/agentlog_unified",
+  "patch_sha256": "1c5af5f9d7b3082f6436f45554cb016dce0ffd89ed487d4c2bdc0df1e6721ed5",
+  "patch_check_exit_code": 0,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "changed_files": [
+    "src/agentlog_unified/content_reconcile.py",
+    "src/agentlog_unified/content_repair.py",
+    "tests/test_advance_repair_integration.py",
+    "tests/test_content_reconcile.py"
+  ],
+  "only_four_authorized_files_changed": true,
+  "files": {
+    "src/agentlog_unified/content_reconcile.py": {
+      "before_sha256": "df9174371c1c03dd1b99cb5f4817847da2176fb89aac011e295370bdc466ffef",
+      "after_sha256": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+      "expected_staged_sha256": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+      "matches_staged": true
+    },
+    "src/agentlog_unified/content_repair.py": {
+      "before_sha256": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+      "after_sha256": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+      "expected_staged_sha256": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+      "matches_staged": true
+    },
+    "tests/test_advance_repair_integration.py": {
+      "before_sha256": null,
+      "after_sha256": "1bebb4a5f75b1302c7ba4188c59dd667c4b14c59c3492811a4237b5c3fe4f273",
+      "expected_staged_sha256": "1bebb4a5f75b1302c7ba4188c59dd667c4b14c59c3492811a4237b5c3fe4f273",
+      "matches_staged": true
+    },
+    "tests/test_content_reconcile.py": {
+      "before_sha256": "1e4ec823f588dba2501127fee673e6dc701d5c911800bd7bacb15c921d056eeb",
+      "after_sha256": "9656ee4203237f3ac658c6033a756e93cf367439a0e118e40a783e4bdab05095",
+      "expected_staged_sha256": "9656ee4203237f3ac658c6033a756e93cf367439a0e118e40a783e4bdab05095",
+      "matches_staged": true
+    }
+  },
+  "unrelated_python_files_unchanged": true,
+  "formal_full_tests_run_by_this_action": false,
+  "formal_dataset_scans_run_by_this_action": false
+}

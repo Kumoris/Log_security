@@ -1,0 +1,48 @@
+{
+  "formal_modules_unchanged": true,
+  "changed_formal_modules": [],
+  "files": {
+    "src/agentlog_unified/content_repair.py": {
+      "lines_before": 386,
+      "lines_after": 417
+    },
+    "src/agentlog_unified/content_reconcile.py": {
+      "lines_before": 464,
+      "lines_after": 473
+    },
+    "tests/test_content_reconcile.py": {
+      "lines_before": 254,
+      "lines_after": 250
+    },
+    "tests/test_advance_repair_integration.py": {
+      "lines_before": 0,
+      "lines_after": 175
+    }
+  },
+  "patch_sha256": "1c5af5f9d7b3082f6436f45554cb016dce0ffd89ed487d4c2bdc0df1e6721ed5",
+  "stage_source": {
+    "content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+    "content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d"
+  },
+  "real_source_values_or_databases_copied": false,
+  "patch_apply_check": {
+    "command": [
+      "git",
+      "apply",
+      "--check",
+      "/private/tmp/content_advance_repair_v049_stage/advance_repair_compatibility.patch"
+    ],
+    "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified",
+    "exit_code": 0,
+    "production_files_written": false
+  },
+  "independent_agent_review": {
+    "reviewer": "/root/go_log_detection",
+    "read_only": true,
+    "blocking_findings": 0,
+    "human_confirmation": false,
+    "source_or_data_modified": false,
+    "old_repair_fingerprint_incompatibility_explicit": true
+  },
+  "stage_frozen": true
+}

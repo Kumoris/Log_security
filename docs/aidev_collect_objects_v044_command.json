@@ -1,0 +1,18 @@
+{
+  "this_run_attempted": 106,
+  "this_run_repositories": 2,
+  "this_run_status_counts": {
+    "objects_ready_for_offline_mining": 106
+  },
+  "offline": false,
+  "latest_collection_status_counts": {
+    "objects_ready_for_offline_mining": 581
+  },
+  "total_recorded_attempts": 731,
+  "elapsed_seconds": 301.5039,
+  "classification_performed": false,
+  "full_history_collected": false,
+  "remaining_without_collection_attempt": 85729,
+  "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v4/collection",
+  "exit_code": 2
+}

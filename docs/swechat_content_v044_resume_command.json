@@ -1,0 +1,50 @@
+{
+  "status": "partial",
+  "all_selected_text_rows_visited": false,
+  "all_available_text_characters_scanned": false,
+  "dataset": "swe-chat",
+  "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+  "source_rows": 2732252,
+  "processed_rows": 23033,
+  "distinct_rows_decoded": 23033,
+  "character_count_semantics": "characters_scanned counts the prefix passed to rules; a match cap can stop rule evaluation, so truncated cells are not complete scans",
+  "cell_status_counts": {
+    "scanned_with_semantic_gaps": 42336,
+    "truncated": 422
+  },
+  "counts": {
+    "characters_scanned": 1938440300,
+    "characters_seen": 2539305674,
+    "empty_cells": 886,
+    "nonempty_cells": 261173,
+    "null_cells": 43218,
+    "rows_decoded": 23033,
+    "text_cells_visited": 305277,
+    "truncated_cells": 422
+  },
+  "candidate_occurrences": 1410564,
+  "excluded_occurrences": 14297,
+  "unknown_type_review_cells": 261173,
+  "unknown_type_review_export_records": 47434,
+  "observed_subtypes": 33,
+  "limitations": [
+    "Finite text rules cannot establish all semantic sensitive types.",
+    "Patterns identify unverified value shapes or named-value hints; no credential validity or disclosure is checked.",
+    "Non-text columns and text beyond recorded character/match limits remain coverage gaps.",
+    "Each nonempty text cell remains reviewable; consecutive no-match cells use exact source-row ranges to avoid duplicating millions of records.",
+    "PR/chat/patch occurrences are not application-log sinks or PyDriller history evidence.",
+    "Source rows and repeated text are retained as separate observations; counts are not people or unique secrets."
+  ],
+  "exit_code": 2,
+  "observation_scope": "dataset_text_cells",
+  "runtime_confirmed": false,
+  "human_review_status": "pending",
+  "new_type_status": "not_established",
+  "full_dataset_coverage_claim": false,
+  "application_log_evidence": false,
+  "elapsed_seconds": 361.351,
+  "stop_reason": "time_budget",
+  "resumed": true,
+  "network_accessed": false,
+  "target_code_executed": false
+}

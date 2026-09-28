@@ -1,0 +1,280 @@
+{
+  "recorded_utc": "2026-09-09T08:01:35.793647+00:00",
+  "observation_scope": "dataset_text_cells",
+  "unit": "candidate_occurrence_in_one_finite_rule_snapshot",
+  "category_summary_rows_added": false,
+  "candidate_delta": 2470,
+  "excluded_delta": 1,
+  "coverage": {
+    "v049": {
+      "candidate_occurrences": 1478855,
+      "excluded_occurrences": 11871
+    },
+    "v050": {
+      "candidate_occurrences": 1481325,
+      "excluded_occurrences": 11872
+    }
+  },
+  "outside_catalog_candidates": {
+    "v049": 3243,
+    "v050": 3243
+  },
+  "type_deltas": [
+    {
+      "category": "AUTH",
+      "subtype": "access_token",
+      "v049": 52614,
+      "v050": 52685,
+      "delta": 71
+    },
+    {
+      "category": "AUTH",
+      "subtype": "api_key",
+      "v049": 24775,
+      "v050": 24798,
+      "delta": 23
+    },
+    {
+      "category": "AUTH",
+      "subtype": "auth_cookie",
+      "v049": 7186,
+      "v050": 7199,
+      "delta": 13
+    },
+    {
+      "category": "AUTH",
+      "subtype": "authorization_header",
+      "v049": 9472,
+      "v050": 9474,
+      "delta": 2
+    },
+    {
+      "category": "AUTH",
+      "subtype": "credential_bundle",
+      "v049": 28734,
+      "v050": 28848,
+      "delta": 114
+    },
+    {
+      "category": "AUTH",
+      "subtype": "password",
+      "v049": 12027,
+      "v050": 12029,
+      "delta": 2
+    },
+    {
+      "category": "BIZ",
+      "subtype": "business_object",
+      "v049": 157702,
+      "v050": 158014,
+      "delta": 312
+    },
+    {
+      "category": "BIZ",
+      "subtype": "document_content",
+      "v049": 95499,
+      "v050": 95594,
+      "delta": 95
+    },
+    {
+      "category": "BIZ",
+      "subtype": "http_headers",
+      "v049": 41647,
+      "v050": 41937,
+      "delta": 290
+    },
+    {
+      "category": "BIZ",
+      "subtype": "message_content",
+      "v049": 1011,
+      "v050": 1019,
+      "delta": 8
+    },
+    {
+      "category": "BIZ",
+      "subtype": "request_body",
+      "v049": 67920,
+      "v050": 67956,
+      "delta": 36
+    },
+    {
+      "category": "BIZ",
+      "subtype": "response_body",
+      "v049": 76698,
+      "v050": 76739,
+      "delta": 41
+    },
+    {
+      "category": "CFG",
+      "subtype": "database_connection",
+      "v049": 5261,
+      "v050": 5263,
+      "delta": 2
+    },
+    {
+      "category": "CFG",
+      "subtype": "deployment_configuration",
+      "v049": 71090,
+      "v050": 71225,
+      "delta": 135
+    },
+    {
+      "category": "CFG",
+      "subtype": "filesystem_path",
+      "v049": 14613,
+      "v050": 14610,
+      "delta": -3
+    },
+    {
+      "category": "CFG",
+      "subtype": "internal_endpoint",
+      "v049": 161,
+      "v050": 212,
+      "delta": 51
+    },
+    {
+      "category": "DIAG",
+      "subtype": "exception_message",
+      "v049": 252361,
+      "v050": 253334,
+      "delta": 973
+    },
+    {
+      "category": "DIAG",
+      "subtype": "failure_response",
+      "v049": 734,
+      "v050": 733,
+      "delta": -1
+    },
+    {
+      "category": "DIAG",
+      "subtype": "stack_trace",
+      "v049": 6508,
+      "v050": 6532,
+      "delta": 24
+    },
+    {
+      "category": "PII",
+      "subtype": "age",
+      "v049": 51,
+      "v050": 53,
+      "delta": 2
+    },
+    {
+      "category": "PII",
+      "subtype": "birth_date",
+      "v049": 358,
+      "v050": 354,
+      "delta": -4
+    },
+    {
+      "category": "PII",
+      "subtype": "email",
+      "v049": 373897,
+      "v050": 373898,
+      "delta": 1
+    },
+    {
+      "category": "PII",
+      "subtype": "financial",
+      "v049": 1590,
+      "v050": 1592,
+      "delta": 2
+    },
+    {
+      "category": "PII",
+      "subtype": "government_identifier",
+      "v049": 609,
+      "v050": 611,
+      "delta": 2
+    },
+    {
+      "category": "PII",
+      "subtype": "person_name",
+      "v049": 17456,
+      "v050": 17461,
+      "delta": 5
+    },
+    {
+      "category": "PII",
+      "subtype": "phone",
+      "v049": 4017,
+      "v050": 4138,
+      "delta": 121
+    },
+    {
+      "category": "PII",
+      "subtype": "postal_address",
+      "v049": 22176,
+      "v050": 22250,
+      "delta": 74
+    },
+    {
+      "category": "PII",
+      "subtype": "precise_location",
+      "v049": 841,
+      "v050": 846,
+      "delta": 5
+    },
+    {
+      "category": "QID",
+      "subtype": "network_identifier",
+      "v049": 30190,
+      "v050": 30211,
+      "delta": 21
+    },
+    {
+      "category": "QID",
+      "subtype": "request_identifier",
+      "v049": 11283,
+      "v050": 11295,
+      "delta": 12
+    },
+    {
+      "category": "QID",
+      "subtype": "session_identifier",
+      "v049": 4900,
+      "v050": 4927,
+      "delta": 27
+    },
+    {
+      "category": "QID",
+      "subtype": "user_identifier",
+      "v049": 37258,
+      "v050": 37272,
+      "delta": 14
+    }
+  ],
+  "controlled_status_deltas": {
+    "named_value_candidate": {
+      "v049": 138730,
+      "v050": 139091,
+      "delta": 361
+    },
+    "literal_candidate": {
+      "v049": 387789,
+      "v050": 387789,
+      "delta": 0
+    },
+    "identifier_reference": {
+      "v049": 518645,
+      "v050": 519715,
+      "delta": 1070
+    },
+    "carrier_candidate": {
+      "v049": 430448,
+      "v050": 431487,
+      "delta": 1039
+    }
+  },
+  "subtype_delta_sum": 2470,
+  "source_files_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_type_summary.json": "4a3228698caacdb5eb31d912eb7732633ac58e4e39751c109cfcc03ec5a4d2e9",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_coverage.json": "b9543eede299d15603929a60b01754b8bb8dd5a438af1e313c6d09bedcad30ad",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/content_type_summary.json": "304bf30b77078dfcd9d3d85d401a4049252a41aedb85b1df6e7b52ad184891a8",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/content_coverage.json": "ab42933b4e82c283319a2e73dc8bee10d9f72c51dfdab0de3e47ca33f5e7f04c"
+  },
+  "source_values_or_value_hashes_read": false,
+  "actual_privacy_truth_gain_claim": false,
+  "evidence_boundary": "Changes in finite-classifier observations only; identifier references/carriers remain pending. No new true types, actual leaks, or additive cross-source totals asserted."
+}

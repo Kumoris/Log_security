@@ -1,0 +1,260 @@
+{
+  "pytest": {
+    "command": "agent_log_privacy/.venv/bin/python -m pytest agentlog_unified/tests -q",
+    "passed": 142,
+    "elapsed_seconds": 16.69,
+    "exit_code": 0
+  },
+  "runs": {
+    "synthetic-unified": {
+      "counts": {
+        "repositories": 1,
+        "prs": 1,
+        "commits": 5,
+        "file_changes": 5,
+        "provenance": 1,
+        "log_events": 6,
+        "log_entities": 12,
+        "dependency_edges": 22,
+        "pr_commit_links": 1,
+        "target_branch_integration_events": 2,
+        "human_controls": 0,
+        "failures": 0,
+        "coverage_gaps": 0,
+        "retrieval_audit": 1,
+        "log_changes": 2,
+        "followups": 3,
+        "candidates": 2,
+        "logs_with_followups": 1,
+        "logs_without_observed_followups": 1,
+        "privacy_review_candidates": 1,
+        "unknown_provenance": 0,
+        "exclusions": 1,
+        "blocked_by_data": 0,
+        "calibration_cases": 2,
+        "human_review_annotations": 0,
+        "human_review_history": 0,
+        "reverse_candidates": 0,
+        "match_overrides": 0,
+        "match_review_candidates": 2,
+        "screening_audit_sample": 3,
+        "possible_followups": 3,
+        "supported_followups": 0
+      },
+      "buckets": {
+        "NEEDS_CONTEXT": 1,
+        "OUT_OF_SCOPE_OR_FALSE_POSITIVE": 1
+      },
+      "cohorts": {
+        "calibration_only": 2
+      },
+      "authors": {
+        "agent": 2
+      },
+      "exit_code": 0,
+      "metrics": [
+        {
+          "repository_id": "f34a21753f7ddc5bed84811f",
+          "metrics": {
+            "pydriller_repository_traversals": 1,
+            "pydriller_commits": 5,
+            "pydriller_modified_files_calls": 5,
+            "pydriller_git_diff_calls": 0,
+            "pydriller_diff_parsed_calls": 5,
+            "pydriller_source_reads": 10,
+            "auxiliary_blob_reads": 2,
+            "merge_fallbacks": 0,
+            "files_extracted": 5,
+            "target_graph_commits": 6,
+            "reused_commits": 0,
+            "reused_files": 0,
+            "cache_rejected_commits": 0,
+            "requested_initial_commits": 1,
+            "resolved_initial_commits": 1,
+            "eligible_commits": 5,
+            "new_files_extracted": 5,
+            "total_file_records": 5,
+            "selected_commits_missing": 0
+          },
+          "history_scope": {
+            "policy": "target_topology_since_earliest_reachable_initial",
+            "omitted_pre_initial_commits": 1,
+            "scope_start_sha": "b8c3dc65fe3b8a08270865315f421bdb393fa562",
+            "frozen_tip": "b70658cfe92c17fb3ee71c34ddd07e1ad6a54e1b",
+            "target_graph_backend": "git.rev-list",
+            "author_filter": null
+          },
+          "selected_shas": [
+            "b8c3dc65fe3b8a08270865315f421bdb393fa562",
+            "609f4bf64afbc52d23fdb20b0c19d4956b20d4b6",
+            "2f2205bed9f90134818f84739adad612fa9cb4a9",
+            "aa493393f8a40ac0e052cf0f4d4c3493f1526cbe",
+            "b70658cfe92c17fb3ee71c34ddd07e1ad6a54e1b"
+          ]
+        }
+      ]
+    },
+    "real-unified": {
+      "counts": {
+        "repositories": 1,
+        "prs": 6,
+        "commits": 54,
+        "file_changes": 298,
+        "provenance": 8,
+        "log_events": 92,
+        "log_entities": 6551,
+        "dependency_edges": 20520,
+        "pr_commit_links": 31,
+        "target_branch_integration_events": 44,
+        "human_controls": 0,
+        "failures": 0,
+        "coverage_gaps": 97,
+        "retrieval_audit": 291,
+        "log_changes": 44,
+        "followups": 1,
+        "candidates": 44,
+        "logs_with_followups": 1,
+        "logs_without_observed_followups": 43,
+        "privacy_review_candidates": 11,
+        "unknown_provenance": 44,
+        "exclusions": 15,
+        "blocked_by_data": 0,
+        "calibration_cases": 44,
+        "human_review_annotations": 0,
+        "human_review_history": 0,
+        "reverse_candidates": 0,
+        "match_overrides": 0,
+        "match_review_candidates": 24,
+        "screening_audit_sample": 65,
+        "possible_followups": 1,
+        "supported_followups": 0
+      },
+      "buckets": {
+        "NEEDS_CONTEXT": 29,
+        "OUT_OF_SCOPE_OR_FALSE_POSITIVE": 15
+      },
+      "cohorts": {
+        "calibration_only": 44
+      },
+      "authors": {
+        "unknown": 44
+      },
+      "exit_code": 2,
+      "metrics": [
+        {
+          "repository_id": "0a40c6496d5945b05e761f09",
+          "metrics": {
+            "pydriller_repository_traversals": 1,
+            "pydriller_commits": 54,
+            "pydriller_modified_files_calls": 37,
+            "pydriller_git_diff_calls": 34,
+            "pydriller_diff_parsed_calls": 298,
+            "pydriller_source_reads": 520,
+            "auxiliary_blob_reads": 6,
+            "merge_fallbacks": 0,
+            "files_extracted": 298,
+            "target_graph_commits": 171,
+            "reused_commits": 0,
+            "reused_files": 0,
+            "cache_rejected_commits": 0,
+            "requested_initial_commits": 37,
+            "resolved_initial_commits": 37,
+            "eligible_commits": 54,
+            "new_files_extracted": 298,
+            "total_file_records": 298,
+            "selected_commits_missing": 0
+          },
+          "history_scope": {
+            "policy": "target_topology_since_earliest_reachable_initial",
+            "omitted_pre_initial_commits": 117,
+            "scope_start_sha": "a34640e0efc5019b6ba8b138f784110a8d1811e5",
+            "frozen_tip": "90fb80b640fe7b78ffd2626eb73d8dfdd7b8c377",
+            "target_graph_backend": "git.rev-list",
+            "author_filter": null
+          },
+          "selected_shas": [
+            "a34640e0efc5019b6ba8b138f784110a8d1811e5",
+            "3a2089ae2c10fc05646e5d582541f98ec7fae795",
+            "6e0a2ef5588cd17a60eb41f78e7237cc138aaf02",
+            "4cb4f283e50a411baab6241632ade4eabde83fb7",
+            "c47863cf70ad1054c554aa2bc4f8b17a765f0cb1",
+            "42fe504517d1659719138e0e2bd4c28c0372afad",
+            "489dd78185e834a4b1aa09c0239e7cd4f718ac35",
+            "cc518aa7a2180e6066bb4900e99c19137ddb13bf",
+            "77756cd902d74b94dcdfa78c80f6a61e2f27ab53",
+            "16047b23f11ddbd71eec96bdf6da36bc4083ecc8",
+            "f86d00bb2cfc7e0001264c7d29ca2c7f968dcbb5",
+            "b718bf1fec5bbc2319040857a5937e91a3403319",
+            "22bd1714fc628db2b0a369f65d138167bb59e0a9",
+            "c04d235e0dd68601b7db88dfbdcb484c92690b69",
+            "c57dcca5f35db1c81c6b45cfdf3c97231b797d24",
+            "247081a4d6cea0c42012cdefad162029397d49fe",
+            "0263765ff6932e622fe12f456032a67c35e49a79",
+            "793addceaa3771374ea9d2820695267536f08abe",
+            "0d1ef0c7508564778ce0c69724aa7d0dab4cc5b6",
+            "e8b9e9f8254f7ce55cd01b01528884b156e1e4bc",
+            "e8468ba7b425b7236e82b41f346a0f5c9c77740b",
+            "141c525091bcc5c74c735a808bc0f69ac04f25a8",
+            "9e098549da19f4892996191f11013fd37ebe3e06",
+            "575016616913bf9748cdefbed3b5e1f7e4e18144",
+            "35891d778e7b43709c1fd0890d1b6f158b1c6814",
+            "f2d43db7bad028bd14796aea49423e3f2b4e6fb9",
+            "9f87c862017377f41ea91f11c79ad3aaa4c481bb",
+            "a05d34706ef07b5bc1e3fa76e897497150ebc6c1",
+            "01dd13635ca3b79559169c50a412e46390c933b2",
+            "3a97e853ab158b9c8f02857bade8bf2fe5962037",
+            "f1c56e739ed2250f2d04b8b9136dad0214085498",
+            "35e6bb90423fae2d6108fc9d20e4bda51ae4c613",
+            "703ef91ef1f5affbabb56a52f5f9ed7649a5619d",
+            "b114e52c41895e0c0bdbe41a4dc775048f23460d",
+            "bd25fdd3ef080445cad9e10e485c2eb9cfda2192",
+            "0dca1add548de71f7f56d40a969ba91b9805c856",
+            "25b1167c04b1398d49e32078a18dc6580285f680",
+            "06631966987f1ab822b65ab80389b0aa01199dc1",
+            "28bf89e73bfe8e719f20b047adaeeb73e4e04bcb",
+            "0f65ceb02923d203d968418275e52a5b13304bae",
+            "997d27e20cb6aecb70999c0c00bdb874b81334c6",
+            "4c272a1e806951cc094235eacc589185962cfd23",
+            "a7848eeafa6f101b2b85c30a341e30403c4061e4",
+            "f0b658d2f52e3fd8928f60ad89dca0a445650bec",
+            "e0b38127d1e24a9c87806fade740f3ee96bb71c8",
+            "d73d69a162809e59bffa586375d7191184295050",
+            "09ffeab810f5f0fbbc34c0df098404a1f615a4e0",
+            "6f119162556352d82f19011e60d03438524db22a",
+            "d792430e82d2f188fbf0b75e350ab0db1d1f7027",
+            "a870d8362d4250bd24f1c131773391751befffa6",
+            "8534ecc5ecb12b809f39a5e2bc9cfe9b1a8285b2",
+            "b58d01def3b1605790dce78ffe7744b59b1500f6",
+            "4ba78d9fd9feae08cd342b59e8c9affa520bd444",
+            "90fb80b640fe7b78ffd2626eb73d8dfdd7b8c377"
+          ]
+        }
+      ]
+    }
+  },
+  "resume": {
+    "command": [
+      "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+      "run",
+      "--config",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/examples/real_expanded_config.yaml",
+      "--run-id",
+      "real-unified",
+      "--offline",
+      "--with-reverse",
+      "--resume"
+    ],
+    "exit_code": 2,
+    "export_hashes_unchanged": true,
+    "cutoff_unchanged": true
+  },
+  "dry_run": {
+    "exit_code": 0,
+    "no_files_created": true,
+    "no_target_access": true
+  },
+  "original_source_hashes_unchanged": true,
+  "external_paid_llm_calls": 0,
+  "live_network_collection_executed": false,
+  "target_application_code_executed": false
+}

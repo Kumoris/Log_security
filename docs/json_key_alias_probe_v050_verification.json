@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "successful_terminal_execution": true,
+    "selection_hash_and_records": true,
+    "selected_cells_exact": true,
+    "all_document_coverage_accounted": true,
+    "all_key_coverage_accounted": true,
+    "zero_gain_evidence_verified": true,
+    "all_fixed_alias_hits_zero": true,
+    "no_match_cap_gap": true
+  },
+  "all_passed": true,
+  "passed": 8,
+  "total": 8,
+  "additional_key_type_hints": 0,
+  "new_emitted_node_type_relations": 0,
+  "new_source_cell_type_relations": 0,
+  "fixed_alias_count": 98,
+  "probe_report_sha256": "3bd11774efa97ac040c6e7bb0d5000d10de8799b677149d53de1e229f44bea0a",
+  "source_values_read": false,
+  "dynamic_keys_or_values_exported": false,
+  "full_unknown_type_coverage_claim": false
+}

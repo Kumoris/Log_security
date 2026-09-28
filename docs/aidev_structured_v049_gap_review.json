@@ -1,0 +1,556 @@
+{
+  "started_utc": "2026-09-08T23:36:11.000794+00:00",
+  "completed_utc": "2026-09-08T23:36:11.029204+00:00",
+  "elapsed_seconds": 0.028241042004083283,
+  "observation_scope": "read_only_metadata_and_synthetic_mechanism_review",
+  "existing_evidence_sha256": {
+    "structured-runs/aidev-v048/structured_coverage.json": "26363ccbd2839f7c08ae77d706654e6ff1b03fc43be0d8147d83630280538a7f",
+    "structured-runs/aidev-v048/export_state.json": "1a2f74d033a803eb5c87d8a6b11ddd7045bd2022eaf73afbc3ea765234e3c518",
+    "schema-runs/aidev-v047/schema_coverage.json": "6997b011395a77e93a4cd0735cb8e3837ab38b1541bcb6b3a29de046c1a3107b",
+    "schema-runs/aidev-v047/schema_unresolved_fields.jsonl": "52d369a4809dddadfed102aa945509f9347df0079eba0be4ba472b650a2dee0a",
+    "src/agentlog_unified/structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+    "src/agentlog_unified/taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "src/agentlog_unified/content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "tests/test_structured_types.py": "c8bb0d7cda2ad4d1c9672923c9f3a49729a701600b5f2ccbcf5f8b0a9601f1f4",
+    "tests/test_schema_account_join.py": "58d519ce2ea7a8c7300c85adcbdd750574302a1426834c6283f73c3c4a1760fd"
+  },
+  "structured_metadata": {
+    "source_rows": 2456073,
+    "source_nonempty_cells": 17362345,
+    "nodes_visited": 24151,
+    "keyed_nodes": 16108,
+    "unmapped_keys": 14853,
+    "unknown_nodes": 22988,
+    "ignored_fences": 148599,
+    "gaps": {
+      "invalid_encoded_json": 42,
+      "invalid_json": 44166,
+      "unclosed_json_fence": 81
+    },
+    "gap_top_table_column": [
+      {
+        "table_path": "all_pull_request.parquet",
+        "column_name": "title",
+        "reason": "invalid_json",
+        "count": 16676
+      },
+      {
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "message",
+        "reason": "invalid_json",
+        "count": 5754
+      },
+      {
+        "table_path": "pr_timeline.parquet",
+        "column_name": "message",
+        "reason": "invalid_json",
+        "count": 5387
+      },
+      {
+        "table_path": "pr_comments.parquet",
+        "column_name": "body",
+        "reason": "invalid_json",
+        "count": 4070
+      },
+      {
+        "table_path": "pr_task_type.parquet",
+        "column_name": "title",
+        "reason": "invalid_json",
+        "count": 3464
+      },
+      {
+        "table_path": "pull_request.parquet",
+        "column_name": "title",
+        "reason": "invalid_json",
+        "count": 3464
+      },
+      {
+        "table_path": "pr_commits.parquet",
+        "column_name": "message",
+        "reason": "invalid_json",
+        "count": 1424
+      },
+      {
+        "table_path": "all_pull_request.parquet",
+        "column_name": "body",
+        "reason": "invalid_json",
+        "count": 939
+      },
+      {
+        "table_path": "issue.parquet",
+        "column_name": "title",
+        "reason": "invalid_json",
+        "count": 784
+      },
+      {
+        "table_path": "pr_review_comments_v2.parquet",
+        "column_name": "body",
+        "reason": "invalid_json",
+        "count": 707
+      },
+      {
+        "table_path": "pr_commit_details.parquet",
+        "column_name": "patch",
+        "reason": "invalid_json",
+        "count": 493
+      },
+      {
+        "table_path": "human_pr_task_type.parquet",
+        "column_name": "title",
+        "reason": "invalid_json",
+        "count": 362
+      }
+    ]
+  },
+  "schema_metadata": {
+    "all_fields": 160,
+    "selected_fields": 22,
+    "unmapped_fields": 138,
+    "unmapped_native_type_counts": {
+      "int64": 33,
+      "string": 89,
+      "double": 16
+    },
+    "unmapped_fields_by_table": {
+      "all_pull_request": [
+        "id",
+        "number",
+        "title",
+        "body",
+        "agent",
+        "state",
+        "created_at",
+        "closed_at",
+        "merged_at",
+        "repo_id",
+        "repo_url",
+        "html_url"
+      ],
+      "all_repository": [
+        "id",
+        "url",
+        "license",
+        "full_name",
+        "language",
+        "forks",
+        "stars"
+      ],
+      "all_user": [
+        "followers",
+        "following",
+        "created_at"
+      ],
+      "human_pr_task_type": [
+        "agent",
+        "id",
+        "title",
+        "reason",
+        "type",
+        "confidence"
+      ],
+      "human_pull_request": [
+        "id",
+        "number",
+        "title",
+        "state",
+        "created_at",
+        "closed_at",
+        "merged_at",
+        "repo_url",
+        "html_url",
+        "body",
+        "agent"
+      ],
+      "issue": [
+        "id",
+        "number",
+        "title",
+        "body",
+        "state",
+        "created_at",
+        "closed_at",
+        "html_url"
+      ],
+      "pr_comments": [
+        "id",
+        "pr_id",
+        "user_type",
+        "created_at",
+        "body"
+      ],
+      "pr_commit_details": [
+        "sha",
+        "pr_id",
+        "message",
+        "commit_stats_total",
+        "commit_stats_additions",
+        "commit_stats_deletions",
+        "filename",
+        "status",
+        "additions",
+        "deletions",
+        "changes",
+        "patch"
+      ],
+      "pr_commits": [
+        "sha",
+        "pr_id",
+        "message"
+      ],
+      "pr_review_comments": [
+        "id",
+        "pull_request_review_id",
+        "user_type",
+        "diff_hunk",
+        "path",
+        "position",
+        "original_position",
+        "commit_id",
+        "original_commit_id",
+        "body",
+        "pull_request_url",
+        "created_at",
+        "updated_at",
+        "in_reply_to_id"
+      ],
+      "pr_review_comments_v2": [
+        "id",
+        "pull_request_review_id",
+        "user_type",
+        "diff_hunk",
+        "path",
+        "position",
+        "original_position",
+        "commit_id",
+        "original_commit_id",
+        "body",
+        "pull_request_url",
+        "created_at",
+        "updated_at",
+        "in_reply_to_id"
+      ],
+      "pr_reviews": [
+        "id",
+        "pr_id",
+        "user_type",
+        "state",
+        "submitted_at",
+        "body"
+      ],
+      "pr_task_type": [
+        "agent",
+        "id",
+        "title",
+        "reason",
+        "type",
+        "confidence"
+      ],
+      "pr_timeline": [
+        "pr_id",
+        "event",
+        "commit_id",
+        "created_at",
+        "label",
+        "message"
+      ],
+      "pull_request": [
+        "id",
+        "number",
+        "title",
+        "body",
+        "agent",
+        "state",
+        "created_at",
+        "closed_at",
+        "merged_at",
+        "repo_id",
+        "repo_url",
+        "html_url"
+      ],
+      "related_issue": [
+        "pr_id",
+        "issue_id",
+        "source"
+      ],
+      "repository": [
+        "id",
+        "url",
+        "license",
+        "full_name",
+        "language",
+        "forks",
+        "stars"
+      ],
+      "user": [
+        "followers",
+        "following",
+        "created_at"
+      ]
+    },
+    "mapped_unresolved_cells": 485812,
+    "mapped_unresolved_by_field": [
+      {
+        "table": "pr_commit_details",
+        "column_name": "author",
+        "schema_role": "account_login_join",
+        "unresolved": 190477
+      },
+      {
+        "table": "pr_commit_details",
+        "column_name": "committer",
+        "schema_role": "account_login_join",
+        "unresolved": 257937
+      },
+      {
+        "table": "pr_commits",
+        "column_name": "author",
+        "schema_role": "account_login_join",
+        "unresolved": 13789
+      },
+      {
+        "table": "pr_commits",
+        "column_name": "committer",
+        "schema_role": "account_login_join",
+        "unresolved": 18506
+      },
+      {
+        "table": "pr_timeline",
+        "column_name": "assignee",
+        "schema_role": "account_login_join",
+        "unresolved": 5103
+      }
+    ],
+    "all_fields_are_negative": false
+  },
+  "synthetic_cases": [
+    {
+      "case": "english_password",
+      "labels": [
+        [
+          "AUTH",
+          "password"
+        ]
+      ],
+      "statuses": [
+        "named_value_candidate"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "chinese_password",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "chinese_government_identifier",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "chinese_user_identifier",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "http_authorization_acronym",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "xml_password_acronym",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "snake_http_authorization",
+      "labels": [
+        [
+          "AUTH",
+          "authorization_header"
+        ]
+      ],
+      "statuses": [
+        "named_value_candidate"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "direct_user_id",
+      "labels": [
+        [
+          "QID",
+          "user_identifier"
+        ]
+      ],
+      "statuses": [
+        "named_value_candidate"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "nested_user_id",
+      "labels": [
+        [
+          "BIZ",
+          "business_object"
+        ]
+      ],
+      "statuses": [
+        "carrier_candidate"
+      ],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "nested_repo_id",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 2,
+      "unknown_nodes": 3,
+      "passed": true
+    },
+    {
+      "case": "simple_dollar_reference",
+      "labels": [
+        [
+          "PII",
+          "email"
+        ]
+      ],
+      "statuses": [
+        "identifier_reference"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "braced_dotted_reference",
+      "labels": [
+        [
+          "PII",
+          "email"
+        ]
+      ],
+      "statuses": [
+        "identifier_reference"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "dotted_dollar_reference",
+      "labels": [
+        [
+          "PII",
+          "email"
+        ]
+      ],
+      "statuses": [
+        "named_value_candidate"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "untyped_reference_sink",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 1,
+      "unknown_nodes": 2,
+      "passed": true
+    },
+    {
+      "case": "cross_type_dotted_reference",
+      "labels": [
+        [
+          "AUTH",
+          "access_token"
+        ]
+      ],
+      "statuses": [
+        "named_value_candidate"
+      ],
+      "unmapped_keys": 0,
+      "unknown_nodes": 1,
+      "passed": true
+    },
+    {
+      "case": "one_hop_alias_reference",
+      "labels": [],
+      "statuses": [],
+      "unmapped_keys": 2,
+      "unknown_nodes": 3,
+      "passed": true
+    }
+  ],
+  "synthetic_case_count": 16,
+  "all_mechanisms_reproduced": true,
+  "prior_assertion_attempt": {
+    "exit_code": 1,
+    "reason": "Expected dotted dollar reference to have identifier_reference status; actual named_value_candidate exposed the third finding. Not a source-data failure."
+  },
+  "existing_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=agentlog_unified/src agent_log_privacy/.venv/bin/python -m pytest -q agentlog_unified/tests/test_structured_types.py -k \"all_nodes_visited or nested_containers or decode_layer_limit or ordinary_whole or json_fences\"",
+    "exit_code": 0,
+    "passed": 5,
+    "deselected": 28,
+    "reported_seconds": 0.02
+  },
+  "findings": [
+    {
+      "id": "finite_key_normalization",
+      "root_cause": "taxonomy._matches removes all non-ASCII letters and only splits lowercase-or-digit to uppercase. Explicit Chinese aliases and acronym-to-word transitions are absent.",
+      "bounded_fix": "Add versioned finite aliases for unambiguous sensitive keys and acronym-boundary normalization; retain unknown keys and aggregate guards. Do not export keys or treat aliases as confirmed values.",
+      "real_prevalence_established": false
+    },
+    {
+      "id": "direct_key_loses_parent_role",
+      "root_cause": "structured_types._children passes only current key; user/account plus child id has no recognized one-hop role while direct user_id works. Existing test intentionally fixes noninheritance.",
+      "bounded_fix": "Allow only precise parent-role plus direct scalar leaf pairs, such as user/account.id. Keep repo.id, arbitrary name/id, arrays and carrier descendants unresolved without explicit pair rules.",
+      "real_prevalence_established": false
+    },
+    {
+      "id": "reference_syntax_and_provenance",
+      "root_cause": "The dollar branch in content_types._REFERENCE accepts only a simple variable, so $user.email gets named_value_candidate instead of identifier_reference. Untyped leaf values and aliases are not inspected for one-hop finite source hints.",
+      "bounded_fix": "Recognize bounded dotted/bracket identifier reference syntax separately from literal values. Preserve source-role hints only for explicit references; optional one-hop same-document exact alias resolution must retain unresolved/external/cyclic references and never promote to literal or credential validity.",
+      "real_prevalence_established": false
+    }
+  ],
+  "limitations": [
+    "No actual source cells or dynamic keys were read: counts cannot attribute real unmapped keys to language, acronym, context or reference mechanisms.",
+    "Unknown nodes include containers and ordinary values; they are not sensitive examples or one-to-one unresolved field records.",
+    "All 138 unmapped scalar schema fields remain unknown; 485812 unresolved selected cells are exact-account-join misses, not a new type census.",
+    "Current gaps are format errors only. Invalid JSON includes JSON-like title prefixes; error totals do not prove documents contain sensitive values.",
+    "No old checkpoint or source code changed; future semantic fixes require their actual new classifier fingerprints."
+  ],
+  "real_source_values_read": false,
+  "dynamic_keys_or_values_exported": false,
+  "source_or_test_files_modified": false,
+  "network_accessed": false,
+  "new_true_type_claim": false
+}

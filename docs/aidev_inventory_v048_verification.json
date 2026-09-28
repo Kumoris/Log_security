@@ -1,0 +1,67 @@
+{
+  "started_utc": "2026-09-08T23:29:53.431873+00:00",
+  "completed_utc": "2026-09-08T23:29:53.445268+00:00",
+  "elapsed_seconds": 0.01317225000821054,
+  "checks": {
+    "csv_jsonl_record_counts": true,
+    "csv_jsonl_all_fields": true,
+    "csv_jsonl_outside_catalog_record_counts": true,
+    "csv_jsonl_outside_catalog_all_fields": true,
+    "four_output_hashes_match": true,
+    "all_input_hashes_match": true,
+    "old_v047_hashes_preserved": true,
+    "builder_and_reused_helper_hashes": true,
+    "first294_fields_preserved": true,
+    "first294_jsonl_bytes_preserved": true,
+    "old_outside_record_preserved": true,
+    "eight_sources_and_336_unique_rows": true,
+    "all42labels_per_source": true,
+    "only_aidev_rows_and_sources": true,
+    "inventory_row_counter_not_source_row_counter": true,
+    "structured_summary_snapshot_verified": true,
+    "new42counts_match_structured_summary": true,
+    "structured_unknown_zero_row_retained": true,
+    "structured_total_matches_coverage": true,
+    "structured_per_type_status_unavailable_not_invented": true,
+    "scope_units_distinct_and_not_added": true,
+    "union_recomputed_38": true,
+    "observed_flags_equal_nonzero_counts": true,
+    "pending_no_full_type_claim": true
+  },
+  "passed": 24,
+  "total": 24,
+  "all_checks_passed": true,
+  "grid_rows": 336,
+  "independent_sources": 8,
+  "historical_rows_preserved": 294,
+  "new_structured_rows": 42,
+  "structured_candidate_occurrences": 1140,
+  "structured_nonzero_labels": 32,
+  "all_aidev_observed_label_union": 38,
+  "zero_grid_rows": 231,
+  "outside_rows": 2,
+  "outside_source_counts": [
+    {
+      "scope": "dataset_text_reconciled",
+      "source_run": "aidev-v046",
+      "count": 3243,
+      "unit": "reconciled_candidate_identity_per_type"
+    },
+    {
+      "scope": "dataset_structured_text",
+      "source_run": "aidev-v048",
+      "count": 0,
+      "unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details"
+    }
+  ],
+  "provenance_sha256": "2ae4e3994cda1c18c0d3eafd9cf73e266d9922ee95a91ae0fcc0ff480434c1be",
+  "output_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v048.csv": "6af17e7bc4f75a00db5919dbdbc9bb65f44adc32a885382ebde13b420cac031e",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v048.jsonl": "24e12228aae321223951d46f26b9e0fb4413e5939c262a62d94788ecfd1307e5",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v048_outside_catalog.csv": "0899864864bd4902a969240377bf2a1836d3af7d3b0ec26ccd77e2bf39427e69",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v048_outside_catalog.jsonl": "65cfbf021202484ef4c82125f250b62a2084eb241ea16359a987488bf476f4b8"
+  },
+  "source_bodies_or_databases_read": false,
+  "cross_scope_candidate_totals_computed": false,
+  "new_true_sensitive_type_claim": false
+}

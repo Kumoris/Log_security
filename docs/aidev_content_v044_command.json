@@ -1,0 +1,49 @@
+{
+  "status": "partial",
+  "all_selected_text_rows_visited": false,
+  "all_available_text_characters_scanned": false,
+  "dataset": "aidev",
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "source_rows": 2456073,
+  "processed_rows": 1218611,
+  "distinct_rows_decoded": 1218611,
+  "character_count_semantics": "characters_scanned counts the prefix passed to rules; a match cap can stop rule evaluation, so truncated cells are not complete scans",
+  "cell_status_counts": {
+    "scanned_with_semantic_gaps": 67643,
+    "truncated": 1
+  },
+  "counts": {
+    "characters_scanned": 901484262,
+    "characters_seen": 901484262,
+    "nonempty_cells": 10180988,
+    "null_cells": 320718,
+    "rows_decoded": 1218611,
+    "text_cells_visited": 10501706,
+    "truncated_cells": 1
+  },
+  "candidate_occurrences": 162760,
+  "excluded_occurrences": 2323,
+  "unknown_type_review_cells": 10180988,
+  "unknown_type_review_export_records": 308597,
+  "observed_subtypes": 37,
+  "limitations": [
+    "Finite text rules cannot establish all semantic sensitive types.",
+    "Patterns identify unverified value shapes or named-value hints; no credential validity or disclosure is checked.",
+    "Non-text columns and text beyond recorded character/match limits remain coverage gaps.",
+    "Each nonempty text cell remains reviewable; consecutive no-match cells use exact source-row ranges to avoid duplicating millions of records.",
+    "PR/chat/patch occurrences are not application-log sinks or PyDriller history evidence.",
+    "Source rows and repeated text are retained as separate observations; counts are not people or unique secrets."
+  ],
+  "exit_code": 2,
+  "observation_scope": "dataset_text_cells",
+  "runtime_confirmed": false,
+  "human_review_status": "pending",
+  "new_type_status": "not_established",
+  "full_dataset_coverage_claim": false,
+  "application_log_evidence": false,
+  "elapsed_seconds": 311.523,
+  "stop_reason": "time_budget",
+  "resumed": false,
+  "network_accessed": false,
+  "target_code_executed": false
+}

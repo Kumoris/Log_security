@@ -1,0 +1,22 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "aidev-coverage",
+    "--aidev-import",
+    "agentlog_unified/inputs/aidev-full-v2",
+    "--analysis-run",
+    "agentlog_unified/batches/aidev-full-v5",
+    "--analysis-run",
+    "agentlog_unified/batches/aidev-anchors-v3",
+    "--analysis-run",
+    "agentlog_unified/batches/aidev-prior-cache-v042",
+    "--output",
+    "agentlog_unified/reports/aidev-corpus-v042-final",
+    "--offline"
+  ],
+  "started_at": "2026-09-08T20:18:26.189172+00:00",
+  "finished_at": "2026-09-08T20:18:39.610060+00:00",
+  "elapsed_seconds": 13.420876582997153,
+  "exit_code": 0,
+  "stderr_bytes": 0
+}

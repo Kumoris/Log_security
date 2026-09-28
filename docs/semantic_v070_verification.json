@@ -1,0 +1,226 @@
+{
+  "checks": [
+    "frozen_public_and_source_hashes",
+    "private_checkpoint_permissions",
+    "four_dimensions_not_collapsed",
+    "same_100_real_use_id_cohort",
+    "actual_PyDriller_full_history_counts",
+    "human_pending_without_fabricated_labels"
+  ],
+  "runs": {
+    "synthetic-v070-final": {
+      "funnel": {
+        "input_records": 1,
+        "ingest_gaps": 0,
+        "git_commits": 4,
+        "log_events": 32,
+        "field_use_frame": 40,
+        "selected_field_uses": 40,
+        "not_sampled": 0,
+        "independently_supported": 18,
+        "static_risk_candidates": 6,
+        "exclusion_records": 59,
+        "gap_records": 12,
+        "human_annotations": 0,
+        "model_executions": 0
+      },
+      "artifact_hashes_verified": 89,
+      "source_hashes_verified": 44,
+      "private_checkpoint_mode": "0600",
+      "generic_name_cases": {
+        "selected": 25,
+        "frame": 25,
+        "rule_supported": 15
+      },
+      "by_language": {
+        "go": 1,
+        "javascript": 2,
+        "python": 36,
+        "typescript": 1
+      },
+      "by_queue": {
+        "known_semantics_unmapped": 2,
+        "mapped_supported": 12,
+        "semantic_unknown": 22,
+        "supported_non_sensitive": 4
+      },
+      "by_interpretation_level": {
+        "contract_or_declared_evidence": 18
+      },
+      "type_context_cases": 6,
+      "ablation_rule_supported": {
+        "context_bounded_hops_reviewed": 18,
+        "local_only": 12,
+        "name_only": 0,
+        "one_hop": 12,
+        "truncated": 18,
+        "without_review": 0
+      },
+      "ablation_denominator": 40,
+      "accuracy": null,
+      "recall": null
+    },
+    "real-v070-final": {
+      "funnel": {
+        "input_records": 3,
+        "ingest_gaps": 0,
+        "git_commits": 50,
+        "log_events": 447,
+        "field_use_frame": 821,
+        "selected_field_uses": 100,
+        "not_sampled": 721,
+        "independently_supported": 2,
+        "static_risk_candidates": 0,
+        "exclusion_records": 1329,
+        "gap_records": 2882,
+        "human_annotations": 0,
+        "model_executions": 0
+      },
+      "artifact_hashes_verified": 149,
+      "source_hashes_verified": 44,
+      "private_checkpoint_mode": "0600",
+      "generic_name_cases": {
+        "selected": 7,
+        "frame": 7,
+        "rule_supported": 0
+      },
+      "by_language": {
+        "go": 28,
+        "python": 46,
+        "typescript": 26
+      },
+      "by_queue": {
+        "context_or_history_missing": 2,
+        "known_semantics_unmapped": 2,
+        "semantic_unknown": 96
+      },
+      "by_interpretation_level": {
+        "nominal_constructor_not_field_contents": 2
+      },
+      "type_context_cases": 13,
+      "ablation_rule_supported": {
+        "context_bounded_hops_reviewed": 2,
+        "local_only": 2,
+        "name_only": 0,
+        "one_hop": 2,
+        "truncated": 2,
+        "without_review": 0
+      },
+      "ablation_denominator": 100,
+      "accuracy": null,
+      "recall": null
+    }
+  },
+  "accuracy_estimated": false,
+  "fixed_cohort_comparison": {
+    "denominator": 100,
+    "baseline": "real-v070-third",
+    "final": "real-v070-final",
+    "new_rule_supported_ids": [
+      "4462c906513455302b743023",
+      "b1512a84c0ebb6388944ba7c"
+    ],
+    "claim": "New support is nominal constructor identity only, not business meaning or sensitivity."
+  },
+  "full_git_audit": {
+    "status": "complete_with_declared_gaps",
+    "exit_code": 0,
+    "pydriller_commits": 660,
+    "pydriller_diff_parsed_calls": 3063,
+    "pydriller_source_reads": 5116,
+    "all_requested_commits_extracted": true
+  },
+  "human_coding": {
+    "status": "complete",
+    "exit_code": 0,
+    "case_denominator": 100,
+    "new_records": 0,
+    "human_annotations": 0,
+    "cases_with_annotations": 0,
+    "category_decisions": 0,
+    "unresolved_disagreements": 0,
+    "taxonomy_applied_automatically": false,
+    "category_saturation_established": false,
+    "accuracy": null,
+    "recall": null,
+    "run_manifest_sha256": "214d083840fe198c27ebffabd7378467837a2def747b82ae677bb3ea0ced7e16",
+    "human_evaluation": "pending"
+  },
+  "real_model_execution": {
+    "status": "complete_with_declared_gaps",
+    "exit_code": 0,
+    "selected_cases": 2,
+    "model_attempts": 4,
+    "valid_responses": 4,
+    "independent_model_reviews": 2,
+    "model_supported": 2,
+    "human_confirmations": 0,
+    "rule_outputs_modified": false,
+    "accuracy": null,
+    "recall": null,
+    "model_not_human_validation": true,
+    "prompt_version": "semantic-model-evidence-2",
+    "sample_ids": [
+      "026ff034aac639ec6194f265",
+      "0a301bc91f005f1c3ebb9ecb"
+    ],
+    "ledger_sha256": "29c82057c402b5bb7c074b3c524519a9568fe9d5b5099c0e04f3e04a252ce995"
+  },
+  "model_dimension_gates": [
+    {
+      "case_id": "026ff034aac639ec6194f265",
+      "method": "rule_audit_of_model_suggestion_not_human_review",
+      "model_record_id": "ee6ff9a4100dad7e5cd75681",
+      "model_semantic_verdict": "supported",
+      "verified_program_use_role": "nested_expression_input",
+      "whole_input_value_logged_proven": false,
+      "log_association_requires_review": true,
+      "unmapped_model_labels": [
+        {
+          "category": "program_semantics",
+          "subtype": "async_call_result"
+        },
+        {
+          "category": "program_semantics",
+          "subtype": "collection_like_result"
+        }
+      ],
+      "sensitive_types_confirmed": [],
+      "human_status": "pending"
+    },
+    {
+      "case_id": "0a301bc91f005f1c3ebb9ecb",
+      "method": "rule_audit_of_model_suggestion_not_human_review",
+      "model_record_id": "a68ed813d20d9ce641a50875",
+      "model_semantic_verdict": "supported",
+      "verified_program_use_role": "nested_expression_input",
+      "whole_input_value_logged_proven": false,
+      "log_association_requires_review": true,
+      "unmapped_model_labels": [
+        {
+          "category": "program_semantics",
+          "subtype": "checkpoint_cache_value"
+        },
+        {
+          "category": "program_semantics",
+          "subtype": "control_flow_return_value"
+        },
+        {
+          "category": "type_contract",
+          "subtype": "partially_observed"
+        },
+        {
+          "category": "static_log_association",
+          "subtype": "logged_derived_count"
+        }
+      ],
+      "sensitive_types_confirmed": [],
+      "human_status": "pending"
+    }
+  ],
+  "real_model_usage": {
+    "input_tokens": 60375,
+    "cached_input_tokens": 6656,
+    "output_tokens": 2436
+  }
+}

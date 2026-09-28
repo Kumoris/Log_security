@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-08T20:15:03.137472+00:00",
+  "ps_exit_code": 0,
+  "matching_importers_or_old_pid": [],
+  "lsof_exit_code": 1,
+  "lsof_stdout": "",
+  "lsof_stderr": "",
+  "files_checked": [
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/aidev.sqlite",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/swechat.sqlite"
+  ],
+  "no_open_handles_observed": true
+}

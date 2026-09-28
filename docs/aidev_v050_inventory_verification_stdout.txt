@@ -1,0 +1,1 @@
+{"report": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/aidev_inventory_v050_verification.json", "passed": 29, "total": 29, "all_checks_passed": true, "failed": [], "rows": 588, "observed_labels": 45}

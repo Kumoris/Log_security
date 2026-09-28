@@ -1,0 +1,203 @@
+{
+  "started_utc": "2026-09-08T22:33:16.357730+00:00",
+  "completed_utc": "2026-09-08T22:34:52.362407+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "zero_snapshot_previously_verified": true,
+    "export_state_complete": true,
+    "before_cursors_equal_zero_snapshot": true,
+    "cursors_monotone": true,
+    "content_type_occurrences_csv_jsonl_projection_equal": true,
+    "content_type_occurrences_old_ids_and_all_fields_preserved": true,
+    "content_type_occurrences_ids_strictly_sorted_unique": true,
+    "content_type_occurrences_new_records_only_after_old_cursors": true,
+    "content_type_occurrences_old_plaintext_sha_matches_zero_snapshot": true,
+    "content_type_occurrences_records_match_coverage": true,
+    "content_excluded_csv_jsonl_projection_equal": true,
+    "content_excluded_old_ids_and_all_fields_preserved": true,
+    "content_excluded_ids_strictly_sorted_unique": true,
+    "content_excluded_new_records_only_after_old_cursors": true,
+    "content_excluded_old_plaintext_sha_matches_zero_snapshot": true,
+    "content_excluded_records_match_coverage": true,
+    "content_unknown_type_review_queue_csv_jsonl_projection_equal": true,
+    "review_old_records_preserved_with_legal_tail_extension": true,
+    "review_new_records_only_after_old_cursors": true,
+    "review_old_plaintext_sha_matches_zero_snapshot": true,
+    "review_counts_and_characters_match_coverage": true,
+    "legacy_manifest.json_stat_unchanged": true,
+    "legacy_manifest.json_sha_unchanged": true,
+    "legacy_content_coverage.json_stat_unchanged": true,
+    "legacy_content_coverage.json_sha_unchanged": true,
+    "legacy_content_type_occurrences.jsonl_stat_unchanged": true,
+    "legacy_content_type_occurrences.csv_stat_unchanged": true,
+    "legacy_content_type_occurrences.csv_sha_unchanged": true,
+    "legacy_content_excluded.jsonl_stat_unchanged": true,
+    "legacy_content_excluded.csv_stat_unchanged": true,
+    "legacy_content_excluded.csv_sha_unchanged": true,
+    "legacy_content_unknown_type_review_queue.jsonl_stat_unchanged": true,
+    "legacy_content_unknown_type_review_queue.csv_stat_unchanged": true,
+    "legacy_content_unknown_type_review_queue.csv_sha_unchanged": true,
+    "database_tables_match_current_coverage": true,
+    "database_counters_match_current_coverage": true,
+    "checkpoint_original_identity_preserved": true,
+    "parent_manifest_and_source_lineage_preserved": true,
+    "source_parquet_stats_unchanged": true,
+    "frozen_source_sha256_matches_current": true,
+    "implementation_sha256_matches_current": true,
+    "inventory_dependency_sha256_matches_current": true,
+    "output_artifacts_stable_while_hashed": true
+  },
+  "passed": 43,
+  "total": 43,
+  "zero_snapshot_report": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_advance_v046_snapshot_verification.json",
+  "zero_snapshot_report_sha256": "c0da4a2458f76fce9de6fc48d3aa3501cf2b7eccf1eb6875d9c76a45792159ef",
+  "before_cursors": {
+    "checkpoints.parquet": 13406,
+    "commits.parquet": 14459,
+    "conversations.parquet": 176192,
+    "repositories.parquet": 0,
+    "session_logs.parquet": 0,
+    "sessions.parquet": 0
+  },
+  "after_cursors": {
+    "checkpoints.parquet": 13406,
+    "commits.parquet": 14459,
+    "conversations.parquet": 732163,
+    "repositories.parquet": 0,
+    "session_logs.parquet": 0,
+    "sessions.parquet": 0
+  },
+  "previous_processed_rows": 204057,
+  "processed_rows": 760028,
+  "new_processed_rows": 555971,
+  "candidate_occurrences": 3610965,
+  "excluded_occurrences": 42941,
+  "matches": {
+    "content_type_occurrences": {
+      "matched_old_ids": 2352157,
+      "new_ids": 1258808,
+      "missing_old_ids": 0,
+      "changed_old_records": 0,
+      "old": {
+        "sha256": "4f0a8db1f62fdb42d92ffeb34ab33b9e0f54b7c2080b0eaff22301dd2a72aec9",
+        "records": 2352157
+      },
+      "new": {
+        "sha256": "232f41d82a2cf62142d3d21e9458eed29d9f7bc81fedcfa7954eaf105c7be10d",
+        "records": 3610965,
+        "csv_records": 3610965
+      }
+    },
+    "content_excluded": {
+      "matched_old_ids": 26018,
+      "new_ids": 16923,
+      "missing_old_ids": 0,
+      "changed_old_records": 0,
+      "old": {
+        "sha256": "a55d2862f70549895b6db7553881d4363b886e55e2dee9ef315e3199ff9ad95d",
+        "records": 26018
+      },
+      "new": {
+        "sha256": "e6cb51243923721e85683697e0e6489a7911f47881dbc6c24cb779feaff77630",
+        "records": 42941,
+        "csv_records": 42941
+      }
+    }
+  },
+  "review_preservation": {
+    "old_records": 355056,
+    "exact_preserved": 355044,
+    "legal_tail_extensions": 12,
+    "eligible_old_tails": 14,
+    "new_records": 858240,
+    "missing_old_ids": 0,
+    "changed_nonpermitted_records": 0,
+    "duplicate_old_ids_in_new": 0,
+    "expanded_cells": 8303039,
+    "old": {
+      "sha256": "401dcacb06f747734dad1014d4b2fa56c80adc00f8bc4654dedffa3e5fabaa3a",
+      "records": 355056
+    },
+    "new": {
+      "sha256": "4b7c54c9ca9bed5402c1d167e9ea2dcd7e9084abf2fea8933a3af32fb5a8d603",
+      "records": 1213296,
+      "csv_records": 1213296
+    }
+  },
+  "source_values_decoded": false,
+  "source_values_printed": false,
+  "target_code_executed": false,
+  "remote_accessed": false,
+  "limits": [
+    "Full Parquet bytes were not rehashed; source stats and frozen fingerprints were checked. Newly emitted sensitive-shape metadata remains unverified and pending. Continuous no-match review tails may grow while all fixed fields remain identical."
+  ],
+  "output_artifacts": {
+    "advance_state.json": {
+      "sha256": "92a0d41a41b1cdbf38cf1c52afe0b14799cd123c3527ef49c77b65b3a37d995e",
+      "bytes": 489,
+      "stat_stable": true
+    },
+    "content_coverage.json": {
+      "sha256": "d436329f4183318ec9ac708317e074c2c0610da1a3f1f2e9e2c47d52a9426beb",
+      "bytes": 21526,
+      "stat_stable": true
+    },
+    "content_excluded.csv.gz": {
+      "sha256": "244f28e9f74eeb90066d69aeb75a2591678e35bffc33963b07fd2e538f6fb2a6",
+      "bytes": 1809520,
+      "stat_stable": true
+    },
+    "content_excluded.jsonl.gz": {
+      "sha256": "c273ad9ae6de95b177fcde8c452e6a1fca4378fa46972a5a57207cb0a6657033",
+      "bytes": 2186014,
+      "stat_stable": true
+    },
+    "content_type_occurrences.csv.gz": {
+      "sha256": "0059514b1d0b15db188a37801d7a9a268527afbcbe27413147b6dee86a6f3a5b",
+      "bytes": 157894383,
+      "stat_stable": true
+    },
+    "content_type_occurrences.jsonl.gz": {
+      "sha256": "df89348042f0fb1d32eeed0501fefc201d75fde1c734a85a532423e81cdf985d",
+      "bytes": 190050174,
+      "stat_stable": true
+    },
+    "content_unknown_type_review_queue.csv.gz": {
+      "sha256": "38c4f56437e5c978a51a80badb871c70387b1a91bcf7729bc2fc84a0d371b051",
+      "bytes": 51449094,
+      "stat_stable": true
+    },
+    "content_unknown_type_review_queue.jsonl.gz": {
+      "sha256": "b44750556305fdbc48834d85cf9f4ac8095e102d5af7fffee9fe473408ae821b",
+      "bytes": 58039903,
+      "stat_stable": true
+    },
+    "manifest.json": {
+      "sha256": "c6ec32d6ce4769725aad81c594249ea8f882abaabf672200d032d3180ecb2274",
+      "bytes": 19689,
+      "stat_stable": true
+    }
+  },
+  "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+  "parent_manifest_sha256": "560d527284915c7e5645b9b16896ee11765445b7c950113b10ec6bda229130c3",
+  "verified_current_source_sha256": {
+    "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0"
+  },
+  "frozen_dataset_file_sha256_not_rehashed": {
+    "checkpoints.parquet": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+    "commits.parquet": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f",
+    "conversations.parquet": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+    "repositories.parquet": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+    "session_logs.parquet": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+    "sessions.parquet": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95"
+  },
+  "source_output_hashes_recorded_utc": "2026-09-08T22:35:21.914066+00:00",
+  "stream_verification_elapsed_seconds": 96.004677,
+  "total_verification_elapsed_seconds": 125.556336
+}

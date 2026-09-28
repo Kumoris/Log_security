@@ -1,0 +1,83 @@
+{
+  "status": "complete_with_schema_gaps",
+  "all_selected_fields_visited": true,
+  "all_dataset_values_classified": false,
+  "dataset": "aidev",
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "all_fields": 160,
+  "scalar_fields": 160,
+  "selected_fields": 22,
+  "counts": {
+    "cells_decoded": 4504029,
+    "schema_context_candidate": 3688655,
+    "placeholder_or_example": 12,
+    "null": 329537,
+    "unresolved": 485812,
+    "invalid": 13
+  },
+  "candidate_range_records": 40766,
+  "review_range_records": 87271,
+  "unresolved_field_records": 138,
+  "range_count_unit": "Consecutive source rows of one table/column/quality status; counts are source cells, not people.",
+  "limitations": [
+    "Only the 32 explicit field roles can produce schema hints; remaining fields are unresolved.",
+    "Hints describe field meaning, not real-person ownership, valid credentials, confirmed sensitivity or disclosure.",
+    "Null, empty, invalid and example-shaped metadata are retained with distinct statuses and exact source-row ranges.",
+    "Commit author/committer and timeline assignee candidates require exact frozen account-reference membership; nonmatches remain unresolved, not invalid or safe.",
+    "Unselected fields have footer null counts where available; empty/invalid counts remain unknown because values were not decoded.",
+    "No general identifier/name rule, structure parsing, Git history evidence or new taxonomy subtype is introduced."
+  ],
+  "exit_code": 2,
+  "observation_scope": "dataset_schema_context",
+  "evidence_basis": "schema_context",
+  "human_review_status": "pending",
+  "confidence": "low",
+  "runtime_confirmed": false,
+  "personal_ownership_confirmed": false,
+  "sensitivity_confirmed": false,
+  "application_log_evidence": false,
+  "new_type_status": "not_established",
+  "account_reference_coverage": {
+    "status": "complete",
+    "sources": [
+      {
+        "table": "user",
+        "column_name": "login",
+        "values_decoded": true,
+        "table_path": "user.parquet",
+        "source_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+        "source_rows": 1796,
+        "native_type": "string",
+        "status": "complete",
+        "counts": {
+          "reference_cells_decoded": 1796,
+          "nonempty_string": 1796
+        }
+      },
+      {
+        "table": "all_user",
+        "column_name": "login",
+        "values_decoded": true,
+        "table_path": "all_user.parquet",
+        "source_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+        "source_rows": 72189,
+        "native_type": "string",
+        "status": "complete",
+        "counts": {
+          "reference_cells_decoded": 72189,
+          "nonempty_string": 72189
+        }
+      }
+    ],
+    "reference_cells_decoded": 73985,
+    "distinct_nonempty_reference_strings": 72189,
+    "comparison": "exact_string_equality_no_trim_casefold_or_unicode_normalization",
+    "reference_values_or_value_hashes_exported": false,
+    "count_unit": "Reference table cells read for lookup setup; separate from classified source cells."
+  },
+  "stop_reason": null,
+  "resumed": true,
+  "elapsed_seconds": 2.8,
+  "network_accessed": false,
+  "target_code_executed": false
+}

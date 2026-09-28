@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/verify_aidev_delivery_v049.py",
+    "--self-test"
+  ],
+  "started_utc": "2026-09-09T00:06:49.572026+00:00",
+  "completed_utc": "2026-09-09T00:06:49.629515+00:00",
+  "elapsed_seconds": 0.057413916001678444,
+  "exit_code": 0,
+  "stdout": "{\"self_test\": \"passed\", \"checks\": 6, \"real_outputs_read\": false}\n",
+  "stderr": "",
+  "helper_sha256": "2e6ac1b19e05c2afad0f115d8540e3845cee04719b33e10ab188738b6f31c788",
+  "real_delivery_audit_run": false,
+  "active_outputs_read": false,
+  "src_or_tests_modified": false,
+  "previous_attempt": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_delivery_v049_self_test_attempt01.json",
+  "previous_failure": "Synthetic expected /tmp path omitted macOS canonical /private/tmp resolution; corrected test expectation."
+}

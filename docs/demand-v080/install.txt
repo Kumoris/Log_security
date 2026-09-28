@@ -1,0 +1,18 @@
+WARNING: The directory '/Users/lzh/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///Users/lzh/Downloads/Log%20%E7%A0%94%E7%A9%B6/agentlog_unified
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: agentlog-unified
+  Building editable for agentlog-unified (pyproject.toml): started
+  Building editable for agentlog-unified (pyproject.toml): finished with status 'done'
+  Created wheel for agentlog-unified: filename=agentlog_unified-0.8.0-0.editable-py3-none-any.whl size=2626 sha256=8155ecf238a09e68291d950d3ba704948257f8620bf1c842828ef9b6aa5c5a7a
+  Stored in directory: /private/var/folders/3h/x6l8x7b15s13m7gcvzsnf21w0000gn/T/pip-ephem-wheel-cache-8v_f9wnl/wheels/a4/8a/46/aa0bc693cb7249713145636f17ae569b51a3bba024562d2b7f
+Successfully built agentlog-unified
+Installing collected packages: agentlog-unified
+  Attempting uninstall: agentlog-unified
+    Found existing installation: agentlog-unified 0.7.0
+    Uninstalling agentlog-unified-0.7.0:
+      Successfully uninstalled agentlog-unified-0.7.0
+Successfully installed agentlog-unified-0.8.0

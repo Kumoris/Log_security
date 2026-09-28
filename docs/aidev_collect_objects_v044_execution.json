@@ -1,0 +1,525 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "collect-objects",
+    "--output",
+    "agentlog_unified/batches/aidev-full-v4",
+    "--cache-dir",
+    "agentlog_unified/cache/object-repos",
+    "--online",
+    "--max-commits",
+    "500",
+    "--max-seconds",
+    "300",
+    "--resume"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76",
+  "preflight_path": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/aidev_collect_objects_v044_preflight.json",
+  "started_at": "2026-09-08T20:46:35.417752+00:00",
+  "source_sha256_before": {
+    "agentlog_unified/src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "agentlog_unified/src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "agentlog_unified/src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c"
+  },
+  "before": {
+    "job_statuses": {
+      "complete": 28,
+      "partial": 127,
+      "pending": 86160
+    },
+    "object_acquisition_attempts": 625,
+    "max_acquisition_rowid": 625,
+    "free_disk_bytes": 12721721344
+  },
+  "exit_code": 2,
+  "finished_at": "2026-09-08T20:51:38.181530+00:00",
+  "elapsed_seconds": 302.3809,
+  "source_sha256_after": {
+    "agentlog_unified/src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "agentlog_unified/src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "agentlog_unified/src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c"
+  },
+  "after": {
+    "job_statuses": {
+      "complete": 28,
+      "partial": 127,
+      "pending": 86160
+    },
+    "object_acquisition_attempts": 731,
+    "max_acquisition_rowid": 731,
+    "free_disk_bytes": 12706545664
+  },
+  "source_unchanged": true,
+  "verification": {
+    "summary": {
+      "this_run_attempted": 106,
+      "this_run_repositories": 2,
+      "this_run_status_counts": {
+        "objects_ready_for_offline_mining": 106
+      },
+      "offline": false,
+      "latest_collection_status_counts": {
+        "objects_ready_for_offline_mining": 581
+      },
+      "total_recorded_attempts": 731,
+      "elapsed_seconds": 301.5039,
+      "classification_performed": false,
+      "full_history_collected": false,
+      "remaining_without_collection_attempt": 85729,
+      "output": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/aidev-full-v4/collection",
+      "exit_code": 2
+    },
+    "new_status_counts": {
+      "objects_ready_for_offline_mining": 106
+    },
+    "new_gap_reasons": {},
+    "new_per_repository": {
+      "567-labs/instructor": 70,
+      "567-labs/kura": 36
+    },
+    "new_metrics": {
+      "auxiliary_dependency_validation_reads": 882,
+      "auxiliary_source_reads_for_import_planning": 730,
+      "direct_import_candidate_attempts": 5351,
+      "raw_changed_entries": 903,
+      "direct_import_candidate_budget_truncations": 90,
+      "changed_blobs_objects_missing_before": 607,
+      "changed_blobs_requested_objects": 607,
+      "commit_graph_requested_objects": 70,
+      "explicit_fetch_attempts": 230,
+      "explicit_fetch_calls": 230,
+      "direct_import_blobs_objects_missing_before": 62,
+      "direct_import_blobs_requested_objects": 62,
+      "parent_graph_requested_objects": 15
+    },
+    "new_ready_commits": [
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0720ed746e120c33b946ab28c32c8ec52575e5af"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0e5e9da476f9dac42341238be15461aadac1d460"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0e73cf7e2ff68a1dc275cce7be4fbc0effbce68f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0fd80e205abdc0ad46d69c034e759d00786f04b1"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "130c31a796e20a9e0b09f9097de3346dfbf4fb5a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "15cf33dd5964c2ae62c99d6dd8f56b9296a91f02"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "1808021daaa84fcc66020f250e648bbddc67f2a7"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "1a3d5f62059d30d08e9ddbdf6b8f70ab01ebd02f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "1caae457d62bad32d70bfcb411678f26fcf91b54"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "25ca8154f72d236f64065ab9d1a10e9852fa1839"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "26f77f8fdbb1e31f4241548e0a8b229e125a84c6"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "27b55a8cac3c99d54a4753a71df4a99b308f959b"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "27e904ad5b0b15c645a5375a67fa929423fa4e83"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "2cd66dea8fed32a1c04961345887fe45dd38665e"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "2e20b612df42a7df02b261c4797319ef64775ce2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "3257510f1c51384b606835851388132057ec4aa3"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "45521763dbcb704b81e0ea75d6ff5db08d9e64d9"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "4561d0c43280cb44b672d5e08b65d25758d98516"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "4a4224720a3609a4d8fd51cf3e618b9c0073fc23"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "4bcf0a777046062ced97aa654a5cafa25f8d7c02"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5507a422781b2095def3d5853ad8752e59ccb846"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5f0ee6389c9c745bc3a00d3f6c539793d1e5baff"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5fc9191a2735bae7d3cde57bf2f1439708d28ee9"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "60a6324b26df16777888b76cbcc4421425b8a15e"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "61e763fb625f25a4a1671ed2bf5c7c52c5e8f847"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "636c3b0d6dfb55a1bcdb6f0ea82e422258c4e206"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "64b26da4ae1acd6be60c8957d7d18262eed2534d"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "6703bd66bc69b81e81668e6171b2790d157afb6e"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "67175a30339bd0373cd40df54d87b7086329422a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "68daaade9dcdc5d4282158456905c95bc474e064"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "6c6bcfd3fc29b374ca2cf14985fcbafb270e65e6"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "6e38b7c5e6c958c427d3c1617d98cfce52d3d48a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "6fe6a832bcd5edfb364b25e8777177cc2ddae2d5"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "75ebf1d729ae370955a95622ba5fcd0f00d79a50"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7b5b5cc8c953c50f0116c681c4c1b26d558bb6e2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7bcd05a64f06df3ae797757d09800b271ba48ae3"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7dd7e55570be2c521cc639a7c3a7fbe47349d1da"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7dd7ef2449a0c2756c7b6bc2c5886d45ae35e81f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7e2a9b1fe9e8b49352eb51ec6433bb3ae57e6e26"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "84c245c4ee481b26aa0871f3ddc9c4d9718be353"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8601ca260ee3aac2d78acc7b048aef3dbaf256af"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8c05fb6bad3eb1d0b10ef063cf86cd5dc09c7e5f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8c766e63f36368318d36e5e8f22e9ef89e1e7cb7"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8cd7c417d643f5f63199587d7480fce04fda19fc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8d7db07b4eb508982b2a10e2c4154ecd9cfc1410"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8eda18bef4f013dc27d4d6e35e4ca05fa5c17520"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "984c5a29471eafab142dd1cb7258e00e68510b31"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "996c0dcb2526029961e48d6b42b7aaa4b9268abc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "9c4e69530cd1debf07d83e3ea4de2e17274ac444"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "9dc4fe076517f31ac4f83bd94609df93a0ccda7a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a3f9e6e86901a643e4207caab6244d263df2acfb"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a89d0691da4562bb4f2c4637f5ee80a6876634c8"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "adb9a792944a52c61c07c288986f00d5b7d2249a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "add85470bb3b99a82aa70ddf4ffcb23846d302ea"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "aeb4a22f2c7089b221450ce41708c5d843260d1f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "b705c700b0dd98ffc033111f3e36b499720a7aa5"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "ba232fecf9607035aa67261b34beb1488493081f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "bc717fb25909eb2a0f4bab06808659da63fa284d"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c78bad9f4a389d84fdd9b612dbd3f73dc2f38645"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d3e354263986566400ef9541bb720b90db7f8cdf"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d73745baab43f23a265c741853a931284fb13241"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d8e0586fb08cd0480aec5eca6ad3b951cd59591a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "ddc465acd1188c62140aeffb0bab49d15c0e5009"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "de79b5eb13fb47f265d4e0ac88660623d7b9e1f8"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "e4037187755363f1e1ee81dc7904c6405025a599"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "eb4a4d192a98ba847576415d5f9878df31b6db28"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f49db8689b9d757d01e167c759f92f1ea17812f1"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f5dd5e737963ec0f6df35ae8d2fc337aeb0b99fa"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f668cd3a97a3abf8ec6082280cc5cabfc1ba8fb0"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "fe48241b88a7ea616d5f793509cadb0f5f666826"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "05d0d1bb3710fd5a0ade4fe2d051fb8e0871b173"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "0ad528f249efe459f2e72cd570e1320d55eec14e"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "12b10e370f82de8249c7d1f9864f96103faaf111"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "150b6db14f657ad75ff7c96131c9b07c9c537f06"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "18f926fc310053a38e1e89989df3f9794b7cf915"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "1b41a83c9c7c83fb08408d49d5884d81d52ae867"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "1d05f0166366d837464978f033706ed1a7a93e30"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "20b963fc53c55f21550a211e240068b0329ecca8"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "2f6c08177a8ad7b2564fa9253ecd2aa4739b88c7"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "2f9019ac846e8a5ffb4209b626c9709faa8aaf99"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "32286387334e112ce5edeee808de752b8e6cf36a"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "3929d8728731d5821b0de51e82126f3db5a5142a"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "39991bea842a7dd868d66abddf1d7197e9376a89"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "44c5ddb1f7817715493f8c79c77788976ebbb829"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "4609f0d04a511f69919e822c3a0b65e719bb8e75"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "46fc29a608afa3a421fc2ddcd676595b18166f48"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "4a4e6d4b73d39211d09140e6e12ca3352d3a2347"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "4ed018b643ce91e1e4c2e6633a8a3b174af10d40"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "5cb9fcafc5f91f248fabe7d8276778b88a4d9f70"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "63ba809af629a8df4f0450255adf6d3957b12941"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "647915f583ec3d947c962edc7b4e587a692a2e0a"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "6a9b9c3e2a8a14e781655ed9bfb08702c79377b1"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "6ceed894d8bc13b8e66eefb59240413649c9ba39"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "7fa3daaf5f9383b739d217aaaaa87bd5797a021c"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "87b3ef734f2bd3af24b0140aea062e05490723b0"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "87d6f93271ef7195f0a7598828abcdae8781bb58"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "a9d5855f013df36693a86fd372ac5e3cf0f80a4f"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "b01a36f2e56e7873e920b101de32e3d630bc4239"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "b43ff5f766c39a5cc4dd69e17defd945819a80db"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "c126b59e4bb4d0609585092779eec473cd032b00"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "cd96e9a579bc6f1d10d283343e2fcd83063ffb44"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "dfa54dca830357011e6695b6af95ea23426753a0"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "e2c6300e228d6ff01c01b1abc95a92d9f380f295"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "e8cbfd926d0f9e599f42c8c61a52270aa72b6ade"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "ef1c2486bffc7d7b7c94cea30c45e4c3e48ffff4"
+      },
+      {
+        "repository": "567-labs/kura",
+        "sha": "fd2b709cba7a22e5490b4f1d75323cb4d3c8f03a"
+      }
+    ],
+    "classification_performed": false,
+    "output_sha256": "06bb6e45907d680ce322592248336bfe51bf4bb7bceeb0ad109cb6aa15cc39fa",
+    "stderr_bytes": 0
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "generated_at": "2026-09-08T20:16:14.022286+00:00",
+  "mode": "review_only",
+  "status": "awaiting_explicit_user_confirmation",
+  "deletion_performed": false,
+  "move_performed": false,
+  "candidate_directories": [
+    {
+      "candidate_directory": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full",
+      "authoritative_directory_preserved": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+      "candidate_manifest_status": "running",
+      "authoritative_manifest_status": "complete",
+      "source_inputs_signature_equal": true,
+      "source_directory_equal": true,
+      "implementation_hash_equal": false,
+      "column_mapping_equal": true,
+      "files": [
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/aidev.sqlite",
+          "relative_path": "agentlog_unified/inputs/aidev-full/aidev.sqlite",
+          "size_bytes": 2122035200,
+          "allocated_bytes": 2122358784,
+          "mtime_ns": 1788885138121302501,
+          "device": 16777231,
+          "inode": 105991329,
+          "hardlink_count": 1,
+          "is_symlink": false,
+          "sha256": "e17fea9713b39081cbc6c679df9b1f9a3bd5644f92a850b5ea98bd38f80765f1",
+          "unchanged_during_hash": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/interruption.json",
+          "relative_path": "agentlog_unified/inputs/aidev-full/interruption.json",
+          "size_bytes": 269,
+          "allocated_bytes": 4096,
+          "mtime_ns": 1788885378680234242,
+          "device": 16777231,
+          "inode": 106003940,
+          "hardlink_count": 1,
+          "is_symlink": false,
+          "sha256": "81885d8bcf52063916945536d66f3e56a0b5c393ffcec10d4088f39a68d7cf88",
+          "unchanged_during_hash": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/manifest.json",
+          "relative_path": "agentlog_unified/inputs/aidev-full/manifest.json",
+          "size_bytes": 2661,
+          "allocated_bytes": 4096,
+          "mtime_ns": 1788885087486139722,
+          "device": 16777231,
+          "inode": 105991328,
+          "hardlink_count": 1,
+          "is_symlink": false,
+          "sha256": "0665739cf17832e4db044be1acf1fa9e889f1b9d23ce6f4f77a127edbd1d0628",
+          "unchanged_during_hash": true
+        }
+      ],
+      "total_logical_bytes": 2122038130,
+      "total_allocated_bytes": 2122366976,
+      "small_evidence_copies": [
+        {
+          "original": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/manifest.json",
+          "copy": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/aidev-full.manifest.json",
+          "sha256": "0665739cf17832e4db044be1acf1fa9e889f1b9d23ce6f4f77a127edbd1d0628",
+          "bytes": 2661,
+          "role": "candidate"
+        },
+        {
+          "original": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/interruption.json",
+          "copy": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/aidev-full.interruption.json",
+          "sha256": "81885d8bcf52063916945536d66f3e56a0b5c393ffcec10d4088f39a68d7cf88",
+          "bytes": 269,
+          "role": "candidate"
+        },
+        {
+          "original": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json",
+          "copy": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/aidev-full-v2.manifest.json",
+          "sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+          "bytes": 3024,
+          "role": "authoritative"
+        }
+      ],
+      "authoritative_outputs_verification": [
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/aidev.sqlite",
+          "expected_sha256": "7413dbe51fcb9fe4daf5f18d5d902d81f01b1a912d953d838ea1570bb78eb6ff",
+          "observed_sha256": "7413dbe51fcb9fe4daf5f18d5d902d81f01b1a912d953d838ea1570bb78eb6ff",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 2231922688
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/coverage.json",
+          "expected_sha256": "79c27bb07ddf514009c9567453ad4a3d6803ca02e47bcbe2ed21b624263b8c1f",
+          "observed_sha256": "79c27bb07ddf514009c9567453ad4a3d6803ca02e47bcbe2ed21b624263b8c1f",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 28805
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/mining_prs.jsonl",
+          "expected_sha256": "63003c7a73a58ee645f14fc8d468b1996309193aa0e2af68af4c8fc25e144548",
+          "observed_sha256": "63003c7a73a58ee645f14fc8d468b1996309193aa0e2af68af4c8fc25e144548",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 53469964
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/normalized_prs.jsonl",
+          "expected_sha256": "7efc19c9d69a1cae84eb7d27005bc0f2c3d48fcc41461cdab454b515a4c7fe29",
+          "observed_sha256": "7efc19c9d69a1cae84eb7d27005bc0f2c3d48fcc41461cdab454b515a4c7fe29",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 1159659193
+        }
+      ],
+      "raw_inputs_verification": [
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet",
+          "bytes": 330776130,
+          "expected_bytes": 330776130,
+          "expected_sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+          "observed_sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_repository.parquet",
+          "bytes": 6136253,
+          "expected_bytes": 6136253,
+          "expected_sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+          "observed_sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_user.parquet",
+          "bytes": 2511706,
+          "expected_bytes": 2511706,
+          "expected_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+          "observed_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pr_task_type.parquet",
+          "bytes": 715969,
+          "expected_bytes": 715969,
+          "expected_sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+          "observed_sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pull_request.parquet",
+          "bytes": 4387171,
+          "expected_bytes": 4387171,
+          "expected_sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+          "observed_sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/issue.parquet",
+          "bytes": 3222463,
+          "expected_bytes": 3222463,
+          "expected_sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+          "observed_sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_comments.parquet",
+          "bytes": 25857243,
+          "expected_bytes": 25857243,
+          "expected_sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+          "observed_sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commit_details.parquet",
+          "bytes": 485214032,
+          "expected_bytes": 485214032,
+          "expected_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+          "observed_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commits.parquet",
+          "bytes": 8314097,
+          "expected_bytes": 8314097,
+          "expected_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+          "observed_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments.parquet",
+          "bytes": 14728130,
+          "expected_bytes": 14728130,
+          "expected_sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+          "observed_sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments_v2.parquet",
+          "bytes": 21125785,
+          "expected_bytes": 21125785,
+          "expected_sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+          "observed_sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_reviews.parquet",
+          "bytes": 7517041,
+          "expected_bytes": 7517041,
+          "expected_sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+          "observed_sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_task_type.parquet",
+          "bytes": 2993264,
+          "expected_bytes": 2993264,
+          "expected_sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+          "observed_sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_timeline.parquet",
+          "bytes": 34108415,
+          "expected_bytes": 34108415,
+          "expected_sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+          "observed_sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pull_request.parquet",
+          "bytes": 16855612,
+          "expected_bytes": 16855612,
+          "expected_sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+          "observed_sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/related_issue.parquet",
+          "bytes": 75579,
+          "expected_bytes": 75579,
+          "expected_sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+          "observed_sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/repository.parquet",
+          "bytes": 167251,
+          "expected_bytes": 167251,
+          "expected_sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+          "observed_sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/user.parquet",
+          "bytes": 68935,
+          "expected_bytes": 68935,
+          "expected_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+          "observed_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+          "matches_manifest": true
+        }
+      ],
+      "candidate_sqlite_tables": [
+        {
+          "name": "pr_aliases",
+          "type": "table",
+          "sql": "CREATE TABLE pr_aliases(alias TEXT, pr_key TEXT, PRIMARY KEY(alias,pr_key))"
+        },
+        {
+          "name": "prs",
+          "type": "table",
+          "sql": "CREATE TABLE prs(pr_key TEXT PRIMARY KEY, metadata TEXT)"
+        },
+        {
+          "name": "relationship_audit",
+          "type": "table",
+          "sql": "CREATE TABLE relationship_audit(table_name TEXT,relation TEXT,status TEXT,rows INTEGER)"
+        },
+        {
+          "name": "repository_aliases",
+          "type": "table",
+          "sql": "CREATE TABLE repository_aliases(alias TEXT, repository TEXT, PRIMARY KEY(alias,repository))"
+        },
+        {
+          "name": "row_pr_links",
+          "type": "table",
+          "sql": "CREATE TABLE row_pr_links(table_name TEXT,row_number INTEGER,pr_key TEXT,method TEXT,PRIMARY KEY(table_name,row_number))"
+        },
+        {
+          "name": "source_rows",
+          "type": "table",
+          "sql": "CREATE TABLE source_rows(table_name TEXT, row_number INTEGER, role TEXT, entity_id TEXT, pr_id TEXT, repo_id TEXT, repo_url TEXT, user_id TEXT, user_login TEXT, review_id TEXT, issue_id TEXT, sha TEXT, pr_key TEXT, patch_status TEXT, metadata TEXT, PRIMARY KEY(table_name,row_number))"
+        }
+      ],
+      "derived_redundancy_assessment": "superseded_incomplete_import_from_same_verified_raw_inputs; not_a_byte_identical_backup; interrupted_database_internal_state_would_be_lost"
+    },
+    {
+      "candidate_directory": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full",
+      "authoritative_directory_preserved": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v3",
+      "candidate_manifest_status": "failed",
+      "authoritative_manifest_status": "complete",
+      "source_inputs_signature_equal": true,
+      "source_directory_equal": true,
+      "implementation_hash_equal": false,
+      "column_mapping_equal": true,
+      "files": [
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/interruption.json",
+          "relative_path": "agentlog_unified/inputs/swechat-full/interruption.json",
+          "size_bytes": 614,
+          "allocated_bytes": 4096,
+          "mtime_ns": 1788893423966969892,
+          "device": 16777231,
+          "inode": 106029883,
+          "hardlink_count": 1,
+          "is_symlink": false,
+          "sha256": "4d7d1f644a69a838825f2a281011d7e8479ed6a5434d594df476bb9e652ad40c",
+          "unchanged_during_hash": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/manifest.json",
+          "relative_path": "agentlog_unified/inputs/swechat-full/manifest.json",
+          "size_bytes": 1256,
+          "allocated_bytes": 4096,
+          "mtime_ns": 1788893383526143594,
+          "device": 16777231,
+          "inode": 106028359,
+          "hardlink_count": 1,
+          "is_symlink": false,
+          "sha256": "2c67fd258be94df6042304abc5ec3416d7571e7b4420f9323ed146d0dd52babf",
+          "unchanged_during_hash": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/swechat.sqlite",
+          "relative_path": "agentlog_unified/inputs/swechat-full/swechat.sqlite",
+          "size_bytes": 1069273088,
+          "allocated_bytes": 1069273088,
+          "mtime_ns": 1788893383512238539,
+          "device": 16777231,
+          "inode": 106028360,
+          "hardlink_count": 1,
+          "is_symlink": false,
+          "sha256": "0caf153d2b2784d6208fc6dc61f9dfc6b47271ce6c64865faabe4d87f746cb60",
+          "unchanged_during_hash": true
+        }
+      ],
+      "total_logical_bytes": 1069274958,
+      "total_allocated_bytes": 1069281280,
+      "small_evidence_copies": [
+        {
+          "original": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/manifest.json",
+          "copy": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/swechat-full.manifest.json",
+          "sha256": "2c67fd258be94df6042304abc5ec3416d7571e7b4420f9323ed146d0dd52babf",
+          "bytes": 1256,
+          "role": "candidate"
+        },
+        {
+          "original": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/interruption.json",
+          "copy": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/swechat-full.interruption.json",
+          "sha256": "4d7d1f644a69a838825f2a281011d7e8479ed6a5434d594df476bb9e652ad40c",
+          "bytes": 614,
+          "role": "candidate"
+        },
+        {
+          "original": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v3/manifest.json",
+          "copy": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/cleanup_review_v042/swechat-full-v3.manifest.json",
+          "sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+          "bytes": 1433,
+          "role": "authoritative"
+        }
+      ],
+      "authoritative_outputs_verification": [
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v3/commit_contexts.jsonl",
+          "expected_sha256": "12001bfd652404edb5c432c17a569e1c0d091f15aed1471588360a53f6e1ad18",
+          "observed_sha256": "12001bfd652404edb5c432c17a569e1c0d091f15aed1471588360a53f6e1ad18",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 12253289
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v3/coverage.json",
+          "expected_sha256": "12e457a1f0a8c275b80d2b6afd45d3f8b706e9621acddb48ebadec2fb0b7abd6",
+          "observed_sha256": "12e457a1f0a8c275b80d2b6afd45d3f8b706e9621acddb48ebadec2fb0b7abd6",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 17926
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v3/swechat.sqlite",
+          "expected_sha256": "3c9c8b092b32a5ed059644aebe69020c959f89a28b9c7dd7b37e587d7dc07ed7",
+          "observed_sha256": "3c9c8b092b32a5ed059644aebe69020c959f89a28b9c7dd7b37e587d7dc07ed7",
+          "matches_manifest": true,
+          "unchanged_during_hash": true,
+          "bytes": 1585516544
+        }
+      ],
+      "raw_inputs_verification": [
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/checkpoints.parquet",
+          "bytes": 5564169,
+          "expected_bytes": 5564169,
+          "expected_sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+          "observed_sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/commits.parquet",
+          "bytes": 1082547262,
+          "expected_bytes": 1082547262,
+          "expected_sha256": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f",
+          "observed_sha256": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/conversations.parquet",
+          "bytes": 1311422253,
+          "expected_bytes": 1311422253,
+          "expected_sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+          "observed_sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/repositories.parquet",
+          "bytes": 244741,
+          "expected_bytes": 244741,
+          "expected_sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+          "observed_sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/session_logs.parquet",
+          "bytes": 6369801,
+          "expected_bytes": 6369801,
+          "expected_sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+          "observed_sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+          "matches_manifest": true
+        },
+        {
+          "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/swechat-frozen/sessions.parquet",
+          "bytes": 1997377,
+          "expected_bytes": 1997377,
+          "expected_sha256": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95",
+          "observed_sha256": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95",
+          "matches_manifest": true
+        }
+      ],
+      "candidate_sqlite_tables": [
+        {
+          "name": "array_audit",
+          "type": "table",
+          "sql": "CREATE TABLE array_audit(table_name TEXT,field TEXT,status TEXT,rows INTEGER)"
+        },
+        {
+          "name": "references_raw",
+          "type": "table",
+          "sql": "CREATE TABLE references_raw(table_name TEXT,row_number INTEGER,relation TEXT,target_key TEXT,method TEXT,PRIMARY KEY(table_name,row_number,relation,target_key,method))"
+        },
+        {
+          "name": "source_rows",
+          "type": "table",
+          "sql": "CREATE TABLE source_rows(table_name TEXT,row_number INTEGER,entity_key TEXT,repo_id TEXT,session_id TEXT,checkpoint_pk TEXT,commit_sha TEXT,metadata TEXT,PRIMARY KEY(table_name,row_number))"
+        }
+      ],
+      "derived_redundancy_assessment": "superseded_incomplete_import_from_same_verified_raw_inputs; not_a_byte_identical_backup; interrupted_database_internal_state_would_be_lost"
+    }
+  ],
+  "total_logical_bytes": 3191313088,
+  "total_allocated_bytes": 3191648256,
+  "disk_free_bytes_observed": 2617344000,
+  "live_process_check": {
+    "checked_at": "2026-09-08T20:15:03.137472+00:00",
+    "ps_exit_code": 0,
+    "matching_importers_or_old_pid": [],
+    "lsof_exit_code": 1,
+    "lsof_stdout": "",
+    "lsof_stderr": "",
+    "files_checked": [
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full/aidev.sqlite",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full/swechat.sqlite"
+    ],
+    "no_open_handles_observed": true
+  },
+  "excluded_from_proposal": [
+    "papers/",
+    "all raw source caches",
+    "authoritative imports aidev-full-v2 and swechat-full-v3",
+    "all batch outputs and other imports",
+    "all paths outside the two exact candidate directories"
+  ],
+  "approval_required_for_permanent_deletion": true,
+  "trash_same_volume_frees_disk_bytes": false,
+  "recheck_before_any_future_deletion": [
+    "explicit user approval covers these two exact directories",
+    "directory listing and SHA256 still match this manifest",
+    "no live importer or open handle to target files",
+    "authoritative imports and frozen raw sources remain verified"
+  ],
+  "elapsed_seconds": 11.0084
+}

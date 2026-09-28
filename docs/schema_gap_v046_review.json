@@ -1,0 +1,979 @@
+{
+  "created_utc": "2026-09-08T21:56:43.425652+00:00",
+  "review_scope": "Frozen field schema and existing summary evidence; no actual value classification or package change.",
+  "all_unresolved_field_count": 290,
+  "unresolved_by_dataset": {
+    "aidev": 152,
+    "swe-chat": 138
+  },
+  "unresolved_native_types": {
+    "int64": 76,
+    "string": 103,
+    "double": 31,
+    "large_string": 69,
+    "timestamp[us, tz=UTC]": 4,
+    "bool": 5,
+    "timestamp[ns, tz=UTC]": 2
+  },
+  "unresolved_source_cell_slots": 117814190,
+  "unit_boundary": "The 290 fields span 117,814,190 source-cell slots including nulls. These are not distinct dataset rows, people, credentials, or application logs.",
+  "already_mapped_fields": 18,
+  "all_dataset_fields": 308,
+  "evidence_input_sha256": {
+    "agentlog_unified/docs/content_field_inventory_v044.json": "09df773e43e327b330985b3ec01c9a594601c73d9de56b38ac9d0f8e051b3d64",
+    "agentlog_unified/schema-runs/aidev-v045/schema_unresolved_fields.jsonl": "433034183ebe4603db81d7e7683204dc2d803a8de4e387add24eb7ec74bc7b9e",
+    "agentlog_unified/schema-runs/swechat-v045/schema_unresolved_fields.jsonl": "fa087a338745141520b353d355c76a8d5b65f3be432dad4eaa5d9f821d15df0c",
+    "agentlog_unified/inputs/aidev-full-v2/manifest.json": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+    "agentlog_unified/inputs/swechat-full-v3/manifest.json": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1",
+    "agentlog_unified/inputs/aidev-full-v2/coverage.json": "79c27bb07ddf514009c9567453ad4a3d6803ca02e47bcbe2ed21b624263b8c1f",
+    "agentlog_unified/inputs/swechat-full-v3/coverage.json": "12e457a1f0a8c275b80d2b6afd45d3f8b706e9621acddb48ebadec2fb0b7abd6"
+  },
+  "current_source_sha256_before": {
+    "agentlog_unified/src/agentlog_unified/schema_scan.py": "c960eb541b9770a7cd4e2ce729dd7aa2f91d1ee12d661988489fc29440a31fbb",
+    "agentlog_unified/src/agentlog_unified/content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "agentlog_unified/src/agentlog_unified/taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "agentlog_unified/src/agentlog_unified/aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "agentlog_unified/src/agentlog_unified/swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0"
+  },
+  "current_source_sha256_after": {
+    "agentlog_unified/src/agentlog_unified/schema_scan.py": "c960eb541b9770a7cd4e2ce729dd7aa2f91d1ee12d661988489fc29440a31fbb",
+    "agentlog_unified/src/agentlog_unified/content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "agentlog_unified/src/agentlog_unified/taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "agentlog_unified/src/agentlog_unified/aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "agentlog_unified/src/agentlog_unified/swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0"
+  },
+  "source_unchanged": true,
+  "frozen_parquet_footer_checks": [
+    {
+      "dataset": "aidev",
+      "table": "all_pull_request",
+      "source_rows": 932791,
+      "native_field_count": 14,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "all_repository",
+      "source_rows": 116211,
+      "native_field_count": 7,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "all_user",
+      "source_rows": 72189,
+      "native_field_count": 5,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "human_pr_task_type",
+      "source_rows": 6618,
+      "native_field_count": 6,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "human_pull_request",
+      "source_rows": 6618,
+      "native_field_count": 13,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "issue",
+      "source_rows": 4614,
+      "native_field_count": 9,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_comments",
+      "source_rows": 39122,
+      "native_field_count": 7,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commit_details",
+      "source_rows": 711923,
+      "native_field_count": 14,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commits",
+      "source_rows": 88576,
+      "native_field_count": 5,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_review_comments",
+      "source_rows": 19450,
+      "native_field_count": 15,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_review_comments_v2",
+      "source_rows": 26868,
+      "native_field_count": 15,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_reviews",
+      "source_rows": 28875,
+      "native_field_count": 7,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_task_type",
+      "source_rows": 33596,
+      "native_field_count": 6,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_timeline",
+      "source_rows": 325500,
+      "native_field_count": 8,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "pull_request",
+      "source_rows": 33596,
+      "native_field_count": 14,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "related_issue",
+      "source_rows": 4923,
+      "native_field_count": 3,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "repository",
+      "source_rows": 2807,
+      "native_field_count": 7,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "aidev",
+      "table": "user",
+      "source_rows": 1796,
+      "native_field_count": 5,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "swechat",
+      "table": "checkpoints",
+      "source_rows": 13406,
+      "native_field_count": 24,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "swechat",
+      "table": "commits",
+      "source_rows": 14459,
+      "native_field_count": 23,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "swechat",
+      "table": "conversations",
+      "source_rows": 2692480,
+      "native_field_count": 35,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "swechat",
+      "table": "repositories",
+      "source_rows": 205,
+      "native_field_count": 23,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "swechat",
+      "table": "session_logs",
+      "source_rows": 5851,
+      "native_field_count": 4,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+      "source_bytes_rehashed_this_review": false
+    },
+    {
+      "dataset": "swechat",
+      "table": "sessions",
+      "source_rows": 5851,
+      "native_field_count": 39,
+      "row_count_matches_inventory": true,
+      "schema_matches_inventory": true,
+      "source_sha256_from_prior_frozen_manifest": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95",
+      "source_bytes_rehashed_this_review": false
+    }
+  ],
+  "protocol_evidence": [
+    {
+      "path": "Codex_Agent_Log_Privacy_PyDriller_Prompt_ZH.md",
+      "lines": [
+        35,
+        37
+      ],
+      "principle": "Application-log mainline and separate process evidence."
+    },
+    {
+      "path": "Codex_Agent_Log_Privacy_PyDriller_Prompt_ZH.md",
+      "lines": [
+        353,
+        382
+      ],
+      "principle": "Require source meaning and visibility evidence; objects are hints, token counts are not credentials."
+    },
+    {
+      "path": "Codex_Agent_Log_Privacy_PyDriller_Prompt_ZH.md",
+      "lines": [
+        544,
+        544
+      ],
+      "principle": "Machine review remains pending."
+    },
+    {
+      "path": "Codex_Agent_Log_Privacy_PyDriller_Prompt_ZH.md",
+      "lines": [
+        576,
+        596
+      ],
+      "principle": "Separate data type, disclosure mechanism and agent process hypothesis."
+    }
+  ],
+  "content_detector_gap": {
+    "catalog_subtypes": 42,
+    "named_hint_subtypes": 37,
+    "limited_literal_shape_subtypes": 7,
+    "structured_json_parser_present": false,
+    "unknown_counts_are_not_negative_findings": true,
+    "natural_language_name_phone_address_medical_or_arbitrary_encoding_completeness": false
+  },
+  "findings": [
+    {
+      "id": "G1",
+      "priority": 1,
+      "title": "AIDev 已有账户实体关系的 user/actor 原列未进入 schema 候选",
+      "fields": [
+        {
+          "dataset": "aidev",
+          "table": "all_pull_request",
+          "table_path": "all_pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "8757fea48dad0cb751efd6d4",
+          "source_rows": 932791,
+          "footer_null_count": 0,
+          "source_table_sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "human_pull_request",
+          "table_path": "human_pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "0e542404a15d2811dd390631",
+          "source_rows": 6618,
+          "footer_null_count": 0,
+          "source_table_sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "issue",
+          "table_path": "issue.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "c92bcb58741629be4a4a4d1b",
+          "source_rows": 4614,
+          "footer_null_count": 0,
+          "source_table_sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_comments",
+          "table_path": "pr_comments.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "dcf2ef35ef2dfff8efc394a0",
+          "source_rows": 39122,
+          "footer_null_count": 0,
+          "source_table_sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_review_comments",
+          "table_path": "pr_review_comments.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "73e1813d45e2c8b4eb4e8580",
+          "source_rows": 19450,
+          "footer_null_count": 0,
+          "source_table_sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_review_comments_v2",
+          "table_path": "pr_review_comments_v2.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "79c966cc03ac57a1f25b0a99",
+          "source_rows": 26868,
+          "footer_null_count": 0,
+          "source_table_sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_reviews",
+          "table_path": "pr_reviews.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "806987a4fee47a3a2c82f23f",
+          "source_rows": 28875,
+          "footer_null_count": 1,
+          "source_table_sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pull_request",
+          "table_path": "pull_request.parquet",
+          "column_name": "user",
+          "native_type": "string",
+          "field_id": "81610bcc70f899efc1d03cc6",
+          "source_rows": 33596,
+          "footer_null_count": 0,
+          "source_table_sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_timeline",
+          "table_path": "pr_timeline.parquet",
+          "column_name": "actor",
+          "native_type": "string",
+          "field_id": "ffa5fc1272de4b0af9cbec35",
+          "source_rows": 325500,
+          "footer_null_count": 15869,
+          "source_table_sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        }
+      ],
+      "source_field_count": 9,
+      "source_cell_slots": 1417434,
+      "nonnull_source_cells_from_footer": 1401564,
+      "null_source_cells_from_footer": 15870,
+      "table_rows_counted_once_per_table": 1417434,
+      "denominator_note": "Source cells count each selected table column separately. Table rows are not distinct commits, PRs, people or sessions. Nonnull does not establish nonempty, valid or sensitive content.",
+      "evidence": [
+        "aidev.py:22 explicitly maps user/login/author_login/actor to canonical user.",
+        "aidev.py:189 stores this projection as user_login; aidev.py:278-283 uses the user entity relation.",
+        "schema_scan.py:25-37 maps numeric account IDs and user-table login only; these nine text fields remain in schema_unresolved_fields."
+      ],
+      "existing_relationship_audit": [
+        {
+          "relation": "user",
+          "rows": 882379,
+          "status": "linked",
+          "table": "all_pull_request"
+        },
+        {
+          "relation": "user",
+          "rows": 50412,
+          "status": "orphan",
+          "table": "all_pull_request"
+        },
+        {
+          "relation": "user",
+          "rows": 2164,
+          "status": "linked",
+          "table": "human_pull_request"
+        },
+        {
+          "relation": "user",
+          "rows": 4454,
+          "status": "orphan",
+          "table": "human_pull_request"
+        },
+        {
+          "relation": "user",
+          "rows": 630,
+          "status": "linked",
+          "table": "issue"
+        },
+        {
+          "relation": "user",
+          "rows": 3984,
+          "status": "orphan",
+          "table": "issue"
+        },
+        {
+          "relation": "user",
+          "rows": 12702,
+          "status": "linked",
+          "table": "pr_comments"
+        },
+        {
+          "relation": "user",
+          "rows": 26420,
+          "status": "orphan",
+          "table": "pr_comments"
+        },
+        {
+          "relation": "user",
+          "rows": 8829,
+          "status": "linked",
+          "table": "pr_review_comments"
+        },
+        {
+          "relation": "user",
+          "rows": 10621,
+          "status": "orphan",
+          "table": "pr_review_comments"
+        },
+        {
+          "relation": "user",
+          "rows": 11360,
+          "status": "linked",
+          "table": "pr_review_comments_v2"
+        },
+        {
+          "relation": "user",
+          "rows": 15508,
+          "status": "orphan",
+          "table": "pr_review_comments_v2"
+        },
+        {
+          "relation": "user",
+          "rows": 4880,
+          "status": "linked",
+          "table": "pr_reviews"
+        },
+        {
+          "relation": "user",
+          "rows": 1,
+          "status": "missing_foreign_key",
+          "table": "pr_reviews"
+        },
+        {
+          "relation": "user",
+          "rows": 23994,
+          "status": "orphan",
+          "table": "pr_reviews"
+        },
+        {
+          "relation": "user",
+          "rows": 152514,
+          "status": "linked",
+          "table": "pr_timeline"
+        },
+        {
+          "relation": "user",
+          "rows": 15869,
+          "status": "missing_foreign_key",
+          "table": "pr_timeline"
+        },
+        {
+          "relation": "user",
+          "rows": 157117,
+          "status": "orphan",
+          "table": "pr_timeline"
+        },
+        {
+          "relation": "user",
+          "rows": 28625,
+          "status": "linked",
+          "table": "pull_request"
+        },
+        {
+          "relation": "user",
+          "rows": 4971,
+          "status": "orphan",
+          "table": "pull_request"
+        }
+      ],
+      "relationship_caution": "Existing relation audit prefers user_id when available. Linked counts are not validation of every raw user string or human ownership.",
+      "proposed_existing_taxonomy": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "basis": "explicit account reference in the fixed table/entity mapping"
+        }
+      ],
+      "minimum_next_step": "Add only the nine exact dataset/table/column triples as account_reference. Reuse scalar metadata quality checks. Structured, invalid and empty representations remain distinct unknown/quality records; actor/Agent/person ownership remains pending.",
+      "not_permitted": "Do not label all user strings PII.person_name or valid credentials, and do not infer distinct people by summing rows.",
+      "current_real_value_validation": "not performed in this review"
+    },
+    {
+      "id": "G2",
+      "priority": 2,
+      "title": "SWE-chat 已解析的会话引用数组尚未产生字段语义候选",
+      "fields": [
+        {
+          "dataset": "swe-chat",
+          "table": "checkpoints",
+          "table_path": "checkpoints.parquet",
+          "column_name": "session_pks",
+          "native_type": "large_string",
+          "field_id": "ac562cf01b5006046c62e8e8",
+          "source_rows": 13406,
+          "footer_null_count": 0,
+          "source_table_sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+          "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+        }
+      ],
+      "source_field_count": 1,
+      "source_cell_slots": 13406,
+      "nonnull_source_cells_from_footer": 13406,
+      "null_source_cells_from_footer": 0,
+      "table_rows_counted_once_per_table": 13406,
+      "denominator_note": "Source cells count each selected table column separately. Table rows are not distinct commits, PRs, people or sessions. Nonnull does not establish nonempty, valid or sensitive content.",
+      "evidence": [
+        "swechat.py:22 maps session_pks/session_ids; swechat.py:48-58 validates a list of nonempty strings.",
+        "swechat.py:127-134 records each target as a session reference; later session_checkpoint_links provides bounded entity/repository association.",
+        "Existing frozen import array audit reports 13,388 valid arrays and 18 arrays with duplicate entries; all 13,406 rows are accounted for."
+      ],
+      "existing_array_audit": [
+        {
+          "field": "session_pks",
+          "rows": 18,
+          "status": "duplicate_entries",
+          "table": "checkpoints"
+        },
+        {
+          "field": "session_pks",
+          "rows": 13388,
+          "status": "valid",
+          "table": "checkpoints"
+        }
+      ],
+      "proposed_existing_taxonomy": [
+        {
+          "category": "QID",
+          "subtype": "session_identifier",
+          "basis": "parsed element of explicit session foreign-key array"
+        }
+      ],
+      "minimum_next_step": "Reuse the JSON list validation, but preserve source-row plus original element index and duplicate-entry status for observations. Existing _array deduplicates values, so relationship edges alone cannot reconstruct original array multiplicity or source element positions. Keep candidate source-cell counts separate from element counts.",
+      "format_or_semantics_not_proven_for_nearby_field": {
+        "fields": [
+          {
+            "dataset": "swe-chat",
+            "table": "checkpoints",
+            "table_path": "checkpoints.parquet",
+            "column_name": "author_user_ids",
+            "native_type": "large_string",
+            "field_id": "7f4af88c5059afc000cf0e97",
+            "source_rows": 13406,
+            "footer_null_count": 0,
+            "source_table_sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+            "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+          }
+        ],
+        "source_field_count": 1,
+        "source_cell_slots": 13406,
+        "nonnull_source_cells_from_footer": 13406,
+        "null_source_cells_from_footer": 0,
+        "table_rows_counted_once_per_table": 13406,
+        "denominator_note": "Source cells count each selected table column separately. Table rows are not distinct commits, PRs, people or sessions. Nonnull does not establish nonempty, valid or sensitive content."
+      },
+      "nearby_field_boundary": "author_user_ids is currently only a serialized-list candidate by its schema name, not a validated importer array. Preserve unknown format until a separately recorded parser establishes list shape; do not silently reuse session semantics.",
+      "current_real_value_validation": "reused prior array audit only; no arrays decoded this review"
+    },
+    {
+      "id": "G3",
+      "priority": 3,
+      "title": "提交 author/committer 是明确身份载体，内部格式和姓名子字段尚未解析",
+      "fields": [
+        {
+          "dataset": "aidev",
+          "table": "pr_commits",
+          "table_path": "pr_commits.parquet",
+          "column_name": "author",
+          "native_type": "string",
+          "field_id": "600da31828f633c6eee783af",
+          "source_rows": 88576,
+          "footer_null_count": 1,
+          "source_table_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_commits",
+          "table_path": "pr_commits.parquet",
+          "column_name": "committer",
+          "native_type": "string",
+          "field_id": "419334edd107b23aed5440fe",
+          "source_rows": 88576,
+          "footer_null_count": 1,
+          "source_table_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_commit_details",
+          "table_path": "pr_commit_details.parquet",
+          "column_name": "author",
+          "native_type": "string",
+          "field_id": "9a15ced6eab2ddbd8d79a164",
+          "source_rows": 711923,
+          "footer_null_count": 3,
+          "source_table_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        },
+        {
+          "dataset": "aidev",
+          "table": "pr_commit_details",
+          "table_path": "pr_commit_details.parquet",
+          "column_name": "committer",
+          "native_type": "string",
+          "field_id": "3d7ca478f251057b87f40a9e",
+          "source_rows": 711923,
+          "footer_null_count": 3,
+          "source_table_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+          "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1"
+        }
+      ],
+      "source_field_count": 4,
+      "source_cell_slots": 1600998,
+      "nonnull_source_cells_from_footer": 1600990,
+      "null_source_cells_from_footer": 8,
+      "table_rows_counted_once_per_table": 800499,
+      "denominator_note": "Source cells count each selected table column separately. Table rows are not distinct commits, PRs, people or sessions. Nonnull does not establish nonempty, valid or sensitive content.",
+      "evidence": [
+        "aidev.py:23-24 projects author/committer; pr_commits and pr_commit_details have commit/file roles in aidev.py:46.",
+        "All four columns are native strings. Frozen inventory explicitly says actor_metadata_may_be_serialized_text_uninspected and value_format_validated=false.",
+        "content_types.py:110-133 matches standalone named keys without the outer table/entity path; a name leaf is not identified by the current finite rules."
+      ],
+      "proposed_existing_taxonomy_if_structure_validated": [
+        {
+          "category": "PII",
+          "subtype": "person_name",
+          "basis": "an explicitly parsed name leaf within a commit actor identity object; human ownership still unknown"
+        },
+        {
+          "category": "PII",
+          "subtype": "email",
+          "basis": "valid email-shaped leaf in an explicitly parsed commit actor identity object"
+        },
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "basis": "explicit login/id leaf within a validated actor account object"
+        }
+      ],
+      "minimum_next_step": "First record representation states for these four columns. Parse strict JSON objects with a small allowlist of identity leaf fields when present; preserve non-JSON, wrong types, unexpected nesting and missing leaves as unknown. Do not classify the complete scalar author/committer string as a person name merely from its column name.",
+      "overlap_note": "pr_commit_details repeats commit metadata across file rows; 1,600,998 source-cell slots are not 1,600,998 commits or people. A newly parsed leaf can overlap an existing literal email match and requires explicit reconciliation.",
+      "current_real_value_validation": "not performed; valid JSON count and recoverable identity count are unknown"
+    },
+    {
+      "id": "G4",
+      "priority": 4,
+      "title": "结构化文本缺少 JSON 转义解码和有边界的父子字段语义",
+      "fields": [
+        {
+          "dataset": "swe-chat",
+          "table": "conversations",
+          "table_path": "conversations.parquet",
+          "column_name": "tool_input_json",
+          "native_type": "large_string",
+          "field_id": "0ab8efd3b426f3608f877ad9",
+          "source_rows": 2692480,
+          "footer_null_count": 2336538,
+          "source_table_sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+          "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+        },
+        {
+          "dataset": "swe-chat",
+          "table": "checkpoints",
+          "table_path": "checkpoints.parquet",
+          "column_name": "checkpoint_metadata_raw",
+          "native_type": "large_string",
+          "field_id": "abbb9cb0c651c26578cf2cad",
+          "source_rows": 13406,
+          "footer_null_count": 0,
+          "source_table_sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+          "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+        },
+        {
+          "dataset": "swe-chat",
+          "table": "session_logs",
+          "table_path": "session_logs.parquet",
+          "column_name": "session_metadata_raw",
+          "native_type": "large_string",
+          "field_id": "7e8e8aa1fb64cd749558f9ef",
+          "source_rows": 5851,
+          "footer_null_count": 0,
+          "source_table_sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+          "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+        },
+        {
+          "dataset": "swe-chat",
+          "table": "repositories",
+          "table_path": "repositories.parquet",
+          "column_name": "settings",
+          "native_type": "large_string",
+          "field_id": "88362f15df37158512ccf82f",
+          "source_rows": 205,
+          "footer_null_count": 3,
+          "source_table_sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+          "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+        },
+        {
+          "dataset": "swe-chat",
+          "table": "repositories",
+          "table_path": "repositories.parquet",
+          "column_name": "repo_github_metadata",
+          "native_type": "large_string",
+          "field_id": "0aa29aa0ae5a3450ad78c835",
+          "source_rows": 205,
+          "footer_null_count": 0,
+          "source_table_sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+          "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+        }
+      ],
+      "source_field_count": 5,
+      "source_cell_slots": 2712147,
+      "nonnull_source_cells_from_footer": 375606,
+      "null_source_cells_from_footer": 2336541,
+      "table_rows_counted_once_per_table": 2711942,
+      "denominator_note": "Source cells count each selected table column separately. Table rows are not distinct commits, PRs, people or sessions. Nonnull does not establish nonempty, valid or sensitive content.",
+      "evidence": [
+        "swechat.py:35 lists these exact columns as source-reference content carriers; none is parsed by the importer.",
+        "The frozen schema records tool_input_json as JSON-named text and the other four as possible serialized objects; actual format validity is unverified.",
+        "content_types.py:32-36 uses a flat assignment regex and content_types.py:110-133 passes only the captured key to taxonomy._matches. Escaped keys and user -> id nesting can lose existing controlled type evidence.",
+        "taxonomy.py:81-97 already supports a bounded user.id projection without classifying repository.name or token statistics."
+      ],
+      "proposed_existing_taxonomy": "Only existing taxonomy keys supported by validated decoded leaf shape or an explicit bounded parent/leaf rule. A JSON container, tool command, repository settings object, or prompt is not inherently sensitive.",
+      "minimum_next_step": "Add a bounded strict-JSON layer for the listed carriers, with explicit invalid/unsupported/limit states and duplicate-key accounting. Reuse the current type rules for decoded leaves and allowlisted context pairs such as user.id. Preserve an original-cell source reference plus parsed location; never call decoded character offsets raw-source offsets. Export only controlled labels and allowlisted structural names, not arbitrary dynamic keys or decoded values.",
+      "special_example_case": "JSON Unicode escapes can currently hide an example-shaped email and its example status. Decode before applying existing placeholder/example quality rules, without validating or using any credential.",
+      "reconciliation_note": "Keep raw text observations intact; parsed observations require a separate unit/method and explicit overlap resolution before any combined count. New parsing does not turn a chat/tool payload into application-log code evidence.",
+      "current_real_value_validation": "not performed; no claim that every nonnull carrier is valid JSON or contains a missed type"
+    }
+  ],
+  "finding_count": 4,
+  "synthetic_probe_results": [
+    {
+      "probe": "bare_account_login",
+      "input_origin": "local synthetic string only",
+      "matches": [],
+      "truncated": false
+    },
+    {
+      "probe": "serialized_session_reference_array",
+      "input_origin": "local synthetic string only",
+      "matches": [],
+      "truncated": false
+    },
+    {
+      "probe": "nested_user_id",
+      "input_origin": "local synthetic string only",
+      "matches": [
+        {
+          "category": "BIZ",
+          "subtype": "business_object",
+          "basis": "identifier_or_unquoted_value",
+          "value_status": "opaque",
+          "candidate_status": "identifier_reference"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "probe": "escaped_json_email",
+      "input_origin": "local synthetic string only",
+      "matches": [],
+      "truncated": false
+    },
+    {
+      "probe": "commit_identity_json",
+      "input_origin": "local synthetic string only",
+      "matches": [
+        {
+          "category": "PII",
+          "subtype": "email",
+          "basis": "literal_shape",
+          "value_status": "placeholder_or_example",
+          "candidate_status": "placeholder_or_example"
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "probe": "nested_repository_name",
+      "input_origin": "local synthetic string only",
+      "matches": [],
+      "truncated": false
+    },
+    {
+      "probe": "token_statistic",
+      "input_origin": "local synthetic string only",
+      "matches": [],
+      "truncated": false
+    },
+    {
+      "probe": "metadata_persona_label",
+      "input_origin": "local synthetic string only",
+      "matches": [],
+      "truncated": false
+    }
+  ],
+  "synthetic_assertions_passed": 8,
+  "intentionally_not_promoted": [
+    {
+      "fields": [
+        "swe-chat.repositories.owner_id",
+        "swe-chat.sessions.owner_id",
+        "aidev.repository.full_name",
+        "aidev.all_repository.full_name",
+        "swe-chat.repositories.name"
+      ],
+      "reason": "Repository ownership/name is not established real-person identity. An organization or technical namespace remains possible; no broad id/name mapping."
+    },
+    {
+      "fields": [
+        "swe-chat.sessions.user_persona"
+      ],
+      "denominator": {
+        "fields": [
+          {
+            "dataset": "swe-chat",
+            "table": "sessions",
+            "table_path": "sessions.parquet",
+            "column_name": "user_persona",
+            "native_type": "large_string",
+            "field_id": "69fa64fb99f0128dff366320",
+            "source_rows": 5851,
+            "footer_null_count": 97,
+            "source_table_sha256": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95",
+            "source_manifest_sha256": "34d475b5df5d3e5b743c50c3e4ce86055c9de65a2de86ffe1c31e68ca44b91f1"
+          }
+        ],
+        "source_field_count": 1,
+        "source_cell_slots": 5851,
+        "nonnull_source_cells_from_footer": 5754,
+        "null_source_cells_from_footer": 97,
+        "table_rows_counted_once_per_table": 5851,
+        "denominator_note": "Source cells count each selected table column separately. Table rows are not distinct commits, PRs, people or sessions. Nonnull does not establish nonempty, valid or sensitive content."
+      },
+      "reason": "Annotation label meaning and personal attribution are unvalidated. The finite taxonomy has no verified persona subtype; preserve schema_semantics_unresolved and do not invent one."
+    },
+    {
+      "fields": [
+        "swe-chat.conversations.input_tokens",
+        "swe-chat.conversations.output_tokens",
+        "swe-chat.checkpoints.cp_input_tokens",
+        "aidev.all_user.followers"
+      ],
+      "reason": "Counts/statistics cannot become authentication or personal-record candidates from nearby words alone."
+    },
+    {
+      "fields": [
+        "swe-chat.conversations.file_path",
+        "swe-chat.sessions.transcript_path",
+        "aidev.pr_commit_details.filename"
+      ],
+      "reason": "A source-file or transcript locator does not alone establish an internal filesystem location, person link, or confidential path; do not relabel all relative paths as sensitive."
+    }
+  ],
+  "implementation_priority": "G1 exact scalar roles, then G2 the already validated session array; G3/G4 begin with bounded format/parse coverage and synthetic tests, not blanket field labels.",
+  "real_value_cells_decoded_this_review": 0,
+  "real_values_printed_or_exported": false,
+  "source_min_max_values_read": false,
+  "active_run_exports_read": false,
+  "target_code_executed": false,
+  "network_accessed": false,
+  "package_source_modified": false,
+  "papers_modified": false,
+  "scope_boundary": {
+    "human_review_status": "pending",
+    "confidence": "low",
+    "runtime_confirmed": false,
+    "application_log_evidence": false,
+    "full_sensitive_type_coverage_claim": false,
+    "new_type_status": "not_established"
+  }
+}

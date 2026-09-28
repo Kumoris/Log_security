@@ -1,0 +1,18 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:29:13.947916+00:00",
+  "ended_utc": "2026-09-08T23:29:18.951689+00:00",
+  "exit_code": 0,
+  "stdout": "{\"baseline_method\": \"verified_parent_repair_nonexcluded_cell_type_union\", \"baseline_controlled_cell_type_pairs\": 639210, \"structured_controlled_cell_type_pairs\": 866, \"shared_cell_type_pairs\": 852, \"gained_cell_type_pairs\": 14, \"controlled_labels_with_gain\": 7, \"labels_observed_only_in_structured\": 0, \"novel_cell_type_occurrence_evidence_records\": 18}\n",
+  "stderr": "",
+  "helper_sha256_before": "173db1d8d6d36309a359946aaf21effa3aa7976d82900260f173507a74c3e03e",
+  "helper_sha256_after": "173db1d8d6d36309a359946aaf21effa3aa7976d82900260f173507a74c3e03e",
+  "source_code_or_tests_modified": false,
+  "source_values_decoded": false,
+  "previous_attempt": "aidev_structured_gain_v048_execution_attempt01.json",
+  "previous_attempt_correction": "Historical reconciliation uses a single implementation SHA string; verification helper corrected to compare the content_reconcile.py file SHA."
+}

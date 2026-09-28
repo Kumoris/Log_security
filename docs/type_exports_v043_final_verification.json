@@ -1,0 +1,79 @@
+{
+  "recorded_utc": "2026-09-08T20:44:03.516625+00:00",
+  "automated_verification": true,
+  "human_review_performed": false,
+  "verifier_source": "/private/tmp/verify_agentlog_v043_final.py",
+  "verifier_sha256": "0f6fb35c80370ec61fb105c3aa5ce025182f940d32a24a59ad5dcc4afa79e68f",
+  "reused_from": "/private/tmp/verify_agentlog_v043.py",
+  "scope": "Only new 0.4.3 batches. Historical 0.4.2 fingerprints are intentionally excluded. Export consistency is not proof of parser completeness or actual privacy leakage.",
+  "datasets": {
+    "aidev-expansion-v043-final": {
+      "log_versions": 882,
+      "unknown_queue": 386,
+      "source_log_observations": 1127,
+      "distinct_observation_references": 1127,
+      "csharp_log_versions": 0,
+      "csharp_versions_with_types": 0,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 882,
+        "unknown_type_review_queue": 386,
+        "type_summary": 48
+      },
+      "analysis_fingerprint": "39d0fbba7cf613b88b0d8160",
+      "analysis_fingerprint_matches_current_source": true,
+      "current_source_mismatch_files": [],
+      "source_sha256": {
+        "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+        "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+        "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+        "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+        "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+      },
+      "export_sha256": {
+        "type_occurrences.jsonl": "48a8a9feb0f8f88e3fed40a6074a0cf3e73548b496bc80a9c953c04bb90b5c72",
+        "type_summary.csv": "82f6e09899abf259403cdcdbe23bedd257c4dd59d71f5cf4aa811d50ecf526f9",
+        "unknown_type_review_queue.csv": "a70b34876c30c15146ed41c12c3106a5011be03a2393ce1cadc3cce7a33b4a1e",
+        "type_summary.json": "3907a9524ca2d552c023e9cce1e936108b5622276678c82c4fbfa97e01d3744f",
+        "unknown_type_review_queue.jsonl": "380cfeff6f42b61d643b047a09287f34e07f37d96f655cbea5ae00f80b43c722",
+        "type_occurrences.csv": "367842ab7abe70d673e82f45a491bbff4a7a9fcca8d46a9bd882e10ba8da653f"
+      }
+    },
+    "csharp-swechat-v043-final": {
+      "log_versions": 755,
+      "unknown_queue": 755,
+      "source_log_observations": 886,
+      "distinct_observation_references": 886,
+      "csharp_log_versions": 24,
+      "csharp_versions_with_types": 21,
+      "integrity_issues": {},
+      "csv_row_counts": {
+        "type_occurrences": 755,
+        "unknown_type_review_queue": 755,
+        "type_summary": 48
+      },
+      "analysis_fingerprint": "39d0fbba7cf613b88b0d8160",
+      "analysis_fingerprint_matches_current_source": true,
+      "current_source_mismatch_files": [],
+      "source_sha256": {
+        "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+        "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+        "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+        "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+        "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+      },
+      "export_sha256": {
+        "type_occurrences.jsonl": "21abc969ad2186a538a8fc55a6c36788b90fbbbd6926ee27250ecbf83df70086",
+        "type_summary.csv": "2f91978a20762476b53dfce36b1df570e9ea55cba2682581f8e812c06b90b2e3",
+        "unknown_type_review_queue.csv": "699c1328da6227a37f12e702e0ab57764a970fea7e0c89e96642e1faa075c5b8",
+        "type_summary.json": "93f5fc32c25974ae33106ac47f68df68040f96760ae308bc635af1f0c09a57db",
+        "unknown_type_review_queue.jsonl": "e62355933f53f2857cbd17d99fce643df800d4e5141f1980d78dfcef67974f50",
+        "type_occurrences.csv": "7e816de3f9b00295bef99a94b83d9b92a0abe3548152d1fd74d4e94f01964b3f"
+      }
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "source_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/swechat-v045-final/scan",
+  "source_jsonl_sha256": "25dd633dfd66bc1e85157f5988a894ff896fd27a5ef0c763063c32e2a13ef9e2",
+  "source_jsonl_stat": [
+    280777459,
+    1788904041264985625,
+    106996026
+  ],
+  "candidate_count": 443609,
+  "baseline_ids_file": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/swechat_repair_v046_before_ids.jsonl",
+  "baseline_ids_sha256": "610f1f3d58f20c0260cb3012aa8625ecee76b3db1eed3621a34237b2f4c20778",
+  "coverage": {
+    "all_selected_cells_all_rules_finished": false,
+    "application_log_evidence": false,
+    "candidate_occurrences": 443609,
+    "cell_status_counts": {
+      "complete_with_semantic_gaps": 349,
+      "partial": 1,
+      "pending": 217
+    },
+    "committed_pages": 163911,
+    "data_gap_records": 0,
+    "elapsed_seconds": 129.253,
+    "excluded_occurrences": 727,
+    "exit_code": 2,
+    "full_dataset_coverage_claim": false,
+    "human_review_status": "pending",
+    "limitations": [
+      "Full rule traversal is not complete semantic sensitive-type detection.",
+      "Quoted named values beyond the finite 4096-token rule remain unresolved; no additional semantic rules are added.",
+      "Regex windows and result pages are bounded; Arrow still materializes a complete selected string scalar.",
+      "Parent and repair occurrences must not be directly summed; use source-cell/span/type reconciliation.",
+      "All selected cells remain in the unknown review queue, including completed lexical scans."
+    ],
+    "network_accessed": false,
+    "new_type_status": "not_established",
+    "observation_scope": "dataset_text_cell_rescan",
+    "pages_this_invocation": 90053,
+    "parent_and_repair_counts_additive": false,
+    "recorded_completed_cells": 349,
+    "runtime_confirmed": false,
+    "selected_cells": 567,
+    "selected_characters": 2232404563,
+    "source_verification_complete": true,
+    "status": "partial",
+    "stop_reason": "time_budget",
+    "target_code_executed": false,
+    "taxonomy_version": "1.0.0",
+    "type_summary": [
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 13,
+          "unknown_named_value": 2
+        },
+        "category": null,
+        "distinct_cell_count": 10,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 15,
+        "runtime_confirmed": false,
+        "subtype": null,
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 5167,
+          "named_value_candidate": 4992
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 195,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 10159,
+        "runtime_confirmed": false,
+        "subtype": "access_token",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 1025,
+          "literal_candidate": 12,
+          "named_value_candidate": 521
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 85,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 1558,
+        "runtime_confirmed": false,
+        "subtype": "api_key",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 40,
+          "named_value_candidate": 351
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 40,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 391,
+        "runtime_confirmed": false,
+        "subtype": "auth_cookie",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 1277,
+          "literal_candidate": 216,
+          "named_value_candidate": 1266
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 95,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 2759,
+        "runtime_confirmed": false,
+        "subtype": "authorization_header",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 270,
+          "literal_candidate": 27,
+          "named_value_candidate": 1824
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 182,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 2121,
+        "runtime_confirmed": false,
+        "subtype": "credential_bundle",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 117,
+          "named_value_candidate": 297
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 32,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 414,
+        "runtime_confirmed": false,
+        "subtype": "password",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 730,
+          "literal_candidate": 8,
+          "named_value_candidate": 507
+        },
+        "category": "AUTH",
+        "distinct_cell_count": 44,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 1245,
+        "runtime_confirmed": false,
+        "subtype": "private_key",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 18993,
+          "identifier_reference": 26146
+        },
+        "category": "BIZ",
+        "distinct_cell_count": 341,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 45139,
+        "runtime_confirmed": false,
+        "subtype": "business_object",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 12817,
+          "identifier_reference": 11012
+        },
+        "category": "BIZ",
+        "distinct_cell_count": 343,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 23829,
+        "runtime_confirmed": false,
+        "subtype": "document_content",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 2109,
+          "identifier_reference": 9204
+        },
+        "category": "BIZ",
+        "distinct_cell_count": 185,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 11313,
+        "runtime_confirmed": false,
+        "subtype": "http_headers",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 3
+        },
+        "category": "BIZ",
+        "distinct_cell_count": 2,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 3,
+        "runtime_confirmed": false,
+        "subtype": "message_content",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 10115,
+          "identifier_reference": 26276
+        },
+        "category": "BIZ",
+        "distinct_cell_count": 285,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 36391,
+        "runtime_confirmed": false,
+        "subtype": "request_body",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 1754,
+          "identifier_reference": 10298
+        },
+        "category": "BIZ",
+        "distinct_cell_count": 319,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 12052,
+        "runtime_confirmed": false,
+        "subtype": "response_body",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 42,
+          "named_value_candidate": 165
+        },
+        "category": "CFG",
+        "distinct_cell_count": 30,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 207,
+        "runtime_confirmed": false,
+        "subtype": "database_connection",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 22736,
+          "identifier_reference": 13991
+        },
+        "category": "CFG",
+        "distinct_cell_count": 305,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 36727,
+        "runtime_confirmed": false,
+        "subtype": "deployment_configuration",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 4144,
+          "identifier_reference": 8576
+        },
+        "category": "CFG",
+        "distinct_cell_count": 99,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 12720,
+        "runtime_confirmed": false,
+        "subtype": "environment",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 1207,
+          "named_value_candidate": 136004
+        },
+        "category": "CFG",
+        "distinct_cell_count": 306,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 137211,
+        "runtime_confirmed": false,
+        "subtype": "filesystem_path",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 71538,
+          "identifier_reference": 24834
+        },
+        "category": "DIAG",
+        "distinct_cell_count": 331,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 96372,
+        "runtime_confirmed": false,
+        "subtype": "exception_message",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 4
+        },
+        "category": "DIAG",
+        "distinct_cell_count": 3,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 4,
+        "runtime_confirmed": false,
+        "subtype": "failure_response",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "carrier_candidate": 759,
+          "identifier_reference": 115
+        },
+        "category": "DIAG",
+        "distinct_cell_count": 225,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 874,
+        "runtime_confirmed": false,
+        "subtype": "stack_trace",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 470,
+          "literal_candidate": 1745,
+          "named_value_candidate": 1025
+        },
+        "category": "PII",
+        "distinct_cell_count": 226,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 3240,
+        "runtime_confirmed": false,
+        "subtype": "email",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 4,
+          "named_value_candidate": 73
+        },
+        "category": "PII",
+        "distinct_cell_count": 9,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 77,
+        "runtime_confirmed": false,
+        "subtype": "medical",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 374,
+          "named_value_candidate": 629
+        },
+        "category": "PII",
+        "distinct_cell_count": 60,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 1003,
+        "runtime_confirmed": false,
+        "subtype": "person_name",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 43,
+          "named_value_candidate": 16
+        },
+        "category": "PII",
+        "distinct_cell_count": 6,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 59,
+        "runtime_confirmed": false,
+        "subtype": "phone",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 123,
+          "named_value_candidate": 125
+        },
+        "category": "PII",
+        "distinct_cell_count": 23,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 248,
+        "runtime_confirmed": false,
+        "subtype": "postal_address",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 4
+        },
+        "category": "PII",
+        "distinct_cell_count": 1,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 4,
+        "runtime_confirmed": false,
+        "subtype": "precise_location",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 334,
+          "named_value_candidate": 251
+        },
+        "category": "QID",
+        "distinct_cell_count": 130,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 585,
+        "runtime_confirmed": false,
+        "subtype": "device_identifier",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 9,
+          "literal_candidate": 197,
+          "named_value_candidate": 24
+        },
+        "category": "QID",
+        "distinct_cell_count": 42,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 230,
+        "runtime_confirmed": false,
+        "subtype": "network_identifier",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 288,
+          "named_value_candidate": 581
+        },
+        "category": "QID",
+        "distinct_cell_count": 28,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 869,
+        "runtime_confirmed": false,
+        "subtype": "request_identifier",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 1364,
+          "named_value_candidate": 1691
+        },
+        "category": "QID",
+        "distinct_cell_count": 47,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 3055,
+        "runtime_confirmed": false,
+        "subtype": "session_identifier",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 8,
+          "named_value_candidate": 2
+        },
+        "category": "QID",
+        "distinct_cell_count": 4,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 10,
+        "runtime_confirmed": false,
+        "subtype": "transaction_identifier",
+        "taxonomy_version": "1.0.0"
+      },
+      {
+        "application_log_evidence": false,
+        "candidate_status_counts": {
+          "identifier_reference": 1455,
+          "named_value_candidate": 1270
+        },
+        "category": "QID",
+        "distinct_cell_count": 243,
+        "full_dataset_coverage_claim": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_text_cell_rescan",
+        "occurrence_count": 2725,
+        "runtime_confirmed": false,
+        "subtype": "user_identifier",
+        "taxonomy_version": "1.0.0"
+      }
+    ],
+    "unknown_type_review_cells": 567
+  },
+  "source_values_read": false,
+  "purpose": "Verify exact prior candidate metadata retention after current repair resume"
+}

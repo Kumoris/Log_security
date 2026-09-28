@@ -1,0 +1,130 @@
+{
+  "status": "complete_with_declared_gaps",
+  "exit_code": 0,
+  "unit": "unique repository + historical SHA + scoped log argument/field-use anchor; lexical candidates separately marked",
+  "funnel": {
+    "input_records": 1,
+    "ingest_gaps": 0,
+    "git_commits": 4,
+    "log_events": 32,
+    "field_use_frame": 40,
+    "selected_field_uses": 40,
+    "not_sampled": 0,
+    "independently_supported": 18,
+    "static_risk_candidates": 6,
+    "exclusion_records": 59,
+    "gap_records": 12,
+    "human_annotations": 0,
+    "model_executions": 0
+  },
+  "by_repository": {
+    "semantic-expansion-fixture": 40
+  },
+  "by_language": {
+    "go": 1,
+    "javascript": 2,
+    "python": 36,
+    "typescript": 1
+  },
+  "by_ambiguity_source": {
+    "business_abbreviation": 6,
+    "explicit_or_other_name": 9,
+    "generic_name": 25
+  },
+  "by_use_role": {
+    "nested_expression_input": 15,
+    "positional_argument": 21,
+    "tree_sitter_log_argument": 4
+  },
+  "by_queue": {
+    "known_semantics_unmapped": 2,
+    "mapped_supported": 12,
+    "semantic_unknown": 22,
+    "supported_non_sensitive": 4
+  },
+  "explicit_type_context_cases": 6,
+  "generic_name_cases": {
+    "selected": 25,
+    "frame": 25,
+    "rule_supported": 15
+  },
+  "interpretation_levels": {
+    "contract_or_declared_evidence": 18
+  },
+  "by_review_status": {
+    "ambiguous": 22,
+    "supported": 18
+  },
+  "by_context": {
+    "bounded_available": 28,
+    "partial": 12
+  },
+  "by_type": {
+    "PII/email": 12
+  },
+  "by_log_association": {
+    "possible_sink_or_lexical_association": 19,
+    "supported_static_call_argument": 21
+  },
+  "by_split": {
+    "synthetic_calibration": 40
+  },
+  "runtime_versions": {
+    "PyDriller": "2.11",
+    "tree-sitter": "0.25.2",
+    "tree-sitter-javascript": "0.25.0",
+    "tree-sitter-typescript": "0.23.2",
+    "tree-sitter-go": "0.25.0"
+  },
+  "metrics": {
+    "pydriller_repository_traversals": 1,
+    "pydriller_commits": 4,
+    "pydriller_modified_files_calls": 4,
+    "pydriller_git_diff_calls": 0,
+    "pydriller_diff_parsed_calls": 11,
+    "pydriller_source_reads": 15,
+    "auxiliary_blob_reads": 2,
+    "merge_fallbacks": 0,
+    "files_extracted": 11,
+    "target_graph_commits": 5,
+    "reused_commits": 0,
+    "reused_files": 0,
+    "cache_rejected_commits": 0,
+    "requested_initial_commits": 1,
+    "resolved_initial_commits": 1,
+    "eligible_commits": 4,
+    "new_files_extracted": 11,
+    "total_file_records": 11,
+    "selected_commits_missing": 0
+  },
+  "ablation_ast_cases": 40,
+  "model_stage": "not_run",
+  "human_evaluation": "pending",
+  "accuracy": null,
+  "recall": null,
+  "category_saturation_established": false,
+  "runtime_leaks_confirmed": 0,
+  "full_aidev_semantic_coverage_established": false,
+  "repository_split_disjoint": false,
+  "sampling_policy": "stratified_round_robin",
+  "stages": {
+    "ingest": "executed",
+    "collect": "local_objects_only",
+    "mine": "pydriller_executed",
+    "detect": "before_sensitivity",
+    "trace": "existing_unfiltered_history_path",
+    "assess": "rules_and_independent_evidence_replay",
+    "export": "executed",
+    "model_extraction": "not_run",
+    "model_review": "not_run",
+    "human_coding": "pending"
+  },
+  "limitations": [
+    "Finite rule contracts; arbitrary business semantics remain pending.",
+    "Historical full-tree auxiliary reads are pinned by PyDriller; fallback recorded.",
+    "No guarantee of complete reverse dependency, runtime reachability or sanitizer effectiveness.",
+    "A fixed supplied-history sampling frame is not the complete AIDev population.",
+    "Schema metadata not rescanned; prior schema review status unchanged.",
+    "Code views mask every literal; inspect exact local historic source for manual judgments."
+  ]
+}

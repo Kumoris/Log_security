@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log \u7814\u7a76/agent_log_privacy/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_advance_repair_integration.py",
+    "tests/test_content_repair.py",
+    "tests/test_content_reconcile.py",
+    "tests/test_content_advance.py",
+    "-q"
+  ],
+  "cwd": "/private/tmp/content_advance_repair_v049_stage",
+  "started_utc": "2026-09-08T23:53:11.450102+00:00",
+  "completed_utc": "2026-09-08T23:53:17.051450+00:00",
+  "elapsed_seconds": 5.601,
+  "exit_code": 0,
+  "files_sha256_before": {
+    "agentlog_unified/content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+    "agentlog_unified/content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+    "tests/test_content_reconcile.py": "9656ee4203237f3ac658c6033a756e93cf367439a0e118e40a783e4bdab05095",
+    "tests/test_advance_repair_integration.py": "1bebb4a5f75b1302c7ba4188c59dd667c4b14c59c3492811a4237b5c3fe4f273",
+    "tests/test_content_repair.py": "02bfd592c5574d8fa65196c52d320fc78d17385eb19656def3e054f50bf2976f",
+    "tests/test_content_advance.py": "2caa2b26d54b942317b9dc3b2fe9c4b431a6391d3aeca2a78f9e97bc3a3cd864"
+  },
+  "files_sha256_after": {
+    "agentlog_unified/content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+    "agentlog_unified/content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+    "tests/test_content_reconcile.py": "9656ee4203237f3ac658c6033a756e93cf367439a0e118e40a783e4bdab05095",
+    "tests/test_advance_repair_integration.py": "1bebb4a5f75b1302c7ba4188c59dd667c4b14c59c3492811a4237b5c3fe4f273",
+    "tests/test_content_repair.py": "02bfd592c5574d8fa65196c52d320fc78d17385eb19656def3e054f50bf2976f",
+    "tests/test_content_advance.py": "2caa2b26d54b942317b9dc3b2fe9c4b431a6391d3aeca2a78f9e97bc3a3cd864"
+  },
+  "source_and_tests_unchanged": true,
+  "synthetic_only": true
+}

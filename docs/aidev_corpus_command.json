@@ -1,0 +1,26 @@
+{
+  "aidev_source_snapshot": "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f",
+  "counts": {
+    "dataset_unique_prs": 939353,
+    "dataset_prs_selected_in_runs": 3,
+    "dataset_prs_with_analyzed_commit_overlap": 2,
+    "dataset_prs_with_all_commits_analyzed_in_one_run": 2,
+    "analysis_prs_not_in_dataset": 6,
+    "dataset_prs_without_verified_commit_analysis": 939351
+  },
+  "denominator": "distinct PR identities in the frozen multi-table import",
+  "analysis_inputs": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/aidev-types-smoke/data/pr_coverage_audit.jsonl": "60f4924353027f2501870514cddd08d10071859e4d8fce2543f73b19cb90308a",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/runs/real-types-v030/data/pr_coverage_audit.jsonl": "011a54576fc514bfe2af6234e3cc5fb0c04473c37a201534333ffa8680c1685c"
+  },
+  "aidev_import": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+  "limitations": [
+    "Metadata/patch ingestion is not Git source analysis.",
+    "Matching a PR URL alone is insufficient: dataset commit SHAs must overlap actual Git and analyzed snapshots.",
+    "Multiple runs of one PR count once; complete-commit count requires one run covering its dataset commit set.",
+    "All-commit coverage can still have parser/language/history gaps; consult per-run code_coverage_audit.",
+    "Type labels remain bounded static candidates; no unknown or unexamined PR is marked safe."
+  ],
+  "runtime_confirmed": false,
+  "network_accessed": false
+}

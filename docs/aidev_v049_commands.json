@@ -1,0 +1,361 @@
+{
+  "recorded_utc": "2026-09-09T00:17:39.095261+00:00",
+  "dataset_scope": "aidev_only",
+  "executions": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_content_dry_run_execution.json",
+      "sha256": "9144b3ac0ec515ad178f5bf774c80381ddcac10dc27ba658f02d6e3b3cb202e7",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-advance",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--max-seconds",
+        "900",
+        "--min-free-gib",
+        "2",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.5354212499951245,
+      "started_at": "2026-09-08T23:44:02.269370+00:00",
+      "finished_at": "2026-09-08T23:44:02.804829+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_content_full_execution.json",
+      "sha256": "4db3bfde1a3b9b7f4f01d319cd56788ff0fadfe0b4bfacd35bd1f31048d1cecb",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-advance",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--max-seconds",
+        "900",
+        "--min-free-gib",
+        "2"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 948.4938453749928,
+      "started_at": "2026-09-08T23:44:08.252438+00:00",
+      "finished_at": "2026-09-08T23:59:56.746771+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_content_resume_execution.json",
+      "sha256": "bfa09e83617a992f363c79e83c5bd1c75bea8d2178ba88087844ebe986748ae7",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-advance",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--offline",
+        "--batch-size",
+        "64",
+        "--max-seconds",
+        "900",
+        "--min-free-gib",
+        "2",
+        "--resume"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 509.2923380830034,
+      "started_at": "2026-09-09T00:01:24.144000+00:00",
+      "finished_at": "2026-09-09T00:09:53.435991+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_content_seed_execution.json",
+      "sha256": "7f5595a67d5cf6fa2a8010fd9790276de5d38408a6569520c294e0953b187d9d",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed",
+        "--offline",
+        "--max-seconds",
+        "0.001"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 0.6906414580007549,
+      "started_at": "2026-09-08T23:43:47.418259+00:00",
+      "finished_at": "2026-09-08T23:43:48.108955+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_merge_dry_run_execution.json",
+      "sha256": "19f95141b37a686fa3a9935fee2f258d7a3fe20f32ea87323274be26b0dcb0bb",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-reconcile",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--repair-run",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v049",
+        "--offline",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.934466499995324,
+      "started_at": "2026-09-09T00:11:56.515223+00:00",
+      "finished_at": "2026-09-09T00:12:05.449725+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_merge_full_execution.json",
+      "sha256": "313bad7d16cc8a1c8b201c1cae1f9c36a20afbfa22912958be621383a1bd35f2",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-reconcile",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--repair-run",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v049",
+        "--offline"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 106.14275333299884,
+      "started_at": "2026-09-09T00:12:22.578088+00:00",
+      "finished_at": "2026-09-09T00:14:08.720810+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_repair_dry_run_execution.json",
+      "sha256": "bf446dc646d3e8d6465d66da7ffe83fbefb07c2d7b413320c6ffb49e67bf888e",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049",
+        "--offline",
+        "--max-seconds",
+        "300",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.921337834006408,
+      "started_at": "2026-09-09T00:10:54.538265+00:00",
+      "finished_at": "2026-09-09T00:11:06.459775+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_repair_full_execution.json",
+      "sha256": "6a36282cef7396daab7985292c60952b1651f597d537c907d1db838e6a17decd",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049",
+        "--offline",
+        "--max-seconds",
+        "300"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 15.747636000000057,
+      "started_at": "2026-09-09T00:11:17.172925+00:00",
+      "finished_at": "2026-09-09T00:11:32.920600+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_repair_resume_execution.json",
+      "sha256": "ce2e6cfaa28b21761c3d5dfa486f6c37405657128df7e3c7950a323e95431c05",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "content-repair",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049",
+        "--offline",
+        "--max-seconds",
+        "300",
+        "--resume"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 0.4260612910002237,
+      "started_at": "2026-09-09T00:11:47.612040+00:00",
+      "finished_at": "2026-09-09T00:11:48.038144+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_structured_dry_run_execution.json",
+      "sha256": "b743e109cfcce516b19b47b4714b6972b55e1b7d02e8cb6bc348fa36325b04c5",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.541537209006492,
+      "started_at": "2026-09-08T23:43:48.166297+00:00",
+      "finished_at": "2026-09-08T23:43:48.707886+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_structured_full_execution.json",
+      "sha256": "92363ca757c9a283a637f40625df5f57da329b14a1bcb0a94e331b9f3c6659b5",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 619.5794357080013,
+      "started_at": "2026-09-08T23:44:08.245991+00:00",
+      "finished_at": "2026-09-08T23:54:27.826031+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_structured_resume_execution.json",
+      "sha256": "1a3c479935d9f66a8a684767c9e1d45827098b13db9a9599054223cebacfb439",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+        "structured-scan",
+        "--input",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "--output",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049",
+        "--offline",
+        "--batch-size",
+        "32",
+        "--max-seconds",
+        "900",
+        "--resume"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 17.613518999991356,
+      "started_at": "2026-09-08T23:55:04.372686+00:00",
+      "finished_at": "2026-09-08T23:55:21.986292+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_tests_execution.json",
+      "sha256": "52336e22bab257773324fd623b7b70bc6c4c40c47f4056bcb68560046eaedff7",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "-m",
+        "pytest",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 30.278568167006597,
+      "started_at": "2026-09-08T23:43:01.982145+00:00",
+      "finished_at": "2026-09-08T23:43:32.260914+00:00",
+      "source_unchanged": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_tests_final_execution.json",
+      "sha256": "f89ed41e508e71f10f9470e060ba5762f5dd8be433580dd3074b4964d8e7ad32",
+      "command": [
+        "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+        "-m",
+        "pytest",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.169184959013364,
+      "started_at": "2026-09-09T00:00:43.502542+00:00",
+      "finished_at": "2026-09-09T00:01:15.671761+00:00",
+      "source_unchanged": true
+    }
+  ],
+  "supplemental_execution_records": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/advance_repair_v049_apply_execution.json",
+      "sha256": "7245e57443748ddcf1f8a52801eabe9b7b1c444183c861d12797712e33645145"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/advance_repair_v049_staged_pytest_execution.json",
+      "sha256": "42ece12a9d41b71cea07d8acf605f7170575524443e48177841e888357a42117"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/advance_repair_v049_synthetic_e2e_execution.json",
+      "sha256": "1df918fdc364c944012a8d25c3402d018936394048a96a5a1ad6b16fb2e6c3d9"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_content_v049_verification_execution.json",
+      "sha256": "9b9232d7292f770ed586e51068b1370d0a61836c692f17da8d69e823248c7090"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_reconcile_v049_verification_execution.json",
+      "sha256": "ffb36ff0d74c244f46c9b0ba13d3d4726eba75173b448a52f17c98984ca5f2d2"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_reference_v049_focused_execution.json",
+      "sha256": "9c2a48d3e33399a53017208fc8c64fede5c991f13009597a969d892fa5c80606"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_repair_v049_verification_execution.json",
+      "sha256": "909e1491c400ed2b9ec1dbfba166bf0b67dba615a6d3ce8982f4228d3dec9315"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_v049_verification_execution.json",
+      "sha256": "f8d3c0bd7b4554ce59667b8fdb4affcd50968f2452223117b5403bf3abf9c766"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_inventory_build_execution.json",
+      "sha256": "00fdb6a01cc3eebaf6190701f07604ef4e33aea4b93d81fb21df05f762ffb08c"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_v049_inventory_verification_execution.json",
+      "sha256": "2f8b548e16092daf23628259cb15813034d041dc41bf42e781766b1961a20562"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/personal_attribute_probe_v049_execution.json",
+      "sha256": "1a8de756e1f6ecc81576ee49025e2ab5fd4f3c81a2eb83dca26e8a14368b4c3d"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/personal_attribute_replay_v049_attempt01_execution.json",
+      "sha256": "719a39e30cae2679edf981091f678ca0dc2b4efa2f248ec82692a5d7f499957b"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/personal_attribute_replay_v049_execution.json",
+      "sha256": "634324e00c74b8dce911c926dffc08782a0a41950e91ed574949d142a9995603"
+    }
+  ],
+  "exit_2_meaning": "Research data/semantic coverage gaps, not test failure or confirmed leakage.",
+  "paid_model_calls": 0,
+  "target_code_executed": false,
+  "remote_repositories_modified": false
+}

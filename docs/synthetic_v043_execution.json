@@ -1,0 +1,52 @@
+[
+  {
+    "kind": "dry_run",
+    "command": [
+      "agent_log_privacy/.venv/bin/agentlog-unified",
+      "run",
+      "--config",
+      "agentlog_unified/examples/local_fixture_config.yaml",
+      "--run-id",
+      "synthetic-v043",
+      "--offline",
+      "--dry-run"
+    ],
+    "started_at": "2026-09-08T20:31:32.294434+00:00",
+    "finished_at": "2026-09-08T20:31:32.538788+00:00",
+    "elapsed_seconds": 0.24429420800879598,
+    "exit_code": 0
+  },
+  {
+    "kind": "run",
+    "command": [
+      "agent_log_privacy/.venv/bin/agentlog-unified",
+      "run",
+      "--config",
+      "agentlog_unified/examples/local_fixture_config.yaml",
+      "--run-id",
+      "synthetic-v043",
+      "--offline"
+    ],
+    "started_at": "2026-09-08T20:31:32.538834+00:00",
+    "finished_at": "2026-09-08T20:31:33.284949+00:00",
+    "elapsed_seconds": 0.7461438329919474,
+    "exit_code": 0
+  },
+  {
+    "kind": "resume",
+    "command": [
+      "agent_log_privacy/.venv/bin/agentlog-unified",
+      "run",
+      "--config",
+      "agentlog_unified/examples/local_fixture_config.yaml",
+      "--run-id",
+      "synthetic-v043",
+      "--offline",
+      "--resume"
+    ],
+    "started_at": "2026-09-08T20:31:33.285011+00:00",
+    "finished_at": "2026-09-08T20:31:33.481208+00:00",
+    "elapsed_seconds": 0.19620716699864715,
+    "exit_code": 0
+  }
+]

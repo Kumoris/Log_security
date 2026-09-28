@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+    "aidev-coverage",
+    "--aidev-import",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+    "--analysis-run",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v3",
+    "--output",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reports/aidev-corpus-v040-v3",
+    "--offline"
+  ],
+  "started_at_epoch": 1788896032.401387,
+  "elapsed_seconds": 9.938886880874634,
+  "exit_code": 0,
+  "verified_input": {
+    "writer_active": false,
+    "job_status_counts": {
+      "blocked": 40,
+      "complete": 79,
+      "partial": 140,
+      "pending": 86056
+    },
+    "expected_snapshot": "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f",
+    "context_snapshot_counts": {
+      "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f": 88564
+    }
+  },
+  "stdout": "{\n  \"aidev_source_snapshot\": \"4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f\",\n  \"counts\": {\n    \"dataset_unique_prs\": 939353,\n    \"dataset_prs_selected_in_runs\": 33580,\n    \"dataset_prs_with_analyzed_commit_overlap\": 27,\n    \"dataset_prs_with_all_commits_analyzed_in_one_run\": 12,\n    \"analysis_prs_not_in_dataset\": 0,\n    \"dataset_prs_without_verified_commit_analysis\": 939326,\n    \"dataset_prs_with_git_commit_evidence\": 56,\n    \"dataset_prs_with_git_source_evidence\": 55,\n    \"dataset_prs_with_supported_language_source\": 27,\n    \"dataset_prs_with_log_observations\": 10,\n    \"dataset_prs_with_observed_type_labels\": 7,\n    \"dataset_prs_with_unknown_type_review\": 10,\n    \"dataset_prs_with_pending_batch_jobs\": 33521,\n    \"dataset_prs_with_running_batch_jobs\": 0,\n    \"dataset_prs_with_blocked_batch_jobs\": 3,\n    \"dataset_prs_with_partial_batch_jobs\": 48,\n    \"dataset_prs_with_complete_batch_jobs\": 22,\n    \"dataset_prs_with_job_missing_batch_jobs\": 0\n  },\n  \"denominator\": \"distinct PR identities in the frozen multi-table import\",\n  \"analysis_inputs\": {\n    \"/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v3/batch.sqlite\": \"4276e3391b6c01962c029545ef46d5bcff17d4bc8234b446b51faa3ff9851223\"\n  },\n  \"aidev_import\": \"/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2\",\n  \"limitations\": [\n    \"Metadata/patch ingestion is not Git source analysis.\",\n    \"Matching a PR URL alone is insufficient: dataset commit SHAs must overlap actual Git and analyzed snapshots.\",\n    \"Multiple runs of one PR count once; complete-commit count requires one run covering its dataset commit set.\",\n    \"All-commit coverage can still have parser/language/history gaps; consult per-run code_coverage_audit.\",\n    \"Type labels remain bounded static candidates; no unknown or unexamined PR is marked safe.\",\n    \"Batch links require matching AIDev snapshot, PR identity, repository and a frozen PR commit SHA; external/calibration/non-AIDev contexts are excluded.\",\n    \"A queued job or provided metadata is not analysis. Git commit reads, available source, supported source and log-type observations have separate counts.\",\n    \"PR counts by job status overlap when a PR has multiple commits. A running status without a live writer can be an interrupted job and is not verified analysis.\",\n    \"Supported-scope analysis requires actual source fingerprints plus a completed/partial PyDriller job without a recorded detector/parser failure for that path/side.\",\n    \"Batch observations concern supplied commit changes against their parents, including deleted-side logs; they do not trace full follow-up history.\"\n  ],\n  \"runtime_confirmed\": false,\n  \"network_accessed\": false,\n  \"batch_context_exclusion_counts\": {},\n  \"batch_observation_scope\": \"dataset_commit_changes\",\n  \"full_history_tracing_completed_by_batch\": false\n}\n",
+  "stderr": "",
+  "network_accessed": false,
+  "target_code_executed": false
+}

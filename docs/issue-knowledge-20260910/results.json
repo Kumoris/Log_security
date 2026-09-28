@@ -1,0 +1,465 @@
+{
+  "source": {
+    "url": "https://docs.google.com/document/d/1JK-8cKJD9VPTc8NNmGZ4PtBX8eKUyqMoVFUzvBQIi7Y/edit",
+    "document_title": "Sensitive logs from issue reports",
+    "revision": "ANLCKQnySOAZHoHYKqIc2OLnfetH10PimDj30RBldfItS-SH0TZITdHF70vGDM88VRkSft1H0bWzghmsER9NCYo",
+    "modified_time": "2025-06-04T02:08:27.372Z",
+    "source_sha256": "0962b0cf9c4cd8608f3e00f8ad18cc581c66316e69611ff9947bbe766faacacc",
+    "tab_count": 1,
+    "snapshot_permission": "0600",
+    "remote_document_modified": false
+  },
+  "verification": {
+    "issue-knowledge-scoped-20260910": {
+      "artifacts_verified": 80,
+      "sources_verified": 47
+    },
+    "issue-knowledge-offline-20260910": {
+      "artifacts_verified": 23,
+      "sources_verified": 47
+    },
+    "issue-knowledge-model-20260910": {
+      "artifacts_verified": 23,
+      "sources_verified": 47
+    },
+    "issue-knowledge-synthetic-scan-20260910": {
+      "artifacts_verified": 89,
+      "sources_verified": 47
+    }
+  },
+  "issue_import": {
+    "status": "complete",
+    "exit_code": 0,
+    "created_at": "2026-09-09T16:29:06.106152+00:00",
+    "nonempty_paragraphs": 122,
+    "issue_link_occurrences": 68,
+    "unique_issue_groups": 67,
+    "duplicate_link_occurrences": 1,
+    "human_sensitive_excerpt_groups": 62,
+    "missing_description_groups": 5,
+    "groups_with_type_proposals": 45,
+    "type_proposal_occurrences": 75,
+    "concept_counts": {
+      "account_name": 5,
+      "filesystem_path": 1,
+      "network_address": 4,
+      "network_port": 1,
+      "partition_name": 1,
+      "hostname": 1,
+      "password": 19,
+      "crash_dump": 1,
+      "file_content": 1,
+      "filename": 1,
+      "record_key_value": 2,
+      "access_token": 1,
+      "service_key": 3,
+      "uri_parameters": 3,
+      "configuration": 5,
+      "credential_container": 5,
+      "soap_message": 2,
+      "government_identifier": 1,
+      "private_key": 3,
+      "user_identifier": 2,
+      "database_statement": 2,
+      "authorization_header": 2,
+      "error_message": 1,
+      "row_key": 1,
+      "table_schema": 1,
+      "record_payload": 1,
+      "payment_card": 1,
+      "person_name": 1,
+      "encrypted_key": 1,
+      "initialization_vector": 1,
+      "mutation_content": 1
+    },
+    "mapping_counts": {
+      "new_or_split_type_pending_human": 25,
+      "existing_catalog_proposal": 50
+    },
+    "issue_project_counts": {
+      "ZOOKEEPER": 1,
+      "FLINK": 3,
+      "SVN": 2,
+      "KAFKA": 7,
+      "QPID": 2,
+      "CONTINUUM": 2,
+      "SPARK": 2,
+      "CALCITE": 1,
+      "IMPALA": 1,
+      "HIVE": 3,
+      "DRILL": 1,
+      "OOZIE": 1,
+      "CXF": 4,
+      "ZEPPELIN": 2,
+      "HADOOP": 2,
+      "CLOUDSTACK": 2,
+      "TRAFODION": 1,
+      "KARAF": 1,
+      "BROOKLYN": 1,
+      "DELTASPIKE": 1,
+      "HTTPCORE": 1,
+      "HTTPCLIENT": 4,
+      "DERBY": 1,
+      "SUREFIRE": 1,
+      "CASSANDRA": 2,
+      "ARTEMIS": 1,
+      "CAMEL": 6,
+      "GEODE": 1,
+      "HBASE": 1,
+      "LANG": 1,
+      "MDEPLOY": 1,
+      "OAK": 1,
+      "WHIRR": 1,
+      "PROTOCOLS": 1,
+      "WSS": 1,
+      "DIRSERVER": 1,
+      "JSPWIKI": 1,
+      "Azure/azure-cli": 1
+    },
+    "program_cases_processed": 100,
+    "program_cases_with_analogies": 26,
+    "program_repository_counts": {
+      "567-labs/kura": 46,
+      "0x80/isolate-package": 26,
+      "0x4d31/galah": 28
+    },
+    "program_language_counts": {
+      "python": 46,
+      "typescript": 26,
+      "go": 28
+    },
+    "program_context_counts": {
+      "success": 100
+    },
+    "program_human_truth": 0,
+    "human_subtype_truth": 0,
+    "model_calls": 0,
+    "paid_api_calls": 0,
+    "accuracy": null,
+    "recall": null,
+    "held_out_evaluation": false,
+    "annotation_boundary": "human issue-group sensitivity; rule-generated concepts pending review; no exact span or negative gold",
+    "raw_document_exported": false,
+    "remote_issue_verification": "not_run",
+    "taxonomy_changed": false,
+    "funnel": {
+      "nonempty_paragraphs": 122,
+      "issue_link_occurrences": 68,
+      "unique_issue_groups": 67,
+      "human_sensitive_excerpt_groups": 62,
+      "missing_description_groups": 5,
+      "groups_with_type_proposals": 45,
+      "type_proposal_occurrences": 75,
+      "program_cases_processed": 100,
+      "program_cases_with_analogies": 26,
+      "program_human_truth": 0
+    }
+  },
+  "synthetic": {
+    "status": "complete_with_declared_gaps",
+    "exit_code": 0,
+    "unit": "unique repository + historical SHA + scoped log argument/field-use anchor; lexical candidates separately marked",
+    "funnel": {
+      "input_records": 1,
+      "ingest_gaps": 0,
+      "git_commits": 4,
+      "log_events": 32,
+      "field_use_frame": 40,
+      "selected_field_uses": 40,
+      "not_sampled": 0,
+      "independently_supported": 18,
+      "static_risk_candidates": 6,
+      "exclusion_records": 59,
+      "gap_records": 12,
+      "human_annotations": 0,
+      "model_executions": 0
+    },
+    "by_repository": {
+      "semantic-expansion-fixture": 40
+    },
+    "by_language": {
+      "go": 1,
+      "javascript": 2,
+      "python": 36,
+      "typescript": 1
+    },
+    "by_ambiguity_source": {
+      "business_abbreviation": 6,
+      "explicit_or_other_name": 9,
+      "generic_name": 25
+    },
+    "by_use_role": {
+      "nested_expression_input": 15,
+      "positional_argument": 21,
+      "tree_sitter_log_argument": 4
+    },
+    "by_queue": {
+      "known_semantics_unmapped": 2,
+      "mapped_supported": 12,
+      "semantic_unknown": 22,
+      "supported_non_sensitive": 4
+    },
+    "explicit_type_context_cases": 6,
+    "generic_name_cases": {
+      "selected": 25,
+      "frame": 25,
+      "rule_supported": 15
+    },
+    "interpretation_levels": {
+      "contract_or_declared_evidence": 18
+    },
+    "by_review_status": {
+      "ambiguous": 22,
+      "supported": 18
+    },
+    "by_context": {
+      "bounded_available": 28,
+      "partial": 12
+    },
+    "by_type": {
+      "PII/email": 12
+    },
+    "by_log_association": {
+      "possible_sink_or_lexical_association": 19,
+      "supported_static_call_argument": 21
+    },
+    "by_split": {
+      "synthetic_calibration": 40
+    },
+    "runtime_versions": {
+      "PyDriller": "2.11",
+      "tree-sitter": "0.25.2",
+      "tree-sitter-javascript": "0.25.0",
+      "tree-sitter-typescript": "0.23.2",
+      "tree-sitter-go": "0.25.0"
+    },
+    "metrics": {
+      "pydriller_repository_traversals": 1,
+      "pydriller_commits": 4,
+      "pydriller_modified_files_calls": 4,
+      "pydriller_git_diff_calls": 0,
+      "pydriller_diff_parsed_calls": 11,
+      "pydriller_source_reads": 15,
+      "auxiliary_blob_reads": 2,
+      "merge_fallbacks": 0,
+      "files_extracted": 11,
+      "target_graph_commits": 5,
+      "reused_commits": 0,
+      "reused_files": 0,
+      "cache_rejected_commits": 0,
+      "requested_initial_commits": 1,
+      "resolved_initial_commits": 1,
+      "eligible_commits": 4,
+      "new_files_extracted": 11,
+      "total_file_records": 11,
+      "selected_commits_missing": 0
+    },
+    "ablation_ast_cases": 0,
+    "model_stage": "not_run",
+    "human_evaluation": "pending",
+    "accuracy": null,
+    "recall": null,
+    "category_saturation_established": false,
+    "runtime_leaks_confirmed": 0,
+    "full_aidev_semantic_coverage_established": false,
+    "repository_split_disjoint": false,
+    "sampling_policy": "stratified_round_robin",
+    "stages": {
+      "ingest": "executed",
+      "collect": "local_objects_only",
+      "mine": "pydriller_executed",
+      "detect": "before_sensitivity",
+      "trace": "existing_unfiltered_history_path",
+      "assess": "rules_and_independent_evidence_replay",
+      "export": "executed",
+      "model_extraction": "not_run",
+      "model_review": "not_run",
+      "human_coding": "pending"
+    },
+    "limitations": [
+      "Finite rule contracts; arbitrary business semantics remain pending.",
+      "Historical full-tree auxiliary reads are pinned by PyDriller; fallback recorded.",
+      "No guarantee of complete reverse dependency, runtime reachability or sanitizer effectiveness.",
+      "A fixed supplied-history sampling frame is not the complete AIDev population.",
+      "Schema metadata not rescanned; prior schema review status unchanged.",
+      "Code views mask every literal; inspect exact local historic source for manual judgments."
+    ]
+  },
+  "model": {
+    "status": "complete_with_declared_gaps",
+    "exit_code": 0,
+    "sampling_frame_cases": 100,
+    "upstream_detected_field_frame": "see frozen source coverage.json; model cohort is subset of its selected cases",
+    "selected_cases": 1,
+    "excluded_cases": 99,
+    "counts": {
+      "repository": {
+        "0x4d31/galah": 1
+      },
+      "language": {
+        "go": 1
+      },
+      "ambiguity_source": {
+        "explicit_or_other_name": 1
+      },
+      "split": {
+        "evaluation_pending_human": 1
+      },
+      "queues": {
+        "parser_unsupported": 1,
+        "dynamic_flow_unresolved": 1,
+        "known_semantics_unmapped": 1
+      },
+      "primary_blocker": {
+        "parser_unsupported": 1
+      },
+      "context_availability": {
+        "success": 1
+      }
+    },
+    "conditions": {
+      "B": {
+        "valid_final": 1,
+        "denominator": 1,
+        "supported_semantics": 1,
+        "supported_sensitive_classification": 0,
+        "semantic_granularity": {
+          "nominal_type": 1
+        },
+        "log_relation": {
+          "selected_field": 1
+        },
+        "sensitive_type_state": {
+          "unknown": 1
+        },
+        "types": {},
+        "privacy_risk": {
+          "undetermined": 1
+        }
+      },
+      "C": {
+        "valid_final": 1,
+        "denominator": 1,
+        "supported_semantics": 1,
+        "supported_sensitive_classification": 0,
+        "semantic_granularity": {
+          "nominal_type": 1
+        },
+        "log_relation": {
+          "selected_field": 1
+        },
+        "sensitive_type_state": {
+          "unknown": 1
+        },
+        "types": {},
+        "privacy_risk": {
+          "undetermined": 1
+        }
+      }
+    },
+    "A_supported_semantics": 0,
+    "model_attempts_this_run": 2,
+    "global_attempts_used": 46,
+    "global_attempt_cap": 80,
+    "global_reserved_or_failed": 0,
+    "valid_responses_this_run": 2,
+    "reused_requests": 2,
+    "usage_this_run": {
+      "input_tokens": 27899,
+      "cached_input_tokens": 5632,
+      "output_tokens": 2130,
+      "reasoning_output_tokens": 427
+    },
+    "runtime_reported_models": [
+      null
+    ],
+    "retrieval_requests": 2,
+    "retrieval_status": {
+      "not_found": 2
+    },
+    "program_rejections": 2,
+    "human_truth_count": 0,
+    "accuracy": null,
+    "recall": null,
+    "agreement": null,
+    "runtime_confirmations": 0,
+    "independence_note": "fresh model sessions, not statistical or human independence",
+    "confounds": [
+      "A frozen rules use their original context budget; A/B is not a pure model effect",
+      "B/C exact initial extraction shared; review reused only on identical inputs",
+      "cached token billing affects usage, not evidence validity",
+      "all real outputs await human truth; granularity is not accuracy"
+    ],
+    "funnel": {
+      "input_frozen_cases": 100,
+      "selected": 1,
+      "context_constructed": 1,
+      "B_final": 1,
+      "C_final": 1,
+      "C_pending_or_non_sensitive_queues": 1,
+      "human_confirmed": 0
+    }
+  },
+  "scope_refinement": {
+    "initial_whole_function_retrieval_cases": 76,
+    "final_anchored_retrieval_cases": 26,
+    "denominator": 100,
+    "is_accuracy": false,
+    "reason": "Removed analogy retrieval triggered by unrelated neighboring variables."
+  },
+  "program_analogies_by_concept": {
+    "error_message": 24,
+    "network_address": 2,
+    "network_port": 2
+  },
+  "strict_generic_names": {
+    "definition": [
+      "data",
+      "value",
+      "payload"
+    ],
+    "denominator": 2,
+    "with_analogies": 0
+  },
+  "source_annotations_are_program_gold": false,
+  "all_source_material_used_for_development": true,
+  "accuracy": null,
+  "recall": null,
+  "new_paid_api_calls": 0,
+  "new_actual_model_calls": 2,
+  "global_model_attempts_before": 44,
+  "global_model_attempts_after": 46,
+  "global_model_attempt_cap": 80,
+  "actual_modified_files": [
+    "src/agentlog_unified/issue_knowledge.py",
+    "src/agentlog_unified/semantic_demand.py",
+    "src/agentlog_unified/cli.py",
+    "src/agentlog_unified/__init__.py",
+    "pyproject.toml",
+    "tests/test_issue_knowledge.py"
+  ],
+  "limits": [
+    "No exact original/redacted span pairs or complete negative annotations in the supplied document.",
+    "Nearest preceding issue link association is a document-layout heuristic; source issues not fetched.",
+    "Human sensitivity labels apply only to selected issue excerpt groups, not subtype or program correctness.",
+    "31 explicit phrase concepts and 16 proposed new/split concepts do not establish taxonomy completeness.",
+    "Real corpus is the existing frozen 100 uses from 3 repositories; no new real Git history fetched.",
+    "Model pilot remains unknown for sensitive type; missing version-bound http.Request.RemoteAddr field definition.",
+    "Existing full AIDev schema and account cells not rescanned; source values never reconstructed.",
+    "No runtime target code execution, sanitizer-effect confirmation, held-out accuracy or category saturation."
+  ],
+  "offline-resume": {
+    "resumed_without_calls": true
+  },
+  "scoped-resume": {
+    "resumed_without_calls": true
+  },
+  "model-resume": {
+    "resumed_without_calls": true
+  },
+  "tests": {
+    "passed": 769,
+    "failed": 0,
+    "source": "pytest.txt"
+  }
+}

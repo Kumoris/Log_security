@@ -1,0 +1,16 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:28:52.314312+00:00",
+  "ended_utc": "2026-09-08T23:28:52.412498+00:00",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py\", line 240, in <module>\n    self_test() if sys.argv[1:] == ['--self-test'] else main()\n                                                        ^^^^^^\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py\", line 162, in main\n    pm, mm, mc, proof = baseline_proof(parent, repair, merged)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py\", line 87, in baseline_proof\n    'reconcile_implementation_matches_reviewed_code': fp['implementation_sha256'] == {name: sha(ROOT / 'src/agentlog_unified' / name) for name in fp['implementation_sha256']},\n                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py\", line 87, in <dictcomp>\n    'reconcile_implementation_matches_reviewed_code': fp['implementation_sha256'] == {name: sha(ROOT / 'src/agentlog_unified' / name) for name in fp['implementation_sha256']},\n                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/audit_aidev_structured_gain_v048.py\", line 35, in sha\n    with Path(path).open('rb') as stream:\n         ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/lzh/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/1'\n",
+  "helper_sha256_before": "29344d7d90da8de3df5a1aeb2fa2968995b5e43091400979a3b98882046ccfde",
+  "helper_sha256_after": "29344d7d90da8de3df5a1aeb2fa2968995b5e43091400979a3b98882046ccfde",
+  "source_code_or_tests_modified": false,
+  "source_values_decoded": false
+}

@@ -1,0 +1,409 @@
+{
+  "batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3",
+  "cli_exit_code": 2,
+  "actual_extraction_metrics": {
+    "files_extracted": 76,
+    "pydriller_commits": 21,
+    "pydriller_diff_parsed_calls": 76,
+    "pydriller_git_diff_calls": 28,
+    "pydriller_repository_traversals": 21,
+    "pydriller_source_reads": 142,
+    "pydriller_modified_files_calls": 7,
+    "log_observations": 84
+  },
+  "job_statuses": {
+    "blocked": 5,
+    "complete": 2,
+    "partial": 19,
+    "pending": 24442
+  },
+  "unique_dataset_commits": 24468,
+  "context_associations": 25152,
+  "overall": {
+    "log_versions": 84,
+    "typed_versions": 53,
+    "unknown_review_versions": 84,
+    "categories": {
+      "BIZ": 2,
+      "DIAG": 47,
+      "QID": 4
+    },
+    "types": {
+      "BIZ.response_body": 2,
+      "DIAG.exception_message": 47,
+      "QID.network_identifier": 4
+    },
+    "unknown_review_reasons": {
+      "bounded_semantics_incomplete": 84,
+      "broad_carrier_requires_value_context": 49,
+      "carrier_contents_unresolved": 49,
+      "identifier_only_type_hint": 53,
+      "semantic_parser_unavailable": 84,
+      "unclassified_output_value": 43
+    }
+  },
+  "by_path_extension": {
+    ".go": {
+      "log_versions": 81,
+      "typed_versions": 51,
+      "unknown_review_versions": 81,
+      "categories": {
+        "BIZ": 2,
+        "DIAG": 45,
+        "QID": 4
+      },
+      "types": {
+        "BIZ.response_body": 2,
+        "DIAG.exception_message": 45,
+        "QID.network_identifier": 4
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 81,
+        "broad_carrier_requires_value_context": 47,
+        "carrier_contents_unresolved": 47,
+        "identifier_only_type_hint": 51,
+        "semantic_parser_unavailable": 81,
+        "unclassified_output_value": 42
+      }
+    },
+    ".ts": {
+      "log_versions": 2,
+      "typed_versions": 1,
+      "unknown_review_versions": 2,
+      "categories": {
+        "DIAG": 1
+      },
+      "types": {
+        "DIAG.exception_message": 1
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 2,
+        "broad_carrier_requires_value_context": 1,
+        "carrier_contents_unresolved": 1,
+        "identifier_only_type_hint": 1,
+        "semantic_parser_unavailable": 2,
+        "unclassified_output_value": 1
+      }
+    },
+    ".tsx": {
+      "log_versions": 1,
+      "typed_versions": 1,
+      "unknown_review_versions": 1,
+      "categories": {
+        "DIAG": 1
+      },
+      "types": {
+        "DIAG.exception_message": 1
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 1,
+        "broad_carrier_requires_value_context": 1,
+        "carrier_contents_unresolved": 1,
+        "identifier_only_type_hint": 1,
+        "semantic_parser_unavailable": 1
+      }
+    }
+  },
+  "by_language_group": {
+    "Go": {
+      "log_versions": 81,
+      "typed_versions": 51,
+      "unknown_review_versions": 81,
+      "categories": {
+        "BIZ": 2,
+        "DIAG": 45,
+        "QID": 4
+      },
+      "types": {
+        "BIZ.response_body": 2,
+        "DIAG.exception_message": 45,
+        "QID.network_identifier": 4
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 81,
+        "broad_carrier_requires_value_context": 47,
+        "carrier_contents_unresolved": 47,
+        "identifier_only_type_hint": 51,
+        "semantic_parser_unavailable": 81,
+        "unclassified_output_value": 42
+      }
+    },
+    "non-Go": {
+      "log_versions": 3,
+      "typed_versions": 2,
+      "unknown_review_versions": 3,
+      "categories": {
+        "DIAG": 2
+      },
+      "types": {
+        "DIAG.exception_message": 2
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 3,
+        "broad_carrier_requires_value_context": 2,
+        "carrier_contents_unresolved": 2,
+        "identifier_only_type_hint": 2,
+        "semantic_parser_unavailable": 3,
+        "unclassified_output_value": 1
+      }
+    }
+  },
+  "by_dataset_source_snapshot": {
+    "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f": {
+      "log_versions": 84,
+      "typed_versions": 53,
+      "unknown_review_versions": 84,
+      "categories": {
+        "BIZ": 2,
+        "DIAG": 47,
+        "QID": 4
+      },
+      "types": {
+        "BIZ.response_body": 2,
+        "DIAG.exception_message": 47,
+        "QID.network_identifier": 4
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 84,
+        "broad_carrier_requires_value_context": 49,
+        "carrier_contents_unresolved": 49,
+        "identifier_only_type_hint": 53,
+        "semantic_parser_unavailable": 84,
+        "unclassified_output_value": 43
+      }
+    }
+  },
+  "by_git_snapshot_sha": {
+    "116ec025db215994c7cdce1b129a0509800f5ee3": {
+      "log_versions": 4,
+      "typed_versions": 1,
+      "unknown_review_versions": 4,
+      "categories": {
+        "DIAG": 1
+      },
+      "types": {
+        "DIAG.exception_message": 1
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 4,
+        "broad_carrier_requires_value_context": 1,
+        "carrier_contents_unresolved": 1,
+        "identifier_only_type_hint": 1,
+        "semantic_parser_unavailable": 4,
+        "unclassified_output_value": 3
+      }
+    },
+    "187aa22da3dfc556da24147c1d7eded15afeeaa3": {
+      "log_versions": 9,
+      "typed_versions": 5,
+      "unknown_review_versions": 9,
+      "categories": {
+        "DIAG": 5
+      },
+      "types": {
+        "DIAG.exception_message": 5
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 9,
+        "broad_carrier_requires_value_context": 5,
+        "carrier_contents_unresolved": 5,
+        "identifier_only_type_hint": 5,
+        "semantic_parser_unavailable": 9,
+        "unclassified_output_value": 5
+      }
+    },
+    "1b599c797edf9860db709a7de8e347e092466480": {
+      "log_versions": 24,
+      "typed_versions": 15,
+      "unknown_review_versions": 24,
+      "categories": {
+        "DIAG": 13,
+        "QID": 2
+      },
+      "types": {
+        "DIAG.exception_message": 13,
+        "QID.network_identifier": 2
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 24,
+        "broad_carrier_requires_value_context": 13,
+        "carrier_contents_unresolved": 13,
+        "identifier_only_type_hint": 15,
+        "semantic_parser_unavailable": 24,
+        "unclassified_output_value": 12
+      }
+    },
+    "31fd17fdacbc130eae8fd097548a14b4c496bf7c": {
+      "log_versions": 1,
+      "typed_versions": 0,
+      "unknown_review_versions": 1,
+      "categories": {},
+      "types": {},
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 1,
+        "semantic_parser_unavailable": 1,
+        "unclassified_output_value": 1
+      }
+    },
+    "5223cc93cef7ec54d81e9764166d26a1c5bd3ea8": {
+      "log_versions": 1,
+      "typed_versions": 1,
+      "unknown_review_versions": 1,
+      "categories": {
+        "DIAG": 1
+      },
+      "types": {
+        "DIAG.exception_message": 1
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 1,
+        "broad_carrier_requires_value_context": 1,
+        "carrier_contents_unresolved": 1,
+        "identifier_only_type_hint": 1,
+        "semantic_parser_unavailable": 1
+      }
+    },
+    "61185db22ee39a4bc909404c2397fac31f6d4da9": {
+      "log_versions": 31,
+      "typed_versions": 20,
+      "unknown_review_versions": 31,
+      "categories": {
+        "DIAG": 18,
+        "QID": 2
+      },
+      "types": {
+        "DIAG.exception_message": 18,
+        "QID.network_identifier": 2
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 31,
+        "broad_carrier_requires_value_context": 18,
+        "carrier_contents_unresolved": 18,
+        "identifier_only_type_hint": 20,
+        "semantic_parser_unavailable": 31,
+        "unclassified_output_value": 18
+      }
+    },
+    "6a1774ef7c58f04c06f98bda109ee601fad3f92f": {
+      "log_versions": 6,
+      "typed_versions": 4,
+      "unknown_review_versions": 6,
+      "categories": {
+        "BIZ": 1,
+        "DIAG": 3
+      },
+      "types": {
+        "BIZ.response_body": 1,
+        "DIAG.exception_message": 3
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 6,
+        "broad_carrier_requires_value_context": 4,
+        "carrier_contents_unresolved": 4,
+        "identifier_only_type_hint": 4,
+        "semantic_parser_unavailable": 6,
+        "unclassified_output_value": 2
+      }
+    },
+    "715ba2b35b3e31dab066677fa34f09c6200df2ce": {
+      "log_versions": 2,
+      "typed_versions": 1,
+      "unknown_review_versions": 2,
+      "categories": {
+        "DIAG": 1
+      },
+      "types": {
+        "DIAG.exception_message": 1
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 2,
+        "broad_carrier_requires_value_context": 1,
+        "carrier_contents_unresolved": 1,
+        "identifier_only_type_hint": 1,
+        "semantic_parser_unavailable": 2,
+        "unclassified_output_value": 1
+      }
+    },
+    "a2e878bf5fb0f8136c4e9f72521d48dea99f44a6": {
+      "log_versions": 4,
+      "typed_versions": 4,
+      "unknown_review_versions": 4,
+      "categories": {
+        "BIZ": 1,
+        "DIAG": 3
+      },
+      "types": {
+        "BIZ.response_body": 1,
+        "DIAG.exception_message": 3
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 4,
+        "broad_carrier_requires_value_context": 4,
+        "carrier_contents_unresolved": 4,
+        "identifier_only_type_hint": 4,
+        "semantic_parser_unavailable": 4
+      }
+    },
+    "caafeba4af45bdb821d5232eddb7d89d3d5b272e": {
+      "log_versions": 2,
+      "typed_versions": 2,
+      "unknown_review_versions": 2,
+      "categories": {
+        "DIAG": 2
+      },
+      "types": {
+        "DIAG.exception_message": 2
+      },
+      "unknown_review_reasons": {
+        "bounded_semantics_incomplete": 2,
+        "broad_carrier_requires_value_context": 2,
+        "carrier_contents_unresolved": 2,
+        "identifier_only_type_hint": 2,
+        "semantic_parser_unavailable": 2,
+        "unclassified_output_value": 1
+      }
+    }
+  },
+  "file_audit_rows_by_extension": {
+    ".go": 47,
+    ".json": 1,
+    ".md": 11,
+    ".mod": 1,
+    ".sum": 1,
+    ".ts": 11,
+    ".tsx": 3,
+    ".yaml": 1
+  },
+  "gap_reasons": {
+    "commit_diff_error": 1,
+    "commit_extraction_unavailable": 5,
+    "lexical_fallback_without_ast": 111
+  },
+  "boundaries": {
+    "observation_scope": "dataset_commit_changes",
+    "full_history_tracing_completed": false,
+    "full_dataset_coverage_claim": false,
+    "runtime_confirmed": false,
+    "human_review_status": "pending",
+    "new_type_status": "not_established",
+    "source_snapshots_are_associations_not_independent_observations": true
+  },
+  "export_sha256": {
+    "summary.json": "7e9974dfbc91aba67f69a6e71792e8e31be5b05b87633c0a834cb3fd34cf0f37",
+    "log_observations.jsonl": "fcc7b0ea41cd5b20b9031f85da6fdbff7fc1ef48861dc46d2338984638c7b4cf",
+    "commit_audit.jsonl": "dfe2484960bc99e115078a8074d917caad814b3b77eb2042d6f13cb990dd5933",
+    "file_audit.jsonl": "4d86cefb4efad57c392c142909184b9690e6042225d197215268c69ac9f95005",
+    "type_occurrences.jsonl": "1e8194a60beaedb67e5ef1934f414c664b1ef871e2ef57350fb3df75077de3bb",
+    "taxonomy_catalog.json": "7c2b2a512367a3ec396fdb829063aad72ae513a762801515698dcd85bd9d08ae",
+    "contexts.jsonl": "453c4df320f05940477aff0d9e28786081ce0d3e763a79ff24181354ce1117d2",
+    "type_summary.csv": "719a5815bd1d7ecea2c2649612d6fa6bbf5457db5beaf556f573adadafb020f1",
+    "gaps.jsonl": "915fbf155928d09562c76ff4eb0dcebba89c2d31fdd3396985610799d1636c89",
+    "input_gaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pending_commits.jsonl": "04f87c8e38c2b96bdf2c65bcba7d6cf135fba7926a7eae978c3ddfb6186f80c3",
+    "comparisons.jsonl": "88c05cc1a9451aba8bdbd093490b0d5bfa0d972a4ab9fcd8de467245b31222c4",
+    "unknown_type_review_queue.csv": "8f27119cb1b446023c43f5f808256e5d4aac03e5752db343bfb9024a06fee733",
+    "type_summary.json": "6ec8e3862bb19ae248e7140ea1a2cbc801f51ff8c0513d2b932e6008cdb975a1",
+    "unknown_type_review_queue.jsonl": "614abe16be4014556d9aeb06d6d9201ee90e838fd0cfb6b00d54e26350bcbf16",
+    "type_occurrences.csv": "8b7c1c2c9cf308fb2c90a9374874b65a741a3f4ad54b74a89e69094f7a37ebfd"
+  }
+}

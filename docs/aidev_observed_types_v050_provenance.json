@@ -1,0 +1,1315 @@
+{
+  "recorded_utc": "2026-09-09T08:02:56.805815+00:00",
+  "dataset": "aidev",
+  "catalog_version": "1.2.0",
+  "source_taxonomy_versions": [
+    "1.0.0",
+    "1.1.0",
+    "1.2.0"
+  ],
+  "catalog_subtypes": 49,
+  "row_count": 588,
+  "sources": [
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-full-v5",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary",
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-anchors-v3",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary",
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-prior-cache-v042",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary",
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-expansion-v043-final",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary",
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/observed_type_inventory_v044.csv",
+      "sha256": "8d9bf1c59ece1c1c883218883da00cefafc301265c04c87a562863805a54fd2d",
+      "observation_scope": "dataset_commit_changes",
+      "dataset": "aidev",
+      "source_run": "aidev-expansion-v044",
+      "count_unit": "observed_log_version_per_type_in_one_batch",
+      "coverage_status": "incomplete_or_gaps",
+      "candidate_status_count_unit": "unavailable_in_historical_log_summary",
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz",
+      "sha256": "0947265dc4656e9703c7b1d712e6d779a547d56aedb403c7047904559c57a72c",
+      "dataset": "aidev",
+      "source_run": "aidev-v046",
+      "observation_scope": "dataset_text_reconciled",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "manifest_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/manifest.json",
+      "manifest_sha256": "99a986e6ec0d1f3151920f1edcc7aa19f00b23f213280bf04afae99a1746bc92",
+      "coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_coverage.json",
+      "coverage_sha256": "e7d8c36ef65d01afe66ebe5429a7d4ff759f8ddaff3f8298316b5ac6f260b296",
+      "parent_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v044",
+      "repair_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v045-final",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_file_hashes_verified_by_reconciler": {
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_repository.parquet": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_user.parquet": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pr_task_type.parquet": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pull_request.parquet": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/issue.parquet": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_comments.parquet": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commit_details.parquet": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commits.parquet": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments.parquet": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments_v2.parquet": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_reviews.parquet": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_task_type.parquet": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_timeline.parquet": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pull_request.parquet": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/related_issue.parquet": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/repository.parquet": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+        "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/user.parquet": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+      },
+      "implementation_sha256": "130d8c6a4769ed5f84d051b20756f41414e8a4c5a5b181d42a63693419ae10b1",
+      "source_snapshot_counts": {
+        "candidate_identities": 1479597,
+        "candidate_occurrence_variants": 1479597,
+        "excluded_identities": 11871,
+        "excluded_occurrence_variants": 11871,
+        "unknown_type_review_cells": 17362345,
+        "unknown_type_review_export_records": 1114843,
+        "parent_all_selected_text_rows_visited": true,
+        "repair_cell_status_counts": {
+          "complete_with_semantic_gaps": 1
+        },
+        "repair_data_gap_records": 0
+      },
+      "identity_unit": "frozen source cell + Unicode span + rule + category + subtype",
+      "variant_unit": "logical identity + complete classifier details and exclusion state",
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v047/schema_type_summary.json",
+      "sha256": "e0a9f9ff57142073caaaa26f7b5c248c7d7dbfd1300de8e39b75b182aa3edb37",
+      "dataset": "aidev",
+      "source_run": "aidev-v047",
+      "observation_scope": "dataset_schema_context",
+      "count_unit": "candidate_source_cell",
+      "coverage_status": "complete_with_schema_gaps",
+      "candidate_status_count_unit": "candidate_source_cell",
+      "manifest_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v047/manifest.json",
+      "manifest_sha256": "9c9f9bc70ea2e3df903d41ab711c921756ea43a8079adbd531d7703e668cdc0a",
+      "coverage_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/schema-runs/aidev-v047/schema_coverage.json",
+      "coverage_sha256": "6997b011395a77e93a4cd0735cb8e3837ab38b1541bcb6b3a29de046c1a3107b",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "implementation_source_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+        "schema_scan.py": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+      },
+      "frozen_source_inputs": [
+        {
+          "bytes": 330776130,
+          "path": "all_pull_request.parquet",
+          "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+        },
+        {
+          "bytes": 6136253,
+          "path": "all_repository.parquet",
+          "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+        },
+        {
+          "bytes": 2511706,
+          "path": "all_user.parquet",
+          "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+        },
+        {
+          "bytes": 715969,
+          "path": "human_pr_task_type.parquet",
+          "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+        },
+        {
+          "bytes": 4387171,
+          "path": "human_pull_request.parquet",
+          "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+        },
+        {
+          "bytes": 3222463,
+          "path": "issue.parquet",
+          "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+        },
+        {
+          "bytes": 25857243,
+          "path": "pr_comments.parquet",
+          "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+        },
+        {
+          "bytes": 485214032,
+          "path": "pr_commit_details.parquet",
+          "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+        },
+        {
+          "bytes": 8314097,
+          "path": "pr_commits.parquet",
+          "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+        },
+        {
+          "bytes": 14728130,
+          "path": "pr_review_comments.parquet",
+          "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+        },
+        {
+          "bytes": 21125785,
+          "path": "pr_review_comments_v2.parquet",
+          "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+        },
+        {
+          "bytes": 7517041,
+          "path": "pr_reviews.parquet",
+          "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+        },
+        {
+          "bytes": 2993264,
+          "path": "pr_task_type.parquet",
+          "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+        },
+        {
+          "bytes": 34108415,
+          "path": "pr_timeline.parquet",
+          "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+        },
+        {
+          "bytes": 16855612,
+          "path": "pull_request.parquet",
+          "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+        },
+        {
+          "bytes": 75579,
+          "path": "related_issue.parquet",
+          "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+        },
+        {
+          "bytes": 167251,
+          "path": "repository.parquet",
+          "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+        },
+        {
+          "bytes": 68935,
+          "path": "user.parquet",
+          "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+        }
+      ],
+      "source_snapshot_counts": {
+        "all_fields": 160,
+        "selected_fields": 22,
+        "unresolved_field_records": 138,
+        "counts": {
+          "cells_decoded": 4504029,
+          "invalid": 13,
+          "null": 329537,
+          "placeholder_or_example": 12,
+          "schema_context_candidate": 3688655,
+          "unresolved": 485812
+        }
+      },
+      "account_reference_coverage": {
+        "comparison": "exact_string_equality_no_trim_casefold_or_unicode_normalization",
+        "count_unit": "Reference table cells read for lookup setup; separate from classified source cells.",
+        "distinct_nonempty_reference_strings": 72189,
+        "reference_cells_decoded": 73985,
+        "reference_values_or_value_hashes_exported": false,
+        "sources": [
+          {
+            "column_name": "login",
+            "counts": {
+              "nonempty_string": 1796,
+              "reference_cells_decoded": 1796
+            },
+            "native_type": "string",
+            "source_rows": 1796,
+            "source_sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+            "status": "complete",
+            "table": "user",
+            "table_path": "user.parquet",
+            "values_decoded": true
+          },
+          {
+            "column_name": "login",
+            "counts": {
+              "nonempty_string": 72189,
+              "reference_cells_decoded": 72189
+            },
+            "native_type": "string",
+            "source_rows": 72189,
+            "source_sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+            "status": "complete",
+            "table": "all_user",
+            "table_path": "all_user.parquet",
+            "values_decoded": true
+          }
+        ],
+        "status": "complete"
+      },
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048/structured_type_summary.jsonl.gz",
+      "sha256": "71b7644e4206c1194a6b3e1fd3b311a6a8b8103fbb3dc4bc11d9151dda76c7f5",
+      "dataset": "aidev",
+      "source_run": "aidev-v048",
+      "observation_scope": "dataset_structured_text",
+      "count_unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details",
+      "coverage_status": "complete_with_semantic_gaps",
+      "candidate_status_count_unit": "unavailable_per_type_in_structured_summary",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "manifest_sha256": "81c33de87fc0dbca6db74606ca6a0e9fc71c7b5048f9df3eadc327a5f138aaca",
+      "export_state_sha256": "1a2f74d033a803eb5c87d8a6b11ddd7045bd2022eaf73afbc3ea765234e3c518",
+      "implementation_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+        "structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6"
+      },
+      "limits": {
+        "max_decode_layers": 2,
+        "max_depth": 32,
+        "max_documents": 128,
+        "max_matches": 1000,
+        "max_nodes": 10000,
+        "max_source_chars": 1048576
+      },
+      "source_snapshot_counts": {
+        "processed_rows": 2456073,
+        "documents": 49669,
+        "candidate_occurrences": 1140,
+        "excluded_occurrences": 57,
+        "data_gap_records": 44289,
+        "unknown_review_source_cells": 17362345
+      },
+      "source_taxonomy_version": "1.0.0"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v049/merged_type_summary.jsonl.gz",
+      "sha256": "a64add9d4ea62b1b5b1db02a4119a408de922834bcb83cd887a9ad0f34c90fb5",
+      "dataset": "aidev",
+      "source_run": "aidev-v049",
+      "observation_scope": "dataset_text_reconciled",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "source_taxonomy_version": "1.1.0",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "manifest_sha256": "c8df4093da243187fa7216bc05bb4403587c8ab19bc37d55c307a2208a3e0061",
+      "coverage_sha256": "5ea047f7f538dd8d5409407df4316127ebaf23e6a867e9cb0bd9ec0e1cee61cd",
+      "implementation_sha256": {
+        "content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+        "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+        "content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+        "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+      },
+      "actual_execution_fingerprint": {
+        "execution_dependency_sha256": {
+          "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+          "content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+          "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+        },
+        "implementation_sha256": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+        "input_files": {
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed/.fingerprint-key": "227c5f5380146744c55591b2b6c00624e14647a9c342978c46261de50b9c8417",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed/content.sqlite": "13cbc8ef002b8cac40b2e6176a52644bc16fb63862001b0fe3828a3fb24643bd",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049-seed/manifest.json": "0a93974b1b7399afc646ee5dd6e3d58bc52ac3cc2fc950fc21b9b4aa08132c9a",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/advance_state.json": "f3a0aa425ef092c7612dc03605167e90f55ea6f738ac9d7d278dd31a35811066",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/content_coverage.json": "b9543eede299d15603929a60b01754b8bb8dd5a438af1e313c6d09bedcad30ad",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049/manifest.json": "0cdb8904b5b64eae573e42b56328351afcc6b8d1a1a10c6030e5448d9f513c15",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049/scan/manifest.json": "ef42b3bf7f17accd0d274a9188e5bc031ad984d3974d928e5c110733d9b22b8a",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049/scan/repair.sqlite": "c547cc25b31a1a9cc2acdee7e1cd7d8c05ce102417130339a9d5cc6228d6af4a",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049/scan/repair_coverage.json": "9993d13a320883936c5e14b4064eb87212c4fcddcd6b985432729a99b85455e6",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049/selection/selection.jsonl": "bcbf744efc5d5c488194e7ee5e388256859d77c03a7c8108090122e3608c5d7e",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049/selection/selection_manifest.json": "34a24e95dcd76610ed840f2eadf71888f50c0b85097b854cebe594a72ce13908"
+        },
+        "original_classifier_sha256": {
+          "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+          "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+        },
+        "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+        "verified_source_files": {
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_repository.parquet": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_user.parquet": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pr_task_type.parquet": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pull_request.parquet": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/issue.parquet": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_comments.parquet": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commit_details.parquet": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commits.parquet": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments.parquet": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments_v2.parquet": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_reviews.parquet": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_task_type.parquet": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_timeline.parquet": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pull_request.parquet": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/related_issue.parquet": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/repository.parquet": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/user.parquet": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+        }
+      },
+      "parent_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v049",
+      "repair_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v049",
+      "source_snapshot_counts": {
+        "candidate_identities": 1481967,
+        "candidate_occurrence_variants": 1481967,
+        "excluded_identities": 11871,
+        "excluded_occurrence_variants": 11871,
+        "unknown_type_review_cells": 17362345,
+        "repair_data_gap_records": 0,
+        "repair_cell_status_counts": {
+          "complete_with_semantic_gaps": 1
+        },
+        "parent_all_selected_text_rows_visited": true
+      },
+      "all_selected_rows_visited": true,
+      "identity_unit": "frozen source cell + Unicode span + rule + category + subtype",
+      "variant_unit": "logical identity + complete classifier details and exclusion state"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_type_summary.jsonl.gz",
+      "sha256": "ae5542313bd2e2cee9a46f454754e8c0b3f30abdf88851b5aa723226defee8a0",
+      "dataset": "aidev",
+      "source_run": "aidev-v049",
+      "observation_scope": "dataset_structured_text",
+      "count_unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details",
+      "coverage_status": "complete_with_semantic_gaps",
+      "candidate_status_count_unit": "unavailable_per_type_in_structured_summary",
+      "source_taxonomy_version": "1.1.0",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "manifest_sha256": "ccd4993ac3ae54a65fce57052c651ba0bcb8afcbbd5901656beef4e42a576618",
+      "coverage_sha256": "923d19fc5307b99b3bc41c65b76de783491c440472d19f7626c0c882fbb5e6aa",
+      "export_state_sha256": "638d6e8cf080888351c25a1a4ad0cb36c724bb32c83a9454bd1b5d4ae504e414",
+      "implementation_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+        "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+        "structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+        "structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+      },
+      "actual_execution_fingerprint": {
+        "inputs": [
+          {
+            "bytes": 330776130,
+            "path": "all_pull_request.parquet",
+            "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+          },
+          {
+            "bytes": 6136253,
+            "path": "all_repository.parquet",
+            "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+          },
+          {
+            "bytes": 2511706,
+            "path": "all_user.parquet",
+            "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+          },
+          {
+            "bytes": 715969,
+            "path": "human_pr_task_type.parquet",
+            "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+          },
+          {
+            "bytes": 4387171,
+            "path": "human_pull_request.parquet",
+            "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+          },
+          {
+            "bytes": 3222463,
+            "path": "issue.parquet",
+            "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+          },
+          {
+            "bytes": 25857243,
+            "path": "pr_comments.parquet",
+            "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+          },
+          {
+            "bytes": 485214032,
+            "path": "pr_commit_details.parquet",
+            "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+          },
+          {
+            "bytes": 8314097,
+            "path": "pr_commits.parquet",
+            "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+          },
+          {
+            "bytes": 14728130,
+            "path": "pr_review_comments.parquet",
+            "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+          },
+          {
+            "bytes": 21125785,
+            "path": "pr_review_comments_v2.parquet",
+            "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+          },
+          {
+            "bytes": 7517041,
+            "path": "pr_reviews.parquet",
+            "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+          },
+          {
+            "bytes": 2993264,
+            "path": "pr_task_type.parquet",
+            "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+          },
+          {
+            "bytes": 34108415,
+            "path": "pr_timeline.parquet",
+            "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+          },
+          {
+            "bytes": 16855612,
+            "path": "pull_request.parquet",
+            "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+          },
+          {
+            "bytes": 75579,
+            "path": "related_issue.parquet",
+            "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+          },
+          {
+            "bytes": 167251,
+            "path": "repository.parquet",
+            "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+          },
+          {
+            "bytes": 68935,
+            "path": "user.parquet",
+            "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+          }
+        ],
+        "limits": {
+          "max_decode_layers": 2,
+          "max_depth": 32,
+          "max_documents": 128,
+          "max_matches": 1000,
+          "max_nodes": 10000,
+          "max_source_chars": 1048576
+        },
+        "pyarrow_version": "21.0.0",
+        "source_import": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+        "source_sha256": {
+          "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+          "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+          "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+          "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+          "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+          "structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+          "structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+          "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+          "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+        },
+        "taxonomy_version": "1.1.0",
+        "version": "structured-scan-1"
+      },
+      "source_snapshot_counts": {
+        "source_rows": 2456073,
+        "processed_rows": 2456073,
+        "candidate_occurrences": 1159,
+        "excluded_occurrences": 57,
+        "counts": {
+          "cells_invalid_json": 43626,
+          "cells_not_applicable": 17313666,
+          "cells_parsed_with_semantic_gaps": 4828,
+          "cells_partial": 225,
+          "characters_seen": 2706989370,
+          "empty_cells": 1,
+          "nonempty_cells": 17362345,
+          "null_cells": 1570131,
+          "parser_array_nodes": 1421,
+          "parser_boolean_nodes": 867,
+          "parser_candidate_nodes": 1182,
+          "parser_documents_detected": 49669,
+          "parser_documents_invalid": 44166,
+          "parser_documents_parsed": 5422,
+          "parser_documents_selected": 49669,
+          "parser_empty_array_nodes": 94,
+          "parser_empty_object_nodes": 30,
+          "parser_empty_string_nodes": 58,
+          "parser_encoded_json_attempts": 65,
+          "parser_encoded_json_invalid": 42,
+          "parser_encoded_json_parsed": 23,
+          "parser_gap_records": 44289,
+          "parser_ignored_fences": 148599,
+          "parser_keyed_nodes": 16108,
+          "parser_matches_emitted": 1216,
+          "parser_nodes_visited": 24151,
+          "parser_null_nodes": 373,
+          "parser_number_nodes": 5422,
+          "parser_object_nodes": 5752,
+          "parser_source_characters": 2706989370,
+          "parser_source_characters_considered": 2706989370,
+          "parser_string_nodes": 10316,
+          "parser_unknown_nodes": 22969,
+          "parser_unmapped_keys": 14829,
+          "parser_unsupported_nodes": 1302,
+          "parser_whitespace_string_nodes": 1,
+          "rows_decoded": 2456073,
+          "text_cells_visited": 18932477
+        }
+      },
+      "all_selected_rows_visited": true
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v050/merged_type_summary.jsonl.gz",
+      "sha256": "24838d67dae9f93a6be506d8cf6f35bf3e63211a16f0af553d73e1496c9110c9",
+      "dataset": "aidev",
+      "source_run": "aidev-v050",
+      "observation_scope": "dataset_text_reconciled",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "source_taxonomy_version": "1.2.0",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "manifest_sha256": "155ca90c39501f1dc301561567de249d61334fd0a4e132fc3c73dfaf2f09a23b",
+      "coverage_sha256": "eb486e9bc4d228a40ac36f124f6070d6b7dd468ded07ce0615810981b600dd0c",
+      "implementation_sha256": {
+        "content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+        "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+        "content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+        "content_types.py": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+        "storage.py": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+        "taxonomy.py": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973"
+      },
+      "actual_execution_fingerprint": {
+        "execution_dependency_sha256": {
+          "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+          "content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+          "content_types.py": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+          "storage.py": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+          "taxonomy.py": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973"
+        },
+        "implementation_sha256": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+        "input_files": {
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/.fingerprint-key": "2dafe1ffc3680cc8b0102d91462a73366e6ecced1f21ed723f98c47e6dc881b9",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/content.sqlite": "3948b172451751f6927d86ceeefad85be618dd14c4892985a72817c67fc4f80b",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050-seed/manifest.json": "1402e3056d51f6113d25c3959ec87982110053c0b4b6d22d009885ca926a5acb",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/advance_state.json": "f9dae673919597e60d80df57cf71f5ab083fab25a7d854f06ee4408ebbfbc2bc",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/content_coverage.json": "ab42933b4e82c283319a2e73dc8bee10d9f72c51dfdab0de3e47ca33f5e7f04c",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/manifest.json": "96a93d7fbf786f11ebb1cd85584df79e820f31eef0bc360fcbd3efe3d17a8663",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/manifest.json": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/manifest.json": "0c83263383341a32e59c38b664a5750bb95f03b9a8161c796b80e8e38ffb1817",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair.sqlite": "4588026d3cc574fdedcfa87ece0edcdeb42fb8903521cca2d59d8431e93a42f8",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/scan/repair_coverage.json": "e455ace00a460f2fe6e24256a058a621ca3f14ed7df4613a7efe478e26e6aaec",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/selection/selection.jsonl": "773a6a744425a7b1ede67d117ca40f9299b37da3965f9495aeabb69775777bc5",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050/selection/selection_manifest.json": "c9c58badf9f0a60f89b82fb92f2535e070eced9a9609b0b1d325bcba853866ba"
+        },
+        "original_classifier_sha256": {
+          "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+          "content_types.py": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+          "storage.py": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+          "taxonomy.py": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973"
+        },
+        "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+        "verified_source_files": {
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_pull_request.parquet": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_repository.parquet": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/all_user.parquet": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pr_task_type.parquet": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/human_pull_request.parquet": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/issue.parquet": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_comments.parquet": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commit_details.parquet": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_commits.parquet": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments.parquet": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_review_comments_v2.parquet": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_reviews.parquet": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_task_type.parquet": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pr_timeline.parquet": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/pull_request.parquet": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/related_issue.parquet": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/repository.parquet": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+          "/Users/lzh/Downloads/Log 研究/agentlog_unified/cache/aidev-frozen/user.parquet": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+        }
+      },
+      "parent_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050",
+      "repair_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/repair-runs/aidev-v050",
+      "source_snapshot_counts": {
+        "candidate_identities": 1484437,
+        "candidate_occurrence_variants": 1484437,
+        "excluded_identities": 11872,
+        "excluded_occurrence_variants": 11872,
+        "unknown_type_review_cells": 17362345,
+        "repair_data_gap_records": 0,
+        "repair_cell_status_counts": {
+          "complete_with_semantic_gaps": 1
+        },
+        "parent_all_selected_text_rows_visited": true
+      },
+      "all_selected_rows_visited": true,
+      "identity_unit": "frozen source cell + Unicode span + rule + category + subtype",
+      "variant_unit": "logical identity + complete classifier details and exclusion state"
+    },
+    {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_summary.jsonl.gz",
+      "sha256": "85d2521ad5af2b781de65862a1b6caea016dd5b278beb09ac0f1993135e70488",
+      "dataset": "aidev",
+      "source_run": "aidev-v050",
+      "observation_scope": "dataset_structured_text",
+      "count_unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details",
+      "coverage_status": "complete_with_semantic_gaps",
+      "candidate_status_count_unit": "unavailable_per_type_in_structured_summary",
+      "source_taxonomy_version": "1.2.0",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "manifest_sha256": "4d99c9dec44bea07b7c7cb8c1d78a2019a3dd61c19e4a550465d83429bc80819",
+      "coverage_sha256": "876f1473cd0a374ed2e8751fd5d35db7ebb5aa59d75d3d999e477f3fdd10a50a",
+      "export_state_sha256": "e607bad0a167dafce2c292af7a45305a8524f63a6e10b048f29a0d58cec66ece",
+      "implementation_sha256": {
+        "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+        "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+        "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+        "content_types.py": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+        "storage.py": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+        "structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+        "structured_types.py": "ad77f3ab96901925c59faa2f47d07c32919dd06b7e2b4c8070feb051a1ee09ae",
+        "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+        "taxonomy.py": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973"
+      },
+      "actual_execution_fingerprint": {
+        "inputs": [
+          {
+            "bytes": 330776130,
+            "path": "all_pull_request.parquet",
+            "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+          },
+          {
+            "bytes": 6136253,
+            "path": "all_repository.parquet",
+            "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+          },
+          {
+            "bytes": 2511706,
+            "path": "all_user.parquet",
+            "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+          },
+          {
+            "bytes": 715969,
+            "path": "human_pr_task_type.parquet",
+            "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+          },
+          {
+            "bytes": 4387171,
+            "path": "human_pull_request.parquet",
+            "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+          },
+          {
+            "bytes": 3222463,
+            "path": "issue.parquet",
+            "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+          },
+          {
+            "bytes": 25857243,
+            "path": "pr_comments.parquet",
+            "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+          },
+          {
+            "bytes": 485214032,
+            "path": "pr_commit_details.parquet",
+            "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+          },
+          {
+            "bytes": 8314097,
+            "path": "pr_commits.parquet",
+            "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+          },
+          {
+            "bytes": 14728130,
+            "path": "pr_review_comments.parquet",
+            "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+          },
+          {
+            "bytes": 21125785,
+            "path": "pr_review_comments_v2.parquet",
+            "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+          },
+          {
+            "bytes": 7517041,
+            "path": "pr_reviews.parquet",
+            "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+          },
+          {
+            "bytes": 2993264,
+            "path": "pr_task_type.parquet",
+            "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+          },
+          {
+            "bytes": 34108415,
+            "path": "pr_timeline.parquet",
+            "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+          },
+          {
+            "bytes": 16855612,
+            "path": "pull_request.parquet",
+            "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+          },
+          {
+            "bytes": 75579,
+            "path": "related_issue.parquet",
+            "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+          },
+          {
+            "bytes": 167251,
+            "path": "repository.parquet",
+            "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+          },
+          {
+            "bytes": 68935,
+            "path": "user.parquet",
+            "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+          }
+        ],
+        "limits": {
+          "max_decode_layers": 2,
+          "max_depth": 32,
+          "max_documents": 128,
+          "max_matches": 1000,
+          "max_nodes": 10000,
+          "max_source_chars": 1048576
+        },
+        "pyarrow_version": "21.0.0",
+        "source_import": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+        "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+        "source_sha256": {
+          "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+          "content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+          "content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+          "content_types.py": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+          "storage.py": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+          "structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+          "structured_types.py": "ad77f3ab96901925c59faa2f47d07c32919dd06b7e2b4c8070feb051a1ee09ae",
+          "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+          "taxonomy.py": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973"
+        },
+        "taxonomy_version": "1.2.0",
+        "version": "structured-scan-1"
+      },
+      "source_snapshot_counts": {
+        "source_rows": 2456073,
+        "processed_rows": 2456073,
+        "candidate_occurrences": 1180,
+        "excluded_occurrences": 57,
+        "counts": {
+          "cells_invalid_json": 43626,
+          "cells_not_applicable": 17313666,
+          "cells_parsed_with_semantic_gaps": 4828,
+          "cells_partial": 225,
+          "characters_seen": 2706989370,
+          "empty_cells": 1,
+          "nonempty_cells": 17362345,
+          "null_cells": 1570131,
+          "parser_array_nodes": 1421,
+          "parser_boolean_nodes": 867,
+          "parser_candidate_nodes": 1199,
+          "parser_documents_detected": 49669,
+          "parser_documents_invalid": 44166,
+          "parser_documents_parsed": 5422,
+          "parser_documents_selected": 49669,
+          "parser_empty_array_nodes": 94,
+          "parser_empty_object_nodes": 30,
+          "parser_empty_string_nodes": 58,
+          "parser_encoded_json_attempts": 65,
+          "parser_encoded_json_invalid": 42,
+          "parser_encoded_json_parsed": 23,
+          "parser_gap_records": 44289,
+          "parser_ignored_fences": 148599,
+          "parser_keyed_nodes": 16108,
+          "parser_matches_emitted": 1237,
+          "parser_nodes_visited": 24151,
+          "parser_null_nodes": 373,
+          "parser_number_nodes": 5422,
+          "parser_object_nodes": 5752,
+          "parser_source_characters": 2706989370,
+          "parser_source_characters_considered": 2706989370,
+          "parser_string_nodes": 10316,
+          "parser_unknown_nodes": 22952,
+          "parser_unmapped_keys": 14812,
+          "parser_unsupported_nodes": 1302,
+          "parser_whitespace_string_nodes": 1,
+          "rows_decoded": 2456073,
+          "text_cells_visited": 18932477
+        }
+      },
+      "all_selected_rows_visited": true
+    }
+  ],
+  "historical_rows_original_fields_preserved": 490,
+  "historical_new_type_not_evaluated_rows": 56,
+  "new_version_evaluated_rows": 98,
+  "historical_rows_recomputed": false,
+  "catalog_subtypes_added_this_version": 0,
+  "historical_catalog_versions_preserved": true,
+  "historical_source_validation": "Frozen v049 inventory export SHA; old implementation hashes are provenance, not current-code requirements.",
+  "input_summary_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049_provenance.json": "c86cc6a42b2fe5f61b8fa3db94bd836a098924f5e7e6c75f8d6d17f6f9948395",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049.csv": "7c2075dd277ed4fb4b50d46ea3ba2ebadc6b425519c6395f11d9c00129850290",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049.jsonl": "bd2875b86ccd30f4f3308280cec11846ee0442ba1bd426916e01411ad4f52c22",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049_outside_catalog.csv": "9f6b44f04e8e65963cc92a11d7bef2ee266893c4372f1d6c12f325138175919f",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v049_outside_catalog.jsonl": "86a534974adb006fb73c09cf549178161a56952041610d2cc6df3619a924e9d9",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v050/manifest.json": "155ca90c39501f1dc301561567de249d61334fd0a4e132fc3c73dfaf2f09a23b",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v050/merged_coverage.json": "eb486e9bc4d228a40ac36f124f6070d6b7dd468ded07ce0615810981b600dd0c",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v050/merged_type_summary.jsonl.gz": "24838d67dae9f93a6be506d8cf6f35bf3e63211a16f0af553d73e1496c9110c9",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/content-runs/aidev-v050/manifest.json": "96a93d7fbf786f11ebb1cd85584df79e820f31eef0bc360fcbd3efe3d17a8663",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": "d27aa2fd5d769cc917262d6df26daf26b0f0563947c6f53d9948164a40ca2efb",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/storage.py": "5afa22837ef6d2255b6e664f50cba9509810ec14d5f8b226ec038d1bbacdab30",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/taxonomy.py": "f2d1ba2ca56fb2500f883ff0924e37a1848a7789e7d964340213ee5ff84d8973",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/manifest.json": "4d99c9dec44bea07b7c7cb8c1d78a2019a3dd61c19e4a550465d83429bc80819",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_coverage.json": "876f1473cd0a374ed2e8751fd5d35db7ebb5aa59d75d3d999e477f3fdd10a50a",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/export_state.json": "e607bad0a167dafce2c292af7a45305a8524f63a6e10b048f29a0d58cec66ece",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_summary.jsonl.gz": "85d2521ad5af2b781de65862a1b6caea016dd5b278beb09ac0f1993135e70488",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/structured_types.py": "ad77f3ab96901925c59faa2f47d07c32919dd06b7e2b4c8070feb051a1ee09ae",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0"
+  },
+  "observed_catalog_type_union": [
+    [
+      "AUTH",
+      "access_token"
+    ],
+    [
+      "AUTH",
+      "api_key"
+    ],
+    [
+      "AUTH",
+      "auth_cookie"
+    ],
+    [
+      "AUTH",
+      "authorization_header"
+    ],
+    [
+      "AUTH",
+      "credential_bundle"
+    ],
+    [
+      "AUTH",
+      "password"
+    ],
+    [
+      "AUTH",
+      "private_key"
+    ],
+    [
+      "BIZ",
+      "business_object"
+    ],
+    [
+      "BIZ",
+      "document_content"
+    ],
+    [
+      "BIZ",
+      "http_headers"
+    ],
+    [
+      "BIZ",
+      "message_content"
+    ],
+    [
+      "BIZ",
+      "request_body"
+    ],
+    [
+      "BIZ",
+      "response_body"
+    ],
+    [
+      "BIZ",
+      "unclassified_object"
+    ],
+    [
+      "CFG",
+      "database_connection"
+    ],
+    [
+      "CFG",
+      "deployment_configuration"
+    ],
+    [
+      "CFG",
+      "environment"
+    ],
+    [
+      "CFG",
+      "filesystem_path"
+    ],
+    [
+      "CFG",
+      "internal_endpoint"
+    ],
+    [
+      "DIAG",
+      "exception_message"
+    ],
+    [
+      "DIAG",
+      "failure_response"
+    ],
+    [
+      "DIAG",
+      "stack_trace"
+    ],
+    [
+      "PII",
+      "age"
+    ],
+    [
+      "PII",
+      "biometric"
+    ],
+    [
+      "PII",
+      "birth_date"
+    ],
+    [
+      "PII",
+      "education"
+    ],
+    [
+      "PII",
+      "email"
+    ],
+    [
+      "PII",
+      "employment"
+    ],
+    [
+      "PII",
+      "ethnicity"
+    ],
+    [
+      "PII",
+      "financial"
+    ],
+    [
+      "PII",
+      "government_identifier"
+    ],
+    [
+      "PII",
+      "medical"
+    ],
+    [
+      "PII",
+      "person_name"
+    ],
+    [
+      "PII",
+      "phone"
+    ],
+    [
+      "PII",
+      "postal_address"
+    ],
+    [
+      "PII",
+      "precise_location"
+    ],
+    [
+      "PII",
+      "religious_belief"
+    ],
+    [
+      "PII",
+      "sex_gender"
+    ],
+    [
+      "QID",
+      "device_identifier"
+    ],
+    [
+      "QID",
+      "network_identifier"
+    ],
+    [
+      "QID",
+      "request_identifier"
+    ],
+    [
+      "QID",
+      "session_identifier"
+    ],
+    [
+      "QID",
+      "tenant_identifier"
+    ],
+    [
+      "QID",
+      "transaction_identifier"
+    ],
+    [
+      "QID",
+      "user_identifier"
+    ]
+  ],
+  "observed_catalog_type_union_count": 45,
+  "inventory_rows_by_scope": {
+    "dataset_commit_changes": 245,
+    "dataset_schema_context": 49,
+    "dataset_text_reconciled": 147,
+    "dataset_structured_text": 147
+  },
+  "candidate_records_outside_catalog_rows": [
+    {
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "candidate_status_counts": {
+        "identifier_reference": 2854,
+        "unknown_named_value": 389
+      },
+      "candidate_variant_count": 3243,
+      "catalog_membership": "outside_catalog",
+      "catalog_version": "1.1.0",
+      "category": null,
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "count_within_processed_scope": 3243,
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "dataset": "aidev",
+      "distinct_candidate_cells": 2312,
+      "evaluation_status": "evaluated_under_source_rules",
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_text_reconciled",
+      "observed_within_processed_scope": true,
+      "runtime_confirmed": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v046/merged_type_summary.jsonl.gz",
+      "source_run": "aidev-v046",
+      "source_sha256": "0947265dc4656e9703c7b1d712e6d779a547d56aedb403c7047904559c57a72c",
+      "source_taxonomy_version": "1.0.0",
+      "subtype": null,
+      "subtype_label": "目录外／细类待定"
+    },
+    {
+      "candidate_status_count_unit": "unavailable_per_type_in_structured_summary",
+      "candidate_status_counts": {},
+      "candidate_variant_count": null,
+      "catalog_membership": "outside_catalog",
+      "catalog_version": "1.1.0",
+      "category": null,
+      "count_unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details",
+      "count_within_processed_scope": 0,
+      "coverage_status": "complete_with_semantic_gaps",
+      "dataset": "aidev",
+      "distinct_candidate_cells": null,
+      "evaluation_status": "evaluated_under_source_rules",
+      "excluded_identity_count": null,
+      "excluded_variant_count": null,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_structured_text",
+      "observed_within_processed_scope": false,
+      "runtime_confirmed": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v048/structured_type_summary.jsonl.gz",
+      "source_run": "aidev-v048",
+      "source_sha256": "71b7644e4206c1194a6b3e1fd3b311a6a8b8103fbb3dc4bc11d9151dda76c7f5",
+      "source_taxonomy_version": "1.0.0",
+      "subtype": null,
+      "subtype_label": "Unclassified JSON values; zero does not establish absence"
+    },
+    {
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "candidate_status_counts": {
+        "identifier_reference": 2854,
+        "unknown_named_value": 389
+      },
+      "candidate_variant_count": 3243,
+      "catalog_membership": "outside_catalog",
+      "catalog_version": "1.1.0",
+      "category": null,
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "count_within_processed_scope": 3243,
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "dataset": "aidev",
+      "distinct_candidate_cells": 2312,
+      "evaluation_status": "evaluated_under_source_rules",
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_text_reconciled",
+      "observed_within_processed_scope": true,
+      "runtime_confirmed": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v049/merged_type_summary.jsonl.gz",
+      "source_run": "aidev-v049",
+      "source_sha256": "a64add9d4ea62b1b5b1db02a4119a408de922834bcb83cd887a9ad0f34c90fb5",
+      "source_taxonomy_version": "1.1.0",
+      "subtype": null,
+      "subtype_label": "目录外／细类待定"
+    },
+    {
+      "candidate_status_count_unit": "unavailable_outside_controlled_summary",
+      "candidate_status_counts": {},
+      "candidate_variant_count": null,
+      "catalog_membership": "outside_catalog",
+      "catalog_version": "1.1.0",
+      "category": null,
+      "count_unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details",
+      "count_within_processed_scope": 0,
+      "coverage_status": "complete_with_semantic_gaps",
+      "dataset": "aidev",
+      "distinct_candidate_cells": null,
+      "evaluation_status": "evaluated_under_source_rules",
+      "excluded_identity_count": null,
+      "excluded_variant_count": null,
+      "full_dataset_coverage_claim": false,
+      "human_review_status": "pending",
+      "new_type_status": "not_established",
+      "observation_scope": "dataset_structured_text",
+      "observed_within_processed_scope": false,
+      "runtime_confirmed": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049/structured_type_summary.jsonl.gz",
+      "source_run": "aidev-v049",
+      "source_sha256": "ae5542313bd2e2cee9a46f454754e8c0b3f30abdf88851b5aa723226defee8a0",
+      "source_taxonomy_version": "1.1.0",
+      "subtype": null,
+      "subtype_label": "Unclassified candidates; zero does not establish absence"
+    },
+    {
+      "observation_scope": "dataset_text_reconciled",
+      "dataset": "aidev",
+      "source_run": "aidev-v050",
+      "count_unit": "reconciled_candidate_identity_per_type",
+      "coverage_status": "reconciled_with_semantic_gaps",
+      "category": null,
+      "subtype": null,
+      "subtype_label": "目录外／细类待定",
+      "catalog_membership": "outside_catalog",
+      "count_within_processed_scope": 3243,
+      "observed_within_processed_scope": true,
+      "candidate_variant_count": 3243,
+      "candidate_status_counts": {
+        "identifier_reference": 2854,
+        "unknown_named_value": 389
+      },
+      "candidate_status_count_unit": "reconciled_candidate_evidence_variant",
+      "excluded_identity_count": 0,
+      "excluded_variant_count": 0,
+      "distinct_candidate_cells": 2312,
+      "human_review_status": "pending",
+      "runtime_confirmed": false,
+      "new_type_status": "not_established",
+      "full_dataset_coverage_claim": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/reconciled-runs/aidev-v050/merged_type_summary.jsonl.gz",
+      "source_sha256": "24838d67dae9f93a6be506d8cf6f35bf3e63211a16f0af553d73e1496c9110c9",
+      "catalog_version": "1.2.0",
+      "source_taxonomy_version": "1.2.0",
+      "evaluation_status": "evaluated_under_source_rules"
+    },
+    {
+      "observation_scope": "dataset_structured_text",
+      "dataset": "aidev",
+      "source_run": "aidev-v050",
+      "count_unit": "source_cell_document_ordinal_node_decoded_span_and_finite_match_details",
+      "coverage_status": "complete_with_semantic_gaps",
+      "category": null,
+      "subtype": null,
+      "subtype_label": "Unclassified candidates; zero does not establish absence",
+      "catalog_membership": "outside_catalog",
+      "count_within_processed_scope": 0,
+      "observed_within_processed_scope": false,
+      "candidate_variant_count": null,
+      "candidate_status_counts": {},
+      "candidate_status_count_unit": "unavailable_outside_controlled_summary",
+      "excluded_identity_count": null,
+      "excluded_variant_count": null,
+      "distinct_candidate_cells": null,
+      "human_review_status": "pending",
+      "runtime_confirmed": false,
+      "new_type_status": "not_established",
+      "full_dataset_coverage_claim": false,
+      "source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v050/structured_type_summary.jsonl.gz",
+      "source_sha256": "85d2521ad5af2b781de65862a1b6caea016dd5b278beb09ac0f1993135e70488",
+      "catalog_version": "1.2.0",
+      "source_taxonomy_version": "1.2.0",
+      "evaluation_status": "evaluated_under_source_rules"
+    }
+  ],
+  "counts_additive_across_scopes_or_runs": false,
+  "null_means": "Not evaluated under the historical source taxonomy, never zero or absence.",
+  "zero_means": "No recorded candidate in the processed source scope under that source taxonomy; not dataset-wide absence.",
+  "new_plaintext_source": "final_reconciled_snapshot_only",
+  "advanced_raw_source_in_final_grid": false,
+  "source_values_or_value_hashes_read": false,
+  "body_and_structure_counts_added": false,
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_type_status": "not_established",
+  "full_dataset_coverage_claim": false,
+  "builder_sha256": "bf6adc14085c3fc111274fdf0a4546cb772dabae6d0e243d99f0d6cf2e6f36ab",
+  "helper_sha256": "fbed31799e12277ec881150ad16cf1b581c45f18116100e530dda68ae0f5c0c1",
+  "output_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v050.csv": "2e56d11149c20399c5fc35d0bbd7e611e35371399915f6bc3af1e3ac6d60b13e",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v050.jsonl": "5d5f695d74f8089c3f88594f3132d2f309ea9659f85019cef6b15f7e214250af",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v050_outside_catalog.csv": "8662a1e6de94722e1cbd57a5e7cdc4491c1378186d62a25794803339de361e68",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_observed_types_v050_outside_catalog.jsonl": "073dc82a44bcda33e7b060159ca4fa3d97899e62dace999d4310b63c26a681c1"
+  }
+}

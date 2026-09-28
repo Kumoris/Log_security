@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/agentlog-unified",
+    "commit-import",
+    "--input",
+    "agentlog_unified/inputs/swechat-full-v3/commit_contexts.jsonl",
+    "--output",
+    "agentlog_unified/batches/swechat-full-v4",
+    "--offline"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.158,
+  "stdout": {
+    "input_rows_seen": 8697,
+    "unique_commits": 8697,
+    "unique_contexts": 8697,
+    "unique_input_gaps": 0
+  },
+  "stderr": "",
+  "free_bytes_before": 4382720000,
+  "free_bytes_after": 4341760000,
+  "output_directory_bytes": 12730368
+}

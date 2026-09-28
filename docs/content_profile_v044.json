@@ -1,0 +1,136 @@
+{
+  "source_rows": 64,
+  "source_text_printed": false,
+  "source_path": "agentlog_unified/cache/aidev-frozen/pr_commit_details.parquet",
+  "characters": 177288,
+  "cells": 445,
+  "elapsed_seconds": 0.11712374999478925,
+  "top_cumulative": [
+    {
+      "module": "content_types.py",
+      "function": "classify_text",
+      "calls": 445,
+      "total_seconds": 0.001787554,
+      "cumulative_seconds": 0.116096926
+    },
+    {
+      "module": "content_types.py",
+      "function": "_named_candidates",
+      "calls": 584,
+      "total_seconds": 0.013698040000000002,
+      "cumulative_seconds": 0.063655774
+    },
+    {
+      "module": "content_types.py",
+      "function": "_literal_candidates",
+      "calls": 549,
+      "total_seconds": 0.044759065,
+      "cumulative_seconds": 0.050040230000000005
+    },
+    {
+      "module": "taxonomy.py",
+      "function": "_matches",
+      "calls": 1475,
+      "total_seconds": 0.0063062660000000005,
+      "cumulative_seconds": 0.048018665
+    },
+    {
+      "module": "taxonomy.py",
+      "function": "<listcomp>",
+      "calls": 1390,
+      "total_seconds": 0.01063213,
+      "cumulative_seconds": 0.026191531
+    },
+    {
+      "module": "~",
+      "function": "<method 'search' of 're.Pattern' objects>",
+      "calls": 53456,
+      "total_seconds": 0.016799275000000002,
+      "cumulative_seconds": 0.016799275000000002
+    },
+    {
+      "module": "__init__.py",
+      "function": "sub",
+      "calls": 2950,
+      "total_seconds": 0.001619722,
+      "cumulative_seconds": 0.007899855
+    },
+    {
+      "module": "~",
+      "function": "<built-in method builtins.any>",
+      "calls": 7053,
+      "total_seconds": 0.0026972940000000003,
+      "cumulative_seconds": 0.005669478
+    },
+    {
+      "module": "~",
+      "function": "<method 'sub' of 're.Pattern' objects>",
+      "calls": 2950,
+      "total_seconds": 0.0028172730000000003,
+      "cumulative_seconds": 0.004207932
+    },
+    {
+      "module": "__init__.py",
+      "function": "_compile",
+      "calls": 4668,
+      "total_seconds": 0.002159167,
+      "cumulative_seconds": 0.004094441
+    },
+    {
+      "module": "__init__.py",
+      "function": "findall",
+      "calls": 1475,
+      "total_seconds": 0.0009174360000000001,
+      "cumulative_seconds": 0.0026731420000000003
+    },
+    {
+      "module": "content_types.py",
+      "function": "_record",
+      "calls": 243,
+      "total_seconds": 0.000252964,
+      "cumulative_seconds": 0.002613626
+    },
+    {
+      "module": "content_types.py",
+      "function": "_example",
+      "calls": 243,
+      "total_seconds": 0.0007794770000000001,
+      "cumulative_seconds": 0.0023606620000000004
+    },
+    {
+      "module": "content_types.py",
+      "function": "<genexpr>",
+      "calls": 103,
+      "total_seconds": 0.001775915,
+      "cumulative_seconds": 0.001775915
+    },
+    {
+      "module": "_compiler.py",
+      "function": "compile",
+      "calls": 4,
+      "total_seconds": 3.3249e-05,
+      "cumulative_seconds": 0.001042958
+    },
+    {
+      "module": "~",
+      "function": "<built-in method builtins.isinstance>",
+      "calls": 6581,
+      "total_seconds": 0.001031278,
+      "cumulative_seconds": 0.001031278
+    },
+    {
+      "module": "~",
+      "function": "<method 'find' of 'str' objects>",
+      "calls": 2670,
+      "total_seconds": 0.0010015290000000001,
+      "cumulative_seconds": 0.0010015290000000001
+    },
+    {
+      "module": "~",
+      "function": "<method 'finditer' of 're.Pattern' objects>",
+      "calls": 3218,
+      "total_seconds": 0.000999733,
+      "cumulative_seconds": 0.000999733
+    }
+  ]
+}

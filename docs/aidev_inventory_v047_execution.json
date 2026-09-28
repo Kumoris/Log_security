@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log 研究/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/build_aidev_inventory_v047.py"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log 研究",
+  "started_utc": "2026-09-08T23:03:02.660928+00:00",
+  "completed_utc": "2026-09-08T23:03:02.701079+00:00",
+  "elapsed_seconds": 0.0400945830042474,
+  "exit_code": 0,
+  "source_sha256_before": "2e6c8ce45f0e38dacecddd81a6ab6e903e7ecfb3d4874996bcbeccfbee834627",
+  "source_sha256_after": "2e6c8ce45f0e38dacecddd81a6ab6e903e7ecfb3d4874996bcbeccfbee834627",
+  "source_unchanged": true,
+  "stdout": "{\"catalog_subtypes\":42,\"counts_additive_across_scopes\":false,\"dataset\":\"aidev\",\"files_written\":true,\"observed_catalog_label_union\":38,\"outside_catalog_summary_rows\":1,\"rows\":294,\"sources\":7}\n",
+  "stderr": "",
+  "raw_source_values_read": false,
+  "shared_databases_accessed": false
+}

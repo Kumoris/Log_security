@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/lzh/Downloads/Log \u7814\u7a76/agent_log_privacy/.venv/bin/python",
+    "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/replay_personal_attribute_probe_v049.py"
+  ],
+  "started_utc": "2026-09-08T23:44:20.148448+00:00",
+  "completed_utc": "2026-09-08T23:44:32.521096+00:00",
+  "elapsed_seconds": 12.373,
+  "exit_code": 0,
+  "stdout": "agentlog_unified/docs/personal_attribute_replay_v049_stdout.txt",
+  "stderr": "agentlog_unified/docs/personal_attribute_replay_v049_stderr.txt",
+  "helper_sha256": "9f7aca7537cea0a56bf47125a822c3d0f969735ae7564f894ab00dbfd7a6f546",
+  "prior_attempt": "attempt01 interpreter symlink resolved outside virtual environment; import failed before source decoding"
+}

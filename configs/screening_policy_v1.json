@@ -1,0 +1,31 @@
+{
+  "version": "screening-policy-v1",
+  "rule_version": "screening-queues-v1",
+  "information_categories": {
+    "credentials": "Password, access token, private key, authenticated session material; credential role must have source evidence.",
+    "personal_identifiers": "Name, contact address, account identity or persistent linkable identifier; linkage and context matter.",
+    "financial": "Payment, account, transaction or other confidential financial information.",
+    "health": "Medical, health or other person-linked special-category information.",
+    "private_content": "User payload, communication, document or request content with explicit confidentiality or personal context.",
+    "infrastructure_secrets": "Secret service configuration or internal access material with evidence of its role.",
+    "context_dependent": "IP address, path, URL, diagnostic metadata and ordinary IDs require contextual evidence; not automatically sensitive."
+  },
+  "supported": "Historical source evidence establishes sensitive meaning and the output unit or proven path; runtime existence and exposure remain unverified.",
+  "suspected": "A specific reviewable source/field/category clue exists but sensitivity, connection or residual-output semantics needs evidence.",
+  "not_found": "Necessary checks completed in the stated boundary and scope with evidence-backed absence of sensitive residual information.",
+  "unknown": "Evidence or support does not permit a sensitivity finding; absence of keyword matches is insufficient.",
+  "name_only": "Names and reference labels are clues, never target truth or verified transformation semantics.",
+  "masking": "Require the actual historical implementation, selected fields, retained characters and context. Partial masking may retain identifying or secret information.",
+  "hashing": "A function name is not proof. Inspect actual transform, input entropy, salts/keys and linkability when available. Unsupported properties remain unknown; never invert or reconstruct values.",
+  "test_values": "Record test/example/generated/development scope independently. Fictional examples may test semantics but do not establish production exposure or a real credential.",
+  "placeholders": "Only source-supported fixed placeholders can support non-sensitive output; a constant is not automatically a placeholder or safe.",
+  "current_automatic_fixed_value_allowlist": "Python booleans and null, exact MASKED placeholder and fixed words ok/done/started/finished can support bounded checks. General strings remain unknown even without a regex match. All transformations and selected fields must still have necessary evidence.",
+  "current_literal_credential_rule": "Direct literal credential assignment syntax keyed by password/passwd/secret/api_key/access_token/authorization, excluding supported placeholders, provides static category evidence only. A matching literal nested inside a transform or boolean expression remains suspected until that path is checked. Test scope and runtime confirmation remain independent.",
+  "fixed_output": "Verify the fixed bytes semantically and that the target dynamic information does not reach this boundary; a sensitive constant can have a zero-hop risk path.",
+  "formal_parameters": "A formal parameter is a trace stopping boundary, not a verified ultimate business source.",
+  "relation_types": "Value propagation, derived propagation, possible relations, type/schema descriptions and unresolved boundaries remain distinct.",
+  "severity": "No calibrated severity or probability is assumed. Preserve null with its missing-context reason unless a future version defines and validates a rubric.",
+  "runtime_boundary": "Static risk at call_argument, log_record or formatted_output never establishes runtime triggering, disk persistence, exfiltration or confirmed leakage.",
+  "queue_order": ["A", "B", "C", "D"],
+  "review_truth": "Rule, AI and human ledgers are separate. Unexecuted review remains pending. Only independently supplied eligible human evidence can support evaluation truth."
+}

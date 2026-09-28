@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-09-10T12:15:10.296984+00:00",
+  "denominator": 67,
+  "human_sensitive_references": 67,
+  "csv_records_verified": 67,
+  "evidence_packages_verified": 67,
+  "missing_description_groups_retained": 5,
+  "original_case_ids_preserved": 67,
+  "original_type_and_code_evidence_unchanged": true,
+  "old_run_integrity_verified": true,
+  "resume_unchanged": true,
+  "dry_run_no_output": true,
+  "target_code_executed": false,
+  "model_calls": 0,
+  "remote_writes": 0,
+  "tests": {
+    "command": "python -m pytest tests/test_issue_knowledge.py tests/test_issue_reference_export.py tests/test_semantic_demand.py -q",
+    "passed": 23,
+    "seconds": 1.41
+  }
+}

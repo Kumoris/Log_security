@@ -1,0 +1,1 @@
+{"rows": 588, "sources": 12, "not_evaluated_rows": 56, "observed_labels": 45, "files_written": true, "counts_additive": false}

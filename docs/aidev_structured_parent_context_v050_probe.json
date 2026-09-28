@@ -1,0 +1,463 @@
+{
+  "started_utc": "2026-09-09T07:13:07.129099+00:00",
+  "completed_utc": "2026-09-09T07:13:08.905280+00:00",
+  "elapsed_seconds": 1.776191208002274,
+  "scope": "readonly_parsed_json_parent_context_probe",
+  "taxonomy_version": "1.1.0",
+  "source_run": "/Users/lzh/Downloads/Log 研究/agentlog_unified/structured-runs/aidev-v049",
+  "source_manifest_sha256": "ccd4993ac3ae54a65fce57052c651ba0bcb8afcbbd5901656beef4e42a576618",
+  "source_code_sha256": {
+    "structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34",
+    "content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+    "taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed"
+  },
+  "source_codes_unchanged": true,
+  "source_database_unchanged": true,
+  "frozen_source_files": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+      "bytes": 330776130
+    },
+    {
+      "table_path": "all_user.parquet",
+      "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+      "bytes": 2511706
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+      "bytes": 4387171
+    },
+    {
+      "table_path": "issue.parquet",
+      "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+      "bytes": 3222463
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+      "bytes": 25857243
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "bytes": 485214032
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "bytes": 8314097
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+      "bytes": 14728130
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+      "bytes": 21125785
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+      "bytes": 7517041
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+      "bytes": 34108415
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+      "bytes": 16855612
+    },
+    {
+      "table_path": "user.parquet",
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+      "bytes": 68935
+    }
+  ],
+  "limits": {
+    "max_documents": 6000,
+    "max_cells": 6000,
+    "max_total_nodes": 200000,
+    "max_seconds": 300,
+    "arrow_batch_rows": 256
+  },
+  "selection_policy": "All existing status=parsed_with_semantic_gaps documents, ordered by source coordinates, limited independently of keys or sensitive words. Invalid and partial documents outside this cohort remain unresolved.",
+  "available_parsed_documents": 5387,
+  "selected_documents": 5387,
+  "selected_cells": 4946,
+  "all_selected_documents_visited": true,
+  "all_available_parsed_documents_visited": true,
+  "stop_reason": null,
+  "counts": {
+    "source_cells_decoded": 4946,
+    "source_characters": 7410476,
+    "nodes_visited": 23838,
+    "object_nodes": 5665,
+    "duplicate_keys": 0,
+    "string_nodes": 10143,
+    "keyed_nodes": 15899,
+    "documents_visited": 5387,
+    "number_nodes": 5399,
+    "array_nodes": 1397,
+    "array_boundaries_without_context_inheritance": 1314,
+    "direct_parent_leaf_pairs": 6005,
+    "boolean_nodes": 861,
+    "null_nodes": 373,
+    "decode_boundaries_without_context_inheritance": 23
+  },
+  "probe_gaps": {},
+  "baseline_replay_matches_frozen_per_document": true,
+  "added_node_type_counts": [
+    {
+      "category": "AUTH",
+      "subtype": "access_token",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 1
+    },
+    {
+      "category": "AUTH",
+      "subtype": "authorization_header",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 1
+    },
+    {
+      "category": "BIZ",
+      "subtype": "business_object",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 1
+    },
+    {
+      "category": "BIZ",
+      "subtype": "document_content",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 9
+    },
+    {
+      "category": "BIZ",
+      "subtype": "request_body",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 3
+    },
+    {
+      "category": "BIZ",
+      "subtype": "response_body",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 2
+    },
+    {
+      "category": "CFG",
+      "subtype": "deployment_configuration",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 1
+    },
+    {
+      "category": "DIAG",
+      "subtype": "exception_message",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 7
+    },
+    {
+      "category": "DIAG",
+      "subtype": "stack_trace",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "carrier_candidate",
+      "count": 4
+    },
+    {
+      "category": "PII",
+      "subtype": "age",
+      "disposition": "supported_pair_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 1
+    },
+    {
+      "category": "PII",
+      "subtype": "person_name",
+      "disposition": "supported_pair_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 6
+    },
+    {
+      "category": "QID",
+      "subtype": "request_identifier",
+      "disposition": "unresolved_composition_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 1
+    },
+    {
+      "category": "QID",
+      "subtype": "transaction_identifier",
+      "disposition": "supported_pair_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 1
+    },
+    {
+      "category": "QID",
+      "subtype": "user_identifier",
+      "disposition": "supported_pair_pending",
+      "candidate_status": "named_value_candidate",
+      "count": 8
+    }
+  ],
+  "source_groups": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "disposition": "supported_pair_pending",
+      "count": 14
+    },
+    {
+      "table_path": "all_pull_request.parquet",
+      "column_name": "body",
+      "disposition": "unresolved_composition_pending",
+      "count": 15
+    },
+    {
+      "table_path": "issue.parquet",
+      "column_name": "body",
+      "disposition": "unresolved_composition_pending",
+      "count": 1
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "column_name": "body",
+      "disposition": "unresolved_composition_pending",
+      "count": 4
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "column_name": "body",
+      "disposition": "supported_pair_pending",
+      "count": 1
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "column_name": "body",
+      "disposition": "supported_pair_pending",
+      "count": 1
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "column_name": "message",
+      "disposition": "unresolved_composition_pending",
+      "count": 4
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "column_name": "body",
+      "disposition": "unresolved_composition_pending",
+      "count": 6
+    }
+  ],
+  "supported_added_source_cells": 10,
+  "supported_added_documents": 10,
+  "supported_added_cell_type_pairs": 13,
+  "supported_new_labels_vs_existing_structured_global": [
+    {
+      "category": "PII",
+      "subtype": "age"
+    }
+  ],
+  "tables": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "selected_documents": 2353,
+      "visited_documents": 2353,
+      "selected_cells": 1968
+    },
+    {
+      "table_path": "all_user.parquet",
+      "selected_documents": 54,
+      "visited_documents": 54,
+      "selected_cells": 54
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "selected_documents": 84,
+      "visited_documents": 84,
+      "selected_cells": 83
+    },
+    {
+      "table_path": "issue.parquet",
+      "selected_documents": 49,
+      "visited_documents": 49,
+      "selected_cells": 41
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "selected_documents": 32,
+      "visited_documents": 32,
+      "selected_cells": 29
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "selected_documents": 1335,
+      "visited_documents": 1335,
+      "selected_cells": 1335
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "selected_documents": 327,
+      "visited_documents": 327,
+      "selected_cells": 327
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "selected_documents": 9,
+      "visited_documents": 9,
+      "selected_cells": 9
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "selected_documents": 11,
+      "visited_documents": 11,
+      "selected_cells": 11
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "selected_documents": 9,
+      "visited_documents": 9,
+      "selected_cells": 9
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "selected_documents": 783,
+      "visited_documents": 783,
+      "selected_cells": 780
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "selected_documents": 340,
+      "visited_documents": 340,
+      "selected_cells": 299
+    },
+    {
+      "table_path": "user.parquet",
+      "selected_documents": 1,
+      "visited_documents": 1,
+      "selected_cells": 1
+    }
+  ],
+  "synthetic_cases": [
+    {
+      "case": "personal_scope",
+      "added_labels": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier",
+          "candidate_status": "named_value_candidate",
+          "disposition": "supported_pair_pending"
+        },
+        {
+          "category": "PII",
+          "subtype": "age",
+          "candidate_status": "named_value_candidate",
+          "disposition": "supported_pair_pending"
+        },
+        {
+          "category": "PII",
+          "subtype": "person_name",
+          "candidate_status": "placeholder_or_example",
+          "disposition": "supported_pair_pending"
+        }
+      ],
+      "nodes_visited": 5
+    },
+    {
+      "case": "carrier_scope",
+      "added_labels": [
+        {
+          "category": "BIZ",
+          "subtype": "request_body",
+          "candidate_status": "carrier_candidate",
+          "disposition": "supported_pair_pending"
+        },
+        {
+          "category": "BIZ",
+          "subtype": "request_body",
+          "candidate_status": "carrier_candidate",
+          "disposition": "unresolved_composition_pending"
+        }
+      ],
+      "nodes_visited": 6
+    },
+    {
+      "case": "general_scope",
+      "added_labels": [],
+      "nodes_visited": 5
+    },
+    {
+      "case": "null_bool_empty",
+      "added_labels": [],
+      "nodes_visited": 5
+    },
+    {
+      "case": "no_grandparent",
+      "added_labels": [],
+      "nodes_visited": 4
+    },
+    {
+      "case": "array_boundary",
+      "added_labels": [],
+      "nodes_visited": 4
+    },
+    {
+      "case": "encoded_boundary",
+      "added_labels": [],
+      "nodes_visited": 4
+    },
+    {
+      "case": "unsafe_composition",
+      "added_labels": [
+        {
+          "category": "QID",
+          "subtype": "request_identifier",
+          "candidate_status": "named_value_candidate",
+          "disposition": "supported_pair_pending"
+        },
+        {
+          "category": "BIZ",
+          "subtype": "request_body",
+          "candidate_status": "carrier_candidate",
+          "disposition": "unresolved_composition_pending"
+        }
+      ],
+      "nodes_visited": 3
+    }
+  ],
+  "selection_file": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_parent_context_v050_selection.jsonl",
+  "selection_sha256": "9c22be9944198bceb653f1954feb19aec0cbe472f6b8c2c670ea60fe1454665e",
+  "evidence_file": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/aidev_structured_parent_context_v050_evidence.jsonl",
+  "evidence_sha256": "0c1675d6b4df4e9da54294deead723f2ace9217bba7c5a75d1ff61585e93c250",
+  "helper_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/probe_structured_parent_context_v050.py",
+  "helper_sha256": "d692c3fcf3a255bee6f3cfa8b10a40a70f0f0b6950f0357f4dd16ecc61824fae",
+  "source_values_read_in_memory": true,
+  "raw_values_dynamic_keys_or_value_hashes_exported": false,
+  "source_or_tests_modified": false,
+  "network_accessed": false,
+  "credentials_validated": false,
+  "human_review_status": "pending",
+  "runtime_confirmed": false,
+  "new_sensitive_type_confirmed": false,
+  "boundaries": [
+    "Additional rows are finite parent/leaf key hints for known types, not observed real personal attributes or confirmed disclosures.",
+    "Immediate object parent only. Context does not propagate through array elements, JSON decode boundaries, or intermediate ancestors.",
+    "All nodes of the selected documents are visited; explicit source/document/node/depth budgets remain limitations.",
+    "Unrestricted parent+leaf composition is separately marked unresolved: a receiver carrier can otherwise be falsely attached to a leaf id.",
+    "Examples and identifier references remain separate from unverified named values. Current literal-shape rules are unchanged."
+  ]
+}

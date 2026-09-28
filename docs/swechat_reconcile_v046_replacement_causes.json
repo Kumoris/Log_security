@@ -1,0 +1,486 @@
+{
+  "started_utc": "2026-09-08T22:47:04.530888+00:00",
+  "completed_utc": "2026-09-08T22:47:07.021890+00:00",
+  "results": [
+    {
+      "source_row": 2989,
+      "table_path": "commits.parquet",
+      "column_name": "file_attribution",
+      "characters": 1052614,
+      "parent_prefix_characters": 1048576,
+      "parent_capped_count": 77,
+      "parent_match_cap_triggered": false,
+      "prefix_uncapped_count": 77,
+      "full_reference_count": 75,
+      "paged_count": 75,
+      "pages": 221,
+      "gap_count": 0,
+      "paged_full_identity_equal": true,
+      "paged_full_details_equal": true,
+      "full_reference_missing_from_pages": 0,
+      "paged_extra_vs_reference": 0,
+      "targets": [
+        {
+          "span": [
+            1046759,
+            1046788
+          ],
+          "category": "BIZ",
+          "subtype": "business_object",
+          "parent_capped": {
+            "start": 1046759,
+            "end": 1046788,
+            "category": "BIZ",
+            "subtype": "business_object",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "prefix_uncapped": {
+            "start": 1046759,
+            "end": 1046788,
+            "category": "BIZ",
+            "subtype": "business_object",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "full_reference": null,
+          "paged_full": null
+        },
+        {
+          "span": [
+            1046950,
+            1046956
+          ],
+          "category": "DIAG",
+          "subtype": "exception_message",
+          "parent_capped": {
+            "start": 1046950,
+            "end": 1046956,
+            "category": "DIAG",
+            "subtype": "exception_message",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "prefix_uncapped": {
+            "start": 1046950,
+            "end": 1046956,
+            "category": "DIAG",
+            "subtype": "exception_message",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "full_reference": null,
+          "paged_full": null
+        },
+        {
+          "span": [
+            1048434,
+            1048436
+          ],
+          "category": "CFG",
+          "subtype": "environment",
+          "parent_capped": {
+            "start": 1048434,
+            "end": 1048436,
+            "category": "CFG",
+            "subtype": "environment",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "prefix_uncapped": {
+            "start": 1048434,
+            "end": 1048436,
+            "category": "CFG",
+            "subtype": "environment",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "full_reference": null,
+          "paged_full": null
+        }
+      ],
+      "prefix_raw_match_envelopes": [
+        {
+          "raw_match_span": [
+            1046745,
+            1046789
+          ],
+          "key_span": [
+            1046745,
+            1046756
+          ],
+          "value_span": [
+            1046759,
+            1046789
+          ],
+          "quoted_value": false,
+          "key_has_controlled_taxonomy": true,
+          "key_has_unknown_hint_rule": false,
+          "covered_target_spans": [
+            [
+              1046759,
+              1046788
+            ]
+          ]
+        },
+        {
+          "raw_match_span": [
+            1046941,
+            1046956
+          ],
+          "key_span": [
+            1046941,
+            1046948
+          ],
+          "value_span": [
+            1046950,
+            1046956
+          ],
+          "quoted_value": false,
+          "key_has_controlled_taxonomy": true,
+          "key_has_unknown_hint_rule": false,
+          "covered_target_spans": [
+            [
+              1046950,
+              1046956
+            ]
+          ]
+        },
+        {
+          "raw_match_span": [
+            1048412,
+            1048436
+          ],
+          "key_span": [
+            1048412,
+            1048432
+          ],
+          "value_span": [
+            1048434,
+            1048436
+          ],
+          "quoted_value": false,
+          "key_has_controlled_taxonomy": true,
+          "key_has_unknown_hint_rule": false,
+          "covered_target_spans": [
+            [
+              1048434,
+              1048436
+            ]
+          ]
+        }
+      ],
+      "full_raw_match_envelopes": [
+        {
+          "raw_match_span": [
+            1046045,
+            1049216
+          ],
+          "key_span": [
+            1046046,
+            1046059
+          ],
+          "value_span": [
+            1046062,
+            1049216
+          ],
+          "quoted_value": true,
+          "key_has_controlled_taxonomy": false,
+          "key_has_unknown_hint_rule": false,
+          "covered_target_spans": [
+            [
+              1046759,
+              1046788
+            ],
+            [
+              1046950,
+              1046956
+            ],
+            [
+              1048434,
+              1048436
+            ]
+          ]
+        }
+      ],
+      "target_rule_order_positions_one_based": [
+        {
+          "span": [
+            1046759,
+            1046788
+          ],
+          "category": "BIZ",
+          "subtype": "business_object",
+          "position": 75
+        },
+        {
+          "span": [
+            1046950,
+            1046956
+          ],
+          "category": "DIAG",
+          "subtype": "exception_message",
+          "position": 76
+        },
+        {
+          "span": [
+            1048434,
+            1048436
+          ],
+          "category": "CFG",
+          "subtype": "environment",
+          "position": 77
+        }
+      ]
+    },
+    {
+      "source_row": 4562,
+      "table_path": "commits.parquet",
+      "column_name": "file_attribution",
+      "characters": 550146,
+      "parent_prefix_characters": 550146,
+      "parent_capped_count": 1000,
+      "parent_match_cap_triggered": true,
+      "prefix_uncapped_count": 1263,
+      "full_reference_count": 1263,
+      "paged_count": 1263,
+      "pages": 117,
+      "gap_count": 0,
+      "paged_full_identity_equal": true,
+      "paged_full_details_equal": true,
+      "full_reference_missing_from_pages": 0,
+      "paged_extra_vs_reference": 0,
+      "targets": [
+        {
+          "span": [
+            391763,
+            391765
+          ],
+          "category": "BIZ",
+          "subtype": "request_body",
+          "parent_capped": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "request_body",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "prefix_uncapped": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "request_body",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "full_reference": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "request_body",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "paged_full": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "request_body",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          }
+        },
+        {
+          "span": [
+            391763,
+            391765
+          ],
+          "category": "BIZ",
+          "subtype": "business_object",
+          "parent_capped": null,
+          "prefix_uncapped": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "business_object",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "full_reference": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "business_object",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          },
+          "paged_full": {
+            "start": 391763,
+            "end": 391765,
+            "category": "BIZ",
+            "subtype": "business_object",
+            "rule": "named_field_taxonomy",
+            "basis": "named_carrier_hint",
+            "confidence": "low",
+            "value_status": "opaque",
+            "candidate_status": "carrier_candidate"
+          }
+        }
+      ],
+      "prefix_raw_match_envelopes": [
+        {
+          "raw_match_span": [
+            391751,
+            391765
+          ],
+          "key_span": [
+            391751,
+            391762
+          ],
+          "value_span": [
+            391763,
+            391765
+          ],
+          "quoted_value": false,
+          "key_has_controlled_taxonomy": true,
+          "key_has_unknown_hint_rule": false,
+          "covered_target_spans": [
+            [
+              391763,
+              391765
+            ],
+            [
+              391763,
+              391765
+            ]
+          ]
+        }
+      ],
+      "full_raw_match_envelopes": [
+        {
+          "raw_match_span": [
+            391751,
+            391765
+          ],
+          "key_span": [
+            391751,
+            391762
+          ],
+          "value_span": [
+            391763,
+            391765
+          ],
+          "quoted_value": false,
+          "key_has_controlled_taxonomy": true,
+          "key_has_unknown_hint_rule": false,
+          "covered_target_spans": [
+            [
+              391763,
+              391765
+            ],
+            [
+              391763,
+              391765
+            ]
+          ]
+        }
+      ],
+      "target_rule_order_positions_one_based": [
+        {
+          "span": [
+            391763,
+            391765
+          ],
+          "category": "BIZ",
+          "subtype": "request_body",
+          "position": 1000
+        },
+        {
+          "span": [
+            391763,
+            391765
+          ],
+          "category": "BIZ",
+          "subtype": "business_object",
+          "position": 1001
+        }
+      ]
+    }
+  ],
+  "frozen_table_sha256_verified": true,
+  "source_stat_unchanged": true,
+  "selected_cells_converted_to_python_strings": 2,
+  "arrow_batches_materialized_in_selected_column": 1551,
+  "other_source_cells_converted_to_python_strings": false,
+  "synthetic_boundary_mechanism": {
+    "prefix_named_candidates": 2,
+    "full_named_candidates": 0,
+    "full_paged_candidates": 0
+  },
+  "execution_source_sha256": {
+    "content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+    "content_repair.py": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522"
+  },
+  "raw_source_printed_or_exported": false,
+  "dynamic_keys_exported": false,
+  "value_hashes_exported": false,
+  "credential_values_verified": false,
+  "shared_databases_accessed": false,
+  "existing_runs_modified": false,
+  "package_source_modified": false,
+  "reference_semantics": "Uncapped finite reference reuses the literal and named generators, retains first observation per (start,end,type), and bypasses only the public 1 Mi-character guard for the selected 1,052,614-character cell; it is not full semantic parsing.",
+  "interpretation": {
+    "source_row_2989": "The artificial 1 Mi-character prefix omits the end of a quoted raw match [1046045,1049216). Prefix scanning then exposes three inner assignments, while the full finite non-overlap rule consumes the enclosing match whose key has no controlled or unknown-sensitive-field rule. Full reference and repaired pagination agree. This establishes boundary-dependent candidate identity, not semantic false-positive status or harmlessness.",
+    "source_row_4562": "The request_body and business_object labels from one raw match are unique rule-order entries 1000 and 1001. The parent per-label match cap keeps only entry 1000. Pagination emits sibling labels atomically, and agrees with the uncapped finite reference.",
+    "implementation_assessment": "No cursor/repair inconsistency reproduced in these two cells. No package change is needed to make pagination match the frozen finite classifier. Nested content inside a consumed quoted match remains a documented semantic coverage boundary; keep removed prefix observations in the reconciliation audit as unresolved evidence."
+  },
+  "helper_path": "docs/inspect_content_replacements_v046.py",
+  "helper_sha256_after_safe_metadata_field_cleanup": "a489b398320da3d00e9b17d49dc0e76ec978d0463c16662e56486af7edd104e4",
+  "metadata_cleanup_note": "Removed an always-empty suppressed display field from raw-match envelopes; no classification results or existing run artifacts were altered.",
+  "executed_helper_sha256": "e00525c5cfc0278348e267ca05fa2df706ab7096b39cc6c53be5ecebe17b664e",
+  "execution": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 agent_log_privacy/.venv/bin/python agentlog_unified/docs/inspect_content_replacements_v046.py",
+    "working_directory": "/Users/lzh/Downloads/Log 研究",
+    "exit_code": 0,
+    "measured_classification_and_source_verification_seconds": 2.491002,
+    "source_value_output": false
+  }
+}

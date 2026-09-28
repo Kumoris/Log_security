@@ -1,0 +1,149 @@
+{
+  "status": "complete_with_declared_gaps",
+  "exit_code": 0,
+  "sampling_frame_cases": 100,
+  "upstream_detected_field_frame": "see frozen source coverage.json; model cohort is subset of its selected cases",
+  "selected_cases": 8,
+  "excluded_cases": 92,
+  "counts": {
+    "repository": {
+      "567-labs/kura": 5,
+      "0x4d31/galah": 3
+    },
+    "language": {
+      "python": 5,
+      "go": 3
+    },
+    "ambiguity_source": {
+      "generic_name": 3,
+      "explicit_or_other_name": 2,
+      "business_abbreviation": 3
+    },
+    "split": {
+      "evaluation_pending_human": 8
+    },
+    "queues": {
+      "binding_unresolved": 4,
+      "dynamic_flow_unresolved": 5,
+      "semantic_unknown": 7,
+      "budget_exhausted": 1,
+      "supported_non_sensitive": 1,
+      "known_semantics_unmapped": 1,
+      "parser_unsupported": 3
+    },
+    "primary_blocker": {
+      "binding_unresolved": 4,
+      "dynamic_flow_unresolved": 1,
+      "parser_unsupported": 3
+    },
+    "context_availability": {
+      "success": 8
+    }
+  },
+  "conditions": {
+    "B": {
+      "valid_final": 8,
+      "denominator": 8,
+      "supported_semantics": 0,
+      "supported_sensitive_classification": 0,
+      "semantic_granularity": {
+        "nominal_type": 6,
+        "unknown": 2
+      },
+      "log_relation": {
+        "serialization_formatting": 1,
+        "derived_count": 2,
+        "direct_original": 3,
+        "selected_field": 2
+      },
+      "sensitive_type_state": {
+        "unknown": 6,
+        "unmapped": 1,
+        "mapped": 1
+      },
+      "types": {
+        "None/None": 1,
+        "DIAG/exception_message": 1
+      },
+      "privacy_risk": {
+        "no_current_risk_evidence": 4,
+        "undetermined": 4
+      }
+    },
+    "C": {
+      "valid_final": 8,
+      "denominator": 8,
+      "supported_semantics": 1,
+      "supported_sensitive_classification": 0,
+      "semantic_granularity": {
+        "structural": 3,
+        "nominal_type": 4,
+        "business_meaning": 1
+      },
+      "log_relation": {
+        "possible": 1,
+        "derived_count": 2,
+        "direct_original": 3,
+        "selected_field": 2
+      },
+      "sensitive_type_state": {
+        "unknown": 5,
+        "non_sensitive": 1,
+        "unmapped": 1,
+        "mapped": 1
+      },
+      "types": {
+        "None/None": 1,
+        "DIAG/exception_message": 1
+      },
+      "privacy_risk": {
+        "no_current_risk_evidence": 3,
+        "undetermined": 5
+      }
+    }
+  },
+  "A_supported_semantics": 0,
+  "model_attempts_this_run": 27,
+  "global_attempts_used": 42,
+  "global_attempt_cap": 80,
+  "global_reserved_or_failed": 0,
+  "valid_responses_this_run": 27,
+  "reused_requests": 11,
+  "usage_this_run": {
+    "input_tokens": 372718,
+    "cached_input_tokens": 146432,
+    "output_tokens": 26811,
+    "reasoning_output_tokens": 5859
+  },
+  "runtime_reported_models": [
+    null
+  ],
+  "retrieval_requests": 22,
+  "retrieval_status": {
+    "success": 6,
+    "not_found": 13,
+    "duplicate": 3
+  },
+  "program_rejections": 102,
+  "human_truth_count": 0,
+  "accuracy": null,
+  "recall": null,
+  "agreement": null,
+  "runtime_confirmations": 0,
+  "independence_note": "fresh model sessions, not statistical or human independence",
+  "confounds": [
+    "A frozen rules use their original context budget; A/B is not a pure model effect",
+    "B/C exact initial extraction shared; review reused only on identical inputs",
+    "cached token billing affects usage, not evidence validity",
+    "all real outputs await human truth; granularity is not accuracy"
+  ],
+  "funnel": {
+    "input_frozen_cases": 100,
+    "selected": 8,
+    "context_constructed": 8,
+    "B_final": 8,
+    "C_final": 8,
+    "C_pending_or_non_sensitive_queues": 8,
+    "human_confirmed": 0
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "recorded_utc": "2026-09-08T22:04:17.962448+00:00",
+  "elapsed_seconds": 0.309,
+  "sampling": "First 128 rows from first/middle/last distinct Parquet row groups; deterministic nonrandom format probe, not prevalence estimation",
+  "max_source_characters_per_cell": 131072,
+  "source_cells_decoded": 512,
+  "results": [
+    {
+      "dataset": "aidev",
+      "table": "pr_commits",
+      "table_path": "pr_commits.parquet",
+      "column_name": "author",
+      "native_type": "string",
+      "field_id": "600da31828f633c6eee783af",
+      "source_rows": 88576,
+      "footer_null_count": 1,
+      "source_table_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_json_or_literal": 128
+      }
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commits",
+      "table_path": "pr_commits.parquet",
+      "column_name": "committer",
+      "native_type": "string",
+      "field_id": "419334edd107b23aed5440fe",
+      "source_rows": 88576,
+      "footer_null_count": 1,
+      "source_table_sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_json_or_literal": 128
+      }
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commit_details",
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "author",
+      "native_type": "string",
+      "field_id": "9a15ced6eab2ddbd8d79a164",
+      "source_rows": 711923,
+      "footer_null_count": 3,
+      "source_table_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_json_or_literal": 128
+      }
+    },
+    {
+      "dataset": "aidev",
+      "table": "pr_commit_details",
+      "table_path": "pr_commit_details.parquet",
+      "column_name": "committer",
+      "native_type": "string",
+      "field_id": "3d7ca478f251057b87f40a9e",
+      "source_rows": 711923,
+      "footer_null_count": 3,
+      "source_table_sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+      "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+      "source_sha256_verified": true,
+      "sample_source_ranges": [
+        {
+          "row_group": 0,
+          "start_row": 1,
+          "end_row": 128
+        }
+      ],
+      "sample_counts": {
+        "cells_decoded": 128,
+        "not_json_or_literal": 128
+      }
+    }
+  ],
+  "synthetic_assertions_passed": 6,
+  "raw_values_or_dynamic_keys_exported": false,
+  "target_code_executed": false,
+  "paid_model_calls": 0,
+  "network_accessed": false,
+  "privacy_types_confirmed": false,
+  "full_dataset_coverage_claim": false,
+  "human_review_status": "pending",
+  "application_log_evidence": false,
+  "review_source_sha256": "6badb0e92aa32c8da8ce5a332dc686d05b8937304282e0e157d7443a08fcea8c",
+  "script_sha256": "4d8e586f995ba23645d76642151a454d299da6a127d4c0d49181f89406260507",
+  "command": [
+    "agent_log_privacy/.venv/bin/python",
+    "/private/tmp/probe_author_formats_v046.py"
+  ]
+}

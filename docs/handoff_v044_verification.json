@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-08T21:09:26.893088+00:00",
+  "checks": {
+    "goal_remains_incomplete": true,
+    "test_record_441_passed": true,
+    "content_exports_independently_verified": true,
+    "git_exports_independently_verified": true,
+    "approved_deleted_dirs_absent": true,
+    "preserved_imports_present": true,
+    "aidev_checkpoint_metrics_in_progress": true,
+    "aidev_classifier_unchanged": true,
+    "aidev_sum_candidate_status_counts": true,
+    "swechat_checkpoint_metrics_in_progress": true,
+    "swechat_classifier_unchanged": true,
+    "swechat_sum_candidate_status_counts": true,
+    "documentation_local_links_exist": true
+  },
+  "missing_links": [],
+  "all_checks_passed": true,
+  "current_report": "docs/datasets_v044_report.md",
+  "goal_complete": false
+}

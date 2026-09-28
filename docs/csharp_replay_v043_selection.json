@@ -1,0 +1,491 @@
+{
+  "created_utc": "2026-09-08T20:24:16.291800+00:00",
+  "selection_rule": "A commit is selected iff any existing file_audit old_path or new_path ends with .cs (case insensitive); all original context rows for that whole commit are replayed",
+  "sensitive_keyword_filter_used": false,
+  "target_code_executed": false,
+  "cache_fetches": 0,
+  "context_policy": "Original exported context dictionaries preserved exactly, including dataset fields, source refs and any existing local_repo_path. No local_repo_path is added. Duplicate identical context dictionaries are deduplicated across batches.",
+  "source_batches": [
+    {
+      "source_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5",
+      "source_input_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2/mining_prs.jsonl",
+      "source_input_sha256": "63003c7a73a58ee645f14fc8d468b1996309193aa0e2af68af4c8fc25e144548",
+      "replay_context_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/contexts.jsonl",
+      "replay_context_source_sha256": "f9fdb3e49c81c3fc0bcb232846f9643c6358bc692e778537a187cd2cf89e307a",
+      "selection_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/file_audit.jsonl",
+      "selection_source_sha256": "8e305d18695cfb2066085386988668e8fb20402b7d4eb8f13e18876a4d19bb0c",
+      "commit_audit_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/commit_audit.jsonl",
+      "commit_audit_sha256": "319e0f31a15b2c4ffaadc5bee3b23ebb2690a2b9b649a77238cb7ae108d336f0",
+      "dataset_output": "aidev",
+      "job_status_counts": {
+        "partial": 221,
+        "complete": 115,
+        "blocked": 85979
+      },
+      "selection_counts": {
+        "unknown": 86200,
+        "not_selected_by_language": 115
+      },
+      "csharp_file_audit_rows": 0,
+      "selected_commit_count": 0,
+      "selected_context_associations": 0,
+      "output_context_rows_added": 0,
+      "csharp_source_status_counts": {},
+      "selected_commits": [],
+      "selected_file_audit_rows_without_context": 0
+    },
+    {
+      "source_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5",
+      "source_input_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v3/commit_contexts.jsonl",
+      "source_input_sha256": "12001bfd652404edb5c432c17a569e1c0d091f15aed1471588360a53f6e1ad18",
+      "replay_context_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/contexts.jsonl",
+      "replay_context_source_sha256": "42dc5a1fc429cc8c6a9be3108c96c5c2ce1fcb945c5cd68a4b3ed1af8b77be2c",
+      "selection_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/file_audit.jsonl",
+      "selection_source_sha256": "a0cac19ee3547d296ad97360d40292bf1b81fae539e07c3997ada2154361b103",
+      "commit_audit_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/commit_audit.jsonl",
+      "commit_audit_sha256": "331cfed7f8fe52b58e8684a28cb268f7096b66b5d18250176678df870b35b909",
+      "dataset_output": "swechat",
+      "job_status_counts": {
+        "complete": 574,
+        "partial": 722,
+        "blocked": 7401
+      },
+      "selection_counts": {
+        "not_selected_by_language": 574,
+        "unknown": 8103,
+        "selected_whole_commit_with_csharp_changed_path": 20
+      },
+      "csharp_file_audit_rows": 162,
+      "selected_commit_count": 20,
+      "selected_context_associations": 20,
+      "output_context_rows_added": 20,
+      "csharp_source_status_counts": {
+        "{\"after\":\"ok\",\"before\":\"ok\"}": 111,
+        "{\"after\":\"ok\",\"before\":\"absent_by_change_type\"}": 51
+      },
+      "selected_commits": [
+        {
+          "repository": "ai-stats/ai-stats",
+          "sha": "1e85759bf89015878978cfbca5cdd197defe0f68",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 138,
+          "csharp_file_audit_ids": [
+            "cfebc35d361a7d2a396d012e"
+          ]
+        },
+        {
+          "repository": "ai-stats/ai-stats",
+          "sha": "330e9515da60941dbb256dfad5254e5342e8a153",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 23,
+          "csharp_file_audit_ids": [
+            "3bff3c9aaee92ba972435eb2",
+            "e02ac244b1b5da7ebc26f160"
+          ]
+        },
+        {
+          "repository": "ai-stats/ai-stats",
+          "sha": "d7386882ca1704ef4e10ac8a053dd6ee32a9963c",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 19,
+          "csharp_file_audit_ids": [
+            "2a22657e5c1ad23969d290c6"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "01abc49b6c78d518fd48477dec313760b5dbcc72",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 52,
+          "csharp_file_audit_ids": [
+            "06a952883a65f1b7a06f5329",
+            "16cbeb158ee367cf25f2797a",
+            "2bb5c428ec6f69aab9f057bb",
+            "3087d7a0416a6526e83ddef9",
+            "408ed97453e8f4b9edff16b8",
+            "4adc2ce1f9ca8ce0bc79aad5",
+            "52826cdfc4dd7bc60f462711",
+            "5ea96ec516612dceb7d70a85",
+            "92eb39720bc2bba274d14dce",
+            "93d997a0d99dbd2f28a3fd2e",
+            "97a4f1100ad27d33a6c423f8",
+            "b851c0fbb8eeb39d7ba6ea6b",
+            "c1c7361eb1adc95a32b65896",
+            "c751671a7ec5fe0b13bbe9d9",
+            "d380d7062976fe283ed460f4",
+            "d89315d7a5b77aff68ee94e6",
+            "d969173f37d36024fa8d7a50"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "12d528f748f39467000c87adeafa9aa7af6560d2",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 1,
+          "csharp_file_audit_ids": [
+            "73b03101e76908c5acfb4ff5"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "5052681d82d282eeb43b156fe183aeac3f923ee5",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 1,
+          "csharp_file_audit_ids": [
+            "e1f9744d91568658b5d84253"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "518a9ed504838fb7fc334345ed923325ae34b199",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 18,
+          "csharp_file_audit_ids": [
+            "cc03e940c15f9b257aebea5b"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "595b043201fa639eeae4ef948f9391e39f2a2f6d",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 72,
+          "csharp_file_audit_ids": [
+            "0e29d8deb2ddd92aac89b865",
+            "1344f2372d229943e7c536ad",
+            "1e84ef3222420e30b71fdaff",
+            "38180cbf8ee2a4c00680c19c",
+            "453bd3ab049175b1dce13bc8",
+            "4714b67ad28a853d13f84004",
+            "4a8413c383250757a9cb5672",
+            "562024656b048f3e07242a9b",
+            "581ce885041c74bfa9567891",
+            "5990e29ed9d3b764939b48f2",
+            "5fc35d13c363956de9b29360",
+            "6d1b56fa40110ebcd693b1a3",
+            "6f918d197b6cb5b55892bfe6",
+            "6fbee3a249d3ea4f896300ab",
+            "755836df6c43c928d1bda724",
+            "7f5fe06a4e9c52ac59228217",
+            "80ddc8ee0c8d39613e9ded0b",
+            "9477d92825d0fae861f7c393",
+            "958f51ff8ab9decd142aef4f",
+            "97b6362ab0f64153a3179abe",
+            "9a7220df6ff3b071ec14c4bb",
+            "a64e4113394c3e93ff462462",
+            "b60699742ba93681cbe70b30",
+            "ba6ab4c4013034992e394bae",
+            "c23750505db955d16604fd58",
+            "cfdf86754ec98ba916e737ee",
+            "d1a5b3d88e732dc0a909630a",
+            "d7d9106f0113aa7065ac2826",
+            "da6942dda6b4b659c2e8486c",
+            "e2218e3377f8fbc10dd26c90",
+            "ee7799fc6b11a8cd62030a55",
+            "f858848f9a0953b8a5b999d6"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "7655268d4dd2b3049ef7c877bacc239a3f8e7db4",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 1,
+          "csharp_file_audit_ids": [
+            "42deb0a2bd32254fc9a1481a"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "76f34465a1a33b254ed372fdbbb0b485bcf43287",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 1,
+          "csharp_file_audit_ids": [
+            "f983bdedd2a5de8b287c41a2"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "7c51b603b5a9cd0011dff02f74c467672b0ff5be",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 52,
+          "csharp_file_audit_ids": [
+            "045f62259bddb38d468c0f6b",
+            "158b1e347d7622f28c823904",
+            "17b8543e2c3d390831af409e",
+            "2b87c3ae78e0eee15a126fdb",
+            "34ff080e5db5900275ab349d",
+            "3ef54c48eb301d2998f76ebd",
+            "4729dc1e7f10defd3f15e6c3",
+            "4b3777f2395617cc45149fe6",
+            "50f69fabdaf8c894aa2ab707",
+            "54ed6f117ff8c7e8cda74cf2",
+            "608f9cdea051dc70cb3af4d6",
+            "8bf4068d6a92e2484e15a404",
+            "d30d284262d79246c93d9691",
+            "e0443015e250f3123cbc0aa7",
+            "f48cbfecf254742463b4bf88"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "8a33bf270d44e8f6ffea04599bd6aae084fb0c72",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 54,
+          "csharp_file_audit_ids": [
+            "06bd3a1c87db1179106f5362",
+            "1bb7ca759295b3ca4fca358e",
+            "2b82762db86e768c4b4899a2",
+            "3ef1c45aa83cd61acbe633b8",
+            "461fa20d250def884e6011be",
+            "5013c1d9b763fb8aa5d8a48e",
+            "61bf233110e45b2108b23bf3",
+            "6fb772801b156d343f44bbf3",
+            "7425f8810246e97de28493ca",
+            "79b11767deb6a51726d9805f",
+            "93b758de19d9c5a4097930dc",
+            "b90c565a77362a1850d3fe2b",
+            "d942190a1d8332e462d8f4cf",
+            "dbc2190206a00b7f889d97b9",
+            "f84dfc7c473e4d3b2ecd3e5d"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "a9064e8b82b5df40b30d8896ecc50e49502a8ac4",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 7,
+          "csharp_file_audit_ids": [
+            "0e5bb58533b264c60aefd543",
+            "4534e951d5e20c00a6c1efc8",
+            "aab66ee7e50c59b61bff2172",
+            "bf57aeb951e2722ab0981f5a",
+            "fa176ba45671bf832d852673"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "be743bfa28ae8873be47596193a11988471d8ef4",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 5,
+          "csharp_file_audit_ids": [
+            "069f794a5e987a0ddb706ddd",
+            "738ed494cb5a313a6ce8f6f7",
+            "7c6f4bbeb7ff8374c736665a",
+            "a8bbf3285cd2dd37599022b5",
+            "d12237bf344f19b977aa6a6e"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "d605826ed7bbaa910267e8eebb92201371f6f101",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 1,
+          "csharp_file_audit_ids": [
+            "e88fa22e1097804294cab742"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "fe0c7e838749567e4600d7539b8db1f23d584737",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 1,
+          "csharp_file_audit_ids": [
+            "d5b84027ca05e2c53a3d4e07"
+          ]
+        },
+        {
+          "repository": "alexinslc/hickory",
+          "sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 55,
+          "csharp_file_audit_ids": [
+            "020792e1b79d72a06c4661c2",
+            "1abbf529fbfc9c3aedf44466",
+            "2e8e1931a4d00defbc05ced5",
+            "3149b04007ccc7217f36039b",
+            "5bf65f782dfdf882227510ab",
+            "7814e7a839a10eac46281e4d",
+            "7d94b21fca3374fae137d9f0",
+            "8928628d1422ecab022fe437",
+            "8eb5f0b25a0c12cdd43d0cc6",
+            "95aed479208194ce2fb350a5",
+            "a44a695022efdb513a8def76",
+            "b964788c7ac2082eb7abac8f",
+            "ddce461348083702b995c98f",
+            "fa395d65f991a29183a75f5c",
+            "ffa707f5eda6bbe538e11f61"
+          ]
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "sha": "2dd500c6f24f41dce57181837db94a210b0e68ad",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 11,
+          "csharp_file_audit_ids": [
+            "210e76e4de113e801ee7977d",
+            "42bd74d107faf4722c9d69c7",
+            "5a96fee47588792a93f49a4f",
+            "7f7cac922893ca8c6a6619bc",
+            "81eb846461968269e7d2a4f1",
+            "8d017b7d29833fc7e6fd132a",
+            "a56c9f75d9a80e20420cf35b",
+            "b452ef4026d4cac26d877a42",
+            "c3d22506c78f6f96deb092eb",
+            "c696adfa59511983ec306e64",
+            "e7a036d871ec9563bfe78cb7"
+          ]
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "sha": "9ab7f0880196192914003dc0a7858f1b7ab9e0d7",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 31,
+          "csharp_file_audit_ids": [
+            "0f9380f2eb6b0be27f1eb474",
+            "2a1865d92fbe11f1c20810ba",
+            "2b4d9a68595709baf710572f",
+            "2bc1e7904910bb2dd1a17c20",
+            "32a07dedcedd2f1aea3643eb",
+            "37842594ef4a52929ab03d7f",
+            "3c997422bf4dba1175ef6584",
+            "44d432fb55984c9be99bb5ba",
+            "48995536d1b6545c1f4c21da",
+            "55752413f692b04828d931c5",
+            "59e2e6869530c5d81cd362f1",
+            "59e588b53526c5bbad7201ee",
+            "5aba8393fca7db6c6a10a211",
+            "5ad978b41147d0866bc112c1",
+            "5d8cfd83a941149e27607de8",
+            "616e0c40ab38096abe502e2f",
+            "61e18e4dd2d22a3564066bdd",
+            "6418a9e89e1c62281353c66f",
+            "6c64f9961c1e99da759294ab",
+            "7c0b03fb9d5010c7b3cedbd9",
+            "93bdf80876af8c721721cc6a",
+            "94ad48aa3e121618a95b12d4",
+            "b2abcda08df7c5ba3da4f924",
+            "bac51c02c031a04cb80c785a",
+            "c3ac89d380dd7a7af54858b1",
+            "c8e968d91f14004ade070687",
+            "cc2a297037f865a99b8f2cf5",
+            "d1c5315c51fe66d6dddd620c",
+            "ed23658c3af1a1e111397192",
+            "f015bb00bc9aff6bdcde77b4",
+            "fc2c80e9c8d7efef7a0a081b"
+          ]
+        },
+        {
+          "repository": "baotoq/micro-commerce",
+          "sha": "e58596450fd549ac6dde4142fb4d329f51c13276",
+          "job_status": "partial",
+          "file_audit_count_all_extensions": 5,
+          "csharp_file_audit_ids": [
+            "410dee4f81db8dee7ebf2116",
+            "7f48d5dbada90851f6cc0df1",
+            "9716c9193ac6ad8beb2b5f63",
+            "98f7203ab652cd9a33991778",
+            "bc611ff1034c95c5d4b91d64"
+          ]
+        }
+      ],
+      "selected_file_audit_rows_without_context": 0
+    },
+    {
+      "source_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3",
+      "source_input_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-anchors-v2/mining_commit_anchors.jsonl",
+      "source_input_sha256": "123254be720c8c6db9eb6982cba16440dfc7293e6764bc8bb4bd5b4bc201ef27",
+      "replay_context_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/contexts.jsonl",
+      "replay_context_source_sha256": "453c4df320f05940477aff0d9e28786081ce0d3e763a79ff24181354ce1117d2",
+      "selection_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/file_audit.jsonl",
+      "selection_source_sha256": "4d86cefb4efad57c392c142909184b9690e6042225d197215268c69ac9f95005",
+      "commit_audit_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/commit_audit.jsonl",
+      "commit_audit_sha256": "dfe2484960bc99e115078a8074d917caad814b3b77eb2042d6f13cb990dd5933",
+      "dataset_output": "aidev",
+      "job_status_counts": {
+        "partial": 19,
+        "complete": 2,
+        "blocked": 5,
+        "pending": 24442
+      },
+      "selection_counts": {
+        "unknown": 24466,
+        "not_selected_by_language": 2
+      },
+      "csharp_file_audit_rows": 0,
+      "selected_commit_count": 0,
+      "selected_context_associations": 0,
+      "output_context_rows_added": 0,
+      "csharp_source_status_counts": {},
+      "selected_commits": [],
+      "selected_file_audit_rows_without_context": 0
+    },
+    {
+      "source_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042",
+      "source_input_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-prior-cache-v042.jsonl",
+      "source_input_sha256": "7d4aa1db4619f974f38d6e92ad0dd36d16d9f6bf94f501cd248826e6613ae57c",
+      "replay_context_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/contexts.jsonl",
+      "replay_context_source_sha256": "8a89c443cd26a853d55cf34ac287dc18c46391f2107b62bc76ed1ff80a55cb7b",
+      "selection_source_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/file_audit.jsonl",
+      "selection_source_sha256": "d736e6b4235b91dda294694f052e2bbc1b44ac045d1ac7f39d7545561a2e90e0",
+      "commit_audit_path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/commit_audit.jsonl",
+      "commit_audit_sha256": "10546d2948e6968a74ecacf5d2688210ee565270b2e1ebbb2f38fd7c1ab0e935",
+      "dataset_output": "aidev",
+      "job_status_counts": {
+        "complete": 5,
+        "partial": 3
+      },
+      "selection_counts": {
+        "not_selected_by_language": 5,
+        "unknown": 3
+      },
+      "csharp_file_audit_rows": 0,
+      "selected_commit_count": 0,
+      "selected_context_associations": 0,
+      "output_context_rows_added": 0,
+      "csharp_source_status_counts": {},
+      "selected_commits": [],
+      "selected_file_audit_rows_without_context": 0
+    }
+  ],
+  "outputs": {
+    "aidev": {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/csharp-replay-v043-aidev.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "context_rows": 0,
+      "unique_commit_count": 0
+    },
+    "swechat": {
+      "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/csharp-replay-v043-swechat.jsonl",
+      "sha256": "f3f7460bec86432586d2d8f8d01205a3ab7b400ad03211e668ddeee2c678e3e3",
+      "context_rows": 20,
+      "unique_commit_count": 20
+    }
+  },
+  "unselected_commit_ledger": {
+    "path": "/Users/lzh/Downloads/Log 研究/agentlog_unified/docs/csharp_replay_v043_unselected_commits.jsonl",
+    "sha256": "2c926029251fb596a95a489a2eeedcca5345e31bc423177d012b538dc4f58d69",
+    "selection_state_counts": {
+      "unknown": 118772,
+      "not_selected_by_language": 696
+    },
+    "unit": "source-batch + repository + SHA association; not unique commits across overlapping batches"
+  },
+  "evidence_boundary": [
+    "This is a language-based replay cohort from available changed-file evidence, not a census of C# across either dataset.",
+    "Unavailable/unattempted or partial unselected commits remain unknown; no selected C# rows were omitted due to sensitive keyword or source availability.",
+    "No C# in available AIDev file audits is not evidence that AIDev contains no C# logs.",
+    "Original supplied commit is replayed as a whole, including changed non-C# files and all available parents; no source statement filter."
+  ],
+  "verification": {
+    "all_checks_passed": true,
+    "checks": {
+      "aidev_every_selected_commit_has_context": true,
+      "aidev_all_context_fields_preserved_exactly": true,
+      "aidev_no_local_repo_path_added": true,
+      "aidev_all_cs_file_audits_represented": true,
+      "swechat_every_selected_commit_has_context": true,
+      "swechat_all_context_fields_preserved_exactly": true,
+      "swechat_no_local_repo_path_added": true,
+      "swechat_all_cs_file_audits_represented": true
+    }
+  }
+}

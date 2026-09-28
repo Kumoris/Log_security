@@ -1,0 +1,1121 @@
+{
+  "status": "complete_with_gaps",
+  "complete": true,
+  "exit_code": 2,
+  "counts": {
+    "unusable_commit_references": 5205,
+    "commit_contexts": 8697,
+    "contexts_with_commit_metadata": 8697,
+    "source_tables": 6,
+    "readable_tables": 6,
+    "source_rows_read": 2732252,
+    "unique_sessions": 5851,
+    "unique_checkpoints": 13406,
+    "unique_repositories": 205,
+    "duplicate_entity_rows": 1807,
+    "missing_primary_key_rows": 5205,
+    "ambiguous_repository_entity_ids": 1250,
+    "contexts_without_commit_metadata": 0
+  },
+  "tables": [
+    {
+      "table": "checkpoints",
+      "path": "checkpoints.parquet",
+      "sha256": "06d5d9d095d7a3f482e12c31b66e3e0f10ed7cc3a747cd1515b962733e1cc1e3",
+      "bytes": 5564169,
+      "rows": 13406,
+      "schema": [
+        {
+          "name": "checkpoint_pk",
+          "type": "large_string"
+        },
+        {
+          "name": "checkpoint_id",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_id",
+          "type": "large_string"
+        },
+        {
+          "name": "session_pks",
+          "type": "large_string"
+        },
+        {
+          "name": "session_count",
+          "type": "int64"
+        },
+        {
+          "name": "commit_shas",
+          "type": "large_string"
+        },
+        {
+          "name": "commit_count",
+          "type": "int64"
+        },
+        {
+          "name": "author_user_ids",
+          "type": "large_string"
+        },
+        {
+          "name": "unique_author_count",
+          "type": "double"
+        },
+        {
+          "name": "user_id",
+          "type": "large_string"
+        },
+        {
+          "name": "cli_version",
+          "type": "large_string"
+        },
+        {
+          "name": "strategy",
+          "type": "large_string"
+        },
+        {
+          "name": "branch",
+          "type": "large_string"
+        },
+        {
+          "name": "checkpoints_count",
+          "type": "int64"
+        },
+        {
+          "name": "files_touched",
+          "type": "large_string"
+        },
+        {
+          "name": "files_touched_count",
+          "type": "int64"
+        },
+        {
+          "name": "cp_input_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cp_output_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cp_cache_creation_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cp_cache_read_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cp_api_call_count",
+          "type": "int64"
+        },
+        {
+          "name": "total_additions",
+          "type": "int64"
+        },
+        {
+          "name": "total_deletions",
+          "type": "int64"
+        },
+        {
+          "name": "checkpoint_metadata_raw",
+          "type": "large_string"
+        }
+      ],
+      "recognized": true,
+      "rows_read": 13406,
+      "status": "complete",
+      "column_mapping": {
+        "repo_id": "repo_id",
+        "session_id": null,
+        "checkpoint_pk": "checkpoint_pk",
+        "commit_sha": null,
+        "turn_id": null,
+        "url": null,
+        "checkpoint_ids": null,
+        "session_pks": "session_pks",
+        "commit_shas": "commit_shas",
+        "agent": null,
+        "is_agent_author": null,
+        "status": null,
+        "created_at": null,
+        "branch": "branch",
+        "transcript_path": null,
+        "role": null,
+        "turn_type": null,
+        "is_conversational": null,
+        "tool_name": null
+      },
+      "content_columns": {
+        "checkpoint_metadata_raw": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 0,
+          "nonnull_rows_from_footer": 13406,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        }
+      }
+    },
+    {
+      "table": "commits",
+      "path": "commits.parquet",
+      "sha256": "e93d2bb76c862742396b6d35be2c48a3ce7132d077868f4660cf4cbe7d8ef08f",
+      "bytes": 1082547262,
+      "rows": 14459,
+      "schema": [
+        {
+          "name": "commit_sha",
+          "type": "large_string"
+        },
+        {
+          "name": "checkpoint_pk",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_id",
+          "type": "large_string"
+        },
+        {
+          "name": "commit_index",
+          "type": "int64"
+        },
+        {
+          "name": "num_commits",
+          "type": "int64"
+        },
+        {
+          "name": "user_id",
+          "type": "large_string"
+        },
+        {
+          "name": "github_username",
+          "type": "large_string"
+        },
+        {
+          "name": "author_name",
+          "type": "large_string"
+        },
+        {
+          "name": "author_email",
+          "type": "large_string"
+        },
+        {
+          "name": "author_date",
+          "type": "timestamp[us, tz=UTC]"
+        },
+        {
+          "name": "commit_date",
+          "type": "timestamp[us, tz=UTC]"
+        },
+        {
+          "name": "commit_message",
+          "type": "large_string"
+        },
+        {
+          "name": "branch",
+          "type": "large_string"
+        },
+        {
+          "name": "is_agent_author",
+          "type": "bool"
+        },
+        {
+          "name": "files_changed_count",
+          "type": "int64"
+        },
+        {
+          "name": "total_additions",
+          "type": "int64"
+        },
+        {
+          "name": "total_deletions",
+          "type": "int64"
+        },
+        {
+          "name": "files_changed",
+          "type": "large_string"
+        },
+        {
+          "name": "numstat",
+          "type": "large_string"
+        },
+        {
+          "name": "patch",
+          "type": "large_string"
+        },
+        {
+          "name": "agent_changes",
+          "type": "large_string"
+        },
+        {
+          "name": "file_attribution",
+          "type": "large_string"
+        },
+        {
+          "name": "status",
+          "type": "large_string"
+        }
+      ],
+      "recognized": true,
+      "rows_read": 14459,
+      "status": "complete",
+      "column_mapping": {
+        "repo_id": "repo_id",
+        "session_id": null,
+        "checkpoint_pk": "checkpoint_pk",
+        "commit_sha": "commit_sha",
+        "turn_id": null,
+        "url": null,
+        "checkpoint_ids": null,
+        "session_pks": null,
+        "commit_shas": null,
+        "agent": null,
+        "is_agent_author": "is_agent_author",
+        "status": "status",
+        "created_at": "author_date",
+        "branch": "branch",
+        "transcript_path": null,
+        "role": null,
+        "turn_type": null,
+        "is_conversational": null,
+        "tool_name": null
+      },
+      "content_columns": {
+        "agent_changes": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 0,
+          "nonnull_rows_from_footer": 14459,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "commit_message": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 5205,
+          "nonnull_rows_from_footer": 9254,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "file_attribution": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 5205,
+          "nonnull_rows_from_footer": 9254,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "patch": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 5205,
+          "nonnull_rows_from_footer": 9254,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        }
+      }
+    },
+    {
+      "table": "conversations",
+      "path": "conversations.parquet",
+      "sha256": "9ee1d937dbf7eb73a8dad75071c69a4f6b5aac7f4120bd8ef3799ee50f4f1c36",
+      "bytes": 1311422253,
+      "rows": 2692480,
+      "schema": [
+        {
+          "name": "turn_id",
+          "type": "large_string"
+        },
+        {
+          "name": "session_id",
+          "type": "large_string"
+        },
+        {
+          "name": "checkpoint_pk",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_id",
+          "type": "large_string"
+        },
+        {
+          "name": "user_id",
+          "type": "large_string"
+        },
+        {
+          "name": "turn_number",
+          "type": "int64"
+        },
+        {
+          "name": "conversation_turn_number",
+          "type": "double"
+        },
+        {
+          "name": "role",
+          "type": "large_string"
+        },
+        {
+          "name": "turn_type",
+          "type": "large_string"
+        },
+        {
+          "name": "is_conversational",
+          "type": "bool"
+        },
+        {
+          "name": "content",
+          "type": "large_string"
+        },
+        {
+          "name": "model",
+          "type": "large_string"
+        },
+        {
+          "name": "timestamp",
+          "type": "timestamp[us, tz=UTC]"
+        },
+        {
+          "name": "input_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "output_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cache_creation_input_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cache_read_input_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "is_continuation",
+          "type": "bool"
+        },
+        {
+          "name": "is_first_turn",
+          "type": "bool"
+        },
+        {
+          "name": "word_count",
+          "type": "int64"
+        },
+        {
+          "name": "char_count",
+          "type": "int64"
+        },
+        {
+          "name": "tool_name",
+          "type": "large_string"
+        },
+        {
+          "name": "tool_call_id",
+          "type": "large_string"
+        },
+        {
+          "name": "file_path",
+          "type": "large_string"
+        },
+        {
+          "name": "command",
+          "type": "large_string"
+        },
+        {
+          "name": "pattern",
+          "type": "large_string"
+        },
+        {
+          "name": "tool_input_json",
+          "type": "large_string"
+        },
+        {
+          "name": "category",
+          "type": "large_string"
+        },
+        {
+          "name": "bash_category",
+          "type": "large_string"
+        },
+        {
+          "name": "queue_op_subtype",
+          "type": "large_string"
+        },
+        {
+          "name": "agent",
+          "type": "large_string"
+        },
+        {
+          "name": "strategy",
+          "type": "large_string"
+        },
+        {
+          "name": "language",
+          "type": "large_string"
+        },
+        {
+          "name": "prompt_intent",
+          "type": "large_string"
+        },
+        {
+          "name": "prompt_pushback",
+          "type": "large_string"
+        }
+      ],
+      "recognized": true,
+      "rows_read": 2692480,
+      "status": "complete",
+      "column_mapping": {
+        "repo_id": "repo_id",
+        "session_id": "session_id",
+        "checkpoint_pk": "checkpoint_pk",
+        "commit_sha": null,
+        "turn_id": "turn_id",
+        "url": null,
+        "checkpoint_ids": null,
+        "session_pks": null,
+        "commit_shas": null,
+        "agent": "agent",
+        "is_agent_author": null,
+        "status": null,
+        "created_at": null,
+        "branch": null,
+        "transcript_path": null,
+        "role": "role",
+        "turn_type": "turn_type",
+        "is_conversational": "is_conversational",
+        "tool_name": "tool_name"
+      },
+      "content_columns": {
+        "command": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 2565842,
+          "nonnull_rows_from_footer": 126638,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "content": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 0,
+          "nonnull_rows_from_footer": 2692480,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "pattern": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 2655765,
+          "nonnull_rows_from_footer": 36715,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "tool_input_json": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 2336538,
+          "nonnull_rows_from_footer": 355942,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        }
+      }
+    },
+    {
+      "table": "repositories",
+      "path": "repositories.parquet",
+      "sha256": "24a28b10a856e5123d5a9264dd7aece54e5207f2c52f9c888141172732dd3e52",
+      "bytes": 244741,
+      "rows": 205,
+      "schema": [
+        {
+          "name": "repo_id",
+          "type": "large_string"
+        },
+        {
+          "name": "owner_id",
+          "type": "large_string"
+        },
+        {
+          "name": "name",
+          "type": "large_string"
+        },
+        {
+          "name": "url",
+          "type": "large_string"
+        },
+        {
+          "name": "is_fork",
+          "type": "bool"
+        },
+        {
+          "name": "settings",
+          "type": "large_string"
+        },
+        {
+          "name": "num_checkpoints",
+          "type": "int64"
+        },
+        {
+          "name": "num_sessions",
+          "type": "int64"
+        },
+        {
+          "name": "num_commits",
+          "type": "int64"
+        },
+        {
+          "name": "num_contributors_in_dataset",
+          "type": "int64"
+        },
+        {
+          "name": "total_additions_in_dataset",
+          "type": "int64"
+        },
+        {
+          "name": "total_deletions_in_dataset",
+          "type": "int64"
+        },
+        {
+          "name": "total_repo_commits_ever",
+          "type": "int64"
+        },
+        {
+          "name": "total_repo_additions_ever",
+          "type": "int64"
+        },
+        {
+          "name": "total_repo_deletions_ever",
+          "type": "int64"
+        },
+        {
+          "name": "total_agent_commits_ever",
+          "type": "int64"
+        },
+        {
+          "name": "total_agent_additions_ever",
+          "type": "int64"
+        },
+        {
+          "name": "total_agent_deletions_ever",
+          "type": "int64"
+        },
+        {
+          "name": "last_scraped_at",
+          "type": "timestamp[us, tz=UTC]"
+        },
+        {
+          "name": "license_type",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_github_metadata",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_type_domain",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_type_audience",
+          "type": "large_string"
+        }
+      ],
+      "recognized": true,
+      "rows_read": 205,
+      "status": "complete",
+      "column_mapping": {
+        "repo_id": "repo_id",
+        "session_id": null,
+        "checkpoint_pk": null,
+        "commit_sha": null,
+        "turn_id": null,
+        "url": "url",
+        "checkpoint_ids": null,
+        "session_pks": null,
+        "commit_shas": null,
+        "agent": null,
+        "is_agent_author": null,
+        "status": null,
+        "created_at": null,
+        "branch": null,
+        "transcript_path": null,
+        "role": null,
+        "turn_type": null,
+        "is_conversational": null,
+        "tool_name": null
+      },
+      "content_columns": {
+        "repo_github_metadata": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 0,
+          "nonnull_rows_from_footer": 205,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "settings": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 3,
+          "nonnull_rows_from_footer": 202,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        }
+      }
+    },
+    {
+      "table": "session_logs",
+      "path": "session_logs.parquet",
+      "sha256": "2d4618f5be1e2a5d93610897bc73d7e08bf9ecfa70fe09492a48c8eca732a521",
+      "bytes": 6369801,
+      "rows": 5851,
+      "schema": [
+        {
+          "name": "session_id",
+          "type": "large_string"
+        },
+        {
+          "name": "transcript_path",
+          "type": "large_string"
+        },
+        {
+          "name": "context_md",
+          "type": "large_string"
+        },
+        {
+          "name": "session_metadata_raw",
+          "type": "large_string"
+        }
+      ],
+      "recognized": true,
+      "rows_read": 5851,
+      "status": "complete",
+      "column_mapping": {
+        "repo_id": null,
+        "session_id": "session_id",
+        "checkpoint_pk": null,
+        "commit_sha": null,
+        "turn_id": null,
+        "url": null,
+        "checkpoint_ids": null,
+        "session_pks": null,
+        "commit_shas": null,
+        "agent": null,
+        "is_agent_author": null,
+        "status": null,
+        "created_at": null,
+        "branch": null,
+        "transcript_path": "transcript_path",
+        "role": null,
+        "turn_type": null,
+        "is_conversational": null,
+        "tool_name": null
+      },
+      "content_columns": {
+        "context_md": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 0,
+          "nonnull_rows_from_footer": 5851,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        },
+        "session_metadata_raw": {
+          "status": "source_reference_only",
+          "null_rows_from_footer": 0,
+          "nonnull_rows_from_footer": 5851,
+          "values_read": false,
+          "nonnull_does_not_establish_valid_content": true
+        }
+      }
+    },
+    {
+      "table": "sessions",
+      "path": "sessions.parquet",
+      "sha256": "2ada63973b182b691318916ca8c813e694091400e43744eca9cad3da2d958a95",
+      "bytes": 1997377,
+      "rows": 5851,
+      "schema": [
+        {
+          "name": "session_id",
+          "type": "large_string"
+        },
+        {
+          "name": "repo_id",
+          "type": "large_string"
+        },
+        {
+          "name": "owner_id",
+          "type": "large_string"
+        },
+        {
+          "name": "user_id",
+          "type": "large_string"
+        },
+        {
+          "name": "checkpoint_ids",
+          "type": "large_string"
+        },
+        {
+          "name": "canonical_checkpoint_pk",
+          "type": "large_string"
+        },
+        {
+          "name": "agent",
+          "type": "large_string"
+        },
+        {
+          "name": "strategy",
+          "type": "large_string"
+        },
+        {
+          "name": "branch",
+          "type": "large_string"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp[ns, tz=UTC]"
+        },
+        {
+          "name": "cli_version",
+          "type": "large_string"
+        },
+        {
+          "name": "files_touched",
+          "type": "large_string"
+        },
+        {
+          "name": "files_touched_count",
+          "type": "int64"
+        },
+        {
+          "name": "checkpoints_count",
+          "type": "int64"
+        },
+        {
+          "name": "input_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "output_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cache_creation_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "cache_read_tokens",
+          "type": "int64"
+        },
+        {
+          "name": "api_call_count",
+          "type": "int64"
+        },
+        {
+          "name": "agent_lines",
+          "type": "double"
+        },
+        {
+          "name": "human_added",
+          "type": "double"
+        },
+        {
+          "name": "human_modified",
+          "type": "double"
+        },
+        {
+          "name": "human_removed",
+          "type": "double"
+        },
+        {
+          "name": "total_committed",
+          "type": "double"
+        },
+        {
+          "name": "agent_percentage",
+          "type": "double"
+        },
+        {
+          "name": "attribution_calculated_at",
+          "type": "timestamp[ns, tz=UTC]"
+        },
+        {
+          "name": "transcript_identifier_at_start",
+          "type": "large_string"
+        },
+        {
+          "name": "transcript_path",
+          "type": "large_string"
+        },
+        {
+          "name": "tool_call_count",
+          "type": "double"
+        },
+        {
+          "name": "unique_tools_count",
+          "type": "double"
+        },
+        {
+          "name": "research_count",
+          "type": "double"
+        },
+        {
+          "name": "action_count",
+          "type": "double"
+        },
+        {
+          "name": "first_write_position",
+          "type": "double"
+        },
+        {
+          "name": "duration_seconds",
+          "type": "double"
+        },
+        {
+          "name": "turn_count",
+          "type": "double"
+        },
+        {
+          "name": "prompt_count",
+          "type": "int64"
+        },
+        {
+          "name": "content_hash",
+          "type": "large_string"
+        },
+        {
+          "name": "user_persona",
+          "type": "large_string"
+        },
+        {
+          "name": "session_success",
+          "type": "large_string"
+        }
+      ],
+      "recognized": true,
+      "rows_read": 5851,
+      "status": "complete",
+      "column_mapping": {
+        "repo_id": "repo_id",
+        "session_id": "session_id",
+        "checkpoint_pk": "canonical_checkpoint_pk",
+        "commit_sha": null,
+        "turn_id": null,
+        "url": null,
+        "checkpoint_ids": "checkpoint_ids",
+        "session_pks": null,
+        "commit_shas": null,
+        "agent": "agent",
+        "is_agent_author": null,
+        "status": null,
+        "created_at": "created_at",
+        "branch": "branch",
+        "transcript_path": "transcript_path",
+        "role": null,
+        "turn_type": null,
+        "is_conversational": null,
+        "tool_name": null
+      },
+      "content_columns": {}
+    }
+  ],
+  "relationships": [
+    {
+      "table": "checkpoints",
+      "relation": "commit",
+      "status": "ambiguous_repository",
+      "rows": 2734
+    },
+    {
+      "table": "checkpoints",
+      "relation": "commit",
+      "status": "linked",
+      "rows": 6518
+    },
+    {
+      "table": "checkpoints",
+      "relation": "repository",
+      "status": "linked",
+      "rows": 13406
+    },
+    {
+      "table": "checkpoints",
+      "relation": "session",
+      "status": "linked",
+      "rows": 19681
+    },
+    {
+      "table": "checkpoints",
+      "relation": "session",
+      "status": "orphan",
+      "rows": 1711
+    },
+    {
+      "table": "checkpoints",
+      "relation": "session",
+      "status": "repository_conflict",
+      "rows": 5094
+    },
+    {
+      "table": "commits",
+      "relation": "checkpoint",
+      "status": "linked",
+      "rows": 14457
+    },
+    {
+      "table": "commits",
+      "relation": "checkpoint",
+      "status": "orphan",
+      "rows": 2
+    },
+    {
+      "table": "commits",
+      "relation": "repository",
+      "status": "linked",
+      "rows": 14459
+    },
+    {
+      "table": "conversations",
+      "relation": "checkpoint",
+      "status": "linked",
+      "rows": 2692394
+    },
+    {
+      "table": "conversations",
+      "relation": "checkpoint",
+      "status": "orphan",
+      "rows": 86
+    },
+    {
+      "table": "conversations",
+      "relation": "repository",
+      "status": "linked",
+      "rows": 2692480
+    },
+    {
+      "table": "conversations",
+      "relation": "session",
+      "status": "linked",
+      "rows": 2468801
+    },
+    {
+      "table": "conversations",
+      "relation": "session",
+      "status": "orphan",
+      "rows": 3817
+    },
+    {
+      "table": "conversations",
+      "relation": "session",
+      "status": "repository_conflict",
+      "rows": 219862
+    },
+    {
+      "table": "session_logs",
+      "relation": "session",
+      "status": "linked",
+      "rows": 5851
+    },
+    {
+      "table": "sessions",
+      "relation": "checkpoint",
+      "status": "linked",
+      "rows": 25531
+    },
+    {
+      "table": "sessions",
+      "relation": "checkpoint",
+      "status": "orphan",
+      "rows": 62
+    },
+    {
+      "table": "sessions",
+      "relation": "checkpoint",
+      "status": "repository_conflict",
+      "rows": 5094
+    },
+    {
+      "table": "sessions",
+      "relation": "repository",
+      "status": "linked",
+      "rows": 5851
+    }
+  ],
+  "array_fields": [
+    {
+      "table": "checkpoints",
+      "field": "commit_shas",
+      "status": "valid",
+      "rows": 13406
+    },
+    {
+      "table": "checkpoints",
+      "field": "session_pks",
+      "status": "duplicate_entries",
+      "rows": 18
+    },
+    {
+      "table": "checkpoints",
+      "field": "session_pks",
+      "status": "valid",
+      "rows": 13388
+    },
+    {
+      "table": "sessions",
+      "field": "checkpoint_ids",
+      "status": "valid",
+      "rows": 5851
+    }
+  ],
+  "missing_expected_tables": [],
+  "unavailable_tables": [],
+  "swechat_source_snapshot": "6c38294526e7773688ac9534660adc4bd496c5fcf268f0e82a5209106bb59d39",
+  "paths": {
+    "manifest.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v2/manifest.json",
+    "swechat.sqlite": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v2/swechat.sqlite",
+    "coverage.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v2/coverage.json",
+    "commit_contexts.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/swechat-full-v2/commit_contexts.jsonl"
+  },
+  "resumed": false,
+  "evidence_boundary": {
+    "all_local_tables_scanned": true,
+    "all_six_expected_tables_available": true,
+    "full_dataset_completeness_verified": false,
+    "repository_code_mined": false,
+    "patches_or_full_files_loaded": false,
+    "session_content_classified": false,
+    "content_values_exported": false,
+    "agent_labels_verified": false,
+    "network_accessed": false,
+    "target_code_executed": false
+  },
+  "primary_key_coverage": [
+    {
+      "table": "checkpoints",
+      "status": "present_unverified",
+      "rows": 13406
+    },
+    {
+      "table": "commits",
+      "status": "present_unverified",
+      "rows": 9254
+    },
+    {
+      "table": "commits",
+      "status": "missing_primary_key",
+      "rows": 5205
+    },
+    {
+      "table": "conversations",
+      "status": "present_unverified",
+      "rows": 2692480
+    },
+    {
+      "table": "repositories",
+      "status": "present_unverified",
+      "rows": 205
+    },
+    {
+      "table": "session_logs",
+      "status": "present_unverified",
+      "rows": 5851
+    },
+    {
+      "table": "sessions",
+      "status": "present_unverified",
+      "rows": 5851
+    }
+  ]
+}

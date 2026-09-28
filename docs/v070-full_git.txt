@@ -1,0 +1,232 @@
+{
+  "status": "complete_with_declared_gaps",
+  "exit_code": 0,
+  "input_sha256": "6101d8f9e03ca09df1b6847413dd533dd7a236e5836b16eebdccf2bd5e626ee6",
+  "input_repository_denominator": 3,
+  "attempted_repositories": 3,
+  "repositories": [
+    {
+      "repository": "0x4d31/galah",
+      "started_at": "2026-09-09T10:27:05.927974+00:00",
+      "network_mode": "explicit_public_clone",
+      "extraction_method": "native_git_object_acquisition_only",
+      "fallback_reason": null,
+      "target_code_executed": false,
+      "status": "objects_complete_for_frozen_refs",
+      "frozen_tip": "8f77b85e892731cf1402963d8121c79fef0e59c7",
+      "object_state": {
+        "shallow": false,
+        "promisor_configured": false,
+        "partial_clone_filters": [],
+        "implicit_lazy_fetch_enabled": false
+      },
+      "reachable_commit_count": 146,
+      "reachable_object_count": 794,
+      "missing_object_count": 0,
+      "missing_object_ids": [],
+      "initial_is_ancestor": {
+        "2cabddbb539fad459fb3ed5cc2d4a0d4812adce0": true
+      },
+      "scope": "local advertised refs plus supplied initial commits; deleted/unadvertised refs not proven complete"
+    },
+    {
+      "repository": "0x80/isolate-package",
+      "started_at": "2026-09-09T10:27:07.194995+00:00",
+      "network_mode": "explicit_public_clone",
+      "extraction_method": "native_git_object_acquisition_only",
+      "fallback_reason": null,
+      "target_code_executed": false,
+      "status": "objects_complete_for_frozen_refs",
+      "frozen_tip": "13c828734052001e653c85af813289ecbe00c196",
+      "object_state": {
+        "shallow": false,
+        "promisor_configured": false,
+        "partial_clone_filters": [],
+        "implicit_lazy_fetch_enabled": false
+      },
+      "reachable_commit_count": 524,
+      "reachable_object_count": 3452,
+      "missing_object_count": 0,
+      "missing_object_ids": [],
+      "initial_is_ancestor": {
+        "0865255bd27aa847afe8f7e0796f73b6d05bc32d": false
+      },
+      "scope": "local advertised refs plus supplied initial commits; deleted/unadvertised refs not proven complete"
+    },
+    {
+      "repository": "567-labs/kura",
+      "started_at": "2026-09-09T10:27:09.661815+00:00",
+      "network_mode": "explicit_public_clone",
+      "extraction_method": "native_git_object_acquisition_only",
+      "fallback_reason": null,
+      "target_code_executed": false,
+      "status": "objects_complete_for_frozen_refs",
+      "frozen_tip": "956d95ac6a19c841c59eefe692f3341dfc2ba410",
+      "object_state": {
+        "shallow": false,
+        "promisor_configured": false,
+        "partial_clone_filters": [],
+        "implicit_lazy_fetch_enabled": false
+      },
+      "reachable_commit_count": 659,
+      "reachable_object_count": 4289,
+      "missing_object_count": 0,
+      "missing_object_ids": [],
+      "initial_is_ancestor": {
+        "1d05f0166366d837464978f033706ed1a7a93e30": false
+      },
+      "scope": "local advertised refs plus supplied initial commits; deleted/unadvertised refs not proven complete"
+    }
+  ],
+  "remaining_repositories": 0,
+  "remote_writes": 0,
+  "target_code_executions": 0,
+  "full_git_mining": {
+    "status": "complete_with_declared_gaps",
+    "exit_code": 0,
+    "repositories": [
+      {
+        "fingerprint": {
+          "repository": "0x80/isolate-package",
+          "frozen_tip": "13c828734052001e653c85af813289ecbe00c196",
+          "initial_shas": [
+            "0865255bd27aa847afe8f7e0796f73b6d05bc32d"
+          ],
+          "max_commits": 1000,
+          "miner_sha256": "e2c8d6d882dfdd0505c4b7a70725f731f10c6e809a45a2a79e3285b033f48bf1"
+        },
+        "metrics": {
+          "pydriller_repository_traversals": 2,
+          "pydriller_commits": 252,
+          "pydriller_modified_files_calls": 251,
+          "pydriller_git_diff_calls": 2,
+          "pydriller_diff_parsed_calls": 1038,
+          "pydriller_source_reads": 1871,
+          "auxiliary_blob_reads": 27,
+          "merge_fallbacks": 0,
+          "files_extracted": 1038,
+          "target_graph_commits": 251,
+          "reused_commits": 0,
+          "reused_files": 0,
+          "cache_rejected_commits": 0,
+          "requested_initial_commits": 1,
+          "resolved_initial_commits": 1,
+          "eligible_commits": 252,
+          "new_files_extracted": 1038,
+          "total_file_records": 1038,
+          "selected_commits_missing": 0
+        },
+        "history_scope": {
+          "policy": "all_target_reachable",
+          "omitted_pre_initial_commits": 0,
+          "scope_start_sha": "1bc84e104e149cbad0ad8233dcfbe33286ebde7d",
+          "frozen_tip": "13c828734052001e653c85af813289ecbe00c196",
+          "target_graph_backend": "git.rev-list",
+          "author_filter": null
+        },
+        "gap_records": 3,
+        "selected_commits": 252,
+        "all_requested_commits_extracted": true,
+        "scope": "all frozen target reachable commits plus supplied initial commits; not every remote branch",
+        "semantic_analysis_of_all_commits": false,
+        "target_code_executed": false
+      },
+      {
+        "fingerprint": {
+          "repository": "567-labs/kura",
+          "frozen_tip": "956d95ac6a19c841c59eefe692f3341dfc2ba410",
+          "initial_shas": [
+            "1d05f0166366d837464978f033706ed1a7a93e30"
+          ],
+          "max_commits": 1000,
+          "miner_sha256": "e2c8d6d882dfdd0505c4b7a70725f731f10c6e809a45a2a79e3285b033f48bf1"
+        },
+        "metrics": {
+          "pydriller_repository_traversals": 2,
+          "pydriller_commits": 262,
+          "pydriller_modified_files_calls": 233,
+          "pydriller_git_diff_calls": 58,
+          "pydriller_diff_parsed_calls": 1567,
+          "pydriller_source_reads": 2444,
+          "auxiliary_blob_reads": 52,
+          "merge_fallbacks": 7,
+          "files_extracted": 1567,
+          "target_graph_commits": 261,
+          "reused_commits": 0,
+          "reused_files": 0,
+          "cache_rejected_commits": 0,
+          "requested_initial_commits": 1,
+          "resolved_initial_commits": 1,
+          "eligible_commits": 262,
+          "new_files_extracted": 1567,
+          "total_file_records": 1567,
+          "selected_commits_missing": 0
+        },
+        "history_scope": {
+          "policy": "all_target_reachable",
+          "omitted_pre_initial_commits": 0,
+          "scope_start_sha": "364b6ee24abcc1a0e1c585da01a2a6ca67112e14",
+          "frozen_tip": "956d95ac6a19c841c59eefe692f3341dfc2ba410",
+          "target_graph_backend": "git.rev-list",
+          "author_filter": null
+        },
+        "gap_records": 156,
+        "selected_commits": 262,
+        "all_requested_commits_extracted": true,
+        "scope": "all frozen target reachable commits plus supplied initial commits; not every remote branch",
+        "semantic_analysis_of_all_commits": false,
+        "target_code_executed": false
+      },
+      {
+        "fingerprint": {
+          "repository": "0x4d31/galah",
+          "frozen_tip": "8f77b85e892731cf1402963d8121c79fef0e59c7",
+          "initial_shas": [
+            "2cabddbb539fad459fb3ed5cc2d4a0d4812adce0"
+          ],
+          "max_commits": 1000,
+          "miner_sha256": "e2c8d6d882dfdd0505c4b7a70725f731f10c6e809a45a2a79e3285b033f48bf1"
+        },
+        "metrics": {
+          "pydriller_repository_traversals": 1,
+          "pydriller_commits": 146,
+          "pydriller_modified_files_calls": 123,
+          "pydriller_git_diff_calls": 46,
+          "pydriller_diff_parsed_calls": 458,
+          "pydriller_source_reads": 801,
+          "auxiliary_blob_reads": 34,
+          "merge_fallbacks": 4,
+          "files_extracted": 458,
+          "target_graph_commits": 146,
+          "reused_commits": 0,
+          "reused_files": 0,
+          "cache_rejected_commits": 0,
+          "requested_initial_commits": 1,
+          "resolved_initial_commits": 1,
+          "eligible_commits": 146,
+          "new_files_extracted": 458,
+          "total_file_records": 458,
+          "selected_commits_missing": 0
+        },
+        "history_scope": {
+          "policy": "all_target_reachable",
+          "omitted_pre_initial_commits": 0,
+          "scope_start_sha": "836370c511450cfde2bce2709553de824f610ffe",
+          "frozen_tip": "8f77b85e892731cf1402963d8121c79fef0e59c7",
+          "target_graph_backend": "git.rev-list",
+          "author_filter": null
+        },
+        "gap_records": 38,
+        "selected_commits": 146,
+        "all_requested_commits_extracted": true,
+        "scope": "all frozen target reachable commits plus supplied initial commits; not every remote branch",
+        "semantic_analysis_of_all_commits": false,
+        "target_code_executed": false
+      }
+    ],
+    "pydriller_commits": 660,
+    "pydriller_diff_parsed_calls": 3063,
+    "pydriller_source_reads": 5116,
+    "all_requested_commits_extracted": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "recorded_utc": "2026-09-08T21:50:46.128599+00:00",
+  "issue": "repair export total shadowed by per-type status group count",
+  "affected": "repair_coverage.candidate_occurrences",
+  "source_rows_lost": false,
+  "fix_status": "fixed_and_verified_in_fresh_final_runs",
+  "runs": [
+    {
+      "dataset": "aidev",
+      "reported_candidate_occurrences": 4106,
+      "actual_candidate_rows": 4112,
+      "difference": 6,
+      "source": "agentlog_unified/repair-runs/aidev-v045/scan",
+      "authoritative_rows_need_independent_verification": false,
+      "diagnostic_role": "preserved only; current results are from fresh final runs"
+    },
+    {
+      "dataset": "swechat",
+      "reported_candidate_occurrences": 192,
+      "actual_candidate_rows": 110675,
+      "difference": 110483,
+      "source": "agentlog_unified/repair-runs/swechat-v045/scan",
+      "authoritative_rows_need_independent_verification": true,
+      "diagnostic_role": "preserved only; current results are from fresh final runs"
+    }
+  ],
+  "old_runs_preserved": true,
+  "final_tests": "488 passed in 29.30s",
+  "final_test_record": "docs/tests_v045_final_execution.json",
+  "final_source_sha256": "a47fce00fdd7fea89fac14eb578c7167fdb3190cac54d1ff9da6239543cfd522",
+  "final_verifications": [
+    "docs/aidev_repair_v045_final_verification.json",
+    "docs/swechat_repair_v045_final_verification.json"
+  ],
+  "diagnostic_runs_in_current_aggregation": false,
+  "final_result_counts": {
+    "aidev": {
+      "candidate_occurrences": 4112,
+      "cell_status_counts": {
+        "complete_with_semantic_gaps": 1
+      },
+      "committed_pages": 29,
+      "excluded_occurrences": 0,
+      "status": "complete_with_semantic_gaps"
+    },
+    "swechat": {
+      "candidate_occurrences": 443609,
+      "cell_status_counts": {
+        "complete_with_semantic_gaps": 349,
+        "partial": 1,
+        "pending": 217
+      },
+      "committed_pages": 163911,
+      "excluded_occurrences": 727,
+      "status": "partial"
+    }
+  },
+  "final_runs": [
+    "repair-runs/aidev-v045-final",
+    "repair-runs/swechat-v045-final"
+  ],
+  "final_runs_status": "executed; final directories verified"
+}

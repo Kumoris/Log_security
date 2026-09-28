@@ -1,0 +1,688 @@
+{
+  "command": [
+    "agent_log_privacy/.venv/bin/agentlog-unified",
+    "collect-objects",
+    "--output",
+    "agentlog_unified/batches/aidev-full-v4",
+    "--cache-dir",
+    "agentlog_unified/cache/object-repos",
+    "--online",
+    "--max-commits",
+    "250",
+    "--max-seconds",
+    "300",
+    "--resume"
+  ],
+  "cwd": "/Users/lzh/Downloads/Log \u7814\u7a76",
+  "started_at": "2026-09-08T20:23:22.610029+00:00",
+  "source_sha256_before": {
+    "agentlog_unified/src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "agentlog_unified/src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "agentlog_unified/src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c"
+  },
+  "before": {
+    "job_statuses": {
+      "complete": 28,
+      "partial": 127,
+      "pending": 86160
+    },
+    "object_acquisition_attempts": 478,
+    "max_acquisition_rowid": 478,
+    "free_disk_bytes": 5706801152
+  },
+  "exit_code": 2,
+  "finished_at": "2026-09-08T20:28:24.184769+00:00",
+  "elapsed_seconds": 301.1769,
+  "source_sha256_after": {
+    "agentlog_unified/src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "agentlog_unified/src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "agentlog_unified/src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c"
+  },
+  "after": {
+    "job_statuses": {
+      "complete": 28,
+      "partial": 127,
+      "pending": 86160
+    },
+    "object_acquisition_attempts": 625,
+    "max_acquisition_rowid": 625,
+    "free_disk_bytes": 13033840640
+  },
+  "source_unchanged": true,
+  "verification": {
+    "summary": {
+      "this_run_attempted": 147,
+      "this_run_repositories": 2,
+      "this_run_status_counts": {
+        "objects_ready_for_offline_mining": 147
+      },
+      "offline": false,
+      "latest_collection_status_counts": {
+        "objects_ready_for_offline_mining": 475
+      },
+      "total_recorded_attempts": 625,
+      "elapsed_seconds": 300.2706,
+      "classification_performed": false,
+      "full_history_collected": false,
+      "remaining_without_collection_attempt": 85835,
+      "output": "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/batches/aidev-full-v4/collection",
+      "exit_code": 2
+    },
+    "new_status_counts": {
+      "objects_ready_for_offline_mining": 147
+    },
+    "new_gap_reasons": {},
+    "new_per_repository": {
+      "514-labs/moose": 57,
+      "567-labs/instructor": 90
+    },
+    "new_metrics": {
+      "changed_blobs_objects_missing_before": 494,
+      "changed_blobs_requested_objects": 494,
+      "explicit_fetch_attempts": 277,
+      "explicit_fetch_calls": 277,
+      "parent_graph_requested_objects": 25,
+      "raw_changed_entries": 479,
+      "auxiliary_source_reads_for_import_planning": 276,
+      "direct_import_candidate_attempts": 3686,
+      "commit_graph_requested_objects": 79,
+      "auxiliary_dependency_validation_reads": 530,
+      "direct_import_blobs_objects_missing_before": 51,
+      "direct_import_blobs_requested_objects": 51,
+      "direct_import_candidate_budget_truncations": 62
+    },
+    "new_ready_commits": [
+      {
+        "repository": "514-labs/moose",
+        "sha": "0d7cae5996c54a1eea0899013b4e3bec20e6a686"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "1390e3da2e1d1cd429d34ec717c17e3d9b0d115a"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "13a045ca7d5d6b28d4d122016d8e1c5464ec465c"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "25f92e658177bc344b6eb72f8cdfd4492a57dbb9"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "2a3f9b751adfcf0534b080df02c629345f5a90ad"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "303a8ed81ec799f0d9bb0653210dc0ff886977b8"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "331790eb7051ad474a1a62c38462562557596c91"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "386fee5af18d84473e4ac42d5894523f941a4a98"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "3abe6ca4c50e9e3e6d98376ce67348f38af51b86"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "418882ff6a2ecfa441f9d29f0f331decce03568b"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "4e17a7c2e26a4a1fb1ec79536bce318bc6229293"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "53ec124c005d2a86db17bd9005bba88fce8a015a"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "54dbdf8eada6e232b8ac482b551717159bfee894"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "5544ab40e872c0a13a911cd2925d8d74a6a9cc8e"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "59d9a623217fa11da2e10899033a97a88f3cd45a"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "5ad43f8a1790738c639b56f3d39c372ad11ad842"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "5b96a715e49ec77cf3938e9aa26dcf274eb0cbaa"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "5f89a0a322f3f28e0c57149e8063efade498e68c"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "676d4a547aa91f0eb678c837ae2d4a9f37170ad1"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "691beb72bf2a80be64a19ebcdb13a59a1c4d157f"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "6c395f8cdbaf2835146be08e917743f5bac9f4ed"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "6ce70eac80a484c68cac04ae7cf70edd92993e0e"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "8250a4a39b17a99c93bf25ae726b7493f659ab3e"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "857df14f6c7863ba7319ea1bf4f4460811c7de3c"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "87e76cefcdfb4d225860c272bc41282cf06c15f5"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "8a1a0dfcd3f195b3654d6a7b61822927cbdd1060"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "8af8bfb6b423d5e77754008462c694cb71b8f9eb"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "8c144d7f3c77d96bbb4d281bbcdbefc213572c76"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "8ffbe463f6c6f7aa9b734f2a30f35bec0511b0df"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "97980483bb16f88939647e593ab4045e78669c43"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "a2fe4a706be1aee6042b4c02860a5cf58697e816"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "a69a8123a38af038c8bfa8c53758a4ae31f7af22"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "a792ee71337544c0869771989cdd3f050c9f25a6"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "a8320941e244570ca25bf6a5e8db68f34b345e49"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "ae5fddc4199868ae2ac6e5f1e339f492d1aa68f0"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "b3bf31a7fafe43272ff3de369d5adc404077dd2a"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "b6344e517693899ddd013e0d053f54ba67cf053d"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "babbf0d1380b4b0838af294978712689aefa7a95"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "bc444f36f383ca8142e3179d38c8aef7abe54e31"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "be9ee718d4b46076975a904e0ae5f73666e2fbc6"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "c029367ef1fd9e13ab5dd5ff98b184663198426d"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "c0ed537cff585ea0a9975b5e77b9c27c9b3ccde9"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "caa4e9cbb44a46ee2cce6800b8da4a724aa2ced6"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "cc36e80c9623c6ad37cc8269adfa3e6aa50380c4"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "cf07810db81fc338e4b916cce6145371f44a984d"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "d783fbf3de56c9b3ab5f3503a90faffca1a90fa6"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "da89e0c2c8690915f4562ca8713c220467cff559"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "dc0069d55335a4f6898145d23e84eabe9f2a3c4d"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "dd2e355ad5bdbcc4beab45da84592ad95dde63b6"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "e184df0b851d7fe93b40c4bde4ab6bec2fb82da9"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "e59ec4e0745a59dc1135bf64be11f09ece18303f"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "e853195561d5104b31a087dc9b66e01a8201a2dd"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "eab1e34463e5005de710eda8201b3c9061352ff8"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "ef0c142c33617acfe122cbef06d001af0c10e345"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "f03f41e647f30924724037fccc4efbda935fd1d7"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "f107bd5d3e4a65add301cf0d4e567f2d54012cd1"
+      },
+      {
+        "repository": "514-labs/moose",
+        "sha": "f352476625ebcff25edf5e708b74b5bb96c211e5"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "01173404bf5befd18fee493efadac9dd8ca986eb"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0172189e49fd384f909368bba0810ff7309af8bb"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "01bae29855553426427906d44eba58c021682652"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "070d689eb3689199a7b060fb6aa46d1c4e15f232"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0cf5496572ca637b46fe369b6de2ce9e34a6ac34"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "0e1355a9f965b036ae597ccfa091113f103aea52"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "115cf5353ce5b7dfc35e38a95a43bde53b00b3f9"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "149f97bbe7a167e8d1d0a2f89371ad1b7f33ed9c"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "1c258401c523528c11bc8dae1bb9c249feeb7ab0"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "1ce1bccb8327c01c66259d400f163f0cf73a5b67"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "2062d16c966d37d9723634e2116db3256683a4ea"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "21242791a68909798d1e8cf6a1b98c237ba52ce5"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "2501084babcb95364e39594ee593a0fe833c4a0d"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "251329788bb001b7da2200335af6aa6b745f6add"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "278f5b1fbc0f793bc2f245ccbb5c1b2ae93ccc0c"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "28ca0816bbad7699eef68a33038c9d17eb4cc69c"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "2c363ac193af8c00f2126102affed4fa69244728"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "31205a82ae31a94232e4478d9bb7d8213d7902e7"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "35e69d7b896a0e04b87100ebcf3b0b33ef0de5fc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "37bdedd217162e3c1d29eee2d094c83506dc4535"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "38c04f3a5ce4e45528d0d8731edbaddeeb06598a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "3a817f8702cffc584bec2312cf8bcee5688cb38a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "3e0a17d82b83dc38fe5ddeb9de5179266224d826"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "3fc10b6129bafa4a37962a8ce542edf9d9c17c03"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "41e0df1a8fb58601f47cbd7c8939638a53209f66"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "4736d413e6966397f205767ba52c9b850182a71a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "494949306b644539cdafc0c45326bd1564cb74da"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "4d5bf868f4fd0fa7f97b9ef9fccae13394dcb344"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "53b9e59b4deb5b123fcacbd8b8aeaa9d61d6e121"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5806f80b636889b2a39c39591c07ff55db56c891"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5ac6f3990605c3728fc8dcebe6c867bba37a7d6e"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5be1b23252ba57b7f5c80e7a4ceaa1327afce7b0"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5c7cef2655234baeacb41a48c65b8e5f1c276dcc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "5d01623afd04df83debad15035965e94067d0f28"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "601fdd082d730d677edd006c551e4cf47b614efc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "6b747cc32a496db30069cbb7c7788983d2cc7f70"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "722418d181ceb67af4926994f5ded00e38598b8c"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "741b637cabb24260d9457f453ed12567ff7f4345"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "76490b78cc6ab267f5d3d70da75f724f2d5344e6"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "76821ba08a2eb3f53c4a116cc618b935e1e6c5d7"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7a4c11c53794146b5fac6ed5ded836601c39650e"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7d316f3b147544682685f8faa59c6ede62ae6d45"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "7fc2c2fe7021cd92b5c9bb6f529581b43a15a545"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "82038fe77e5299213b5ec9072ed51dea9d9f0cf1"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "8e145fd466c562984e6c21daefaa835b95092c17"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "90703474cd0b855b3b8b3ac89bf679974b88f295"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "9423b2756e1c9d135cb6a859ed25f691269f27e2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "98062d417021b687f2daf499eea22ccae77e30b9"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "9aebed08211cf6cca3132c150ca5c92070f143f3"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "9caf2b5a0e18554e77a8889bede3cfa9dfabdd07"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a1b190b285282141009c2e772a944a3f131b64d2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a4612cbd83230e3ba93e726ee03bcb47f4ef17c2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a468403a74e946aa845df4dfff3ed2daa234c4db"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a46bd5ba0bcdeba0f9f16a77863e5338c0e55de6"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a5ba6c54a0c621b0dbe76d5867675966ef41d159"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "a8027242468aef754518c3ae4af016bedf48b0ee"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "aa57b1d06db1cd1b74bd90fe7b44f973c34f1dba"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "acfc30d1e56c8ffb4310c7169e258dd6cac6b8f2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "adc58c681ccdbb08acfe84171f6002a24e5a0122"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "af824ef45113ed88ea5f726ccff114a9ee2b6bbc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "b262b05be0a0fe4a38c65ee7549d825058ff2cd6"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "b687fa58d2b619b9c2ad9fa2047df44805b09471"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "b69141cb1ae044015f5fdbff064c866bb3bb3d43"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "b863c50b4b20b78785f060aebf49b378da5b78fc"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "bb6e3409097da0f7484d339f429295b60f4f892c"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "be4ed5a574f23862e5cf6a10a3f78b7b9ead2925"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "beb31a08a7f2c4e867b2f5eeba1d74b3a2d59615"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c033054daff3defa1d045084a3c36e8ce98abfd8"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c0b79f7c6b5e42ba07966244bcfbd9856bca5c02"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c0d50c004e8fd7fd52d455187aa093e1d26336f2"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c14848ed74fd61ca8d316f462146a398324bcb1e"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c20d182f34ad9b9ef394102fa193304c1b1b4635"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "c649da69628c554e2e5f31ccdd7ce758e246447a"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "cccb29f0f351729f6a94795dba5aea67cfffe93b"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "cfb23d0f3bdae0e37b09a6fbf5ce6435981888a7"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d271d2f39020dba24e1d0739eff18b04e8dd2431"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d3f0a543309549a417d719861540028dc353ef71"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d45d8670c50c5f7fac34aa768436b206cf91144b"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d58c39006dc490a8ac00f07e1e80d2191ce1d27d"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "d9827deeed6cddaca8b6c33397e50157f3a95f3f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "dd367037bf140f689751ae514b9bc27f43bd94af"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "e18c056590e50a464d433b6a047219988fa7fb1f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "e60c46a29adf342cda3f50010a49f054b8a2003d"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "edc1b8c4b86598600cbbc8bef2fcca6bc31d1107"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "efccb92fbb9d613cd8cad2d2e3c696f9065d6e5f"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f39ef942db73e43a20be3fe9ad421b3d91a39f20"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f5d5d91a3d9af39e5a6fa36ffbe34b230c98b695"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f789696266acf4f9fcf55c2de2e0538b090aa12b"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "f9b1b9e6c668ec3719abd81492905bb1e691e9ff"
+      },
+      {
+        "repository": "567-labs/instructor",
+        "sha": "fde4d9bd58a3476e641947804a29ac86d466154e"
+      }
+    ],
+    "classification_performed": false,
+    "output_sha256": "fb01674519280223853e11498dbeb0402fcc6d1ad73a4734cbacf077080e7c7c",
+    "stderr_bytes": 0
+  }
+}

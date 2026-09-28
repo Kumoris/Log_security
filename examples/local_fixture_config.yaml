@@ -1,0 +1,5 @@
+input:
+  prs_path: examples/prs.example.jsonl
+  offline: true
+mining:
+  max_history_commits_per_repository: 100

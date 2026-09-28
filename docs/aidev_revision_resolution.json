@@ -1,0 +1,196 @@
+[
+  {
+    "revision": "512e07014b7b6e34cc1080372caa1c2bc054369d",
+    "matches": 17,
+    "expected": 18,
+    "files": [
+      {
+        "path": "pr_timeline.parquet",
+        "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+        "matches": true
+      },
+      {
+        "path": "pull_request.parquet",
+        "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+        "matches": true
+      },
+      {
+        "path": "pr_task_type.parquet",
+        "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+        "matches": true
+      },
+      {
+        "path": "all_repository.parquet",
+        "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+        "matches": true
+      },
+      {
+        "path": "pr_review_comments.parquet",
+        "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+        "matches": true
+      },
+      {
+        "path": "pr_review_comments_v2.parquet",
+        "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+        "matches": true
+      },
+      {
+        "path": "all_pull_request.parquet",
+        "sha256": "30b92db6609528bd26b29945206d15ab3ce7b7088d6d2a6a652783603a54c95b",
+        "matches": false
+      },
+      {
+        "path": "pr_commits.parquet",
+        "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+        "matches": true
+      },
+      {
+        "path": "human_pr_task_type.parquet",
+        "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+        "matches": true
+      },
+      {
+        "path": "human_pull_request.parquet",
+        "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+        "matches": true
+      },
+      {
+        "path": "user.parquet",
+        "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+        "matches": true
+      },
+      {
+        "path": "pr_comments.parquet",
+        "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+        "matches": true
+      },
+      {
+        "path": "related_issue.parquet",
+        "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+        "matches": true
+      },
+      {
+        "path": "repository.parquet",
+        "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+        "matches": true
+      },
+      {
+        "path": "pr_reviews.parquet",
+        "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+        "matches": true
+      },
+      {
+        "path": "issue.parquet",
+        "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+        "matches": true
+      },
+      {
+        "path": "pr_commit_details.parquet",
+        "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+        "matches": true
+      },
+      {
+        "path": "all_user.parquet",
+        "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "revision": "68ed5f4b80d27a9e057fc57567f38bd322ac73ec",
+    "matches": 18,
+    "expected": 18,
+    "files": [
+      {
+        "path": "pr_timeline.parquet",
+        "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8",
+        "matches": true
+      },
+      {
+        "path": "pull_request.parquet",
+        "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c",
+        "matches": true
+      },
+      {
+        "path": "pr_task_type.parquet",
+        "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476",
+        "matches": true
+      },
+      {
+        "path": "all_repository.parquet",
+        "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1",
+        "matches": true
+      },
+      {
+        "path": "pr_review_comments.parquet",
+        "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27",
+        "matches": true
+      },
+      {
+        "path": "pr_review_comments_v2.parquet",
+        "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8",
+        "matches": true
+      },
+      {
+        "path": "all_pull_request.parquet",
+        "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223",
+        "matches": true
+      },
+      {
+        "path": "pr_commits.parquet",
+        "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f",
+        "matches": true
+      },
+      {
+        "path": "human_pr_task_type.parquet",
+        "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658",
+        "matches": true
+      },
+      {
+        "path": "human_pull_request.parquet",
+        "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248",
+        "matches": true
+      },
+      {
+        "path": "user.parquet",
+        "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83",
+        "matches": true
+      },
+      {
+        "path": "pr_comments.parquet",
+        "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd",
+        "matches": true
+      },
+      {
+        "path": "related_issue.parquet",
+        "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9",
+        "matches": true
+      },
+      {
+        "path": "repository.parquet",
+        "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192",
+        "matches": true
+      },
+      {
+        "path": "pr_reviews.parquet",
+        "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5",
+        "matches": true
+      },
+      {
+        "path": "issue.parquet",
+        "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4",
+        "matches": true
+      },
+      {
+        "path": "pr_commit_details.parquet",
+        "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836",
+        "matches": true
+      },
+      {
+        "path": "all_user.parquet",
+        "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c",
+        "matches": true
+      }
+    ]
+  }
+]

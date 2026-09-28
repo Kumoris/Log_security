@@ -1,0 +1,448 @@
+{
+  "recorded_utc": "2026-09-08T20:19:54.162626+00:00",
+  "tool_version": "0.4.2",
+  "taxonomy_version": "1.0.0",
+  "goal_complete": false,
+  "application_log_scope": true,
+  "transcript_content_classified": false,
+  "imports": {
+    "AIDev": {
+      "status": "complete_with_gaps",
+      "counts": {
+        "ambiguous_pr_ids": 0,
+        "conflicting_metadata_prs": 56,
+        "duplicate_pr_rows": 33652,
+        "mining_prs": 33580,
+        "normalized_prs": 939353,
+        "prs_without_commit_evidence": 905773,
+        "readable_tables": 18,
+        "source_pr_rows": 973005,
+        "source_rows_read": 2456073,
+        "source_tables": 18,
+        "unresolved_pr_rows": 0
+      }
+    },
+    "SWE-chat": {
+      "status": "complete_with_gaps",
+      "counts": {
+        "ambiguous_repository_entity_ids": 0,
+        "commit_contexts": 8697,
+        "contexts_with_commit_metadata": 8697,
+        "contexts_without_commit_metadata": 0,
+        "duplicate_entity_rows": 557,
+        "missing_primary_key_rows": 5205,
+        "readable_tables": 6,
+        "source_rows_read": 2732252,
+        "source_tables": 6,
+        "unique_checkpoints": 13406,
+        "unique_repositories": 205,
+        "unique_sessions": 5851,
+        "unusable_commit_references": 5205
+      }
+    }
+  },
+  "supplementary_aidev_anchors": {
+    "aidev_source_snapshot": "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f",
+    "complete": true,
+    "counts": {
+      "anchor_fields_already_in_main_membership": 178813,
+      "mining_contexts": 25152,
+      "mining_unique_pr_sha_pairs": 24493,
+      "mining_unique_repository_sha": 24468,
+      "new_anchor_source_references": 35671,
+      "new_unique_pr_sha_pairs": 26494,
+      "new_unique_repository_sha": 26058,
+      "newly_anchored_prs": 16,
+      "nonnull_anchor_fields": 214676,
+      "null_anchor_fields": 203460,
+      "related_only_contexts": 2017,
+      "remaining_prs_without_structured_anchor": 905757,
+      "source_rows_read": 371818
+    },
+    "evidence_boundary": {
+      "agent_authorship_verified": false,
+      "bodies_or_patches_read": false,
+      "initial_commit_membership_extended": false,
+      "main_corpus_denominator_extended": false,
+      "network_accessed": false,
+      "related_only_anchors_in_mining_input": false,
+      "repository_code_mined": false,
+      "runtime_confirmed": false,
+      "supplementary_related_commit_scope": true
+    },
+    "exit_code": 2,
+    "gap_counts": {
+      "unresolved_or_ambiguous_pr_relation": 192
+    },
+    "main_import_counts": {
+      "ambiguous_pr_ids": 0,
+      "conflicting_metadata_prs": 56,
+      "duplicate_pr_rows": 33652,
+      "mining_prs": 33580,
+      "normalized_prs": 939353,
+      "prs_without_commit_evidence": 905773,
+      "readable_tables": 18,
+      "source_pr_rows": 973005,
+      "source_rows_read": 2456073,
+      "source_tables": 18,
+      "unresolved_pr_rows": 0
+    },
+    "paths": {
+      "anchor_gaps.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-anchors-v2/anchor_gaps.jsonl",
+      "coverage.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-anchors-v2/coverage.json",
+      "mining_commit_anchors.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-anchors-v2/mining_commit_anchors.jsonl",
+      "related_unverified_anchors.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-anchors-v2/related_unverified_anchors.jsonl"
+    },
+    "resumed": false,
+    "source_kind_counts": {
+      "aidev_review_comment_commit_id_anchor": 217,
+      "aidev_review_comment_original_commit_id_anchor": 736,
+      "aidev_timeline_closed_anchor": 7,
+      "aidev_timeline_head_ref_force_pushed_anchor": 831,
+      "aidev_timeline_merged_anchor": 22623,
+      "aidev_timeline_referenced_anchor": 2010,
+      "aidev_timeline_reviewed_anchor": 745
+    },
+    "status": "complete_with_gaps"
+  },
+  "batches": {
+    "aidev-full-v5": {
+      "actual_extraction_metrics": {
+        "auxiliary_blob_reads": 64,
+        "dependency_blob_read_attempts": 2708,
+        "dependency_blobs_read": 453,
+        "files_extracted": 1165,
+        "log_observations": 716,
+        "merge_fallbacks": 5,
+        "pydriller_commits": 336,
+        "pydriller_diff_parsed_calls": 1165,
+        "pydriller_git_diff_calls": 68,
+        "pydriller_modified_files_calls": 302,
+        "pydriller_repository_traversals": 336,
+        "pydriller_source_reads": 2069
+      },
+      "all_dataset_commits_analyzed_without_gaps": false,
+      "commit_status_counts": {
+        "blocked": 85979,
+        "complete": 115,
+        "partial": 221
+      },
+      "context_associations": 88564,
+      "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+      "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+      "exit_code": 2,
+      "file_analysis_status_counts": {
+        "non_code_or_unrecognized_extension": 374,
+        "supported_language": 567,
+        "unsupported_language": 224
+      },
+      "full_history_tracing_completed": false,
+      "human_review_status": "pending",
+      "input_gap_count": 0,
+      "observation_scope": "dataset_commit_changes",
+      "queue_exhausted": true,
+      "record_counts": {
+        "comparisons": 364,
+        "file_audit": 1165,
+        "gaps": 87463,
+        "log_observations": 716
+      },
+      "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+      "runtime_confirmed": false,
+      "status": "incomplete_or_gaps",
+      "taxonomy_version": "1.0.0",
+      "type_audit": {
+        "distinct_observation_references": 716,
+        "distinct_observed_log_versions": 696,
+        "full_dataset_coverage_claim": false,
+        "full_history_tracing_completed": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_commit_changes",
+        "observed_category_count": 6,
+        "observed_subtype_count": 12,
+        "paths": {
+          "type_occurrences.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_occurrences.csv",
+          "type_occurrences.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_occurrences.jsonl",
+          "type_summary.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_summary.csv",
+          "type_summary.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/type_summary.json",
+          "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/unknown_type_review_queue.csv",
+          "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/exports/unknown_type_review_queue.jsonl"
+        },
+        "runtime_confirmed": false,
+        "source_log_observations": 716,
+        "taxonomy_version": "1.0.0",
+        "unknown_type_review_count": 654
+      },
+      "unique_dataset_commits": 86315
+    },
+    "swechat-full-v5": {
+      "actual_extraction_metrics": {
+        "auxiliary_blob_reads": 519,
+        "dependency_blob_read_attempts": 9673,
+        "dependency_blobs_read": 163,
+        "files_extracted": 9227,
+        "log_observations": 3564,
+        "pydriller_commits": 1296,
+        "pydriller_diff_parsed_calls": 9227,
+        "pydriller_git_diff_calls": 12,
+        "pydriller_modified_files_calls": 1290,
+        "pydriller_repository_traversals": 1296,
+        "pydriller_source_reads": 14701
+      },
+      "all_dataset_commits_analyzed_without_gaps": false,
+      "commit_status_counts": {
+        "blocked": 7401,
+        "complete": 574,
+        "partial": 722
+      },
+      "context_associations": 8697,
+      "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+      "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+      "exit_code": 2,
+      "file_analysis_status_counts": {
+        "non_code_or_unrecognized_extension": 4546,
+        "supported_language": 4128,
+        "unsupported_language": 553
+      },
+      "full_history_tracing_completed": false,
+      "human_review_status": "pending",
+      "input_gap_count": 0,
+      "observation_scope": "dataset_commit_changes",
+      "queue_exhausted": true,
+      "record_counts": {
+        "comparisons": 1302,
+        "file_audit": 9227,
+        "gaps": 15072,
+        "log_observations": 3564
+      },
+      "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+      "runtime_confirmed": false,
+      "status": "incomplete_or_gaps",
+      "taxonomy_version": "1.0.0",
+      "type_audit": {
+        "distinct_observation_references": 3564,
+        "distinct_observed_log_versions": 3397,
+        "full_dataset_coverage_claim": false,
+        "full_history_tracing_completed": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_commit_changes",
+        "observed_category_count": 6,
+        "observed_subtype_count": 24,
+        "paths": {
+          "type_occurrences.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.csv",
+          "type_occurrences.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_occurrences.jsonl",
+          "type_summary.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_summary.csv",
+          "type_summary.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/type_summary.json",
+          "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/unknown_type_review_queue.csv",
+          "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5/exports/unknown_type_review_queue.jsonl"
+        },
+        "runtime_confirmed": false,
+        "source_log_observations": 3564,
+        "taxonomy_version": "1.0.0",
+        "unknown_type_review_count": 3326
+      },
+      "unique_dataset_commits": 8697
+    },
+    "aidev-anchors-v3": {
+      "actual_extraction_metrics": {
+        "files_extracted": 76,
+        "log_observations": 84,
+        "pydriller_commits": 21,
+        "pydriller_diff_parsed_calls": 76,
+        "pydriller_git_diff_calls": 28,
+        "pydriller_modified_files_calls": 7,
+        "pydriller_repository_traversals": 21,
+        "pydriller_source_reads": 142
+      },
+      "all_dataset_commits_analyzed_without_gaps": false,
+      "commit_status_counts": {
+        "blocked": 5,
+        "complete": 2,
+        "partial": 19,
+        "pending": 24442
+      },
+      "context_associations": 25152,
+      "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+      "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+      "exit_code": 2,
+      "file_analysis_status_counts": {
+        "non_code_or_unrecognized_extension": 15,
+        "supported_language": 61
+      },
+      "full_history_tracing_completed": false,
+      "human_review_status": "pending",
+      "input_gap_count": 0,
+      "observation_scope": "dataset_commit_changes",
+      "queue_exhausted": false,
+      "record_counts": {
+        "comparisons": 34,
+        "file_audit": 76,
+        "gaps": 117,
+        "log_observations": 84
+      },
+      "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+      "runtime_confirmed": false,
+      "status": "incomplete_or_gaps",
+      "taxonomy_version": "1.0.0",
+      "type_audit": {
+        "distinct_observation_references": 84,
+        "distinct_observed_log_versions": 84,
+        "full_dataset_coverage_claim": false,
+        "full_history_tracing_completed": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_commit_changes",
+        "observed_category_count": 3,
+        "observed_subtype_count": 3,
+        "paths": {
+          "type_occurrences.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_occurrences.csv",
+          "type_occurrences.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_occurrences.jsonl",
+          "type_summary.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_summary.csv",
+          "type_summary.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/type_summary.json",
+          "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/unknown_type_review_queue.csv",
+          "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/exports/unknown_type_review_queue.jsonl"
+        },
+        "runtime_confirmed": false,
+        "source_log_observations": 84,
+        "taxonomy_version": "1.0.0",
+        "unknown_type_review_count": 84
+      },
+      "unique_dataset_commits": 24468
+    },
+    "aidev-prior-cache-v042": {
+      "actual_extraction_metrics": {
+        "dependency_blob_read_attempts": 34,
+        "dependency_blobs_read": 10,
+        "files_extracted": 14,
+        "pydriller_commits": 8,
+        "pydriller_diff_parsed_calls": 14,
+        "pydriller_modified_files_calls": 8,
+        "pydriller_repository_traversals": 8,
+        "pydriller_source_reads": 24
+      },
+      "all_dataset_commits_analyzed_without_gaps": false,
+      "commit_status_counts": {
+        "complete": 5,
+        "partial": 3
+      },
+      "context_associations": 8,
+      "denominator_note": "Unique supplied repository+SHA jobs only; contexts are associations, not independent observations. PRs without commit evidence are separate input gaps. This is not the full AIDev population denominator.",
+      "evidence_boundary": "Static changed-code candidates only. Unchanged reverse dependents outside directly imported files and full follow-up histories are not examined.",
+      "exit_code": 2,
+      "file_analysis_status_counts": {
+        "non_code_or_unrecognized_extension": 8,
+        "supported_language": 6
+      },
+      "full_history_tracing_completed": false,
+      "human_review_status": "pending",
+      "input_gap_count": 0,
+      "observation_scope": "dataset_commit_changes",
+      "queue_exhausted": true,
+      "record_counts": {
+        "comparisons": 8,
+        "file_audit": 14,
+        "gaps": 5
+      },
+      "reverse_dependency_coverage": "changed_files_and_direct_imports_only",
+      "runtime_confirmed": false,
+      "status": "incomplete_or_gaps",
+      "taxonomy_version": "1.0.0",
+      "type_audit": {
+        "distinct_observation_references": 0,
+        "distinct_observed_log_versions": 0,
+        "full_dataset_coverage_claim": false,
+        "full_history_tracing_completed": false,
+        "human_review_status": "pending",
+        "new_type_status": "not_established",
+        "observation_scope": "dataset_commit_changes",
+        "observed_category_count": 0,
+        "observed_subtype_count": 0,
+        "paths": {
+          "type_occurrences.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_occurrences.csv",
+          "type_occurrences.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_occurrences.jsonl",
+          "type_summary.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_summary.csv",
+          "type_summary.json": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/type_summary.json",
+          "unknown_type_review_queue.csv": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/unknown_type_review_queue.csv",
+          "unknown_type_review_queue.jsonl": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/exports/unknown_type_review_queue.jsonl"
+        },
+        "runtime_confirmed": false,
+        "source_log_observations": 0,
+        "taxonomy_version": "1.0.0",
+        "unknown_type_review_count": 0
+      },
+      "unique_dataset_commits": 8
+    }
+  },
+  "aidev_corpus_counts": {
+    "dataset_unique_prs": 939353,
+    "dataset_prs_selected_in_runs": 33580,
+    "dataset_prs_with_analyzed_commit_overlap": 62,
+    "dataset_prs_with_all_commits_analyzed_in_one_run": 41,
+    "analysis_prs_not_in_dataset": 0,
+    "dataset_prs_without_verified_commit_analysis": 939291,
+    "dataset_prs_with_git_commit_evidence": 83,
+    "dataset_prs_with_git_source_evidence": 82,
+    "dataset_prs_with_supported_language_source": 62,
+    "dataset_prs_with_log_observations": 26,
+    "dataset_prs_with_observed_type_labels": 21,
+    "dataset_prs_with_unknown_type_review": 26,
+    "dataset_prs_with_pending_batch_jobs": 0,
+    "dataset_prs_with_running_batch_jobs": 0,
+    "dataset_prs_with_blocked_batch_jobs": 33506,
+    "dataset_prs_with_partial_batch_jobs": 67,
+    "dataset_prs_with_complete_batch_jobs": 41,
+    "dataset_prs_with_job_missing_batch_jobs": 0
+  },
+  "comparison_evidence": [
+    "docs/swechat_v042_classifier_comparison.json",
+    "docs/aidev_v042_expansion_comparison.json"
+  ],
+  "current_type_inventory": "docs/observed_type_inventory_v042.csv",
+  "tests_completed": "325 passed in 22.94s",
+  "test_record": "docs/pytest_v042.txt",
+  "export_verification": "docs/type_exports_v042_verification.json",
+  "current_remaining": [
+    "Most Git commits and PR relationships remain unavailable or unexamined",
+    "PHP, C#, Java, Rust and other languages need log parsing coverage",
+    "Go and JS/TS remain lexical with unresolved semantics",
+    "Unknown-type human review and full follow-up tracing incomplete",
+    "PR and conversation bodies are only source metadata"
+  ],
+  "free_disk_gib_at_recording": 2.365,
+  "target_code_executed": false,
+  "remote_repositories_modified": false,
+  "paid_model_calls": 0,
+  "aidev_current_unique_actual_commits": 344,
+  "aidev_newly_read_vs_prior_versions": 79,
+  "current_report": "docs/datasets_v042_report.md",
+  "aidev_corpus_report": "reports/aidev-corpus-v042-final/corpus_coverage.json",
+  "cleanup_proposal": {
+    "path": "docs/cleanup_review_v042/提案.md",
+    "approval_status": "user_confirmed_and_executed",
+    "files_removed": 6,
+    "proposed_logical_bytes": 3191313088,
+    "receipt": "docs/cleanup_review_v042/deletion_receipt.json"
+  },
+  "latest_object_collection": {
+    "this_run_attempted": 178,
+    "this_run_repositories": 5,
+    "this_run_status_counts": {
+      "objects_ready_for_offline_mining": 178
+    },
+    "offline": false,
+    "latest_collection_status_counts": {
+      "objects_ready_for_offline_mining": 328
+    },
+    "total_recorded_attempts": 478,
+    "elapsed_seconds": 301.1213,
+    "classification_performed": false,
+    "full_history_collected": false,
+    "remaining_without_collection_attempt": 85982,
+    "output": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v4/collection",
+    "exit_code": 2
+  },
+  "free_disk_gib_after_confirmed_cleanup": 5.357,
+  "active_work": "C# lexical detection and additional precise-commit acquisition"
+}

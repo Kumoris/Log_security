@@ -1,0 +1,223 @@
+{
+  "created_utc": "2026-09-08T20:43:04.451957+00:00",
+  "baseline_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v5",
+  "initial_replay_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/csharp-swechat-v043",
+  "replay_batch": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/csharp-swechat-v043-final",
+  "selection_manifest": "docs/csharp_replay_v043_selection.json",
+  "execution_record": "docs/csharp_batch_v043_execution_final.json",
+  "supersedes_comparison": "docs/csharp_replay_v043_comparison.json",
+  "baseline_scope": "Only exact selected20 repository+SHA jobs; event references outside selection removed from baseline occurrence rows before full-field comparison",
+  "baseline_out_of_scope_event_references_removed": 0,
+  "all_checks_passed": true,
+  "checks": {
+    "exact_selected_20_job_keys": true,
+    "all_selected_jobs_attempted": true,
+    "same_contexts": true,
+    "same_comparisons": true,
+    "same_git_file_evidence_except_cs_marker": true,
+    "non_cs_observation_rows_identical": true,
+    "non_cs_occurrence_ids_identical": true,
+    "non_cs_occurrence_fields_identical_in_selected_scope": true,
+    "csharp_low_pending_unknown_boundaries": true,
+    "only_observation_metric_changed": true,
+    "all_initial_19_csharp_ids_preserved": true,
+    "all_initial_19_csharp_fields_preserved": true,
+    "all29_prior_fatal_sources_recovered": true,
+    "final_replay_has_no_fatal_source_gaps": true,
+    "probe_and_replay_use_same_frozen_source": true,
+    "source_unchanged_through_all_final_checks": true
+  },
+  "source_sha256_before": {
+    "__init__.py": "f2db562d5bfd29f552ab858b3b653546f78c7985b1b2278066d8521022d1c279",
+    "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+    "analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+    "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "cli.py": "b6ff11bd9d2db9a1dc29a6039d746433dd4626e4fa0b4950a5875ef47108792f",
+    "config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+    "corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+    "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+    "export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+    "extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+    "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+    "github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+    "ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+    "lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+    "matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+    "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+    "object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+    "repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+    "reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+    "review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+    "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+  },
+  "source_sha256_after": {
+    "__init__.py": "f2db562d5bfd29f552ab858b3b653546f78c7985b1b2278066d8521022d1c279",
+    "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+    "analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+    "batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "cli.py": "b6ff11bd9d2db9a1dc29a6039d746433dd4626e4fa0b4950a5875ef47108792f",
+    "config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+    "corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+    "detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+    "export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+    "extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+    "git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+    "github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+    "ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+    "lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+    "matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+    "miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+    "object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+    "repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+    "reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+    "review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+    "storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+    "taxonomy.py": "75096e54e950ce91dc86c4b532b9e7d2e7c3ee010ce7e6c09e98b03d0e93dec6",
+    "type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db"
+  },
+  "counts": {
+    "selected_commits": 20,
+    "file_changes_before": 548,
+    "file_changes_after": 548,
+    "cs_support_marker_and_derived_id_changes": 162,
+    "observations_before": 862,
+    "observations_after": 886,
+    "new_cs_observations": 24,
+    "occurrences_before": 731,
+    "occurrences_after": 755,
+    "non_cs_occurrences_before": 731,
+    "non_cs_occurrences_after": 731,
+    "new_cs_unique_versions": 24,
+    "new_cs_versions_with_type_labels": 21,
+    "new_cs_pending_review_versions": 24,
+    "new_cs_unknown_review_versions": 24,
+    "new_cs_repository_count": 1,
+    "initial_cs_versions_preserved": 19,
+    "additional_cs_versions_after_parser_fix": 5
+  },
+  "new_cs_category_version_counts": {
+    "AUTH": 18,
+    "BIZ": 4,
+    "DIAG": 16,
+    "PII": 4,
+    "QID": 4
+  },
+  "new_cs_subtype_version_counts": {
+    "AUTH.access_token": 18,
+    "BIZ.document_content": 4,
+    "DIAG.exception_message": 16,
+    "PII.email": 4,
+    "QID.user_identifier": 4
+  },
+  "cs_label_confidence_counts": {
+    "low": 46
+  },
+  "cs_label_evidence_status_counts": {
+    "static_candidate": 26,
+    "carrier_candidate": 20
+  },
+  "cs_missing_evidence_counts": {
+    "csharp_cross_file_dependencies_unresolved": 24,
+    "csharp_one_hop_lexical_only": 24,
+    "csharp_semantics_unparsed": 24,
+    "runtime_reachability_and_output_access_unverified": 24,
+    "csharp_dynamic_message_template_unresolved": 1
+  },
+  "actual_metric_changes": {
+    "log_observations": {
+      "before": 862,
+      "after": 886
+    }
+  },
+  "actual_py_driller_metrics": {
+    "auxiliary_blob_reads": 1,
+    "dependency_blob_read_attempts": 36,
+    "files_extracted": 548,
+    "log_observations": 886,
+    "pydriller_commits": 20,
+    "pydriller_diff_parsed_calls": 548,
+    "pydriller_modified_files_calls": 15,
+    "pydriller_repository_traversals": 20,
+    "pydriller_source_reads": 915,
+    "pydriller_git_diff_calls": 10
+  },
+  "non_cs_occurrence_sha256_before": "e491a4fa1cb50c544520f5f2cfc30734057966f0e8846ecb05553357bb6518c9",
+  "non_cs_occurrence_sha256_after": "e491a4fa1cb50c544520f5f2cfc30734057966f0e8846ecb05553357bb6518c9",
+  "prior_parser_fault_resolution": {
+    "initial_fatal_gap_records": 29,
+    "final_fatal_gap_records": 0,
+    "verified_historical_sources_recovered": 29,
+    "identified_causes": "7 BOM/nullable directive lexical failures and22 bracket-in-attribute-string token-boundary failures, all backend faults; no target compilation performed",
+    "independent_source_recheck": "docs/csharp_independent_probe_v043.json#final_source_verification",
+    "gap_reason_changes": {
+      "csharp_lexer_error": {
+        "initial": 7,
+        "final": 0
+      },
+      "csharp_unterminated_string": {
+        "initial": 22,
+        "final": 0
+      }
+    }
+  },
+  "unknown_source_coverage": {
+    "fatal_gap_record_count": 0,
+    "gap_reason_counts": {
+      "unsupported_language": 20,
+      "lexical_fallback_without_ast": 687,
+      "Historical source unavailable": 2,
+      "direct_import_unresolved_or_external": 6,
+      "python_ast_parse_failed": 2,
+      "csharp_complex_interpolation_unparsed": 23
+    },
+    "source_read_failure_file_side_count": 2,
+    "source_read_failures": [
+      {
+        "repository": "ai-stats/ai-stats",
+        "sha": "1e85759bf89015878978cfbca5cdd197defe0f68",
+        "parent_sha": "d7386882ca1704ef4e10ac8a053dd6ee32a9963c",
+        "path": "apps/docs/images/nano-banana-2.png",
+        "side": "after",
+        "source_status": "binary",
+        "classification": "unknown_source_not_negative"
+      },
+      {
+        "repository": "ai-stats/ai-stats",
+        "sha": "1e85759bf89015878978cfbca5cdd197defe0f68",
+        "parent_sha": "d7386882ca1704ef4e10ac8a053dd6ee32a9963c",
+        "path": "apps/docs/images/nano-banana-2.png",
+        "side": "before",
+        "source_status": "path_absent",
+        "classification": "unknown_source_not_negative"
+      }
+    ],
+    "all20_job_statuses": {
+      "partial": 20
+    },
+    "note": "Zero fatal C# lexer gaps does not imply complete semantics; complex interpolation, unsupported languages, Python parser and source-read gaps remain explicit unknowns."
+  },
+  "mismatches": {
+    "changed_non_cs_occurrence_fields": {},
+    "changed_initial_cs_occurrence_fields": {},
+    "missing_initial_cs_occurrence_ids": [],
+    "changed_file_evidence_fields": {},
+    "csharp_boundary_violations": {}
+  },
+  "evidence_boundary": [
+    "Whole selected commits re-read with PyDriller; no target code executed and no source values printed in this report.",
+    "Every C# type label remains low-confidence static/carrier evidence and every C# version pending/unknown.",
+    "This replay does not settle missing commits outside its available language cohort; selection unknown ledger remains authoritative."
+  ]
+}

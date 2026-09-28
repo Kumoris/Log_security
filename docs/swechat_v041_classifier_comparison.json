@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-09-08T19:57:00.413464+00:00",
+  "comparison": "SWE-chat real v3 versus v4, same frozen commit jobs and Git evidence",
+  "input_exports": {
+    "v3": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v3/exports",
+    "v4": "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/swechat-full-v4/exports"
+  },
+  "input_sha256": {
+    "v3": {
+      "summary.json": "f630a6be471291690691c0beb73f1bf42bcd1e2304754cf06892c51728510001",
+      "type_occurrences.jsonl": "73cc0578390256ee97b3bcf11b48fd036152c781a8b720ca20812993e10a751c",
+      "unknown_type_review_queue.jsonl": "63ed709c1c03ef2ec8693e55b4f7516df1d69b2ab35a116c48633bd2d77a9f0d",
+      "commit_audit.jsonl": "1393a2d497bf23367cba1c6020ce031421756e948a30b445b416b4e4b13b590f"
+    },
+    "v4": {
+      "summary.json": "0a17d473f1cb4ca96efac7544c7ae002cbaa342fc657f11404ba62a45f6afc09",
+      "type_occurrences.jsonl": "d059c392d131eb38af69c91b23fdb2321779c571836e49e6b6bc0daf74116583",
+      "unknown_type_review_queue.jsonl": "c845f7a392cffa7dc6c435518f37ccf2d7460ddd493afd4865f508b2f4cc6e4e",
+      "commit_audit.jsonl": "5a79bcb63a3605f508f379a0bd20fd074720bd85142a84206c6808011a0ff465"
+    }
+  },
+  "same_supplied_jobs_and_statuses": true,
+  "unique_dataset_commit_jobs": 8697,
+  "same_extraction_metrics_excluding_log_observations": true,
+  "extraction_metrics": {
+    "auxiliary_blob_reads": 519,
+    "dependency_blob_read_attempts": 9673,
+    "dependency_blobs_read": 163,
+    "files_extracted": 9227,
+    "pydriller_commits": 1296,
+    "pydriller_diff_parsed_calls": 9227,
+    "pydriller_git_diff_calls": 12,
+    "pydriller_modified_files_calls": 1290,
+    "pydriller_repository_traversals": 1296,
+    "pydriller_source_reads": 14701
+  },
+  "actual_log_observations": {
+    "v3": 2885,
+    "v4": 3118
+  },
+  "states": {
+    "v3": {
+      "log_versions": 2736,
+      "unknown_review_versions": 2665,
+      "without_labels": 2299,
+      "category_count": 5,
+      "subtype_count": 11,
+      "subtype_version_counts": {
+        "AUTH.api_key": 5,
+        "BIZ.business_object": 5,
+        "BIZ.request_body": 4,
+        "BIZ.response_body": 14,
+        "CFG.deployment_configuration": 10,
+        "CFG.environment": 7,
+        "CFG.filesystem_path": 9,
+        "DIAG.exception_message": 327,
+        "DIAG.stack_trace": 14,
+        "QID.request_identifier": 1,
+        "QID.session_identifier": 68
+      },
+      "parser_counts": {
+        "lexical_only": 2254,
+        "python_ast": 482
+      },
+      "unknown_reason_counts": {
+        "bounded_semantics_incomplete": 2493,
+        "semantic_parser_unavailable": 2254,
+        "unclassified_output_value": 2307,
+        "broad_carrier_requires_value_context": 363,
+        "carrier_contents_unresolved": 363,
+        "identifier_only_type_hint": 402,
+        "unclassified_output_field": 184
+      }
+    },
+    "v4": {
+      "log_versions": 2953,
+      "unknown_review_versions": 2882,
+      "without_labels": 2395,
+      "category_count": 6,
+      "subtype_count": 20,
+      "subtype_version_counts": {
+        "AUTH.access_token": 1,
+        "AUTH.api_key": 5,
+        "AUTH.credential_bundle": 1,
+        "BIZ.business_object": 32,
+        "BIZ.document_content": 1,
+        "BIZ.http_headers": 1,
+        "BIZ.request_body": 24,
+        "BIZ.response_body": 56,
+        "BIZ.unclassified_content": 3,
+        "BIZ.unclassified_object": 3,
+        "CFG.deployment_configuration": 38,
+        "CFG.environment": 14,
+        "CFG.filesystem_path": 16,
+        "DIAG.exception_message": 367,
+        "DIAG.stack_trace": 27,
+        "PII.email": 5,
+        "PII.person_name": 15,
+        "QID.request_identifier": 21,
+        "QID.session_identifier": 69,
+        "QID.transaction_identifier": 2
+      },
+      "parser_counts": {
+        "lexical_only": 2471,
+        "python_ast": 482
+      },
+      "unknown_reason_counts": {
+        "bounded_semantics_incomplete": 2710,
+        "semantic_parser_unavailable": 2471,
+        "unclassified_output_value": 2403,
+        "broad_carrier_requires_value_context": 470,
+        "carrier_contents_unresolved": 470,
+        "identifier_only_type_hint": 523,
+        "unclassified_output_field": 184
+      }
+    }
+  },
+  "new_observed_categories": [
+    "PII"
+  ],
+  "new_observed_subtypes": [
+    "AUTH.access_token",
+    "AUTH.credential_bundle",
+    "BIZ.document_content",
+    "BIZ.http_headers",
+    "BIZ.unclassified_content",
+    "BIZ.unclassified_object",
+    "PII.email",
+    "PII.person_name",
+    "QID.transaction_identifier"
+  ],
+  "lost_observed_subtypes": [],
+  "matching": {
+    "direct_stable_log_version_ids": 2650,
+    "stable_ids_with_different_evidence_signature": 0,
+    "direct_ids_with_added_type_labels": 100,
+    "exact_signature_unique_pairs_with_changed_id": 81,
+    "exact_signature_fields": [
+      "repository",
+      "snapshot_sha",
+      "path",
+      "start_line",
+      "end_line",
+      "callee",
+      "sha256(statement)"
+    ],
+    "ambiguous_exact_signature_groups": [
+      {
+        "old_versions": 4,
+        "new_versions": 4,
+        "repository": "andreapt1/mkdowneditor",
+        "snapshot_sha": "0ca3fbf8482e9da0415f9752f60ac92a6bd66225",
+        "path": "dist/assets/index-CpDySLhl.js",
+        "start_line": 119,
+        "end_line": 119,
+        "statement_sha256": "fec98751896f4b84d47aa1aa5cf2412314760c8b5890cbded2a3f0bc4336d9f1"
+      }
+    ],
+    "individual_pairs_after_verified_unique_matching": 2731,
+    "individual_pairs_with_added_type_labels": 110,
+    "individual_pairs_previously_without_any_label_and_now_labeled": 78,
+    "individual_pairs_with_lost_type_labels": 0,
+    "known_to_unknown_transitions": 0,
+    "unknown_to_known_transitions": 0,
+    "unmatched_old_versions_after_accounting_for_ambiguous_equivalence": 1,
+    "unmatched_new_versions_after_accounting_for_ambiguous_equivalence": 218,
+    "unmatched_new_versions_all_lexical_and_queued": true,
+    "unmatched_new_path_counts": {
+      "node_modules/@mixmark-io/domino/.yarn/plugins/@yarnpkg/plugin-version.cjs": 10,
+      "scripts/sync-research.mjs": 11,
+      "tools/validate-doc-links.js": 24,
+      "node_modules/marked/lib/marked.umd.js": 4,
+      "apps/tui/src/mem/commands/debug.ts": 74,
+      "node_modules/vite/dist/node/chunks/config.js": 11,
+      "apps/tui/src/mem/commands/sync.ts": 1,
+      "node_modules/rollup/dist/shared/rollup.js": 4,
+      "sidecar/src/server.ts": 12,
+      "node_modules/marked/lib/marked.esm.js": 4,
+      "apps/tui/src/mem/commands/search.ts": 2,
+      "node_modules/rollup/dist/es/shared/node-entry.js": 1,
+      "node_modules/vite/dist/node/chunks/build2.js": 1,
+      "dist/assets/index-CpDySLhl.js": 4,
+      "apps/tui/gui-dist/assets/index-RCwqC6by.js": 24,
+      "scripts/categorize-tech-thoughts.js": 2,
+      "scripts/model-discovery/run.ts": 4,
+      "apps/tui/src/mem/core/code-store.ts": 2,
+      "apps/cli/src/commands/agent.ts": 4,
+      "apps/tui/src/mem/core/store.ts": 1,
+      "apps/web/src/app/api/webhooks/stripe-checkout/route.ts": 3,
+      "node_modules/rollup/dist/shared/index.js": 1,
+      "node_modules/vite/dist/node/module-runner.js": 7,
+      "scripts/new-post.mjs": 1,
+      "apps/tui/src/mem/commands/diff.ts": 1,
+      "scripts/fix-yaml-errors.js": 1,
+      "web/src/lib/sync/syncService.ts": 1,
+      "apps/cli/src/commands/ticket.ts": 1,
+      "scripts/fix-duplicate-slugs.js": 1,
+      "node_modules/rollup/dist/es/shared/watch.js": 1
+    },
+    "unmatched_new_change_basis_reference_counts": {
+      "statement_lines": 189,
+      "one_hop_dependency_lines": 29
+    }
+  },
+  "removed_log_like_text_check": {
+    "count": 1,
+    "repository": "andreapt1/mkdowneditor",
+    "snapshot_sha": "0ca3fbf8482e9da0415f9752f60ac92a6bd66225",
+    "path": "node_modules/vite/dist/node/chunks/config.js",
+    "start_line": 31265,
+    "end_line": 31269,
+    "callee": "console.warn",
+    "pydriller_get_commit_verified": true,
+    "source_backend": "gitpython.git_show_auxiliary_at_verified_pydriller_commit",
+    "source_read_fallback_reason": "path_not_modified_in_snapshot_commit; exact historical blob read used for spot check",
+    "GIT_NO_LAZY_FETCH": "1",
+    "pygments_token_kind_at_callee": "Token.Literal.String.Backtick",
+    "old_regex_mask_exposes_callee": true,
+    "new_pygments_mask_exposes_callee": false,
+    "interpretation": "One old log-like occurrence is inside template string text, not a direct call in that source location; possible later execution of generated text remains outside this lexical check."
+  },
+  "v4_lexical_evidence_boundaries": {
+    "lexical_versions_checked": 2471,
+    "violations": {
+      "human_status_not_pending": 0,
+      "runtime_confirmation": 0,
+      "history_completion_claim": 0,
+      "dataset_completion_claim": 0,
+      "missing_semantic_parser_gap": 0,
+      "missing_unknown_queue_flag": 0,
+      "non_low_type_label": 0,
+      "label_runtime_confirmation": 0,
+      "non_possible_log_detection": 0,
+      "non_lexical_analysis_method": 0
+    },
+    "all_checks_pass": true
+  },
+  "evidence_boundary": "Actual real Git batch outputs, not the earlier output-only prototype. Classification changes are weak static candidates. Identical statement evidence with ambiguous multiplicity is not forced into one-to-one lineage. More unknown rows reflect additional detections, not completed semantic analysis. No raw statement or credential values are included."
+}

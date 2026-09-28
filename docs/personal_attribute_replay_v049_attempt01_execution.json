@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/lzh/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/bin/python3.11",
+    "/Users/lzh/Downloads/Log \u7814\u7a76/agentlog_unified/docs/replay_personal_attribute_probe_v049.py"
+  ],
+  "started_utc": "2026-09-08T23:44:02.182414+00:00",
+  "completed_utc": "2026-09-08T23:44:02.203621+00:00",
+  "elapsed_seconds": 0.021,
+  "exit_code": 1,
+  "stdout": "agentlog_unified/docs/personal_attribute_replay_v049_stdout.txt",
+  "stderr": "agentlog_unified/docs/personal_attribute_replay_v049_stderr.txt",
+  "helper_sha256": "9f7aca7537cea0a56bf47125a822c3d0f969735ae7564f894ab00dbfd7a6f546"
+}

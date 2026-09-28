@@ -1,0 +1,181 @@
+{
+  "recorded_utc": "2026-09-08T21:16:17.069127+00:00",
+  "status": "bounded_synthetic_prototype_validated_not_product_implementation",
+  "product_frozen_files_unchanged": true,
+  "product_frozen_files_sha256": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests/test_content_scan.py": "a8d30ef2c0dc737bf0a65a2025feaa3ac93abe432fca71ea196f1ded11387cac",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests/test_content_types.py": "27d0f95d7c72e1365c65fe0f48e28c90f848f17efdd0d476999b08d7e77bc968"
+  },
+  "real_dataset_values_read": false,
+  "original_data_modified": false,
+  "product_code_modified": false,
+  "current_gap": {
+    "source_character_limit": 1048576,
+    "per_cell_match_limit": 1000,
+    "character_limit_behavior": "Only the first prefix is passed to rules; the row is then advanced and the full cell retained as truncated unknown.",
+    "match_limit_behavior": "Families are evaluated in order; returned matches are span-sorted only after collection. Later families can have missing candidates BEFORE the last returned span.",
+    "existing_resume_behavior": "Resume skips completed source rows. It does not reopen a truncated cell or recover cap-suppressed candidates in that cell.",
+    "last_returned_end_is_not_a_safe_resume_offset": true
+  },
+  "recommended_minimum": [
+    "Introduce a new scanner mode/version and new run manifest; preserve the currently running frozen output and fingerprint.",
+    "Replace per-cell match truncation with per-page write threshold. Enumerate each finite rule with a persisted rule_index and search_offset, preserving regex non-overlap phase.",
+    "Use bounded windows with a 65536-character core, 600-character left context and 9216-character right lookahead. Each finite rule scans from its true prior cursor, not a fresh overlapping finditer phase.",
+    "Only commit matches whose actual regex start precedes the core end. Complete matches can extend into the lookahead. Store absolute Unicode character offsets.",
+    "Commit one candidate page and its next cursor in one SQLite transaction. Time/disk budgets are checked between pages, including no-match pages; exceptions roll back both.",
+    "Deduplicate by source cell identity plus absolute start/end/category/subtype; retain deterministic existing literal-before-named family priority. Never key equality by the sensitive value.",
+    "A raw named match can yield multiple types: commit its labels together and permit at most 36 records over the page threshold, or add a label_index cursor if an exact hard page limit is required.",
+    "Scan the six PEM wrapper families with small delimiter state: pending opening offset, search offset and example-hint boolean. Never store the body; missing closing markers produce explicit gap spans.",
+    "For quoted named values outside the existing 4096-token rule, traverse quote/escape state in bounded blocks and retain an explicit finite-rule gap. Do not infer complete semantic typing from complete character traversal.",
+    "Retain a cell-level checkpoint until every selected field and rule completes; advance the table row only then. Existing whole-cell review records remain unknown/pending even when all rule passes finish.",
+    "Calculate cell HMAC incrementally over UTF-8 encoded Unicode chunks and store only the existing private digest. Do not persist raw text, carry buffers, keys or values."
+  ],
+  "recover_existing_truncated_cells": {
+    "selection": "Use prior cells.status=truncated and frozen source table/row/column references, not sensitivity-based sampling.",
+    "restart_position": "Re-read each selected whole cell from source and start rule_index=0, search_offset=0. This recovers both the >1MiB tail and missing rule-family hits in the already-read prefix.",
+    "preserve_prior_runs": "Write a separate recovery run referencing the previous manifest hashes; do not mutate old fingerprints or private DB status fields.",
+    "consolidation": "Prefer the complete new per-cell results for recovered cells, or apply explicit deterministic source-span-type deduplication. Do not blindly sum old and recovered rows."
+  },
+  "coverage_accounting": {
+    "cell_characters_read": "Count unique cell characters once; overlaps and repeated family passes do not increase the source denominator.",
+    "rule_evaluations": "Track rule cursors/pages separately; every character read by one family does not mean every family has run.",
+    "complete_lexical_visit": "Only when every selected rule finishes every selected cell and no input tail remains.",
+    "semantic_status": "All cells remain reviewable; unsupported formats, long named values and malformed envelopes are explicit gaps, not negatives."
+  },
+  "prototype_evidence": {
+    "prototype": "/private/tmp/content_chunk_cursor_v044.py",
+    "test_script": "/private/tmp/test_content_chunk_cursor_v044.py",
+    "product_frozen_files_sha256": {
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/src/agentlog_unified/content_types.py": "c7cd2e1bcbccdaee49af105b5a4c43b025bfd415cd11beb01de5635e1cd79786",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests/test_content_scan.py": "a8d30ef2c0dc737bf0a65a2025feaa3ac93abe432fca71ea196f1ded11387cac",
+      "/Users/lzh/Downloads/Log 研究/agentlog_unified/tests/test_content_types.py": "27d0f95d7c72e1365c65fe0f48e28c90f848f17efdd0d476999b08d7e77bc968"
+    },
+    "product_sources_unchanged": true,
+    "elapsed_seconds": 3.341,
+    "test_count": 10,
+    "all_passed": true,
+    "checks": [
+      {
+        "check": "finite_families_unicode_crossblock_equivalence",
+        "passed": true,
+        "observations": 9
+      },
+      {
+        "check": "named_regex_nonoverlap_phase_preserved",
+        "passed": true,
+        "observations": 10
+      },
+      {
+        "check": "escaped_named_value_8191_characters_crosses_blocks",
+        "passed": true,
+        "observations": 1
+      },
+      {
+        "check": "match_cap_prefix_recovered_family_cursor_atomic_resume",
+        "passed": true,
+        "old_returned": 1000,
+        "new_observations": 1006,
+        "early_email_recovered": true,
+        "rollback_replayed": true,
+        "completed_resume_idempotent": true
+      },
+      {
+        "check": "actual_synthetic_parquet_multi_mib_unicode_tail",
+        "passed": true,
+        "source_characters": 2100028,
+        "observations": 1,
+        "source_unchanged": true
+      },
+      {
+        "check": "streamed_large_pem_delimiters_example_status_unclosed_gap",
+        "passed": true,
+        "source_characters": 2000065,
+        "long_envelope_observations": 1,
+        "unclosed_gap_records": 1
+      },
+      {
+        "check": "pem_example_partial_eof_and_keyword_start_ownership",
+        "passed": true,
+        "false_dummy_suffix_example_rejected": true,
+        "true_delimited_dummy_retained": true,
+        "keyword_at_next_page_start_retained": true
+      },
+      {
+        "check": "long_named_quoted_value_tail_audited_without_unbounded_regex",
+        "passed": true,
+        "source_characters": 1500011,
+        "gap_start": 10,
+        "gap_end": 1500010,
+        "gap_reason": "named_value_exceeds_finite_rule"
+      },
+      {
+        "check": "checkpoint_contains_no_source_values",
+        "passed": true
+      },
+      {
+        "check": "incremental_private_hmac_preserves_unicode_digest_without_full_encode",
+        "passed": true
+      }
+    ],
+    "prototype_bounds": {
+      "default_core_characters": 65536,
+      "lookbehind_characters": 600,
+      "lookahead_characters": 9216,
+      "maximum_default_regex_buffer_characters": 75352,
+      "page_threshold_default": 1000,
+      "maximum_raw_match_label_overshoot": 36
+    },
+    "real_dataset_values_read": false,
+    "source_values_exported": false,
+    "original_data_modified": false
+  },
+  "prototype_artifacts": [
+    {
+      "path": "/private/tmp/content_chunk_cursor_v044.py",
+      "sha256": "553ece9f38d714509ba91ce2e846b102c219fbe9cacd2f50c1a0e278e3c743d2"
+    },
+    {
+      "path": "/private/tmp/test_content_chunk_cursor_v044.py",
+      "sha256": "807c91f9343887aa6a4631e9d923738dee977136a7ef7431547286ec14ac08ca"
+    },
+    {
+      "path": "/private/tmp/content_chunk_cursor_v044_results.json",
+      "sha256": "f53eecc84142210e489038ec6b0dcc730586eb20bf35b20b1ee2a1971a6cf07a"
+    }
+  ],
+  "executed_command": "agent_log_privacy/.venv/bin/python /private/tmp/test_content_chunk_cursor_v044.py",
+  "exit_code": 0,
+  "stderr_system_warning_lines": 4,
+  "stderr_only_known_arrow_system_probes": true,
+  "remaining_limits": [
+    "Prototype reuses frozen private rule helpers and duplicates a small adapter in /private/tmp for testing. Product integration is not implemented or deployed.",
+    "The long-named-value audit prototype starts from a supplied known quote offset. Automatic named-header discovery and persisted quote-state integration remain product work.",
+    "Regex buffers and pages are bounded, but current Arrow reads still materialize a full scalar. Use one-row/scalar decoding to avoid 64-cell copies; truly huge single-value memory remains an explicit separate decoding limit.",
+    "The finite maximum lookahead depends on the current regex definitions, including escaped quoted units that can consume 8192 characters. A rule change must update the bound and boundary tests together.",
+    "Synthetic checks establish mechanics for these cases, not correctness across every C#/Go/code syntax or complete semantic privacy detection.",
+    "Prototype collects final synthetic metadata for assertions; production exports should continue streaming SQLite rows rather than collecting every match in memory."
+  ],
+  "optional_measured_optimization": {
+    "suggestion": "A bounded per-process LRU around identifier-key taxonomy mapping in the new adapter, without changing taxonomy.py or exporting cache values.",
+    "evidence_reference": "agentlog_unified/docs/content_profile_v044.json",
+    "not_implemented_or_benchmarked_in_this_prototype": true
+  },
+  "boundary_correction": {
+    "reported_case": "PEM body page ends with dummy, next page continues suffix.",
+    "failure_reproduced_before_fix": true,
+    "old_prototype_status": "placeholder_or_example",
+    "whole_value_expected_status": "literal_candidate",
+    "root_cause": "The example-word regex can use $, so a temporary chunk end was treated as end of the complete value.",
+    "fix": "Read 64 characters of right context before confirming an example marker; accept only keyword starts in the owned page interval. The optional leading delimiter is excluded from keyword-start ownership.",
+    "additional_regressions": [
+      "dummy plus suffix across a page remains literal_candidate",
+      "dummy followed by an actual delimiter across a page remains placeholder_or_example",
+      "dummy starting exactly at the next page start remains detected"
+    ],
+    "bound": "64-character marker context covers the current finite example-word alternatives; change the bound with any future longer alternative.",
+    "changed_product_files": false
+  }
+}

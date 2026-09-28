@@ -1,0 +1,50 @@
+{
+  "aidev_source_snapshot": "4db620a36180b828af7d657bd758e9a8ad071aa8fb3ccfb49acc39944d28688f",
+  "counts": {
+    "dataset_unique_prs": 939353,
+    "dataset_prs_selected_in_runs": 33580,
+    "dataset_prs_with_analyzed_commit_overlap": 79,
+    "dataset_prs_with_all_commits_analyzed_in_one_run": 51,
+    "analysis_prs_not_in_dataset": 0,
+    "dataset_prs_without_verified_commit_analysis": 939274,
+    "dataset_prs_with_git_commit_evidence": 110,
+    "dataset_prs_with_git_source_evidence": 109,
+    "dataset_prs_with_supported_language_source": 79,
+    "dataset_prs_with_log_observations": 35,
+    "dataset_prs_with_observed_type_labels": 28,
+    "dataset_prs_with_unknown_type_review": 34,
+    "dataset_prs_with_pending_batch_jobs": 0,
+    "dataset_prs_with_running_batch_jobs": 0,
+    "dataset_prs_with_blocked_batch_jobs": 33506,
+    "dataset_prs_with_partial_batch_jobs": 87,
+    "dataset_prs_with_complete_batch_jobs": 56,
+    "dataset_prs_with_job_missing_batch_jobs": 0
+  },
+  "denominator": "distinct PR identities in the frozen multi-table import",
+  "analysis_inputs": {
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-anchors-v3/batch.sqlite": "be9f4924c239250121df395412e47cd68693aac202d30292deb3f8278d14e931",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-expansion-v043-final/batch.sqlite": "4c6fa2e616418d9367cd25fbffba79ef92e43387abbe3a5c62e78525e67fb706",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-full-v5/batch.sqlite": "003fa430eeec7c0c7600861f7e451abb8a8ed48e8b459511fd807e3a7b14b867",
+    "/Users/lzh/Downloads/Log 研究/agentlog_unified/batches/aidev-prior-cache-v042/batch.sqlite": "fbb15bdd70e75abce313ccbc09a55adb19cde3b8053a4e4f14b837d39cc655ef"
+  },
+  "aidev_import": "/Users/lzh/Downloads/Log 研究/agentlog_unified/inputs/aidev-full-v2",
+  "limitations": [
+    "Metadata/patch ingestion is not Git source analysis.",
+    "Matching a PR URL alone is insufficient: dataset commit SHAs must overlap actual Git and analyzed snapshots.",
+    "Multiple runs of one PR count once; complete-commit count requires one run covering its dataset commit set.",
+    "All-commit coverage can still have parser/language/history gaps; consult per-run code_coverage_audit.",
+    "Type labels remain bounded static candidates; no unknown or unexamined PR is marked safe.",
+    "Batch links require matching AIDev snapshot, PR identity, repository and a frozen PR commit SHA; external/calibration/non-AIDev contexts are excluded.",
+    "A queued job or provided metadata is not analysis. Git commit reads, available source, supported source and log-type observations have separate counts.",
+    "PR counts by job status overlap when a PR has multiple commits. A running status without a live writer can be an interrupted job and is not verified analysis.",
+    "Supported-scope analysis requires actual source fingerprints plus a completed/partial PyDriller job without a recorded detector/parser failure for that path/side.",
+    "Batch observations concern supplied commit changes against their parents, including deleted-side logs; they do not trace full follow-up history."
+  ],
+  "runtime_confirmed": false,
+  "network_accessed": false,
+  "batch_context_exclusion_counts": {
+    "commit_not_in_frozen_pr_evidence": 25152
+  },
+  "batch_observation_scope": "dataset_commit_changes",
+  "full_history_tracing_completed_by_batch": false
+}

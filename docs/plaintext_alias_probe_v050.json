@@ -1,0 +1,2569 @@
+{
+  "started_utc": "2026-09-09T07:31:37.373709+00:00",
+  "completed_utc": "2026-09-09T07:34:26.341213+00:00",
+  "elapsed_seconds": 168.9682605410053,
+  "time_budget_seconds": 300,
+  "full_scan_attempts": 1,
+  "stop_reason": null,
+  "selection_rule": "All frozen AIDev string/large_string columns and rows, then exact 98 fixed casefold aliases in Unicode key:value/key=value syntax; no content-based row filter.",
+  "source_manifest_sha256": "a533395acbf4511b384abd33d8ca4b7f88d5bc8f5eddcbcdd420177c88979bd1",
+  "frozen_source_inputs": [
+    {
+      "path": "all_pull_request.parquet",
+      "bytes": 330776130,
+      "sha256": "3648c371a0518ce24a3b1322bad6c21e5021698eac515894bcec713d656bc223"
+    },
+    {
+      "path": "all_repository.parquet",
+      "bytes": 6136253,
+      "sha256": "682a612d420420b1c738930332c78eae46268fc3bee7de12ca2f49da657741b1"
+    },
+    {
+      "path": "all_user.parquet",
+      "bytes": 2511706,
+      "sha256": "9e7c1226b4dd417223b0ad5fccd122639fa5f2e5f425e31e671428b3941e347c"
+    },
+    {
+      "path": "human_pr_task_type.parquet",
+      "bytes": 715969,
+      "sha256": "5527d52bfd9605a25d1ed1ef03bce0e1cc217f6ffed936e2be1b80a04123e658"
+    },
+    {
+      "path": "human_pull_request.parquet",
+      "bytes": 4387171,
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+    },
+    {
+      "path": "issue.parquet",
+      "bytes": 3222463,
+      "sha256": "0787e44a5a3ea9ffd9fdc9d8deb49360cfa05171e13d84ec31df3232a21466b4"
+    },
+    {
+      "path": "pr_comments.parquet",
+      "bytes": 25857243,
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+    },
+    {
+      "path": "pr_commit_details.parquet",
+      "bytes": 485214032,
+      "sha256": "28efcc5b23c657fad8aa3da374fad40d164934e5aeefc5e23ad55ec69a592836"
+    },
+    {
+      "path": "pr_commits.parquet",
+      "bytes": 8314097,
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+    },
+    {
+      "path": "pr_review_comments.parquet",
+      "bytes": 14728130,
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+    },
+    {
+      "path": "pr_review_comments_v2.parquet",
+      "bytes": 21125785,
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+    },
+    {
+      "path": "pr_reviews.parquet",
+      "bytes": 7517041,
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+    },
+    {
+      "path": "pr_task_type.parquet",
+      "bytes": 2993264,
+      "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+    },
+    {
+      "path": "pr_timeline.parquet",
+      "bytes": 34108415,
+      "sha256": "9f45c52c0a7ffa4395ea6c7ce5beb993b3dfb2425ef3848c6d28e2e96471a6f8"
+    },
+    {
+      "path": "pull_request.parquet",
+      "bytes": 16855612,
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+    },
+    {
+      "path": "related_issue.parquet",
+      "bytes": 75579,
+      "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+    },
+    {
+      "path": "repository.parquet",
+      "bytes": 167251,
+      "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+    },
+    {
+      "path": "user.parquet",
+      "bytes": 68935,
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+    }
+  ],
+  "source_code_sha256": {
+    "src/agentlog_unified/detector.py": "f3571b96d3def552d4c8251ee11dd5c26b0f64df03b46a9b875b977b0e8b4238",
+    "src/agentlog_unified/content_repair.py": "0a5c6db8a52ee2e152f7600fa10ebe672a0b45b0236bc860a9c6f1c13c75cd7c",
+    "src/agentlog_unified/aidev_anchors.py": "e5a7da9847d64f75dde6a1eae906e0c0d876a876cb1e30974ac98b08295c553d",
+    "src/agentlog_unified/ingest.py": "fcf0a19b846df9ce94c85e5ebae49fae575fb504a7dd0f1743e42f91a0b47627",
+    "src/agentlog_unified/config.py": "5b0ea00b673aa04a1a3ea5c0d73c4fdb1e9a9e4e1639d75ff92931611335eeca",
+    "src/agentlog_unified/miner.py": "93bd310ac685c2c859406072ed8d4da1eda978200d3182edbd0f8f04a49e023f",
+    "src/agentlog_unified/analysis.py": "8e87f75c8622214d6e810e7ae9e34a8cf599aedde2a21f39598cd87f038e9e39",
+    "src/agentlog_unified/discovery.py": "93440b56cf579f32c7ef71444e9a3a4788d05182cf85363e55646c5c68643f3c",
+    "src/agentlog_unified/content_advance.py": "b7a7c6c8e93962af0f44604822ea571ad5316db2b5a6737523d0b80423b16692",
+    "src/agentlog_unified/reverse.py": "9bfe44cbb90dfa81396d275e1f20ea2b6668a18e87be24c11488cc84b85317dd",
+    "src/agentlog_unified/swechat.py": "154e6c6f4d6255ac7ba8d19b501f5fd63fc4ed9cfd29c2e97241128d5a2fc0a0",
+    "src/agentlog_unified/repo_manager.py": "765c087dc8ff2b07f1ce2eaa4d65118e0924762edf6753da7448457609247a85",
+    "src/agentlog_unified/content_types.py": "1d4e7c7886a098ec5a330326f52bde7b89ef7d622b8474dc62c132a620472144",
+    "src/agentlog_unified/__init__.py": "6e57ec3105b50e12fcf82341a4e68cadf1d9c8bcb30dab966a78b3f9562c2853",
+    "src/agentlog_unified/export.py": "cda93e9faaed4baa33c029bec4ddc944cb147ab01ff71c75677faaa38e61d238",
+    "src/agentlog_unified/review.py": "1a13647c0695a07ed68aad5360d0bcd6cea8d96513a46facd429cecd08b3de3c",
+    "src/agentlog_unified/aidev.py": "2a13f9f9059a2afc4a452505aa46b66739676e9a126c80b8351b7a5d9a9cd914",
+    "src/agentlog_unified/matching.py": "719098ca975482b5d12eef327bd7a2e0874bba0958ce66d8fbe8fb315277de79",
+    "src/agentlog_unified/batch_mine.py": "7f0d4391f33f74b50b83c35e9ba08497597d4c287cdb00d3eb3149452f902743",
+    "src/agentlog_unified/corpus_coverage.py": "c1f5eb10ce91715c02c83e2315fb7dc3662618bbf55a05db1fc2cd9b63fa8e92",
+    "src/agentlog_unified/content_reconcile.py": "a9bef07879f090c6c16c77ca586aaa26557ac0ce683cd6fc1d712df00068304d",
+    "src/agentlog_unified/cli.py": "589a37347212ecfe7ebe3f2118535e7ba9f27f363a70c814c087a8da40b5a15d",
+    "src/agentlog_unified/taxonomy.py": "b4d40ecb53894ad5b7346e6fcba8f629f6c73fea5e18a7b9b0a4d8c275f99aed",
+    "src/agentlog_unified/extension.py": "1be4178321f4021286dc22afabf55403a151a6134696f86ff75ae3a6a6a82a36",
+    "src/agentlog_unified/git_support.py": "f6b95e5fd8425fec91e5bbe88bd5144afa6f77b288aefca742aa2e2f9b82544c",
+    "src/agentlog_unified/storage.py": "4c1e38272e09b23f4acc13f5e223565ec89fe5bbf3f7ba354a61fce7621ccdac",
+    "src/agentlog_unified/object_acquisition.py": "ab6c5fa7bdce734e575c5d1f93fc19b1833780042d76886ed0572b568e8a11aa",
+    "src/agentlog_unified/provenance.py": "4f2d899a289b8056f2c69032de761ac2a62855e09974ad7c8dc4bf85bee9faf5",
+    "src/agentlog_unified/type_audit.py": "2f5aa7d1aded4508be38aafd7613a2f49b997d49f766ee42c756775ef636d1db",
+    "src/agentlog_unified/lineage.py": "0ca9a71220d676ce9b3f9ea635895f83ae30accd808718408140ad69c9bf7032",
+    "src/agentlog_unified/github_client.py": "0140dd62af4856c0d0ab15b26e928f5a2df2e5ef32c07664833eba1e3133e818",
+    "src/agentlog_unified/schema_scan.py": "b7fb3d4d796020013718378b6f7c8e90449cc3bc485235e5d5a6b90c65e0d556",
+    "src/agentlog_unified/content_cursor.py": "e49944caa0bf7b0dec75107bc0b56a080de53194aea4ed102cd762b1f2810ee0",
+    "src/agentlog_unified/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/agentlog_unified/content_scan.py": "254582bdb88c52e16439833228ef6c88fcc5fb2bf5313cddb3d267dadad0aeed",
+    "src/agentlog_unified/structured_scan.py": "3d1a0e5b6120f8d621e766e7d8d30434644c275c15109c3045853bc6c675da28",
+    "src/agentlog_unified/structured_types.py": "2a49d3938cadd630c85945385a7af6444e7e7dbecaefb496b12a101972a3cc34"
+  },
+  "helper_sha256": {
+    "probe_plaintext_aliases_v050.py": "2225cba6326feb1a8a187bf7ffc6031a0f3e0dbfcac3729916eb8fafe6d4015a",
+    "probe_personal_attribute_fields_v049.py": "e1955fa27a8af54481e3ac29c3f1722a0f19def089813b2f433f253980ed44d5",
+    "probe_json_key_aliases_v050.py": "8a2b843de63e2b237bb3871e03b5cdaeab2ed11713d661ca58e2f9ecfe093c48",
+    "json_key_alias_probe_v050.json": "3bd11774efa97ac040c6e7bb0d5000d10de8799b677149d53de1e229f44bea0a",
+    "json_key_alias_probe_v050_selection.jsonl": "106cdc5b090d9052428d1bd7fbb1c39a6b1c5b282975f7500e064f50d5ad6654"
+  },
+  "frozen_package": "/private/tmp/aidev_alias_plaintext_v050_frozen/src/agentlog_unified",
+  "source_inputs_and_frozen_implementation_unchanged": true,
+  "table_denominator": 18,
+  "string_column_denominator": 105,
+  "source_row_denominator": 2456073,
+  "text_cell_denominator": 18932477,
+  "historical_complete_nonempty_text_cell_denominator": 17362345,
+  "historical_complete_coverage_sha256": "b9543eede299d15603929a60b01754b8bb8dd5a438af1e313c6d09bedcad30ad",
+  "scan_stats": {
+    "text_cells_visited": 18932477,
+    "nonempty_cells": 17362345,
+    "characters_seen": 2706989370,
+    "characters_examined": 2706989370,
+    "source_prefix_truncated_cells": 0,
+    "processed_source_rows": 2456073,
+    "null_cells": 1570131,
+    "source_cells_with_alias_assignments": 19,
+    "empty_cells": 1
+  },
+  "coverage": [
+    {
+      "table_path": "all_pull_request.parquet",
+      "source_rows": 932791,
+      "visited_rows": 932791,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "title",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932790,
+          "characters_seen": 32999772,
+          "characters_examined": 32999772,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 924018,
+          "characters_seen": 493672473,
+          "characters_examined": 493672473,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 8773,
+          "source_cells_with_alias_assignments": 2
+        },
+        {
+          "column_name": "agent",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932791,
+          "characters_seen": 10530266,
+          "characters_examined": 10530266,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "user",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932791,
+          "characters_seen": 9527498,
+          "characters_examined": 9527498,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "state",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932791,
+          "characters_seen": 5451018,
+          "characters_examined": 5451018,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932791,
+          "characters_seen": 18655820,
+          "characters_examined": 18655820,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "closed_at",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 859927,
+          "characters_seen": 17198540,
+          "characters_examined": 17198540,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 72864
+        },
+        {
+          "column_name": "merged_at",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 790139,
+          "characters_seen": 15802780,
+          "characters_examined": 15802780,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 142652
+        },
+        {
+          "column_name": "repo_url",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932791,
+          "characters_seen": 48997079,
+          "characters_examined": 48997079,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "html_url",
+          "source_cell_denominator": 932791,
+          "source_cells_visited": 932791,
+          "nonempty_cells": 932791,
+          "characters_seen": 47164339,
+          "characters_examined": 47164339,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "all_repository.parquet",
+      "source_rows": 116211,
+      "visited_rows": 116211,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "url",
+          "source_cell_denominator": 116211,
+          "source_cells_visited": 116211,
+          "nonempty_cells": 116211,
+          "characters_seen": 6164634,
+          "characters_examined": 6164634,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "license",
+          "source_cell_denominator": 116211,
+          "source_cells_visited": 116211,
+          "null_cells": 76106,
+          "nonempty_cells": 40105,
+          "characters_seen": 228329,
+          "characters_examined": 228329,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "full_name",
+          "source_cell_denominator": 116211,
+          "source_cells_visited": 116211,
+          "nonempty_cells": 116211,
+          "characters_seen": 2794585,
+          "characters_examined": 2794585,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "language",
+          "source_cell_denominator": 116211,
+          "source_cells_visited": 116211,
+          "nonempty_cells": 104225,
+          "characters_seen": 696524,
+          "characters_examined": 696524,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 11986
+        }
+      ]
+    },
+    {
+      "table_path": "all_user.parquet",
+      "source_rows": 72189,
+      "visited_rows": 72189,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "login",
+          "source_cell_denominator": 72189,
+          "source_cells_visited": 72189,
+          "nonempty_cells": 72189,
+          "characters_seen": 723689,
+          "characters_examined": 723689,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 72189,
+          "source_cells_visited": 72189,
+          "nonempty_cells": 72167,
+          "characters_seen": 1443340,
+          "characters_examined": 1443340,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 22
+        }
+      ]
+    },
+    {
+      "table_path": "human_pr_task_type.parquet",
+      "source_rows": 6618,
+      "visited_rows": 6618,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "agent",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 33090,
+          "characters_examined": 33090,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "title",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 292952,
+          "characters_examined": 292952,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "reason",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 1087063,
+          "characters_examined": 1087063,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "type",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 27605,
+          "characters_examined": 27605,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "human_pull_request.parquet",
+      "source_rows": 6618,
+      "visited_rows": 6618,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "title",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 292952,
+          "characters_examined": 292952,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "user",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 69251,
+          "characters_examined": 69251,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "state",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 38770,
+          "characters_examined": 38770,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 132360,
+          "characters_examined": 132360,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "closed_at",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6149,
+          "characters_seen": 122980,
+          "characters_examined": 122980,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 469
+        },
+        {
+          "column_name": "merged_at",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 5081,
+          "characters_seen": 101620,
+          "characters_examined": 101620,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1537
+        },
+        {
+          "column_name": "repo_url",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 310725,
+          "characters_examined": 310725,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "html_url",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 309615,
+          "characters_examined": 309615,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 5623,
+          "characters_seen": 12012967,
+          "characters_examined": 12012967,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 995
+        },
+        {
+          "column_name": "agent",
+          "source_cell_denominator": 6618,
+          "source_cells_visited": 6618,
+          "nonempty_cells": 6618,
+          "characters_seen": 33090,
+          "characters_examined": 33090,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "issue.parquet",
+      "source_rows": 4614,
+      "visited_rows": 4614,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "title",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 4614,
+          "characters_seen": 253197,
+          "characters_examined": 253197,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 4490,
+          "characters_seen": 6215295,
+          "characters_examined": 6215295,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 124
+        },
+        {
+          "column_name": "user",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 4614,
+          "characters_seen": 43836,
+          "characters_examined": 43836,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "state",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 4614,
+          "characters_seen": 24790,
+          "characters_examined": 24790,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 4614,
+          "characters_seen": 92280,
+          "characters_examined": 92280,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "closed_at",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 3167,
+          "characters_seen": 63340,
+          "characters_examined": 63340,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1447
+        },
+        {
+          "column_name": "html_url",
+          "source_cell_denominator": 4614,
+          "source_cells_visited": 4614,
+          "nonempty_cells": 4614,
+          "characters_seen": 234624,
+          "characters_examined": 234624,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "pr_comments.parquet",
+      "source_rows": 39122,
+      "visited_rows": 39122,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "user",
+          "source_cell_denominator": 39122,
+          "source_cells_visited": 39122,
+          "nonempty_cells": 39122,
+          "characters_seen": 586472,
+          "characters_examined": 586472,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "user_type",
+          "source_cell_denominator": 39122,
+          "source_cells_visited": 39122,
+          "nonempty_cells": 39122,
+          "characters_seen": 129072,
+          "characters_examined": 129072,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 39122,
+          "source_cells_visited": 39122,
+          "nonempty_cells": 39122,
+          "characters_seen": 782440,
+          "characters_examined": 782440,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 39122,
+          "source_cells_visited": 39122,
+          "nonempty_cells": 39122,
+          "characters_seen": 62776011,
+          "characters_examined": 62776011,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "pr_commit_details.parquet",
+      "source_rows": 711923,
+      "visited_rows": 711923,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "sha",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 711923,
+          "characters_seen": 28476920,
+          "characters_examined": 28476920,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "author",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 711920,
+          "characters_seen": 7036137,
+          "characters_examined": 7036137,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 3
+        },
+        {
+          "column_name": "committer",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 711920,
+          "characters_seen": 6768027,
+          "characters_examined": 6768027,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 3
+        },
+        {
+          "column_name": "message",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 711903,
+          "characters_seen": 77576936,
+          "characters_examined": 77576936,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 20
+        },
+        {
+          "column_name": "filename",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 706791,
+          "characters_seen": 34520239,
+          "characters_examined": 34520239,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 5132
+        },
+        {
+          "column_name": "status",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 706791,
+          "characters_seen": 5055165,
+          "characters_examined": 5055165,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 5132
+        },
+        {
+          "column_name": "patch",
+          "source_cell_denominator": 711923,
+          "source_cells_visited": 711923,
+          "nonempty_cells": 641721,
+          "characters_seen": 1491950877,
+          "characters_examined": 1491950877,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 70202,
+          "source_cells_with_alias_assignments": 17
+        }
+      ]
+    },
+    {
+      "table_path": "pr_commits.parquet",
+      "source_rows": 88576,
+      "visited_rows": 88576,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "sha",
+          "source_cell_denominator": 88576,
+          "source_cells_visited": 88576,
+          "nonempty_cells": 88576,
+          "characters_seen": 3543040,
+          "characters_examined": 3543040,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "author",
+          "source_cell_denominator": 88576,
+          "source_cells_visited": 88576,
+          "nonempty_cells": 88575,
+          "characters_seen": 1035175,
+          "characters_examined": 1035175,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "committer",
+          "source_cell_denominator": 88576,
+          "source_cells_visited": 88576,
+          "nonempty_cells": 88575,
+          "characters_seen": 1020138,
+          "characters_examined": 1020138,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "message",
+          "source_cell_denominator": 88576,
+          "source_cells_visited": 88576,
+          "nonempty_cells": 88575,
+          "characters_seen": 9250827,
+          "characters_examined": 9250827,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        }
+      ]
+    },
+    {
+      "table_path": "pr_review_comments.parquet",
+      "source_rows": 19450,
+      "visited_rows": 19450,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "user",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 185853,
+          "characters_examined": 185853,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "user_type",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 70369,
+          "characters_examined": 70369,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "diff_hunk",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 18664,
+          "characters_seen": 29645254,
+          "characters_examined": 29645254,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 786
+        },
+        {
+          "column_name": "path",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 886928,
+          "characters_examined": 886928,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "commit_id",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 778000,
+          "characters_examined": 778000,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "original_commit_id",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 778000,
+          "characters_examined": 778000,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19449,
+          "characters_seen": 4518579,
+          "characters_examined": 4518579,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "pull_request_url",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 1142497,
+          "characters_examined": 1142497,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 389000,
+          "characters_examined": 389000,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "updated_at",
+          "source_cell_denominator": 19450,
+          "source_cells_visited": 19450,
+          "nonempty_cells": 19450,
+          "characters_seen": 389000,
+          "characters_examined": 389000,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "pr_review_comments_v2.parquet",
+      "source_rows": 26868,
+      "visited_rows": 26868,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "user",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 280870,
+          "characters_examined": 280870,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "user_type",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 94744,
+          "characters_examined": 94744,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "diff_hunk",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26004,
+          "characters_seen": 43052457,
+          "characters_examined": 43052457,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 864
+        },
+        {
+          "column_name": "path",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 1204398,
+          "characters_examined": 1204398,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "commit_id",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 1074720,
+          "characters_examined": 1074720,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "original_commit_id",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 1074720,
+          "characters_examined": 1074720,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26867,
+          "characters_seen": 9235787,
+          "characters_examined": 9235787,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "pull_request_url",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 1573253,
+          "characters_examined": 1573253,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 537360,
+          "characters_examined": 537360,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "updated_at",
+          "source_cell_denominator": 26868,
+          "source_cells_visited": 26868,
+          "nonempty_cells": 26868,
+          "characters_seen": 537360,
+          "characters_examined": 537360,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "pr_reviews.parquet",
+      "source_rows": 28875,
+      "visited_rows": 28875,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "user",
+          "source_cell_denominator": 28875,
+          "source_cells_visited": 28875,
+          "nonempty_cells": 28874,
+          "characters_seen": 423442,
+          "characters_examined": 423442,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "user_type",
+          "source_cell_denominator": 28875,
+          "source_cells_visited": 28875,
+          "nonempty_cells": 28874,
+          "characters_seen": 103517,
+          "characters_examined": 103517,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 1
+        },
+        {
+          "column_name": "state",
+          "source_cell_denominator": 28875,
+          "source_cells_visited": 28875,
+          "nonempty_cells": 28875,
+          "characters_seen": 266208,
+          "characters_examined": 266208,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "submitted_at",
+          "source_cell_denominator": 28875,
+          "source_cells_visited": 28875,
+          "nonempty_cells": 28875,
+          "characters_seen": 577500,
+          "characters_examined": 577500,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 28875,
+          "source_cells_visited": 28875,
+          "nonempty_cells": 7940,
+          "characters_seen": 16871566,
+          "characters_examined": 16871566,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 20934,
+          "empty_cells": 1
+        }
+      ]
+    },
+    {
+      "table_path": "pr_task_type.parquet",
+      "source_rows": 33596,
+      "visited_rows": 33596,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "agent",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 334808,
+          "characters_examined": 334808,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "title",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 1439501,
+          "characters_examined": 1439501,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "reason",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 4814561,
+          "characters_examined": 4814561,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "type",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 136382,
+          "characters_examined": 136382,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "pr_timeline.parquet",
+      "source_rows": 325500,
+      "visited_rows": 325500,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "event",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "nonempty_cells": 325500,
+          "characters_seen": 3246890,
+          "characters_examined": 3246890,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "commit_id",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "nonempty_cells": 122040,
+          "characters_seen": 4881600,
+          "characters_examined": 4881600,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 203460
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "nonempty_cells": 229900,
+          "characters_seen": 4598000,
+          "characters_examined": 4598000,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 95600
+        },
+        {
+          "column_name": "actor",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "nonempty_cells": 309631,
+          "characters_seen": 3461754,
+          "characters_examined": 3461754,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 15869
+        },
+        {
+          "column_name": "assignee",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "null_cells": 313637,
+          "nonempty_cells": 11863,
+          "characters_seen": 98174,
+          "characters_examined": 98174,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "label",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "null_cells": 296215,
+          "nonempty_cells": 29285,
+          "characters_seen": 203838,
+          "characters_examined": 203838,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "message",
+          "source_cell_denominator": 325500,
+          "source_cells_visited": 325500,
+          "null_cells": 212809,
+          "nonempty_cells": 112691,
+          "characters_seen": 64803781,
+          "characters_examined": 64803781,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "pull_request.parquet",
+      "source_rows": 33596,
+      "visited_rows": 33596,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "title",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 1439501,
+          "characters_examined": 1439501,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "body",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33236,
+          "characters_seen": 31272416,
+          "characters_examined": 31272416,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 360
+        },
+        {
+          "column_name": "agent",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 334808,
+          "characters_examined": 334808,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "user",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 346810,
+          "characters_examined": 346810,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "state",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 196952,
+          "characters_examined": 196952,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 671920,
+          "characters_examined": 671920,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "closed_at",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 31284,
+          "characters_seen": 625680,
+          "characters_examined": 625680,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 2312
+        },
+        {
+          "column_name": "merged_at",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "null_cells": 9582,
+          "nonempty_cells": 24014,
+          "characters_seen": 480280,
+          "characters_examined": 480280,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "repo_url",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 1631111,
+          "characters_examined": 1631111,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "html_url",
+          "source_cell_denominator": 33596,
+          "source_cells_visited": 33596,
+          "nonempty_cells": 33596,
+          "characters_seen": 1621689,
+          "characters_examined": 1621689,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "related_issue.parquet",
+      "source_rows": 4923,
+      "visited_rows": 4923,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "source",
+          "source_cell_denominator": 4923,
+          "source_cells_visited": 4923,
+          "nonempty_cells": 4923,
+          "characters_seen": 19692,
+          "characters_examined": 19692,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    },
+    {
+      "table_path": "repository.parquet",
+      "source_rows": 2807,
+      "visited_rows": 2807,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "url",
+          "source_cell_denominator": 2807,
+          "source_cells_visited": 2807,
+          "nonempty_cells": 2807,
+          "characters_seen": 141313,
+          "characters_examined": 141313,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "license",
+          "source_cell_denominator": 2807,
+          "source_cells_visited": 2807,
+          "nonempty_cells": 2616,
+          "characters_seen": 16532,
+          "characters_examined": 16532,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 191
+        },
+        {
+          "column_name": "full_name",
+          "source_cell_denominator": 2807,
+          "source_cells_visited": 2807,
+          "nonempty_cells": 2807,
+          "characters_seen": 59910,
+          "characters_examined": 59910,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "language",
+          "source_cell_denominator": 2807,
+          "source_cells_visited": 2807,
+          "nonempty_cells": 2770,
+          "characters_seen": 16793,
+          "characters_examined": 16793,
+          "source_prefix_truncated_cells": 0,
+          "null_cells": 37
+        }
+      ]
+    },
+    {
+      "table_path": "user.parquet",
+      "source_rows": 1796,
+      "visited_rows": 1796,
+      "row_completion_semantics": "all_selected_columns_in_each_visited_row",
+      "complete": true,
+      "first_unvisited_source_row": null,
+      "fields": [
+        {
+          "column_name": "login",
+          "source_cell_denominator": 1796,
+          "source_cells_visited": 1796,
+          "nonempty_cells": 1796,
+          "characters_seen": 16808,
+          "characters_examined": 16808,
+          "source_prefix_truncated_cells": 0
+        },
+        {
+          "column_name": "created_at",
+          "source_cell_denominator": 1796,
+          "source_cells_visited": 1796,
+          "nonempty_cells": 1796,
+          "characters_seen": 35920,
+          "characters_examined": 35920,
+          "source_prefix_truncated_cells": 0
+        }
+      ]
+    }
+  ],
+  "all_selected_source_rows_visited": true,
+  "field_assignment_count": 28,
+  "value_quality_counts": {
+    "reference_or_expression": 27,
+    "type_declaration": 1
+  },
+  "prior_json_overlap_counts": {
+    "outside_prior_successful_json_document": 28
+  },
+  "baseline_source_cells_replayed": 11,
+  "baseline_counts": {
+    "truncated_classifier_cells": 0,
+    "field_assignments_replayed": 14,
+    "expected_type_not_found": 13,
+    "expected_type_found": 1
+  },
+  "baseline_source_cell_budget": 32,
+  "baseline_source_cell_per_alias_target": 2,
+  "alias_catalog": [
+    {
+      "alias_id": "alias_001",
+      "predeclared_alias": "api密钥",
+      "canonical_hint": "api_key",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "api_key"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_002",
+      "predeclared_alias": "clientipaddr",
+      "canonical_hint": "client_ip",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "network_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_003",
+      "predeclared_alias": "ipaddr",
+      "canonical_hint": "ip_address",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "network_identifier"
+        }
+      ],
+      "field_assignment_count": 12
+    },
+    {
+      "alias_id": "alias_004",
+      "predeclared_alias": "ip地址",
+      "canonical_hint": "ip_address",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "network_identifier"
+        }
+      ],
+      "field_assignment_count": 1
+    },
+    {
+      "alias_id": "alias_005",
+      "predeclared_alias": "remoteipaddr",
+      "canonical_hint": "remote_addr",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "network_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_006",
+      "predeclared_alias": "业务对象",
+      "canonical_hint": "business_object",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "business_object"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_007",
+      "predeclared_alias": "个人姓名",
+      "canonical_hint": "person_name",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "person_name"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_008",
+      "predeclared_alias": "个人年龄",
+      "canonical_hint": "person_age",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "age"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_009",
+      "predeclared_alias": "个人收入",
+      "canonical_hint": "income",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "financial"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_010",
+      "predeclared_alias": "个人职业",
+      "canonical_hint": "occupation",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "employment"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_011",
+      "predeclared_alias": "交易id",
+      "canonical_hint": "transaction_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "transaction_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_012",
+      "predeclared_alias": "付款id",
+      "canonical_hint": "payment_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "transaction_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_013",
+      "predeclared_alias": "会话id",
+      "canonical_hint": "session_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "session_identifier"
+        }
+      ],
+      "field_assignment_count": 2
+    },
+    {
+      "alias_id": "alias_014",
+      "predeclared_alias": "会话编号",
+      "canonical_hint": "session_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "session_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_015",
+      "predeclared_alias": "健康记录",
+      "canonical_hint": "health_record",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "medical"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_016",
+      "predeclared_alias": "内部端点",
+      "canonical_hint": "internal_endpoint",
+      "expected_types": [
+        {
+          "category": "CFG",
+          "subtype": "internal_endpoint"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_017",
+      "predeclared_alias": "内部路径",
+      "canonical_hint": "internal_path",
+      "expected_types": [
+        {
+          "category": "CFG",
+          "subtype": "filesystem_path"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_018",
+      "predeclared_alias": "凭证",
+      "canonical_hint": "credentials",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "credential_bundle"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_019",
+      "predeclared_alias": "出生日期",
+      "canonical_hint": "birth_date",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "birth_date"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_020",
+      "predeclared_alias": "刷新令牌",
+      "canonical_hint": "refresh_token",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "access_token"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_021",
+      "predeclared_alias": "医疗记录",
+      "canonical_hint": "medical_record",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "medical"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_022",
+      "predeclared_alias": "响应体",
+      "canonical_hint": "response_body",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "business_object"
+        },
+        {
+          "category": "BIZ",
+          "subtype": "response_body"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_023",
+      "predeclared_alias": "堆栈跟踪",
+      "canonical_hint": "stack_trace",
+      "expected_types": [
+        {
+          "category": "DIAG",
+          "subtype": "stack_trace"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_024",
+      "predeclared_alias": "处方",
+      "canonical_hint": "prescription",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "medical"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_025",
+      "predeclared_alias": "姓名",
+      "canonical_hint": "person_name",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "person_name"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_026",
+      "predeclared_alias": "学历",
+      "canonical_hint": "education_level",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "education"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_027",
+      "predeclared_alias": "宗教信仰",
+      "canonical_hint": "religious_belief",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "religious_belief"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_028",
+      "predeclared_alias": "宗教归属",
+      "canonical_hint": "religious_affiliation",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "religious_belief"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_029",
+      "predeclared_alias": "客户端ip",
+      "canonical_hint": "client_ip",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "network_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_030",
+      "predeclared_alias": "客户编号",
+      "canonical_hint": "customer_number",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_031",
+      "predeclared_alias": "家庭住址",
+      "canonical_hint": "home_address",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "postal_address"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_032",
+      "predeclared_alias": "密码",
+      "canonical_hint": "password",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "password"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_033",
+      "predeclared_alias": "就业状况",
+      "canonical_hint": "employment_status",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "employment"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_034",
+      "predeclared_alias": "异常信息",
+      "canonical_hint": "exception",
+      "expected_types": [
+        {
+          "category": "DIAG",
+          "subtype": "exception_message"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_035",
+      "predeclared_alias": "性别",
+      "canonical_hint": "gender",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "sex_gender"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_036",
+      "predeclared_alias": "性别认同",
+      "canonical_hint": "gender_identity",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "sex_gender"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_037",
+      "predeclared_alias": "手机号",
+      "canonical_hint": "mobile_number",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "phone"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_038",
+      "predeclared_alias": "手机号码",
+      "canonical_hint": "mobile_number",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "phone"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_039",
+      "predeclared_alias": "护照号码",
+      "canonical_hint": "passport_number",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "government_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_040",
+      "predeclared_alias": "指纹模板",
+      "canonical_hint": "fingerprint_template",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "biometric"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_041",
+      "predeclared_alias": "授权头",
+      "canonical_hint": "authorization",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "authorization_header"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_042",
+      "predeclared_alias": "接口密钥",
+      "canonical_hint": "api_key",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "api_key"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_043",
+      "predeclared_alias": "收货地址",
+      "canonical_hint": "shipping_address",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "postal_address"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_044",
+      "predeclared_alias": "教育经历",
+      "canonical_hint": "education_history",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "education"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_045",
+      "predeclared_alias": "数据库地址",
+      "canonical_hint": "database_url",
+      "expected_types": [
+        {
+          "category": "CFG",
+          "subtype": "database_connection"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_046",
+      "predeclared_alias": "数据库连接串",
+      "canonical_hint": "connection_string",
+      "expected_types": [
+        {
+          "category": "CFG",
+          "subtype": "database_connection"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_047",
+      "predeclared_alias": "文档内容",
+      "canonical_hint": "document_content",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "document_content"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_048",
+      "predeclared_alias": "族裔",
+      "canonical_hint": "ethnicity",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "ethnicity"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_049",
+      "predeclared_alias": "最高学位",
+      "canonical_hint": "highest_degree",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "education"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_050",
+      "predeclared_alias": "服务密钥",
+      "canonical_hint": "api_key",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "api_key"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_051",
+      "predeclared_alias": "民族",
+      "canonical_hint": "ethnicity",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "ethnicity"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_052",
+      "predeclared_alias": "消息内容",
+      "canonical_hint": "message_content",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "document_content"
+        },
+        {
+          "category": "BIZ",
+          "subtype": "message_content"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_053",
+      "predeclared_alias": "环境变量",
+      "canonical_hint": "environment",
+      "expected_types": [
+        {
+          "category": "CFG",
+          "subtype": "environment"
+        }
+      ],
+      "field_assignment_count": 3
+    },
+    {
+      "alias_id": "alias_054",
+      "predeclared_alias": "生日",
+      "canonical_hint": "birth_date",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "birth_date"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_055",
+      "predeclared_alias": "用户id",
+      "canonical_hint": "user_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier"
+        }
+      ],
+      "field_assignment_count": 1
+    },
+    {
+      "alias_id": "alias_056",
+      "predeclared_alias": "用户姓名",
+      "canonical_hint": "user_name",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "person_name"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_057",
+      "predeclared_alias": "用户密码",
+      "canonical_hint": "password",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "password"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_058",
+      "predeclared_alias": "用户年龄",
+      "canonical_hint": "user_age",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "age"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_059",
+      "predeclared_alias": "用户编号",
+      "canonical_hint": "user_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_060",
+      "predeclared_alias": "电子邮箱",
+      "canonical_hint": "email",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "email"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_061",
+      "predeclared_alias": "电话号码",
+      "canonical_hint": "phone_number",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "phone"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_062",
+      "predeclared_alias": "社保号码",
+      "canonical_hint": "social_security_number",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "government_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_063",
+      "predeclared_alias": "私钥",
+      "canonical_hint": "private_key",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "private_key"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_064",
+      "predeclared_alias": "种族属性",
+      "canonical_hint": "racial_identity",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "ethnicity"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_065",
+      "predeclared_alias": "租户id",
+      "canonical_hint": "tenant_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "tenant_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_066",
+      "predeclared_alias": "租户编号",
+      "canonical_hint": "tenant_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "tenant_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_067",
+      "predeclared_alias": "精确位置",
+      "canonical_hint": "precise_location",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "precise_location"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_068",
+      "predeclared_alias": "纬度",
+      "canonical_hint": "latitude",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "precise_location"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_069",
+      "predeclared_alias": "经度",
+      "canonical_hint": "longitude",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "precise_location"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_070",
+      "predeclared_alias": "薪资",
+      "canonical_hint": "salary",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "financial"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_071",
+      "predeclared_alias": "虹膜模板",
+      "canonical_hint": "iris_template",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "biometric"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_072",
+      "predeclared_alias": "订单id",
+      "canonical_hint": "order_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "transaction_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_073",
+      "predeclared_alias": "认证cookie",
+      "canonical_hint": "auth_cookie",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "auth_cookie"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_074",
+      "predeclared_alias": "认证令牌",
+      "canonical_hint": "auth_token",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "access_token"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_075",
+      "predeclared_alias": "认证头",
+      "canonical_hint": "authorization",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "authorization_header"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_076",
+      "predeclared_alias": "设备id",
+      "canonical_hint": "device_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "device_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_077",
+      "predeclared_alias": "设备编号",
+      "canonical_hint": "device_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "device_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_078",
+      "predeclared_alias": "访问令牌",
+      "canonical_hint": "access_token",
+      "expected_types": [
+        {
+          "category": "AUTH",
+          "subtype": "access_token"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_079",
+      "predeclared_alias": "诊断",
+      "canonical_hint": "diagnosis",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "medical"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_080",
+      "predeclared_alias": "请求id",
+      "canonical_hint": "request_id",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "request_body"
+        },
+        {
+          "category": "QID",
+          "subtype": "request_identifier"
+        }
+      ],
+      "field_assignment_count": 8
+    },
+    {
+      "alias_id": "alias_081",
+      "predeclared_alias": "请求体",
+      "canonical_hint": "request_body",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "business_object"
+        },
+        {
+          "category": "BIZ",
+          "subtype": "request_body"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_082",
+      "predeclared_alias": "请求头",
+      "canonical_hint": "headers",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "http_headers"
+        }
+      ],
+      "field_assignment_count": 1
+    },
+    {
+      "alias_id": "alias_083",
+      "predeclared_alias": "请求编号",
+      "canonical_hint": "request_id",
+      "expected_types": [
+        {
+          "category": "BIZ",
+          "subtype": "request_body"
+        },
+        {
+          "category": "QID",
+          "subtype": "request_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_084",
+      "predeclared_alias": "账号id",
+      "canonical_hint": "account_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_085",
+      "predeclared_alias": "账户id",
+      "canonical_hint": "account_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "user_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_086",
+      "predeclared_alias": "跟踪id",
+      "canonical_hint": "trace_id",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "request_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_087",
+      "predeclared_alias": "身份证号",
+      "canonical_hint": "national_id",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "government_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_088",
+      "predeclared_alias": "远程ip地址",
+      "canonical_hint": "remote_addr",
+      "expected_types": [
+        {
+          "category": "QID",
+          "subtype": "network_identifier"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_089",
+      "predeclared_alias": "通信地址",
+      "canonical_hint": "postal_address",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "postal_address"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_090",
+      "predeclared_alias": "邮件地址",
+      "canonical_hint": "email",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "email"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_091",
+      "predeclared_alias": "邮寄地址",
+      "canonical_hint": "postal_address",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "postal_address"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_092",
+      "predeclared_alias": "邮箱",
+      "canonical_hint": "email",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "email"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_093",
+      "predeclared_alias": "部署配置",
+      "canonical_hint": "deployment_config",
+      "expected_types": [
+        {
+          "category": "CFG",
+          "subtype": "deployment_configuration"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_094",
+      "predeclared_alias": "银行卡号",
+      "canonical_hint": "card_number",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "financial"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_095",
+      "predeclared_alias": "银行账号",
+      "canonical_hint": "bank_account",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "financial"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_096",
+      "predeclared_alias": "错误响应",
+      "canonical_hint": "error_response",
+      "expected_types": [
+        {
+          "category": "DIAG",
+          "subtype": "failure_response"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_097",
+      "predeclared_alias": "雇主名称",
+      "canonical_hint": "employer_name",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "employment"
+        }
+      ],
+      "field_assignment_count": 0
+    },
+    {
+      "alias_id": "alias_098",
+      "predeclared_alias": "面部特征向量",
+      "canonical_hint": "face_embedding",
+      "expected_types": [
+        {
+          "category": "PII",
+          "subtype": "biometric"
+        }
+      ],
+      "field_assignment_count": 0
+    }
+  ],
+  "evidence_path": "plaintext_alias_probe_v050_evidence.jsonl",
+  "evidence_sha256": "2cd1be8753912ab181e2f54cafdc57a869be30ed8e09e705694eb020e78cdd96",
+  "source_values_exported": false,
+  "dynamic_keys_exported": false,
+  "value_hashes_exported": false,
+  "formal_source_or_tests_modified": false,
+  "network_accessed": false,
+  "new_sensitive_types_established": false,
+  "limitations": [
+    "Finite explicit assignments only; ordinary mentions and unrecognized keys remain outside this probe.",
+    "A key hint or quoted value is not confirmed personal data, a real credential, or an application log finding.",
+    "The baseline is purposive and capped at 32 source cells; no-hit cells never call the classifier.",
+    "Prior JSON document overlap uses the previously verified 5422-document source spans and does not newly parse other formats.",
+    "Character positions are Python string offsets; each cell is capped at a 1MiB prefix and the reused recognizer bounds quoted values to 4096 and unquoted values to 256 characters.",
+    "Arrow may decode a prefetched batch beyond the last committed source row; reported visited rows are complete all-field logical observations.",
+    "Source cells, field assignments, and type hints have different denominators and cannot be added into counts of people or secrets."
+  ]
+}

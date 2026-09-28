@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "inventory_kind": "bounded_unsupported_language_lexical_api_inventory",
+  "source_batches": [
+    "aidev-full-v4",
+    "swechat-full-v4"
+  ],
+  "unit": "unique repository + historical SHA + path source version, before and after sides deduplicated",
+  "extraction_method": "read-only exact historical Git blobs via git_support.read_blob; original change inventory from PyDriller-derived file_audit.jsonl",
+  "source_read_max_bytes": 2097152,
+  "implicit_git_lazy_fetch": false,
+  "pygments_version": "2.21.0",
+  "correction": {
+    "superseded": "Initial AIDev .java/.kts batch-repos-only lookup failed because repositories were in object-repos",
+    "replacement": "All 87 Java and 5 Kotlin source versions read from object-repos; replacement counts supersede initial NoSuchPathError values",
+    "other_cache": "All other reported source reads use existing batch-repos"
+  },
+  "evidence_boundary": [
+    "Lexical possible-call inventory, not a newly exported detector finding or confirmed privacy defect",
+    "Calls are counted in complete historical changed-file source versions, not intersected with changed statement spans",
+    "Before/after versions are distinct; call totals are not unique log identities",
+    "PHP object->level calls can include CLI presentation methods",
+    "Rust call group contains logging macros and println/eprintln stdout macros",
+    "Vue/Svelte counts need script-region validation; template text can mimic calls",
+    "No sensitive source values are exported; examples contain repository/SHA/path/line only"
+  ],
+  "masking_probe": {
+    "php": {
+      "offsets_preserved": true,
+      "comment_string_heredoc_fake_sink_hidden": true
+    },
+    "csharp": {
+      "offsets_preserved": true,
+      "comment_verbatim_interpolated_fake_sink_hidden": true,
+      "gap": "Interpolation expression identifiers are also masked, so value flow remains unexamined"
+    },
+    "java": {
+      "offsets_preserved": true,
+      "comment_string_textblock_fake_sink_hidden": true
+    },
+    "vue": {
+      "offsets_preserved": true,
+      "gap": "Template text survives masking; restrict sink matching to script regions"
+    }
+  },
+  "results": [
+    {
+      "dataset": "aidev-full-v4",
+      "scope": "exact historical source versions from unsupported changed files; lexical candidates not diff-intersected",
+      "counts": {
+        ".vue": {
+          "requested": 12,
+          "read": 12,
+          "lexer_error_versions": 5,
+          "js_console_calls": 130,
+          "js_console_versions": 12,
+          "versions_with_possible_logs": 12
+        },
+        ".java": {
+          "requested": 87,
+          "read": 87,
+          "logger_source_versions": 22,
+          "logger_calls": 53,
+          "method_warn": 28,
+          "method_debug": 17,
+          "method_error": 8
+        },
+        ".kts": {
+          "requested": 5,
+          "read": 5
+        }
+      },
+      "examples": [
+        {
+          "extension": ".vue",
+          "family": "js_console",
+          "repository": "1340691923/elasticview",
+          "sha": "0f04838ca1db5ea201a515745ce3041af385c3c3",
+          "path": "resources/vue/src/views/connect-tree/link.vue",
+          "line": 428
+        }
+      ]
+    },
+    {
+      "dataset": "swechat-full-v4",
+      "scope": "exact historical source versions from unsupported changed files; lexical candidates not diff-intersected",
+      "counts": {
+        ".sh": {
+          "requested": 26,
+          "read": 26
+        },
+        ".vue": {
+          "requested": 67,
+          "read": 67,
+          "lexer_error_versions": 18,
+          "js_console_calls": 97,
+          "js_console_versions": 38,
+          "versions_with_possible_logs": 38
+        },
+        ".hpp": {
+          "requested": 6,
+          "read": 6
+        },
+        ".rs": {
+          "requested": 58,
+          "read": 58,
+          "rust_macros_calls": 180,
+          "rust_macros_versions": 21,
+          "versions_with_possible_logs": 21
+        },
+        ".java": {
+          "requested": 6,
+          "read": 6
+        },
+        ".rb": {
+          "requested": 6,
+          "read": 6
+        },
+        ".cs": {
+          "requested": 264,
+          "read": 264,
+          "cs_ilogger_calls": 183,
+          "cs_ilogger_versions": 57,
+          "versions_with_possible_logs": 57,
+          "generic_logger_calls": 14,
+          "generic_logger_versions": 14,
+          "lexer_error_versions": 7
+        },
+        ".php": {
+          "requested": 406,
+          "read": 400,
+          "php_logger_method_calls": 46,
+          "php_logger_method_versions": 17,
+          "versions_with_possible_logs": 21,
+          "php_error_log_calls": 6,
+          "php_error_log_versions": 4,
+          "binary": 6
+        },
+        ".cts": {
+          "requested": 3,
+          "read": 3
+        },
+        ".mts": {
+          "requested": 3,
+          "read": 3
+        },
+        ".swift": {
+          "requested": 69,
+          "read": 69,
+          "lexer_error_versions": 9,
+          "swift_print_calls": 2,
+          "swift_print_versions": 2,
+          "versions_with_possible_logs": 2
+        },
+        ".svelte": {
+          "requested": 15,
+          "read": 15,
+          "lexer_error_versions": 15,
+          "js_console_calls": 6,
+          "js_console_versions": 2,
+          "versions_with_possible_logs": 2
+        }
+      },
+      "examples": [
+        {
+          "extension": ".vue",
+          "family": "js_console",
+          "repository": "aditiohri/horary",
+          "sha": "043a3ee09d14269be1af0b8ece97d25e03927a4b",
+          "path": "src/components/LLMSettings.vue",
+          "line": 92
+        },
+        {
+          "extension": ".cs",
+          "family": "cs_ilogger",
+          "repository": "alexinslc/hickory",
+          "sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/src/Features/Cache/CacheController.cs",
+          "line": 38
+        },
+        {
+          "extension": ".cs",
+          "family": "generic_logger",
+          "repository": "alexinslc/hickory",
+          "sha": "ffc12388a7d46f63c621e248dc60325ee4da1161",
+          "path": "apps/api/Program.cs",
+          "line": 93
+        },
+        {
+          "extension": ".swift",
+          "family": "swift_print",
+          "repository": "andrefurt/safo",
+          "sha": "be7c5e5e477f96351cbe9af80d315ecd1206eb53",
+          "path": "Sources/safo-cli/SafoCLI.swift",
+          "line": 6
+        },
+        {
+          "extension": ".rs",
+          "family": "rust_macros",
+          "repository": "annie-mei/annie-mei",
+          "sha": "ab6f48b5e03d3bbd233125160f79cbede62e1bc7",
+          "path": "src/main.rs",
+          "line": 63
+        },
+        {
+          "extension": ".svelte",
+          "family": "js_console",
+          "repository": "clustercockpit/cc-backend",
+          "sha": "c0d2d65f9636fe229ab1ca9a023d6b8076352dd4",
+          "path": "web/frontend/src/generic/plots/MetricPlot.svelte",
+          "line": 273
+        },
+        {
+          "extension": ".php",
+          "family": "php_logger_method",
+          "repository": "cps-it/quality-tools",
+          "sha": "916fd435c79deceb35011904d58f0dba150a5b8c",
+          "path": "src/Console/Command/ConfigShowCommand.php",
+          "line": 49
+        },
+        {
+          "extension": ".php",
+          "family": "php_error_log",
+          "repository": "cps-it/quality-tools",
+          "sha": "1402e0d8d5cbf372379f4065bc46eb363f2656b5",
+          "path": "src/Service/TemporaryFile.php",
+          "line": 37
+        }
+      ]
+    }
+  ]
+}
